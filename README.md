@@ -1,5 +1,3 @@
-# English
-
 # Get the code 
 1. composer
   > composer require drupal/neibers
