@@ -1,0 +1,21 @@
+
+Neibrs dev 8.x-1.x
+-----------------------
+- Added modules:
+  * cbos module: cabinet, fitting, ip, machine_room, server
+  * core module: menu_plus
+  * product module: mall
+
+
+Tree like as below:
+|- 8.x-1.1
+  |- 8.x-1.x
+    |- 8.x-1.x-dev3
+    |- 8.x-1.x-dev6
+    |- 8.x-1.x-dev9
+    |- 8.x-1.x-dev12
+
+|- 8.x-1.x
+----------------------
+- Add modules:
+  * cbos module: ip
