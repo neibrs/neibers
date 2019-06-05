@@ -5,10 +5,28 @@ idc.ip:
   weight: 10
 
 idc.ip.collection:
-  title: IP
+  title: 'IP collection'
   route_name: entity.ip.collection
   parent: idc.ip
   weight: 10
+
+idc.ip.free:
+  title: 'Free IP'
+  route_name: entity.ip.collection
+  options:
+    query:
+      state: free
+  parent: idc.ip
+  weight: 13
+
+idc.ip.used:
+  title: 'Used IP'
+  route_name: entity.ip.collection
+  options:
+    query:
+      state: used
+  parent: idc.ip
+  weight: 15
 
 idc.ip_type.configuration:
   title: 'Configuration'

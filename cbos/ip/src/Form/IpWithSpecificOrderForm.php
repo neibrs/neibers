@@ -122,7 +122,6 @@ class IpWithSpecificOrderForm extends FormBase {
         '#title' => $this->t('Business IP'),
         '#type' => 'entity_autocomplete',
         '#target_type' => 'ip',
-        '#required' => TRUE,
         '#size' => 40,
       ];
 
@@ -156,13 +155,13 @@ class IpWithSpecificOrderForm extends FormBase {
     if ($values['administer'] || $values['business']) {
       $administer = $ip_storage->load($values['administer']);
       $administer->order_id->target_id = $this->order->id();
-      // TODO Transition ip workflow.
+      $administer->state->value = 'used';
       $administer->save();
 
       if (!empty($values['business'])) {
         $business = $ip_storage->load($values['business']);
         $business->order_id->target_id = $this->order->id();
-        // TODO Transition ip workflow.
+        $business->state->value = 'used';
         if (!empty($this->inet)) {
           $business->server->target_id = $this->inet->server->target_id;
           $business->seat->target_id = $this->inet->seat->target_id;
