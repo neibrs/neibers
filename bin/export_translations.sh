@@ -6,7 +6,7 @@ vendor/bin/drupal moi potx -y
 #cd /var/www/html
 echo $(pwd)
 
-for file in `find profiles/neibrs -name "*.info.yml"`; do
+for file in `find modules/neibers -name "*.info.yml"`; do
   echo $(dirname $file) -- $(basename $(dirname $file));
   $(pwd)/vendor/bin/drush potx single --include=modules/contrib/potx --folder="$(dirname $file)/" --api=8
   if [ ! -d $(dirname $file)/translations ]; then

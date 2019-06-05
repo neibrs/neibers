@@ -33,7 +33,7 @@ modules=( \
 )
 for module in ${modules[@]}; do
   vendor/bin/drush langimp --langcode=zh-hans \
-    modules/eabax/cbos/$module/translations/$module.zh-hans.po
+    modules/neibers/cbos/$module/translations/$module.zh-hans.po
 done
 
 # core

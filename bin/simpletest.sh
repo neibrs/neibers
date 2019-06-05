@@ -59,7 +59,7 @@ sudo rm sites/simpletest/browser_output -rf
 OUTPUT="simpletest-`date +%Y%m%d`.txt"
 rm ${OUTPUT}
 
-PROJECT="modules/eabax"
+PROJECT="modules/neibers"
 for file in `find ${PROJECT} -name "*.info.yml"`; do
   module=$(basename $(dirname ${file}))
   FOUND=0
