@@ -1,0 +1,29 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  profiles/neibrs/neibrs.info.yml: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2019-05-09 09:28+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: profiles/neibrs/neibrs.info.yml:0;0 modules/neibers/core/menu_plus/menu_plus.info.yml:0 modules/neibers/core/user_plus/user_plus.info.yml:0 modules/neibers/product/mall/mall.info.yml:0 profiles/neibrs/themes/exmall/exmall.info.yml:0 profiles/neibrs/themes/exsen/exsen.info.yml:0
+msgid "Neibrs"
+msgstr ""
+
+#: profiles/neibrs/neibrs.info.yml:0
+msgid "xxx"
+msgstr ""
+
+

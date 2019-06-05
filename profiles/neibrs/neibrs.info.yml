@@ -1,0 +1,51 @@
+name: Neibrs IDC
+type: profile
+description: 'Manage for IDC service.'
+core: 8.x
+version: VERSION
+interface translation project: neibrs
+interface translation server pattern: profiles/%project/translations/%project.%language.po
+distribution:
+  name: 'Neibrs IDC'
+  langcode: en
+  install:
+    theme: bartik
+install:
+  - node
+  - history
+  - block
+  - breakpoint
+  - ckeditor
+  - color
+  - config
+  - comment
+  - contextual
+  - contact
+  - menu_link_content
+  - datetime
+  - block_content
+  - quickedit
+  - editor
+  - help
+  - image
+  - menu_ui
+  - options
+  - path
+  - page_cache
+  - dynamic_page_cache
+  - big_pipe
+  - taxonomy
+  - dblog
+  - search
+  - shortcut
+  - toolbar
+  - field_ui
+  - file
+  - rdf
+  - views
+  - views_ui
+  - tour
+  - automated_cron
+themes:
+  - seven
+  - bartik

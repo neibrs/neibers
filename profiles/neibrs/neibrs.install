@@ -1,0 +1,79 @@
+<?php
+
+/**
+ * @file
+ */
+
+use Drupal\user\Entity\User;
+
+/**
+ * Implements hook_install().
+ *
+ * Perform actions to set up the site for this profile.
+ *
+ * @see system_install()
+ */
+function neibrs_install() {
+  // First, do everything in standard profile.
+  include_once DRUPAL_ROOT . '/core/profiles/standard/standard.install';
+  standard_install();
+
+  $user = User::load(1);
+  $user->addRole('business');
+  $user->addRole('site_manager');
+
+  $user->save();
+
+  // We install some menu links, so we have to rebuild the router, to ensure the
+  // menu links are valid.
+  \Drupal::service('router.builder')->rebuildIfNeeded();
+
+  //   1. Init currency
+  //  /** @var \Drupal\commerce_price\CurrencyImporterInterface $importer */
+  //  $importer = \Drupal::getContainer()->get('commerce_price.currency_import');
+  //  $importer->importByCountry('zh-CN');
+  //
+  //  // 2. Init store
+  //  $store = Store::create([
+  //    'name' => t('Ultrix2'),
+  //    'mail' => 'admin@local.host',
+  //    'default_currency' => 'CNY',
+  //    'address' => [
+  //      'address_country_code' => '',
+  //      'address_line1' => t('Chongqing'),
+  //      'address_line2' => t('CQ'),
+  //      'dependent_locality' => t('District'),
+  //      'locality' => 'Banan Qu',
+  //      'administrative_area' => 'Chongqing Shi',
+  //      'postal_code' => '400000',
+  //      'billing_countries' => [],
+  //      'default' => 1,
+  //    ],
+  //  ]);
+  //  $store->save();
+  //
+  //  // 3. Init product variation type
+  //  $variationType = ProductVariationType::create([
+  //    'id' => 'servers',
+  //    'label' => 'Servers',
+  //  ]);
+  //
+  //  $variationType->save();
+  //
+  //  // 4. Init product attribute
+  //  $productVariationType = ProductVariationType::load('servers');
+  //  $productAttribute = ProductAttribute::create([
+  //    'label' => $productVariationType->label(),
+  //    'elementType' => 'commerce_product_rendered_attribute',
+  //    'id' => $productVariationType->id(),
+  //  ]);
+  //  $productAttribute->save();
+
+  // 5. Init products
+  // 6. Add product server base field
+
+  // 7. Add product servers
+
+  // 8. Init ip
+
+}
