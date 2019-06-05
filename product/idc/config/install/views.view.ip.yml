@@ -7,12 +7,10 @@ dependencies:
     - idc
     - ip
     - options
-_core:
-  default_config_hash: L2rwKko2nY-edvRItaXd_Cb-IM9lAM4XiGzKRJ8PBA8
 id: ip
 label: IP
 module: idc
-description: ''
+description: 'Find and manage content.'
 tag: default
 base_table: ip_field_data
 base_field: id
@@ -21,8 +19,9 @@ display:
   default:
     display_options:
       access:
-        type: none
-        options: {  }
+        type: perm
+        options:
+          perm: 'administer ip'
       cache:
         type: tag
         options: {  }
