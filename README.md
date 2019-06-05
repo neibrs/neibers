@@ -1,4 +1,29 @@
-#中文自述
+# English
+
+# Get the code 
+1. composer
+  > composer require drupal/neibers
+2. download the code to modules directory
+  > wget 'https://ftp.drupal.org/files/projects/neibers-8.x-1.0.tar.gz'
+  
+# Install
+There are two methods to install this module:
+1. install drupal as normal
+> core/install.php
+2. install this module with command line(set the database account as you need)
+> sh modules/neibers/bin/install.sh
+
+# Recommended development environment(docker)
+Use this: https://github.com/neibrs/laradock
+
+#### Build development environment
+1. git clone https://github.com/neibrs/laradock
+2. cd laradock
+3. sh build.sh
+The new directory named `laradrupal` is the web directory with drupal.
+
+
+# 中文自述
 此安装文件是为了提供一个完整的IDC运营套件。
 安装完成后即实现对IDC行业，特别是适用于小型IDC公司销售服务器，IP，硬件资源等管理.
 
@@ -26,26 +51,3 @@
 
 生成的laradrupal目录即为drupal代码目录
 
-# English
-
-# Get the code 
-1. composer
-  > composer require drupal/neibers
-2. download the code to modules directory
-  > wget 'https://ftp.drupal.org/files/projects/neibers-8.x-1.0.tar.gz'
-  
-# Install
-There are two methods to install this module:
-1. install drupal as normal
-> core/install.php
-2. install this module with command line(set the database account as you need)
-> sh modules/neibers/bin/install.sh
-
-# Recommended development environment(docker)
-Use this: https://github.com/neibrs/laradock
-
-#### Build development environment
-1. git clone https://github.com/neibrs/laradock
-2. cd laradock
-3. sh build.sh
-The new directory named `laradrupal` is the web directory with drupal.
