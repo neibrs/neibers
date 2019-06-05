@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - idc
+  module:
+    - role_menu
+third_party_settings:
+  role_menu:
+    menu: site_manager
+id: site_manager
+label: Site manager
+weight: 104
+is_admin: true
+permissions: {  }

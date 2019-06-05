@@ -1,0 +1,42 @@
+eabax_core.data_modeling:
+  path: '/data_modeling'
+  defaults:
+    _controller: '\Drupal\eabax_core\Controller\EabaxCoreController::menuBlockPage'
+    _title: 'Implementation'
+    menu_id: role-menu-implementor
+  requirements:
+    _role: 'implementor'
+
+eabax_core.implementation:
+  path: '/implementation'
+  defaults:
+    _controller: '\Drupal\eabax_core\Controller\EabaxCoreController::menuBlockPage'
+    _title: 'Implementation'
+    menu_id: role-menu-implementor
+  requirements:
+    _role: 'implementor'
+
+eabax_core.implementation_tools:
+  path: '/implementation/tools'
+  defaults:
+    _controller: '\Drupal\eabax_core\Controller\EabaxCoreController::menuBlockPage'
+    _title: 'Implementation tools'
+    menu_id: role-menu-implementor
+  requirements:
+    _role: 'implementor'
+
+eabax_core.system_administration:
+  path: '/sytem_administration'
+  defaults:
+    _controller: '\Drupal\eabax_core\Controller\EabaxCoreController::menuBlockPage'
+    _title: 'System administration'
+    menu_id: role-menu-system-administrator
+  requirements:
+    _role: 'system_administrator'
+
+test:
+  path: '/test'
+  defaults:
+    _controller: '\Drupal\eabax_core\Controller\EabaxCoreController::test'
+  requirements:
+    _user_is_logged_in: 'TRUE'

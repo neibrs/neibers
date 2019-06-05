@@ -1,0 +1,171 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  profiles/neibrs/modules/cbos/cabinet/cabinet.module: n/a
+#  profiles/neibrs/modules/cbos/cabinet/cabinet.info.yml: n/a
+#  profiles/neibrs/modules/cbos/cabinet/src/Entity/Cabinet.php: n/a
+#  profiles/neibrs/modules/cbos/cabinet/cabinet.links.action.yml: n/a
+#  profiles/neibrs/modules/cbos/cabinet/cabinet.links.task.yml: n/a
+#  profiles/neibrs/modules/cbos/cabinet/cabinet.permissions.yml: n/a
+#  profiles/neibrs/modules/cbos/cabinet/src/CabinetListBuilder.php: n/a
+#  profiles/neibrs/modules/cbos/cabinet/src/Form/CabinetForm.php: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2019-05-16 15:30+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: profiles/neibrs/modules/cbos/cabinet/cabinet.module:20
+msgid "About"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/cabinet/cabinet.module:21
+msgid "The server cabinet for idc industrial."
+msgstr "IDC行业的服务器机柜."
+
+#: profiles/neibrs/modules/cbos/cabinet/cabinet.module:70 profiles/neibrs/modules/cbos/cabinet/cabinet.info.yml:0 profiles/neibrs/modules/cbos/cabinet/src/Entity/Cabinet.php:12;12
+msgid "Cabinet"
+msgstr "机柜"
+
+#: profiles/neibrs/modules/cbos/cabinet/cabinet.info.yml:0
+msgid "The cabinets of idc room."
+msgstr "机柜所属机房."
+
+#: profiles/neibrs/modules/cbos/cabinet/cabinet.info.yml:0
+msgid "Neibrs"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/cabinet/cabinet.links.action.yml:0
+msgid "Add"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/cabinet/cabinet.links.task.yml:0
+msgid "Settings"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/cabinet/cabinet.links.task.yml:0
+msgid "View"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/cabinet/cabinet.links.task.yml:0
+msgid "Edit"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/cabinet/cabinet.links.task.yml:0
+msgid "Delete"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/cabinet/cabinet.permissions.yml:0
+msgid "Create new Cabinet"
+msgstr "创建机柜"
+
+#: profiles/neibrs/modules/cbos/cabinet/cabinet.permissions.yml:0
+msgid "Administer Cabinet"
+msgstr "管理机柜"
+
+#: profiles/neibrs/modules/cbos/cabinet/cabinet.permissions.yml:0
+msgid "Allow to access the administration form to configure Cabinet."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/cabinet/cabinet.permissions.yml:0
+msgid "Delete Cabinet"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/cabinet/cabinet.permissions.yml:0
+msgid "Edit Cabinet"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/cabinet/cabinet.permissions.yml:0
+msgid "View published Cabinet"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/cabinet/cabinet.permissions.yml:0
+msgid "View unpublished Cabinet"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/cabinet/src/CabinetListBuilder.php:20
+msgid "Cabinet ID"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/cabinet/src/CabinetListBuilder.php:21 profiles/neibrs/modules/cbos/cabinet/src/Entity/Cabinet.php:182
+msgid "Name"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/cabinet/src/Entity/Cabinet.php:157
+msgid "Authored by"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/cabinet/src/Entity/Cabinet.php:158
+msgid "The user ID of author of the Cabinet entity."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/cabinet/src/Entity/Cabinet.php:183
+msgid "The name of the Cabinet entity."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/cabinet/src/Entity/Cabinet.php:203
+msgid "Switch"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/cabinet/src/Entity/Cabinet.php:204
+msgid "Switch ip for cabinet."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/cabinet/src/Entity/Cabinet.php:213
+msgid "Start seat"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/cabinet/src/Entity/Cabinet.php:214
+msgid "The location of the server"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/cabinet/src/Entity/Cabinet.php:218
+msgid "Model seat"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/cabinet/src/Entity/Cabinet.php:219
+msgid "Switch occupied seat in digit."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/cabinet/src/Entity/Cabinet.php:231
+msgid "Publishing status"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/cabinet/src/Entity/Cabinet.php:232
+msgid "A boolean indicating whether the Cabinet is published."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/cabinet/src/Entity/Cabinet.php:240
+msgid "Created"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/cabinet/src/Entity/Cabinet.php:241
+msgid "The time that the entity was created."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/cabinet/src/Entity/Cabinet.php:244
+msgid "Changed"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/cabinet/src/Entity/Cabinet.php:245
+msgid "The time that the entity was last edited."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/cabinet/src/Form/CabinetForm.php:37
+msgid "Created the %label Cabinet."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/cabinet/src/Form/CabinetForm.php:43
+msgid "Saved the %label Cabinet."
+msgstr ""
+

@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains menu_plus_test.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function menu_plus_test_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the menu_plus_test module.
+    case 'help.page.menu_plus_test':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Test menu plus schema.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

@@ -1,0 +1,214 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  profiles/neibrs/modules/cbos/fitting/fitting.module: n/a
+#  profiles/neibrs/modules/cbos/fitting/fitting.info.yml: n/a
+#  profiles/neibrs/modules/cbos/fitting/src/Entity/Fitting.php: n/a
+#  profiles/neibrs/modules/cbos/fitting/fitting.links.action.yml: n/a
+#  profiles/neibrs/modules/cbos/fitting/fitting.links.menu.yml: n/a
+#  profiles/neibrs/modules/cbos/fitting/src/FittingTypeListBuilder.php: n/a
+#  profiles/neibrs/modules/cbos/fitting/src/Entity/FittingType.php: n/a
+#  profiles/neibrs/modules/cbos/fitting/fitting.links.task.yml: n/a
+#  profiles/neibrs/modules/cbos/fitting/src/Form/FittingTypeDeleteForm.php: n/a
+#  profiles/neibrs/modules/cbos/fitting/fitting.permissions.yml: n/a
+#  profiles/neibrs/modules/cbos/fitting/config/schema/fitting_type.schema.yml: n/a
+#  profiles/neibrs/modules/cbos/fitting/src/FittingListBuilder.php: n/a
+#  profiles/neibrs/modules/cbos/fitting/src/Form/FittingForm.php: n/a
+#  profiles/neibrs/modules/cbos/fitting/src/Form/FittingTypeForm.php: n/a
+#  profiles/neibrs/modules/cbos/fitting/config/install/fitting.type.default.yml: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2019-05-19 07:05+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: profiles/neibrs/modules/cbos/fitting/fitting.module:18
+msgid "About"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/fitting.module:19 profiles/neibrs/modules/cbos/fitting/fitting.info.yml:0
+msgid "The fittings of a machine."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/fitting.info.yml:0 profiles/neibrs/modules/cbos/fitting/src/Entity/Fitting.php:12
+msgid "Fitting"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/fitting.info.yml:0
+msgid "Neibrs"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/fitting.links.action.yml:0
+msgid "Add Fitting"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/fitting.links.action.yml:0
+msgid "Add Fitting type"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/fitting.links.menu.yml:0
+msgid "Fitting list"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/fitting.links.menu.yml:0 profiles/neibrs/modules/cbos/fitting/src/FittingTypeListBuilder.php:17 profiles/neibrs/modules/cbos/fitting/src/Entity/Fitting.php:12 profiles/neibrs/modules/cbos/fitting/src/Entity/FittingType.php:7
+msgid "Fitting type"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/fitting.links.menu.yml:0
+msgid "List Fitting"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/fitting.links.menu.yml:0
+msgid "List Fitting type (bundles)"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/fitting.links.task.yml:0
+msgid "View"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/fitting.links.task.yml:0
+msgid "Edit"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/fitting.links.task.yml:0 profiles/neibrs/modules/cbos/fitting/src/Form/FittingTypeDeleteForm.php:32
+msgid "Delete"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/fitting.permissions.yml:0
+msgid "Create new Fitting"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/fitting.permissions.yml:0
+msgid "Administer Fitting"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/fitting.permissions.yml:0
+msgid "Allow to access the administration form to configure Fitting."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/fitting.permissions.yml:0
+msgid "Delete Fitting"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/fitting.permissions.yml:0
+msgid "Edit Fitting"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/fitting.permissions.yml:0
+msgid "View published Fitting"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/fitting.permissions.yml:0
+msgid "View unpublished Fitting"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/config/schema/fitting_type.schema.yml:0
+msgid "Fitting type config"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/config/schema/fitting_type.schema.yml:0
+msgid "ID"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/src/FittingListBuilder.php:20
+msgid "Fitting ID"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/src/FittingListBuilder.php:21 profiles/neibrs/modules/cbos/fitting/src/Entity/Fitting.php:184
+msgid "Name"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/src/FittingTypeListBuilder.php:18
+msgid "Machine name"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/src/Entity/Fitting.php:159
+msgid "Authored by"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/src/Entity/Fitting.php:160
+msgid "The user ID of author of the Fitting entity."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/src/Entity/Fitting.php:185
+msgid "The name of the Fitting entity."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/src/Entity/Fitting.php:205
+msgid "Publishing status"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/src/Entity/Fitting.php:206
+msgid "A boolean indicating whether the Fitting is published."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/src/Entity/Fitting.php:215
+msgid "Purchasable"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/src/Entity/Fitting.php:216
+msgid "A boolean indicating whether the Fitting is purchasable."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/src/Entity/Fitting.php:228
+msgid "Created"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/src/Entity/Fitting.php:229
+msgid "The time that the entity was created."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/src/Entity/Fitting.php:232
+msgid "Changed"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/src/Entity/Fitting.php:233
+msgid "The time that the entity was last edited."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/src/Form/FittingForm.php:37
+msgid "Created the %label Fitting."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/src/Form/FittingForm.php:43
+msgid "Saved the %label Fitting."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/src/Form/FittingTypeDeleteForm.php:18
+msgid "Are you sure you want to delete %name?"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/src/Form/FittingTypeDeleteForm.php:42
+msgid "content @type: deleted @label."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/src/Form/FittingTypeForm.php:22
+msgid "Label"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/src/Form/FittingTypeForm.php:25
+msgid "Label for the Fitting type."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/src/Form/FittingTypeForm.php:52
+msgid "Created the %label Fitting type."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/src/Form/FittingTypeForm.php:58
+msgid "Saved the %label Fitting type."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/fitting/config/install/fitting.type.default.yml:0
+msgid "Default"
+msgstr ""
+

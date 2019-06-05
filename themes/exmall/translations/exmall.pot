@@ -1,0 +1,62 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  profiles/neibrs/themes/exmall/exmall.breakpoints.yml: n/a
+#  profiles/neibrs/themes/exmall/exmall.info.yml: n/a
+#  profiles/neibrs/themes/exmall/src/Plugin/BlockStyle/SampleClass.php: n/a
+#  profiles/neibrs/themes/exmall/templates/block/block--system-branding-block.html.twig: n/a
+#  profiles/neibrs/themes/exmall/templates/commerce/cart/commerce-cart-block.html.twig: n/a
+#  profiles/neibrs/themes/exmall/templates/commerce/cart/commerce-cart-empty-page.html.twig: n/a
+#  profiles/neibrs/themes/exmall/config/optional/block.block.userquickmenu.yml: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2019-05-19 07:05+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: profiles/neibrs/themes/exmall/exmall.breakpoints.yml:0
+msgid "narrow"
+msgstr ""
+
+#: profiles/neibrs/themes/exmall/exmall.info.yml:0
+msgid "Exmall"
+msgstr ""
+
+#: profiles/neibrs/themes/exmall/exmall.info.yml:0
+msgid "Neibrs"
+msgstr ""
+
+#: profiles/neibrs/themes/exmall/src/Plugin/BlockStyle/SampleClass.php:31
+msgid "Add custom class to this block"
+msgstr ""
+
+#: profiles/neibrs/themes/exmall/src/Plugin/BlockStyle/SampleClass.php:8
+msgid "Sample Class"
+msgstr ""
+
+#: profiles/neibrs/themes/exmall/templates/block/block--system-branding-block.html.twig:21;25
+msgid "Home"
+msgstr ""
+
+#: profiles/neibrs/themes/exmall/templates/commerce/cart/commerce-cart-block.html.twig:6
+msgid "My cart"
+msgstr ""
+
+#: profiles/neibrs/themes/exmall/templates/commerce/cart/commerce-cart-empty-page.html.twig:11
+msgid "Your shopping cart is empty."
+msgstr ""
+
+#: profiles/neibrs/themes/exmall/config/optional/block.block.userquickmenu.yml:0
+msgid "User Quick Menu"
+msgstr ""
+

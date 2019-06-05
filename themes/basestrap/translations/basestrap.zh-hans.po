@@ -1,0 +1,48 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  profiles/neibrs/themes/basestrap/basestrap.info.yml: n/a
+#  profiles/neibrs/themes/basestrap/config/schema/basestrap.schema.yml: n/a
+#  profiles/neibrs/themes/basestrap/templates/block/block--basestrap-help.html.twig: n/a
+#  profiles/neibrs/themes/basestrap/config/optional/block.block.basestrap_account_menu.yml: n/a
+#  profiles/neibrs/themes/basestrap/config/optional/block.block.basestrap_branding.yml: n/a
+#  profiles/neibrs/themes/basestrap/config/optional/block.block.basestrap_breadcrumbs.yml: n/a
+#  profiles/neibrs/themes/basestrap/config/optional/block.block.basestrap_content.yml: n/a
+#  profiles/neibrs/themes/basestrap/config/optional/block.block.basestrap_footer.yml: n/a
+#  profiles/neibrs/themes/basestrap/config/optional/block.block.basestrap_help.yml: n/a
+#  profiles/neibrs/themes/basestrap/config/optional/block.block.basestrap_local_actions.yml: n/a
+#  profiles/neibrs/themes/basestrap/config/optional/block.block.basestrap_local_tasks.yml: n/a
+#  profiles/neibrs/themes/basestrap/config/optional/block.block.basestrap_main_menu.yml: n/a
+#  profiles/neibrs/themes/basestrap/config/optional/block.block.basestrap_messages.yml: n/a
+#  profiles/neibrs/themes/basestrap/config/optional/block.block.basestrap_page_title.yml: n/a
+#  profiles/neibrs/themes/basestrap/config/optional/block.block.basestrap_powered.yml: n/a
+#  profiles/neibrs/themes/basestrap/config/optional/filter.format.basic_html.yml: n/a
+#  profiles/neibrs/themes/basestrap/config/optional/filter.format.full_html.yml: n/a
+#  profiles/neibrs/themes/basestrap/config/optional/filter.format.restricted_html.yml: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2019-05-09 09:28+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: profiles/neibrs/themes/basestrap/basestrap.info.yml:0
+msgid "Basestrap"
+msgstr ""
+
+#: profiles/neibrs/themes/basestrap/templates/block/block--basestrap-help.html.twig:44
+msgid "Operation Tips"
+msgstr "操作提示"
+
+#: profiles/neibrs/themes/basestrap/templates/block/block--basestrap-help.html.twig:45
+msgid "Collapse Tips"
+msgstr "收折提示"

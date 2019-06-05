@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_plus
+id: user-quick-menu
+label: 'User quick menu'
+description: 'Quick menu for front page.'
+locked: true

@@ -1,0 +1,7 @@
+mall.platform:
+  path: 'admin/platform'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Platform'
+  requirements:
+    _permission: 'access administration pages'

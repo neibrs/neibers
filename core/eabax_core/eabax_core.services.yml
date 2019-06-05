@@ -1,0 +1,4 @@
+services:
+  eabax_core.manager:
+    class: Drupal\eabax_core\EabaxCoreManager
+    arguments: ['@menu.active_trail', '@menu.link_tree']

@@ -1,0 +1,75 @@
+{% import _self as menus %}
+
+{%
+set nav_classes = [
+  'sidebar-menu',
+]
+%}
+<div class="admincj_nav">
+  {{ menus.menu_links(items, attributes.addClass(nav_classes), 0) }}
+</div>
+
+{% macro sub_menu_links(items, attributes, menu_level) %}
+  {% import _self as menus %}
+
+  {% if items %}
+    <ul>
+      {% for item in items %}
+        {%
+          set item_classes = [
+          item.in_active_trail ? 'curr',
+        ]
+        %}
+        <li{{ item.attributes.addClass(item_classes) }}>
+          <s></s><a href="{{ item.url }}" data-url="{{ item.url }}" target="_self">{{ item.title }}</a>
+
+          {% if item.below %}
+            {{ menus.sub_menu_links(item.below, attributes.removeClass('sidebar-menu'), menu_level + 1) }}
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endmacro %}
+
+{% macro menu_links(items, attributes, menu_level) %}
+  {% import _self as menus %}
+
+  {% for key,item in items %}
+    <div class="navLeftTab" id="adminNavTabs_{{ key }}"
+      {% if item.active %}
+         style="display: block;"
+      {% else %}
+         style = "display: none;"
+      {% endif %}
+    >
+      {% for data in item.items %}
+      {%
+        set data_classes = [
+        'item',
+        data.in_active_trail ? 'current'
+        ]
+      %}
+      <div{{ data.attributes.addClass(data_classes) }} data-type="{{ key }}">
+        <div class="tit">
+          <a href="javascript:void(0)">
+            <i class="{{ data.icon }}"></i>
+            <h4>{{ data.title }}</h4>
+          </a>
+        </div>
+        <div class="sub-menu"
+          {% if data.in_active_trail %}
+            style="display: block;"
+          {% else %}
+            style="display: none;"
+          {% endif %}
+        >
+        {% if data.below %}
+          {{ menus.sub_menu_links(data.below, attributes, 0) }}
+        {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+    </div>
+  {% endfor %}
+{% endmacro %}

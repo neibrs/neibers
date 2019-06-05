@@ -1,0 +1,11 @@
+name: 'Fitting'
+type: module
+description: 'The fittings of a machine.'
+core: 8.x
+package: 'Neibrs'
+interface translation project: fitting
+interface translation server pattern: profiles/neibrs/modules/cbos/%project/translations/%project.%language.po
+dependencies:
+  - cabinet
+  - eabax_workflows
+  - server

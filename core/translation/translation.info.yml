@@ -1,0 +1,7 @@
+name: 'Translation'
+type: module
+description: 'Translation'
+core: 8.x
+interface translation project: translation
+interface translation server pattern: profiles/neibrs/modules/core/%project/translations/translation.%language.po
+package: 'Neibrs core'

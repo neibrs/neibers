@@ -1,0 +1,32 @@
+id: menus_xls
+label: Menus(xls)
+migration_tags: { }
+source:
+  plugin: xls
+  header_row: 1
+  path: modules/neibrs/core/menu_plus/tests/data/mall_menus.xls
+  sheet_name: Sheet1
+  keys:
+    - 序号
+  columns:
+    0:
+      序号: 序号
+process:
+  title: 二级菜单
+  menu_name:
+    plugin: entity_generate
+    source: 菜单名称
+    entity_type: menu
+    value_key: label
+#  parent:
+#    plugin: entity_generate
+#    source: 一级菜单
+#    entity_type: menu_link_content
+#    value_key: title
+#    values:
+#      menu_name: '@menu_name'
+#      route_name: '<front>'
+  route_name: '<front>'
+destination:
+  plugin: entity:menu_link_content
+migration_dependencies: { }

@@ -1,0 +1,39 @@
+add cabinet:
+  title: 'Create new Cabinet'
+
+administer cabinet:
+  title: 'Administer Cabinet'
+  description: 'Allow to access the administration form to configure Cabinet.'
+  restrict access: true
+
+delete cabinet:
+  title: 'Delete Cabinet'
+
+edit cabinet:
+  title: 'Edit Cabinet'
+
+view published cabinet:
+  title: 'View published Cabinet'
+
+view unpublished cabinet:
+  title: 'View unpublished Cabinet'
+
+add seat:
+  title: 'Create new Seat'
+
+administer seat:
+  title: 'Administer Seat'
+  description: 'Allow to access the administration form to configure Seat.'
+  restrict access: true
+
+delete seat:
+  title: 'Delete Seat'
+
+edit seat:
+  title: 'Edit Seat'
+
+view published seat:
+  title: 'View published Seat'
+
+view unpublished seat:
+  title: 'View unpublished Seat'

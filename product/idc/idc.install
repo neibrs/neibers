@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * @file
+ */
+
+use Drupal\machine_room\Entity\Room;
+
+function idc_install() {
+  // Init default machine room.
+  $room = Room::create([
+    'type' => 'default',
+    'name' => 'Default',
+  ]);
+  $room->save();
+}

@@ -1,0 +1,10 @@
+name: 'Server'
+type: module
+description: 'The server in the cabinet seat.'
+core: 8.x
+package: 'Neibrs'
+interface translation project: server
+interface translation server pattern: profiles/neibrs/modules/cbos/%project/translations/%project.%language.po
+dependencies:
+  - cabinet
+  - machine_room

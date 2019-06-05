@@ -1,0 +1,315 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  profiles/neibrs/modules/cbos/ip/ip.module: n/a
+#  profiles/neibrs/modules/cbos/ip/ip.info.yml: n/a
+#  profiles/neibrs/modules/cbos/ip/src/Entity/IP.php: n/a
+#  profiles/neibrs/modules/cbos/ip/ip.links.action.yml: n/a
+#  profiles/neibrs/modules/cbos/ip/ip.links.task.yml: n/a
+#  profiles/neibrs/modules/cbos/ip/src/Controller/IPController.php: n/a
+#  profiles/neibrs/modules/cbos/ip/src/Form/IPRevisionDeleteForm.php: n/a
+#  profiles/neibrs/modules/cbos/ip/src/Form/IPTypeDeleteForm.php: n/a
+#  profiles/neibrs/modules/cbos/ip/ip.permissions.yml: n/a
+#  profiles/neibrs/modules/cbos/ip/config/schema/ip_type.schema.yml: n/a
+#  profiles/neibrs/modules/cbos/ip/src/IPListBuilder.php: n/a
+#  profiles/neibrs/modules/cbos/ip/src/IPTypeListBuilder.php: n/a
+#  profiles/neibrs/modules/cbos/ip/src/Entity/IPType.php: n/a
+#  profiles/neibrs/modules/cbos/ip/src/Form/IPRevisionRevertForm.php: n/a
+#  profiles/neibrs/modules/cbos/ip/src/Form/IPForm.php: n/a
+#  profiles/neibrs/modules/cbos/ip/src/Form/IPRevisionRevertTranslationForm.php: n/a
+#  profiles/neibrs/modules/cbos/ip/src/Form/IPTypeForm.php: n/a
+#  profiles/neibrs/modules/cbos/ip/config/install/ip.type.inet.yml: n/a
+#  profiles/neibrs/modules/cbos/ip/config/install/ip.type.onet.yml: n/a
+#  profiles/neibrs/modules/cbos/ip/config/install/ip.type.snet.yml: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2019-05-19 07:05+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: profiles/neibrs/modules/cbos/ip/ip.module:18
+msgid "About"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/ip.module:19
+msgid "The server ip for idc industrial."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/ip.info.yml:0 profiles/neibrs/modules/cbos/ip/src/Entity/IP.php:13;13
+msgid "IP"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/ip.info.yml:0
+msgid "Neibrs"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/ip.links.action.yml:0;0
+msgid "Add"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/ip.links.action.yml:0
+msgid "Import"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/ip.links.task.yml:0
+msgid "View"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/ip.links.task.yml:0
+msgid "Edit"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/ip.links.task.yml:0
+msgid "Revisions"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/ip.links.task.yml:0 profiles/neibrs/modules/cbos/ip/src/Controller/IPController.php:137 profiles/neibrs/modules/cbos/ip/src/Form/IPRevisionDeleteForm.php:90 profiles/neibrs/modules/cbos/ip/src/Form/IPTypeDeleteForm.php:32
+msgid "Delete"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/ip.permissions.yml:0
+msgid "Create new IP"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/ip.permissions.yml:0
+msgid "Administer IP"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/ip.permissions.yml:0
+msgid "Allow to access the administration form to configure IP."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/ip.permissions.yml:0
+msgid "Delete IP"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/ip.permissions.yml:0
+msgid "Edit IP"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/ip.permissions.yml:0
+msgid "View published IP"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/ip.permissions.yml:0
+msgid "View unpublished IP"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/ip.permissions.yml:0
+msgid "View all IP revisions"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/ip.permissions.yml:0
+msgid "Revert all IP revisions"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/ip.permissions.yml:0
+msgid "Role requires permission <em>view IP revisions</em> and <em>edit rights</em> for ip in question or <em>administer ip</em>."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/ip.permissions.yml:0
+msgid "Delete all revisions"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/ip.permissions.yml:0
+msgid "Role requires permission to <em>view IP revisions</em> and <em>delete rights</em> for ip in question or <em>administer ip</em>."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/config/schema/ip_type.schema.yml:0
+msgid "IP type config"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/config/schema/ip_type.schema.yml:0
+msgid "ID"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/IPListBuilder.php:20
+msgid "IP ID"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/IPListBuilder.php:21 profiles/neibrs/modules/cbos/ip/src/Entity/IP.php:233
+msgid "Name"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/IPTypeListBuilder.php:17 profiles/neibrs/modules/cbos/ip/src/Entity/IP.php:13 profiles/neibrs/modules/cbos/ip/src/Entity/IPType.php:7;7
+msgid "IP type"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/IPTypeListBuilder.php:18
+msgid "Machine name"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/Controller/IPController.php:45
+msgid "Revision of %title from %date"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/Controller/IPController.php:65
+msgid "@langname revisions for %title"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/Controller/IPController.php:65
+msgid "Revisions for %title"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/Controller/IPController.php:66
+msgid "Revision"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/Controller/IPController.php:66
+msgid "Operations"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/Controller/IPController.php:115
+msgid "Current revision"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/Controller/IPController.php:128 profiles/neibrs/modules/cbos/ip/src/Form/IPRevisionRevertForm.php:90
+msgid "Revert"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/Controller/IPController.php:1
+msgid "@date by @username"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/Entity/IP.php:208
+msgid "Authored by"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/Entity/IP.php:209
+msgid "The user ID of author of the IP entity."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/Entity/IP.php:234
+msgid "The name of the IP entity."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/Entity/IP.php:256
+msgid "Cabinet Seat"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/Entity/IP.php:275
+msgid "Publishing status"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/Entity/IP.php:276
+msgid "A boolean indicating whether the IP is published."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/Entity/IP.php:285
+msgid "Created"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/Entity/IP.php:286
+msgid "The time that the entity was created."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/Entity/IP.php:289
+msgid "Changed"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/Entity/IP.php:290
+msgid "The time that the entity was last edited."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/Entity/IP.php:293
+msgid "Revision translation affected"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/Entity/IP.php:294
+msgid "Indicates if the last edit of a translation belongs to current revision."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/Form/IPForm.php:25
+msgid "Create new revision"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/Form/IPForm.php:58
+msgid "Created the %label IP."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/Form/IPForm.php:64
+msgid "Saved the %label IP."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/Form/IPRevisionDeleteForm.php:76
+msgid "Are you sure you want to delete the revision from %revision-date?"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/Form/IPRevisionDeleteForm.php:110
+msgid "Revision from %revision-date of IP %title has been deleted."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/Form/IPRevisionDeleteForm.php:109
+msgid "IP: deleted %title revision %revision."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/Form/IPRevisionRevertForm.php:76
+msgid "Are you sure you want to revert to the revision from %revision-date?"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/Form/IPRevisionRevertForm.php:119
+msgid "Copy of the revision from %date."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/Form/IPRevisionRevertForm.php:123
+msgid "IP %title has been reverted to the revision from %revision-date."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/Form/IPRevisionRevertForm.php:122
+msgid "IP: reverted %title revision %revision."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/Form/IPRevisionRevertTranslationForm.php:71
+msgid "Are you sure you want to revert @language translation to the revision from %revision-date?"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/Form/IPRevisionRevertTranslationForm.php:83
+msgid "Revert content shared among translations"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/Form/IPTypeDeleteForm.php:18
+msgid "Are you sure you want to delete %name?"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/Form/IPTypeDeleteForm.php:42
+msgid "content @type: deleted @label."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/Form/IPTypeForm.php:22
+msgid "Label"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/Form/IPTypeForm.php:25
+msgid "Label for the IP type."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/Form/IPTypeForm.php:52
+msgid "Created the %label IP type."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/src/Form/IPTypeForm.php:58
+msgid "Saved the %label IP type."
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/config/install/ip.type.inet.yml:0
+msgid "Inet"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/config/install/ip.type.onet.yml:0
+msgid "Onet"
+msgstr ""
+
+#: profiles/neibrs/modules/cbos/ip/config/install/ip.type.snet.yml:0
+msgid "Snet"
+msgstr ""
+

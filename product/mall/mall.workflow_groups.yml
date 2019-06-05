@@ -1,0 +1,3 @@
+mall:
+  label: Mall
+  entity_type: commerce_order

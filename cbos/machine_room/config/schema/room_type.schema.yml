@@ -1,0 +1,12 @@
+machine_room.type.*:
+  type: config_entity
+  label: 'Machine Room type config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string

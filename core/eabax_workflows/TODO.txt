@@ -1,0 +1,1 @@
+Rename module name to entity_workflows

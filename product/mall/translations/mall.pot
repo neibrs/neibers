@@ -1,0 +1,60 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  profiles/neibrs/modules/product/mall/mall.info.yml: n/a
+#  profiles/neibrs/modules/product/mall/mall.links.menu.yml: n/a
+#  profiles/neibrs/modules/product/mall/mall.routing.yml: n/a
+#  profiles/neibrs/modules/product/mall/src/Plugin/Block/NavigateBlock.php: n/a
+#  profiles/neibrs/modules/product/mall/src/Plugin/Block/SidebarBlock.php: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2019-05-19 07:37+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: profiles/neibrs/modules/product/mall/mall.info.yml:0
+msgid "Mall"
+msgstr ""
+
+#: profiles/neibrs/modules/product/mall/mall.info.yml:0
+msgid "The commerce module with exsen theme for commerce purpose."
+msgstr ""
+
+#: profiles/neibrs/modules/product/mall/mall.info.yml:0
+msgid "Neibrs"
+msgstr ""
+
+#: profiles/neibrs/modules/product/mall/mall.links.menu.yml:0
+msgid "Commerce products"
+msgstr ""
+
+#: profiles/neibrs/modules/product/mall/mall.links.menu.yml:0
+msgid "Products"
+msgstr ""
+
+#: profiles/neibrs/modules/product/mall/mall.links.menu.yml:0
+msgid "Product type"
+msgstr ""
+
+#: profiles/neibrs/modules/product/mall/mall.routing.yml:0
+msgid "Platform"
+msgstr ""
+
+#: profiles/neibrs/modules/product/mall/src/Plugin/Block/NavigateBlock.php:11
+msgid "Navigate block for exsen theme"
+msgstr ""
+
+#: profiles/neibrs/modules/product/mall/src/Plugin/Block/SidebarBlock.php:12
+msgid "Sidebar block"
+msgstr ""
+

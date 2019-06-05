@@ -1,0 +1,11 @@
+name: 'Import'
+type: module
+description: 'Import'
+core: 8.x
+interface translation project: import
+interface translation server pattern: profiles/neibrs/modules/core/%project/translations/%project.%language.po
+package: 'Neibrs core'
+dependencies:
+  - eabax_core
+  - migrate_source_xls
+  - migrate_tools

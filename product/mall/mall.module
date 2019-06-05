@@ -1,0 +1,66 @@
+<?php
+
+/**
+ * @file
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function mall_theme($existing, $type, $theme, $path) {
+  return [
+    'navigate_item_list' => [
+      'variables' => [
+        'items' => [],
+      ],
+    ],
+    'sidebar_item_list' => [
+      'variables' => [
+        'items' => [],
+      ],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for sidebar_item_list.
+ */
+function mall_preprocess_sidebar_item_list(&$variables) {
+  $items = $variables['items'];
+
+  $icons = [
+    'system.admin_structure' => 'nav_icon icon_01_system',
+    'mall.platform' => 'nav_icon icon_01_system',
+  ];
+  foreach ($items as $key => $item) {
+    _mall_set_menu_items_icon($variables['items'][$key]['items'], $icons);
+  }
+}
+
+/**
+ * TODO need remove to core module for neibrs.
+ */
+function _mall_set_menu_items_icon(&$items, $icons) {
+  foreach ($items as $key => $item) {
+    if (isset($icons[$key])) {
+      if (!empty($items[$key]['icon'])) {
+        $items[$key]['icon'] = _mall_core_icon_combine($items[$key]['icon'], $icons[$key]);
+      }
+      else {
+        $items[$key]['icon'] = $icons[$key];
+      }
+    }
+    if (!empty($item['below'])) {
+      _mall_set_menu_items_icon($item['below'], $icons);
+    }
+  }
+}
+
+function _mall_core_icon_combine($icons1, $icons2) {
+  $icons1 = explode(' ', $icons1);
+  $icons2 = explode(' ', $icons2);
+
+  $combines = array_unique(array_merge($icons1, $icons2));
+
+  return implode(' ', $combines);
+}

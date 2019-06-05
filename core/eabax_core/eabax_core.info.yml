@@ -1,0 +1,19 @@
+name: Neibrs core
+type: module
+description: Neibrs core
+core: 8.x
+interface translation project: eabax_core
+interface translation server pattern: modules/eabax/core/eabax_core/translations/eabax_core.%language.po
+package: Neibrs core
+dependencies:
+  - block_style_plugins
+  - config
+  - custom_formatters
+  - entity_permission
+  - file
+  - locale
+  - role_frontpage
+  - role_menu
+  - rules
+  - translation
+  - workflows

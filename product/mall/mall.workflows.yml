@@ -1,0 +1,32 @@
+mall_validation:
+  id: mall_validation
+  group: mall
+  label: 'Mall validation'
+  states:
+    draft:
+      label: Draft
+    checkout:
+      label: Checkout
+    business:
+      label: 'Validation'
+    completed:
+      label: Completed
+    canceled:
+      label: Canceled
+  transitions:
+    place:
+      label: 'Place order'
+      from: [draft]
+      to: checkout
+    validate:
+      label: 'Validate'
+      from: [checkout]
+      to:  business
+    complete:
+      label: 'Complete'
+      from: [business]
+      to: completed
+    cancel:
+      label: 'Cancel order'
+      from: [draft]
+      to:   canceled

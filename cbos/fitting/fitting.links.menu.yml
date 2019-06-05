@@ -1,0 +1,17 @@
+
+# Fitting menu items definition
+entity.fitting.collection:
+  title: 'Fitting list'
+  route_name: entity.fitting.collection
+  description: 'List Fitting'
+  parent: system.admin_structure
+  weight: 100
+
+
+# Fitting type menu items definition
+entity.fitting_type.collection:
+  title: 'Fitting type'
+  route_name: entity.fitting_type.collection
+  description: 'List Fitting type (bundles)'
+  parent: system.admin_structure
+  weight: 99

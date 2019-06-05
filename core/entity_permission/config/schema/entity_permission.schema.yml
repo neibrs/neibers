@@ -1,0 +1,78 @@
+# Schema for the configuration files of the entity_permission module.
+
+entity_permission.settings:
+  type: config_object
+  label: 'Entity permission settings'
+  mapping:
+    entities:
+      type: sequence
+      label: 'Entities which controled by entity permission'
+      sequence:
+        type: mapping
+        label: 'Entity permission'
+        mapping:
+          entity_permission:
+            type: boolean
+            label: 'Entity permission'
+          bundle_permission:
+            type: boolean
+            label: 'Bundle permission'
+          field_permission:
+            type: boolean
+            label: 'Field permission'
+
+user.role.*.third_party.entity_permission:
+  type: mapping
+  label: 'Entity permission'
+  mapping:
+    entities:
+      type: sequence
+      label: 'Entity permission'
+      sequence:
+        type: mapping
+        label: 'Entity permission'
+        mapping:
+          view:
+            type: boolean
+            label: 'View permission'
+          update:
+            type: boolean
+            label: 'Update permission'
+          delete:
+            type: boolean
+            label: 'Delete permission'
+          create:
+            type: boolean
+            label: 'Create permission'
+          bundle_permission:
+            type: sequence
+            label: 'Bundle permission'
+            sequence:
+              type: mapping
+              label: 'Bundle permission'
+              mapping:
+                view:
+                  type: boolean
+                  label: 'View permission'
+                update:
+                  type: boolean
+                  label: 'Update permission'
+                delete:
+                  type: boolean
+                  label: 'Delete permission'
+                create:
+                  type: boolean
+                  label: 'Create permission'
+          field_permission:
+            type: sequence
+            label: 'Field permission'
+            sequence:
+              type: mapping
+              label: 'Bundle field permission'
+              mapping:
+                view:
+                  type: boolean
+                  label: 'View permission'
+                edit:
+                  type: boolean
+                  label: 'Edit permission'

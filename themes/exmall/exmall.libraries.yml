@@ -1,0 +1,70 @@
+global:
+  css:
+    theme:
+      node_modules/font-awesome/css/font-awesome.css: {}
+      assets/css/global.css: {}
+  js:
+    assets/js/global.js: {}
+  dependencies:
+    - exmall/base
+
+base:
+  css: ## theme: Base theme, not include js
+    theme:
+      assets/css/base.css: {}
+      assets/css/style.css: {}
+      assets/css/iconfont.css: {}
+      assets/css/theme/suggest.css: {} ## Base theme
+  js:
+    assets/js/plugins/common.js: {}
+    assets/js/plugins/sc_common.js: {}
+    assets/js/plugins/jquery.json.js: {}
+    assets/js/plugins/transport_jquery.js: {}
+    assets/js/plugins/suggest.js: {}
+#    assets/js/plugins/scroll_city.js: {}
+    assets/js/plugins/utils.js: {}
+    assets/js/plugins/warehouse.js: {}
+    assets/js/plugins/warehouse_area.js: {}
+    assets/js/plugins/jquery.SuperSlide.2.1.1.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+
+page-header:
+  js:
+    assets/js/page-header.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+
+product-detail:
+  css:
+    theme:
+      assets/css/theme/goods_fitting.css: {} ## Base theme
+      assets/js/plugins/calendar/calendar.css: {}
+      assets/js/plugins/serfect-scrollbar/perfect-scrollbar.min.css: {}
+  js:
+    assets/js/plugins/calendar/calendar.js: {}
+    assets/js/plugins/serfect-scrollbar/perfect-scrollbar.min.js: {}
+    assets/js/plugins/region.js: {}
+    assets/js/plugins/goodsFittings.js: {}
+    assets/js/theme/product.js: {}
+  dependencies:
+    - exmall/base
+
+base_extra:
+  css:
+    theme:
+      assets/js/plugins/jquery.purebox/jquery.purebox.css: {}
+      assets/css/quickLinks.css: {}
+  js:
+    assets/js/plugins/jquery.yomi.js: {}
+    assets/js/plugins/compare.js: {}
+    assets/js/plugins/cart_common.js: {}
+    assets/js/plugins/dsc_common.js: {}
+    assets/js/plugins/magiczoomplus.js: {}
+    assets/js/plugins/cart_quick_links.js: {}
+    assets/js/plugins/jquery.purebox/jquery.purebox.js: {}
+  dependencies:
+    - exmall/base

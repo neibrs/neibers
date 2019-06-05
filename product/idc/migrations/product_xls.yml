@@ -1,0 +1,68 @@
+id: product_xls
+label: Product(xls)
+migration_tags: { }
+source:
+  plugin: xls
+  header_row: 1
+  path: profiles/neibrs/modules/product/idc/tests/data/product.xlsx
+  sheet_name: Sheet1
+  constants:
+    variation_type: default
+#    default_store: 1
+  keys:
+    - SKU
+  columns:
+    0:
+      编号: 编号
+    1:
+      产品名称: 产品名称
+    2:
+      SKU: SKU
+    3:
+      机房: 机房
+    4:
+      CPU: CPU
+    5:
+      硬盘: 硬盘
+    6:
+      内存: 内存
+    7:
+      IP数: IP数
+    8:
+      带宽: 带宽
+    9:
+      流量: 流量
+    10:
+      备注: 备注
+    11:
+      市场价: 市场价
+    12:
+      价格: 价格
+    13:
+      类型: 类型
+process:
+  type: constants/variation_type
+  sku: SKU
+  product_id:
+    plugin: entity_generate
+    source: 产品名称
+    entity_type: commerce_product
+    bundle_key: type
+    bundle: default
+    value_key: title
+    ignore_case: true
+#TODO ADD default store id for product.
+#    values:
+#      stores: constants/default_store
+  currency_id:
+    plugin: static_map
+    source: 币种
+    map:
+      美金: USD
+      人民币: CNY
+  price/number: 价格
+  price/currency_code: '@currency_id'
+
+destination:
+  plugin: entity:commerce_product_variation
+  translations: true

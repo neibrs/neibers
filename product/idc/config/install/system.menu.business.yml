@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - idc
+id: business
+label: 'Business'
+description: 'Menu for business.'
+locked: true

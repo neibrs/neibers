@@ -1,0 +1,39 @@
+# Cabinet routing definition
+cabinet.settings_tab:
+  route_name: cabinet.settings
+  title: 'Settings'
+  base_route: cabinet.settings
+
+entity.cabinet.canonical:
+  route_name: entity.cabinet.canonical
+  base_route: entity.cabinet.canonical
+  title: 'View'
+
+entity.cabinet.edit_form:
+  route_name: entity.cabinet.edit_form
+  base_route: entity.cabinet.canonical
+  title: 'Edit'
+
+entity.cabinet.delete_form:
+  route_name:  entity.cabinet.delete_form
+  base_route:  entity.cabinet.canonical
+  title: Delete
+  weight: 10
+
+# Seat routing definition
+
+entity.seat.canonical:
+  route_name: entity.seat.canonical
+  base_route: entity.seat.canonical
+  title: 'View'
+
+entity.seat.edit_form:
+  route_name: entity.seat.edit_form
+  base_route: entity.seat.canonical
+  title: 'Edit'
+
+entity.seat.delete_form:
+  route_name:  entity.seat.delete_form
+  base_route:  entity.seat.canonical
+  title: Delete
+  weight: 10

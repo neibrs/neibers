@@ -1,0 +1,15 @@
+entity.cabinet.add_form:
+  route_name: entity.cabinet.add_form
+  title: 'Add'
+  appears_on:
+    - entity.cabinet.collection
+entity.seat.add_form:
+  route_name: entity.seat.add_page
+  title: 'Add'
+  appears_on:
+    - entity.seat.collection
+entity.seat_type.add_form:
+  route_name: entity.seat_type.add_form
+  title: 'Add type'
+  appears_on:
+    - entity.seat_type.collection

@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - mall
+third_party_settings:
+  menu_plus:
+    navigate: true
+id: platform
+label: 'Platform'
+description: 'Menu for platform.'
+locked: true

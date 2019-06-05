@@ -1,0 +1,15 @@
+
+.quick-menu li:last-child {
+  display: none;
+}
+#views-form-commerce-cart-block-default-1 table tr td.views-field-remove-button div:after {
+  position: absolute;
+  top: 0;
+  left: 8px;
+  font-size: 19px;
+  line-height: 30px;
+  font-family: FontAwesome;
+  content: '\f014';
+  pointer-events: none;
+  transition: color .1s ease-in-out;
+}

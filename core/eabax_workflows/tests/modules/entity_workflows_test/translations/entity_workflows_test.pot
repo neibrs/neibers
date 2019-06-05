@@ -1,0 +1,50 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  profiles/neibrs/modules/core/eabax_workflows/tests/modules/entity_workflows_test/entity_workflows_test.info.yml: n/a
+#  profiles/neibrs/modules/core/eabax_workflows/tests/modules/entity_workflows_test/src/Plugin/WorkflowType/TestEntityWorkflow.php: n/a
+#  profiles/neibrs/modules/core/eabax_workflows/tests/modules/entity_workflows_test/config/schema/entity_workflows_test.schema.yml: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2019-03-21 13:29+0800\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: profiles/neibrs/modules/core/eabax_workflows/tests/modules/entity_workflows_test/entity_workflows_test.info.yml:0 profiles/neibrs/modules/core/eabax_workflows/tests/modules/entity_workflows_test/src/Plugin/WorkflowType/TestEntityWorkflow.php:6
+msgid "Entity Workflow Test"
+msgstr ""
+
+#: profiles/neibrs/modules/core/eabax_workflows/tests/modules/entity_workflows_test/entity_workflows_test.info.yml:0
+msgid "Provides a workflow type plugin for testing."
+msgstr ""
+
+#: profiles/neibrs/modules/core/eabax_workflows/tests/modules/entity_workflows_test/entity_workflows_test.info.yml:0
+msgid "Testing"
+msgstr ""
+
+#: profiles/neibrs/modules/core/eabax_workflows/tests/modules/entity_workflows_test/config/schema/entity_workflows_test.schema.yml:0
+msgid "Document states"
+msgstr ""
+
+#: profiles/neibrs/modules/core/eabax_workflows/tests/modules/entity_workflows_test/config/schema/entity_workflows_test.schema.yml:0
+msgid "States"
+msgstr ""
+
+#: profiles/neibrs/modules/core/eabax_workflows/tests/modules/entity_workflows_test/config/schema/entity_workflows_test.schema.yml:0
+msgid "Transitions"
+msgstr ""
+
+#: profiles/neibrs/modules/core/eabax_workflows/tests/modules/entity_workflows_test/config/schema/entity_workflows_test.schema.yml:0
+msgid "Entity Type ID"
+msgstr ""
+

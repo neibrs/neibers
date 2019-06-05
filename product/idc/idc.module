@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains idc.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function idc_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the idc module.
+    case 'help.page.idc':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('The industry of idc.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function idc_theme() {
+  return [
+    'idc' => [
+      'render element' => 'children',
+    ],
+  ];
+}

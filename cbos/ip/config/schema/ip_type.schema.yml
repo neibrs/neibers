@@ -1,0 +1,23 @@
+ip.type.*:
+  type: config_entity
+  label: 'IP type config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string
+
+ip.type.*.third_party.ip_state:
+  type: mapping
+  label: 'Workflow status settings'
+  mapping:
+    workflow:
+      type: string
+      label: 'Workflow'
+    initial_status:
+      type: string
+      label: 'Initial status'

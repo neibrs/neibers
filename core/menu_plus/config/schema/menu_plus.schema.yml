@@ -1,0 +1,10 @@
+system.menu.*.third_party.menu_plus:
+  type: menu_plus.third_party_settings
+
+menu_plus.third_party_settings:
+  type: mapping
+  label: 'Menu plus settings'
+  mapping:
+    navigate:
+      type: boolean
+      label: 'Navigate'

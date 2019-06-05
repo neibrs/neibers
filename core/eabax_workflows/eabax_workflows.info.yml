@@ -1,0 +1,13 @@
+name: 'Eabax workflows'
+type: module
+description: 'Eabax workflows'
+core: 8.x
+interface translation project: eabax_workflows
+interface translation server pattern: profiles/neibrs/modules/core/%project/translations/%project.%language.po
+package: 'Neibrs core'
+dependencies:
+  - charts_c3
+  - rest
+  - serialization
+  - views
+  - workflows

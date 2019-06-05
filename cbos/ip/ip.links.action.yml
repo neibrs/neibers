@@ -1,0 +1,25 @@
+entity.ip.add_form:
+  route_name: entity.ip.add_page
+  title: 'Add'
+  options: # TODO need to add this destination to action deriver.
+    query:
+      destination: '/ip'
+  appears_on:
+    - entity.ip.collection
+entity.ip_type.add_form:
+  route_name: entity.ip_type.add_form
+  title: 'Add'
+  appears_on:
+    - entity.ip_type.collection
+
+# Manual add
+ip.import:
+  route_name: import.entity_import
+  title: 'Import'
+  route_parameters:
+    entity_type_id: ip
+  options:
+    query:
+      destination: '/ip'
+  appears_on:
+    - entity.ip.collection

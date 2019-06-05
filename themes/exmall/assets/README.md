@@ -1,0 +1,1 @@
+It contains all css style and js , fonts, images

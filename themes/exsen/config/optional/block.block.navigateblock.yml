@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - mall
+  theme:
+    - exsen
+id: navigateblock
+theme: exsen
+region: header
+weight: 2
+provider: null
+plugin: navigate_block
+settings:
+  id: navigate_block
+  label: 'Navigate block'
+  provider: mall
+  label_display: '0'
+visibility: {  }

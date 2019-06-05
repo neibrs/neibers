@@ -1,0 +1,7 @@
+action.configuration.excel_migrate_import:
+  type: mapping
+  label: 'Import selected excel migrate'
+  mapping:
+    update:
+      type: boolean
+      label: 'Update'

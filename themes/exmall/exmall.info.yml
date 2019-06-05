@@ -1,0 +1,26 @@
+name: Exmall
+type: theme
+package: Neibrs
+core: 8.x
+libraries:
+  - exmall/global
+base theme: false
+interface translation project: exmall
+interface translation server pattern: modules/neibrs/themes/%project/translations/%project.%language.po
+regions:
+  advertise: 'Top Advertisement'
+  top: Top
+  header: Header
+  main: Main
+  content: Content
+  footer: Footer
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+
+#libraries-override:
+#  commerce_cart/cart_block:
+#    css:
+#      layout:
+#        css/commerce_cart.layout.css: false
+#      theme:
+#        css/commerce_cart.theme.css: false

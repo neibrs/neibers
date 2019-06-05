@@ -1,0 +1,89 @@
+idc.ip:
+  title: IP
+  route_name: entity.ip.collection
+  menu_name: business
+  weight: 10
+
+idc.ip.collection:
+  title: IP
+  route_name: entity.ip.collection
+  parent: idc.ip
+  weight: 10
+
+idc.ip_type.configuration:
+  title: 'Configuration'
+  route_name: entity.ip_type.collection
+  parent: idc.ip
+  weight: 20
+
+idc.ip.configuration.type:
+  title: 'Type'
+  route_name: entity.ip_type.collection
+  parent: idc.ip.configuration
+  weight: 10
+
+idc.server:
+  title: Server
+  route_name: entity.server.collection
+  menu_name: business
+  weight: 20
+
+idc.server.collection:
+  title: Server
+  route_name: entity.server.collection
+  parent: idc.server
+  weight: 10
+
+idc.server_type.configuration:
+  title: 'Configuration'
+  route_name: entity.server_type.collection
+  parent: idc.server
+  weight: 20
+
+idc.server_type.configuration.type:
+  title: 'Type'
+  route_name: entity.server_type.collection
+  parent: idc.server.configuration
+  weight: 10
+
+idc.room:
+  title: Room
+  route_name: entity.room.collection
+  menu_name: business
+  weight: 30
+
+idc.room.collection:
+  title: Room
+  route_name: entity.room.collection
+  parent: idc.room
+  weight: 31
+
+idc.cabinet.collection:
+  title: Cabinet
+  route_name: entity.cabinet.collection
+  parent: idc.room
+  weight: 40
+
+idc.seat.collection:
+  title: Seat
+  route_name: entity.seat.collection
+  parent: idc.room
+  weight: 45
+
+idc.room_type.configuration:
+  title: 'Configuration'
+  route_name: entity.room_type.collection
+  parent: idc.room
+  weight: 50
+
+idc.room_type.configuration.type:
+  title: 'Room type'
+  route_name: entity.room_type.collection
+  parent: idc.room_type.configuration
+  weight: 10
+
+idc.seat_type.configuration.type:
+  title: 'Seat type'
+  route_name: entity.seat_type.collection
+  parent: idc.room_type.configuration
+  weight: 30

@@ -1,0 +1,96 @@
+<?php
+
+/**
+ * @file
+ * Contains role_menu_plus.module.
+ */
+
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Field\BaseFieldDefinition;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\system\MenuInterface;
+
+/**
+ * Implements hook_help().
+ */
+function menu_plus_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the menu_plus module.
+    case 'help.page.menu_plus':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('The role menu plus for opened navigation.') . '</p>';
+      return $output;
+    case 'entity.menu.add_form':
+    case 'entity.menu.edit_form':
+      $output = '';
+      $output .= '<p>' . t('test help for menu plus ---- todo') . '</p>';
+      return $output;
+    default:
+  }
+}
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter() for menu_add_form.
+ */
+function menu_plus_form_menu_add_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  menu_plus_form_menu_edit_form_alter($form, $form_state, $form_id);
+}
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter() for menu_edit_form.
+ */
+function menu_plus_form_menu_edit_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  /** @var \Drupal\system\MenuInterface $menu */
+  $menu = $form_state->getFormObject()->getEntity();
+
+  $form['langcode']['#weight'] = 2;
+  $form['navigate'] = [
+    '#type' => 'checkbox',
+    '#title' => t('Navigate admin'),
+    '#weight' => 3,
+    '#default_value' => $menu->getThirdPartySetting('menu_plus', 'navigate', NULL),
+  ];
+
+  $form['links']['#weight'] = 5;
+  $form['#entity_builders'][] = 'menu_plus_form_menu_edit_form_entity_builder';
+}
+
+/**
+ * Entity builder for menu_plus on menu edit form.
+ *
+ * @see \menu_plus_form_menu_edit_form_alter()
+ */
+function menu_plus_form_menu_edit_form_entity_builder($entity_type_id, MenuInterface $menu, &$form, FormStateInterface $form_state) {
+  $navigate = $form_state->getValue('navigate');
+  $menu->setThirdPartySetting('menu_plus', 'navigate', $navigate);
+}
+
+/**
+ * Implements hook_entity_base_field_info() for menu link content.
+ */
+function menu_plus_entity_base_field_info(EntityTypeInterface $entity_type) {
+  if ($entity_type->id() == 'menu_link_content') {
+    $fields = [];
+    $fields['menu_icon'] = BaseFieldDefinition::create('string')
+      ->setLabel(t('Icon'))
+      ->setDescription(t('A customize icon for menu.'))
+      ->setSetting('max_length', 32)
+      ->setTranslatable(TRUE)
+      ->setDefaultValue('')
+      ->setDisplayOptions('view', [
+        'label' => 'hidden',
+        'type' => 'string',
+        'weight' => -4,
+      ])
+      ->setDisplayOptions('form', [
+        'type' => 'string_textfield',
+        'weight' => -4,
+      ])
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE);
+
+    return $fields;
+  }
+}

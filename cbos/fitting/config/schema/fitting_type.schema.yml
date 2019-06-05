@@ -1,0 +1,23 @@
+fitting.type.*:
+  type: config_entity
+  label: 'Fitting type config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string
+
+fitting.type.*.third_party.fitting_state:
+  type: mapping
+  label: 'Workflow status settings'
+  mapping:
+    workflow:
+      type: string
+      label: 'Workflow'
+    initial_status:
+      type: string
+      label: 'Initial status'

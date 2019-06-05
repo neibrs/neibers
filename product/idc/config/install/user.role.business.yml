@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - idc
+  module:
+    - role_menu
+third_party_settings:
+  role_menu:
+    menu: business
+id: business
+label: Business
+weight: 113
+is_admin: true
+permissions: {  }

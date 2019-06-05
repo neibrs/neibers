@@ -1,0 +1,23 @@
+mall.commerce:
+  title: 'Commerce products'
+  route_name: entity.commerce_product.collection
+  menu_name: business
+  weight: 200
+
+mall.commerce.product:
+  title: 'Products collection'
+  route_name: entity.commerce_product.collection
+  parent: mall.commerce
+  weight: 10
+
+mall.commerce.product_type:
+  title: 'Product type'
+  route_name: entity.commerce_product_type.collection
+  parent: mall.commerce
+  weight: 20
+
+mall.commerce.product_attribute:
+  title: 'Product attributes'
+  route_name: entity.commerce_product_attribute.collection
+  parent: mall.commerce
+  weight: 30

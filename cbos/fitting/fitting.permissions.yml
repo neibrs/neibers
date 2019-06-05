@@ -1,0 +1,19 @@
+add fitting:
+  title: 'Create new Fitting'
+
+administer fitting:
+  title: 'Administer Fitting'
+  description: 'Allow to access the administration form to configure Fitting.'
+  restrict access: true
+
+delete fitting:
+  title: 'Delete Fitting'
+
+edit fitting:
+  title: 'Edit Fitting'
+
+view published fitting:
+  title: 'View published Fitting'
+
+view unpublished fitting:
+  title: 'View unpublished Fitting'

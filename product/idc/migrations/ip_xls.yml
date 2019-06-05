@@ -1,0 +1,79 @@
+id: ip_xls
+label: IP(xls)
+migration_tags: { }
+source:
+  plugin: xls
+  header_row: 1
+  path: profiles/neibrs/modules/product/idc/tests/data/ip.xlsx
+  sheet_name: Sheet1
+  keys:
+    - 名称
+  columns:
+    0:
+      名称: 名称
+    1:
+      类型: 类型
+    2:
+      服务器型号: 服务器型号
+    3:
+      机柜: 机柜
+    4:
+      机房: 机房
+    5:
+      客户: 客户
+    6:
+      发布状态: 发布状态
+    7:
+      更新时间: 更新时间
+    8:
+      编号: 编号
+process:
+  name: 名称
+  type:
+    plugin: static_map
+    source: 类型
+    map:
+      管理IP: inet
+      业务IP: onet
+      交换机IP: snet
+# TODO need to fix import field data.
+  ip_room:
+    plugin: entity_generate
+    source: 机房
+    entity_type: room
+    bundle_key: type
+    bundle: default
+    value_key: name
+    ignore_case: true
+
+  ip_cabinet:
+    plugin: entity_generate
+    source: 机柜
+    entity_type: cabinet
+    value_key: name
+    ignore_case: true
+    values:
+      room: '@ip_room'
+  seat:
+    plugin: entity_generate
+    source: 机位
+    entity_type: seat
+    value_key: name
+    bundle_key: type
+    bundle: default
+    ignore_case: true
+    values:
+      cabinet: '@ip_cabinet'
+  server:
+    plugin: entity_generate
+    source: 服务器型号
+    entity_type: server
+    bundle_key: type
+    bundle: default
+    value_key: name
+    ignore_case: true
+    values:
+      seat: '@seat'
+
+destination:
+  plugin: entity:ip

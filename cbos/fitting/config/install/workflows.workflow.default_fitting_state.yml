@@ -1,0 +1,34 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - fitting
+id: default_fitting_state
+label: 'Default IP workflow state'
+type: fitting_state
+type_settings:
+  states:
+    draft:
+      label: Draft
+      weight: 0
+    free:
+      label: Free
+      weight: 1
+    used:
+      label: Used
+      weight: 2
+  transitions:
+    approve:
+      label: Approve
+      from:
+        - draft
+      to: free
+      weight: 1
+    occupied:
+      label: Occupied
+      from:
+        - draft
+        - free
+      to: used
+      weight: 1

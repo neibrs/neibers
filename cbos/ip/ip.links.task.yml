@@ -1,0 +1,22 @@
+# IP routing definition
+
+entity.ip.canonical:
+  route_name: entity.ip.canonical
+  base_route: entity.ip.canonical
+  title: 'View'
+
+entity.ip.edit_form:
+  route_name: entity.ip.edit_form
+  base_route: entity.ip.canonical
+  title: 'Edit'
+
+entity.ip.version_history:
+  route_name: entity.ip.version_history
+  base_route: entity.ip.canonical
+  title: 'Revisions'
+
+entity.ip.delete_form:
+  route_name:  entity.ip.delete_form
+  base_route:  entity.ip.canonical
+  title: Delete
+  weight: 10

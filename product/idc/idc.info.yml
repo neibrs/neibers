@@ -1,0 +1,14 @@
+name: 'IDC'
+type: module
+description: 'The industry of idc.'
+core: 8.x
+interface translation project: idc
+interface translation server pattern: profiles/neibrs/modules/product/%project/translations/%project.%language.po
+package: 'Neibrs'
+dependencies:
+  - cabinet
+  - import
+  - ip
+  - migrate_source_xls
+  - role_menu
+  - server

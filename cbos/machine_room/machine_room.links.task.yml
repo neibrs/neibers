@@ -1,0 +1,17 @@
+# Machine Room routing definition
+
+entity.room.canonical:
+  route_name: entity.room.canonical
+  base_route: entity.room.canonical
+  title: 'View'
+
+entity.room.edit_form:
+  route_name: entity.room.edit_form
+  base_route: entity.room.canonical
+  title: 'Edit'
+
+entity.room.delete_form:
+  route_name:  entity.room.delete_form
+  base_route:  entity.room.canonical
+  title: Delete
+  weight: 10

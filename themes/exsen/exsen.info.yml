@@ -1,0 +1,17 @@
+name: Exsen
+type: theme
+description: 'A base commerce admin theme for extension.'
+package: Neibrs
+core: 8.x
+interface translation project: exsen
+interface translation server pattern: modules/neibrs/themes/%project/translations/%project.%language.po
+libraries:
+  - exsen/global
+base theme: seven
+regions:
+  header: Header
+  content_top: 'Content top'
+  content: Content
+  sidebar_first: 'First sidebar'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
