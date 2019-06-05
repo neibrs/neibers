@@ -28,16 +28,34 @@ idc.ip.used:
   parent: idc.ip
   weight: 15
 
+idc.ip.inet:
+  title: 'Inet IP'
+  route_name: entity.ip.collection
+  options:
+    query:
+      type: inet
+  parent: idc.ip
+  weight: 17
+
+idc.ip.onet:
+  title: 'Onet IP'
+  route_name: entity.ip.collection
+  options:
+    query:
+      type: onet
+  parent: idc.ip
+  weight: 19
+
 idc.ip_type.configuration:
   title: 'Configuration'
   route_name: entity.ip_type.collection
   parent: idc.ip
-  weight: 20
+  weight: 50
 
-idc.ip.configuration.type:
+idc.ip_type.configuration.type:
   title: 'Type'
   route_name: entity.ip_type.collection
-  parent: idc.ip.configuration
+  parent: idc.ip_type.configuration
   weight: 10
 
 idc.server:
