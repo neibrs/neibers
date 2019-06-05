@@ -33,183 +33,87 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: modules/neibers/cbos/server/server.module:18
-msgid "About"
-msgstr ""
-
-#: modules/neibers/cbos/server/server.info.yml:0 modules/neibers/cbos/server/src/Entity/Server.php:12;12
-msgid "Server"
-msgstr ""
-
-#: modules/neibers/cbos/server/server.info.yml:0
-msgid "The server in the cabinet seat."
-msgstr ""
-
-#: modules/neibers/cbos/server/server.info.yml:0
-msgid "Neibrs"
-msgstr ""
-
-#: modules/neibers/cbos/server/server.links.action.yml:0
-msgid "Add Server"
-msgstr ""
-
-#: modules/neibers/cbos/server/server.links.action.yml:0
-msgid "Add Server type"
-msgstr ""
-
-#: modules/neibers/cbos/server/server.links.menu.yml:0
-msgid "Server list"
-msgstr ""
-
-#: modules/neibers/cbos/server/server.links.menu.yml:0 modules/neibers/cbos/server/src/ServerTypeListBuilder.php:17 modules/neibers/cbos/server/src/Entity/Server.php:12 modules/neibers/cbos/server/src/Entity/ServerType.php:7;7
-msgid "Server type"
-msgstr ""
-
-#: modules/neibers/cbos/server/server.links.menu.yml:0
-msgid "List Server"
-msgstr ""
-
-#: modules/neibers/cbos/server/server.links.menu.yml:0
-msgid "List Server type (bundles)"
-msgstr ""
-
-#: modules/neibers/cbos/server/server.links.task.yml:0
-msgid "View"
-msgstr ""
-
-#: modules/neibers/cbos/server/server.links.task.yml:0
-msgid "Edit"
-msgstr ""
-
-#: modules/neibers/cbos/server/server.links.task.yml:0 modules/neibers/cbos/server/src/Form/ServerTypeDeleteForm.php:32
-msgid "Delete"
-msgstr ""
-
 #: modules/neibers/cbos/server/server.permissions.yml:0
 msgid "Create new Server"
-msgstr ""
+msgstr "创建服务器"
 
 #: modules/neibers/cbos/server/server.permissions.yml:0
 msgid "Administer Server"
-msgstr ""
+msgstr "管理服务器"
 
 #: modules/neibers/cbos/server/server.permissions.yml:0
 msgid "Allow to access the administration form to configure Server."
-msgstr ""
+msgstr "允许访问服务器的管理配置表单."
 
 #: modules/neibers/cbos/server/server.permissions.yml:0
 msgid "Delete Server"
-msgstr ""
+msgstr "删除服务器"
 
 #: modules/neibers/cbos/server/server.permissions.yml:0
 msgid "Edit Server"
-msgstr ""
+msgstr "编辑服务器"
 
 #: modules/neibers/cbos/server/server.permissions.yml:0
 msgid "View published Server"
-msgstr ""
+msgstr "查看已发布的服务器"
 
 #: modules/neibers/cbos/server/server.permissions.yml:0
 msgid "View unpublished Server"
-msgstr ""
+msgstr "查看未发布的服务器"
 
 #: modules/neibers/cbos/server/config/schema/server_type.schema.yml:0
 msgid "Server type config"
-msgstr ""
-
-#: modules/neibers/cbos/server/config/schema/server_type.schema.yml:0
-msgid "ID"
-msgstr ""
+msgstr "服务器类型配置"
 
 #: modules/neibers/cbos/server/src/ServerListBuilder.php:20
 msgid "Server ID"
-msgstr ""
-
-#: modules/neibers/cbos/server/src/ServerListBuilder.php:21 modules/neibers/cbos/server/src/Entity/Server.php:186
-msgid "Name"
-msgstr ""
-
-#: modules/neibers/cbos/server/src/ServerTypeListBuilder.php:18
-msgid "Machine name"
-msgstr ""
-
-#: modules/neibers/cbos/server/src/Entity/Server.php:161
-msgid "Authored by"
-msgstr ""
+msgstr "服务器序号"
 
 #: modules/neibers/cbos/server/src/Entity/Server.php:162
 msgid "The user ID of author of the Server entity."
-msgstr ""
+msgstr "服务器的用户ID."
 
 #: modules/neibers/cbos/server/src/Entity/Server.php:187
 msgid "The name of the Server entity."
-msgstr ""
+msgstr "服务器的名称."
 
 #: modules/neibers/cbos/server/src/Entity/Server.php:207
 msgid "Seat"
-msgstr ""
+msgstr "机位"
 
 #: modules/neibers/cbos/server/src/Entity/Server.php:226
 msgid "Publishing status"
-msgstr ""
+msgstr "发布状态"
 
 #: modules/neibers/cbos/server/src/Entity/Server.php:227
 msgid "A boolean indicating whether the Server is published."
-msgstr ""
-
-#: modules/neibers/cbos/server/src/Entity/Server.php:235
-msgid "Created"
-msgstr ""
-
-#: modules/neibers/cbos/server/src/Entity/Server.php:236
-msgid "The time that the entity was created."
-msgstr ""
-
-#: modules/neibers/cbos/server/src/Entity/Server.php:239
-msgid "Changed"
-msgstr ""
-
-#: modules/neibers/cbos/server/src/Entity/Server.php:240
-msgid "The time that the entity was last edited."
-msgstr ""
+msgstr "指示服务器是否已发布."
 
 #: modules/neibers/cbos/server/src/Form/ServerForm.php:37
 msgid "Created the %label Server."
-msgstr ""
+msgstr "已创建服务器%label."
 
 #: modules/neibers/cbos/server/src/Form/ServerForm.php:43
 msgid "Saved the %label Server."
-msgstr ""
-
-#: modules/neibers/cbos/server/src/Form/ServerTypeDeleteForm.php:18
-msgid "Are you sure you want to delete %name?"
-msgstr ""
-
-#: modules/neibers/cbos/server/src/Form/ServerTypeDeleteForm.php:42
-msgid "content @type: deleted @label."
-msgstr ""
-
-#: modules/neibers/cbos/server/src/Form/ServerTypeForm.php:22
-msgid "Label"
-msgstr ""
+msgstr "已保存服务器%label."
 
 #: modules/neibers/cbos/server/src/Form/ServerTypeForm.php:25
 msgid "Label for the Server type."
-msgstr ""
+msgstr "服务器类型名称."
 
 #: modules/neibers/cbos/server/src/Form/ServerTypeForm.php:52
 msgid "Created the %label Server type."
-msgstr ""
+msgstr "已创建服务器类型%label."
 
 #: modules/neibers/cbos/server/src/Form/ServerTypeForm.php:58
 msgid "Saved the %label Server type."
-msgstr ""
+msgstr "已保存服务器类型%label."
 
 #: modules/neibers/cbos/server/config/install/server.type.cabinet.yml:0
 msgid "Cabinet"
-msgstr ""
+msgstr "机柜"
 
 #: modules/neibers/cbos/server/config/install/server.type.server.yml:0
 msgid "Server(Normal server)"
-msgstr ""
+msgstr "服务器"
 

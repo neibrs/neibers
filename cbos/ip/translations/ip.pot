@@ -31,7 +31,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-06-05 04:29+0000\n"
+"POT-Creation-Date: 2019-06-05 15:06+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -376,11 +376,11 @@ msgstr ""
 msgid "Business IP"
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Form/IpWithSpecificOrderForm.php:132
+#: modules/neibers/cbos/ip/src/Form/IpWithSpecificOrderForm.php:131
 msgid "Save"
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Form/IpWithSpecificOrderForm.php:173
+#: modules/neibers/cbos/ip/src/Form/IpWithSpecificOrderForm.php:172
 msgid "Save success."
 msgstr ""
 

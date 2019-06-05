@@ -12,6 +12,7 @@
 #  modules/neibers/cbos/ip/src/Form/IPRevisionDeleteForm.php: n/a
 #  modules/neibers/cbos/ip/src/Form/IPTypeDeleteForm.php: n/a
 #  modules/neibers/cbos/ip/ip.permissions.yml: n/a
+#  modules/neibers/cbos/ip/src/Form/IpWithSpecificOrderForm.php: n/a
 #  modules/neibers/cbos/ip/config/schema/ip_type.schema.yml: n/a
 #  modules/neibers/cbos/ip/src/IPListBuilder.php: n/a
 #  modules/neibers/cbos/ip/src/IPTypeListBuilder.php: n/a
@@ -20,15 +21,17 @@
 #  modules/neibers/cbos/ip/src/Form/IPForm.php: n/a
 #  modules/neibers/cbos/ip/src/Form/IPRevisionRevertTranslationForm.php: n/a
 #  modules/neibers/cbos/ip/src/Form/IPTypeForm.php: n/a
+#  modules/neibers/cbos/ip/src/Plugin/WorkflowType/IpState.php: n/a
 #  modules/neibers/cbos/ip/config/install/ip.type.inet.yml: n/a
 #  modules/neibers/cbos/ip/config/install/ip.type.onet.yml: n/a
 #  modules/neibers/cbos/ip/config/install/ip.type.snet.yml: n/a
+#  modules/neibers/cbos/ip/config/install/workflows.workflow.default_ip_state.yml: n/a
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-05-16 15:30+0000\n"
+"POT-Creation-Date: 2019-06-05 15:06+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -37,12 +40,24 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: modules/neibers/cbos/ip/ip.module:18
+#: modules/neibers/cbos/ip/ip.module:21
 msgid "About"
 msgstr ""
 
-#: modules/neibers/cbos/ip/ip.module:19
+#: modules/neibers/cbos/ip/ip.module:22
 msgid "The server ip for idc industrial."
+msgstr ""
+
+#: modules/neibers/cbos/ip/ip.module:27
+msgid "The inet ip must bind to specify server on seat of cabinet."
+msgstr ""
+
+#: modules/neibers/cbos/ip/ip.module:74
+msgid "IPs"
+msgstr ""
+
+#: modules/neibers/cbos/ip/ip.module:75
+msgid "The ips belongs to current order."
 msgstr ""
 
 #: modules/neibers/cbos/ip/ip.info.yml:0 modules/neibers/cbos/ip/src/Entity/IP.php:13;13
@@ -55,59 +70,43 @@ msgstr ""
 
 #: modules/neibers/cbos/ip/ip.links.action.yml:0;0
 msgid "Add"
-msgstr ""
-
-#: modules/neibers/cbos/ip/ip.links.task.yml:0
-msgid "View"
-msgstr ""
-
-#: modules/neibers/cbos/ip/ip.links.task.yml:0
-msgid "Edit"
-msgstr ""
-
-#: modules/neibers/cbos/ip/ip.links.task.yml:0
-msgid "Revisions"
-msgstr ""
-
-#: modules/neibers/cbos/ip/ip.links.task.yml:0 modules/neibers/cbos/ip/src/Controller/IPController.php:137 modules/neibers/cbos/ip/src/Form/IPRevisionDeleteForm.php:90 modules/neibers/cbos/ip/src/Form/IPTypeDeleteForm.php:32
-msgid "Delete"
-msgstr ""
+msgstr "添加"
 
 #: modules/neibers/cbos/ip/ip.permissions.yml:0
 msgid "Create new IP"
-msgstr ""
+msgstr " 创建IP"
 
 #: modules/neibers/cbos/ip/ip.permissions.yml:0
 msgid "Administer IP"
-msgstr ""
+msgstr "管理IP"
 
 #: modules/neibers/cbos/ip/ip.permissions.yml:0
 msgid "Allow to access the administration form to configure IP."
-msgstr ""
+msgstr "允许访问IP的配置管理表单."
 
 #: modules/neibers/cbos/ip/ip.permissions.yml:0
 msgid "Delete IP"
-msgstr ""
+msgstr "删除IP"
 
 #: modules/neibers/cbos/ip/ip.permissions.yml:0
 msgid "Edit IP"
-msgstr ""
+msgstr "编辑IP"
 
 #: modules/neibers/cbos/ip/ip.permissions.yml:0
 msgid "View published IP"
-msgstr ""
+msgstr "查看已发布IP"
 
 #: modules/neibers/cbos/ip/ip.permissions.yml:0
 msgid "View unpublished IP"
-msgstr ""
+msgstr "查看未发布的IP"
 
 #: modules/neibers/cbos/ip/ip.permissions.yml:0
 msgid "View all IP revisions"
-msgstr ""
+msgstr "查看所有IP的副本."
 
 #: modules/neibers/cbos/ip/ip.permissions.yml:0
 msgid "Revert all IP revisions"
-msgstr ""
+msgstr "恢复所有IP副本."
 
 #: modules/neibers/cbos/ip/ip.permissions.yml:0
 msgid "Role requires permission <em>view IP revisions</em> and <em>edit rights</em> for ip in question or <em>administer ip</em>."
@@ -127,6 +126,18 @@ msgstr ""
 
 #: modules/neibers/cbos/ip/config/schema/ip_type.schema.yml:0
 msgid "ID"
+msgstr ""
+
+#: modules/neibers/cbos/ip/config/schema/ip_type.schema.yml:0
+msgid "Workflow status settings"
+msgstr ""
+
+#: modules/neibers/cbos/ip/config/schema/ip_type.schema.yml:0
+msgid "Workflow"
+msgstr ""
+
+#: modules/neibers/cbos/ip/config/schema/ip_type.schema.yml:0
+msgid "Initial status"
 msgstr ""
 
 #: modules/neibers/cbos/ip/src/IPListBuilder.php:20
@@ -161,7 +172,7 @@ msgstr ""
 msgid "Revision"
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Controller/IPController.php:66
+#: modules/neibers/cbos/ip/src/Controller/IPController.php:66 modules/neibers/cbos/ip/src/Form/IpWithSpecificOrderForm.php:58
 msgid "Operations"
 msgstr ""
 
@@ -189,31 +200,51 @@ msgstr ""
 msgid "The name of the IP entity."
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Entity/IP.php:255
+#: modules/neibers/cbos/ip/src/Entity/IP.php:256 modules/neibers/cbos/ip/src/Form/IpWithSpecificOrderForm.php:53;108
+msgid "Server"
+msgstr ""
+
+#: modules/neibers/cbos/ip/src/Entity/IP.php:275
+msgid "Cabinet Seat"
+msgstr ""
+
+#: modules/neibers/cbos/ip/src/Entity/IP.php:294
+msgid "Order"
+msgstr ""
+
+#: modules/neibers/cbos/ip/src/Entity/IP.php:295
+msgid "The related order number."
+msgstr ""
+
+#: modules/neibers/cbos/ip/src/Entity/IP.php:316
 msgid "Publishing status"
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Entity/IP.php:256
+#: modules/neibers/cbos/ip/src/Entity/IP.php:317
 msgid "A boolean indicating whether the IP is published."
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Entity/IP.php:265
+#: modules/neibers/cbos/ip/src/Entity/IP.php:326
+msgid "State"
+msgstr ""
+
+#: modules/neibers/cbos/ip/src/Entity/IP.php:345
 msgid "Created"
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Entity/IP.php:266
+#: modules/neibers/cbos/ip/src/Entity/IP.php:346
 msgid "The time that the entity was created."
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Entity/IP.php:269
+#: modules/neibers/cbos/ip/src/Entity/IP.php:349
 msgid "Changed"
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Entity/IP.php:270
+#: modules/neibers/cbos/ip/src/Entity/IP.php:350
 msgid "The time that the entity was last edited."
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Entity/IP.php:273
+#: modules/neibers/cbos/ip/src/Entity/IP.php:353
 msgid "Revision translation affected"
 msgstr ""
 
@@ -293,6 +324,50 @@ msgstr ""
 msgid "Saved the %label IP type."
 msgstr ""
 
+#: modules/neibers/cbos/ip/src/Form/IpWithSpecificOrderForm.php:53
+msgid "Administer"
+msgstr ""
+
+#: modules/neibers/cbos/ip/src/Form/IpWithSpecificOrderForm.php:53
+msgid "Business"
+msgstr ""
+
+#: modules/neibers/cbos/ip/src/Form/IpWithSpecificOrderForm.php:53
+msgid "Fitting"
+msgstr ""
+
+#: modules/neibers/cbos/ip/src/Form/IpWithSpecificOrderForm.php:55
+msgid "IP tables"
+msgstr ""
+
+#: modules/neibers/cbos/ip/src/Form/IpWithSpecificOrderForm.php:57
+msgid "All the Ips"
+msgstr ""
+
+#: modules/neibers/cbos/ip/src/Form/IpWithSpecificOrderForm.php:94
+msgid "Allocate"
+msgstr ""
+
+#: modules/neibers/cbos/ip/src/Form/IpWithSpecificOrderForm.php:102
+msgid "Room"
+msgstr ""
+
+#: modules/neibers/cbos/ip/src/Form/IpWithSpecificOrderForm.:php122
+msgid "Business IP"
+msgstr ""
+
+#: modules/neibers/cbos/ip/src/Form/IpWithSpecificOrderForm.php:131
+msgid "Save"
+msgstr ""
+
+#: modules/neibers/cbos/ip/src/Form/IpWithSpecificOrderForm.php:172
+msgid "Save success."
+msgstr ""
+
+#: modules/neibers/cbos/ip/src/Plugin/WorkflowType/IpState.php:7
+msgid "IP state"
+msgstr ""
+
 #: modules/neibers/cbos/ip/config/install/ip.type.inet.yml:0
 msgid "Inet"
 msgstr "管理IP"
@@ -302,6 +377,10 @@ msgid "Onet"
 msgstr "业务IP"
 
 #: modules/neibers/cbos/ip/config/install/ip.type.snet.yml:0
-msgid "Snet"
-msgstr "交换机IP"
+msgid "Switch IP"
+msgstr ""
+
+#: modules/neibers/cbos/ip/config/install/workflows.workflow.default_ip_state.yml:0
+msgid "Default IP workflow state"
+msgstr ""
 

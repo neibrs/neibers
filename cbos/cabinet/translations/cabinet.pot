@@ -27,7 +27,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-06-05 04:29+0000\n"
+"POT-Creation-Date: 2019-06-05 15:06+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -61,23 +61,7 @@ msgid "Add"
 msgstr ""
 
 #: modules/neibers/cbos/cabinet/cabinet.links.action.yml:0
-msgid "Add type"
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/cabinet.links.menu.yml:0 modules/neibers/cbos/cabinet/src/Entity/Seat.php:12;12
-msgid "Seat"
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/cabinet.links.menu.yml:0 modules/neibers/cbos/cabinet/src/SeatTypeListBuilder.php:17 modules/neibers/cbos/cabinet/src/Entity/Seat.php:12 modules/neibers/cbos/cabinet/src/Entity/SeatType.php:7;7
-msgid "Seat type"
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/cabinet.links.menu.yml:0
-msgid "List Seat"
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/cabinet.links.menu.yml:0
-msgid "List Seat type (bundles)"
+msgid "Add"
 msgstr ""
 
 #: modules/neibers/cbos/cabinet/cabinet.links.task.yml:0

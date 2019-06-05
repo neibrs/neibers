@@ -16,7 +16,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-06-05 04:29+0000\n"
+"POT-Creation-Date: 2019-06-05 15:06+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -45,8 +45,28 @@ msgstr ""
 msgid "Import"
 msgstr ""
 
-#: modules/neibers/product/idc/idc.links.menu.yml:0;0 modules/neibers/product/idc/config/install/views.view.ip.yml:0;0
+#: modules/neibers/product/idc/idc.links.menu.yml:0 modules/neibers/product/idc/config/install/views.view.ip.yml:0;0
 msgid "IP"
+msgstr ""
+
+#: modules/neibers/product/idc/idc.links.menu.yml:0
+msgid "IP collection"
+msgstr ""
+
+#: modules/neibers/product/idc/idc.links.menu.yml:0
+msgid "Free IP"
+msgstr ""
+
+#: modules/neibers/product/idc/idc.links.menu.yml:0
+msgid "Used IP"
+msgstr ""
+
+#: modules/neibers/product/idc/idc.links.menu.yml:0
+msgid "Inet IP"
+msgstr ""
+
+#: modules/neibers/product/idc/idc.links.menu.yml:0
+msgid "Onet IP"
 msgstr ""
 
 #: modules/neibers/product/idc/idc.links.menu.yml:0;0;0
@@ -87,6 +107,10 @@ msgstr ""
 
 #: modules/neibers/product/idc/config/install/user.role.site_manager.yml:0
 msgid "Site manager"
+msgstr ""
+
+#: modules/neibers/product/idc/config/install/views.view.ip.yml:0 modules/neibers/product/idc/config/install/views.view.machine_room.yml:0
+msgid "Find and manage content."
 msgstr ""
 
 #: modules/neibers/product/idc/config/install/views.view.ip.yml:0 modules/neibers/product/idc/config/install/views.view.machine_room.yml:0
@@ -199,10 +223,6 @@ msgstr ""
 
 #: modules/neibers/product/idc/config/install/views.view.machine_room.yml:0;0
 msgid "Machine Room"
-msgstr ""
-
-#: modules/neibers/product/idc/config/install/views.view.machine_room.yml:0
-msgid "Find and manage content."
 msgstr ""
 
 #: modules/neibers/product/idc/config/install/views.view.machine_room.yml:0

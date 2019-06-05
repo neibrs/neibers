@@ -3,6 +3,7 @@
 # LANGUAGE translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
+#  modules/neibers/product/mall/mall.install: n/a
 #  modules/neibers/product/mall/mall.info.yml: n/a
 #  modules/neibers/product/mall/mall.links.menu.yml: n/a
 #  modules/neibers/product/mall/mall.routing.yml: n/a
@@ -13,7 +14,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-05-19 07:34+0000\n"
+"POT-Creation-Date: 2019-06-05 15:06+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -22,15 +23,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: modules/neibrs/product/commerce/mall/mall.info.yml:0
+#: modules/neibers/product/mall/mall.install:15
+msgid "Default Store Name"
+msgstr "默认商店名称"
+
+#: modules/neibers/product/mall/mall.info.yml:0
 msgid "Mall"
 msgstr "商城"
 
-#: modules/neibrs/product/commerce/mall/mall.info.yml:0
+#: modules/neibers/product/mall/mall.info.yml:0
 msgid "The commerce module with exsen theme for commerce purpose."
 msgstr "基于主题Exsen的商城配置模块。"
 
-#: modules/neibrs/product/commerce/mall/mall.info.yml:0
+#: modules/neibers/product/mall/mall.info.yml:0
 msgid "Neibrs"
 msgstr ""
 
@@ -46,7 +51,11 @@ msgstr "商品列表"
 msgid "Product type"
 msgstr "商品类型"
 
-#: modules/neibrs/product/commerce/mall/mall.routing.yml:0
+#: modules/neibers/product/mall/mall.links.menu.yml:0
+msgid "Product attributes"
+msgstr "产品属性"
+
+#: modules/neibers/product/mall/mall.routing.yml:0
 msgid "Platform"
 msgstr "平台"
 
@@ -54,7 +63,7 @@ msgstr "平台"
 msgid "Navigate block for exsen theme"
 msgstr "Exsen导航区块"
 
-#: modules/neibrs/product/commerce/mall/src/Plugin/Block/SidebarBlock.php:12
+#: modules/neibers/product/mall/src/Plugin/Block/SidebarBlock.php:12
 msgid "Sidebar block"
 msgstr "侧边栏"
 
