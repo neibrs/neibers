@@ -1,7 +1,0 @@
-{
-  "name": "exsen",
-  "dependencies": {
-    "bootstrap": "^4.3.1",
-    "font-awesome": "^4.7.0"
-  }
-}
