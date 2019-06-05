@@ -15,8 +15,9 @@ display:
   default:
     display_options:
       access:
-        type: none
-        options: {  }
+        type: perm
+        options:
+          perm: 'administer machine room'
       cache:
         type: tag
         options: {  }
