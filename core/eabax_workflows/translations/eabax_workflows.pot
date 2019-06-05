@@ -3,17 +3,17 @@
 # LANGUAGE translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
-#  profiles/neibrs/modules/core/eabax_workflows/eabax_workflows.info.yml: n/a
-#  profiles/neibrs/modules/core/eabax_workflows/eabax_workflows.routing.yml: n/a
-#  profiles/neibrs/modules/core/eabax_workflows/config/schema/eabax_workflows.schema.yml: n/a
-#  profiles/neibrs/modules/core/eabax_workflows/src/Plugin/EntityTransitionForm.php: n/a
-#  profiles/neibrs/modules/core/eabax_workflows/config/schema/eabax_workflows.views.schema.yml: n/a
-#  profiles/neibrs/modules/core/eabax_workflows/src/Controller/EabaxWorkflowsController.php: n/a
-#  profiles/neibrs/modules/core/eabax_workflows/src/Form/ConditionForm.php: n/a
-#  profiles/neibrs/modules/core/eabax_workflows/src/Plugin/EntityStateForm.php: n/a
-#  profiles/neibrs/modules/core/eabax_workflows/src/Plugin/Action/WorkflowStatusTransition.php: n/a
-#  profiles/neibrs/modules/core/eabax_workflows/src/Plugin/Action/Derivative/EntityStatusTransitionDeriver.php: n/a
-#  profiles/neibrs/modules/core/eabax_workflows/src/Plugin/Field/FieldType/EntityStatusFieldItem.php: n/a
+#  modules/neibers/core/eabax_workflows/eabax_workflows.info.yml: n/a
+#  modules/neibers/core/eabax_workflows/eabax_workflows.routing.yml: n/a
+#  modules/neibers/core/eabax_workflows/config/schema/eabax_workflows.schema.yml: n/a
+#  modules/neibers/core/eabax_workflows/src/Plugin/EntityTransitionForm.php: n/a
+#  modules/neibers/core/eabax_workflows/config/schema/eabax_workflows.views.schema.yml: n/a
+#  modules/neibers/core/eabax_workflows/src/Controller/EabaxWorkflowsController.php: n/a
+#  modules/neibers/core/eabax_workflows/src/Form/ConditionForm.php: n/a
+#  modules/neibers/core/eabax_workflows/src/Plugin/EntityStateForm.php: n/a
+#  modules/neibers/core/eabax_workflows/src/Plugin/Action/WorkflowStatusTransition.php: n/a
+#  modules/neibers/core/eabax_workflows/src/Plugin/Action/Derivative/EntityStatusTransitionDeriver.php: n/a
+#  modules/neibers/core/eabax_workflows/src/Plugin/Field/FieldType/EntityStatusFieldItem.php: n/a
 #
 #, fuzzy
 msgid ""
@@ -28,159 +28,159 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: profiles/neibrs/modules/core/eabax_workflows/eabax_workflows.info.yml:0;0
+#: modules/neibers/core/eabax_workflows/eabax_workflows.info.yml:0;0
 msgid "Eabax workflows"
 msgstr ""
 
-#: profiles/neibrs/modules/core/eabax_workflows/eabax_workflows.info.yml:0
+#: modules/neibers/core/eabax_workflows/eabax_workflows.info.yml:0
 msgid "Neibrs core"
 msgstr ""
 
-#: profiles/neibrs/modules/core/eabax_workflows/eabax_workflows.routing.yml:0
+#: modules/neibers/core/eabax_workflows/eabax_workflows.routing.yml:0
 msgid "Transition Condition"
 msgstr ""
 
-#: profiles/neibrs/modules/core/eabax_workflows/config/schema/eabax_workflows.schema.yml:0
+#: modules/neibers/core/eabax_workflows/config/schema/eabax_workflows.schema.yml:0
 msgid "Fields access"
 msgstr ""
 
-#: profiles/neibrs/modules/core/eabax_workflows/config/schema/eabax_workflows.schema.yml:0;0 profiles/neibrs/modules/core/eabax_workflows/src/Plugin/EntityTransitionForm.php:82;87;131
+#: modules/neibers/core/eabax_workflows/config/schema/eabax_workflows.schema.yml:0;0 modules/neibers/core/eabax_workflows/src/Plugin/EntityTransitionForm.php:82;87;131
 msgid "Conditions"
 msgstr ""
 
-#: profiles/neibrs/modules/core/eabax_workflows/config/schema/eabax_workflows.schema.yml:0 profiles/neibrs/modules/core/eabax_workflows/config/schema/eabax_workflows.views.schema.yml:0
+#: modules/neibers/core/eabax_workflows/config/schema/eabax_workflows.schema.yml:0 modules/neibers/core/eabax_workflows/config/schema/eabax_workflows.views.schema.yml:0
 msgid "Entity status"
 msgstr ""
 
-#: profiles/neibrs/modules/core/eabax_workflows/config/schema/eabax_workflows.schema.yml:0
+#: modules/neibers/core/eabax_workflows/config/schema/eabax_workflows.schema.yml:0
 msgid "Workflow value"
 msgstr ""
 
-#: profiles/neibrs/modules/core/eabax_workflows/config/schema/eabax_workflows.schema.yml:0
+#: modules/neibers/core/eabax_workflows/config/schema/eabax_workflows.schema.yml:0
 msgid "Workflow type value"
 msgstr ""
 
-#: profiles/neibrs/modules/core/eabax_workflows/config/schema/eabax_workflows.schema.yml:0
+#: modules/neibers/core/eabax_workflows/config/schema/eabax_workflows.schema.yml:0
 msgid "Plugin ID"
 msgstr ""
 
-#: profiles/neibrs/modules/core/eabax_workflows/config/schema/eabax_workflows.schema.yml:0
+#: modules/neibers/core/eabax_workflows/config/schema/eabax_workflows.schema.yml:0
 msgid "UUID"
 msgstr ""
 
-#: profiles/neibrs/modules/core/eabax_workflows/config/schema/eabax_workflows.schema.yml:0
+#: modules/neibers/core/eabax_workflows/config/schema/eabax_workflows.schema.yml:0
 msgid "Condition Plugin ID"
 msgstr ""
 
-#: profiles/neibrs/modules/core/eabax_workflows/config/schema/eabax_workflows.views.schema.yml:0
+#: modules/neibers/core/eabax_workflows/config/schema/eabax_workflows.views.schema.yml:0
 msgid "Values"
 msgstr ""
 
-#: profiles/neibrs/modules/core/eabax_workflows/src/Controller/EabaxWorkflowsController.php:97
+#: modules/neibers/core/eabax_workflows/src/Controller/EabaxWorkflowsController.php:97
 msgid "It's success to transition to %to from %from"
 msgstr ""
 
-#: profiles/neibrs/modules/core/eabax_workflows/src/Controller/EabaxWorkflowsController.php:105
+#: modules/neibers/core/eabax_workflows/src/Controller/EabaxWorkflowsController.php:105
 msgid "The status of transition not work."
 msgstr ""
 
-#: profiles/neibrs/modules/core/eabax_workflows/src/Form/ConditionForm.php:43
+#: modules/neibers/core/eabax_workflows/src/Form/ConditionForm.php:43
 msgid "Condition"
 msgstr ""
 
-#: profiles/neibrs/modules/core/eabax_workflows/src/Form/ConditionForm.php:49
+#: modules/neibers/core/eabax_workflows/src/Form/ConditionForm.php:49
 msgid "Continue"
 msgstr ""
 
-#: profiles/neibrs/modules/core/eabax_workflows/src/Plugin/EntityStateForm.php:19
+#: modules/neibers/core/eabax_workflows/src/Plugin/EntityStateForm.php:19
 msgid "Field control"
 msgstr ""
 
-#: profiles/neibrs/modules/core/eabax_workflows/src/Plugin/EntityStateForm.php:21
+#: modules/neibers/core/eabax_workflows/src/Plugin/EntityStateForm.php:21
 msgid "Field name"
 msgstr ""
 
-#: profiles/neibrs/modules/core/eabax_workflows/src/Plugin/EntityStateForm.php:22;41
+#: modules/neibers/core/eabax_workflows/src/Plugin/EntityStateForm.php:22;41
 msgid "Can view"
 msgstr ""
 
-#: profiles/neibrs/modules/core/eabax_workflows/src/Plugin/EntityStateForm.php:23;47
+#: modules/neibers/core/eabax_workflows/src/Plugin/EntityStateForm.php:23;47
 msgid "Can update"
 msgstr ""
 
-#: profiles/neibrs/modules/core/eabax_workflows/src/Plugin/EntityStateForm.php:24
+#: modules/neibers/core/eabax_workflows/src/Plugin/EntityStateForm.php:24
 msgid "Value"
 msgstr ""
 
-#: profiles/neibrs/modules/core/eabax_workflows/src/Plugin/EntityStateForm.php:25
+#: modules/neibers/core/eabax_workflows/src/Plugin/EntityStateForm.php:25
 msgid "Usage"
 msgstr ""
 
-#: profiles/neibrs/modules/core/eabax_workflows/src/Plugin/EntityStateForm.php:61
+#: modules/neibers/core/eabax_workflows/src/Plugin/EntityStateForm.php:61
 msgid "Status setting"
 msgstr ""
 
-#: profiles/neibrs/modules/core/eabax_workflows/src/Plugin/EntityStateForm.php:64
+#: modules/neibers/core/eabax_workflows/src/Plugin/EntityStateForm.php:64
 msgid "Defaults value"
 msgstr ""
 
-#: profiles/neibrs/modules/core/eabax_workflows/src/Plugin/EntityStateForm.php:65
+#: modules/neibers/core/eabax_workflows/src/Plugin/EntityStateForm.php:65
 msgid "Not used"
 msgstr ""
 
-#: profiles/neibrs/modules/core/eabax_workflows/src/Plugin/EntityStateForm.php:66
+#: modules/neibers/core/eabax_workflows/src/Plugin/EntityStateForm.php:66
 msgid "Sets value"
 msgstr ""
 
-#: profiles/neibrs/modules/core/eabax_workflows/src/Plugin/EntityTransitionForm.php:88
+#: modules/neibers/core/eabax_workflows/src/Plugin/EntityTransitionForm.php:88
 msgid "Elements"
 msgstr ""
 
-#: profiles/neibrs/modules/core/eabax_workflows/src/Plugin/EntityTransitionForm.php:88
+#: modules/neibers/core/eabax_workflows/src/Plugin/EntityTransitionForm.php:88
 msgid "Operations"
 msgstr ""
 
-#: profiles/neibrs/modules/core/eabax_workflows/src/Plugin/EntityTransitionForm.php:89
+#: modules/neibers/core/eabax_workflows/src/Plugin/EntityTransitionForm.php:89
 msgid "None"
 msgstr ""
 
-#: profiles/neibrs/modules/core/eabax_workflows/src/Plugin/EntityTransitionForm.php:94
+#: modules/neibers/core/eabax_workflows/src/Plugin/EntityTransitionForm.php:94
 msgid "Test"
 msgstr ""
 
-#: profiles/neibrs/modules/core/eabax_workflows/src/Plugin/EntityTransitionForm.php:100
+#: modules/neibers/core/eabax_workflows/src/Plugin/EntityTransitionForm.php:100
 msgid "Edit"
 msgstr ""
 
-#: profiles/neibrs/modules/core/eabax_workflows/src/Plugin/EntityTransitionForm.php:103
+#: modules/neibers/core/eabax_workflows/src/Plugin/EntityTransitionForm.php:103
 msgid "Delete"
 msgstr ""
 
-#: profiles/neibrs/modules/core/eabax_workflows/src/Plugin/EntityTransitionForm.php:115
+#: modules/neibers/core/eabax_workflows/src/Plugin/EntityTransitionForm.php:115
 msgid "Add condition"
 msgstr ""
 
-#: profiles/neibrs/modules/core/eabax_workflows/src/Plugin/Action/WorkflowStatusTransition.php:12
+#: modules/neibers/core/eabax_workflows/src/Plugin/Action/WorkflowStatusTransition.php:12
 msgid "Workflow status transition"
 msgstr ""
 
-#: profiles/neibrs/modules/core/eabax_workflows/src/Plugin/Action/Derivative/EntityStatusTransitionDeriver.php:20
+#: modules/neibers/core/eabax_workflows/src/Plugin/Action/Derivative/EntityStatusTransitionDeriver.php:20
 msgid "Transition @entity_type status"
 msgstr ""
 
-#: profiles/neibrs/modules/core/eabax_workflows/src/Plugin/Field/FieldType/EntityStatusFieldItem.php:82
+#: modules/neibers/core/eabax_workflows/src/Plugin/Field/FieldType/EntityStatusFieldItem.php:82
 msgid "Workflow type"
 msgstr ""
 
-#: profiles/neibrs/modules/core/eabax_workflows/src/Plugin/Field/FieldType/EntityStatusFieldItem.php:101
+#: modules/neibers/core/eabax_workflows/src/Plugin/Field/FieldType/EntityStatusFieldItem.php:101
 msgid "Workflow"
 msgstr ""
 
-#: profiles/neibrs/modules/core/eabax_workflows/src/Plugin/Field/FieldType/EntityStatusFieldItem.php:50
+#: modules/neibers/core/eabax_workflows/src/Plugin/Field/FieldType/EntityStatusFieldItem.php:50
 msgid "State"
 msgstr ""
 
-#: profiles/neibrs/modules/core/eabax_workflows/src/Plugin/Field/FieldType/EntityStatusFieldItem.php:15
+#: modules/neibers/core/eabax_workflows/src/Plugin/Field/FieldType/EntityStatusFieldItem.php:15
 msgid "Workflow status"
 msgstr ""
 

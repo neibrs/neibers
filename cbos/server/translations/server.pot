@@ -3,21 +3,21 @@
 # LANGUAGE translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
-#  profiles/neibrs/modules/cbos/server/server.module: n/a
-#  profiles/neibrs/modules/cbos/server/server.info.yml: n/a
-#  profiles/neibrs/modules/cbos/server/src/Entity/Server.php: n/a
-#  profiles/neibrs/modules/cbos/server/server.links.action.yml: n/a
-#  profiles/neibrs/modules/cbos/server/server.links.menu.yml: n/a
-#  profiles/neibrs/modules/cbos/server/src/ServerTypeListBuilder.php: n/a
-#  profiles/neibrs/modules/cbos/server/src/Entity/ServerType.php: n/a
-#  profiles/neibrs/modules/cbos/server/server.links.task.yml: n/a
-#  profiles/neibrs/modules/cbos/server/src/Form/ServerTypeDeleteForm.php: n/a
-#  profiles/neibrs/modules/cbos/server/server.permissions.yml: n/a
-#  profiles/neibrs/modules/cbos/server/config/schema/server_type.schema.yml: n/a
-#  profiles/neibrs/modules/cbos/server/src/ServerListBuilder.php: n/a
-#  profiles/neibrs/modules/cbos/server/src/Form/ServerForm.php: n/a
-#  profiles/neibrs/modules/cbos/server/src/Form/ServerTypeForm.php: n/a
-#  profiles/neibrs/modules/cbos/server/config/install/server.type.default.yml: n/a
+#  modules/neibers/cbos/server/server.module: n/a
+#  modules/neibers/cbos/server/server.info.yml: n/a
+#  modules/neibers/cbos/server/src/Entity/Server.php: n/a
+#  modules/neibers/cbos/server/server.links.action.yml: n/a
+#  modules/neibers/cbos/server/server.links.menu.yml: n/a
+#  modules/neibers/cbos/server/src/ServerTypeListBuilder.php: n/a
+#  modules/neibers/cbos/server/src/Entity/ServerType.php: n/a
+#  modules/neibers/cbos/server/server.links.task.yml: n/a
+#  modules/neibers/cbos/server/src/Form/ServerTypeDeleteForm.php: n/a
+#  modules/neibers/cbos/server/server.permissions.yml: n/a
+#  modules/neibers/cbos/server/config/schema/server_type.schema.yml: n/a
+#  modules/neibers/cbos/server/src/ServerListBuilder.php: n/a
+#  modules/neibers/cbos/server/src/Form/ServerForm.php: n/a
+#  modules/neibers/cbos/server/src/Form/ServerTypeForm.php: n/a
+#  modules/neibers/cbos/server/config/install/server.type.default.yml: n/a
 #
 #, fuzzy
 msgid ""
@@ -32,179 +32,179 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: profiles/neibrs/modules/cbos/server/server.module:20
+#: modules/neibers/cbos/server/server.module:20
 msgid "About"
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/server.module:70 profiles/neibrs/modules/cbos/server/server.info.yml:0 profiles/neibrs/modules/cbos/server/src/Entity/Server.php:12;12
+#: modules/neibers/cbos/server/server.module:70 modules/neibers/cbos/server/server.info.yml:0 modules/neibers/cbos/server/src/Entity/Server.php:12;12
 msgid "Server"
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/server.info.yml:0
+#: modules/neibers/cbos/server/server.info.yml:0
 msgid "The server in the cabinet seat."
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/server.info.yml:0
+#: modules/neibers/cbos/server/server.info.yml:0
 msgid "Neibrs"
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/server.links.action.yml:0
+#: modules/neibers/cbos/server/server.links.action.yml:0
 msgid "Add Server"
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/server.links.action.yml:0
+#: modules/neibers/cbos/server/server.links.action.yml:0
 msgid "Add Server type"
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/server.links.menu.yml:0
+#: modules/neibers/cbos/server/server.links.menu.yml:0
 msgid "Server list"
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/server.links.menu.yml:0 profiles/neibrs/modules/cbos/server/src/ServerTypeListBuilder.php:17 profiles/neibrs/modules/cbos/server/src/Entity/Server.php:12 profiles/neibrs/modules/cbos/server/src/Entity/ServerType.php:7;7
+#: modules/neibers/cbos/server/server.links.menu.yml:0 modules/neibers/cbos/server/src/ServerTypeListBuilder.php:17 modules/neibers/cbos/server/src/Entity/Server.php:12 modules/neibers/cbos/server/src/Entity/ServerType.php:7;7
 msgid "Server type"
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/server.links.menu.yml:0
+#: modules/neibers/cbos/server/server.links.menu.yml:0
 msgid "List Server"
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/server.links.menu.yml:0
+#: modules/neibers/cbos/server/server.links.menu.yml:0
 msgid "List Server type (bundles)"
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/server.links.task.yml:0
+#: modules/neibers/cbos/server/server.links.task.yml:0
 msgid "View"
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/server.links.task.yml:0
+#: modules/neibers/cbos/server/server.links.task.yml:0
 msgid "Edit"
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/server.links.task.yml:0 profiles/neibrs/modules/cbos/server/src/Form/ServerTypeDeleteForm.php:32
+#: modules/neibers/cbos/server/server.links.task.yml:0 modules/neibers/cbos/server/src/Form/ServerTypeDeleteForm.php:32
 msgid "Delete"
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/server.permissions.yml:0
+#: modules/neibers/cbos/server/server.permissions.yml:0
 msgid "Create new Server"
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/server.permissions.yml:0
+#: modules/neibers/cbos/server/server.permissions.yml:0
 msgid "Administer Server"
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/server.permissions.yml:0
+#: modules/neibers/cbos/server/server.permissions.yml:0
 msgid "Allow to access the administration form to configure Server."
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/server.permissions.yml:0
+#: modules/neibers/cbos/server/server.permissions.yml:0
 msgid "Delete Server"
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/server.permissions.yml:0
+#: modules/neibers/cbos/server/server.permissions.yml:0
 msgid "Edit Server"
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/server.permissions.yml:0
+#: modules/neibers/cbos/server/server.permissions.yml:0
 msgid "View published Server"
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/server.permissions.yml:0
+#: modules/neibers/cbos/server/server.permissions.yml:0
 msgid "View unpublished Server"
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/config/schema/server_type.schema.yml:0
+#: modules/neibers/cbos/server/config/schema/server_type.schema.yml:0
 msgid "Server type config"
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/config/schema/server_type.schema.yml:0
+#: modules/neibers/cbos/server/config/schema/server_type.schema.yml:0
 msgid "ID"
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/src/ServerListBuilder.php:20
+#: modules/neibers/cbos/server/src/ServerListBuilder.php:20
 msgid "Server ID"
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/src/ServerListBuilder.php:21 profiles/neibrs/modules/cbos/server/src/Entity/Server.php:185
+#: modules/neibers/cbos/server/src/ServerListBuilder.php:21 modules/neibers/cbos/server/src/Entity/Server.php:185
 msgid "Name"
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/src/ServerTypeListBuilder.php:18
+#: modules/neibers/cbos/server/src/ServerTypeListBuilder.php:18
 msgid "Machine name"
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/src/Entity/Server.php:160
+#: modules/neibers/cbos/server/src/Entity/Server.php:160
 msgid "Authored by"
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/src/Entity/Server.php:161
+#: modules/neibers/cbos/server/src/Entity/Server.php:161
 msgid "The user ID of author of the Server entity."
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/src/Entity/Server.php:186
+#: modules/neibers/cbos/server/src/Entity/Server.php:186
 msgid "The name of the Server entity."
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/src/Entity/Server.php:206
+#: modules/neibers/cbos/server/src/Entity/Server.php:206
 msgid "Seat"
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/src/Entity/Server.php:225
+#: modules/neibers/cbos/server/src/Entity/Server.php:225
 msgid "Publishing status"
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/src/Entity/Server.php:226
+#: modules/neibers/cbos/server/src/Entity/Server.php:226
 msgid "A boolean indicating whether the Server is published."
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/src/Entity/Server.php:234
+#: modules/neibers/cbos/server/src/Entity/Server.php:234
 msgid "Created"
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/src/Entity/Server.php:235
+#: modules/neibers/cbos/server/src/Entity/Server.php:235
 msgid "The time that the entity was created."
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/src/Entity/Server.php:238
+#: modules/neibers/cbos/server/src/Entity/Server.php:238
 msgid "Changed"
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/src/Entity/Server.php:239
+#: modules/neibers/cbos/server/src/Entity/Server.php:239
 msgid "The time that the entity was last edited."
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/src/Form/ServerForm.php:37
+#: modules/neibers/cbos/server/src/Form/ServerForm.php:37
 msgid "Created the %label Server."
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/src/Form/ServerForm.php:43
+#: modules/neibers/cbos/server/src/Form/ServerForm.php:43
 msgid "Saved the %label Server."
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/src/Form/ServerTypeDeleteForm.php:18
+#: modules/neibers/cbos/server/src/Form/ServerTypeDeleteForm.php:18
 msgid "Are you sure you want to delete %name?"
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/src/Form/ServerTypeDeleteForm.php:42
+#: modules/neibers/cbos/server/src/Form/ServerTypeDeleteForm.php:42
 msgid "content @type: deleted @label."
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/src/Form/ServerTypeForm.php:22
+#: modules/neibers/cbos/server/src/Form/ServerTypeForm.php:22
 msgid "Label"
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/src/Form/ServerTypeForm.php:25
+#: modules/neibers/cbos/server/src/Form/ServerTypeForm.php:25
 msgid "Label for the Server type."
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/src/Form/ServerTypeForm.php:52
+#: modules/neibers/cbos/server/src/Form/ServerTypeForm.php:52
 msgid "Created the %label Server type."
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/src/Form/ServerTypeForm.php:58
+#: modules/neibers/cbos/server/src/Form/ServerTypeForm.php:58
 msgid "Saved the %label Server type."
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/server/config/install/server.type.default.yml:0
+#: modules/neibers/cbos/server/config/install/server.type.default.yml:0
 msgid "Default(Normal server)"
 msgstr ""
 

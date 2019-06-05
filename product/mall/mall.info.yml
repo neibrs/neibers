@@ -3,7 +3,7 @@ type: module
 description: 'The commerce module with exsen theme for commerce purpose.'
 core: 8.x
 interface translation project: mall
-interface translation server pattern: profiles/neibrs/modules/product/%project/translations/%project.%language.po
+interface translation server pattern: modules/neibers/product/%project/translations/%project.%language.po
 package: Neibrs
 dependencies:
   - commerce_store

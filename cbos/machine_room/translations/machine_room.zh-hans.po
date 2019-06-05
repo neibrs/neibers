@@ -3,8 +3,8 @@
 # LANGUAGE translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
-#  profiles/neibrs/modules/cbos/machine_room/machine_room.module: n/a
-#  profiles/neibrs/modules/cbos/machine_room/machine_room.info.yml: n/a
+#  modules/neibers/cbos/machine_room/machine_room.module: n/a
+#  modules/neibers/cbos/machine_room/machine_room.info.yml: n/a
 #
 #, fuzzy
 msgid ""
@@ -19,19 +19,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: profiles/neibrs/modules/cbos/machine_room/machine_room.module:20
+#: modules/neibers/cbos/machine_room/machine_room.module:20
 msgid "About"
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/machine_room/machine_room.module:21 profiles/neibrs/modules/cbos/machine_room/machine_room.info.yml:0
+#: modules/neibers/cbos/machine_room/machine_room.module:21 modules/neibers/cbos/machine_room/machine_room.info.yml:0
 msgid "The machine room of store computer equipments."
 msgstr "用于放置计算机设备机器的房间."
 
-#: profiles/neibrs/modules/cbos/machine_room/machine_room.module:36 profiles/neibrs/modules/cbos/machine_room/machine_room.info.yml:0
+#: modules/neibers/cbos/machine_room/machine_room.module:36 modules/neibers/cbos/machine_room/machine_room.info.yml:0
 msgid "Machine Room"
 msgstr "机房"
 
-#: profiles/neibrs/modules/cbos/machine_room/machine_room.info.yml:0
+#: modules/neibers/cbos/machine_room/machine_room.info.yml:0
 msgid "Neibrs"
 msgstr ""
 

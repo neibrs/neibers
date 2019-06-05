@@ -3,9 +3,9 @@
 # LANGUAGE translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
-#  profiles/neibrs/modules/core/menu_plus/menu_plus.module: n/a
-#  profiles/neibrs/modules/core/menu_plus/menu_plus.info.yml: n/a
-#  profiles/neibrs/modules/core/menu_plus/config/schema/menu_plus.schema.yml: n/a
+#  modules/neibers/core/menu_plus/menu_plus.module: n/a
+#  modules/neibers/core/menu_plus/menu_plus.info.yml: n/a
+#  modules/neibers/core/menu_plus/config/schema/menu_plus.schema.yml: n/a
 #
 #, fuzzy
 msgid ""
@@ -20,47 +20,47 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: profiles/neibrs/modules/core/menu_plus/menu_plus.module:22
+#: modules/neibers/core/menu_plus/menu_plus.module:22
 msgid "About"
 msgstr ""
 
-#: profiles/neibrs/modules/core/menu_plus/menu_plus.module:23
+#: modules/neibers/core/menu_plus/menu_plus.module:23
 msgid "The role menu plus for opened navigation."
 msgstr ""
 
-#: profiles/neibrs/modules/core/menu_plus/menu_plus.module:28
+#: modules/neibers/core/menu_plus/menu_plus.module:28
 msgid "test help for menu plus ---- todo"
 msgstr ""
 
-#: profiles/neibrs/modules/core/menu_plus/menu_plus.module:51
+#: modules/neibers/core/menu_plus/menu_plus.module:51
 msgid "Navigate admin"
 msgstr ""
 
-#: profiles/neibrs/modules/core/menu_plus/menu_plus.module:77
+#: modules/neibers/core/menu_plus/menu_plus.module:77
 msgid "Icon"
 msgstr ""
 
-#: profiles/neibrs/modules/core/menu_plus/menu_plus.module:78
+#: modules/neibers/core/menu_plus/menu_plus.module:78
 msgid "A customize icon for menu."
 msgstr ""
 
-#: profiles/neibrs/modules/core/menu_plus/menu_plus.info.yml:0
+#: modules/neibers/core/menu_plus/menu_plus.info.yml:0
 msgid "Menu Plus"
 msgstr ""
 
-#: profiles/neibrs/modules/core/menu_plus/menu_plus.info.yml:0
+#: modules/neibers/core/menu_plus/menu_plus.info.yml:0
 msgid "The menu plus for opened navigation. It is compatable with theme exsen"
 msgstr ""
 
-#: profiles/neibrs/modules/core/menu_plus/menu_plus.info.yml:0
+#: modules/neibers/core/menu_plus/menu_plus.info.yml:0
 msgid "Neibrs"
 msgstr ""
 
-#: profiles/neibrs/modules/core/menu_plus/config/schema/menu_plus.schema.yml:0
+#: modules/neibers/core/menu_plus/config/schema/menu_plus.schema.yml:0
 msgid "Menu plus settings"
 msgstr ""
 
-#: profiles/neibrs/modules/core/menu_plus/config/schema/menu_plus.schema.yml:0
+#: modules/neibers/core/menu_plus/config/schema/menu_plus.schema.yml:0
 msgid "Navigate"
 msgstr ""
 

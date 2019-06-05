@@ -13,7 +13,7 @@ modules=( \
 )
 for module in ${modules[@]}; do
   vendor/bin/drush langimp --langcode=zh-hans \
-    profiles/neibrs/modules/core/translation/translations/$module.zh-hans.po
+    modules/neibers/core/translation/translations/$module.zh-hans.po
 done
 
 # cbos
@@ -48,5 +48,5 @@ modules=( \
 )
 for module in ${modules[@]}; do
   vendor/bin/drush langimp --langcode=zh-hans \
-    profiles/neibrs/modules/core/$module/translations/$module.zh-hans.po
+    modules/neibers/core/$module/translations/$module.zh-hans.po
 done

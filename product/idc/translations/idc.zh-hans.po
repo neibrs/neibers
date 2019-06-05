@@ -3,9 +3,9 @@
 # LANGUAGE translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
-#  profiles/neibrs/modules/product/idc/idc.module: n/a
-#  profiles/neibrs/modules/product/idc/idc.info.yml: n/a
-#  profiles/neibrs/modules/product/idc/idc.links.menu.yml: n/a
+#  modules/neibers/product/idc/idc.module: n/a
+#  modules/neibers/product/idc/idc.info.yml: n/a
+#  modules/neibers/product/idc/idc.links.menu.yml: n/a
 #
 #, fuzzy
 msgid ""
@@ -20,44 +20,44 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: profiles/neibrs/modules/product/idc/idc.module:18
+#: modules/neibers/product/idc/idc.module:18
 msgid "About"
 msgstr ""
 
-#: profiles/neibrs/modules/product/idc/idc.module:20 profiles/neibrs/modules/product/idc/idc.info.yml:0
+#: modules/neibers/product/idc/idc.module:20 modules/neibers/product/idc/idc.info.yml:0
 msgid "The industry of idc."
 msgstr "IDC行业。"
 
-#: profiles/neibrs/modules/product/idc/idc.info.yml:0
+#: modules/neibers/product/idc/idc.info.yml:0
 msgid "IDC"
 msgstr ""
 
-#: profiles/neibrs/modules/product/idc/idc.info.yml:0
+#: modules/neibers/product/idc/idc.info.yml:0
 msgid "Neibrs"
 msgstr ""
 
-#: profiles/neibrs/modules/product/idc/idc.links.menu.yml:0;0
+#: modules/neibers/product/idc/idc.links.menu.yml:0;0
 msgid "IP"
 msgstr ""
 
 
-#: profiles/neibrs/modules/product/idc/idc.links.menu.yml:0;0;0;0
+#: modules/neibers/product/idc/idc.links.menu.yml:0;0;0;0
 msgid "Type"
 msgstr "类型"
 
-#: profiles/neibrs/modules/product/idc/idc.links.menu.yml:0;0
+#: modules/neibers/product/idc/idc.links.menu.yml:0;0
 msgid "Server"
 msgstr ""
 
-#: profiles/neibrs/modules/product/idc/idc.links.menu.yml:0;0
+#: modules/neibers/product/idc/idc.links.menu.yml:0;0
 msgid "Room"
 msgstr "机房"
 
-#: profiles/neibrs/modules/product/idc/idc.links.menu.yml:0
+#: modules/neibers/product/idc/idc.links.menu.yml:0
 msgid "Cabinet"
 msgstr "机柜"
 
-#: profiles/neibrs/modules/product/idc/idc.links.menu.yml:0
+#: modules/neibers/product/idc/idc.links.menu.yml:0
 msgid "Seat"
 msgstr "机位"
 

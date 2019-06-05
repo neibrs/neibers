@@ -3,8 +3,8 @@
 # LANGUAGE translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
-#  profiles/neibrs/modules/core/menu_plus/tests/modules/menu_plus_test/menu_plus_test.module: n/a
-#  profiles/neibrs/modules/core/menu_plus/tests/modules/menu_plus_test/menu_plus_test.info.yml: n/a
+#  modules/neibers/core/menu_plus/tests/modules/menu_plus_test/menu_plus_test.module: n/a
+#  modules/neibers/core/menu_plus/tests/modules/menu_plus_test/menu_plus_test.info.yml: n/a
 #
 #, fuzzy
 msgid ""
@@ -19,19 +19,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: profiles/neibrs/modules/core/menu_plus/tests/modules/menu_plus_test/menu_plus_test.module:18
+#: modules/neibers/core/menu_plus/tests/modules/menu_plus_test/menu_plus_test.module:18
 msgid "About"
 msgstr ""
 
-#: profiles/neibrs/modules/core/menu_plus/tests/modules/menu_plus_test/menu_plus_test.module:19 profiles/neibrs/modules/core/menu_plus/tests/modules/menu_plus_test/menu_plus_test.info.yml:0
+#: modules/neibers/core/menu_plus/tests/modules/menu_plus_test/menu_plus_test.module:19 modules/neibers/core/menu_plus/tests/modules/menu_plus_test/menu_plus_test.info.yml:0
 msgid "Test menu plus schema."
 msgstr ""
 
-#: profiles/neibrs/modules/core/menu_plus/tests/modules/menu_plus_test/menu_plus_test.info.yml:0
+#: modules/neibers/core/menu_plus/tests/modules/menu_plus_test/menu_plus_test.info.yml:0
 msgid "Menu plus test"
 msgstr ""
 
-#: profiles/neibrs/modules/core/menu_plus/tests/modules/menu_plus_test/menu_plus_test.info.yml:0
+#: modules/neibers/core/menu_plus/tests/modules/menu_plus_test/menu_plus_test.info.yml:0
 msgid "Neibrs"
 msgstr ""
 

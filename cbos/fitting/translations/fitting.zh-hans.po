@@ -3,21 +3,21 @@
 # LANGUAGE translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
-#  profiles/neibrs/modules/cbos/fitting/fitting.module: n/a
-#  profiles/neibrs/modules/cbos/fitting/fitting.info.yml: n/a
-#  profiles/neibrs/modules/cbos/fitting/src/Entity/Fitting.php: n/a
-#  profiles/neibrs/modules/cbos/fitting/fitting.links.action.yml: n/a
-#  profiles/neibrs/modules/cbos/fitting/fitting.links.menu.yml: n/a
-#  profiles/neibrs/modules/cbos/fitting/src/FittingTypeListBuilder.php: n/a
-#  profiles/neibrs/modules/cbos/fitting/src/Entity/FittingType.php: n/a
-#  profiles/neibrs/modules/cbos/fitting/fitting.links.task.yml: n/a
-#  profiles/neibrs/modules/cbos/fitting/src/Form/FittingTypeDeleteForm.php: n/a
-#  profiles/neibrs/modules/cbos/fitting/fitting.permissions.yml: n/a
-#  profiles/neibrs/modules/cbos/fitting/config/schema/fitting_type.schema.yml: n/a
-#  profiles/neibrs/modules/cbos/fitting/src/FittingListBuilder.php: n/a
-#  profiles/neibrs/modules/cbos/fitting/src/Form/FittingForm.php: n/a
-#  profiles/neibrs/modules/cbos/fitting/src/Form/FittingTypeForm.php: n/a
-#  profiles/neibrs/modules/cbos/fitting/config/install/fitting.type.default.yml: n/a
+#  modules/neibers/cbos/fitting/fitting.module: n/a
+#  modules/neibers/cbos/fitting/fitting.info.yml: n/a
+#  modules/neibers/cbos/fitting/src/Entity/Fitting.php: n/a
+#  modules/neibers/cbos/fitting/fitting.links.action.yml: n/a
+#  modules/neibers/cbos/fitting/fitting.links.menu.yml: n/a
+#  modules/neibers/cbos/fitting/src/FittingTypeListBuilder.php: n/a
+#  modules/neibers/cbos/fitting/src/Entity/FittingType.php: n/a
+#  modules/neibers/cbos/fitting/fitting.links.task.yml: n/a
+#  modules/neibers/cbos/fitting/src/Form/FittingTypeDeleteForm.php: n/a
+#  modules/neibers/cbos/fitting/fitting.permissions.yml: n/a
+#  modules/neibers/cbos/fitting/config/schema/fitting_type.schema.yml: n/a
+#  modules/neibers/cbos/fitting/src/FittingListBuilder.php: n/a
+#  modules/neibers/cbos/fitting/src/Form/FittingForm.php: n/a
+#  modules/neibers/cbos/fitting/src/Form/FittingTypeForm.php: n/a
+#  modules/neibers/cbos/fitting/config/install/fitting.type.default.yml: n/a
 #
 #, fuzzy
 msgid ""
@@ -32,123 +32,123 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: profiles/neibrs/modules/cbos/fitting/fitting.module:18
+#: modules/neibers/cbos/fitting/fitting.module:18
 msgid "About"
 msgstr "关于"
 
-#: profiles/neibrs/modules/cbos/fitting/fitting.module:19 profiles/neibrs/modules/cbos/fitting/fitting.info.yml:0
+#: modules/neibers/cbos/fitting/fitting.module:19 modules/neibers/cbos/fitting/fitting.info.yml:0
 msgid "The fittings of a machine."
 msgstr "配件机器名."
 
-#: profiles/neibrs/modules/cbos/fitting/fitting.info.yml:0 profiles/neibrs/modules/cbos/fitting/src/Entity/Fitting.php:12
+#: modules/neibers/cbos/fitting/fitting.info.yml:0 modules/neibers/cbos/fitting/src/Entity/Fitting.php:12
 msgid "Fitting"
 msgstr "配件"
 
-#: profiles/neibrs/modules/cbos/fitting/fitting.links.action.yml:0
+#: modules/neibers/cbos/fitting/fitting.links.action.yml:0
 msgid "Add Fitting"
 msgstr "添加配件"
 
-#: profiles/neibrs/modules/cbos/fitting/fitting.links.action.yml:0
+#: modules/neibers/cbos/fitting/fitting.links.action.yml:0
 msgid "Add Fitting type"
 msgstr "添加配件类型"
 
-#: profiles/neibrs/modules/cbos/fitting/fitting.links.menu.yml:0
+#: modules/neibers/cbos/fitting/fitting.links.menu.yml:0
 msgid "Fitting list"
 msgstr "配件列表"
 
-#: profiles/neibrs/modules/cbos/fitting/fitting.links.menu.yml:0 profiles/neibrs/modules/cbos/fitting/src/FittingTypeListBuilder.php:17 profiles/neibrs/modules/cbos/fitting/src/Entity/Fitting.php:12 profiles/neibrs/modules/cbos/fitting/src/Entity/FittingType.php:7
+#: modules/neibers/cbos/fitting/fitting.links.menu.yml:0 modules/neibers/cbos/fitting/src/FittingTypeListBuilder.php:17 modules/neibers/cbos/fitting/src/Entity/Fitting.php:12 modules/neibers/cbos/fitting/src/Entity/FittingType.php:7
 msgid "Fitting type"
 msgstr "配件类型"
 
-#: profiles/neibrs/modules/cbos/fitting/fitting.links.menu.yml:0
+#: modules/neibers/cbos/fitting/fitting.links.menu.yml:0
 msgid "List Fitting"
 msgstr "配件列表"
 
-#: profiles/neibrs/modules/cbos/fitting/fitting.links.menu.yml:0
+#: modules/neibers/cbos/fitting/fitting.links.menu.yml:0
 msgid "List Fitting type (bundles)"
 msgstr "配件类型"
 
-#: profiles/neibrs/modules/cbos/fitting/fitting.permissions.yml:0
+#: modules/neibers/cbos/fitting/fitting.permissions.yml:0
 msgid "Create new Fitting"
 msgstr "创建配件"
 
-#: profiles/neibrs/modules/cbos/fitting/fitting.permissions.yml:0
+#: modules/neibers/cbos/fitting/fitting.permissions.yml:0
 msgid "Administer Fitting"
 msgstr "管理配件"
 
-#: profiles/neibrs/modules/cbos/fitting/fitting.permissions.yml:0
+#: modules/neibers/cbos/fitting/fitting.permissions.yml:0
 msgid "Allow to access the administration form to configure Fitting."
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/fitting/fitting.permissions.yml:0
+#: modules/neibers/cbos/fitting/fitting.permissions.yml:0
 msgid "Delete Fitting"
 msgstr "删除配件"
 
-#: profiles/neibrs/modules/cbos/fitting/fitting.permissions.yml:0
+#: modules/neibers/cbos/fitting/fitting.permissions.yml:0
 msgid "Edit Fitting"
 msgstr "编辑配件"
 
-#: profiles/neibrs/modules/cbos/fitting/fitting.permissions.yml:0
+#: modules/neibers/cbos/fitting/fitting.permissions.yml:0
 msgid "View published Fitting"
 msgstr "查看已发布的配件"
 
-#: profiles/neibrs/modules/cbos/fitting/fitting.permissions.yml:0
+#: modules/neibers/cbos/fitting/fitting.permissions.yml:0
 msgid "View unpublished Fitting"
 msgstr "查看未发布的配件"
 
-#: profiles/neibrs/modules/cbos/fitting/config/schema/fitting_type.schema.yml:0
+#: modules/neibers/cbos/fitting/config/schema/fitting_type.schema.yml:0
 msgid "Fitting type config"
 msgstr "配件类型配置"
 
-#: profiles/neibrs/modules/cbos/fitting/src/FittingListBuilder.php:20
+#: modules/neibers/cbos/fitting/src/FittingListBuilder.php:20
 msgid "Fitting ID"
 msgstr "配件ID"
 
-#: profiles/neibrs/modules/cbos/fitting/src/Entity/Fitting.php:160
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:160
 msgid "The user ID of author of the Fitting entity."
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/fitting/src/Entity/Fitting.php:185
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:185
 msgid "The name of the Fitting entity."
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/fitting/src/Entity/Fitting.php:206
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:206
 msgid "A boolean indicating whether the Fitting is published."
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/fitting/src/Entity/Fitting.php:215
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:215
 msgid "Purchasable"
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/fitting/src/Entity/Fitting.php:216
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:216
 msgid "A boolean indicating whether the Fitting is purchasable."
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/fitting/src/Entity/Fitting.php:229
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:229
 msgid "The time that the entity was created."
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/fitting/src/Form/FittingForm.php:37
+#: modules/neibers/cbos/fitting/src/Form/FittingForm.php:37
 msgid "Created the %label Fitting."
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/fitting/src/Form/FittingForm.php:43
+#: modules/neibers/cbos/fitting/src/Form/FittingForm.php:43
 msgid "Saved the %label Fitting."
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/fitting/src/Form/FittingTypeForm.php:25
+#: modules/neibers/cbos/fitting/src/Form/FittingTypeForm.php:25
 msgid "Label for the Fitting type."
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/fitting/src/Form/FittingTypeForm.php:52
+#: modules/neibers/cbos/fitting/src/Form/FittingTypeForm.php:52
 msgid "Created the %label Fitting type."
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/fitting/src/Form/FittingTypeForm.php:58
+#: modules/neibers/cbos/fitting/src/Form/FittingTypeForm.php:58
 msgid "Saved the %label Fitting type."
 msgstr ""
 
-#: profiles/neibrs/modules/cbos/fitting/config/install/fitting.type.default.yml:0
+#: modules/neibers/cbos/fitting/config/install/fitting.type.default.yml:0
 msgid "Default"
 msgstr "默认"
 

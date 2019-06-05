@@ -3,9 +3,9 @@
 # LANGUAGE translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
-#  profiles/neibrs/modules/core/role_frontpage/role_frontpage.module: n/a
-#  profiles/neibrs/modules/core/role_frontpage/role_frontpage.info.yml: n/a
-#  profiles/neibrs/modules/core/role_frontpage/config/schema/role_frontpage.schema.yml: n/a
+#  modules/neibers/core/role_frontpage/role_frontpage.module: n/a
+#  modules/neibers/core/role_frontpage/role_frontpage.info.yml: n/a
+#  modules/neibers/core/role_frontpage/config/schema/role_frontpage.schema.yml: n/a
 #
 #, fuzzy
 msgid ""
@@ -20,27 +20,27 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: profiles/neibrs/modules/core/role_frontpage/role_frontpage.module:21 profiles/neibrs/modules/core/role_frontpage/role_frontpage.info.yml:0
+#: modules/neibers/core/role_frontpage/role_frontpage.module:21 modules/neibers/core/role_frontpage/role_frontpage.info.yml:0
 msgid "Role front page"
 msgstr ""
 
-#: profiles/neibrs/modules/core/role_frontpage/role_frontpage.module:23
+#: modules/neibers/core/role_frontpage/role_frontpage.module:23
 msgid "Optionally, specify a relative URL to display as the front page."
 msgstr ""
 
-#: profiles/neibrs/modules/core/role_frontpage/role_frontpage.info.yml:0
+#: modules/neibers/core/role_frontpage/role_frontpage.info.yml:0
 msgid "Front page per role."
 msgstr ""
 
-#: profiles/neibrs/modules/core/role_frontpage/role_frontpage.info.yml:0
+#: modules/neibers/core/role_frontpage/role_frontpage.info.yml:0
 msgid "Neibrs core"
 msgstr ""
 
-#: profiles/neibrs/modules/core/role_frontpage/config/schema/role_frontpage.schema.yml:0
+#: modules/neibers/core/role_frontpage/config/schema/role_frontpage.schema.yml:0
 msgid "Per-role role front page settings"
 msgstr ""
 
-#: profiles/neibrs/modules/core/role_frontpage/config/schema/role_frontpage.schema.yml:0
+#: modules/neibers/core/role_frontpage/config/schema/role_frontpage.schema.yml:0
 msgid "Front page"
 msgstr ""
 

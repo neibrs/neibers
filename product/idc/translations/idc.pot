@@ -3,9 +3,9 @@
 # LANGUAGE translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
-#  profiles/neibrs/modules/product/idc/idc.module: n/a
-#  profiles/neibrs/modules/product/idc/idc.info.yml: n/a
-#  profiles/neibrs/modules/product/idc/idc.links.menu.yml: n/a
+#  modules/neibers/product/idc/idc.module: n/a
+#  modules/neibers/product/idc/idc.info.yml: n/a
+#  modules/neibers/product/idc/idc.links.menu.yml: n/a
 #
 #, fuzzy
 msgid ""
@@ -20,47 +20,47 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: profiles/neibrs/modules/product/idc/idc.module:18
+#: modules/neibers/product/idc/idc.module:18
 msgid "About"
 msgstr ""
 
-#: profiles/neibrs/modules/product/idc/idc.module:19 profiles/neibrs/modules/product/idc/idc.info.yml:0
+#: modules/neibers/product/idc/idc.module:19 modules/neibers/product/idc/idc.info.yml:0
 msgid "The industry of idc."
 msgstr ""
 
-#: profiles/neibrs/modules/product/idc/idc.info.yml:0
+#: modules/neibers/product/idc/idc.info.yml:0
 msgid "IDC"
 msgstr ""
 
-#: profiles/neibrs/modules/product/idc/idc.info.yml:0
+#: modules/neibers/product/idc/idc.info.yml:0
 msgid "Neibrs"
 msgstr ""
 
-#: profiles/neibrs/modules/product/idc/idc.links.menu.yml:0;0
+#: modules/neibers/product/idc/idc.links.menu.yml:0;0
 msgid "IP"
 msgstr ""
 
-#: profiles/neibrs/modules/product/idc/idc.links.menu.yml:0;0;0
+#: modules/neibers/product/idc/idc.links.menu.yml:0;0;0
 msgid "Configuration"
 msgstr ""
 
-#: profiles/neibrs/modules/product/idc/idc.links.menu.yml:0;0;0;0
+#: modules/neibers/product/idc/idc.links.menu.yml:0;0;0;0
 msgid "Type"
 msgstr ""
 
-#: profiles/neibrs/modules/product/idc/idc.links.menu.yml:0;0
+#: modules/neibers/product/idc/idc.links.menu.yml:0;0
 msgid "Server"
 msgstr ""
 
-#: profiles/neibrs/modules/product/idc/idc.links.menu.yml:0;0
+#: modules/neibers/product/idc/idc.links.menu.yml:0;0
 msgid "Room"
 msgstr ""
 
-#: profiles/neibrs/modules/product/idc/idc.links.menu.yml:0
+#: modules/neibers/product/idc/idc.links.menu.yml:0
 msgid "Cabinet"
 msgstr ""
 
-#: profiles/neibrs/modules/product/idc/idc.links.menu.yml:0
+#: modules/neibers/product/idc/idc.links.menu.yml:0
 msgid "Seat"
 msgstr ""
 

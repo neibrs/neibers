@@ -3,7 +3,7 @@ type: module
 core: 8.x
 package: 'Neibrs'
 interface translation project: ip
-interface translation server pattern: profiles/neibrs/modules/cbos/%project/translations/%project.%language.po
+interface translation server pattern: modules/neibers/cbos/%project/translations/%project.%language.po
 dependencies:
   - cabinet
   - commerce_order

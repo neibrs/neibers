@@ -4,7 +4,7 @@ migration_tags: { }
 source:
   plugin: xls
   header_row: 1
-  path: profiles/neibrs/modules/product/idc/tests/data/product.xlsx
+  path: modules/neibers/product/idc/tests/data/product.xlsx
   sheet_name: Sheet1
   constants:
     variation_type: default

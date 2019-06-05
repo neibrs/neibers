@@ -4,6 +4,6 @@ description: 'The cabinets of idc room.'
 core: 8.x
 package: 'Neibrs'
 interface translation project: cabinet
-interface translation server pattern: profiles/neibrs/modules/cbos/%project/translations/%project.%language.po
+interface translation server pattern: modules/neibers/cbos/%project/translations/%project.%language.po
 dependencies:
   - machine_room

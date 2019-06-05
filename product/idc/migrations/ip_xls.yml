@@ -4,7 +4,7 @@ migration_tags: { }
 source:
   plugin: xls
   header_row: 1
-  path: profiles/neibrs/modules/product/idc/tests/data/ip.xlsx
+  path: modules/neibers/product/idc/tests/data/ip.xlsx
   sheet_name: Sheet1
   keys:
     - 名称

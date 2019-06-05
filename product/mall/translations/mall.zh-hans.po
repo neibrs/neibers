@@ -3,11 +3,11 @@
 # LANGUAGE translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
-#  profiles/neibrs/modules/product/mall/mall.info.yml: n/a
-#  profiles/neibrs/modules/product/mall/mall.links.menu.yml: n/a
-#  profiles/neibrs/modules/product/mall/mall.routing.yml: n/a
-#  profiles/neibrs/modules/product/mall/src/Plugin/Block/NavigateBlock.php: n/a
-#  profiles/neibrs/modules/product/mall/src/Plugin/Block/SidebarBlock.php: n/a
+#  modules/neibers/product/mall/mall.info.yml: n/a
+#  modules/neibers/product/mall/mall.links.menu.yml: n/a
+#  modules/neibers/product/mall/mall.routing.yml: n/a
+#  modules/neibers/product/mall/src/Plugin/Block/NavigateBlock.php: n/a
+#  modules/neibers/product/mall/src/Plugin/Block/SidebarBlock.php: n/a
 #
 #, fuzzy
 msgid ""
@@ -34,15 +34,15 @@ msgstr "基于主题Exsen的商城配置模块。"
 msgid "Neibrs"
 msgstr ""
 
-#: profiles/neibrs/modules/product/mall/mall.links.menu.yml:0
+#: modules/neibers/product/mall/mall.links.menu.yml:0
 msgid "Commerce products"
 msgstr "商品"
 
-#: profiles/neibrs/modules/product/mall/mall.links.menu.yml:0
+#: modules/neibers/product/mall/mall.links.menu.yml:0
 msgid "Products collection"
 msgstr "商品列表"
 
-#: profiles/neibrs/modules/product/mall/mall.links.menu.yml:0
+#: modules/neibers/product/mall/mall.links.menu.yml:0
 msgid "Product type"
 msgstr "商品类型"
 
@@ -50,7 +50,7 @@ msgstr "商品类型"
 msgid "Platform"
 msgstr "平台"
 
-#: profiles/neibrs/modules/product/mall/src/Plugin/Block/NavigateBlock.php:11
+#: modules/neibers/product/mall/src/Plugin/Block/NavigateBlock.php:11
 msgid "Navigate block for exsen theme"
 msgstr "Exsen导航区块"
 
