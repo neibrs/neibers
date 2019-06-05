@@ -206,7 +206,6 @@ class Server extends ContentEntityBase implements ServerInterface {
     $fields['seat'] = BaseFieldDefinition::create('entity_reference')
       ->setLabel(t('Seat'))
       ->setSetting('target_type', 'seat')
-      ->setRequired(TRUE)
       ->setDisplayOptions('view', [
         'type' => 'entity_reference_label',
         'weight' => 6,
