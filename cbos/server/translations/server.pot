@@ -17,13 +17,14 @@
 #  modules/neibers/cbos/server/src/ServerListBuilder.php: n/a
 #  modules/neibers/cbos/server/src/Form/ServerForm.php: n/a
 #  modules/neibers/cbos/server/src/Form/ServerTypeForm.php: n/a
-#  modules/neibers/cbos/server/config/install/server.type.default.yml: n/a
+#  modules/neibers/cbos/server/config/install/server.type.cabinet.yml: n/a
+#  modules/neibers/cbos/server/config/install/server.type.server.yml: n/a
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-05-19 07:05+0000\n"
+"POT-Creation-Date: 2019-06-05 04:29+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -32,11 +33,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: modules/neibers/cbos/server/server.module:20
+#: modules/neibers/cbos/server/server.module:18
 msgid "About"
 msgstr ""
 
-#: modules/neibers/cbos/server/server.module:70 modules/neibers/cbos/server/server.info.yml:0 modules/neibers/cbos/server/src/Entity/Server.php:12;12
+#: modules/neibers/cbos/server/server.info.yml:0 modules/neibers/cbos/server/src/Entity/Server.php:12;12
 msgid "Server"
 msgstr ""
 
@@ -124,7 +125,7 @@ msgstr ""
 msgid "Server ID"
 msgstr ""
 
-#: modules/neibers/cbos/server/src/ServerListBuilder.php:21 modules/neibers/cbos/server/src/Entity/Server.php:185
+#: modules/neibers/cbos/server/src/ServerListBuilder.php:21 modules/neibers/cbos/server/src/Entity/Server.php:186
 msgid "Name"
 msgstr ""
 
@@ -132,43 +133,43 @@ msgstr ""
 msgid "Machine name"
 msgstr ""
 
-#: modules/neibers/cbos/server/src/Entity/Server.php:160
+#: modules/neibers/cbos/server/src/Entity/Server.php:161
 msgid "Authored by"
 msgstr ""
 
-#: modules/neibers/cbos/server/src/Entity/Server.php:161
+#: modules/neibers/cbos/server/src/Entity/Server.php:162
 msgid "The user ID of author of the Server entity."
 msgstr ""
 
-#: modules/neibers/cbos/server/src/Entity/Server.php:186
+#: modules/neibers/cbos/server/src/Entity/Server.php:187
 msgid "The name of the Server entity."
 msgstr ""
 
-#: modules/neibers/cbos/server/src/Entity/Server.php:206
+#: modules/neibers/cbos/server/src/Entity/Server.php:207
 msgid "Seat"
 msgstr ""
 
-#: modules/neibers/cbos/server/src/Entity/Server.php:225
+#: modules/neibers/cbos/server/src/Entity/Server.php:227
 msgid "Publishing status"
 msgstr ""
 
-#: modules/neibers/cbos/server/src/Entity/Server.php:226
+#: modules/neibers/cbos/server/src/Entity/Server.php:228
 msgid "A boolean indicating whether the Server is published."
 msgstr ""
 
-#: modules/neibers/cbos/server/src/Entity/Server.php:234
+#: modules/neibers/cbos/server/src/Entity/Server.php:236
 msgid "Created"
 msgstr ""
 
-#: modules/neibers/cbos/server/src/Entity/Server.php:235
+#: modules/neibers/cbos/server/src/Entity/Server.php:237
 msgid "The time that the entity was created."
 msgstr ""
 
-#: modules/neibers/cbos/server/src/Entity/Server.php:238
+#: modules/neibers/cbos/server/src/Entity/Server.php:240
 msgid "Changed"
 msgstr ""
 
-#: modules/neibers/cbos/server/src/Entity/Server.php:239
+#: modules/neibers/cbos/server/src/Entity/Server.php:241
 msgid "The time that the entity was last edited."
 msgstr ""
 
@@ -204,7 +205,11 @@ msgstr ""
 msgid "Saved the %label Server type."
 msgstr ""
 
-#: modules/neibers/cbos/server/config/install/server.type.default.yml:0
-msgid "Default(Normal server)"
+#: modules/neibers/cbos/server/config/install/server.type.cabinet.yml:0
+msgid "Cabinet"
+msgstr ""
+
+#: modules/neibers/cbos/server/config/install/server.type.server.yml:0
+msgid "Server(Normal server)"
 msgstr ""
 

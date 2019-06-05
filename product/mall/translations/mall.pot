@@ -3,6 +3,7 @@
 # LANGUAGE translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
+#  modules/neibers/product/mall/mall.install: n/a
 #  modules/neibers/product/mall/mall.info.yml: n/a
 #  modules/neibers/product/mall/mall.links.menu.yml: n/a
 #  modules/neibers/product/mall/mall.routing.yml: n/a
@@ -13,7 +14,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-05-19 07:37+0000\n"
+"POT-Creation-Date: 2019-06-05 04:29+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -21,6 +22,10 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: modules/neibers/product/mall/mall.install:15
+msgid "Default Store Name"
+msgstr ""
 
 #: modules/neibers/product/mall/mall.info.yml:0
 msgid "Mall"
@@ -39,11 +44,15 @@ msgid "Commerce products"
 msgstr ""
 
 #: modules/neibers/product/mall/mall.links.menu.yml:0
-msgid "Products"
+msgid "Products collection"
 msgstr ""
 
 #: modules/neibers/product/mall/mall.links.menu.yml:0
 msgid "Product type"
+msgstr ""
+
+#: modules/neibers/product/mall/mall.links.menu.yml:0
+msgid "Product attributes"
 msgstr ""
 
 #: modules/neibers/product/mall/mall.routing.yml:0

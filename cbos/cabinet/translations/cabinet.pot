@@ -20,13 +20,14 @@
 #  modules/neibers/cbos/cabinet/src/Form/CabinetForm.php: n/a
 #  modules/neibers/cbos/cabinet/src/Form/SeatForm.php: n/a
 #  modules/neibers/cbos/cabinet/src/Form/SeatTypeForm.php: n/a
+#  modules/neibers/cbos/cabinet/src/Plugin/EntityReferenceSelection/CabinetSelection.php: n/a
 #  modules/neibers/cbos/cabinet/config/install/cabinet.seat_type.default.yml: n/a
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-05-19 07:05+0000\n"
+"POT-Creation-Date: 2019-06-05 04:29+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -187,39 +188,39 @@ msgstr ""
 msgid "The name of the Cabinet entity."
 msgstr ""
 
-#: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:208
-msgid "Model seat"
+#: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:203
+msgid "Size"
 msgstr ""
 
-#: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:209
+#: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:204
 msgid "Switch occupied seat in digit."
 msgstr ""
 
-#: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:221
+#: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:215
 msgid "Machine Room"
 msgstr ""
 
-#: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:240 modules/neibers/cbos/cabinet/src/Entity/Seat.php:225
+#: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:234 modules/neibers/cbos/cabinet/src/Entity/Seat.php:225
 msgid "Publishing status"
 msgstr ""
 
-#: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:241
+#: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:235
 msgid "A boolean indicating whether the Cabinet is published."
 msgstr ""
 
-#: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:249 modules/neibers/cbos/cabinet/src/Entity/Seat.php:234
+#: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:243 modules/neibers/cbos/cabinet/src/Entity/Seat.php:234
 msgid "Created"
 msgstr ""
 
-#: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:250 modules/neibers/cbos/cabinet/src/Entity/Seat.php:235
+#: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:244 modules/neibers/cbos/cabinet/src/Entity/Seat.php:235
 msgid "The time that the entity was created."
 msgstr ""
 
-#: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:253 modules/neibers/cbos/cabinet/src/Entity/Seat.php:238
+#: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:247 modules/neibers/cbos/cabinet/src/Entity/Seat.php:238
 msgid "Changed"
 msgstr ""
 
-#: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:254 modules/neibers/cbos/cabinet/src/Entity/Seat.php:239
+#: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:248 modules/neibers/cbos/cabinet/src/Entity/Seat.php:239
 msgid "The time that the entity was last edited."
 msgstr ""
 
@@ -273,6 +274,10 @@ msgstr ""
 
 #: modules/neibers/cbos/cabinet/src/Form/SeatTypeForm.php:58
 msgid "Saved the %label Seat type."
+msgstr ""
+
+#: modules/neibers/cbos/cabinet/src/Plugin/EntityReferenceSelection/CabinetSelection.php:8
+msgid "Cabinet selection"
 msgstr ""
 
 #: modules/neibers/cbos/cabinet/config/install/cabinet.seat_type.default.yml:0

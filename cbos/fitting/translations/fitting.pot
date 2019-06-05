@@ -17,13 +17,15 @@
 #  modules/neibers/cbos/fitting/src/FittingListBuilder.php: n/a
 #  modules/neibers/cbos/fitting/src/Form/FittingForm.php: n/a
 #  modules/neibers/cbos/fitting/src/Form/FittingTypeForm.php: n/a
+#  modules/neibers/cbos/fitting/src/Plugin/WorkflowType/FittingState.php: n/a
 #  modules/neibers/cbos/fitting/config/install/fitting.type.default.yml: n/a
+#  modules/neibers/cbos/fitting/config/install/workflows.workflow.default_fitting_state.yml: n/a
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-05-19 07:05+0000\n"
+"POT-Creation-Date: 2019-06-05 04:29+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -53,7 +55,7 @@ msgid "Add Fitting"
 msgstr ""
 
 #: modules/neibers/cbos/fitting/fitting.links.action.yml:0
-msgid "Add Fitting type"
+msgid "Add type"
 msgstr ""
 
 #: modules/neibers/cbos/fitting/fitting.links.menu.yml:0
@@ -120,6 +122,18 @@ msgstr ""
 msgid "ID"
 msgstr ""
 
+#: modules/neibers/cbos/fitting/config/schema/fitting_type.schema.yml:0
+msgid "Workflow status settings"
+msgstr ""
+
+#: modules/neibers/cbos/fitting/config/schema/fitting_type.schema.yml:0
+msgid "Workflow"
+msgstr ""
+
+#: modules/neibers/cbos/fitting/config/schema/fitting_type.schema.yml:0
+msgid "Initial status"
+msgstr ""
+
 #: modules/neibers/cbos/fitting/src/FittingListBuilder.php:20
 msgid "Fitting ID"
 msgstr ""
@@ -152,27 +166,47 @@ msgstr ""
 msgid "A boolean indicating whether the Fitting is published."
 msgstr ""
 
-#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:215
-msgid "Purchasable"
-msgstr ""
-
-#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:216
-msgid "A boolean indicating whether the Fitting is purchasable."
-msgstr ""
-
-#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:228
-msgid "Created"
-msgstr ""
-
-#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:229
-msgid "The time that the entity was created."
-msgstr ""
-
-#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:232
-msgid "Changed"
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:214
+msgid "Server"
 msgstr ""
 
 #: modules/neibers/cbos/fitting/src/Entity/Fitting.php:233
+msgid "Cabinet Seat"
+msgstr ""
+
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:252
+msgid "State"
+msgstr ""
+
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:271
+msgid "Order"
+msgstr ""
+
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:272
+msgid "The related order number."
+msgstr ""
+
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:294
+msgid "Purchasable"
+msgstr ""
+
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:295
+msgid "A boolean indicating whether the Fitting is purchasable."
+msgstr ""
+
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:307
+msgid "Created"
+msgstr ""
+
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:308
+msgid "The time that the entity was created."
+msgstr ""
+
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:311
+msgid "Changed"
+msgstr ""
+
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:312
 msgid "The time that the entity was last edited."
 msgstr ""
 
@@ -208,7 +242,15 @@ msgstr ""
 msgid "Saved the %label Fitting type."
 msgstr ""
 
+#: modules/neibers/cbos/fitting/src/Plugin/WorkflowType/FittingState.php:7
+msgid "Fitting state"
+msgstr ""
+
 #: modules/neibers/cbos/fitting/config/install/fitting.type.default.yml:0
 msgid "Default"
+msgstr ""
+
+#: modules/neibers/cbos/fitting/config/install/workflows.workflow.default_fitting_state.yml:0
+msgid "Default IP workflow state"
 msgstr ""
 

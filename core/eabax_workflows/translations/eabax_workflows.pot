@@ -8,18 +8,18 @@
 #  modules/neibers/core/eabax_workflows/config/schema/eabax_workflows.schema.yml: n/a
 #  modules/neibers/core/eabax_workflows/src/Plugin/EntityTransitionForm.php: n/a
 #  modules/neibers/core/eabax_workflows/config/schema/eabax_workflows.views.schema.yml: n/a
+#  modules/neibers/core/eabax_workflows/src/Plugin/Field/FieldType/EntityStatusFieldItem.php: n/a
 #  modules/neibers/core/eabax_workflows/src/Controller/EabaxWorkflowsController.php: n/a
 #  modules/neibers/core/eabax_workflows/src/Form/ConditionForm.php: n/a
 #  modules/neibers/core/eabax_workflows/src/Plugin/EntityStateForm.php: n/a
 #  modules/neibers/core/eabax_workflows/src/Plugin/Action/WorkflowStatusTransition.php: n/a
 #  modules/neibers/core/eabax_workflows/src/Plugin/Action/Derivative/EntityStatusTransitionDeriver.php: n/a
-#  modules/neibers/core/eabax_workflows/src/Plugin/Field/FieldType/EntityStatusFieldItem.php: n/a
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-03-21 13:29+0800\n"
+"POT-Creation-Date: 2019-06-05 04:29+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -72,23 +72,39 @@ msgstr ""
 msgid "Condition Plugin ID"
 msgstr ""
 
+#: modules/neibers/core/eabax_workflows/config/schema/eabax_workflows.schema.yml:0
+msgid "Entity action"
+msgstr ""
+
+#: modules/neibers/core/eabax_workflows/config/schema/eabax_workflows.schema.yml:0 modules/neibers/core/eabax_workflows/src/Plugin/Field/FieldType/EntityStatusFieldItem.php:101
+msgid "Workflow"
+msgstr ""
+
+#: modules/neibers/core/eabax_workflows/config/schema/eabax_workflows.schema.yml:0
+msgid "Field"
+msgstr ""
+
+#: modules/neibers/core/eabax_workflows/config/schema/eabax_workflows.schema.yml:0
+msgid "Transition"
+msgstr ""
+
 #: modules/neibers/core/eabax_workflows/config/schema/eabax_workflows.views.schema.yml:0
 msgid "Values"
 msgstr ""
 
-#: modules/neibers/core/eabax_workflows/src/Controller/EabaxWorkflowsController.php:97
+#: modules/neibers/core/eabax_workflows/src/Controller/EabaxWorkflowsController.php:100
 msgid "It's success to transition to %to from %from"
 msgstr ""
 
-#: modules/neibers/core/eabax_workflows/src/Controller/EabaxWorkflowsController.php:105
+#: modules/neibers/core/eabax_workflows/src/Controller/EabaxWorkflowsController.php:108
 msgid "The status of transition not work."
 msgstr ""
 
-#: modules/neibers/core/eabax_workflows/src/Form/ConditionForm.php:43
+#: modules/neibers/core/eabax_workflows/src/Form/ConditionForm.php:44
 msgid "Condition"
 msgstr ""
 
-#: modules/neibers/core/eabax_workflows/src/Form/ConditionForm.php:49
+#: modules/neibers/core/eabax_workflows/src/Form/ConditionForm.php:50
 msgid "Continue"
 msgstr ""
 
@@ -170,10 +186,6 @@ msgstr ""
 
 #: modules/neibers/core/eabax_workflows/src/Plugin/Field/FieldType/EntityStatusFieldItem.php:82
 msgid "Workflow type"
-msgstr ""
-
-#: modules/neibers/core/eabax_workflows/src/Plugin/Field/FieldType/EntityStatusFieldItem.php:101
-msgid "Workflow"
 msgstr ""
 
 #: modules/neibers/core/eabax_workflows/src/Plugin/Field/FieldType/EntityStatusFieldItem.php:50

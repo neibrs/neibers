@@ -23,7 +23,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-05-19 07:05+0000\n"
+"POT-Creation-Date: 2019-06-05 04:29+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -168,27 +168,27 @@ msgstr ""
 msgid "The total number of statistical x axis cabinet."
 msgstr ""
 
-#: modules/neibers/cbos/machine_room/src/Entity/Room.php:239
+#: modules/neibers/cbos/machine_room/src/Entity/Room.php:250
 msgid "Y axis"
 msgstr ""
 
-#: modules/neibers/cbos/machine_room/src/Entity/Room.php:240
+#: modules/neibers/cbos/machine_room/src/Entity/Room.php:251
 msgid "The total number of statistical Y axis cabinet."
 msgstr ""
 
-#: modules/neibers/cbos/machine_room/src/Entity/Room.php:244
+#: modules/neibers/cbos/machine_room/src/Entity/Room.php:266
 msgid "Created"
 msgstr ""
 
-#: modules/neibers/cbos/machine_room/src/Entity/Room.php:245
+#: modules/neibers/cbos/machine_room/src/Entity/Room.php:267
 msgid "The time that the entity was created."
 msgstr ""
 
-#: modules/neibers/cbos/machine_room/src/Entity/Room.php:248
+#: modules/neibers/cbos/machine_room/src/Entity/Room.php:270
 msgid "Changed"
 msgstr ""
 
-#: modules/neibers/cbos/machine_room/src/Entity/Room.php:249
+#: modules/neibers/cbos/machine_room/src/Entity/Room.php:271
 msgid "The time that the entity was last edited."
 msgstr ""
 

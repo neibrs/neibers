@@ -3,23 +3,23 @@
 # LANGUAGE translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
-#  modules/eabax/core/eabax_core/eabax_core.info.yml: n/a
-#  modules/eabax/core/eabax_core/eabax_core.links.menu.yml: n/a
-#  modules/eabax/core/eabax_core/eabax_core.routing.yml: n/a
-#  modules/eabax/core/eabax_core/js/autocomplete.js: n/a
-#  modules/eabax/core/eabax_core/src/EabaxCoreManager.php: n/a
-#  modules/eabax/core/eabax_core/src/Controller/EabaxCoreController.php: n/a
-#  modules/eabax/core/eabax_core/src/Form/BundleDeleteForm.php: n/a
-#  modules/eabax/core/eabax_core/src/Plugin/BlockStyle/Box.php: n/a
-#  modules/eabax/core/eabax_core/src/Plugin/Field/FieldFormatter/EntityReferenceCustom.php: n/a
-#  modules/eabax/core/eabax_core/src/Plugin/Field/FieldFormatter/PercentBarFormatter.php: n/a
-#  modules/eabax/core/eabax_core/templates/avatar-toggle.html.twig: n/a
+#  modules/neibers/core/eabax_core/eabax_core.info.yml: n/a
+#  modules/neibers/core/eabax_core/eabax_core.links.menu.yml: n/a
+#  modules/neibers/core/eabax_core/eabax_core.routing.yml: n/a
+#  modules/neibers/core/eabax_core/js/autocomplete.js: n/a
+#  modules/neibers/core/eabax_core/src/EabaxCoreManager.php: n/a
+#  modules/neibers/core/eabax_core/src/Controller/EabaxCoreController.php: n/a
+#  modules/neibers/core/eabax_core/src/Form/BundleDeleteForm.php: n/a
+#  modules/neibers/core/eabax_core/src/Plugin/BlockStyle/Box.php: n/a
+#  modules/neibers/core/eabax_core/src/Plugin/Field/FieldFormatter/EntityReferenceCustom.php: n/a
+#  modules/neibers/core/eabax_core/src/Plugin/Field/FieldFormatter/PercentBarFormatter.php: n/a
+#  modules/neibers/core/eabax_core/templates/avatar-toggle.html.twig: n/a
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-03-21 13:29+0800\n"
+"POT-Creation-Date: 2019-06-05 04:29+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -28,181 +28,181 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: modules/eabax/core/eabax_core/eabax_core.info.yml:0;0;0
+#: modules/neibers/core/eabax_core/eabax_core.info.yml:0;0;0
 msgid "Neibrs core"
 msgstr ""
 
-#: modules/eabax/core/eabax_core/eabax_core.links.menu.yml:0
+#: modules/neibers/core/eabax_core/eabax_core.links.menu.yml:0
 msgid "Business modeling"
 msgstr ""
 
-#: modules/eabax/core/eabax_core/eabax_core.links.menu.yml:0 modules/eabax/core/eabax_core/eabax_core.routing.yml:0;0
+#: modules/neibers/core/eabax_core/eabax_core.links.menu.yml:0 modules/neibers/core/eabax_core/eabax_core.routing.yml:0;0
 msgid "Implementation"
 msgstr ""
 
-#: modules/eabax/core/eabax_core/eabax_core.links.menu.yml:0
+#: modules/neibers/core/eabax_core/eabax_core.links.menu.yml:0
 msgid "Implementor tools"
 msgstr ""
 
-#: modules/eabax/core/eabax_core/eabax_core.links.menu.yml:0
-msgid "Define pages"
-msgstr ""
-
-#: modules/eabax/core/eabax_core/eabax_core.links.menu.yml:0
+#: modules/neibers/core/eabax_core/eabax_core.links.menu.yml:0
 msgid "Define rules"
 msgstr ""
 
-#: modules/eabax/core/eabax_core/eabax_core.links.menu.yml:0
+#: modules/neibers/core/eabax_core/eabax_core.links.menu.yml:0
 msgid "Define Workflows"
 msgstr ""
 
-#: modules/eabax/core/eabax_core/eabax_core.links.menu.yml:0
+#: modules/neibers/core/eabax_core/eabax_core.links.menu.yml:0
 msgid "Define reports"
 msgstr ""
 
-#: modules/eabax/core/eabax_core/eabax_core.links.menu.yml:0
+#: modules/neibers/core/eabax_core/eabax_core.links.menu.yml:0
 msgid "Custom formatters"
 msgstr ""
 
-#: modules/eabax/core/eabax_core/eabax_core.links.menu.yml:0
+#: modules/neibers/core/eabax_core/eabax_core.links.menu.yml:0
 msgid "User interface translation"
 msgstr ""
 
-#: modules/eabax/core/eabax_core/eabax_core.links.menu.yml:0
+#: modules/neibers/core/eabax_core/eabax_core.links.menu.yml:0
 msgid "Configuration synchronization"
 msgstr ""
 
-#: modules/eabax/core/eabax_core/eabax_core.links.menu.yml:0 modules/eabax/core/eabax_core/eabax_core.routing.yml:0
+#: modules/neibers/core/eabax_core/eabax_core.links.menu.yml:0 modules/neibers/core/eabax_core/eabax_core.routing.yml:0
 msgid "System administration"
 msgstr ""
 
-#: modules/eabax/core/eabax_core/eabax_core.links.menu.yml:0
+#: modules/neibers/core/eabax_core/eabax_core.links.menu.yml:0
+msgid "Entity permission settings"
+msgstr ""
+
+#: modules/neibers/core/eabax_core/eabax_core.links.menu.yml:0
 msgid "Define roles"
 msgstr ""
 
-#: modules/eabax/core/eabax_core/eabax_core.links.menu.yml:0
+#: modules/neibers/core/eabax_core/eabax_core.links.menu.yml:0
 msgid "Define menus"
 msgstr ""
 
-#: modules/eabax/core/eabax_core/eabax_core.links.menu.yml:0
+#: modules/neibers/core/eabax_core/eabax_core.links.menu.yml:0
 msgid "User Management"
 msgstr ""
 
-#: modules/eabax/core/eabax_core/eabax_core.links.menu.yml:0
+#: modules/neibers/core/eabax_core/eabax_core.links.menu.yml:0
 msgid "Administer custom formatters."
 msgstr ""
 
-#: modules/eabax/core/eabax_core/eabax_core.links.menu.yml:0
+#: modules/neibers/core/eabax_core/eabax_core.links.menu.yml:0
 msgid "Import and export your configuration."
 msgstr ""
 
-#: modules/eabax/core/eabax_core/eabax_core.routing.yml:0
+#: modules/neibers/core/eabax_core/eabax_core.routing.yml:0
 msgid "Implementation tools"
 msgstr ""
 
-#: modules/eabax/core/eabax_core/js/autocomplete.js:0
+#: modules/neibers/core/eabax_core/js/autocomplete.js:0
 msgid "Add"
 msgstr ""
 
-#: modules/eabax/core/eabax_core/src/EabaxCoreManager.php:46
+#: modules/neibers/core/eabax_core/src/EabaxCoreManager.php:46
 msgid "You do not have any menu items."
 msgstr ""
 
-#: modules/eabax/core/eabax_core/src/Controller/EabaxCoreController.php:69
+#: modules/neibers/core/eabax_core/src/Controller/EabaxCoreController.php:66
 msgid "%updated has been updated."
 msgstr ""
 
-#: modules/eabax/core/eabax_core/src/Form/BundleDeleteForm.php:22
+#: modules/neibers/core/eabax_core/src/Form/BundleDeleteForm.php:22
 msgid "%type is used by 1 piece of %entity on your site. You can not remove %type until you have removed all of the %type %entity."
 msgid_plural "%type is used by @count pieces of %entity on your site. You can not remove %type until you have removed all of the %type %entity."
 msgstr[0] ""
 msgstr[1] ""
 
-#: modules/eabax/core/eabax_core/src/Plugin/BlockStyle/Box.php:34
+#: modules/neibers/core/eabax_core/src/Plugin/BlockStyle/Box.php:34
 msgid "- None -"
 msgstr ""
 
-#: modules/eabax/core/eabax_core/src/Plugin/BlockStyle/Box.php:8
+#: modules/neibers/core/eabax_core/src/Plugin/BlockStyle/Box.php:8
 msgid "Box"
 msgstr ""
 
-#: modules/eabax/core/eabax_core/src/Plugin/Field/FieldFormatter/EntityReferenceCustom.php:79
+#: modules/neibers/core/eabax_core/src/Plugin/Field/FieldFormatter/EntityReferenceCustom.php:76
 msgid "View mode"
 msgstr ""
 
-#: modules/eabax/core/eabax_core/src/Plugin/Field/FieldFormatter/EntityReferenceCustom.php:85
+#: modules/neibers/core/eabax_core/src/Plugin/Field/FieldFormatter/EntityReferenceCustom.php:82
 msgid "Prefix"
 msgstr ""
 
-#: modules/eabax/core/eabax_core/src/Plugin/Field/FieldFormatter/EntityReferenceCustom.php:90
+#: modules/neibers/core/eabax_core/src/Plugin/Field/FieldFormatter/EntityReferenceCustom.php:87
 msgid "Suffix"
 msgstr ""
 
-#: modules/eabax/core/eabax_core/src/Plugin/Field/FieldFormatter/EntityReferenceCustom.php:95
+#: modules/neibers/core/eabax_core/src/Plugin/Field/FieldFormatter/EntityReferenceCustom.php:92
 msgid "Field prefix"
 msgstr ""
 
-#: modules/eabax/core/eabax_core/src/Plugin/Field/FieldFormatter/EntityReferenceCustom.php:100
+#: modules/neibers/core/eabax_core/src/Plugin/Field/FieldFormatter/EntityReferenceCustom.php:97
 msgid "Field suffix"
 msgstr ""
 
-#: modules/eabax/core/eabax_core/src/Plugin/Field/FieldFormatter/EntityReferenceCustom.php:105
+#: modules/neibers/core/eabax_core/src/Plugin/Field/FieldFormatter/EntityReferenceCustom.php:102
 msgid "Label prefix"
 msgstr ""
 
-#: modules/eabax/core/eabax_core/src/Plugin/Field/FieldFormatter/EntityReferenceCustom.php:110
+#: modules/neibers/core/eabax_core/src/Plugin/Field/FieldFormatter/EntityReferenceCustom.php:107
 msgid "Label suffix"
 msgstr ""
 
-#: modules/eabax/core/eabax_core/src/Plugin/Field/FieldFormatter/EntityReferenceCustom.php:115
+#: modules/neibers/core/eabax_core/src/Plugin/Field/FieldFormatter/EntityReferenceCustom.php:112
 msgid "Value prefix"
 msgstr ""
 
-#: modules/eabax/core/eabax_core/src/Plugin/Field/FieldFormatter/EntityReferenceCustom.php:120
+#: modules/neibers/core/eabax_core/src/Plugin/Field/FieldFormatter/EntityReferenceCustom.php:117
 msgid "Value suffix"
 msgstr ""
 
-#: modules/eabax/core/eabax_core/src/Plugin/Field/FieldFormatter/EntityReferenceCustom.php:17
+#: modules/neibers/core/eabax_core/src/Plugin/Field/FieldFormatter/EntityReferenceCustom.php:14
 msgid "Custom"
 msgstr ""
 
-#: modules/eabax/core/eabax_core/src/Plugin/Field/FieldFormatter/EntityReferenceCustom.php:17
+#: modules/neibers/core/eabax_core/src/Plugin/Field/FieldFormatter/EntityReferenceCustom.php:14
 msgid "Display the referenced entity."
 msgstr ""
 
-#: modules/eabax/core/eabax_core/src/Plugin/Field/FieldFormatter/PercentBarFormatter.php:27
+#: modules/neibers/core/eabax_core/src/Plugin/Field/FieldFormatter/PercentBarFormatter.php:27
 msgid "This field has percent bar."
 msgstr ""
 
-#: modules/eabax/core/eabax_core/src/Plugin/Field/FieldFormatter/PercentBarFormatter.php:8
+#: modules/neibers/core/eabax_core/src/Plugin/Field/FieldFormatter/PercentBarFormatter.php:8
 msgid "Percent Bar"
 msgstr ""
 
-#: modules/eabax/core/eabax_core/templates/avatar-toggle.html.twig:12
+#: modules/neibers/core/eabax_core/templates/avatar-toggle.html.twig:12
 msgid "Welcome to @content.name"
 msgstr ""
 
-#: modules/eabax/core/eabax_core/templates/avatar-toggle.html.twig:13
+#: modules/neibers/core/eabax_core/templates/avatar-toggle.html.twig:13
 msgid "Since from @content.since ."
 msgstr ""
 
-#: modules/eabax/core/eabax_core/templates/avatar-toggle.html.twig:20
+#: modules/neibers/core/eabax_core/templates/avatar-toggle.html.twig:20
 msgid "Followers"
 msgstr ""
 
-#: modules/eabax/core/eabax_core/templates/avatar-toggle.html.twig:23
+#: modules/neibers/core/eabax_core/templates/avatar-toggle.html.twig:23
 msgid "Sales"
 msgstr ""
 
-#: modules/eabax/core/eabax_core/templates/avatar-toggle.html.twig:26
+#: modules/neibers/core/eabax_core/templates/avatar-toggle.html.twig:26
 msgid "Friends"
 msgstr ""
 
-#: modules/eabax/core/eabax_core/templates/avatar-toggle.html.twig:34
+#: modules/neibers/core/eabax_core/templates/avatar-toggle.html.twig:34
 msgid "Profile"
 msgstr ""
 
-#: modules/eabax/core/eabax_core/templates/avatar-toggle.html.twig:37
+#: modules/neibers/core/eabax_core/templates/avatar-toggle.html.twig:37
 msgid "Sign out"
 msgstr ""
 

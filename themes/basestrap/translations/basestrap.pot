@@ -3,28 +3,30 @@
 # LANGUAGE translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
-#  profiles/neibrs/themes/basestrap/basestrap.info.yml: n/a
-#  profiles/neibrs/themes/basestrap/config/schema/basestrap.schema.yml: n/a
-#  profiles/neibrs/themes/basestrap/templates/block/block--basestrap-help.html.twig: n/a
-#  profiles/neibrs/themes/basestrap/config/optional/block.block.basestrap_account_menu.yml: n/a
-#  profiles/neibrs/themes/basestrap/config/optional/block.block.basestrap_branding.yml: n/a
-#  profiles/neibrs/themes/basestrap/config/optional/block.block.basestrap_breadcrumbs.yml: n/a
-#  profiles/neibrs/themes/basestrap/config/optional/block.block.basestrap_content.yml: n/a
-#  profiles/neibrs/themes/basestrap/config/optional/block.block.basestrap_footer.yml: n/a
-#  profiles/neibrs/themes/basestrap/config/optional/block.block.basestrap_help.yml: n/a
-#  profiles/neibrs/themes/basestrap/config/optional/block.block.basestrap_local_actions.yml: n/a
-#  profiles/neibrs/themes/basestrap/config/optional/block.block.basestrap_local_tasks.yml: n/a
-#  profiles/neibrs/themes/basestrap/config/optional/block.block.basestrap_main_menu.yml: n/a
-#  profiles/neibrs/themes/basestrap/config/optional/block.block.basestrap_messages.yml: n/a
-#  profiles/neibrs/themes/basestrap/config/optional/block.block.basestrap_page_title.yml: n/a
-#  profiles/neibrs/themes/basestrap/config/optional/block.block.basestrap_powered.yml: n/a
-#  profiles/neibrs/themes/basestrap/config/optional/block.block.basestrap_role_menu.yml: n/a
+#  modules/neibers/themes/basestrap/basestrap.info.yml: n/a
+#  modules/neibers/themes/basestrap/config/schema/basestrap.schema.yml: n/a
+#  modules/neibers/themes/basestrap/templates/block/block--basestrap-help.html.twig: n/a
+#  modules/neibers/themes/basestrap/templates/order/commerce-order--admin.html.twig: n/a
+#  modules/neibers/themes/basestrap/templates/order/commerce-order--user.html.twig: n/a
+#  modules/neibers/themes/basestrap/config/optional/block.block.basestrap_account_menu.yml: n/a
+#  modules/neibers/themes/basestrap/config/optional/block.block.basestrap_branding.yml: n/a
+#  modules/neibers/themes/basestrap/config/optional/block.block.basestrap_breadcrumbs.yml: n/a
+#  modules/neibers/themes/basestrap/config/optional/block.block.basestrap_content.yml: n/a
+#  modules/neibers/themes/basestrap/config/optional/block.block.basestrap_footer.yml: n/a
+#  modules/neibers/themes/basestrap/config/optional/block.block.basestrap_help.yml: n/a
+#  modules/neibers/themes/basestrap/config/optional/block.block.basestrap_local_actions.yml: n/a
+#  modules/neibers/themes/basestrap/config/optional/block.block.basestrap_local_tasks.yml: n/a
+#  modules/neibers/themes/basestrap/config/optional/block.block.basestrap_main_menu.yml: n/a
+#  modules/neibers/themes/basestrap/config/optional/block.block.basestrap_messages.yml: n/a
+#  modules/neibers/themes/basestrap/config/optional/block.block.basestrap_page_title.yml: n/a
+#  modules/neibers/themes/basestrap/config/optional/block.block.basestrap_powered.yml: n/a
+#  modules/neibers/themes/basestrap/config/optional/block.block.basestrap_role_menu.yml: n/a
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-05-19 07:05+0000\n"
+"POT-Creation-Date: 2019-06-05 04:29+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -33,79 +35,95 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: profiles/neibrs/themes/basestrap/basestrap.info.yml:0
+#: modules/neibers/themes/basestrap/basestrap.info.yml:0
 msgid "Basestrap"
 msgstr ""
 
-#: profiles/neibrs/themes/basestrap/basestrap.info.yml:0
+#: modules/neibers/themes/basestrap/basestrap.info.yml:0
 msgid "Uses the Bootstrap framework Sass source files and must be compiled (not for beginners)."
 msgstr ""
 
-#: profiles/neibrs/themes/basestrap/basestrap.info.yml:0
+#: modules/neibers/themes/basestrap/basestrap.info.yml:0
 msgid "Bootstrap"
 msgstr ""
 
-#: profiles/neibrs/themes/basestrap/config/schema/basestrap.schema.yml:0
+#: modules/neibers/themes/basestrap/config/schema/basestrap.schema.yml:0
 msgid "Basestrap settings"
 msgstr ""
 
-#: profiles/neibrs/themes/basestrap/templates/block/block--basestrap-help.html.twig:44
+#: modules/neibers/themes/basestrap/templates/block/block--basestrap-help.html.twig:44
 msgid "Operation Tips"
 msgstr ""
 
-#: profiles/neibrs/themes/basestrap/templates/block/block--basestrap-help.html.twig:45
+#: modules/neibers/themes/basestrap/templates/block/block--basestrap-help.html.twig:45
 msgid "Collapse Tips"
 msgstr ""
 
-#: profiles/neibrs/themes/basestrap/config/optional/block.block.basestrap_account_menu.yml:0
+#: modules/neibers/themes/basestrap/templates/order/commerce-order--admin.html.twig:31
+msgid "Order activity"
+msgstr ""
+
+#: modules/neibers/themes/basestrap/templates/order/commerce-order--admin.html.twig:51
+msgid "Customer Information"
+msgstr ""
+
+#: modules/neibers/themes/basestrap/templates/order/commerce-order--admin.html.twig:66 modules/neibers/themes/basestrap/templates/order/commerce-order--user.html.twig:31
+msgid "Billing information"
+msgstr ""
+
+#: modules/neibers/themes/basestrap/templates/order/commerce-order--admin.html.twig:76 modules/neibers/themes/basestrap/templates/order/commerce-order--user.html.twig:25
+msgid "Shipping information"
+msgstr ""
+
+#: modules/neibers/themes/basestrap/config/optional/block.block.basestrap_account_menu.yml:0
 msgid "User account menu"
 msgstr ""
 
-#: profiles/neibrs/themes/basestrap/config/optional/block.block.basestrap_branding.yml:0
+#: modules/neibers/themes/basestrap/config/optional/block.block.basestrap_branding.yml:0
 msgid "Site branding"
 msgstr ""
 
-#: profiles/neibrs/themes/basestrap/config/optional/block.block.basestrap_breadcrumbs.yml:0
+#: modules/neibers/themes/basestrap/config/optional/block.block.basestrap_breadcrumbs.yml:0
 msgid "Breadcrumbs"
 msgstr ""
 
-#: profiles/neibrs/themes/basestrap/config/optional/block.block.basestrap_content.yml:0
+#: modules/neibers/themes/basestrap/config/optional/block.block.basestrap_content.yml:0
 msgid "Main page content"
 msgstr ""
 
-#: profiles/neibrs/themes/basestrap/config/optional/block.block.basestrap_footer.yml:0
+#: modules/neibers/themes/basestrap/config/optional/block.block.basestrap_footer.yml:0
 msgid "Footer menu"
 msgstr ""
 
-#: profiles/neibrs/themes/basestrap/config/optional/block.block.basestrap_help.yml:0
+#: modules/neibers/themes/basestrap/config/optional/block.block.basestrap_help.yml:0
 msgid "Help"
 msgstr ""
 
-#: profiles/neibrs/themes/basestrap/config/optional/block.block.basestrap_local_actions.yml:0
+#: modules/neibers/themes/basestrap/config/optional/block.block.basestrap_local_actions.yml:0
 msgid "Primary admin actions"
 msgstr ""
 
-#: profiles/neibrs/themes/basestrap/config/optional/block.block.basestrap_local_tasks.yml:0
+#: modules/neibers/themes/basestrap/config/optional/block.block.basestrap_local_tasks.yml:0
 msgid "Tabs"
 msgstr ""
 
-#: profiles/neibrs/themes/basestrap/config/optional/block.block.basestrap_main_menu.yml:0
+#: modules/neibers/themes/basestrap/config/optional/block.block.basestrap_main_menu.yml:0
 msgid "Main navigation"
 msgstr ""
 
-#: profiles/neibrs/themes/basestrap/config/optional/block.block.basestrap_messages.yml:0
+#: modules/neibers/themes/basestrap/config/optional/block.block.basestrap_messages.yml:0
 msgid "Status messages"
 msgstr ""
 
-#: profiles/neibrs/themes/basestrap/config/optional/block.block.basestrap_page_title.yml:0
+#: modules/neibers/themes/basestrap/config/optional/block.block.basestrap_page_title.yml:0
 msgid "Page title"
 msgstr ""
 
-#: profiles/neibrs/themes/basestrap/config/optional/block.block.basestrap_powered.yml:0
+#: modules/neibers/themes/basestrap/config/optional/block.block.basestrap_powered.yml:0
 msgid "Powered by Drupal"
 msgstr ""
 
-#: profiles/neibrs/themes/basestrap/config/optional/block.block.basestrap_role_menu.yml:0
+#: modules/neibers/themes/basestrap/config/optional/block.block.basestrap_role_menu.yml:0
 msgid "Role menu block"
 msgstr ""
 

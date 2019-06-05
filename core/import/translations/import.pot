@@ -26,7 +26,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-03-21 13:29+0800\n"
+"POT-Creation-Date: 2019-06-05 04:29+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -35,7 +35,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: modules/neibers/core/import/import.info.yml:0;0 modules/neibers/core/import/import.routing.yml:0 modules/neibers/core/import/src/Form/ExcelImportForm.php:81 modules/neibers/core/import/src/Form/ExcelImportSelectSheetForm.php:94 modules/neibers/core/import/src/Form/ImportForm.php:81 modules/neibers/core/import/src/Form/ImportFormSelectSheet.php:120
+#: modules/neibers/core/import/import.info.yml:0;0 modules/neibers/core/import/import.routing.yml:0 modules/neibers/core/import/src/Form/ExcelImportForm.php:81 modules/neibers/core/import/src/Form/ExcelImportSelectSheetForm.php:97 modules/neibers/core/import/src/Form/ImportForm.php:80 modules/neibers/core/import/src/Form/ImportFormSelectSheet.php:122
 msgid "Import"
 msgstr ""
 
@@ -91,7 +91,7 @@ msgstr ""
 msgid "Import selected excel migrate"
 msgstr ""
 
-#: modules/neibers/core/import/config/schema/import.schema.yml:0 modules/neibers/core/import/src/Form/ExcelImportForm.php:74 modules/neibers/core/import/src/Form/ExcelImportSelectSheetForm.php:87 modules/neibers/core/import/src/Form/ImportDemoDataForm.php:26 modules/neibers/core/import/src/Plugin/Action/ImportExcelMigrate.php:64
+#: modules/neibers/core/import/config/schema/import.schema.yml:0 modules/neibers/core/import/src/Form/ExcelImportForm.php:74 modules/neibers/core/import/src/Form/ExcelImportSelectSheetForm.php:90 modules/neibers/core/import/src/Form/ImportDemoDataForm.php:26 modules/neibers/core/import/src/Plugin/Action/ImportExcelMigrate.php:64
 msgid "Update"
 msgstr ""
 
@@ -115,7 +115,7 @@ msgstr ""
 msgid "Importing %migration (@percent%)."
 msgstr ""
 
-#: modules/neibers/core/import/src/Controller/ImportController.php:64
+#: modules/neibers/core/import/src/Controller/ImportController.php:62
 msgid "@entity_type import"
 msgstr ""
 
@@ -131,7 +131,7 @@ msgstr ""
 msgid "The import file which needs import."
 msgstr ""
 
-#: modules/neibers/core/import/src/Form/ExcelImportForm.php:96 modules/neibers/core/import/src/Form/ImportForm.php:128
+#: modules/neibers/core/import/src/Form/ExcelImportForm.php:96 modules/neibers/core/import/src/Form/ImportForm.php:127
 msgid "File to import not found."
 msgstr ""
 
@@ -141,19 +141,19 @@ msgid_plural "%s not exist."
 msgstr[0] ""
 msgstr[1] ""
 
-#: modules/neibers/core/import/src/Form/ExcelImportSelectSheetForm.php:54
+#: modules/neibers/core/import/src/Form/ExcelImportSelectSheetForm.php:57
 msgid "- Select -"
 msgstr ""
 
-#: modules/neibers/core/import/src/Form/ExcelImportSelectSheetForm.php:64 modules/neibers/core/import/src/Form/ImportFormSelectSheet.php:43
+#: modules/neibers/core/import/src/Form/ExcelImportSelectSheetForm.php:67 modules/neibers/core/import/src/Form/ImportFormSelectSheet.php:46
 msgid "Sheet"
 msgstr ""
 
-#: modules/neibers/core/import/src/Form/ExcelImportSelectSheetForm.php:64 modules/neibers/core/import/src/Form/ImportRulesForm.php:62
+#: modules/neibers/core/import/src/Form/ExcelImportSelectSheetForm.php:67 modules/neibers/core/import/src/Form/ImportRulesForm.php:62
 msgid "Migration"
 msgstr ""
 
-#: modules/neibers/core/import/src/Form/ExcelImportSelectSheetForm.php:115
+#: modules/neibers/core/import/src/Form/ExcelImportSelectSheetForm.php:118
 msgid "Import successed."
 msgstr ""
 
@@ -177,47 +177,47 @@ msgstr ""
 msgid "Install demo data"
 msgstr ""
 
-#: modules/neibers/core/import/src/Form/ImportForm.php:39
+#: modules/neibers/core/import/src/Form/ImportForm.php:38
 msgid "Import template not found."
 msgstr ""
 
-#: modules/neibers/core/import/src/Form/ImportForm.php:44
+#: modules/neibers/core/import/src/Form/ImportForm.php:43
 msgid "Template"
 msgstr ""
 
-#: modules/neibers/core/import/src/Form/ImportForm.php:59
+#: modules/neibers/core/import/src/Form/ImportForm.php:58
 msgid "Data file"
 msgstr ""
 
-#: modules/neibers/core/import/src/Form/ImportForm.php:62
+#: modules/neibers/core/import/src/Form/ImportForm.php:61
 msgid "A import file."
 msgstr ""
 
-#: modules/neibers/core/import/src/Form/ImportForm.php:74
+#: modules/neibers/core/import/src/Form/ImportForm.php:73
 msgid "Update existing data"
 msgstr ""
 
-#: modules/neibers/core/import/src/Form/ImportForm.php:109
+#: modules/neibers/core/import/src/Form/ImportForm.php:108
 msgid "A import file. %template"
 msgstr ""
 
-#: modules/neibers/core/import/src/Form/ImportForm.php:110
+#: modules/neibers/core/import/src/Form/ImportForm.php:109
 msgid "Download template"
 msgstr ""
 
-#: modules/neibers/core/import/src/Form/ImportFormSelectSheet.php:61
+#: modules/neibers/core/import/src/Form/ImportFormSelectSheet.php:64
 msgid "Header row"
 msgstr ""
 
-#: modules/neibers/core/import/src/Form/ImportFormSelectSheet.php:78
+#: modules/neibers/core/import/src/Form/ImportFormSelectSheet.php:80
 msgid "Sources"
 msgstr ""
 
-#: modules/neibers/core/import/src/Form/ImportFormSelectSheet.php:80
+#: modules/neibers/core/import/src/Form/ImportFormSelectSheet.php:82
 msgid "Data item"
 msgstr ""
 
-#: modules/neibers/core/import/src/Form/ImportFormSelectSheet.php:80
+#: modules/neibers/core/import/src/Form/ImportFormSelectSheet.php:82
 msgid "Excel column"
 msgstr ""
 
