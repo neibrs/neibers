@@ -3,7 +3,7 @@ type: module
 description: Neibrs core
 core: 8.x
 interface translation project: eabax_core
-interface translation server pattern: modules/neibers/core/eabax_core/translations/eabax_core.%language.po
+interface translation server pattern: modules/neibers/core/%project/translations/eabax_core.%language.po
 package: Neibrs core
 dependencies:
   - block_style_plugins
