@@ -45,11 +45,11 @@ msgstr ""
 
 #: modules/neibers/cbos/machine_room/machine_room.links.action.yml:0
 msgid "Add"
-msgstr ""
+msgstr "添加"
 
 #: modules/neibers/cbos/machine_room/machine_room.links.action.yml:0
 msgid "Add type"
-msgstr ""
+msgstr "添加类型"
 
 #: modules/neibers/cbos/machine_room/machine_room.links.menu.yml:0;0
 msgid "Room"
@@ -163,3 +163,7 @@ msgstr "已保存机房类型%label."
 msgid "Default"
 msgstr "默认"
 
+
+#: Manual
+msgid "Room type"
+msgstr "机房类型"
