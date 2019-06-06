@@ -4,7 +4,7 @@ description: 'Manage for IDC service.'
 core: 8.x
 version: VERSION
 interface translation project: neibrs
-interface translation server pattern: profiles/%project/translations/%project.%language.po
+interface translation server pattern: modules/neibers/profiles/%project/translations/%project.%language.po
 distribution:
   name: 'Neibrs IDC'
   langcode: en
