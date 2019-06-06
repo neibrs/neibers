@@ -28,7 +28,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: modules/eabax/core/eabax_core/eabax_core.links.menu.yml:0
+#: modules/neibers/core/eabax_core/eabax_core.links.menu.yml:0
 msgid "Business modeling"
 msgstr "业务模型"
 
