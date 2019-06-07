@@ -50,7 +50,11 @@ class IpWithSpecificOrderForm extends FormBase {
     $this->order = $order;
     // TODO add ip table for this order
 
-    $header = [$this->t('Server'), $this->t('Administer'), $this->t('Business'), $this->t('Fitting')];
+    $header = [$this->t('Server')];
+    if ($display->getMode() == 'default') {
+      $header = array_merge($header, [$this->t('Administer')]);
+    }
+    $header = array_merge($header, [$this->t('Business'), $this->t('Fitting')]);
     $form['ips'] = [
       '#caption' => $this->t('IP tables'),
       '#type' => 'table',
@@ -64,9 +68,11 @@ class IpWithSpecificOrderForm extends FormBase {
       $form['ips'][$key]['server'] = [
         '#markup' => $entity_ip->server->entity->label(),
       ];
-      $form['ips'][$key]['inet'] = [
-        '#markup' => $entity_ip->label(),
-      ];
+      if ($display->getMode() == 'default') {
+        $form['ips'][$key]['inet'] = [
+          '#markup' => $entity_ip->label(),
+        ];
+      }
 
       $onets = array_map(function ($ip) {
         return $ip->label();
