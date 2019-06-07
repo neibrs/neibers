@@ -24,7 +24,7 @@ function ip_help($route_name, RouteMatchInterface $route_match) {
     case 'entity.ip.add_form':
     case 'entity.ip.edit_form':
       $output = '';
-      $output .= '<p>' . t('The inet ip must bind to specify server on seat of cabinet.') . '</p>';
+      $output .= '<p>' . t('The administer ip must bind to specify server on seat of cabinet.') . '</p>';
       return $output;
     default:
   }
