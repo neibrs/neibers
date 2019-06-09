@@ -2,6 +2,7 @@
 
 namespace Drupal\ip\Form;
 
+use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
@@ -87,10 +88,7 @@ class IpWithSpecificOrderForm extends FormBase {
       ];
 
       if ($display->getMode() == 'default') {
-        $form['ips'][$key]['operation'] = [
-        // TODO
-          '#markup' => '',
-        ];
+        $form['ips'][$key]['operation'] = $this->buildOperations($entity_ip);
       }
     }
 
@@ -177,6 +175,42 @@ class IpWithSpecificOrderForm extends FormBase {
 
       $this->messenger()->addStatus($this->t('Save success.'));
     }
+  }
+
+  /**
+   * Builds a renderable list of operation links for the entity.
+   *
+   * @param \Drupal\Core\Entity\EntityInterface $entity
+   *   The entity on which the linked operations will be performed.
+   *
+   * @return array
+   *   A renderable array of operation links.
+   *
+   * @see \Drupal\Core\Entity\EntityListBuilder::buildRow()
+   */
+  protected function buildOperations(Entityinterface $entity) {
+    $build = [
+      '#type' => 'operations',
+      '#links' => $this->getOperations($entity),
+    ];
+
+    return $build;
+  }
+
+  protected function getOperations(EntityInterface $entity) {
+    $operations = [];
+
+    /** @var \Drupal\workflows\WorkflowInterface $workflow */
+    $workflow = $this->entityTypeManager->getStorage('workflow')
+      ->load('ip_state');
+//    $workflow_type = $workflow->getTypePlugin();
+
+    // TODO add ip state transition operation
+    foreach ($transitions as $transition) {
+      $a = 'a';
+    }
+
+    return $operations;
   }
 
 }

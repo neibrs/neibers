@@ -31,4 +31,10 @@ type_settings:
         - draft
         - free
       to: used
-      weight: 1
+      weight: 2
+    stop:
+      label: Stop
+      from:
+        - used
+      to: free
+      weight: 3

@@ -53,6 +53,14 @@ class IpState extends EntityWorkflowBase {
           ],
           'weight' => 2,
         ],
+        'stop' => [
+          'label' => 'Stop',
+          'to' => 'free',
+          'from' => [
+            'used',
+          ],
+          'weight' => 3,
+        ],
       ],
     ];
   }
