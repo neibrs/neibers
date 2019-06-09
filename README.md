@@ -25,7 +25,7 @@ The new directory named `laradrupal` is the web directory with drupal.
 此安装文件是为了提供一个完整的IDC运营套件。
 安装完成后即实现对IDC行业，特别是适用于小型IDC公司销售服务器，IP，硬件资源等管理.
 
-此后，通过本框架进行扩展，往大型IDC行业服务软件上应用.
+此后，通过本框架进行不间断的功能扩展。
 
 # 获得代码方式
 1. 通过composer获得
