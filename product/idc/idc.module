@@ -50,6 +50,7 @@ function idc_block_access(Block $block, $operation, AccountInterface $account) {
       $route_name = \Drupal::routeMatch()->getRouteName();
       $hide_on = [
         'entity.ip.canonical',
+        'entity.ip.edit_form',
       ];
       if (in_array($route_name, $hide_on)) {
         return AccessResult::forbidden();
