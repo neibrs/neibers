@@ -1,0 +1,4 @@
+services:
+  ip.manager:
+    class: Drupal\ip\IpManager
+    arguments: ['@entity_type.manager']
