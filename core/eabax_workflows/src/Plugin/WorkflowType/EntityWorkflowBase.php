@@ -58,8 +58,8 @@ abstract class EntityWorkflowBase extends WorkflowTypeBase {
    * @return \Drupal\workflows\StateInterface
    */
   public function getEntityState(ContentEntityInterface $entity) {
-    if ($entity->hasField('status')) {
-      $field = $entity->getFieldDefinition('status');
+    if ($entity->hasField('state')) {
+      $field = $entity->getFieldDefinition('state');
       /** @var \Drupal\workflows\WorkflowInterface $workflow */
       $workflow = \Drupal::entityTypeManager()->getStorage('workflow')->load($field->getSetting('workflow'));
       if ($field->getType() == 'entity_status' && $workflow->getTypePlugin()->getPluginId() == $this->getPluginId()) {

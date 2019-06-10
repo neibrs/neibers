@@ -26,8 +26,8 @@ function eabax_workflows_entity_field_access($operation, FieldDefinitionInterfac
   }
 
   $entity = $items->getEntity();
-  if ($entity->hasField('status')) {
-    $field = $entity->getFieldDefinition('status');
+  if ($entity->hasField('state')) {
+    $field = $entity->getFieldDefinition('state');
     if ($field->getType() == 'entity_status') {
       /** @var \Drupal\workflows\WorkflowInterface $workflow */
       $workflow = \Drupal::entityTypeManager()->getStorage('workflow')

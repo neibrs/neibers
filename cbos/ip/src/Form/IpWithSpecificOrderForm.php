@@ -6,6 +6,7 @@ use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Url;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 class IpWithSpecificOrderForm extends FormBase {
@@ -92,7 +93,19 @@ class IpWithSpecificOrderForm extends FormBase {
       }
     }
 
+    $form['bips'] = [
+      '#caption' => $this->t('All business ip collection'),
+      '#type' => 'table',
+      '#title' => $this->t('Business ip'),
+      '#header' => [$this->t('Business IP'), $this->t('Operations')],
+      '#sticky' => TRUE,
+    ];
+
     if ($display->getMode() == 'default') {
+      // TODO Business ip table for disable and replace ip.
+
+
+      // Allocate ip form builder.
       $form['allocate'] = [
         '#type' => 'details',
         '#title' => $this->t('Allocate'),
@@ -200,14 +213,34 @@ class IpWithSpecificOrderForm extends FormBase {
   protected function getOperations(EntityInterface $entity) {
     $operations = [];
 
+    $transitions = [];
     /** @var \Drupal\workflows\WorkflowInterface $workflow */
     $workflow = $this->entityTypeManager->getStorage('workflow')
-      ->load('ip_state');
-//    $workflow_type = $workflow->getTypePlugin();
+      ->load('default_ip_state');
+    $workflow_type = $workflow->getTypePlugin();
 
-    // TODO add ip state transition operation
+    $pre_transitions = $workflow_type->getTransitions();
+
+    foreach ($pre_transitions as $pre_transition) {
+      if (!in_array($entity->get('state')->value, array_keys($pre_transition->from()))) {
+        continue;
+      }
+      $transitions[$pre_transition->id()] = $pre_transition;
+    }
+
+    // Fix Administer ip state transition operation
+    // TODO add business ip state transition operation
     foreach ($transitions as $transition) {
-      $a = 'a';
+      $operations[$transition->id()] = [
+        'title' => $transition->label(),
+        'weight' => 10,
+        'url' => Url::fromRoute('eabax_workflows.apply_transition', [
+          'workflow_type' => $workflow->id(),
+          'transition_id' => $transition->id(),
+          'entity_type' => 'ip',
+          'entity_id' => $entity->id(),
+        ]),
+      ];
     }
 
     return $operations;

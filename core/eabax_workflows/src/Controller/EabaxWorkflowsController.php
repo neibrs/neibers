@@ -91,10 +91,10 @@ class EabaxWorkflowsController extends ControllerBase {
     $from = array_map(function ($item) {
       return $item->id();
     }, $from);
-    // TODO fix field status common field.
-    $entity_state_id = $entity->get('status')->value;
+    // TODO fix field state common field.
+    $entity_state_id = $entity->get('state')->value;
     if (in_array($entity_state_id, $from)) {
-      $entity->set('status', $transition->to()->id());
+      $entity->set('state', $transition->to()->id());
       $entity->save();
       $this->messenger()
         ->addStatus($this->t("It's success to transition to %to from %from", [
@@ -134,7 +134,7 @@ class EabaxWorkflowsController extends ControllerBase {
     $from = array_map(function ($item) {
       return $item->label();
     }, $transition->from());
-    if (in_array($entity->get('status')->value, array_flip($from))) {
+    if (in_array($entity->get('state')->value, array_flip($from))) {
       return AccessResult::allowed();
     }
     else {
