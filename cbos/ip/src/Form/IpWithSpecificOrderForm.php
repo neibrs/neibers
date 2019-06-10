@@ -53,9 +53,9 @@ class IpWithSpecificOrderForm extends FormBase {
 
     $header = [$this->t('Server')];
     if ($display->getMode() == 'default') {
-      $header = array_merge($header, [$this->t('Administer')]);
+      $header = array_merge($header, [$this->t('Administer IP')]);
     }
-    $header = array_merge($header, [$this->t('Business'), $this->t('Fitting')]);
+    $header = array_merge($header, [$this->t('Business IP'), $this->t('Fitting')]);
     $form['ips'] = [
       '#caption' => $this->t('IP tables'),
       '#type' => 'table',
