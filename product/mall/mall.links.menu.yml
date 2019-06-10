@@ -21,3 +21,15 @@ mall.commerce.product_attribute:
   route_name: entity.commerce_product_attribute.collection
   parent: mall.commerce
   weight: 30
+
+mall.orders:
+  title: 'Orders'
+  route_name: entity.commerce_order.collection
+  menu_name: business
+  weight: 100
+
+mall.orders.collection:
+  title: 'Orders collection'
+  route_name: entity.commerce_order.collection
+  parent: mall.orders
+  weight: 10
