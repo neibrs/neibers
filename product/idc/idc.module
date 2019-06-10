@@ -5,7 +5,10 @@
  * Contains idc.module.
  */
 
+use Drupal\block\Entity\Block;
+use Drupal\Core\Access\AccessResult;
 use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Session\AccountInterface;
 use Drupal\ip\Entity\IPType;
 use Drupal\ip\Entity\IPTypeInterface;
 
@@ -36,15 +39,24 @@ function idc_theme() {
   ];
 }
 
-//function idc_entity_extra_field_info() {
-//  $extra = [];
-//  foreach (IPType::loadMultiple() as $bundle) {
-//    $extra['ip_field_data'][$bundle->id()]['display']['order_ips'] = [
-//      'label' => t('Order ips'),
-//      'description' => t('The ips belongs to current order.'),
-//      'weight' => 0,
-//    ];
-//  }
-//
-//  return $extra;
-//}
+
+/**
+ * Implements hook_block_access().
+ */
+function idc_block_access(Block $block, $operation, AccountInterface $account) {
+  if ($operation == 'view') {
+    $plugin_id = $block->getPluginId();
+    if (in_array($plugin_id, ['local_actions_block'])) {
+      $route_name = \Drupal::routeMatch()->getRouteName();
+      $hide_on = [
+        'entity.ip.canonical',
+      ];
+      if (in_array($route_name, $hide_on)) {
+        return AccessResult::forbidden();
+      }
+    }
+  }
+
+  return AccessResult::neutral();
+}
+

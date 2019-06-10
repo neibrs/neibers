@@ -22,7 +22,7 @@ class IPViewBuilder extends EntityViewBuilder {
       $display = $displays[$bundle];
       // Add Orders ip
       if ($display->getComponent('order_ips')) {
-        $build[$id]['order_ips'] = ['#markup' => 'test order ips'];
+        $build[$id]['order_ips'] = \Drupal::formBuilder()->getForm('\Drupal\ip\Form\IpDetailWithOrderIdForm', $entity);
       }
     }
     parent::buildComponents($build, $entities, $displays, $view_mode);

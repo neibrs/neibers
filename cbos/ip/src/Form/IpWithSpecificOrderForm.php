@@ -190,17 +190,6 @@ class IpWithSpecificOrderForm extends FormBase {
     }
   }
 
-  /**
-   * Builds a renderable list of operation links for the entity.
-   *
-   * @param \Drupal\Core\Entity\EntityInterface $entity
-   *   The entity on which the linked operations will be performed.
-   *
-   * @return array
-   *   A renderable array of operation links.
-   *
-   * @see \Drupal\Core\Entity\EntityListBuilder::buildRow()
-   */
   protected function buildOperations(Entityinterface $entity) {
     $build = [
       '#type' => 'operations',
