@@ -6,6 +6,8 @@
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\ip\Entity\IPType;
+use Drupal\ip\Entity\IPTypeInterface;
 
 /**
  * Implements hook_help().
@@ -33,3 +35,16 @@ function idc_theme() {
     ],
   ];
 }
+
+//function idc_entity_extra_field_info() {
+//  $extra = [];
+//  foreach (IPType::loadMultiple() as $bundle) {
+//    $extra['ip_field_data'][$bundle->id()]['display']['order_ips'] = [
+//      'label' => t('Order ips'),
+//      'description' => t('The ips belongs to current order.'),
+//      'weight' => 0,
+//    ];
+//  }
+//
+//  return $extra;
+//}

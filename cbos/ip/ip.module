@@ -9,6 +9,7 @@ use Drupal\commerce_order\Entity\OrderType;
 use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\ip\Entity\IPType;
 
 /**
  * Implements hook_help().
@@ -76,7 +77,13 @@ function ip_entity_extra_field_info() {
       'weight' => 0,
     ];
   }
-
+  foreach (IPType::loadMultiple() as $bundle) {
+    $extra['ip'][$bundle->id()]['display']['order_ips'] = [
+      'label' => t('Order ips'),
+      'description' => t('The ips belongs to current order.'),
+      'weight' => 20,
+    ];
+  }
   return $extra;
 }
 

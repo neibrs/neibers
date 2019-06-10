@@ -22,7 +22,7 @@ use Drupal\user\UserInterface;
  *   bundle_label = @Translation("IP type"),
  *   handlers = {
  *     "storage" = "Drupal\ip\IPStorage",
- *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
+ *     "view_builder" = "Drupal\ip\IPViewBuilder",
  *     "list_builder" = "Drupal\ip\IPListBuilder",
  *     "views_data" = "Drupal\ip\Entity\IPViewsData",
  *     "translation" = "Drupal\ip\IPTranslationHandler",
