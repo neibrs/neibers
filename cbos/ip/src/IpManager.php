@@ -2,9 +2,11 @@
 
 namespace Drupal\ip;
 
+use Drupal\Core\DependencyInjection\ContainerInjectionInterface;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Url;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 
 class IpManager implements IpManagerInterface {
 
