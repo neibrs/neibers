@@ -1,0 +1,48 @@
+<?php
+
+/**
+ * @file
+ */
+
+use Drupal\Core\Config\Entity\ConfigEntityInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_entity_operation().
+ */
+function entity_plus_entity_operation(EntityInterface $entity) {
+  $operations = [];
+  if ($entity instanceof ConfigEntityInterface) {
+    $operations['export'] = [
+      'title' => t('Export'),
+      'url' => Url::fromRoute('config.export_single', [
+        'config_type' => $entity->getEntityTypeId(),
+        'config_name' => $entity->id(),
+      ]),
+      'weight' => 20,
+    ];
+  }
+
+  return $operations;
+}
+
+/**
+ * Implements hook_field_widget_info_alter().
+ */
+function entity_plus_field_widget_info_alter(array &$info) {
+  $info['entity_reference_autocomplete']['class'] = 'Drupal\entity_plus\Plugin\Field\FieldWidget\EntityReferenceAutocompleteWidget';
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for entity_add_list.
+ */
+function entity_plus_preprocess_entity_add_list(&$variables) {
+  if ($destination = \Drupal::request()->query->get('destination')) {
+    foreach ($variables['bundles'] as $bundle_name => $value) {
+      /** @var \Drupal\Core\Link $add_link */
+      $add_link = $value['add_link'];
+      $add_link->getUrl()->setOption('query', ['destination' => $destination]);
+    }
+  }
+}

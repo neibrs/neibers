@@ -1,0 +1,52 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  modules/neibers/core/entity_plus/entity_plus.module: n/a
+#  modules/neibers/core/entity_plus/entity_plus.info.yml: n/a
+#  modules/neibers/core/entity_plus/config/schema/entity_plus.schema.yml: n/a
+#  modules/neibers/core/entity_plus/src/Plugin/Block/EntityOperationsMenuBlock.php: n/a
+#  modules/neibers/core/entity_plus/src/Plugin/Derivative/EntityCanonicalLocalAction.php: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2019-03-21 13:29+0800\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: modules/neibers/core/entity_plus/entity_plus.module:14
+msgid "Export"
+msgstr ""
+
+#: modules/neibers/core/entity_plus/entity_plus.info.yml:0;0
+msgid "Entity plus"
+msgstr ""
+
+#: modules/neibers/core/entity_plus/entity_plus.info.yml:0
+msgid "Neibers core"
+msgstr ""
+
+#: modules/neibers/core/entity_plus/config/schema/entity_plus.schema.yml:0 modules/neibers/core/entity_plus/src/Plugin/Block/EntityOperationsMenuBlock.php:11
+msgid "Entity operations menu"
+msgstr ""
+
+#: modules/neibers/core/entity_plus/config/schema/entity_plus.schema.yml:0 modules/neibers/core/entity_plus/src/Plugin/Block/EntityOperationsMenuBlock.php:34
+msgid "Entity type ID"
+msgstr ""
+
+#: modules/neibers/core/entity_plus/src/Plugin/Block/EntityOperationsMenuBlock.php:71
+msgid "@entity information"
+msgstr ""
+
+#: modules/neibers/core/entity_plus/src/Plugin/Derivative/EntityCanonicalLocalAction.php:33
+msgid "List"
+msgstr ""
+

@@ -1,0 +1,7 @@
+block.settings.entity_operations_menu:
+  type: block_settings
+  label: 'Entity operations menu'
+  mapping:
+    entity_type_id:
+      type: string
+      label: 'Entity type ID'

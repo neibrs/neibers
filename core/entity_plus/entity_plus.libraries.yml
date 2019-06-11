@@ -1,0 +1,7 @@
+local_actions:
+  js:
+    js/local_actions.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal

@@ -1,0 +1,3 @@
+#entity_plus.entity_action:
+#  class: \Drupal\Core\Menu\LocalActionDefault
+#  deriver: \Drupal\entity_plus\Plugin\Derivative\EntityCanonicalLocalAction
