@@ -287,7 +287,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 管理IP
+          label: 'Administer ip'
           exclude: false
           alter:
             alter_text: false
