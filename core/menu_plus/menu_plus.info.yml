@@ -6,4 +6,4 @@ package: Neibrs
 interface translation project: menu_plus
 interface translation server pattern: modules/neibers/core/%project/translations/%project.%language.po
 dependencies:
-  - menu_ui
+  - drupal:menu_ui

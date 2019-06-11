@@ -6,14 +6,14 @@ interface translation project: eabax_core
 interface translation server pattern: modules/neibers/core/%project/translations/eabax_core.%language.po
 package: Neibrs core
 dependencies:
-  - block_style_plugins
-  - config
-  - custom_formatters
-  - entity_permission
-  - file
-  - locale
-  - role_frontpage
-  - role_menu
-  - rules
-  - translation
-  - workflows
+  - custom_formatters:custom_formatters
+  - drupal:block_style_plugins
+  - drupal:config
+  - drupal:workflows
+  - drupal:file
+  - drupal:locale
+  - neibers:entity_permission
+  - neibers:role_frontpage
+  - neibers:role_menu
+  - neibers:translation
+  - rules:rules

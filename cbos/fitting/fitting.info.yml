@@ -6,6 +6,6 @@ package: 'Neibrs'
 interface translation project: fitting
 interface translation server pattern: modules/neibers/cbos/%project/translations/%project.%language.po
 dependencies:
-  - cabinet
-  - eabax_workflows
-  - server
+  - neibers:cabinet
+  - neibers:eabax_workflows
+  - neibers:server

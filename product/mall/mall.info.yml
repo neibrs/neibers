@@ -6,8 +6,8 @@ interface translation project: mall
 interface translation server pattern: modules/neibers/product/%project/translations/%project.%language.po
 package: Neibrs
 dependencies:
-  - commerce_store
-  - config_rewrite
-  - menu_plus
-  - migrate_source_xls
-  - migrate_tools
+  - commerce:commerce_store
+  - config_rewrite:config_rewrite
+  - neibers:menu_plus
+  - migrate_source_xls:migrate_source_xls
+  - migrate_tools:migrate_tools

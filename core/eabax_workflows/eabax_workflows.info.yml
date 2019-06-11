@@ -6,8 +6,8 @@ interface translation project: eabax_workflows
 interface translation server pattern: modules/neibers/core/%project/translations/%project.%language.po
 package: 'Neibrs core'
 dependencies:
-  - charts_c3
-  - rest
-  - serialization
-  - views
-  - workflows
+  - charts:charts_c3
+  - drupal:rest
+  - drupal:serialization
+  - drupal:views
+  - drupal:workflows

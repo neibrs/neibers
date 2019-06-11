@@ -6,4 +6,4 @@ interface translation project: entity_permission
 interface translation server pattern: modules/neibers/core/%project/translations/%project.%language.po
 package: 'Neibrs core'
 dependencies:
-  - user
+  - drupal:user

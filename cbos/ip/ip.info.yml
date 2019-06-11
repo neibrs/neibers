@@ -5,8 +5,8 @@ package: 'Neibrs'
 interface translation project: ip
 interface translation server pattern: modules/neibers/cbos/%project/translations/%project.%language.po
 dependencies:
-  - cabinet
-  - commerce_order
-  - eabax_workflows
-  - server
-  - workflows
+  - neibers:cabinet
+  - commerce:commerce_order
+  - neibers:eabax_workflows
+  - neibers:server
+  - drupal:workflows
