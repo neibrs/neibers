@@ -1,7 +1,8 @@
 entity.ip.add_form:
   route_name: entity.ip.add_page
   title: 'Add'
-  options: # TODO need to add this destination to action deriver.
+  class: \Drupal\eabax_core\Plugin\Menu\LocalAction\AddDestination
+  options:
     query:
       destination: '/ip'
   appears_on:
@@ -9,6 +10,9 @@ entity.ip.add_form:
 entity.ip_type.add_form:
   route_name: entity.ip_type.add_form
   title: 'Add'
+  options:
+    query:
+      destination: '/ip/type'
   appears_on:
     - entity.ip_type.collection
 
