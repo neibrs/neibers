@@ -126,6 +126,40 @@ class IP extends RevisionableContentEntityBase implements IPInterface {
   /**
    * {@inheritdoc}
    */
+  public function postSave(EntityStorageInterface $storage, $update = TRUE) {
+    if (!$update) {
+      return;
+    }
+    // state workflow transition is stop.
+    if ($this->original->get('state')->value == 'used') {
+      if ($this->get('state')->value == 'free') {
+        $this->user_id->target_id  = 1;
+        $type = $this->type->entity->id();
+        switch ($type) {
+          case 'inet':
+            $bips = $this->entityTypeManager()->getStorage('ip')->loadByProperties([
+              'type' => 'onet',
+              'order_id' => $this->order_id->target_id,
+            ]);
+            foreach ($bips as $bip) {
+              $bip->state->value = 'free';
+              $bip->save();
+            }
+            $this->order_id->target_id = 0;
+            break;
+          case 'onet':
+            $this->server->target_id   = 0;
+            $this->seat->target_id     = 0;
+            $this->order_id->target_id = 0;
+            break;
+        }
+      }
+    }
+  }
+
+  /**
+   * {@inheritdoc}
+   */
   public function getName() {
     return $this->get('name')->value;
   }
