@@ -7,7 +7,7 @@ source:
   path: modules/neibers/product/idc/tests/data/ip.xlsx
   sheet_name: Sheet1
   keys:
-    - Name
+    - ID
   columns:
     0:
       Name: Name
@@ -29,6 +29,8 @@ source:
       ID: ID
     9:
       Seat: Seat
+    10:
+      State: State
 process:
   name:
     -
@@ -42,10 +44,9 @@ process:
     -
       plugin: skip_on_empty
       method: process
-      source: Name
+      source: Type
     -
       plugin: static_map
-      source: Type
       map:
         管理IP: inet
         业务IP: onet
@@ -55,10 +56,9 @@ process:
     -
       plugin: skip_on_empty
       method: process
-      source: Name
+      source: Room
     -
       plugin: entity_generate
-      source: Room
       entity_type: room
       bundle_key: type
       bundle: default
@@ -69,10 +69,9 @@ process:
     -
       plugin: skip_on_empty
       method: process
-      source: Name
+      source: Cabinet
     -
       plugin: entity_generate_plus
-      source: Cabinet
       entity_type: cabinet
       value_key: name
       ignore_case: true
@@ -84,10 +83,9 @@ process:
     -
       plugin: skip_on_empty
       method: process
-      source: Name
+      source: Seat
     -
       plugin: entity_generate_plus
-      source: Seat
       entity_type: seat
       value_key: name
       bundle_key: type
@@ -100,10 +98,9 @@ process:
   server:
     - plugin: skip_on_empty
       method: process
-      source: Name
+      source: Server
     -
       plugin: entity_generate_plus
-      source: Server
       entity_type: server
       bundle_key: type
       bundle: default
@@ -114,8 +111,15 @@ process:
       values:
         seat: '@seat'
   state:
-    plugin: default_value
-    default_value: free #TODO delete
+    -
+      plugin: skip_on_empty
+      method: process
+      source: State
+    -
+      plugin: static_map
+      map:
+        空闲: free
+        已用: used
 
 destination:
   plugin: entity:ip
