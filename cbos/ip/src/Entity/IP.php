@@ -127,31 +127,21 @@ class IP extends RevisionableContentEntityBase implements IPInterface {
    * {@inheritdoc}
    */
   public function postSave(EntityStorageInterface $storage, $update = TRUE) {
-    if (!$update) {
-      return;
-    }
-    // state workflow transition is stop.
-    if ($this->original->get('state')->value == 'used') {
-      if ($this->get('state')->value == 'free') {
-        $this->user_id->target_id  = 1;
-        $type = $this->type->entity->id();
-        switch ($type) {
-          case 'inet':
-            $bips = $this->entityTypeManager()->getStorage('ip')->loadByProperties([
-              'type' => 'onet',
-              'order_id' => $this->order_id->target_id,
-            ]);
-            foreach ($bips as $bip) {
-              $bip->state->value = 'free';
-              $bip->save();
-            }
-            $this->order_id->target_id = 0;
-            break;
-          case 'onet':
-            $this->server->target_id   = 0;
-            $this->seat->target_id     = 0;
-            $this->order_id->target_id = 0;
-            break;
+    $route_match = \Drupal::routeMatch();
+    if ($route_match->getRouteName() == 'eabax_workflows.apply_transition') {
+      $route_parameters = $route_match->getRawParameters();
+      // state workflow transition is stop.
+      if ($route_parameters->get('transition_id') == 'stop') {
+        // Stop use ip.
+        if ($this->type->entity->id() == 'inet') {
+          $bips = $this->entityTypeManager()->getStorage('ip')->loadByProperties([
+            'type' => 'onet',
+            'order_id' => $this->order_id->target_id,
+          ]);
+          foreach ($bips as $bip) {
+            $this->unbindOnet($bip);
+          }
+          $this->unbindInet($this);
         }
       }
     }
@@ -391,6 +381,31 @@ class IP extends RevisionableContentEntityBase implements IPInterface {
       ->setTranslatable(TRUE);
 
     return $fields;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function unbindOnet(IPInterface $ip) {
+    $ip->state->value = 'free'; // Need use the workflow transition to be free.
+    $ip->server->target_id   = 0;
+    $ip->seat->target_id     = 0;
+    $ip->order_id->target_id = 0;
+    $ip->user_id->target_id = 0;
+
+    $ip->save();
+
+    return $ip;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function unbindInet(IPInterface $ip) {
+    $ip->user_id->target_id = 1;
+    $ip->order_id->target_id = 0;
+
+    return $ip;
   }
 
 }
