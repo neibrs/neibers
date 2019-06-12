@@ -171,6 +171,7 @@ class IpWithSpecificOrderForm extends FormBase {
     // TODO Polished
     if ($values['administer'] || $values['business']) {
       $administer = $ip_storage->load($values['administer']);
+      $administer->server->target_id = $values['server'];
       $administer->order_id->target_id = $this->order->id();
       $administer->state->value = 'used';
       $administer->save();
