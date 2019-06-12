@@ -228,6 +228,18 @@ class IP extends RevisionableContentEntityBase implements IPInterface {
   public static function baseFieldDefinitions(EntityTypeInterface $entity_type) {
     $fields = parent::baseFieldDefinitions($entity_type);
 
+    $fields['type']
+      ->setDisplayOptions('view', [
+        'type' => 'entity_reference_label',
+        'weight' => -2,
+      ])
+      ->setDisplayOptions('form', [
+        'type' => 'options_select',
+        'weight' => -2,
+      ])
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE);
+
     $fields['user_id'] = BaseFieldDefinition::create('entity_reference')
       ->setLabel(t('Authored by'))
       ->setDescription(t('The user ID of author of the IP entity.'))
