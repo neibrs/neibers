@@ -110,51 +110,7 @@ class IpOrderForm extends FormBase {
     }
 
     if ($display->getMode() == 'default') {
-      // TODO Business ip table for disable and replace ip.
-
-      // Allocate ip form builder.
-      $form['allocate'] = [
-        '#type' => 'details',
-        '#title' => $this->t('Allocate'),
-        '#open' => TRUE,
-      ];
-      $machine_rooms = $this->entityTypeManager->getStorage('room');
-      $rooms = array_map(function ($room) {
-        return $room->label();
-      }, $machine_rooms->loadMultiple());
-      $form['allocate']['room'] = [
-        '#title' => $this->t('Room'),
-        '#type' => 'select',
-        '#options' => $rooms,
-        '#required' => TRUE,
-      ];
-      $form['allocate']['server'] = [
-        '#title' => $this->t('Server'),
-        '#type' => 'entity_autocomplete',
-        '#target_type' => 'server',
-        '#required' => TRUE,
-        '#size' => 40,
-      ];
-      $form['allocate']['administer'] = [
-        '#title' => $this->t('Administer IP'),
-        '#type' => 'entity_autocomplete',
-        '#target_type' => 'ip',
-        '#required' => TRUE,
-        '#size' => 40,
-      ];
-      $form['allocate']['business'] = [
-        '#title' => $this->t('Business IP'),
-        '#type' => 'entity_autocomplete',
-        '#target_type' => 'ip',
-        '#size' => 40,
-      ];
-
-      $form['allocate']['actions']['#type'] = 'actions';
-      $form['allocate']['actions']['submit'] = [
-        '#type' => 'submit',
-        '#value' => t('Save'),
-        '#button_type' => 'primary',
-      ];
+      $form = $this->allocateForm($form, $form_state);
     }
 
     return $form;
@@ -200,4 +156,100 @@ class IpOrderForm extends FormBase {
     }
   }
 
+  /**
+   * @description Component form within buildForm().
+   */
+  public function allocateForm(array &$form, FormStateInterface $form_state) {
+
+    // Allocate ip form builder.
+    $form['allocate'] = [
+      '#type' => 'details',
+      '#title' => $this->t('Allocate'),
+      '#attributes' => [
+        'class' => [
+          'container-inline',
+        ]
+      ],
+      '#open' => TRUE,
+    ];
+    $machine_rooms = $this->entityTypeManager->getStorage('room');
+    $rooms = array_map(function ($room) {
+      return $room->label();
+    }, $machine_rooms->loadMultiple());
+    $form['allocate']['room'] = [
+      '#title' => $this->t('Room'),
+      '#type' => 'select',
+      '#options' => $rooms,
+      '#required' => TRUE,
+      '#ajax' => [
+        'callback' => '::updateServer',
+        'wrapper' => 'edit-server-wrapper',
+      ],
+    ];
+    $form['allocate']['server'] = [
+      '#title' => $this->t('Server'),
+      '#type' => 'select',
+//      '#target_type' => 'server',
+      '#options' => [],
+      '#required' => TRUE,
+      '#prefix' => '<div id="edit-server-wrapper">',
+      '#suffix' => '</div>',
+      '#ajax' => [
+        'callback' => '::updateAdminister',
+        'wrapper' => 'edit-administer-wrapper',
+      ],
+    ];
+    $form['allocate']['administer'] = [
+      '#title' => $this->t('Administer IP'),
+      '#type' => 'entity_autocomplete',
+      '#target_type' => 'ip',
+      '#required' => TRUE,
+      '#size' => 40,
+      '#prefix' => '<div id="edit-server-wrapper">',
+      '#suffix' => '</div>',
+//      '#ajax' => [
+//        'callback' => '::updateBusiness',
+//        'wrapper' => 'edit-business-wrapper',
+//      ],
+    ];
+    $form['allocate']['business'] = [
+      '#title' => $this->t('Business IP'),
+      '#type' => 'entity_autocomplete',
+      '#target_type' => 'ip',
+      '#size' => 40,
+    ];
+
+    $form['allocate']['actions']['#type'] = 'actions';
+    $form['allocate']['actions']['submit'] = [
+      '#type' => 'submit',
+      '#value' => t('Save'),
+      '#button_type' => 'primary',
+    ];
+
+    return $form;
+  }
+
+  /**
+   * Handles switching the server selector.
+   */
+  public function updateServer($form, FormStateInterface $form_state) {
+    // TODO
+    $room = $form_state->getValue('room');
+    $query = \Drupal::database()->select('server_field_data', 'sfd');
+    $query->fields('sfd', ['id']);
+    $query->leftJoin('seat_field_data', 'seat', 'sfd.seat = seat.id');
+    $query->leftJoin('cabinet_field_data', 'cfd', 'seat.cabinet = cfd.id');
+//    $query->groupBy('sfd.name');
+    $query->condition('cfd.room', $room);
+    $result = $query->execute()->fetchAll();
+
+    $ids = array_map(function($item) {
+      return $item->id;
+    }, $result);
+
+//    $server_query = \Drupal::entityQuery('server')
+//    ->condition('id', $ids, 'IN')
+//    ->//; $this->entityTypeManager->getStorage('server')
+    return $form['allocate']['server'];
+  }
 }
