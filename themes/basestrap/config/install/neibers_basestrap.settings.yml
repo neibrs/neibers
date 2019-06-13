@@ -19,7 +19,7 @@ favicon:
   use_default: true
 schemas:
   bootstrap: 8000
-  basestrap: 8000
+  neibers_basestrap: 8000
 features:
   comment_user_picture: true
   comment_user_verification: true
