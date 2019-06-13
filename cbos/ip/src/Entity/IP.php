@@ -128,22 +128,6 @@ class IP extends RevisionableContentEntityBase implements IPInterface {
       $route_parameters = $route_match->getRawParameters();
       // state workflow transition is stop.
       if ($route_parameters->get('transition_id') == 'stop') {
-        if ($this->type->entity->id() == 'onet') {
-          $this->unbindOnet($this);
-        }
-      }
-    }
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function postSave(EntityStorageInterface $storage, $update = TRUE) {
-    $route_match = \Drupal::routeMatch();
-    if ($route_match->getRouteName() == 'eabax_workflows.apply_transition') {
-      $route_parameters = $route_match->getRawParameters();
-      // state workflow transition is stop.
-      if ($route_parameters->get('transition_id') == 'stop') {
         // Stop use ip.
         if ($this->type->entity->id() == 'inet') {
           $bips = $this->entityTypeManager()->getStorage('ip')->loadByProperties([
@@ -154,11 +138,11 @@ class IP extends RevisionableContentEntityBase implements IPInterface {
             $bip = $this->unbindOnet($bip);
             $bip->save();
           }
+          // stop administer ip for order.
           $this->unbindInet($this);
-
-          // TODO inet stop not work
-          // Clients can not stop administer ip.
-          // $this->save();
+        }
+        if ($this->type->entity->id() == 'onet') {
+          $this->unbindOnet($this);
         }
       }
     }
