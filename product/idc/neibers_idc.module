@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Contains idc.module.
+ * Contains neibers_idc.module.
  */
 
 use Drupal\block\Entity\Block;
@@ -13,13 +13,13 @@ use Drupal\Core\Session\AccountInterface;
 /**
  * Implements hook_help().
  */
-function idc_help($route_name, RouteMatchInterface $route_match) {
+function neibers_idc_help($route_name, RouteMatchInterface $route_match) {
   switch ($route_name) {
-    // Main module help for the idc module.
-    case 'help.page.idc':
+    // Main module help for the neibers_idc module.
+    case 'help.page.neibers_idc':
       $output = '';
       $output .= '<h3>' . t('About') . '</h3>';
-      $output .= '<p>' . t('The industry of idc.') . '</p>';
+      $output .= '<p>' . t('The industry of neibers_idc.') . '</p>';
       return $output;
 
     default:
@@ -29,9 +29,9 @@ function idc_help($route_name, RouteMatchInterface $route_match) {
 /**
  * Implements hook_theme().
  */
-function idc_theme() {
+function neibers_idc_theme() {
   return [
-    'idc' => [
+    'neibers_idc' => [
       'render element' => 'children',
     ],
   ];
@@ -40,7 +40,7 @@ function idc_theme() {
 /**
  * Implements hook_block_access().
  */
-function idc_block_access(Block $block, $operation, AccountInterface $account) {
+function neibers_idc_block_access(Block $block, $operation, AccountInterface $account) {
   if ($operation == 'view') {
     $plugin_id = $block->getPluginId();
     if (in_array($plugin_id, ['local_actions_block'])) {

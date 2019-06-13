@@ -1,5 +1,5 @@
 # Manual add
-idc.product.import:
+neibers_idc.product.import:
   route_name: import.entity_import
   title: 'Import'
   route_parameters:

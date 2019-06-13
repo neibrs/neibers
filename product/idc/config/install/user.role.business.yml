@@ -3,7 +3,7 @@ status: true
 dependencies:
   enforced:
     module:
-      - idc
+      - neibers_idc
   module:
     - role_menu
 third_party_settings:

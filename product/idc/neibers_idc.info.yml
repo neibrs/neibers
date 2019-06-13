@@ -1,9 +1,9 @@
 name: 'IDC'
 type: module
-description: 'The industry of idc.'
+description: 'The industry of neibers idc.'
 core: 8.x
-interface translation project: idc
-interface translation server pattern: modules/neibers/product/%project/translations/%project.%language.po
+interface translation project: neibers_idc
+interface translation server pattern: modules/neibers/product/idc/translations/%project.%language.po
 package: 'Neibrs'
 dependencies:
   - neibers:cabinet

@@ -6,7 +6,7 @@ name: 'Basestrap'
 description: 'Uses the Bootstrap framework Sass source files and must be compiled (not for beginners).'
 package: 'Bootstrap'
 interface translation project: neibers_basestrap
-interface translation server pattern: modules/neibers/themes/%project/translations/%project.%language.po
+interface translation server pattern: modules/neibers/themes/basestrap/translations/%project.%language.po
 
 regions:
   navigation: 'Navigation'

@@ -5,7 +5,7 @@ dependencies:
     - machine_room
 id: machine_room
 label: 'Machine Room'
-module: idc
+module: neibers_idc
 description: 'Find and manage content.'
 tag: default 
 base_table: room_field_data

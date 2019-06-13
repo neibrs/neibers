@@ -4,9 +4,9 @@ Neibrs dev 8.x-1.x
 - Added modules:
   * cbos module: cabinet, fitting, ip, machine_room, server
   * core module: menu_plus
-  * product module: mall, idc
-  * profiles: neibrs
-  * themes: basestrap
+  * product module: neibers_mall, neibers_idc
+  * profiles: neibers_neibrs
+  * themes: neibers_basestrap
 
 
 Tree like as below:

@@ -6,7 +6,7 @@
 
 use Drupal\machine_room\Entity\Room;
 
-function idc_install() {
+function neibers_idc_install() {
   // Init default machine room.
   $room = Room::create([
     'type' => 'default',

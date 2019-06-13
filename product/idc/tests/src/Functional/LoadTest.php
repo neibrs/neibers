@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\Tests\idc\Functional;
+namespace Drupal\Tests\neibers_idc\Functional;
 
 use Drupal\Core\Url;
 use Drupal\Tests\BrowserTestBase;
@@ -8,7 +8,7 @@ use Drupal\Tests\BrowserTestBase;
 /**
  * Simple test to ensure that main page loads with module enabled.
  *
- * @group idc
+ * @group neibers_idc
  */
 class LoadTest extends BrowserTestBase {
 
@@ -17,7 +17,7 @@ class LoadTest extends BrowserTestBase {
    *
    * @var array
    */
-  public static $modules = ['idc'];
+  public static $modules = ['neibers_idc'];
 
   /**
    * A user with permission to administer site configuration.

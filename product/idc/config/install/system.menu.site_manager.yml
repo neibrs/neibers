@@ -3,8 +3,8 @@ status: true
 dependencies:
   enforced:
     module:
-      - idc
+      - neibers_idc
 id: site_manager
 label: 'IDC site manager'
-description: 'Menu for idc site manager.'
+description: 'Menu for neibers_idc site manager.'
 locked: true

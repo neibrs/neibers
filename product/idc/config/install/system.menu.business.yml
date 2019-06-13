@@ -3,7 +3,7 @@ status: true
 dependencies:
   enforced:
     module:
-      - idc
+      - neibers_idc
 id: business
 label: 'Business'
 description: 'Menu for business.'

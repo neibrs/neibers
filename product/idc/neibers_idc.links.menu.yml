@@ -1,125 +1,125 @@
-idc.ip:
+neibers_idc.ip:
   title: IP
   route_name: entity.ip.collection
   menu_name: business
   weight: 10
 
-idc.ip.collection:
+neibers_idc.ip.collection:
   title: 'IP collection'
   route_name: entity.ip.collection
-  parent: idc.ip
+  parent: neibers_idc.ip
   weight: 10
 
-idc.ip.free:
+neibers_idc.ip.free:
   title: 'Free IP'
   route_name: entity.ip.collection
   options:
     query:
       state: free
-  parent: idc.ip
+  parent: neibers_idc.ip
   weight: 13
 
-idc.ip.used:
+neibers_idc.ip.used:
   title: 'Used IP'
   route_name: entity.ip.collection
   options:
     query:
       state: used
-  parent: idc.ip
+  parent: neibers_idc.ip
   weight: 15
 
-idc.ip.inet:
+neibers_idc.ip.inet:
   title: 'Inet IP'
   route_name: entity.ip.collection
   options:
     query:
       type: inet
-  parent: idc.ip
+  parent: neibers_idc.ip
   weight: 17
 
-idc.ip.onet:
+neibers_idc.ip.onet:
   title: 'Onet IP'
   route_name: entity.ip.collection
   options:
     query:
       type: onet
-  parent: idc.ip
+  parent: neibers_idc.ip
   weight: 19
 
-idc.ip_type.configuration:
+neibers_idc.ip_type.configuration:
   title: 'Configuration'
   route_name: entity.ip_type.collection
-  parent: idc.ip
+  parent: neibers_idc.ip
   weight: 50
 
-idc.ip_type.configuration.type:
+neibers_idc.ip_type.configuration.type:
   title: 'Type'
   route_name: entity.ip_type.collection
-  parent: idc.ip_type.configuration
+  parent: neibers_idc.ip_type.configuration
   weight: 10
 
-idc.server:
+neibers_idc.server:
   title: Server
   route_name: entity.server.collection
   menu_name: business
   weight: 20
 
-idc.server.collection:
+neibers_idc.server.collection:
   title: Server
   route_name: entity.server.collection
-  parent: idc.server
+  parent: neibers_idc.server
   weight: 10
 
-idc.server_type.configuration:
+neibers_idc.server_type.configuration:
   title: 'Configuration'
   route_name: entity.server_type.collection
-  parent: idc.server
+  parent: neibers_idc.server
   weight: 20
 
-idc.server_type.configuration.type:
+neibers_idc.server_type.configuration.type:
   title: 'Type'
   route_name: entity.server_type.collection
-  parent: idc.server.configuration
+  parent: neibers_idc.server.configuration
   weight: 10
 
-idc.room:
+neibers_idc.room:
   title: Room
   route_name: entity.room.collection
   menu_name: business
   weight: 30
 
-idc.room.collection:
+neibers_idc.room.collection:
   title: Room
   route_name: entity.room.collection
-  parent: idc.room
+  parent: neibers_idc.room
   weight: 31
 
-idc.cabinet.collection:
+neibers_idc.cabinet.collection:
   title: Cabinet
   route_name: entity.cabinet.collection
-  parent: idc.room
+  parent: neibers_idc.room
   weight: 40
 
-idc.seat.collection:
+neibers_idc.seat.collection:
   title: Seat
   route_name: entity.seat.collection
-  parent: idc.room
+  parent: neibers_idc.room
   weight: 45
 
-idc.room_type.configuration:
+neibers_idc.room_type.configuration:
   title: 'Configuration'
   route_name: entity.room_type.collection
-  parent: idc.room
+  parent: neibers_idc.room
   weight: 50
 
-idc.room_type.configuration.type:
+neibers_idc.room_type.configuration.type:
   title: 'Room type'
   route_name: entity.room_type.collection
-  parent: idc.room_type.configuration
+  parent: neibers_idc.room_type.configuration
   weight: 10
 
-idc.seat_type.configuration.type:
+neibers_idc.seat_type.configuration.type:
   title: 'Seat type'
   route_name: entity.seat_type.collection
-  parent: idc.room_type.configuration
+  parent: neibers_idc.room_type.configuration
   weight: 30

@@ -4,13 +4,13 @@ dependencies:
   module:
     - cabinet
     - eabax_workflows
-    - idc
+    - neibers_idc
     - ip
     - options
     - user
 id: ip
 label: IP
-module: idc
+module: neibers_idc
 description: 'Find and manage content.'
 tag: default
 base_table: ip_field_data
