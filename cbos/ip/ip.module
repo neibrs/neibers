@@ -92,6 +92,6 @@ function ip_entity_extra_field_info() {
  */
 function ip_commerce_order_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
   if ($display->getComponent('ips')) {
-    $build['ips'] = \Drupal::formBuilder()->getForm('\Drupal\ip\Form\IpWithSpecificOrderForm', $entity, $display);
+    $build['ips'] = \Drupal::formBuilder()->getForm('\Drupal\ip\Form\IpOrderForm', $entity, $display);
   }
 }

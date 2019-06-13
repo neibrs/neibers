@@ -8,7 +8,7 @@ use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
-class IpWithSpecificOrderForm extends FormBase {
+class IpOrderForm extends FormBase {
 
   /**
  * @var \Drupal\commerce_order\Entity\OrderInterface*/
