@@ -33,7 +33,7 @@ class OrderNumberSubscriber extends OrderNumberSubscriberBase {
     $order = $event->getEntity();
     if (!$order->getOrderNumber()) {
       // TODO Add customize order number
-      $order->setOrderNumber('ul-'.$order->id());
+      $order->setOrderNumber('ul-' . $order->id());
     }
   }
 

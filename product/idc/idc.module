@@ -9,8 +9,6 @@ use Drupal\block\Entity\Block;
 use Drupal\Core\Access\AccessResult;
 use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\Core\Session\AccountInterface;
-use Drupal\ip\Entity\IPType;
-use Drupal\ip\Entity\IPTypeInterface;
 
 /**
  * Implements hook_help().
@@ -39,7 +37,6 @@ function idc_theme() {
   ];
 }
 
-
 /**
  * Implements hook_block_access().
  */
@@ -60,4 +57,3 @@ function idc_block_access(Block $block, $operation, AccountInterface $account) {
 
   return AccessResult::neutral();
 }
-

@@ -159,7 +159,7 @@ class RoleEntityPermissionForm extends FormBase {
       if ($setting['field_permission']) {
         $form['entities'][$entity_type_id]['field_permission'] = [
           '#type' => 'details',
-          '#title' => $this->t('Field permissions')
+          '#title' => $this->t('Field permissions'),
         ];
 
         $ignore = ['id', 'uuid', 'langcode', 'changed', 'created'];
@@ -262,7 +262,7 @@ class RoleEntityPermissionForm extends FormBase {
 
     $this->user_role->setThirdPartySetting('entity_permission', 'entities', $entities);
     $this->user_role->save();
-    
+
     drupal_set_message($this->t('Entity permissions for @role has saved.', ['@role' => $this->user_role->label()]));
   }
 

@@ -399,11 +399,12 @@ class IP extends RevisionableContentEntityBase implements IPInterface {
    * {@inheritdoc}
    */
   public function unbindOnet(IPInterface $ip) {
-    $ip->state->value = 'free'; // Need use the workflow transition to be free.
+    // Need use the workflow transition to be free.
+    $ip->state->value        = 'free';
     $ip->server->target_id   = 0;
     $ip->seat->target_id     = 0;
     $ip->order_id->target_id = 0;
-    $ip->user_id->target_id = 0;
+    $ip->user_id->target_id  = 0;
 
     $ip->save();
 

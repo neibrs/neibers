@@ -2,15 +2,14 @@
 
 namespace Drupal\ip;
 
-use Drupal\Core\DependencyInjection\ContainerInjectionInterface;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Url;
-use Symfony\Component\DependencyInjection\ContainerInterface;
 
 class IpManager implements IpManagerInterface {
 
-  /** @var \Drupal\Core\Entity\EntityTypeManagerInterface */
+  /**
+ * @var \Drupal\Core\Entity\EntityTypeManagerInterface */
   protected $entityTypeManager;
 
   /**
@@ -21,7 +20,7 @@ class IpManager implements IpManagerInterface {
   }
 
   /**
-   * @return []
+   * @return array
    */
   public function buildOperations(EntityInterface $entity) {
     $build = [
@@ -67,6 +66,5 @@ class IpManager implements IpManagerInterface {
 
     return $operations;
   }
-
 
 }

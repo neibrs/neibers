@@ -2,7 +2,6 @@
 
 namespace Drupal\ip\Form;
 
-use Drupal\Core\Ajax\AjaxResponse;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 
@@ -70,4 +69,5 @@ class IPMultipleForm extends FormBase {
   public function computeFormCallback(array &$form, FormStateInterface $form_state) {
 
   }
+
 }

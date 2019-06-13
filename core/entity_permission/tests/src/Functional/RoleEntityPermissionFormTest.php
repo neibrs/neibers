@@ -3,7 +3,6 @@
 namespace Drupal\Tests\entity_permission\Functional;
 
 use Drupal\Core\Url;
-use Drupal\Tests\BrowserTestBase;
 
 /**
  * Simple test form RoleEntityPermissionForm.

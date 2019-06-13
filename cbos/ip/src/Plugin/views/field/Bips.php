@@ -28,7 +28,6 @@ class Bips extends PrerenderList {
     $this->entityTypeManager = $entity_type_manager;
   }
 
-
   /**
    * {@inheritdoc}
    */
@@ -87,4 +86,5 @@ class Bips extends PrerenderList {
   public function render_item($count, $item) {
     return $item['ip'];
   }
+
 }

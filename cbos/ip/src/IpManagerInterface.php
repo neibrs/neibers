@@ -7,7 +7,8 @@ use Drupal\Core\Entity\EntityInterface;
 interface IpManagerInterface {
 
   /**
-   * @return []
+   * @return array
    */
   public function buildOperations(EntityInterface $entity);
+
 }

@@ -1,6 +1,10 @@
 <?php
 
 /**
+ * @file
+ */
+
+/**
  * ALter the title switches.
  *
  * @see eabax_core_block_view_page_title_block_alter()

@@ -6,7 +6,6 @@ use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
-use Drupal\Core\Url;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 class IpWithSpecificOrderForm extends FormBase {
@@ -104,7 +103,6 @@ class IpWithSpecificOrderForm extends FormBase {
     if ($display->getMode() == 'default') {
       // TODO Business ip table for disable and replace ip.
 
-
       // Allocate ip form builder.
       $form['allocate'] = [
         '#type' => 'details',
@@ -194,7 +192,5 @@ class IpWithSpecificOrderForm extends FormBase {
   protected function buildOperations(Entityinterface $entity) {
 
   }
-
-
 
 }
