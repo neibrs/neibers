@@ -4,9 +4,9 @@ dependencies:
   module:
     - system
   theme:
-    - basestrap
+    - neibers_basestrap
 id: basestrap_powered
-theme: basestrap
+theme: neibers_basestrap
 region: footer
 weight: 0
 provider: null

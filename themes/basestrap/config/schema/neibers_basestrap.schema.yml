@@ -1,5 +1,5 @@
 # Schema for the theme setting configuration file of the THEMETITLE theme.
 
-basestrap.settings:
+neibers_basestrap.settings:
   type: theme_settings
   label: 'Basestrap settings'

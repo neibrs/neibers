@@ -12,14 +12,14 @@ use Drupal\Core\Form\FormStateInterface;
  *
  * Allows the profile to alter the site configuration form.
  */
-function neibrs_form_install_configure_form_alter(&$form, FormStateInterface $form_state) {
-  $form['#submit'][] = 'neibrs_form_install_configure_submit';
+function neibers_neibrs_form_install_configure_form_alter(&$form, FormStateInterface $form_state) {
+  $form['#submit'][] = 'neibers_neibrs_form_install_configure_submit';
 }
 
 /**
  * Submission handler to sync the contact.form.feedback recipient.
  */
-function neibrs_form_install_configure_submit($form, FormStateInterface $form_state) {
+function neibers_neibrs_form_install_configure_submit($form, FormStateInterface $form_state) {
   $site_mail = $form_state->getValue('site_mail');
   // TODO
   //  ContactForm::load('feedback')->setRecipients([$site_mail])->trustData()->save();

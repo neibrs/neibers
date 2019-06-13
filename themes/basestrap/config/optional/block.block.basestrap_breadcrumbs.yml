@@ -4,9 +4,9 @@ dependencies:
   module:
     - system
   theme:
-    - basestrap
+    - neibers_basestrap
 id: basestrap_breadcrumbs
-theme: basestrap
+theme: neibers_basestrap
 region: header
 weight: -7
 provider: null

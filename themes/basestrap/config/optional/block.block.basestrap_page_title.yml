@@ -2,9 +2,9 @@ langcode: en
 status: true
 dependencies:
   theme:
-    - basestrap
+    - neibers_basestrap
 id: basestrap_page_title
-theme: basestrap
+theme: neibers_basestrap
 region: content
 weight: -6
 provider: null
