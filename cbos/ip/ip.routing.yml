@@ -1,0 +1,7 @@
+ip.multiple.add_form:
+  path: '/ip/multiple/add'
+  defaults:
+    _form: 'Drupal\ip\Form\IPMultipleForm'
+    _title: 'Add multiple ips'
+  requirements:
+    _permission: 'administer ip'

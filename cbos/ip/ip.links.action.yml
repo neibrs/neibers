@@ -27,3 +27,12 @@ ip.import:
       destination: '/ip'
   appears_on:
     - entity.ip.collection
+
+ip.multiple.add_form:
+  route_name: ip.multiple.add_form
+  title: 'Add multiple'
+  options:
+    query:
+      destination: '/ip'
+  appears_on:
+    - entity.ip.collection
