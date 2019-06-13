@@ -157,6 +157,7 @@ class IP extends RevisionableContentEntityBase implements IPInterface {
           $this->unbindInet($this);
 
           // TODO inet stop not work
+          // Clients can not stop administer ip.
           // $this->save();
         }
       }
