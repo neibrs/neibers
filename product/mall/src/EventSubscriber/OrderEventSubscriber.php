@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\mall\EventSubscriber;
+namespace Drupal\neibers_mall\EventSubscriber;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Drupal\commerce_cart\CartProviderInterface;
@@ -30,7 +30,7 @@ class OrderEventSubscriber implements EventSubscriberInterface {
    */
   public static function getSubscribedEvents() {
     $events = [
-      'mall.place.pre_transition' => 'finalizeCart',
+      'neibers_mall.place.pre_transition' => 'finalizeCart',
     ];
     return $events;
   }

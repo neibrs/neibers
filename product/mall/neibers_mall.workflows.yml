@@ -1,6 +1,6 @@
-mall_validation:
-  id: mall_validation
-  group: mall
+neibers_mall_validation:
+  id: neibers_mall_validation
+  group: neibers_mall
   label: 'Mall validation'
   states:
     draft:

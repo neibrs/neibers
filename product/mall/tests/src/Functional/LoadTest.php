@@ -8,7 +8,7 @@ use Drupal\Tests\BrowserTestBase;
 /**
  * Simple test to ensure that main page loads with module enabled.
  *
- * @group mall
+ * @group neibers_mall
  */
 class LoadTest extends BrowserTestBase {
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\mall\Plugin\Block;
+namespace Drupal\neibers_mall\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Entity\EntityTypeManagerInterface;

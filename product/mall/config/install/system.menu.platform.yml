@@ -3,7 +3,7 @@ status: true
 dependencies:
   enforced:
     module:
-      - mall
+      - neibers_mall
 third_party_settings:
   menu_plus:
     navigate: true

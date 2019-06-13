@@ -1,35 +1,35 @@
-mall.commerce:
+neibers_mall.commerce:
   title: 'Commerce products'
   route_name: entity.commerce_product.collection
   menu_name: business
   weight: 200
 
-mall.commerce.product:
+neibers_mall.commerce.product:
   title: 'Products collection'
   route_name: entity.commerce_product.collection
-  parent: mall.commerce
+  parent: neibers_mall.commerce
   weight: 10
 
-mall.commerce.product_type:
+neibers_mall.commerce.product_type:
   title: 'Product type'
   route_name: entity.commerce_product_type.collection
-  parent: mall.commerce
+  parent: neibers_mall.commerce
   weight: 20
 
-mall.commerce.product_attribute:
+neibers_mall.commerce.product_attribute:
   title: 'Product attributes'
   route_name: entity.commerce_product_attribute.collection
-  parent: mall.commerce
+  parent: neibers_mall.commerce
   weight: 30
 
-mall.orders:
+neibers_mall.orders:
   title: 'Orders'
   route_name: entity.commerce_order.collection
   menu_name: business
   weight: 100
 
-mall.orders.collection:
+neibers_mall.orders.collection:
   title: 'Orders collection'
   route_name: entity.commerce_order.collection
-  parent: mall.orders
+  parent: neibers_mall.orders
   weight: 10

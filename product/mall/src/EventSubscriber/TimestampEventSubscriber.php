@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\mall\EventSubscriber;
+namespace Drupal\neibers_mall\EventSubscriber;
 
 use Drupal\state_machine\Event\WorkflowTransitionEvent;
 use Drupal\Component\Datetime\TimeInterface;
@@ -30,8 +30,8 @@ class TimestampEventSubscriber implements EventSubscriberInterface {
    */
   public static function getSubscribedEvents() {
     $events = [
-      'mall.place.pre_transition' => 'onPlaceTransition',
-      'mall.pre_transition' => 'onAnyTransition',
+      'neibers_mall.place.pre_transition' => 'onPlaceTransition',
+      'neibers_mall.pre_transition' => 'onAnyTransition',
     ];
     return $events;
   }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\mall\EventSubscriber;
+namespace Drupal\neibers_mall\EventSubscriber;
 
 use Drupal\commerce_order\EventSubscriber\OrderNumberSubscriber as OrderNumberSubscriberBase;
 use Drupal\state_machine\Event\WorkflowTransitionEvent;
@@ -15,7 +15,7 @@ class OrderNumberSubscriber extends OrderNumberSubscriberBase {
    */
   public static function getSubscribedEvents() {
     $events = [
-      'mall.place.pre_transition' => ['setOrderNumber', -10],
+      'neibers_mall.place.pre_transition' => ['setOrderNumber', -10],
     ];
     return $events;
   }

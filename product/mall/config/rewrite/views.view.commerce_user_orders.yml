@@ -8,13 +8,13 @@ dependencies:
     - commerce_order
     - commerce_price
     - ip
-    - mall
+    - neibers_mall
     - options
     - state_machine
     - user
 id: commerce_user_orders
 label: 'User orders'
-module: mall
+module: neibers_mall
 description: 'Display a list of placed orders for a user.'
 tag: Commerce
 base_table: commerce_order

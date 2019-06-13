@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\mall\EventSubscriber;
+namespace Drupal\neibers_mall\EventSubscriber;
 
 use Drupal\commerce_order\Mail\OrderReceiptMailInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
@@ -43,7 +43,7 @@ class OrderReceiptSubscriber implements EventSubscriberInterface {
    * {@inheritdoc}
    */
   public static function getSubscribedEvents() {
-    $events = ['mall.place.post_transition' => ['sendOrderReceipt', -100]];
+    $events = ['neibers_mall.place.post_transition' => ['sendOrderReceipt', -100]];
     return $events;
   }
 

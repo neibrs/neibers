@@ -3,10 +3,10 @@
 # LANGUAGE translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
-#  modules/neibers/product/mall/mall.install: n/a
-#  modules/neibers/product/mall/mall.info.yml: n/a
-#  modules/neibers/product/mall/mall.links.menu.yml: n/a
-#  modules/neibers/product/mall/mall.routing.yml: n/a
+#  modules/neibers/product/mall/neibers_mall.install: n/a
+#  modules/neibers/product/mall/neibers_mall.info.yml: n/a
+#  modules/neibers/product/mall/neibers_mall.links.menu.yml: n/a
+#  modules/neibers/product/mall/neibers_mall.routing.yml: n/a
 #  modules/neibers/product/mall/src/Plugin/Block/NavigateBlock.php: n/a
 #  modules/neibers/product/mall/src/Plugin/Block/SidebarBlock.php: n/a
 #
@@ -23,39 +23,39 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: modules/neibers/product/mall/mall.install:15
+#: modules/neibers/product/mall/neibers_mall.install:15
 msgid "Default Store Name"
 msgstr "默认商店名称"
 
-#: modules/neibers/product/mall/mall.info.yml:0
+#: modules/neibers/product/mall/neibers_mall.info.yml:0
 msgid "Mall"
 msgstr "商城"
 
-#: modules/neibers/product/mall/mall.info.yml:0
+#: modules/neibers/product/mall/neibers_mall.info.yml:0
 msgid "The commerce module with exsen theme for commerce purpose."
 msgstr "基于主题Exsen的商城配置模块。"
 
-#: modules/neibers/product/mall/mall.info.yml:0
+#: modules/neibers/product/mall/neibers_mall.info.yml:0
 msgid "Neibrs"
 msgstr ""
 
-#: modules/neibers/product/mall/mall.links.menu.yml:0
+#: modules/neibers/product/mall/neibers_mall.links.menu.yml:0
 msgid "Commerce products"
 msgstr "商品"
 
-#: modules/neibers/product/mall/mall.links.menu.yml:0
+#: modules/neibers/product/mall/neibers_mall.links.menu.yml:0
 msgid "Products collection"
 msgstr "商品列表"
 
-#: modules/neibers/product/mall/mall.links.menu.yml:0
+#: modules/neibers/product/mall/neibers_mall.links.menu.yml:0
 msgid "Product type"
 msgstr "商品类型"
 
-#: modules/neibers/product/mall/mall.links.menu.yml:0
+#: modules/neibers/product/mall/neibers_mall.links.menu.yml:0
 msgid "Product attributes"
 msgstr "产品属性"
 
-#: modules/neibers/product/mall/mall.routing.yml:0
+#: modules/neibers/product/mall/neibers_mall.routing.yml:0
 msgid "Platform"
 msgstr "平台"
 

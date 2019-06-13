@@ -9,8 +9,8 @@ use Drupal\commerce_store\Entity\Store;
 /**
  * Implements hook_install().
  */
-function mall_install() {
-  // Init Store for mall.
+function neibers_mall_install() {
+  // Init Store for neibers_mall.
   $store = Store::create([
     'name' => t('Default Store Name'),
     'mail' => 'admin@localhost',
@@ -22,7 +22,7 @@ function mall_install() {
   // Init order type workflow.
   /** @var \Drupal\commerce_order\Entity\OrderTypeInterface $commerce_order_type_default */
   $commerce_order_type_default = \Drupal::entityTypeManager()->getStorage('commerce_order_type')->load('default');
-  $commerce_order_type_default->set('workflow', 'mall_validation')
+  $commerce_order_type_default->set('workflow', 'neibers_mall_validation')
     ->save();
 
   // Init import currency RMB

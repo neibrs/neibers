@@ -1,0 +1,20 @@
+services:
+  neibers_mall_commerce_order.order_number_subscriber:
+    class: Drupal\neibers_mall\EventSubscriber\OrderNumberSubscriber
+    tags:
+      - { name: event_subscriber }
+  neibers_mall_commerce_order.timestamp_event_subscriber:
+    class: Drupal\neibers_mall\EventSubscriber\TimestampEventSubscriber
+    arguments: ['@datetime.time']
+    tags:
+      - { name: event_subscriber }
+  neibers_mall_commerce_order.order_receipt_subscriber:
+    class: Drupal\neibers_mall\EventSubscriber\OrderReceiptSubscriber
+    arguments: ['@entity_type.manager', '@commerce_order.order_receipt_mail']
+    tags:
+      - { name: 'event_subscriber' }
+  neibers_mall_commerce_cart.order_subscriber:
+    class: Drupal\neibers_mall\EventSubscriber\OrderEventSubscriber
+    arguments: ['@commerce_cart.cart_provider']
+    tags:
+      - { name: event_subscriber }
