@@ -364,7 +364,7 @@ class IP extends RevisionableContentEntityBase implements IPInterface {
       ->setRevisionable(TRUE)
       ->setSetting('workflow_type', 'ip_state')
       ->setSetting('workflow', 'default_ip_state')
-      ->setDefaultValue('draft')
+      ->setDefaultValue('free')
       ->setDisplayOptions('view', [
         'type' => 'list_default',
         'weight' => -2,
