@@ -69,6 +69,15 @@ class IPStorage extends SqlContentEntityStorage implements IPStorageInterface {
     return $inets;
   }
 
+  public function getOnetsByOrder(OrderInterface $order) {
+    $onets = $this->loadByProperties([
+      'order_id' => $order->id(),
+      'type' => 'onet',
+    ]);
+
+    return $onets;
+  }
+
   /**
    * {@inheritDoc}
    */

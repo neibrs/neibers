@@ -69,6 +69,14 @@ interface IPStorageInterface extends ContentEntityStorageInterface {
   public function getInetsByOrder(OrderInterface $order);
 
   /**
+   * @param \Drupal\commerce_order\Entity\OrderInterface $order
+   *
+   * @return \Drupal\ip\Entity\IPInterface[]
+   * @description Get Inet ip by order.
+   */
+  public function getOnetsByOrder(OrderInterface $order);
+
+  /**
    * @param \Drupal\cabinet\Entity\SeatInterface $seat
    *
    * @return \Drupal\ip\Entity\IPInterface[]

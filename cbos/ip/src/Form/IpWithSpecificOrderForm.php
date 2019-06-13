@@ -95,10 +95,19 @@ class IpWithSpecificOrderForm extends FormBase {
     $form['bips'] = [
       '#caption' => $this->t('All business ip collection'),
       '#type' => 'table',
-      '#title' => $this->t('Business ip'),
-      '#header' => [$this->t('Business IP'), $this->t('Operations')],
+      '#title' => $this->t('IP'),
+      '#header' => [$this->t('No.'), $this->t('IP'), $this->t('Operations')],
       '#sticky' => TRUE,
     ];
+
+    $bips = $this->entityTypeManager->getStorage('ip')->getOnetsByOrder($this->order);
+
+    $i = 1;
+    foreach ($bips as $key => $bip) {
+      $form['bips'][$key]['id'] = ['#markup' => $i++];
+      $form['bips'][$key]['ip'] = ['#markup' => $bip->label()];
+      $form['bips'][$key]['operations'] = \Drupal::service('ip.manager')->buildOperations($bip);
+    }
 
     if ($display->getMode() == 'default') {
       // TODO Business ip table for disable and replace ip.
@@ -187,10 +196,6 @@ class IpWithSpecificOrderForm extends FormBase {
 
       $this->messenger()->addStatus($this->t('Save success.'));
     }
-  }
-
-  protected function buildOperations(Entityinterface $entity) {
-
   }
 
 }
