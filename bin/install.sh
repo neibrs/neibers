@@ -21,7 +21,7 @@ vendor/bin/drush en -y commerce_checkout \
   role_menu
 
 # Initial demo data.
-#vendor/bin/drush mim ip_xls
+vendor/bin/drush mim ip_xls
 #vendor/bin/drush mim product_xls
 
 vendor/bin/drupal locale:language:add zh-hans

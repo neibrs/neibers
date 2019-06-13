@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\basestrap\Plugin\Preprocess;
+namespace Drupal\neibers_basestrap\Plugin\Preprocess;
 
 use Drupal\bootstrap\Plugin\Preprocess\PreprocessBase;
 use Drupal\bootstrap\Plugin\Preprocess\PreprocessInterface;

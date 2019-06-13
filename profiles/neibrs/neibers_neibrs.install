@@ -13,7 +13,7 @@ use Drupal\user\Entity\User;
  *
  * @see system_install()
  */
-function neibers_neibers_neibrs_install() {
+function neibers_neibrs_install() {
   // First, do everything in standard profile.
   include_once DRUPAL_ROOT . '/core/profiles/standard/standard.install';
   standard_install();
