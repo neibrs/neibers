@@ -405,7 +405,7 @@ class IP extends RevisionableContentEntityBase implements IPInterface {
     $ip->server->target_id   = 0;
     $ip->seat->target_id     = 0;
     $ip->order_id->target_id = 0;
-    $ip->user_id->target_id  = 0;
+    $ip->user_id->target_id  = 1;
 
     return $ip;
   }

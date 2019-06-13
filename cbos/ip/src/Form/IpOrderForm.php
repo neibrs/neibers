@@ -181,6 +181,7 @@ class IpOrderForm extends FormBase {
       $administer->server->target_id = $values['server'];
       $administer->order_id->target_id = $this->order->id();
       $administer->state->value = 'used';
+      $administer->user_id->target_id = \Drupal::currentUser()->id();
       $administer->save();
 
       if (!empty($values['business'])) {
@@ -190,6 +191,7 @@ class IpOrderForm extends FormBase {
         if (!empty($this->inet)) {
           $business->server->target_id = $this->inet->server->target_id;
           $business->seat->target_id = $this->inet->seat->target_id;
+          $business->user_id->target_id = \Drupal::currentUser()->id();
         }
         $business->save();
       }
