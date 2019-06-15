@@ -4,5 +4,5 @@ dependencies:
   enforced:
     module:
       - machine_room
-id: hongkang
-label: Hongkang
+id: default
+label: Default
