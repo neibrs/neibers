@@ -24,7 +24,7 @@ use Drupal\Core\Config\Entity\ConfigEntityBundleBase;
  *     },
  *   },
  *   config_prefix = "type",
- *   admin_permission = "administer site configuration",
+ *   admin_permission = "administer room",
  *   bundle_of = "neibers_room",
  *   entity_keys = {
  *     "id" = "id",

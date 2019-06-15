@@ -40,7 +40,7 @@ use Drupal\user\UserInterface;
  *   base_table = "neibers_room",
  *   data_table = "neibers_room_field_data",
  *   translatable = TRUE,
- *   admin_permission = "administer room entities",
+ *   admin_permission = "administer room",
  *   entity_keys = {
  *     "id" = "id",
  *     "bundle" = "type",

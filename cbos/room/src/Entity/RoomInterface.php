@@ -8,7 +8,7 @@ use Drupal\Core\Entity\EntityPublishedInterface;
 use Drupal\user\EntityOwnerInterface;
 
 /**
- * Provides an interface for defining Room entities.
+ * Provides an interface for defining Room.
  *
  * @ingroup neibers_room
  */

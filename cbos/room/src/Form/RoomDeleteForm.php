@@ -5,7 +5,7 @@ namespace Drupal\neibers_room\Form;
 use Drupal\Core\Entity\ContentEntityDeleteForm;
 
 /**
- * Provides a form for deleting Room entities.
+ * Provides a form for deleting Room.
  *
  * @ingroup neibers_room
  */

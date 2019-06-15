@@ -5,7 +5,7 @@ namespace Drupal\neibers_room\Entity;
 use Drupal\views\EntityViewsData;
 
 /**
- * Provides Views data for Room entities.
+ * Provides Views data for Room.
  */
 class RoomViewsData extends EntityViewsData {
 

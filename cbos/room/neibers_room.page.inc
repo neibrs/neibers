@@ -4,7 +4,7 @@
  * @file
  * Contains neibers_room.page.inc.
  *
- * Page callback for Room entities.
+ * Page callback for Room.
  */
 
 use Drupal\Core\Render\Element;

@@ -3,7 +3,7 @@
 entity.neibers_room.collection:
   title: 'Room list'
   route_name: entity.neibers_room.collection
-  description: 'List Room entities'
+  description: 'List Room'
   parent: system.admin_structure
   weight: 100
 
