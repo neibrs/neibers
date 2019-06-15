@@ -8,6 +8,6 @@ package: Neibrs
 dependencies:
   - commerce:commerce_store
   - config_rewrite:config_rewrite
-  - neibers:menu_plus
+  - menu_plus
   - migrate_source_xls:migrate_source_xls
   - migrate_tools:migrate_tools
