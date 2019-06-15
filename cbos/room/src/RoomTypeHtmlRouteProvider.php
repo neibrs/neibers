@@ -20,7 +20,6 @@ class RoomTypeHtmlRouteProvider extends AdminHtmlRouteProvider {
     $collection = parent::getRoutes($entity_type);
 
     // Provide your custom entity routes here.
-
     return $collection;
   }
 

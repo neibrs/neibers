@@ -35,7 +35,7 @@ class RoomSettingsForm extends FormBase {
   }
 
   /**
-   * Defines the settings form for Room.
+   * Defines the settings form for Room entities.
    *
    * @param array $form
    *   An associative array containing the structure of the form.
@@ -46,7 +46,7 @@ class RoomSettingsForm extends FormBase {
    *   Form definition array.
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
-    $form['room_settings']['#markup'] = 'Settings form for Room. Manage field settings here.';
+    $form['room_settings']['#markup'] = 'Settings form for Room entities. Manage field settings here.';
     return $form;
   }
 

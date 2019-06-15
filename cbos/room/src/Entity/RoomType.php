@@ -24,7 +24,7 @@ use Drupal\Core\Config\Entity\ConfigEntityBundleBase;
  *     },
  *   },
  *   config_prefix = "type",
- *   admin_permission = "administer neibers room",
+ *   admin_permission = "administer site configuration",
  *   bundle_of = "neibers_room",
  *   entity_keys = {
  *     "id" = "id",
@@ -32,10 +32,10 @@ use Drupal\Core\Config\Entity\ConfigEntityBundleBase;
  *     "uuid" = "uuid"
  *   },
  *   links = {
- *     "canonical" = "/room/type/{room_type}",
+ *     "canonical" = "/room/type/{neibers_room_type}",
  *     "add-form" = "/room/type/add",
- *     "edit-form" = "/room/type/{room_type}/edit",
- *     "delete-form" = "/room/type/{room_type}/delete",
+ *     "edit-form" = "/room/type/{neibers_room_type}/edit",
+ *     "delete-form" = "/room/type/{neibers_room_type}/delete",
  *     "collection" = "/room/type"
  *   }
  * )

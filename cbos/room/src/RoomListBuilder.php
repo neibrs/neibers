@@ -7,7 +7,7 @@ use Drupal\Core\Entity\EntityListBuilder;
 use Drupal\Core\Link;
 
 /**
- * Defines a class to build a listing of Room.
+ * Defines a class to build a listing of Room entities.
  *
  * @ingroup neibers_room
  */
@@ -26,7 +26,7 @@ class RoomListBuilder extends EntityListBuilder {
    * {@inheritdoc}
    */
   public function buildRow(EntityInterface $entity) {
-    /* @var $entity \Drupal\neibers_room\Entity\Room */
+    /* @var \Drupal\neibers_room\Entity\Room $entity */
     $row['id'] = $entity->id();
     $row['name'] = Link::createFromRoute(
       $entity->label(),

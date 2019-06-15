@@ -16,7 +16,7 @@ function neibers_room_help($route_name, RouteMatchInterface $route_match) {
     case 'help.page.neibers_room':
       $output = '';
       $output .= '<h3>' . t('About') . '</h3>';
-      $output .= '<p>' . t('The machine room of store computer equipments.') . '</p>';
+      $output .= '<p>' . t('The idc.') . '</p>';
       return $output;
 
     default:
@@ -27,26 +27,26 @@ function neibers_room_help($route_name, RouteMatchInterface $route_match) {
  * Implements hook_theme().
  */
 function neibers_room_theme() {
-  return [
-    'room' => [
-      'render element' => 'elements',
-      'file' => 'neibers_room.page.inc',
-      'template' => 'neibers_room',
-      ],
-    'room_content_add_list' => [
-      'render element' => 'content',
-      'variables' => ['content' => NULL],
-      'file' => 'neibers_room.page.inc',
-    ],
+  $theme = [];
+  $theme['neibers_room'] = [
+    'render element' => 'elements',
+    'file' => 'neibers_room.page.inc',
+    'template' => 'neibers-room',
   ];
+  $theme['neibers_room_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'neibers_room.page.inc',
+  ];
+  return $theme;
 }
 
 /**
-* Implements hook_theme_suggestions_HOOK().
-*/
-function neibers_room_theme_suggestions_room(array $variables) {
+ * Implements hook_theme_suggestions_HOOK().
+ */
+function neibers_room_theme_suggestions_neibers_room(array $variables) {
   $suggestions = [];
-  $entity = $variables['elements']['#room'];
+  $entity = $variables['elements']['#neibers_room'];
   $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
 
   $suggestions[] = 'neibers_room__' . $sanitized_view_mode;

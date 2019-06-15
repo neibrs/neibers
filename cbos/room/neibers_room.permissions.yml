@@ -1,19 +1,19 @@
-add neibers room:
-  title: 'Create new Room'
+add room entities:
+  title: 'Create new Room entities'
 
-administer neibers room:
-  title: 'Administer Room'
-  description: 'Allow to access the administration form to configure Room.'
+administer room entities:
+  title: 'Administer Room entities'
+  description: 'Allow to access the administration form to configure Room entities.'
   restrict access: true
 
-delete neibers room:
-  title: 'Delete Room'
+delete room entities:
+  title: 'Delete Room entities'
 
-edit neibers room:
-  title: 'Edit Room'
+edit room entities:
+  title: 'Edit Room entities'
 
-view published neibers room:
-  title: 'View published Room'
+view published room entities:
+  title: 'View published Room entities'
 
-view unpublished neibers room:
-  title: 'View unpublished Room'
+view unpublished room entities:
+  title: 'View unpublished Room entities'

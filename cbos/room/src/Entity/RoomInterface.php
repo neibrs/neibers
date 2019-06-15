@@ -4,16 +4,19 @@ namespace Drupal\neibers_room\Entity;
 
 use Drupal\Core\Entity\ContentEntityInterface;
 use Drupal\Core\Entity\EntityChangedInterface;
+use Drupal\Core\Entity\EntityPublishedInterface;
 use Drupal\user\EntityOwnerInterface;
 
 /**
- * Provides an interface for defining Room.
+ * Provides an interface for defining Room entities.
  *
  * @ingroup neibers_room
  */
-interface RoomInterface extends ContentEntityInterface, EntityChangedInterface, EntityOwnerInterface {
+interface RoomInterface extends ContentEntityInterface, EntityChangedInterface, EntityPublishedInterface, EntityOwnerInterface {
 
-  // Add get/set methods for your configuration properties here.
+  /**
+   * Add get/set methods for your configuration properties here.
+   */
 
   /**
    * Gets the Room name.
@@ -53,25 +56,5 @@ interface RoomInterface extends ContentEntityInterface, EntityChangedInterface, 
    */
   public function setCreatedTime($timestamp);
 
-  /**
-   * Returns the Room published status indicator.
-   *
-   * Unpublished Room are only visible to restricted users.
-   *
-   * @return bool
-   *   TRUE if the Room is published.
-   */
-  public function isPublished();
-
-  /**
-   * Sets the published status of a Room.
-   *
-   * @param bool $published
-   *   TRUE to set this Room to published, FALSE to set it to unpublished.
-   *
-   * @return \Drupal\neibers_room\Entity\RoomInterface
-   *   The called Room entity.
-   */
-  public function setPublished($published);
 
 }
