@@ -2,7 +2,7 @@ name: 'Cabinet'
 type: module
 description: 'The neibers_cabinets of idc room.'
 core: 8.x
-package: 'Neibrs'
+package: 'Neibers'
 interface translation project: neibers_cabinet
 interface translation server pattern: modules/neibers/cbos/%project/translations/%project.%language.po
 dependencies:

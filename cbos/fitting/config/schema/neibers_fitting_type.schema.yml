@@ -1,4 +1,4 @@
-fitting.type.*:
+neibers_fitting.type.*:
   type: config_entity
   label: 'Fitting type config'
   mapping:
@@ -11,7 +11,7 @@ fitting.type.*:
     uuid:
       type: string
 
-fitting.type.*.third_party.fitting_state:
+neibers_fitting.type.*.third_party.neibers_fitting_state:
   type: mapping
   label: 'Workflow status settings'
   mapping:

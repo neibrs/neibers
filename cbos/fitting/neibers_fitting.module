@@ -1,0 +1,58 @@
+<?php
+
+/**
+ * @file
+ * Contains neibers_fitting.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function neibers_fitting_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the neibers_fitting module.
+    case 'help.page.neibers_fitting':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('The fittings of a machine.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function neibers_fitting_theme() {
+  $theme = [];
+  $theme['neibers_fitting'] = [
+    'render element' => 'elements',
+    'file' => 'neibers_fitting.page.inc',
+    'template' => 'neibers-fitting',
+  ];
+  $theme['neibers_fitting_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'neibers_fitting.page.inc',
+  ];
+  return $theme;
+}
+
+/**
+* Implements hook_theme_suggestions_HOOK().
+*/
+function neibers_fitting_theme_suggestions_neibers_fitting(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#neibers_fitting'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'neibers_fitting__' . $sanitized_view_mode;
+  $suggestions[] = 'neibers_fitting__' . $entity->bundle();
+  $suggestions[] = 'neibers_fitting__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'neibers_fitting__' . $entity->id();
+  $suggestions[] = 'neibers_fitting__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}

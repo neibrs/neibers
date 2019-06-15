@@ -18,7 +18,7 @@ vendor/bin/drush en -y commerce_checkout \
   neibers_hardware \
   role_menu
 
-#  fitting \
+#  neibers_fitting \
 #  neibers_idc \
 #  neibers_mall \
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\fitting\Form;
+namespace Drupal\neibers_fitting\Form;
 
 use Drupal\Core\Entity\ContentEntityForm;
 use Drupal\Core\Form\FormStateInterface;
@@ -8,7 +8,7 @@ use Drupal\Core\Form\FormStateInterface;
 /**
  * Form controller for Fitting edit forms.
  *
- * @ingroup fitting
+ * @ingroup neibers_fitting
  */
 class FittingForm extends ContentEntityForm {
 
@@ -16,7 +16,7 @@ class FittingForm extends ContentEntityForm {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
-    /* @var $entity \Drupal\fitting\Entity\Fitting */
+    /* @var $entity \Drupal\neibers_fitting\Entity\Fitting */
     $form = parent::buildForm($form, $form_state);
 
     $entity = $this->entity;
@@ -44,7 +44,7 @@ class FittingForm extends ContentEntityForm {
           '%label' => $entity->label(),
         ]));
     }
-    $form_state->setRedirect('entity.fitting.canonical', ['fitting' => $entity->id()]);
+    $form_state->setRedirect('entity.neibers_fitting.canonical', ['neibers_fitting' => $entity->id()]);
   }
 
 }

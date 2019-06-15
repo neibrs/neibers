@@ -1,13 +1,13 @@
 <?php
 
-namespace Drupal\fitting\Form;
+namespace Drupal\neibers_fitting\Form;
 
 use Drupal\Core\Entity\ContentEntityDeleteForm;
 
 /**
  * Provides a form for deleting Fitting.
  *
- * @ingroup fitting
+ * @ingroup neibers_fitting
  */
 class FittingDeleteForm extends ContentEntityDeleteForm {
 

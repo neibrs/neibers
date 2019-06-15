@@ -4,4 +4,4 @@ description: 'Front page per role.'
 core: 8.x
 interface translation project: role_frontpage
 interface translation server pattern: modules/neibers/core/%project/translations/%project.%language.po
-package: 'Neibrs core'
+package: 'Neibers'

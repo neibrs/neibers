@@ -4,7 +4,7 @@ base theme: bootstrap
 
 name: 'Basestrap'
 description: 'Uses the Bootstrap framework Sass source files and must be compiled (not for beginners).'
-package: 'Bootstrap'
+package: 'Neibers'
 interface translation project: neibers_basestrap
 interface translation server pattern: modules/neibers/themes/basestrap/translations/%project.%language.po
 

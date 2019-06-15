@@ -1,0 +1,17 @@
+# Fitting routing definition
+
+entity.neibers_fitting.canonical:
+  route_name: entity.neibers_fitting.canonical
+  base_route: entity.neibers_fitting.canonical
+  title: 'View'
+
+entity.neibers_fitting.edit_form:
+  route_name: entity.neibers_fitting.edit_form
+  base_route: entity.neibers_fitting.canonical
+  title: 'Edit'
+
+entity.neibers_fitting.delete_form:
+  route_name:  entity.neibers_fitting.delete_form
+  base_route:  entity.neibers_fitting.canonical
+  title: Delete
+  weight: 10

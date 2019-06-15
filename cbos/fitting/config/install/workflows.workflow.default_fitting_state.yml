@@ -3,7 +3,7 @@ status: true
 dependencies:
   enforced:
     module:
-      - fitting
+      - neibers_fitting
 id: default_fitting_state
 label: 'Default IP workflow state'
 type: fitting_state

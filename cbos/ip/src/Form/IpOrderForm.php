@@ -82,7 +82,7 @@ class IpOrderForm extends FormBase {
         '#markup' => implode(', ', $onets),
       ];
 
-      $form['ips'][$key]['fitting'] = [
+      $form['ips'][$key]['neibers_fitting'] = [
       // TODO
         '#markup' => '',
       ];

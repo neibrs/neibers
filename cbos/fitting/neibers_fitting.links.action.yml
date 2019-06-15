@@ -1,0 +1,11 @@
+entity.neibers_fitting.add_form:
+  route_name: entity.neibers_fitting.add_page
+  title: 'Add'
+  appears_on:
+    - entity.neibers_fitting.collection
+
+entity.neibers_fitting_type.add_form:
+  route_name: entity.neibers_fitting_type.add_form
+  title: 'Add type'
+  appears_on:
+    - entity.neibers_fitting_type.collection

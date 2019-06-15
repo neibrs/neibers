@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\fitting;
+namespace Drupal\neibers_fitting;
 
 use Drupal\Core\Config\Entity\ConfigEntityListBuilder;
 use Drupal\Core\Entity\EntityInterface;

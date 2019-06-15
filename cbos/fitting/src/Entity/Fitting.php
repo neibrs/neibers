@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\fitting\Entity;
+namespace Drupal\neibers_fitting\Entity;
 
 use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Field\BaseFieldDefinition;
@@ -12,33 +12,33 @@ use Drupal\user\UserInterface;
 /**
  * Defines the Fitting entity.
  *
- * @ingroup fitting
+ * @ingroup neibers_fitting
  *
  * @ContentEntityType(
- *   id = "fitting",
+ *   id = "neibers_fitting",
  *   label = @Translation("Fitting"),
  *   bundle_label = @Translation("Fitting type"),
  *   handlers = {
  *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
- *     "list_builder" = "Drupal\fitting\FittingListBuilder",
- *     "views_data" = "Drupal\fitting\Entity\FittingViewsData",
- *     "translation" = "Drupal\fitting\FittingTranslationHandler",
+ *     "list_builder" = "Drupal\neibers_fitting\FittingListBuilder",
+ *     "views_data" = "Drupal\neibers_fitting\Entity\FittingViewsData",
+ *     "translation" = "Drupal\neibers_fitting\FittingTranslationHandler",
  *
  *     "form" = {
- *       "default" = "Drupal\fitting\Form\FittingForm",
- *       "add" = "Drupal\fitting\Form\FittingForm",
- *       "edit" = "Drupal\fitting\Form\FittingForm",
- *       "delete" = "Drupal\fitting\Form\FittingDeleteForm",
+ *       "default" = "Drupal\neibers_fitting\Form\FittingForm",
+ *       "add" = "Drupal\neibers_fitting\Form\FittingForm",
+ *       "edit" = "Drupal\neibers_fitting\Form\FittingForm",
+ *       "delete" = "Drupal\neibers_fitting\Form\FittingDeleteForm",
  *     },
- *     "access" = "Drupal\fitting\FittingAccessControlHandler",
+ *     "access" = "Drupal\neibers_fitting\FittingAccessControlHandler",
  *     "route_provider" = {
- *       "html" = "Drupal\fitting\FittingHtmlRouteProvider",
+ *       "html" = "Drupal\neibers_fitting\FittingHtmlRouteProvider",
  *     },
  *   },
- *   base_table = "fitting",
- *   data_table = "fitting_field_data",
+ *   base_table = "neibers_fitting",
+ *   data_table = "neibers_fitting_field_data",
  *   translatable = TRUE,
- *   admin_permission = "administer fitting",
+ *   admin_permission = "administer neibers fitting",
  *   entity_keys = {
  *     "id" = "id",
  *     "bundle" = "type",
@@ -49,15 +49,15 @@ use Drupal\user\UserInterface;
  *     "status" = "status",
  *   },
  *   links = {
- *     "canonical" = "/fitting/{fitting}",
+ *     "canonical" = "/fitting/{neibers_fitting}",
  *     "add-page" = "/fitting/add",
- *     "add-form" = "/fitting/add/{fitting_type}",
- *     "edit-form" = "/fitting/{fitting}/edit",
- *     "delete-form" = "/fitting/{fitting}/delete",
+ *     "add-form" = "/fitting/add/{neibers_fitting_type}",
+ *     "edit-form" = "/fitting/{neibers_fitting}/edit",
+ *     "delete-form" = "/fitting/{neibers_fitting}/delete",
  *     "collection" = "/fitting",
  *   },
- *   bundle_entity_type = "fitting_type",
- *   field_ui_base_route = "entity.fitting_type.edit_form"
+ *   bundle_entity_type = "neibers_fitting_type",
+ *   field_ui_base_route = "entity.neibers_fitting_type.edit_form"
  * )
  */
 class Fitting extends ContentEntityBase implements FittingInterface {
@@ -231,7 +231,7 @@ class Fitting extends ContentEntityBase implements FittingInterface {
 
     $fields['seat'] = BaseFieldDefinition::create('entity_reference')
       ->setLabel(t('Cabinet Seat'))
-      ->setSetting('target_type', 'seat')
+      ->setSetting('target_type', 'neibers_seat')
       ->setDisplayOptions('view', [
         'type' => 'entity_reference_label',
         'weight' => 6,
@@ -289,7 +289,7 @@ class Fitting extends ContentEntityBase implements FittingInterface {
       ->setDisplayConfigurable('form', TRUE)
       ->setDisplayConfigurable('view', TRUE);
 
-    // Design to determine which fitting could be purchasable.
+    // Design to determine which neibers_fitting could be purchasable.
     $fields['purchasable'] = BaseFieldDefinition::create('boolean')
       ->setLabel(t('Purchasable'))
       ->setDescription(t('A boolean indicating whether the Fitting is purchasable.'))

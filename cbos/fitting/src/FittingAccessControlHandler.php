@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\fitting;
+namespace Drupal\neibers_fitting;
 
 use Drupal\Core\Entity\EntityAccessControlHandler;
 use Drupal\Core\Entity\EntityInterface;
@@ -10,7 +10,7 @@ use Drupal\Core\Access\AccessResult;
 /**
  * Access controller for the Fitting entity.
  *
- * @see \Drupal\fitting\Entity\Fitting.
+ * @see \Drupal\neibers_fitting\Entity\Fitting.
  */
 class FittingAccessControlHandler extends EntityAccessControlHandler {
 
@@ -18,19 +18,19 @@ class FittingAccessControlHandler extends EntityAccessControlHandler {
    * {@inheritdoc}
    */
   protected function checkAccess(EntityInterface $entity, $operation, AccountInterface $account) {
-    /** @var \Drupal\fitting\Entity\FittingInterface $entity */
+    /** @var \Drupal\neibers_fitting\Entity\FittingInterface $entity */
     switch ($operation) {
       case 'view':
         if (!$entity->isPublished()) {
-          return AccessResult::allowedIfHasPermission($account, 'view unpublished fitting');
+          return AccessResult::allowedIfHasPermission($account, 'view unpublished neibers fitting');
         }
-        return AccessResult::allowedIfHasPermission($account, 'view published fitting');
+        return AccessResult::allowedIfHasPermission($account, 'view published neibers fitting');
 
       case 'update':
-        return AccessResult::allowedIfHasPermission($account, 'edit fitting');
+        return AccessResult::allowedIfHasPermission($account, 'edit neibers fitting');
 
       case 'delete':
-        return AccessResult::allowedIfHasPermission($account, 'delete fitting');
+        return AccessResult::allowedIfHasPermission($account, 'delete neibers fitting');
     }
 
     // Unknown operation, no opinion.
@@ -41,7 +41,7 @@ class FittingAccessControlHandler extends EntityAccessControlHandler {
    * {@inheritdoc}
    */
   protected function checkCreateAccess(AccountInterface $account, array $context, $entity_bundle = NULL) {
-    return AccessResult::allowedIfHasPermission($account, 'add fitting');
+    return AccessResult::allowedIfHasPermission($account, 'add neibers fitting');
   }
 
 }

@@ -1,11 +1,11 @@
 <?php
 
-namespace Drupal\fitting\Plugin\WorkflowType;
+namespace Drupal\neibers_fitting\Plugin\WorkflowType;
 
 use Drupal\eabax_workflows\Plugin\WorkflowType\EntityWorkflowBase;
 
 /**
- * Attaches workflow to fitting entity types and their bundles.
+ * Attaches workflow to neibers_fitting entity types and their bundles.
  *
  * @WorkflowType(
  *   id = "fitting_state",

@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - neibers_fitting
+  enforced:
+    module:
+      - neibers_fitting
+id: bandwidth
+label: 'Bandwidth'

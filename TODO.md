@@ -8,7 +8,7 @@
 * 订单状态处于complete时，禁止任何操作.  
 * admin/commerce/order/6 标题错误?
 * 字段显示配置界面上下拖动报错，plugin hidden not found.
-* ip, fitting工作流代码重复.
+* ip, neibers_fitting工作流代码重复.
 
 * 用户订单列表缺少已完成订单、已支付订单、未支付订单分类列表(页面搜索已添加订单状态)
 * 订单管理列表

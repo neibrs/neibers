@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\fitting;
+namespace Drupal\neibers_fitting;
 
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\EntityListBuilder;
@@ -9,7 +9,7 @@ use Drupal\Core\Link;
 /**
  * Defines a class to build a listing of Fitting.
  *
- * @ingroup fitting
+ * @ingroup neibers_fitting
  */
 class FittingListBuilder extends EntityListBuilder {
 
@@ -26,12 +26,12 @@ class FittingListBuilder extends EntityListBuilder {
    * {@inheritdoc}
    */
   public function buildRow(EntityInterface $entity) {
-    /* @var $entity \Drupal\fitting\Entity\Fitting */
+    /* @var $entity \Drupal\neibers_fitting\Entity\Fitting */
     $row['id'] = $entity->id();
     $row['name'] = Link::createFromRoute(
       $entity->label(),
-      'entity.fitting.edit_form',
-      ['fitting' => $entity->id()]
+      'entity.neibers_fitting.edit_form',
+      ['neibers_fitting' => $entity->id()]
     );
     return $row + parent::buildRow($entity);
   }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\fitting\Form;
+namespace Drupal\neibers_fitting\Form;
 
 use Drupal\Core\Entity\EntityConfirmFormBase;
 use Drupal\Core\Form\FormStateInterface;
@@ -22,7 +22,7 @@ class FittingTypeDeleteForm extends EntityConfirmFormBase {
    * {@inheritdoc}
    */
   public function getCancelUrl() {
-    return new Url('entity.fitting_type.collection');
+    return new Url('entity.neibers_fitting_type.collection');
   }
 
   /**

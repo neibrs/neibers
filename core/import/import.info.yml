@@ -4,7 +4,7 @@ description: 'Import'
 core: 8.x
 interface translation project: import
 interface translation server pattern: modules/neibers/core/%project/translations/%project.%language.po
-package: 'Neibrs core'
+package: 'Neibers'
 dependencies:
   - neibers:eabax_core
   - migrate_source_xls:migrate_source_xls

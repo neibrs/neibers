@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\fitting\Entity;
+namespace Drupal\neibers_fitting\Entity;
 
 use Drupal\Core\Entity\ContentEntityInterface;
 use Drupal\Core\Entity\EntityChangedInterface;
@@ -9,7 +9,7 @@ use Drupal\user\EntityOwnerInterface;
 /**
  * Provides an interface for defining Fitting.
  *
- * @ingroup fitting
+ * @ingroup neibers_fitting
  */
 interface FittingInterface extends ContentEntityInterface, EntityChangedInterface, EntityOwnerInterface {
 
@@ -29,7 +29,7 @@ interface FittingInterface extends ContentEntityInterface, EntityChangedInterfac
    * @param string $name
    *   The Fitting name.
    *
-   * @return \Drupal\fitting\Entity\FittingInterface
+   * @return \Drupal\neibers_fitting\Entity\FittingInterface
    *   The called Fitting entity.
    */
   public function setName($name);
@@ -48,7 +48,7 @@ interface FittingInterface extends ContentEntityInterface, EntityChangedInterfac
    * @param int $timestamp
    *   The Fitting creation timestamp.
    *
-   * @return \Drupal\fitting\Entity\FittingInterface
+   * @return \Drupal\neibers_fitting\Entity\FittingInterface
    *   The called Fitting entity.
    */
   public function setCreatedTime($timestamp);
@@ -69,7 +69,7 @@ interface FittingInterface extends ContentEntityInterface, EntityChangedInterfac
    * @param bool $published
    *   TRUE to set this Fitting to published, FALSE to set it to unpublished.
    *
-   * @return \Drupal\fitting\Entity\FittingInterface
+   * @return \Drupal\neibers_fitting\Entity\FittingInterface
    *   The called Fitting entity.
    */
   public function setPublished($published);

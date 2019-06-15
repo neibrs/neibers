@@ -4,7 +4,7 @@ description: 'The commerce module with exsen theme for commerce purpose.'
 core: 8.x
 interface translation project: neibers_mall
 interface translation server pattern: modules/neibers/product/mall/translations/%project.%language.po
-package: Neibrs
+package: 'Neibers'
 dependencies:
   - commerce:commerce_store
   - config_rewrite:config_rewrite

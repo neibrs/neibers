@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\fitting\Form;
+namespace Drupal\neibers_fitting\Form;
 
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
@@ -8,7 +8,7 @@ use Drupal\Core\Form\FormStateInterface;
 /**
  * Class FittingSettingsForm.
  *
- * @ingroup fitting
+ * @ingroup neibers_fitting
  */
 class FittingSettingsForm extends FormBase {
 
@@ -19,7 +19,7 @@ class FittingSettingsForm extends FormBase {
    *   The unique string identifying the form.
    */
   public function getFormId() {
-    return 'fitting_settings';
+    return 'neibers_fitting_settings';
   }
 
   /**
@@ -46,7 +46,7 @@ class FittingSettingsForm extends FormBase {
    *   Form definition array.
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
-    $form['fitting_settings']['#markup'] = 'Settings form for Fitting. Manage field settings here.';
+    $form['neibers_fitting_settings']['#markup'] = 'Settings form for Fitting. Manage field settings here.';
     return $form;
   }
 
