@@ -212,7 +212,7 @@ class Cabinet extends ContentEntityBase implements CabinetInterface {
       ->setDisplayConfigurable('form', TRUE);
 
     $fields['room'] = BaseFieldDefinition::create('entity_reference')
-      ->setLabel(t('Machine Room'))
+      ->setLabel(t('Room'))
       ->setSetting('target_type', 'room')
       ->setDisplayOptions('view', [
         'type' => 'entity_reference_label',
