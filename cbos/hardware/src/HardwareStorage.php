@@ -3,7 +3,7 @@
 namespace Drupal\neibers_hardware;
 
 use Drupal\Core\Entity\Sql\SqlContentEntityStorage;
-use Drupal\machine_room\Entity\RoomInterface;
+use Drupal\neibers_room\Entity\RoomInterface;
 
 class HardwareStorage extends SqlContentEntityStorage implements HardwareStorageInterface {
 

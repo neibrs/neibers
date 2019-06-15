@@ -2,9 +2,9 @@ langcode: en
 status: true
 dependencies:
   module:
-    - machine_room
-id: machine_room
-label: 'Machine Room'
+    - neibers_room
+id: neibers_room
+label: 'Room'
 module: neibers_idc
 description: 'Find and manage content.'
 tag: default 
@@ -17,7 +17,7 @@ display:
       access:
         type: perm
         options:
-          perm: 'administer machine room'
+          perm: 'administer neibers room'
       cache:
         type: tag
         options: {  }
@@ -141,7 +141,7 @@ display:
         type: fields
       fields:
         name:
-          table: room_field_data
+          table: neibers_room_field_data
           field: name
           id: name
           entity_type: null
@@ -175,12 +175,12 @@ display:
           field_api_classes: false
         type:
           id: type
-          table: room_field_data
+          table: neibers_room_field_data
           field: type
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Machine Room type'
+          label: 'Room type'
           exclude: false
           alter:
             alter_text: false
@@ -204,12 +204,12 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: room
+          entity_type: neibers_room
           entity_field: type
           plugin_id: field
         x_axis:
           id: x_axis
-          table: room_field_data
+          table: neibers_room_field_data
           field: x_axis
           relationship: none
           group_type: group
@@ -270,12 +270,12 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: room
+          entity_type: neibers_room
           entity_field: x_axis
           plugin_id: field
         y_axis:
           id: y_axis
-          table: room_field_data
+          table: neibers_room_field_data
           field: y_axis
           relationship: none
           group_type: group
@@ -305,12 +305,12 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: room
+          entity_type: neibers_room
           entity_field: y_axis
           plugin_id: field
         status:
           id: status
-          table: room_field_data
+          table: neibers_room_field_data
           field: status
           relationship: none
           group_type: group
@@ -372,12 +372,12 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: room
+          entity_type: neibers_room
           entity_field: status
           plugin_id: field
         speed_test_address:
           id: speed_test_address
-          table: room_field_data
+          table: neibers_room_field_data
           field: speed_test_address
           relationship: none
           group_type: group
@@ -408,12 +408,12 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: room
+          entity_type: neibers_room
           entity_field: speed_test_address
           plugin_id: field
         changed:
           id: changed
-          table: room_field_data
+          table: neibers_room_field_data
           field: changed
           relationship: none
           group_type: group
@@ -435,11 +435,11 @@ display:
             custom_date_format: ''
             timezone: ''
           plugin_id: field
-          entity_type: room
+          entity_type: neibers_room
           entity_field: changed
         operations:
           id: operations
-          table: room
+          table: neibers_room
           field: operations
           relationship: none
           group_type: group
@@ -486,7 +486,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           destination: false
-          entity_type: room
+          entity_type: neibers_room
           plugin_id: entity_operations
       filters:
         combine:
@@ -535,7 +535,7 @@ display:
           plugin_id: combine
         type:
           id: type
-          table: room_field_data
+          table: neibers_room_field_data
           field: type
           relationship: none
           group_type: group
@@ -570,11 +570,11 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          entity_type: room
+          entity_type: neibers_room
           entity_field: type
           plugin_id: bundle
       sorts: {  }
-      title: 'Machine Room'
+      title: 'Room'
       header: {  }
       footer: {  }
       relationships: {  }

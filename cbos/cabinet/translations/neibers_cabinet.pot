@@ -181,7 +181,7 @@ msgid "Switch occupied neibers_seat in digit."
 msgstr ""
 
 #: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:215
-msgid "Machine Room"
+msgid "Room"
 msgstr ""
 
 #: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:234 modules/neibers/cbos/cabinet/src/Entity/Seat.php:225

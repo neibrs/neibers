@@ -59,7 +59,7 @@ process:
       source: Room
     -
       plugin: entity_generate
-      entity_type: room
+      entity_type: neibers_room
       bundle_key: type
       bundle: default
       value_key: name

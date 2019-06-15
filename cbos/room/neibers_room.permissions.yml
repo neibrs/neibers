@@ -1,0 +1,19 @@
+add neibers room:
+  title: 'Create new Room'
+
+administer neibers room:
+  title: 'Administer Room'
+  description: 'Allow to access the administration form to configure Room.'
+  restrict access: true
+
+delete neibers room:
+  title: 'Delete Room'
+
+edit neibers room:
+  title: 'Edit Room'
+
+view published neibers room:
+  title: 'View published Room'
+
+view unpublished neibers room:
+  title: 'View unpublished Room'

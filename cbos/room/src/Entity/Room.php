@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\neibers_cabinet\Entity;
+namespace Drupal\neibers_room\Entity;
 
 use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Field\BaseFieldDefinition;
@@ -10,37 +10,39 @@ use Drupal\Core\Entity\EntityTypeInterface;
 use Drupal\user\UserInterface;
 
 /**
- * Defines the Cabinet entity.
+ * Defines the Room entity.
  *
- * @ingroup neibers_cabinet
+ * @ingroup neibers_room
  *
  * @ContentEntityType(
- *   id = "neibers_cabinet",
- *   label = @Translation("Cabinet"),
- *   label_collection = @Translation("Cabinet"),
+ *   id = "neibers_room",
+ *   label = @Translation("Room"),
+ *   label_collection = @Translation("Room"),
+ *   bundle_label = @Translation("Room type"),
  *   handlers = {
  *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
- *     "list_builder" = "Drupal\neibers_cabinet\CabinetListBuilder",
- *     "views_data" = "Drupal\neibers_cabinet\Entity\CabinetViewsData",
- *     "translation" = "Drupal\neibers_cabinet\CabinetTranslationHandler",
+ *     "list_builder" = "Drupal\neibers_room\RoomListBuilder",
+ *     "views_data" = "Drupal\neibers_room\Entity\RoomViewsData",
+ *     "translation" = "Drupal\neibers_room\RoomTranslationHandler",
  *
  *     "form" = {
- *       "default" = "Drupal\neibers_cabinet\Form\CabinetForm",
- *       "add" = "Drupal\neibers_cabinet\Form\CabinetForm",
- *       "edit" = "Drupal\neibers_cabinet\Form\CabinetForm",
- *       "delete" = "Drupal\neibers_cabinet\Form\CabinetDeleteForm",
+ *       "default" = "Drupal\neibers_room\Form\RoomForm",
+ *       "add" = "Drupal\neibers_room\Form\RoomForm",
+ *       "edit" = "Drupal\neibers_room\Form\RoomForm",
+ *       "delete" = "Drupal\neibers_room\Form\RoomDeleteForm",
  *     },
- *     "access" = "Drupal\neibers_cabinet\CabinetAccessControlHandler",
+ *     "access" = "Drupal\neibers_room\RoomAccessControlHandler",
  *     "route_provider" = {
- *       "html" = "Drupal\neibers_cabinet\CabinetHtmlRouteProvider",
+ *       "html" = "Drupal\neibers_room\RoomHtmlRouteProvider",
  *     },
  *   },
- *   base_table = "neibers_cabinet",
- *   data_table = "neibers_cabinet_field_data",
+ *   base_table = "neibers_room",
+ *   data_table = "neibers_room_field_data",
  *   translatable = TRUE,
- *   admin_permission = "administer neibers cabinet",
+ *   admin_permission = "administer neibers room",
  *   entity_keys = {
  *     "id" = "id",
+ *     "bundle" = "type",
  *     "label" = "name",
  *     "uuid" = "uuid",
  *     "uid" = "user_id",
@@ -48,22 +50,23 @@ use Drupal\user\UserInterface;
  *     "status" = "status",
  *   },
  *   links = {
- *     "canonical" = "/cabinet/{neibers_cabinet}",
- *     "add-form" = "/cabinet/add",
- *     "edit-form" = "/cabinet/{neibers_cabinet}/edit",
- *     "delete-form" = "/cabinet/{neibers_cabinet}/delete",
- *     "collection" = "/cabinet",
+ *     "canonical" = "/room/{room}",
+ *     "add-page" = "/room/add",
+ *     "add-form" = "/room/add/{room_type}",
+ *     "edit-form" = "/room/{room}/edit",
+ *     "delete-form" = "/room/{room}/delete",
+ *     "collection" = "/room",
  *   },
- *   field_ui_base_route = "neibers_cabinet.settings"
+ *   bundle_entity_type = "neibers_room_type",
+ *   field_ui_base_route = "entity.neibers_room_type.edit_form"
  * )
  */
-class Cabinet extends ContentEntityBase implements CabinetInterface {
+class Room extends ContentEntityBase implements RoomInterface {
 
   use EntityChangedTrait;
 
   /**
    * {@inheritdoc}
-   * TODO replace with client id.
    */
   public static function preCreate(EntityStorageInterface $storage_controller, array &$values) {
     parent::preCreate($storage_controller, $values);
@@ -155,7 +158,7 @@ class Cabinet extends ContentEntityBase implements CabinetInterface {
 
     $fields['user_id'] = BaseFieldDefinition::create('entity_reference')
       ->setLabel(t('Authored by'))
-      ->setDescription(t('The user ID of author of the Cabinet entity.'))
+      ->setDescription(t('The user ID of author of the Room entity.'))
       ->setRevisionable(TRUE)
       ->setSetting('target_type', 'user')
       ->setSetting('handler', 'default')
@@ -180,7 +183,8 @@ class Cabinet extends ContentEntityBase implements CabinetInterface {
 
     $fields['name'] = BaseFieldDefinition::create('string')
       ->setLabel(t('Name'))
-      ->setDescription(t('The name of the Cabinet entity.'))
+      ->setRequired(TRUE)
+      ->setDescription(t('The name of the Room entity.'))
       ->setSettings([
         'max_length' => 50,
         'text_processing' => 0,
@@ -196,48 +200,67 @@ class Cabinet extends ContentEntityBase implements CabinetInterface {
         'weight' => -4,
       ])
       ->setDisplayConfigurable('form', TRUE)
-      ->setDisplayConfigurable('view', TRUE)
-      ->setRequired(TRUE);
-
-    $fields['size'] = BaseFieldDefinition::create('integer')
-      ->setLabel(t('Size'))
-      ->setDescription(t('Switch occupied neibers_seat in digit.'))
-      ->setDisplayOptions('form', [
-        'type' => 'radios_number',
-        'weight' => 10,
-        'settings' => [
-          'options' => [1 => '1U', 2 => '2U', 3 => '3U', '4' => '4U'],
-        ],
-      ])
-      ->setDisplayConfigurable('form', TRUE);
-
-    $fields['room'] = BaseFieldDefinition::create('entity_reference')
-      ->setLabel(t('Room'))
-      ->setSetting('target_type', 'neibers_room')
-      ->setDisplayOptions('view', [
-        'type' => 'entity_reference_label',
-        'weight' => 6,
-      ])
-      ->setDisplayOptions('form', [
-        'type' => 'entity_reference_autocomplete',
-        'weight' => 6,
-        'settings' => [
-          'match_operator' => 'CONTAINS',
-          'size' => '60',
-          'placeholder' => '',
-        ],
-      ])
-      ->setDisplayConfigurable('form', TRUE)
       ->setDisplayConfigurable('view', TRUE);
 
     $fields['status'] = BaseFieldDefinition::create('boolean')
       ->setLabel(t('Publishing status'))
-      ->setDescription(t('A boolean indicating whether the Cabinet is published.'))
+      ->setDescription(t('A boolean indicating whether the Room is published.'))
       ->setDefaultValue(TRUE)
       ->setDisplayOptions('form', [
         'type' => 'boolean_checkbox',
         'weight' => -3,
       ]);
+
+    $fields['description'] = BaseFieldDefinition::create('text_long')
+      ->setLabel(t('Description'))
+      ->setDisplayOptions('form', [
+        'type' => 'text_textarea',
+        'weight' => 25,
+      ])
+      ->setDisplayConfigurable('view', TRUE)
+      ->setDisplayConfigurable('form', TRUE);
+
+    $fields['speed_test_address'] = BaseFieldDefinition::create('string')
+      ->setLabel(t('Speed test ip address'))
+      ->setSetting('max_length', 255)
+      ->setDisplayOptions('form', [
+        'type' => 'string',
+        'weight' => 40,
+      ])
+      // TODO add view formatter.
+      ->setDisplayConfigurable('form', TRUE);
+
+    $fields['x_axis'] = BaseFieldDefinition::create('integer')
+      ->setLabel(t('X axis'))
+      ->setDescription(t('The total number of statistical x axis cabinet.'))
+      ->setSetting('min', 1)
+      ->setDefaultValue(10)
+      ->setDisplayOptions('view', [
+        'type' => 'number_integer',
+        'weight' => 0,
+      ])
+      ->setDisplayOptions('form', [
+        'type' => 'number',
+        'weight' => 0,
+      ])
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE);
+
+    $fields['y_axis'] = BaseFieldDefinition::create('integer')
+      ->setLabel(t('Y axis'))
+      ->setDescription(t('The total number of statistical Y axis cabinet.'))
+      ->setSetting('min', 1)
+      ->setDefaultValue(10)
+      ->setDisplayOptions('view', [
+        'type' => 'number_integer',
+        'weight' => 0,
+      ])
+      ->setDisplayOptions('form', [
+        'type' => 'number',
+        'weight' => 0,
+      ])
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE);
 
     $fields['created'] = BaseFieldDefinition::create('created')
       ->setLabel(t('Created'))

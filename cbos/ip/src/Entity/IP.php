@@ -310,7 +310,7 @@ class IP extends RevisionableContentEntityBase implements IPInterface {
 
     $fields['seat'] = BaseFieldDefinition::create('entity_reference')
       ->setLabel(t('Cabinet Seat'))
-      ->setSetting('target_type', 'seat')
+      ->setSetting('target_type', 'neibers_seat')
       ->setDisplayOptions('view', [
         'type' => 'entity_reference_label',
         'weight' => 6,

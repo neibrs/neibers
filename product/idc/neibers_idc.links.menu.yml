@@ -62,43 +62,43 @@
 # Room
 neibers_idc.room:
   title: Room
-  route_name: entity.room.collection
+  route_name: entity.neibers_room.collection
   menu_name: business
   weight: 20
 
 neibers_idc.room.collection:
   title: Room
-  route_name: entity.room.collection
+  route_name: entity.neibers_room.collection
   parent: neibers_idc.room
   weight: 31
 
 neibers_idc.cabinet.collection:
   title: Cabinet
-  route_name: entity.cabinet.collection
+  route_name: entity.neibers_cabinet.collection
   parent: neibers_idc.room
   weight: 40
 
 neibers_idc.seat.collection:
   title: Seat
-  route_name: entity.seat.collection
+  route_name: entity.neibers_seat.collection
   parent: neibers_idc.room
   weight: 45
 
 neibers_idc.room_type.configuration:
   title: 'Configuration'
-  route_name: entity.room_type.collection
+#  route_name: entity.neibers_room_type.collection
   parent: neibers_idc.room
   weight: 50
 
 neibers_idc.room_type.configuration.type:
   title: 'Room type'
-  route_name: entity.room_type.collection
+  route_name: entity.neibers_room_type.collection
   parent: neibers_idc.room_type.configuration
   weight: 10
 
 neibers_idc.seat_type.configuration.type:
   title: 'Seat type'
-  route_name: entity.seat_type.collection
+  route_name: entity.neibers_seat_type.collection
   parent: neibers_idc.room_type.configuration
   weight: 30
 

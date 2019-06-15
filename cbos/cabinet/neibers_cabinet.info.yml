@@ -4,6 +4,6 @@ description: 'The neibers_cabinets of idc room.'
 core: 8.x
 package: 'Neibers'
 interface translation project: neibers_cabinet
-interface translation server pattern: modules/neibers/cbos/%project/translations/%project.%language.po
+interface translation server pattern: modules/neibers/cbos/cabinet/translations/%project.%language.po
 dependencies:
-  - machine_room
+  - neibers_room

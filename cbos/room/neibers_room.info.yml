@@ -1,0 +1,7 @@
+name: 'Room'
+type: module
+description: 'The machine room of store computer equipments.'
+core: 8.x
+package: 'Neibers'
+interface translation project: neibers_room
+interface translation server pattern: modules/neibers/cbos/room/translations/%project.%language.po

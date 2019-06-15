@@ -8,7 +8,7 @@
 #  modules/neibers/product/neibers_idc/neibers_idc.links.action.yml: n/a
 #  modules/neibers/product/neibers_idc/neibers_idc.links.menu.yml: n/a
 #  modules/neibers/product/neibers_idc/config/install/views.view.ip.yml: n/a
-#  modules/neibers/product/neibers_idc/config/install/views.view.machine_room.yml: n/a
+#  modules/neibers/product/neibers_idc/config/install/views.view.neibers_room.yml: n/a
 #  modules/neibers/product/neibers_idc/config/install/user.role.business.yml: n/a
 #  modules/neibers/product/neibers_idc/config/install/user.role.site_manager.yml: n/a
 #
@@ -61,7 +61,7 @@ msgstr "管理IP"
 msgid "Onet IP"
 msgstr "公网IP"
 
-#: modules/neibers/product/neibers_idc/neibers_idc.links.menu.yml:0;0 modules/neibers/product/neibers_idc/config/install/views.view.ip.yml:0;0 modules/neibers/product/neibers_idc/config/install/views.view.machine_room.yml:0
+#: modules/neibers/product/neibers_idc/neibers_idc.links.menu.yml:0;0 modules/neibers/product/neibers_idc/config/install/views.view.ip.yml:0;0 modules/neibers/product/neibers_idc/config/install/views.view.neibers_room.yml:0
 msgid "Type"
 msgstr "类型"
 
@@ -97,31 +97,31 @@ msgstr "业务"
 msgid "Site manager"
 msgstr "网站管理者"
 
-#: modules/neibers/product/neibers_idc/config/install/views.view.ip.yml:0 modules/neibers/product/neibers_idc/config/install/views.view.machine_room.yml:0
+#: modules/neibers/product/neibers_idc/config/install/views.view.ip.yml:0 modules/neibers/product/neibers_idc/config/install/views.view.neibers_room.yml:0
 msgid "Apply"
 msgstr "应用"
 
-#: modules/neibers/product/neibers_idc/config/install/views.view.ip.yml:0 modules/neibers/product/neibers_idc/config/install/views.view.machine_room.yml:0
+#: modules/neibers/product/neibers_idc/config/install/views.view.ip.yml:0 modules/neibers/product/neibers_idc/config/install/views.view.neibers_room.yml:0
 msgid "Reset"
 msgstr "重置"
 
-#: modules/neibers/product/neibers_idc/config/install/views.view.ip.yml:0 modules/neibers/product/neibers_idc/config/install/views.view.machine_room.yml:0
+#: modules/neibers/product/neibers_idc/config/install/views.view.ip.yml:0 modules/neibers/product/neibers_idc/config/install/views.view.neibers_room.yml:0
 msgid "Sort by"
 msgstr "排序"
 
-#: modules/neibers/product/neibers_idc/config/install/views.view.ip.yml:0 modules/neibers/product/neibers_idc/config/install/views.view.machine_room.yml:0
+#: modules/neibers/product/neibers_idc/config/install/views.view.ip.yml:0 modules/neibers/product/neibers_idc/config/install/views.view.neibers_room.yml:0
 msgid "‹‹"
 msgstr ""
 
-#: modules/neibers/product/neibers_idc/config/install/views.view.ip.yml:0 modules/neibers/product/neibers_idc/config/install/views.view.machine_room.yml:0
+#: modules/neibers/product/neibers_idc/config/install/views.view.ip.yml:0 modules/neibers/product/neibers_idc/config/install/views.view.neibers_room.yml:0
 msgid "››"
 msgstr ""
 
-#: modules/neibers/product/neibers_idc/config/install/views.view.ip.yml:0 modules/neibers/product/neibers_idc/config/install/views.view.machine_room.yml:0
+#: modules/neibers/product/neibers_idc/config/install/views.view.ip.yml:0 modules/neibers/product/neibers_idc/config/install/views.view.neibers_room.yml:0
 msgid "« First"
 msgstr ""
 
-#: modules/neibers/product/neibers_idc/config/install/views.view.ip.yml:0 modules/neibers/product/neibers_idc/config/install/views.view.machine_room.yml:0
+#: modules/neibers/product/neibers_idc/config/install/views.view.ip.yml:0 modules/neibers/product/neibers_idc/config/install/views.view.neibers_room.yml:0
 msgid "Last »"
 msgstr ""
 
@@ -129,7 +129,7 @@ msgstr ""
 msgid "ID"
 msgstr ""
 
-#: modules/neibers/product/neibers_idc/config/install/views.view.ip.yml:0;0;0;0;0;0;0;0;0;0 modules/neibers/product/neibers_idc/config/install/views.view.machine_room.yml:0;0;0;0;0;0
+#: modules/neibers/product/neibers_idc/config/install/views.view.ip.yml:0;0;0;0;0;0;0;0;0;0 modules/neibers/product/neibers_idc/config/install/views.view.neibers_room.yml:0;0;0;0;0;0
 msgid ", "
 msgstr ""
 
@@ -153,15 +153,15 @@ msgstr ""
 msgid "Publishing status"
 msgstr ""
 
-#: modules/neibers/product/neibers_idc/config/install/views.view.ip.yml:0 modules/neibers/product/neibers_idc/config/install/views.view.machine_room.yml:0
+#: modules/neibers/product/neibers_idc/config/install/views.view.ip.yml:0 modules/neibers/product/neibers_idc/config/install/views.view.neibers_room.yml:0
 msgid "Changed"
 msgstr ""
 
-#: modules/neibers/product/neibers_idc/config/install/views.view.ip.yml:0 modules/neibers/product/neibers_idc/config/install/views.view.machine_room.yml:0
+#: modules/neibers/product/neibers_idc/config/install/views.view.ip.yml:0 modules/neibers/product/neibers_idc/config/install/views.view.neibers_room.yml:0
 msgid "Operations"
 msgstr "操作"
 
-#: modules/neibers/product/neibers_idc/config/install/views.view.ip.yml:0 modules/neibers/product/neibers_idc/config/install/views.view.machine_room.yml:0
+#: modules/neibers/product/neibers_idc/config/install/views.view.ip.yml:0 modules/neibers/product/neibers_idc/config/install/views.view.neibers_room.yml:0
 msgid "Search"
 msgstr "搜索"
 
@@ -169,19 +169,19 @@ msgstr "搜索"
 msgid "机柜"
 msgstr ""
 
-#: modules/neibers/product/neibers_idc/config/install/views.view.ip.yml:0 modules/neibers/product/neibers_idc/config/install/views.view.machine_room.yml:0
+#: modules/neibers/product/neibers_idc/config/install/views.view.ip.yml:0 modules/neibers/product/neibers_idc/config/install/views.view.neibers_room.yml:0
 msgid "No content available."
 msgstr ""
 
-#: modules/neibers/product/neibers_idc/config/install/views.view.ip.yml:0 modules/neibers/product/neibers_idc/config/install/views.view.machine_room.yml:0
+#: modules/neibers/product/neibers_idc/config/install/views.view.ip.yml:0 modules/neibers/product/neibers_idc/config/install/views.view.neibers_room.yml:0
 msgid "Master"
 msgstr ""
 
-#: modules/neibers/product/neibers_idc/config/install/views.view.ip.yml:0 modules/neibers/product/neibers_idc/config/install/views.view.machine_room.yml:0
+#: modules/neibers/product/neibers_idc/config/install/views.view.ip.yml:0 modules/neibers/product/neibers_idc/config/install/views.view.neibers_room.yml:0
 msgid "Page"
 msgstr ""
 
-#: modules/neibers/product/neibers_idc/config/install/views.view.machine_room.yml:0
+#: modules/neibers/product/neibers_idc/config/install/views.view.neibers_room.yml:0
 msgid "Test"
 msgstr ""
 

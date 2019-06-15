@@ -172,10 +172,10 @@ class IpOrderForm extends FormBase {
       ],
       '#open' => TRUE,
     ];
-    $machine_rooms = $this->entityTypeManager->getStorage('room');
+    $neibers_rooms = $this->entityTypeManager->getStorage('neibers_room');
     $rooms = array_map(function ($room) {
       return $room->label();
-    }, $machine_rooms->loadMultiple());
+    }, $neibers_rooms->loadMultiple());
     $form['allocate']['room'] = [
       '#title' => $this->t('Room'),
       '#type' => 'select',
