@@ -58,35 +58,13 @@
 #  parent: neibers_idc.ip_type.configuration
 #  weight: 10
 
-neibers_idc.neibers_hardware:
-  title: Hardware
-  route_name: entity.neibers_hardware.collection
-  menu_name: business
-  weight: 20
 
-neibers_idc.neibers_hardware.collection:
-  title: Hardware
-  route_name: entity.neibers_hardware.collection
-  parent: neibers_idc.neibers_hardware
-  weight: 10
-
-neibers_idc.neibers_hardware_type.configuration:
-  title: 'Configuration'
-  route_name: entity.neibers_hardware_type.collection
-  parent: neibers_idc.neibers_hardware
-  weight: 20
-
-neibers_idc.neibers_hardware_type.configuration.type:
-  title: 'Type'
-  route_name: entity.neibers_hardware_type.collection
-  parent: neibers_idc.neibers_hardware.configuration
-  weight: 10
-
+# Room
 neibers_idc.room:
   title: Room
   route_name: entity.room.collection
   menu_name: business
-  weight: 30
+  weight: 20
 
 neibers_idc.room.collection:
   title: Room
@@ -123,3 +101,29 @@ neibers_idc.seat_type.configuration.type:
   route_name: entity.seat_type.collection
   parent: neibers_idc.room_type.configuration
   weight: 30
+
+
+# Hardware
+neibers_idc.neibers_hardware:
+  title: Hardware
+  route_name: entity.neibers_hardware.collection
+  menu_name: business
+  weight: 30
+
+neibers_idc.neibers_hardware.collection:
+  title: Hardware
+  route_name: entity.neibers_hardware.collection
+  parent: neibers_idc.neibers_hardware
+  weight: 30
+
+neibers_idc.neibers_hardware_type.configuration:
+  title: 'Configuration'
+  route_name: entity.neibers_hardware_type.collection
+  parent: neibers_idc.neibers_hardware
+  weight: 20
+
+neibers_idc.neibers_hardware_type.configuration.type:
+  title: 'Type'
+  route_name: entity.neibers_hardware_type.collection
+  parent: neibers_idc.neibers_hardware_type.configuration
+  weight: 10
