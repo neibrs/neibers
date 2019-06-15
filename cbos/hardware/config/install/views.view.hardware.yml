@@ -5,7 +5,7 @@ dependencies:
     - cabinet
     - neibers_hardware
     - user
-id: neibers_hardware
+id: hardware
 label: Hardware
 module: neibers_hardware
 description: 'Find and manage content.'

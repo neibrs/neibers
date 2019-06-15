@@ -4,5 +4,5 @@ dependencies:
   enforced:
     module:
       - neibers_hardware
-id: cabinet
-label: 'Cabinet'
+id: firewall
+label: 'Firewall'

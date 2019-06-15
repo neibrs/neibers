@@ -15,13 +15,14 @@ vendor/bin/drush en -y coffee \
 
 vendor/bin/drush en -y commerce_checkout \
   commerce_price \
-  fitting \
-  neibers_idc \
-  neibers_mall \
   role_menu
 
+#  fitting \
+#  neibers_idc \
+#  neibers_mall \
+
 # Initial demo data.
-vendor/bin/drush mim ip_xls
+#vendor/bin/drush mim ip_xls
 #vendor/bin/drush mim product_xls
 
 vendor/bin/drupal locale:language:add zh-hans

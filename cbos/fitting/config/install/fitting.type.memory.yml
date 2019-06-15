@@ -2,9 +2,9 @@ langcode: en
 status: true
 dependencies:
   module:
-    - machine_room
+    - fitting
   enforced:
     module:
-      - machine_room
-id: default
-label: Default
+      - fitting
+id: memory
+label: 'Memory'

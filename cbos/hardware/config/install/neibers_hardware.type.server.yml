@@ -1,5 +1,8 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  enforced:
+    module:
+      - neibers_hardware
 id: server
 label: 'Server'
