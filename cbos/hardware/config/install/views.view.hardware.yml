@@ -3,7 +3,6 @@ status: true
 dependencies:
   module:
     - cabinet
-    - neibers_hardware
     - user
 id: hardware
 label: Hardware

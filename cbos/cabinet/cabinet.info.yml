@@ -6,4 +6,4 @@ package: 'Neibrs'
 interface translation project: cabinet
 interface translation server pattern: modules/neibers/cbos/%project/translations/%project.%language.po
 dependencies:
-  - neibers:machine_room
+  - machine_room

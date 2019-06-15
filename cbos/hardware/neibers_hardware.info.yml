@@ -7,4 +7,3 @@ interface translation project: neibers_hardware
 interface translation server pattern: modules/neibers/cbos/hardware/translations/%project.%language.po
 dependencies:
   - cabinet
-  - machine_room
