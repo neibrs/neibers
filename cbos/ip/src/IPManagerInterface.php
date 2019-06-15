@@ -4,7 +4,7 @@ namespace Drupal\ip;
 
 use Drupal\Core\Entity\EntityInterface;
 
-interface IpManagerInterface {
+interface IPManagerInterface {
 
   /**
    * @return array

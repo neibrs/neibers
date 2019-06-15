@@ -6,7 +6,7 @@ use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Url;
 
-class IpManager implements IpManagerInterface {
+class IPManager implements IPManagerInterface {
 
   /**
  * @var \Drupal\Core\Entity\EntityTypeManagerInterface */

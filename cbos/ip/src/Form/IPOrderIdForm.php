@@ -8,7 +8,7 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\ip\Entity\IPInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
-class IpOrderIdForm extends FormBase {
+class IPOrderIdForm extends FormBase {
   /**
    * @var \Drupal\Core\Entity\EntityTypeManagerInterface */
   protected $entityTypeManager;
