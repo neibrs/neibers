@@ -1,19 +1,19 @@
 add neibers_hardware:
-  title: 'Create new Server'
+  title: 'Create new Hardware'
 
 administer neibers_hardware:
-  title: 'Administer Server'
-  description: 'Allow to access the administration form to configure Server.'
+  title: 'Administer Hardware'
+  description: 'Allow to access the administration form to configure Hardware.'
   restrict access: true
 
 delete neibers_hardware:
-  title: 'Delete Server'
+  title: 'Delete Hardware'
 
 edit neibers_hardware:
-  title: 'Edit Server'
+  title: 'Edit Hardware'
 
 view published neibers_hardware:
-  title: 'View published Server'
+  title: 'View published Hardware'
 
 view unpublished neibers_hardware:
-  title: 'View unpublished Server'
+  title: 'View unpublished Hardware'

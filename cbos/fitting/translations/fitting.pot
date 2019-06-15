@@ -167,7 +167,7 @@ msgid "A boolean indicating whether the Fitting is published."
 msgstr ""
 
 #: modules/neibers/cbos/fitting/src/Entity/Fitting.php:214
-msgid "Server"
+msgid "Hardware"
 msgstr ""
 
 #: modules/neibers/cbos/fitting/src/Entity/Fitting.php:233

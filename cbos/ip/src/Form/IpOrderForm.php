@@ -51,7 +51,7 @@ class IpOrderForm extends FormBase {
     $this->order = $order;
     // TODO add ip table for this order
 
-    $header = [$this->t('Server')];
+    $header = [$this->t('Hardware')];
     if ($display->getMode() == 'default') {
       $header = array_merge($header, [$this->t('Administer IP')]);
     }
@@ -182,12 +182,12 @@ class IpOrderForm extends FormBase {
       '#options' => $rooms,
       '#required' => TRUE,
       '#ajax' => [
-        'callback' => '::updateServer',
+        'callback' => '::updateHardware',
         'wrapper' => 'edit-hardware-wrapper',
       ],
     ];
     $form['allocate']['hardware'] = [
-      '#title' => $this->t('Server'),
+      '#title' => $this->t('Hardware'),
       '#type' => 'select',
 //      '#target_type' => 'hardware',
       '#options' => [],
@@ -232,7 +232,7 @@ class IpOrderForm extends FormBase {
   /**
    * Handles switching the hardware selector.
    */
-  public function updateServer($form, FormStateInterface $form_state) {
+  public function updateHardware($form, FormStateInterface $form_state) {
     // TODO
     $room = $form_state->getValue('room');
     $query = \Drupal::database()->select('neibers_hardware_field_data', 'sfd');

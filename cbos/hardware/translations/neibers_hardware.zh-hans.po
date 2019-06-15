@@ -5,18 +5,18 @@
 # Generated from files:
 #  modules/neibers/cbos/neibers_hardware/neibers_hardware.module: n/a
 #  modules/neibers/cbos/neibers_hardware/neibers_hardware.info.yml: n/a
-#  modules/neibers/cbos/neibers_hardware/src/Entity/Server.php: n/a
+#  modules/neibers/cbos/neibers_hardware/src/Entity/Hardware.php: n/a
 #  modules/neibers/cbos/neibers_hardware/neibers_hardware.links.action.yml: n/a
 #  modules/neibers/cbos/neibers_hardware/neibers_hardware.links.menu.yml: n/a
-#  modules/neibers/cbos/neibers_hardware/src/ServerTypeListBuilder.php: n/a
-#  modules/neibers/cbos/neibers_hardware/src/Entity/ServerType.php: n/a
+#  modules/neibers/cbos/neibers_hardware/src/HardwareTypeListBuilder.php: n/a
+#  modules/neibers/cbos/neibers_hardware/src/Entity/HardwareType.php: n/a
 #  modules/neibers/cbos/neibers_hardware/neibers_hardware.links.task.yml: n/a
-#  modules/neibers/cbos/neibers_hardware/src/Form/ServerTypeDeleteForm.php: n/a
+#  modules/neibers/cbos/neibers_hardware/src/Form/HardwareTypeDeleteForm.php: n/a
 #  modules/neibers/cbos/neibers_hardware/neibers_hardware.permissions.yml: n/a
 #  modules/neibers/cbos/neibers_hardware/config/schema/neibers_hardware_type.schema.yml: n/a
-#  modules/neibers/cbos/neibers_hardware/src/ServerListBuilder.php: n/a
-#  modules/neibers/cbos/neibers_hardware/src/Form/ServerForm.php: n/a
-#  modules/neibers/cbos/neibers_hardware/src/Form/ServerTypeForm.php: n/a
+#  modules/neibers/cbos/neibers_hardware/src/HardwareListBuilder.php: n/a
+#  modules/neibers/cbos/neibers_hardware/src/Form/HardwareForm.php: n/a
+#  modules/neibers/cbos/neibers_hardware/src/Form/HardwareTypeForm.php: n/a
 #  modules/neibers/cbos/neibers_hardware/config/install/neibers_hardware.type.cabinet.yml: n/a
 #  modules/neibers/cbos/neibers_hardware/config/install/neibers_hardware.type.neibers_hardware.yml: n/a
 #
@@ -34,79 +34,79 @@ msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
 #: modules/neibers/cbos/neibers_hardware/neibers_hardware.permissions.yml:0
-msgid "Create new Server"
+msgid "Create new Hardware"
 msgstr "创建服务器"
 
 #: modules/neibers/cbos/neibers_hardware/neibers_hardware.permissions.yml:0
-msgid "Administer Server"
+msgid "Administer Hardware"
 msgstr "管理服务器"
 
 #: modules/neibers/cbos/neibers_hardware/neibers_hardware.permissions.yml:0
-msgid "Allow to access the administration form to configure Server."
+msgid "Allow to access the administration form to configure Hardware."
 msgstr "允许访问服务器的管理配置表单."
 
 #: modules/neibers/cbos/neibers_hardware/neibers_hardware.permissions.yml:0
-msgid "Delete Server"
+msgid "Delete Hardware"
 msgstr "删除服务器"
 
 #: modules/neibers/cbos/neibers_hardware/neibers_hardware.permissions.yml:0
-msgid "Edit Server"
+msgid "Edit Hardware"
 msgstr "编辑服务器"
 
 #: modules/neibers/cbos/neibers_hardware/neibers_hardware.permissions.yml:0
-msgid "View published Server"
+msgid "View published Hardware"
 msgstr "查看已发布的服务器"
 
 #: modules/neibers/cbos/neibers_hardware/neibers_hardware.permissions.yml:0
-msgid "View unpublished Server"
+msgid "View unpublished Hardware"
 msgstr "查看未发布的服务器"
 
 #: modules/neibers/cbos/neibers_hardware/config/schema/neibers_hardware_type.schema.yml:0
-msgid "Server type config"
+msgid "Hardware type config"
 msgstr "服务器类型配置"
 
-#: modules/neibers/cbos/neibers_hardware/src/ServerListBuilder.php:20
-msgid "Server ID"
+#: modules/neibers/cbos/neibers_hardware/src/HardwareListBuilder.php:20
+msgid "Hardware ID"
 msgstr "服务器序号"
 
-#: modules/neibers/cbos/neibers_hardware/src/Entity/Server.php:162
-msgid "The user ID of author of the Server entity."
+#: modules/neibers/cbos/neibers_hardware/src/Entity/Hardware.php:162
+msgid "The user ID of author of the Hardware entity."
 msgstr "服务器的用户ID."
 
-#: modules/neibers/cbos/neibers_hardware/src/Entity/Server.php:187
-msgid "The name of the Server entity."
+#: modules/neibers/cbos/neibers_hardware/src/Entity/Hardware.php:187
+msgid "The name of the Hardware entity."
 msgstr "服务器的名称."
 
-#: modules/neibers/cbos/neibers_hardware/src/Entity/Server.php:207
+#: modules/neibers/cbos/neibers_hardware/src/Entity/Hardware.php:207
 msgid "Seat"
 msgstr "机位"
 
-#: modules/neibers/cbos/neibers_hardware/src/Entity/Server.php:226
+#: modules/neibers/cbos/neibers_hardware/src/Entity/Hardware.php:226
 msgid "Publishing status"
 msgstr "发布状态"
 
-#: modules/neibers/cbos/neibers_hardware/src/Entity/Server.php:227
-msgid "A boolean indicating whether the Server is published."
+#: modules/neibers/cbos/neibers_hardware/src/Entity/Hardware.php:227
+msgid "A boolean indicating whether the Hardware is published."
 msgstr "指示服务器是否已发布."
 
-#: modules/neibers/cbos/neibers_hardware/src/Form/ServerForm.php:37
-msgid "Created the %label Server."
+#: modules/neibers/cbos/neibers_hardware/src/Form/HardwareForm.php:37
+msgid "Created the %label Hardware."
 msgstr "已创建服务器%label."
 
-#: modules/neibers/cbos/neibers_hardware/src/Form/ServerForm.php:43
-msgid "Saved the %label Server."
+#: modules/neibers/cbos/neibers_hardware/src/Form/HardwareForm.php:43
+msgid "Saved the %label Hardware."
 msgstr "已保存服务器%label."
 
-#: modules/neibers/cbos/neibers_hardware/src/Form/ServerTypeForm.php:25
-msgid "Label for the Server type."
+#: modules/neibers/cbos/neibers_hardware/src/Form/HardwareTypeForm.php:25
+msgid "Label for the Hardware type."
 msgstr "服务器类型名称."
 
-#: modules/neibers/cbos/neibers_hardware/src/Form/ServerTypeForm.php:52
-msgid "Created the %label Server type."
+#: modules/neibers/cbos/neibers_hardware/src/Form/HardwareTypeForm.php:52
+msgid "Created the %label Hardware type."
 msgstr "已创建服务器类型%label."
 
-#: modules/neibers/cbos/neibers_hardware/src/Form/ServerTypeForm.php:58
-msgid "Saved the %label Server type."
+#: modules/neibers/cbos/neibers_hardware/src/Form/HardwareTypeForm.php:58
+msgid "Saved the %label Hardware type."
 msgstr "已保存服务器类型%label."
 
 #: modules/neibers/cbos/neibers_hardware/config/install/neibers_hardware.type.cabinet.yml:0
@@ -114,6 +114,6 @@ msgid "Cabinet"
 msgstr "机柜"
 
 #: modules/neibers/cbos/neibers_hardware/config/install/neibers_hardware.type.neibers_hardware.yml:0
-msgid "Server(Normal neibers_hardware)"
+msgid "Hardware(Normal neibers_hardware)"
 msgstr "服务器"
 

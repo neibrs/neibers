@@ -5,9 +5,9 @@ namespace Drupal\neibers_hardware\Entity;
 use Drupal\views\EntityViewsData;
 
 /**
- * Provides Views data for Server.
+ * Provides Views data for Hardware.
  */
-class ServerViewsData extends EntityViewsData {
+class HardwareViewsData extends EntityViewsData {
 
   /**
    * {@inheritdoc}

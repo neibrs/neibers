@@ -131,7 +131,7 @@ msgid "A boolean indicating whether the Fitting is published."
 msgstr "指示配件是否已发布."
 
 #: modules/neibers/cbos/fitting/src/Entity/Fitting.php:214
-msgid "Server"
+msgid "Hardware"
 msgstr "服务器"
 
 #: modules/neibers/cbos/fitting/src/Entity/Fitting.php:233

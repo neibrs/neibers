@@ -396,7 +396,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Server
+          label: Hardware
           exclude: false
           alter:
             alter_text: false

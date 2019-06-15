@@ -4,13 +4,13 @@
  * @file
  * Contains neibers_hardware.page.inc.
  *
- * Page callback for Server.
+ * Page callback for Hardware.
  */
 
 use Drupal\Core\Render\Element;
 
 /**
- * Prepares variables for Server templates.
+ * Prepares variables for Hardware templates.
  *
  * Default template: neibers-hardware.html.twig.
  *
@@ -20,7 +20,7 @@ use Drupal\Core\Render\Element;
  *   - attributes: HTML attributes for the containing element.
  */
 function template_preprocess_neibers_hardware(array &$variables) {
-  // Fetch Server Entity Object.
+  // Fetch Hardware Entity Object.
   $neibers_hardware = $variables['elements']['#neibers_hardware'];
 
   // Helpful $content variable for templates.

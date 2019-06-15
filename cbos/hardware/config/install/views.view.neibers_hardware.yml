@@ -6,7 +6,7 @@ dependencies:
     - neibers_hardware
     - user
 id: neibers_hardware
-label: Server
+label: Hardware
 module: neibers_hardware
 description: 'Find and manage content.'
 tag: default 
@@ -511,7 +511,7 @@ display:
           exposed: true
           expose:
             operator_id: type_1_op
-            label: 'Server type'
+            label: 'Hardware type'
             description: ''
             use_operator: false
             operator: type_1_op
@@ -540,7 +540,7 @@ display:
           entity_field: type
           plugin_id: bundle
       sorts: {  }
-      title: Server
+      title: Hardware
       empty:
         area_text_custom:
           id: area_text_custom

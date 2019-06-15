@@ -10,31 +10,31 @@ use Drupal\Core\Entity\EntityTypeInterface;
 use Drupal\user\UserInterface;
 
 /**
- * Defines the Server entity.
+ * Defines the Hardware entity.
  *
  * @ingroup neibers_hardware
  *
  * @ContentEntityType(
  *   id = "neibers_hardware",
- *   label = @Translation("Server"),
- *   label_collection = @Translation("Server"),
- *   bundle_label = @Translation("Server type"),
+ *   label = @Translation("Hardware"),
+ *   label_collection = @Translation("Hardware"),
+ *   bundle_label = @Translation("Hardware type"),
  *   handlers = {
- *     "storage" = "Drupal\neibers_hardware\ServerStorage",
+ *     "storage" = "Drupal\neibers_hardware\HardwareStorage",
  *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
- *     "list_builder" = "Drupal\neibers_hardware\ServerListBuilder",
- *     "views_data" = "Drupal\neibers_hardware\Entity\ServerViewsData",
- *     "translation" = "Drupal\neibers_hardware\ServerTranslationHandler",
+ *     "list_builder" = "Drupal\neibers_hardware\HardwareListBuilder",
+ *     "views_data" = "Drupal\neibers_hardware\Entity\HardwareViewsData",
+ *     "translation" = "Drupal\neibers_hardware\HardwareTranslationHandler",
  *
  *     "form" = {
- *       "default" = "Drupal\neibers_hardware\Form\ServerForm",
- *       "add" = "Drupal\neibers_hardware\Form\ServerForm",
- *       "edit" = "Drupal\neibers_hardware\Form\ServerForm",
- *       "delete" = "Drupal\neibers_hardware\Form\ServerDeleteForm",
+ *       "default" = "Drupal\neibers_hardware\Form\HardwareForm",
+ *       "add" = "Drupal\neibers_hardware\Form\HardwareForm",
+ *       "edit" = "Drupal\neibers_hardware\Form\HardwareForm",
+ *       "delete" = "Drupal\neibers_hardware\Form\HardwareDeleteForm",
  *     },
- *     "access" = "Drupal\neibers_hardware\ServerAccessControlHandler",
+ *     "access" = "Drupal\neibers_hardware\HardwareAccessControlHandler",
  *     "route_provider" = {
- *       "html" = "Drupal\neibers_hardware\ServerHtmlRouteProvider",
+ *       "html" = "Drupal\neibers_hardware\HardwareHtmlRouteProvider",
  *     },
  *   },
  *   base_table = "neibers_hardware",
@@ -62,7 +62,7 @@ use Drupal\user\UserInterface;
  *   field_ui_base_route = "entity.neibers_hardware_type.edit_form"
  * )
  */
-class Server extends ContentEntityBase implements ServerInterface {
+class Hardware extends ContentEntityBase implements HardwareInterface {
 
   use EntityChangedTrait;
 
@@ -159,7 +159,7 @@ class Server extends ContentEntityBase implements ServerInterface {
 
     $fields['user_id'] = BaseFieldDefinition::create('entity_reference')
       ->setLabel(t('Authored by'))
-      ->setDescription(t('The user ID of author of the Server entity.'))
+      ->setDescription(t('The user ID of author of the Hardware entity.'))
       ->setRevisionable(TRUE)
       ->setSetting('target_type', 'user')
       ->setSetting('handler', 'default')
@@ -184,7 +184,7 @@ class Server extends ContentEntityBase implements ServerInterface {
 
     $fields['name'] = BaseFieldDefinition::create('string')
       ->setLabel(t('Name'))
-      ->setDescription(t('The name of the Server entity.'))
+      ->setDescription(t('The name of the Hardware entity.'))
       ->setSettings([
         'max_length' => 50,
         'text_processing' => 0,
@@ -217,7 +217,7 @@ class Server extends ContentEntityBase implements ServerInterface {
         'settings' => [
           'match_operator' => 'CONTAINS',
           'size' => '60',
-          'placeholder' => 'Server belong to seat.',
+          'placeholder' => 'Hardware belong to seat.',
         ],
       ])
       ->setDisplayConfigurable('form', TRUE)
@@ -225,7 +225,7 @@ class Server extends ContentEntityBase implements ServerInterface {
 
     $fields['status'] = BaseFieldDefinition::create('boolean')
       ->setLabel(t('Publishing status'))
-      ->setDescription(t('A boolean indicating whether the Server is published.'))
+      ->setDescription(t('A boolean indicating whether the Hardware is published.'))
       ->setDefaultValue(TRUE)
       ->setDisplayOptions('form', [
         'type' => 'boolean_checkbox',

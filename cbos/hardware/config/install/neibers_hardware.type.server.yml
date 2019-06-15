@@ -2,4 +2,4 @@ langcode: en
 status: true
 dependencies: {  }
 id: neibers_hardware
-label: 'Server'
+label: 'Hardware'

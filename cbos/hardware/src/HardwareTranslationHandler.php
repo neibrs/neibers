@@ -7,7 +7,7 @@ use Drupal\content_translation\ContentTranslationHandler;
 /**
  * Defines the translation handler for neibers_hardware.
  */
-class ServerTranslationHandler extends ContentTranslationHandler {
+class HardwareTranslationHandler extends ContentTranslationHandler {
 
   // Override here the needed methods from ContentTranslationHandler.
 

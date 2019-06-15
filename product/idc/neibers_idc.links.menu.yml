@@ -59,13 +59,13 @@ neibers_idc.ip_type.configuration.type:
   weight: 10
 
 neibers_idc.server:
-  title: Server
+  title: Hardware
   route_name: entity.server.collection
   menu_name: business
   weight: 20
 
 neibers_idc.server.collection:
-  title: Server
+  title: Hardware
   route_name: entity.server.collection
   parent: neibers_idc.server
   weight: 10

@@ -6,15 +6,15 @@ use Drupal\Core\Config\Entity\ConfigEntityListBuilder;
 use Drupal\Core\Entity\EntityInterface;
 
 /**
- * Provides a listing of Server type entities.
+ * Provides a listing of Hardware type entities.
  */
-class ServerTypeListBuilder extends ConfigEntityListBuilder {
+class HardwareTypeListBuilder extends ConfigEntityListBuilder {
 
   /**
    * {@inheritdoc}
    */
   public function buildHeader() {
-    $header['label'] = $this->t('Server type');
+    $header['label'] = $this->t('Hardware type');
     $header['id'] = $this->t('Machine name');
     return $header + parent::buildHeader();
   }

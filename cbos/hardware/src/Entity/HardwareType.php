@@ -5,22 +5,22 @@ namespace Drupal\neibers_hardware\Entity;
 use Drupal\Core\Config\Entity\ConfigEntityBundleBase;
 
 /**
- * Defines the Server type entity.
+ * Defines the Hardware type entity.
  *
  * @ConfigEntityType(
  *   id = "neibers_hardware_type",
- *   label = @Translation("Server type"),
- *   label_collection = @Translation("Server type"),
+ *   label = @Translation("Hardware type"),
+ *   label_collection = @Translation("Hardware type"),
  *   handlers = {
  *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
- *     "list_builder" = "Drupal\neibers_hardware\ServerTypeListBuilder",
+ *     "list_builder" = "Drupal\neibers_hardware\HardwareTypeListBuilder",
  *     "form" = {
- *       "add" = "Drupal\neibers_hardware\Form\ServerTypeForm",
- *       "edit" = "Drupal\neibers_hardware\Form\ServerTypeForm",
- *       "delete" = "Drupal\neibers_hardware\Form\ServerTypeDeleteForm"
+ *       "add" = "Drupal\neibers_hardware\Form\HardwareTypeForm",
+ *       "edit" = "Drupal\neibers_hardware\Form\HardwareTypeForm",
+ *       "delete" = "Drupal\neibers_hardware\Form\HardwareTypeDeleteForm"
  *     },
  *     "route_provider" = {
- *       "html" = "Drupal\neibers_hardware\ServerTypeHtmlRouteProvider",
+ *       "html" = "Drupal\neibers_hardware\HardwareTypeHtmlRouteProvider",
  *     },
  *   },
  *   config_prefix = "type",
@@ -40,17 +40,17 @@ use Drupal\Core\Config\Entity\ConfigEntityBundleBase;
  *   }
  * )
  */
-class ServerType extends ConfigEntityBundleBase implements ServerTypeInterface {
+class HardwareType extends ConfigEntityBundleBase implements HardwareTypeInterface {
 
   /**
-   * The Server type ID.
+   * The Hardware type ID.
    *
    * @var string
    */
   protected $id;
 
   /**
-   * The Server type label.
+   * The Hardware type label.
    *
    * @var string
    */

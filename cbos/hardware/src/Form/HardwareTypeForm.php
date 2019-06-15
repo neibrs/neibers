@@ -6,9 +6,9 @@ use Drupal\Core\Entity\EntityForm;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Class ServerTypeForm.
+ * Class HardwareTypeForm.
  */
-class ServerTypeForm extends EntityForm {
+class HardwareTypeForm extends EntityForm {
 
   /**
    * {@inheritdoc}
@@ -22,7 +22,7 @@ class ServerTypeForm extends EntityForm {
       '#title' => $this->t('Label'),
       '#maxlength' => 255,
       '#default_value' => $neibers_hardware_type->label(),
-      '#description' => $this->t("Label for the Server type."),
+      '#description' => $this->t("Label for the Hardware type."),
       '#required' => TRUE,
     ];
 
@@ -30,7 +30,7 @@ class ServerTypeForm extends EntityForm {
       '#type' => 'machine_name',
       '#default_value' => $neibers_hardware_type->id(),
       '#machine_name' => [
-        'exists' => '\Drupal\neibers_hardware\Entity\ServerType::load',
+        'exists' => '\Drupal\neibers_hardware\Entity\HardwareType::load',
       ],
       '#disabled' => !$neibers_hardware_type->isNew(),
     ];
@@ -49,13 +49,13 @@ class ServerTypeForm extends EntityForm {
 
     switch ($status) {
       case SAVED_NEW:
-        drupal_set_message($this->t('Created the %label Server type.', [
+        drupal_set_message($this->t('Created the %label Hardware type.', [
           '%label' => $neibers_hardware_type->label(),
         ]));
         break;
 
       default:
-        drupal_set_message($this->t('Saved the %label Server type.', [
+        drupal_set_message($this->t('Saved the %label Hardware type.', [
           '%label' => $neibers_hardware_type->label(),
         ]));
     }

@@ -7,7 +7,7 @@ use Drupal\Core\Entity\ContentEntityStorageInterface;
 use Drupal\Core\Session\AccountInterface;
 use Drupal\Core\Language\LanguageInterface;
 use Drupal\ip\Entity\IPInterface;
-use Drupal\neibers_hardware\Entity\ServerInterface;
+use Drupal\neibers_hardware\Entity\HardwareInterface;
 
 /**
  * Defines the storage handler class for IP.
@@ -87,7 +87,7 @@ interface IPStorageInterface extends ContentEntityStorageInterface {
   /**
    * @return \Drupal\ip\Entity\IPInterface[]
    */
-  public function getAvailableInetByServer(ServerInterface $neibers_hardware);
+  public function getAvailableInetByHardware(HardwareInterface $neibers_hardware);
 
   /**
    * @return \Drupal\ip\Entity\IPInterface[]

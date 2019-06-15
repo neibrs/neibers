@@ -5,11 +5,11 @@ namespace Drupal\neibers_hardware\Form;
 use Drupal\Core\Entity\ContentEntityDeleteForm;
 
 /**
- * Provides a form for deleting Server.
+ * Provides a form for deleting Hardware.
  *
  * @ingroup neibers_hardware
  */
-class ServerDeleteForm extends ContentEntityDeleteForm {
+class HardwareDeleteForm extends ContentEntityDeleteForm {
 
 
 }

@@ -55,7 +55,7 @@ function neibers_neibrs_install() {
   //  // 3. Init product variation type
   //  $variationType = ProductVariationType::create([
   //    'id' => 'servers',
-  //    'label' => 'Servers',
+  //    'label' => 'Hardwares',
   //  ]);
   //
   //  $variationType->save();

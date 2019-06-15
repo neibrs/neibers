@@ -8,17 +8,17 @@ use Drupal\Core\Session\AccountInterface;
 use Drupal\Core\Access\AccessResult;
 
 /**
- * Access controller for the Server entity.
+ * Access controller for the Hardware entity.
  *
- * @see \Drupal\neibers_hardware\Entity\Server.
+ * @see \Drupal\neibers_hardware\Entity\Hardware.
  */
-class ServerAccessControlHandler extends EntityAccessControlHandler {
+class HardwareAccessControlHandler extends EntityAccessControlHandler {
 
   /**
    * {@inheritdoc}
    */
   protected function checkAccess(EntityInterface $entity, $operation, AccountInterface $account) {
-    /** @var \Drupal\neibers_hardware\Entity\ServerInterface $entity */
+    /** @var \Drupal\neibers_hardware\Entity\HardwareInterface $entity */
     switch ($operation) {
       case 'view':
         if (!$entity->isPublished()) {

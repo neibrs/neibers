@@ -1,6 +1,6 @@
 neibers_hardware.type.*:
   type: config_entity
-  label: 'Server type config'
+  label: 'Hardware type config'
   mapping:
     id:
       type: string

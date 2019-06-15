@@ -14,7 +14,7 @@ source:
     1:
       Type: Type
     2:
-      Server: Server
+      Hardware: Hardware
     3:
       Cabinet: Cabinet
     4:
@@ -98,7 +98,7 @@ process:
   server:
     - plugin: skip_on_empty
       method: process
-      source: Server
+      source: Hardware
     -
       plugin: entity_generate_plus
       entity_type: server

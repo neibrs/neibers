@@ -43,7 +43,7 @@
 # 原始网站数据初始化流程
 * 添加人民币币种
 * 添加Store
-* 添加variant type(As Server)
+* 添加variant type(As Hardware)
 * 添加attributes, (As Cores)
 * 初始化产品数据
   ** 添加服务器基础字段

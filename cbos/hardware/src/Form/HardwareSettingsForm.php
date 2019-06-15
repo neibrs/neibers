@@ -6,11 +6,11 @@ use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Class ServerSettingsForm.
+ * Class HardwareSettingsForm.
  *
  * @ingroup neibers_hardware
  */
-class ServerSettingsForm extends FormBase {
+class HardwareSettingsForm extends FormBase {
 
   /**
    * Returns a unique string identifying the form.
@@ -35,7 +35,7 @@ class ServerSettingsForm extends FormBase {
   }
 
   /**
-   * Defines the settings form for Server.
+   * Defines the settings form for Hardware.
    *
    * @param array $form
    *   An associative array containing the structure of the form.
@@ -46,7 +46,7 @@ class ServerSettingsForm extends FormBase {
    *   Form definition array.
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
-    $form['neibers_hardware_settings']['#markup'] = 'Settings form for Server. Manage field settings here.';
+    $form['neibers_hardware_settings']['#markup'] = 'Settings form for Hardware. Manage field settings here.';
     return $form;
   }
 

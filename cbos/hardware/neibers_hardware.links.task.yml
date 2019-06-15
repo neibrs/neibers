@@ -1,4 +1,4 @@
-# Server routing definition
+# Hardware routing definition
 
 entity.neibers_hardware.canonical:
   route_name: entity.neibers_hardware.canonical

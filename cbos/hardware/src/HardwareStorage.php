@@ -5,12 +5,12 @@ namespace Drupal\neibers_hardware;
 use Drupal\Core\Entity\Sql\SqlContentEntityStorage;
 use Drupal\machine_room\Entity\RoomInterface;
 
-class ServerStorage extends SqlContentEntityStorage implements ServerStorageInterface {
+class HardwareStorage extends SqlContentEntityStorage implements HardwareStorageInterface {
 
   /**
    * {@inheritDoc}
    */
-  public function getServersByRoom(RoomInterface $room) {
+  public function getHardwaresByRoom(RoomInterface $room) {
 
     $query = $this->database->select('neibers_hardware_field_data', 'sfd');
     $query->addField('sfd', ['name']);

@@ -7,70 +7,70 @@ use Drupal\Core\Entity\EntityChangedInterface;
 use Drupal\user\EntityOwnerInterface;
 
 /**
- * Provides an interface for defining Server.
+ * Provides an interface for defining Hardware.
  *
  * @ingroup neibers_hardware
  */
-interface ServerInterface extends ContentEntityInterface, EntityChangedInterface, EntityOwnerInterface {
+interface HardwareInterface extends ContentEntityInterface, EntityChangedInterface, EntityOwnerInterface {
 
   // Add get/set methods for your configuration properties here.
 
   /**
-   * Gets the Server name.
+   * Gets the Hardware name.
    *
    * @return string
-   *   Name of the Server.
+   *   Name of the Hardware.
    */
   public function getName();
 
   /**
-   * Sets the Server name.
+   * Sets the Hardware name.
    *
    * @param string $name
-   *   The Server name.
+   *   The Hardware name.
    *
-   * @return \Drupal\neibers_hardware\Entity\ServerInterface
-   *   The called Server entity.
+   * @return \Drupal\neibers_hardware\Entity\HardwareInterface
+   *   The called Hardware entity.
    */
   public function setName($name);
 
   /**
-   * Gets the Server creation timestamp.
+   * Gets the Hardware creation timestamp.
    *
    * @return int
-   *   Creation timestamp of the Server.
+   *   Creation timestamp of the Hardware.
    */
   public function getCreatedTime();
 
   /**
-   * Sets the Server creation timestamp.
+   * Sets the Hardware creation timestamp.
    *
    * @param int $timestamp
-   *   The Server creation timestamp.
+   *   The Hardware creation timestamp.
    *
-   * @return \Drupal\neibers_hardware\Entity\ServerInterface
-   *   The called Server entity.
+   * @return \Drupal\neibers_hardware\Entity\HardwareInterface
+   *   The called Hardware entity.
    */
   public function setCreatedTime($timestamp);
 
   /**
-   * Returns the Server published status indicator.
+   * Returns the Hardware published status indicator.
    *
-   * Unpublished Server are only visible to restricted users.
+   * Unpublished Hardware are only visible to restricted users.
    *
    * @return bool
-   *   TRUE if the Server is published.
+   *   TRUE if the Hardware is published.
    */
   public function isPublished();
 
   /**
-   * Sets the published status of a Server.
+   * Sets the published status of a Hardware.
    *
    * @param bool $published
-   *   TRUE to set this Server to published, FALSE to set it to unpublished.
+   *   TRUE to set this Hardware to published, FALSE to set it to unpublished.
    *
-   * @return \Drupal\neibers_hardware\Entity\ServerInterface
-   *   The called Server entity.
+   * @return \Drupal\neibers_hardware\Entity\HardwareInterface
+   *   The called Hardware entity.
    */
   public function setPublished($published);
 

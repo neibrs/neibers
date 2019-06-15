@@ -221,7 +221,7 @@ msgid "The name of the IP entity."
 msgstr ""
 
 #: modules/neibers/cbos/ip/src/Entity/IP.php:256 modules/neibers/cbos/ip/src/Form/IpWithSpecificOrderForm.php:53;108
-msgid "Server"
+msgid "Hardware"
 msgstr ""
 
 #: modules/neibers/cbos/ip/src/Entity/IP.php:275

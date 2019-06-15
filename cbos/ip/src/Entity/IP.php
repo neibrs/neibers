@@ -290,7 +290,7 @@ class IP extends RevisionableContentEntityBase implements IPInterface {
       ->setRequired(TRUE);
 
     $fields['hardware'] = BaseFieldDefinition::create('entity_reference')
-      ->setLabel(t('Server'))
+      ->setLabel(t('Hardware'))
       ->setSetting('target_type', 'neibers_hardware')
       ->setDisplayOptions('view', [
         'type' => 'entity_reference_label',

@@ -6,12 +6,12 @@ use Drupal\Core\Entity\EntityTypeInterface;
 use Drupal\Core\Entity\Routing\AdminHtmlRouteProvider;
 
 /**
- * Provides routes for Server type entities.
+ * Provides routes for Hardware type entities.
  *
  * @see Drupal\Core\Entity\Routing\AdminHtmlRouteProvider
  * @see Drupal\Core\Entity\Routing\DefaultHtmlRouteProvider
  */
-class ServerTypeHtmlRouteProvider extends AdminHtmlRouteProvider {
+class HardwareTypeHtmlRouteProvider extends AdminHtmlRouteProvider {
 
   /**
    * {@inheritdoc}

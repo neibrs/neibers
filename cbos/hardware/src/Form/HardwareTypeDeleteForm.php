@@ -7,9 +7,9 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Url;
 
 /**
- * Builds the form to delete Server type entities.
+ * Builds the form to delete Hardware type entities.
  */
-class ServerTypeDeleteForm extends EntityConfirmFormBase {
+class HardwareTypeDeleteForm extends EntityConfirmFormBase {
 
   /**
    * {@inheritdoc}

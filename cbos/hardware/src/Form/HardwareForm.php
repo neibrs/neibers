@@ -6,17 +6,17 @@ use Drupal\Core\Entity\ContentEntityForm;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Form controller for Server edit forms.
+ * Form controller for Hardware edit forms.
  *
  * @ingroup neibers_hardware
  */
-class ServerForm extends ContentEntityForm {
+class HardwareForm extends ContentEntityForm {
 
   /**
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
-    /* @var $entity \Drupal\neibers_hardware\Entity\Server */
+    /* @var $entity \Drupal\neibers_hardware\Entity\Hardware */
     $form = parent::buildForm($form, $form_state);
 
     $entity = $this->entity;
@@ -34,13 +34,13 @@ class ServerForm extends ContentEntityForm {
 
     switch ($status) {
       case SAVED_NEW:
-        drupal_set_message($this->t('Created the %label Server.', [
+        drupal_set_message($this->t('Created the %label Hardware.', [
           '%label' => $entity->label(),
         ]));
         break;
 
       default:
-        drupal_set_message($this->t('Saved the %label Server.', [
+        drupal_set_message($this->t('Saved the %label Hardware.', [
           '%label' => $entity->label(),
         ]));
     }
