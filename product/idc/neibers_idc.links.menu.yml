@@ -1,62 +1,62 @@
-neibers_idc.ip:
-  title: IP
-  route_name: entity.ip.collection
-  menu_name: business
-  weight: 10
-
-neibers_idc.ip.collection:
-  title: 'IP collection'
-  route_name: entity.ip.collection
-  parent: neibers_idc.ip
-  weight: 10
-
-neibers_idc.ip.free:
-  title: 'Free IP'
-  route_name: entity.ip.collection
-  options:
-    query:
-      state: free
-  parent: neibers_idc.ip
-  weight: 13
-
-neibers_idc.ip.used:
-  title: 'Used IP'
-  route_name: entity.ip.collection
-  options:
-    query:
-      state: used
-  parent: neibers_idc.ip
-  weight: 15
-
-neibers_idc.ip.inet:
-  title: 'Inet IP'
-  route_name: entity.ip.collection
-  options:
-    query:
-      type: inet
-  parent: neibers_idc.ip
-  weight: 17
-
-neibers_idc.ip.onet:
-  title: 'Onet IP'
-  route_name: entity.ip.collection
-  options:
-    query:
-      type: onet
-  parent: neibers_idc.ip
-  weight: 19
-
-neibers_idc.ip_type.configuration:
-  title: 'Configuration'
-  route_name: entity.ip_type.collection
-  parent: neibers_idc.ip
-  weight: 50
-
-neibers_idc.ip_type.configuration.type:
-  title: 'Type'
-  route_name: entity.ip_type.collection
-  parent: neibers_idc.ip_type.configuration
-  weight: 10
+#neibers_idc.ip:
+#  title: IP
+#  route_name: entity.ip.collection
+#  menu_name: business
+#  weight: 10
+#
+#neibers_idc.ip.collection:
+#  title: 'IP collection'
+#  route_name: entity.ip.collection
+#  parent: neibers_idc.ip
+#  weight: 10
+#
+#neibers_idc.ip.free:
+#  title: 'Free IP'
+#  route_name: entity.ip.collection
+#  options:
+#    query:
+#      state: free
+#  parent: neibers_idc.ip
+#  weight: 13
+#
+#neibers_idc.ip.used:
+#  title: 'Used IP'
+#  route_name: entity.ip.collection
+#  options:
+#    query:
+#      state: used
+#  parent: neibers_idc.ip
+#  weight: 15
+#
+#neibers_idc.ip.inet:
+#  title: 'Inet IP'
+#  route_name: entity.ip.collection
+#  options:
+#    query:
+#      type: inet
+#  parent: neibers_idc.ip
+#  weight: 17
+#
+#neibers_idc.ip.onet:
+#  title: 'Onet IP'
+#  route_name: entity.ip.collection
+#  options:
+#    query:
+#      type: onet
+#  parent: neibers_idc.ip
+#  weight: 19
+#
+#neibers_idc.ip_type.configuration:
+#  title: 'Configuration'
+#  route_name: entity.ip_type.collection
+#  parent: neibers_idc.ip
+#  weight: 50
+#
+#neibers_idc.ip_type.configuration.type:
+#  title: 'Type'
+#  route_name: entity.ip_type.collection
+#  parent: neibers_idc.ip_type.configuration
+#  weight: 10
 
 neibers_idc.neibers_hardware:
   title: Hardware
