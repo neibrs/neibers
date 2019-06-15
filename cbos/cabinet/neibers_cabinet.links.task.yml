@@ -1,0 +1,39 @@
+# Cabinet routing definition
+neibers_cabinet.settings_tab:
+  route_name: neibers_cabinet.settings
+  title: 'Settings'
+  base_route: neibers_cabinet.settings
+
+entity.neibers_cabinet.canonical:
+  route_name: entity.neibers_cabinet.canonical
+  base_route: entity.neibers_cabinet.canonical
+  title: 'View'
+
+entity.neibers_cabinet.edit_form:
+  route_name: entity.neibers_cabinet.edit_form
+  base_route: entity.neibers_cabinet.canonical
+  title: 'Edit'
+
+entity.neibers_cabinet.delete_form:
+  route_name:  entity.neibers_cabinet.delete_form
+  base_route:  entity.neibers_cabinet.canonical
+  title: Delete
+  weight: 10
+
+# Seat routing definition
+
+entity.neibers_seat.canonical:
+  route_name: entity.neibers_seat.canonical
+  base_route: entity.neibers_seat.canonical
+  title: 'View'
+
+entity.neibers_seat.edit_form:
+  route_name: entity.neibers_seat.edit_form
+  base_route: entity.neibers_seat.canonical
+  title: 'Edit'
+
+entity.neibers_seat.delete_form:
+  route_name:  entity.neibers_seat.delete_form
+  base_route:  entity.neibers_seat.canonical
+  title: Delete
+  weight: 10

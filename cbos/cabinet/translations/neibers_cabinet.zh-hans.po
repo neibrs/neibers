@@ -14,14 +14,14 @@
 #  modules/neibers/cbos/cabinet/cabinet.links.task.yml: n/a
 #  modules/neibers/cbos/cabinet/src/Form/SeatTypeDeleteForm.php: n/a
 #  modules/neibers/cbos/cabinet/cabinet.permissions.yml: n/a
-#  modules/neibers/cbos/cabinet/config/schema/seat_type.schema.yml: n/a
+#  modules/neibers/cbos/cabinet/config/schema/neibers_seat_type.schema.yml: n/a
 #  modules/neibers/cbos/cabinet/src/CabinetListBuilder.php: n/a
 #  modules/neibers/cbos/cabinet/src/SeatListBuilder.php: n/a
 #  modules/neibers/cbos/cabinet/src/Form/CabinetForm.php: n/a
 #  modules/neibers/cbos/cabinet/src/Form/SeatForm.php: n/a
 #  modules/neibers/cbos/cabinet/src/Form/SeatTypeForm.php: n/a
 #  modules/neibers/cbos/cabinet/src/Plugin/EntityReferenceSelection/CabinetSelection.php: n/a
-#  modules/neibers/cbos/cabinet/config/install/cabinet.seat_type.default.yml: n/a
+#  modules/neibers/cbos/cabinet/config/install/cabinet.neibers_seat_type.default.yml: n/a
 #
 #, fuzzy
 msgid ""
@@ -36,21 +36,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: modules/neibers/cbos/cabinet/cabinet.module:18
-msgid "About"
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/cabinet.module:19
 msgid "The hardware cabinet for idc industrial."
-msgstr ""
+msgstr "IDC行业的设备机柜."
 
 #: modules/neibers/cbos/cabinet/cabinet.info.yml:0 modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:12;12 modules/neibers/cbos/cabinet/src/Entity/Seat.php:206
 msgid "Cabinet"
-msgstr ""
+msgstr "机柜"
 
 #: modules/neibers/cbos/cabinet/cabinet.info.yml:0
 msgid "The cabinets of idc room."
-msgstr ""
+msgstr "机柜所属机房."
 
 #: modules/neibers/cbos/cabinet/cabinet.info.yml:0
 msgid "Neibrs"
@@ -82,11 +77,11 @@ msgstr ""
 
 #: modules/neibers/cbos/cabinet/cabinet.permissions.yml:0
 msgid "Create new Cabinet"
-msgstr ""
+msgstr "创建机柜"
 
 #: modules/neibers/cbos/cabinet/cabinet.permissions.yml:0
 msgid "Administer Cabinet"
-msgstr ""
+msgstr "管理机柜"
 
 #: modules/neibers/cbos/cabinet/cabinet.permissions.yml:0
 msgid "Allow to access the administration form to configure Cabinet."
@@ -136,11 +131,11 @@ msgstr ""
 msgid "View unpublished Seat"
 msgstr ""
 
-#: modules/neibers/cbos/cabinet/config/schema/seat_type.schema.yml:0
+#: modules/neibers/cbos/cabinet/config/schema/neibers_seat_type.schema.yml:0
 msgid "Seat type config"
 msgstr ""
 
-#: modules/neibers/cbos/cabinet/config/schema/seat_type.schema.yml:0
+#: modules/neibers/cbos/cabinet/config/schema/neibers_seat_type.schema.yml:0
 msgid "ID"
 msgstr ""
 
@@ -177,7 +172,7 @@ msgid "Size"
 msgstr ""
 
 #: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:204
-msgid "Switch occupied seat in digit."
+msgid "Switch occupied neibers_seat in digit."
 msgstr ""
 
 #: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:215
@@ -264,7 +259,7 @@ msgstr ""
 msgid "Cabinet selection"
 msgstr ""
 
-#: modules/neibers/cbos/cabinet/config/install/cabinet.seat_type.default.yml:0
+#: modules/neibers/cbos/cabinet/config/install/cabinet.neibers_seat_type.default.yml:0
 msgid "Default"
 msgstr ""
 

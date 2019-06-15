@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\cabinet;
+namespace Drupal\neibers_cabinet;
 
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\EntityListBuilder;
@@ -9,7 +9,7 @@ use Drupal\Core\Link;
 /**
  * Defines a class to build a listing of Cabinet.
  *
- * @ingroup cabinet
+ * @ingroup neibers_cabinet
  */
 class CabinetListBuilder extends EntityListBuilder {
 
@@ -26,12 +26,12 @@ class CabinetListBuilder extends EntityListBuilder {
    * {@inheritdoc}
    */
   public function buildRow(EntityInterface $entity) {
-    /* @var $entity \Drupal\cabinet\Entity\Cabinet */
+    /* @var $entity \Drupal\neibers_cabinet\Entity\Cabinet */
     $row['id'] = $entity->id();
     $row['name'] = Link::createFromRoute(
       $entity->label(),
-      'entity.cabinet.edit_form',
-      ['cabinet' => $entity->id()]
+      'entity.neibers_cabinet.edit_form',
+      ['neibers_cabinet' => $entity->id()]
     );
     return $row + parent::buildRow($entity);
   }

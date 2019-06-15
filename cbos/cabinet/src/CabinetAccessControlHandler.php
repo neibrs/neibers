@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\cabinet;
+namespace Drupal\neibers_cabinet;
 
 use Drupal\Core\Entity\EntityAccessControlHandler;
 use Drupal\Core\Entity\EntityInterface;
@@ -10,7 +10,7 @@ use Drupal\Core\Access\AccessResult;
 /**
  * Access controller for the Cabinet entity.
  *
- * @see \Drupal\cabinet\Entity\Cabinet.
+ * @see \Drupal\neibers_cabinet\Entity\Cabinet.
  */
 class CabinetAccessControlHandler extends EntityAccessControlHandler {
 
@@ -18,19 +18,19 @@ class CabinetAccessControlHandler extends EntityAccessControlHandler {
    * {@inheritdoc}
    */
   protected function checkAccess(EntityInterface $entity, $operation, AccountInterface $account) {
-    /** @var \Drupal\cabinet\Entity\CabinetInterface $entity */
+    /** @var \Drupal\neibers_cabinet\Entity\CabinetInterface $entity */
     switch ($operation) {
       case 'view':
         if (!$entity->isPublished()) {
-          return AccessResult::allowedIfHasPermission($account, 'view unpublished cabinet');
+          return AccessResult::allowedIfHasPermission($account, 'view unpublished neibers cabinet');
         }
-        return AccessResult::allowedIfHasPermission($account, 'view published cabinet');
+        return AccessResult::allowedIfHasPermission($account, 'view published neibers cabinet');
 
       case 'update':
-        return AccessResult::allowedIfHasPermission($account, 'edit cabinet');
+        return AccessResult::allowedIfHasPermission($account, 'edit neibers cabinet');
 
       case 'delete':
-        return AccessResult::allowedIfHasPermission($account, 'delete cabinet');
+        return AccessResult::allowedIfHasPermission($account, 'delete neibers cabinet');
     }
 
     // Unknown operation, no opinion.
@@ -41,7 +41,7 @@ class CabinetAccessControlHandler extends EntityAccessControlHandler {
    * {@inheritdoc}
    */
   protected function checkCreateAccess(AccountInterface $account, array $context, $entity_bundle = NULL) {
-    return AccessResult::allowedIfHasPermission($account, 'add cabinet');
+    return AccessResult::allowedIfHasPermission($account, 'add neibers cabinet');
   }
 
 }

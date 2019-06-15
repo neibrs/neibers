@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\cabinet\Form;
+namespace Drupal\neibers_cabinet\Form;
 
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
@@ -8,7 +8,7 @@ use Drupal\Core\Form\FormStateInterface;
 /**
  * Class CabinetSettingsForm.
  *
- * @ingroup cabinet
+ * @ingroup neibers_cabinet
  */
 class CabinetSettingsForm extends FormBase {
 
@@ -19,7 +19,7 @@ class CabinetSettingsForm extends FormBase {
    *   The unique string identifying the form.
    */
   public function getFormId() {
-    return 'cabinet_settings';
+    return 'neibers_cabinet_settings';
   }
 
   /**
@@ -46,7 +46,7 @@ class CabinetSettingsForm extends FormBase {
    *   Form definition array.
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
-    $form['cabinet_settings']['#markup'] = 'Settings form for Cabinet. Manage field settings here.';
+    $form['neibers_cabinet_settings']['#markup'] = 'Settings form for Cabinet. Manage field settings here.';
     return $form;
   }
 

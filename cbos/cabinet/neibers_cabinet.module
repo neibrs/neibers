@@ -1,0 +1,84 @@
+<?php
+
+/**
+ * @file
+ * Contains neibers_cabinet.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function neibers_cabinet_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the neibers_cabinet module.
+    case 'help.page.neibers_cabinet':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('The hardware neibers_cabinet for idc industrial.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function neibers_cabinet_theme() {
+  $theme = [];
+  $theme['neibers_cabinet'] = [
+    'render element' => 'elements',
+    'file' => 'neibers_cabinet.page.inc',
+    'template' => 'neibers-cabinet',
+  ];
+  $theme['neibers_cabinet_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'neibers_cabinet.page.inc',
+  ];
+  $theme['neibers_seat'] = [
+    'render element' => 'elements',
+    'file' => 'neibers_seat.page.inc',
+    'template' => 'neibers-seat',
+  ];
+  $theme['neibers_seat_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'neibers_seat.page.inc',
+  ];
+  return $theme;
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK().
+ */
+function neibers_cabinet_theme_suggestions_neibers_cabinet(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#neibers_cabinet'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'neibers_cabinet__' . $sanitized_view_mode;
+  $suggestions[] = 'neibers_cabinet__' . $entity->bundle();
+  $suggestions[] = 'neibers_cabinet__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'neibers_cabinet__' . $entity->id();
+  $suggestions[] = 'neibers_cabinet__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}
+
+/**
+* Implements hook_theme_suggestions_HOOK().
+*/
+function neibers_cabinet_theme_suggestions_neibers_seat(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#neibers_seat'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'neibers_seat__' . $sanitized_view_mode;
+  $suggestions[] = 'neibers_seat__' . $entity->bundle();
+  $suggestions[] = 'neibers_seat__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'neibers_seat__' . $entity->id();
+  $suggestions[] = 'neibers_seat__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}

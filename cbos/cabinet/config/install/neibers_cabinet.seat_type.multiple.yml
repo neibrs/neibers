@@ -3,6 +3,6 @@ status: true
 dependencies:
   enforced:
     module:
-      - cabinet
+      - neibers_cabinet
 id: multiple
 label: Multiple

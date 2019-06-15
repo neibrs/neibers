@@ -1,11 +1,11 @@
 <?php
 
-namespace Drupal\cabinet;
+namespace Drupal\neibers_cabinet;
 
 use Drupal\content_translation\ContentTranslationHandler;
 
 /**
- * Defines the translation handler for seat.
+ * Defines the translation handler for neibers_seat.
  */
 class SeatTranslationHandler extends ContentTranslationHandler {
 

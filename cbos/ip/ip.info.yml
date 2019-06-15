@@ -6,7 +6,7 @@ interface translation project: ip
 interface translation server pattern: modules/neibers/cbos/%project/translations/%project.%language.po
 dependencies:
   - commerce:commerce_order
-  - drupal:workflows
-  - cabinet
   - eabax_workflows
+  - drupal:workflows
+  - neibers_cabinet
   - neibers_hardware

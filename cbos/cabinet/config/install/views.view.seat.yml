@@ -2,14 +2,14 @@ langcode: en
 status: true
 dependencies:
   module:
-    - cabinet
+    - neibers_cabinet
     - user
 id: seat
 label: Seats
-module: cabinet
+module: neibers_cabinet
 description: 'Find and manage content.'
 tag: default
-base_table: seat_field_data
+base_table: neibers_seat_field_data
 base_field: id
 core: 8.x
 display:
@@ -18,7 +18,7 @@ display:
       access:
         type: perm
         options:
-          perm: 'administer seat'
+          perm: 'administer neibers seat'
       cache:
         type: tag
       query:
@@ -59,7 +59,7 @@ display:
           columns:
             name: name
             type: type
-            cabinet: cabinet
+            neibers_cabinet: neibers_cabinet
             room: room
             operations: operations
           info:
@@ -77,7 +77,7 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
-            cabinet:
+            neibers_cabinet:
               sortable: true
               default_sort_order: asc
               align: ''
@@ -102,7 +102,7 @@ display:
         type: fields
       fields:
         name:
-          table: seat_field_data
+          table: neibers_seat_field_data
           field: name
           id: name
           entity_type: null
@@ -136,7 +136,7 @@ display:
           field_api_classes: false
         type:
           id: type
-          table: seat_field_data
+          table: neibers_seat_field_data
           field: type
           relationship: none
           group_type: group
@@ -196,13 +196,13 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: seat
+          entity_type: neibers_seat
           entity_field: type
           plugin_id: field
-        cabinet:
-          id: cabinet
-          table: seat_field_data
-          field: cabinet
+        neibers_cabinet:
+          id: neibers_cabinet
+          table: neibers_seat_field_data
+          field: neibers_cabinet
           relationship: none
           group_type: group
           admin_label: ''
@@ -230,14 +230,14 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: seat
-          entity_field: cabinet
+          entity_type: neibers_seat
+          entity_field: neibers_cabinet
           plugin_id: field
         room:
           id: room
-          table: cabinet_field_data
+          table: neibers_cabinet_field_data
           field: room
-          relationship: cabinet
+          relationship: neibers_cabinet
           group_type: group
           admin_label: ''
           label: Room
@@ -264,12 +264,12 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: cabinet
+          entity_type: neibers_cabinet
           entity_field: room
           plugin_id: field
         operations:
           id: operations
-          table: seat
+          table: neibers_seat
           field: operations
           relationship: none
           group_type: group
@@ -316,7 +316,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           destination: false
-          entity_type: seat
+          entity_type: neibers_seat
           plugin_id: entity_operations
       filters:
         combine:
@@ -362,7 +362,7 @@ display:
           plugin_id: combine
         type:
           id: type
-          table: seat_field_data
+          table: neibers_seat_field_data
           field: type
           relationship: none
           group_type: group
@@ -402,7 +402,7 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          entity_type: seat
+          entity_type: neibers_seat
           entity_field: type
           plugin_id: bundle
       sorts: {  }
@@ -417,10 +417,10 @@ display:
           plugin_id: text_custom
       arguments: {  }
       relationships:
-        cabinet:
-          id: cabinet
-          table: seat_field_data
-          field: cabinet
+        neibers_cabinet:
+          id: neibers_cabinet
+          table: neibers_seat_field_data
+          field: neibers_cabinet
           relationship: none
           group_type: group
           plugin_id: standard

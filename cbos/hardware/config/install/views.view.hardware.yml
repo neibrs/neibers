@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   module:
-    - cabinet
+    - neibers_cabinet
     - neibers_hardware
     - user
 id: hardware
@@ -243,15 +243,15 @@ display:
           id: cabinet
           table: seat_field_data
           field: cabinet
-          entity_type: seat
+          entity_type: neibers_seat
           entity_field: cabinet
           plugin_id: field
-          relationship: seat
+          relationship: neibers_seat
         room:
           id: room
           table: cabinet_field_data
           field: room
-          relationship: cabinet
+          relationship: neibers_cabinet
           group_type: group
           admin_label: ''
           label: Room
@@ -278,7 +278,7 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: cabinet
+          entity_type: neibers_cabinet
           entity_field: room
           plugin_id: field
         operations:
@@ -381,7 +381,7 @@ display:
           id: cabinet
           table: seat_field_data
           field: cabinet
-          relationship: seat
+          relationship: neibers_seat
           group_type: group
           admin_label: ''
           operator: '='
@@ -424,14 +424,14 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          entity_type: seat
+          entity_type: neibers_seat
           entity_field: cabinet
           plugin_id: numeric
         type:
           id: type
           table: seat_field_data
           field: type
-          relationship: seat
+          relationship: neibers_seat
           group_type: group
           admin_label: ''
           operator: in
@@ -465,7 +465,7 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          entity_type: seat
+          entity_type: neibers_seat
           entity_field: type
           plugin_id: bundle
         type_1:
@@ -535,11 +535,11 @@ display:
           id: cabinet
           table: seat_field_data
           field: cabinet
-          relationship: seat
+          relationship: neibers_seat
           group_type: group
           admin_label: Cabinet
           required: false
-          entity_type: seat
+          entity_type: neibers_seat
           entity_field: cabinet
           plugin_id: standard
       arguments: {  }

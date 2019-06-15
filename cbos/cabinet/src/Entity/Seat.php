@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\cabinet\Entity;
+namespace Drupal\neibers_cabinet\Entity;
 
 use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Field\BaseFieldDefinition;
@@ -12,34 +12,34 @@ use Drupal\user\UserInterface;
 /**
  * Defines the Seat entity.
  *
- * @ingroup cabinet
+ * @ingroup neibers_cabinet
  *
  * @ContentEntityType(
- *   id = "seat",
+ *   id = "neibers_seat",
  *   label = @Translation("Seat"),
  *   label_collection = @Translation("Seat"),
  *   bundle_label = @Translation("Seat type"),
  *   handlers = {
  *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
- *     "list_builder" = "Drupal\cabinet\SeatListBuilder",
- *     "views_data" = "Drupal\cabinet\Entity\SeatViewsData",
- *     "translation" = "Drupal\cabinet\SeatTranslationHandler",
+ *     "list_builder" = "Drupal\neibers_cabinet\SeatListBuilder",
+ *     "views_data" = "Drupal\neibers_cabinet\Entity\SeatViewsData",
+ *     "translation" = "Drupal\neibers_cabinet\SeatTranslationHandler",
  *
  *     "form" = {
- *       "default" = "Drupal\cabinet\Form\SeatForm",
- *       "add" = "Drupal\cabinet\Form\SeatForm",
- *       "edit" = "Drupal\cabinet\Form\SeatForm",
- *       "delete" = "Drupal\cabinet\Form\SeatDeleteForm",
+ *       "default" = "Drupal\neibers_cabinet\Form\SeatForm",
+ *       "add" = "Drupal\neibers_cabinet\Form\SeatForm",
+ *       "edit" = "Drupal\neibers_cabinet\Form\SeatForm",
+ *       "delete" = "Drupal\neibers_cabinet\Form\SeatDeleteForm",
  *     },
- *     "access" = "Drupal\cabinet\SeatAccessControlHandler",
+ *     "access" = "Drupal\neibers_cabinet\SeatAccessControlHandler",
  *     "route_provider" = {
- *       "html" = "Drupal\cabinet\SeatHtmlRouteProvider",
+ *       "html" = "Drupal\neibers_cabinet\SeatHtmlRouteProvider",
  *     },
  *   },
- *   base_table = "seat",
- *   data_table = "seat_field_data",
+ *   base_table = "neibers_seat",
+ *   data_table = "neibers_seat_field_data",
  *   translatable = TRUE,
- *   admin_permission = "administer seat",
+ *   admin_permission = "administer neibers seat",
  *   entity_keys = {
  *     "id" = "id",
  *     "bundle" = "type",
@@ -50,15 +50,15 @@ use Drupal\user\UserInterface;
  *     "status" = "status",
  *   },
  *   links = {
- *     "canonical" = "/seat/{seat}",
+ *     "canonical" = "/seat/{neibers_seat}",
  *     "add-page" = "/seat/add",
- *     "add-form" = "/seat/add/{seat_type}",
- *     "edit-form" = "/seat/{seat}/edit",
- *     "delete-form" = "/seat/{seat}/delete",
+ *     "add-form" = "/seat/add/{neibers_seat_type}",
+ *     "edit-form" = "/seat/{neibers_seat}/edit",
+ *     "delete-form" = "/seat/{neibers_seat}/delete",
  *     "collection" = "/seat",
  *   },
- *   bundle_entity_type = "seat_type",
- *   field_ui_base_route = "entity.seat_type.edit_form"
+ *   bundle_entity_type = "neibers_seat_type",
+ *   field_ui_base_route = "entity.neibers_seat_type.edit_form"
  * )
  */
 class Seat extends ContentEntityBase implements SeatInterface {
@@ -204,7 +204,7 @@ class Seat extends ContentEntityBase implements SeatInterface {
 
     $fields['cabinet'] = BaseFieldDefinition::create('entity_reference')
       ->setLabel(t('Cabinet'))
-      ->setSetting('target_type', 'cabinet')
+      ->setSetting('target_type', 'neibers_cabinet')
       ->setDisplayOptions('view', [
         'type' => 'entity_reference_label',
         'weight' => 6,

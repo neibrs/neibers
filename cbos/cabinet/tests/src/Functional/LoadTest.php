@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\Tests\cabinet\Functional;
+namespace Drupal\Tests\neibers_cabinet\Functional;
 
 use Drupal\Core\Url;
 use Drupal\Tests\BrowserTestBase;
@@ -8,7 +8,7 @@ use Drupal\Tests\BrowserTestBase;
 /**
  * Simple test to ensure that main page loads with module enabled.
  *
- * @group cabinet
+ * @group neibers_cabinet
  */
 class LoadTest extends BrowserTestBase {
 
@@ -17,7 +17,7 @@ class LoadTest extends BrowserTestBase {
    *
    * @var array
    */
-  public static $modules = ['cabinet'];
+  public static $modules = ['neibers_cabinet'];
 
   /**
    * A user with permission to administer site configuration.

@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\cabinet\Form;
+namespace Drupal\neibers_cabinet\Form;
 
 use Drupal\Core\Entity\ContentEntityForm;
 use Drupal\Core\Form\FormStateInterface;
@@ -8,7 +8,7 @@ use Drupal\Core\Form\FormStateInterface;
 /**
  * Form controller for Seat edit forms.
  *
- * @ingroup cabinet
+ * @ingroup neibers_cabinet
  */
 class SeatForm extends ContentEntityForm {
 
@@ -16,7 +16,7 @@ class SeatForm extends ContentEntityForm {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
-    /* @var $entity \Drupal\cabinet\Entity\Seat */
+    /* @var $entity \Drupal\neibers_cabinet\Entity\Seat */
     $form = parent::buildForm($form, $form_state);
 
     $entity = $this->entity;
@@ -44,7 +44,7 @@ class SeatForm extends ContentEntityForm {
           '%label' => $entity->label(),
         ]));
     }
-    $form_state->setRedirect('entity.seat.canonical', ['seat' => $entity->id()]);
+    $form_state->setRedirect('entity.neibers_seat.canonical', ['neibers_seat' => $entity->id()]);
   }
 
 }

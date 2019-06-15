@@ -1,17 +1,17 @@
 
 # Seat menu items definition
-entity.seat.collection:
+entity.neibers_seat.collection:
   title: 'Seat'
-  route_name: entity.seat.collection
+  route_name: entity.neibers_seat.collection
   description: 'List Seat'
   parent: system.admin_structure
   weight: 100
 
 
 # Seat type menu items definition
-entity.seat_type.collection:
+entity.neibers_seat_type.collection:
   title: 'Seat type'
-  route_name: entity.seat_type.collection
+  route_name: entity.neibers_seat_type.collection
   description: 'List Seat type (bundles)'
   parent: system.admin_structure
   weight: 99

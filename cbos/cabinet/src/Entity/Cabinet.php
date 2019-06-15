@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\cabinet\Entity;
+namespace Drupal\neibers_cabinet\Entity;
 
 use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Field\BaseFieldDefinition;
@@ -12,33 +12,33 @@ use Drupal\user\UserInterface;
 /**
  * Defines the Cabinet entity.
  *
- * @ingroup cabinet
+ * @ingroup neibers_cabinet
  *
  * @ContentEntityType(
- *   id = "cabinet",
+ *   id = "neibers_cabinet",
  *   label = @Translation("Cabinet"),
  *   label_collection = @Translation("Cabinet"),
  *   handlers = {
  *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
- *     "list_builder" = "Drupal\cabinet\CabinetListBuilder",
- *     "views_data" = "Drupal\cabinet\Entity\CabinetViewsData",
- *     "translation" = "Drupal\cabinet\CabinetTranslationHandler",
+ *     "list_builder" = "Drupal\neibers_cabinet\CabinetListBuilder",
+ *     "views_data" = "Drupal\neibers_cabinet\Entity\CabinetViewsData",
+ *     "translation" = "Drupal\neibers_cabinet\CabinetTranslationHandler",
  *
  *     "form" = {
- *       "default" = "Drupal\cabinet\Form\CabinetForm",
- *       "add" = "Drupal\cabinet\Form\CabinetForm",
- *       "edit" = "Drupal\cabinet\Form\CabinetForm",
- *       "delete" = "Drupal\cabinet\Form\CabinetDeleteForm",
+ *       "default" = "Drupal\neibers_cabinet\Form\CabinetForm",
+ *       "add" = "Drupal\neibers_cabinet\Form\CabinetForm",
+ *       "edit" = "Drupal\neibers_cabinet\Form\CabinetForm",
+ *       "delete" = "Drupal\neibers_cabinet\Form\CabinetDeleteForm",
  *     },
- *     "access" = "Drupal\cabinet\CabinetAccessControlHandler",
+ *     "access" = "Drupal\neibers_cabinet\CabinetAccessControlHandler",
  *     "route_provider" = {
- *       "html" = "Drupal\cabinet\CabinetHtmlRouteProvider",
+ *       "html" = "Drupal\neibers_cabinet\CabinetHtmlRouteProvider",
  *     },
  *   },
- *   base_table = "cabinet",
- *   data_table = "cabinet_field_data",
+ *   base_table = "neibers_cabinet",
+ *   data_table = "neibers_cabinet_field_data",
  *   translatable = TRUE,
- *   admin_permission = "administer cabinet",
+ *   admin_permission = "administer neibers cabinet",
  *   entity_keys = {
  *     "id" = "id",
  *     "label" = "name",
@@ -48,13 +48,13 @@ use Drupal\user\UserInterface;
  *     "status" = "status",
  *   },
  *   links = {
- *     "canonical" = "/cabinet/{cabinet}",
+ *     "canonical" = "/cabinet/{neibers_cabinet}",
  *     "add-form" = "/cabinet/add",
- *     "edit-form" = "/cabinet/{cabinet}/edit",
- *     "delete-form" = "/cabinet/{cabinet}/delete",
+ *     "edit-form" = "/cabinet/{neibers_cabinet}/edit",
+ *     "delete-form" = "/cabinet/{neibers_cabinet}/delete",
  *     "collection" = "/cabinet",
  *   },
- *   field_ui_base_route = "cabinet.settings"
+ *   field_ui_base_route = "neibers_cabinet.settings"
  * )
  */
 class Cabinet extends ContentEntityBase implements CabinetInterface {
@@ -201,7 +201,7 @@ class Cabinet extends ContentEntityBase implements CabinetInterface {
 
     $fields['size'] = BaseFieldDefinition::create('integer')
       ->setLabel(t('Size'))
-      ->setDescription(t('Switch occupied seat in digit.'))
+      ->setDescription(t('Switch occupied neibers_seat in digit.'))
       ->setDisplayOptions('form', [
         'type' => 'radios_number',
         'weight' => 10,

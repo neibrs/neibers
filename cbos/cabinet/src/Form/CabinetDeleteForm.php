@@ -1,13 +1,13 @@
 <?php
 
-namespace Drupal\cabinet\Form;
+namespace Drupal\neibers_cabinet\Form;
 
 use Drupal\Core\Entity\ContentEntityDeleteForm;
 
 /**
  * Provides a form for deleting Cabinet.
  *
- * @ingroup cabinet
+ * @ingroup neibers_cabinet
  */
 class CabinetDeleteForm extends ContentEntityDeleteForm {
 

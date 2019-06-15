@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\cabinet\Entity;
+namespace Drupal\neibers_cabinet\Entity;
 
 use Drupal\Core\Config\Entity\ConfigEntityInterface;
 

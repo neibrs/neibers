@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\cabinet\Form;
+namespace Drupal\neibers_cabinet\Form;
 
 use Drupal\Core\Entity\EntityConfirmFormBase;
 use Drupal\Core\Form\FormStateInterface;
@@ -22,7 +22,7 @@ class SeatTypeDeleteForm extends EntityConfirmFormBase {
    * {@inheritdoc}
    */
   public function getCancelUrl() {
-    return new Url('entity.seat_type.collection');
+    return new Url('entity.neibers_seat_type.collection');
   }
 
   /**

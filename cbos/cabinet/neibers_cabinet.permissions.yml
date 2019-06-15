@@ -1,39 +1,39 @@
-add cabinet:
+add neibers cabinet:
   title: 'Create new Cabinet'
 
-administer cabinet:
+administer neibers cabinet:
   title: 'Administer Cabinet'
   description: 'Allow to access the administration form to configure Cabinet.'
   restrict access: true
 
-delete cabinet:
+delete neibers cabinet:
   title: 'Delete Cabinet'
 
-edit cabinet:
+edit neibers cabinet:
   title: 'Edit Cabinet'
 
-view published cabinet:
+view published neibers cabinet:
   title: 'View published Cabinet'
 
-view unpublished cabinet:
+view unpublished neibers cabinet:
   title: 'View unpublished Cabinet'
 
-add seat:
+add neibers seat:
   title: 'Create new Seat'
 
-administer seat:
+administer neibers seat:
   title: 'Administer Seat'
   description: 'Allow to access the administration form to configure Seat.'
   restrict access: true
 
-delete seat:
+delete neibers seat:
   title: 'Delete Seat'
 
-edit seat:
+edit neibers seat:
   title: 'Edit Seat'
 
-view published seat:
+view published neibers seat:
   title: 'View published Seat'
 
-view unpublished seat:
+view unpublished neibers seat:
   title: 'View unpublished Seat'

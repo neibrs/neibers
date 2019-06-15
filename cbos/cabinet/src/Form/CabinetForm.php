@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\cabinet\Form;
+namespace Drupal\neibers_cabinet\Form;
 
 use Drupal\Core\Entity\ContentEntityForm;
 use Drupal\Core\Form\FormStateInterface;
@@ -8,7 +8,7 @@ use Drupal\Core\Form\FormStateInterface;
 /**
  * Form controller for Cabinet edit forms.
  *
- * @ingroup cabinet
+ * @ingroup neibers_cabinet
  */
 class CabinetForm extends ContentEntityForm {
 
@@ -16,7 +16,7 @@ class CabinetForm extends ContentEntityForm {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
-    /* @var $entity \Drupal\cabinet\Entity\Cabinet */
+    /* @var $entity \Drupal\neibers_cabinet\Entity\Cabinet */
     $form = parent::buildForm($form, $form_state);
 
     $entity = $this->entity;
@@ -44,7 +44,7 @@ class CabinetForm extends ContentEntityForm {
           '%label' => $entity->label(),
         ]));
     }
-    $form_state->setRedirect('entity.cabinet.canonical', ['cabinet' => $entity->id()]);
+    $form_state->setRedirect('entity.neibers_cabinet.canonical', ['neibers_cabinet' => $entity->id()]);
   }
 
 }

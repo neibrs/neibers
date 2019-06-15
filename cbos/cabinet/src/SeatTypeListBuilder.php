@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\cabinet;
+namespace Drupal\neibers_cabinet;
 
 use Drupal\Core\Config\Entity\ConfigEntityListBuilder;
 use Drupal\Core\Entity\EntityInterface;

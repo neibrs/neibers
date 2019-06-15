@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\cabinet;
+namespace Drupal\neibers_cabinet;
 
 use Drupal\Core\Entity\EntityTypeInterface;
 use Drupal\Core\Entity\Routing\AdminHtmlRouteProvider;
@@ -43,7 +43,7 @@ class CabinetHtmlRouteProvider extends AdminHtmlRouteProvider {
       $route = new Route("/admin/structure/{$entity_type->id()}/settings");
       $route
         ->setDefaults([
-          '_form' => 'Drupal\cabinet\Form\CabinetSettingsForm',
+          '_form' => 'Drupal\neibers_cabinet\Form\CabinetSettingsForm',
           '_title' => "{$entity_type->getLabel()} settings",
         ])
         ->setRequirement('_permission', $entity_type->getAdminPermission())

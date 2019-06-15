@@ -77,7 +77,7 @@ interface IPStorageInterface extends ContentEntityStorageInterface {
   public function getOnetsByOrder(OrderInterface $order);
 
   /**
-   * @param \Drupal\cabinet\Entity\SeatInterface $seat
+   * @param \Drupal\neibers_cabinet\Entity\SeatInterface $seat
    *
    * @return \Drupal\ip\Entity\IPInterface[]
    * @description Get ips by seat.

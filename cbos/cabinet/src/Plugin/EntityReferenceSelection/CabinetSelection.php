@@ -1,15 +1,15 @@
 <?php
 
-namespace Drupal\cabinet\Plugin\EntityReferenceSelection;
+namespace Drupal\neibers_cabinet\Plugin\EntityReferenceSelection;
 
 use Drupal\Component\Utility\Html;
 use Drupal\Core\Entity\Plugin\EntityReferenceSelection\DefaultSelection;
 
 /**
  * @EntityReferenceSelection(
- *   id = "default:cabinet",
+ *   id = "default:neibers_cabinet",
  *   label = @Translation("Cabinet selection"),
- *   entity_types = {"cabinet"},
+ *   entity_types = {"neibers_cabinet"},
  *   group = "default",
  *   weight = 1
  * )

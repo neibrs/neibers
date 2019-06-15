@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\cabinet\Entity;
+namespace Drupal\neibers_cabinet\Entity;
 
 use Drupal\Core\Entity\ContentEntityInterface;
 use Drupal\Core\Entity\EntityChangedInterface;
@@ -9,7 +9,7 @@ use Drupal\user\EntityOwnerInterface;
 /**
  * Provides an interface for defining Cabinet.
  *
- * @ingroup cabinet
+ * @ingroup neibers_cabinet
  */
 interface CabinetInterface extends ContentEntityInterface, EntityChangedInterface, EntityOwnerInterface {
 
@@ -29,7 +29,7 @@ interface CabinetInterface extends ContentEntityInterface, EntityChangedInterfac
    * @param string $name
    *   The Cabinet name.
    *
-   * @return \Drupal\cabinet\Entity\CabinetInterface
+   * @return \Drupal\neibers_cabinet\Entity\CabinetInterface
    *   The called Cabinet entity.
    */
   public function setName($name);
@@ -48,7 +48,7 @@ interface CabinetInterface extends ContentEntityInterface, EntityChangedInterfac
    * @param int $timestamp
    *   The Cabinet creation timestamp.
    *
-   * @return \Drupal\cabinet\Entity\CabinetInterface
+   * @return \Drupal\neibers_cabinet\Entity\CabinetInterface
    *   The called Cabinet entity.
    */
   public function setCreatedTime($timestamp);
@@ -69,7 +69,7 @@ interface CabinetInterface extends ContentEntityInterface, EntityChangedInterfac
    * @param bool $published
    *   TRUE to set this Cabinet to published, FALSE to set it to unpublished.
    *
-   * @return \Drupal\cabinet\Entity\CabinetInterface
+   * @return \Drupal\neibers_cabinet\Entity\CabinetInterface
    *   The called Cabinet entity.
    */
   public function setPublished($published);
