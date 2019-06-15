@@ -114,14 +114,14 @@ interface IPInterface extends ContentEntityInterface, RevisionLogInterface, Enti
   public function setRevisionUserId($uid);
 
   /**
-   * Unbind business ip from used server for user.
+   * Unbind business ip from used hardware for user.
    *
    * @return IPInterface
    */
   public function unbindOnet(IPInterface $ip);
 
   /**
-   * Unbind administer ip from used server for user.
+   * Unbind administer ip from used hardware for user.
    */
   public function unbindInet(IPInterface $ip);
 

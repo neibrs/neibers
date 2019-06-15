@@ -1,0 +1,17 @@
+# Server routing definition
+
+entity.neibers_hardware.canonical:
+  route_name: entity.neibers_hardware.canonical
+  base_route: entity.neibers_hardware.canonical
+  title: 'View'
+
+entity.neibers_hardware.edit_form:
+  route_name: entity.neibers_hardware.edit_form
+  base_route: entity.neibers_hardware.canonical
+  title: 'Edit'
+
+entity.neibers_hardware.delete_form:
+  route_name:  entity.neibers_hardware.delete_form
+  base_route:  entity.neibers_hardware.canonical
+  title: Delete
+  weight: 10

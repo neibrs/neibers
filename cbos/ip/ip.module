@@ -20,12 +20,12 @@ function ip_help($route_name, RouteMatchInterface $route_match) {
     case 'help.page.ip':
       $output = '';
       $output .= '<h3>' . t('About') . '</h3>';
-      $output .= '<p>' . t('The server ip for idc industrial.') . '</p>';
+      $output .= '<p>' . t('The hardware ip for idc industrial.') . '</p>';
       return $output;
     case 'entity.ip.add_form':
     case 'entity.ip.edit_form':
       $output = '';
-      $output .= '<p>' . t('The administer ip must bind to specify server on seat of cabinet.') . '</p>';
+      $output .= '<p>' . t('The administer ip must bind to specify hardware on seat of cabinet.') . '</p>';
       return $output;
     default:
   }

@@ -1,0 +1,57 @@
+<?php
+
+/**
+ * @file
+ * Contains neibers_hardware.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function neibers_hardware_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the neibers_hardware module.
+    case 'help.page.neibers_hardware':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function neibers_hardware_theme() {
+  $theme = [];
+  $theme['neibers_hardware'] = [
+    'render element' => 'elements',
+    'file' => 'neibers_hardware.page.inc',
+    'template' => 'neibers_hardware',
+  ];
+  $theme['neibers_hardware_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'neibers_hardware.page.inc',
+  ];
+  return $theme;
+}
+
+/**
+* Implements hook_theme_suggestions_HOOK().
+*/
+function neibers_hardware_theme_suggestions_neibers_hardware(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#neibers_hardware'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'neibers_hardware__' . $sanitized_view_mode;
+  $suggestions[] = 'neibers_hardware__' . $entity->bundle();
+  $suggestions[] = 'neibers_hardware__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'neibers_hardware__' . $entity->id();
+  $suggestions[] = 'neibers_hardware__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}

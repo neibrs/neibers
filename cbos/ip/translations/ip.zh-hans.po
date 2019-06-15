@@ -45,11 +45,11 @@ msgid "About"
 msgstr ""
 
 #: modules/neibers/cbos/ip/ip.module:22
-msgid "The server ip for idc industrial."
+msgid "The neibers_hardware ip for idc industrial."
 msgstr ""
 
 #: modules/neibers/cbos/ip/ip.module:27
-msgid "The inet ip must bind to specify server on seat of cabinet."
+msgid "The inet ip must bind to specify neibers_hardware on seat of cabinet."
 msgstr ""
 
 #: modules/neibers/cbos/ip/ip.module:74

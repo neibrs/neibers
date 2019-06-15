@@ -8,4 +8,4 @@ interface translation server pattern: modules/neibers/cbos/%project/translations
 dependencies:
   - neibers:cabinet
   - neibers:eabax_workflows
-  - neibers:server
+  - neibers:neibers_hardware

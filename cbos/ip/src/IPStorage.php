@@ -7,7 +7,7 @@ use Drupal\Core\Entity\Sql\SqlContentEntityStorage;
 use Drupal\Core\Session\AccountInterface;
 use Drupal\Core\Language\LanguageInterface;
 use Drupal\ip\Entity\IPInterface;
-use Drupal\server\Entity\ServerInterface;
+use Drupal\neibers_hardware\Entity\ServerInterface;
 
 /**
  * Defines the storage handler class for IP.
@@ -86,7 +86,7 @@ class IPStorage extends SqlContentEntityStorage implements IPStorageInterface {
     $onets = $this->loadByProperties([
       'type' => 'onet',
       'seat' => $ip->get('seat')->target_id,
-      'server' => $ip->get('server')->target_id,
+      'hardware' => $ip->get('hardware')->target_id,
     ]);
 
     return $onets;
@@ -95,10 +95,10 @@ class IPStorage extends SqlContentEntityStorage implements IPStorageInterface {
   /**
    * {@inheritdoc}
    */
-  public function getAvailableInetByServer(ServerInterface $server) {
+  public function getAvailableInetByServer(ServerInterface $hardware) {
     $ips = $this->loadByProperties([
       'type' => 'inet',
-      'server' => $server->id(),
+      'hardware' => $hardware->id(),
       'state' => 'free',
       // Add user_id condition for none client
     ]);

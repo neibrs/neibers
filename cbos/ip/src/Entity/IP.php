@@ -289,9 +289,9 @@ class IP extends RevisionableContentEntityBase implements IPInterface {
       ->setDisplayConfigurable('view', TRUE)
       ->setRequired(TRUE);
 
-    $fields['server'] = BaseFieldDefinition::create('entity_reference')
+    $fields['hardware'] = BaseFieldDefinition::create('entity_reference')
       ->setLabel(t('Server'))
-      ->setSetting('target_type', 'server')
+      ->setSetting('target_type', 'neibers_hardware')
       ->setDisplayOptions('view', [
         'type' => 'entity_reference_label',
         'weight' => 6,
@@ -302,7 +302,7 @@ class IP extends RevisionableContentEntityBase implements IPInterface {
         'settings' => [
           'match_operator' => 'CONTAINS',
           'size' => '60',
-          'placeholder' => 'Which belong to server.',
+          'placeholder' => 'Which belong to hardware.',
         ],
       ])
       ->setDisplayConfigurable('form', TRUE)
@@ -402,7 +402,7 @@ class IP extends RevisionableContentEntityBase implements IPInterface {
   public function unbindOnet(IPInterface $ip) {
     // Need use the workflow transition to be free.
     $ip->state->value        = 'free';
-    $ip->server->target_id   = 0;
+    $ip->hardware->target_id   = 0;
     $ip->seat->target_id     = 0;
     $ip->order_id->target_id = 0;
     $ip->user_id->target_id  = 1;

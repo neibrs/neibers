@@ -36,7 +36,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-msgid "The server cabinet for idc industrial."
+msgid "The hardware cabinet for idc industrial."
 msgstr "IDC行业的服务器机柜."
 
 #: modules/neibers/cbos/cabinet/cabinet.info.yml:0 modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:12;12 modules/neibers/cbos/cabinet/src/Entity/Seat.php:206

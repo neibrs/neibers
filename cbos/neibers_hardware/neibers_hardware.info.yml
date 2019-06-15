@@ -1,0 +1,10 @@
+name: 'Server'
+type: module
+description: 'The hardware in the cabinet seat.'
+core: 8.x
+package: 'Neibrs'
+interface translation project: neibers_hardware
+interface translation server pattern: modules/neibers/cbos/%project/translations/%project.%language.po
+dependencies:
+  - cabinet
+  - machine_room

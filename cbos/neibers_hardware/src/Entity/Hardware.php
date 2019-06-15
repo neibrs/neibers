@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\fitting\Entity;
+namespace Drupal\neibers_hardware\Entity;
 
 use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Field\BaseFieldDefinition;
@@ -10,35 +10,37 @@ use Drupal\Core\Entity\EntityTypeInterface;
 use Drupal\user\UserInterface;
 
 /**
- * Defines the Fitting entity.
+ * Defines the Server entity.
  *
- * @ingroup fitting
+ * @ingroup neibers_hardware
  *
  * @ContentEntityType(
- *   id = "fitting",
- *   label = @Translation("Fitting"),
- *   bundle_label = @Translation("Fitting type"),
+ *   id = "neibers_hardware",
+ *   label = @Translation("Server"),
+ *   label_collection = @Translation("Server"),
+ *   bundle_label = @Translation("Server type"),
  *   handlers = {
+ *     "storage" = "Drupal\neibers_hardware\ServerStorage",
  *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
- *     "list_builder" = "Drupal\fitting\FittingListBuilder",
- *     "views_data" = "Drupal\fitting\Entity\FittingViewsData",
- *     "translation" = "Drupal\fitting\FittingTranslationHandler",
+ *     "list_builder" = "Drupal\neibers_hardware\ServerListBuilder",
+ *     "views_data" = "Drupal\neibers_hardware\Entity\ServerViewsData",
+ *     "translation" = "Drupal\neibers_hardware\ServerTranslationHandler",
  *
  *     "form" = {
- *       "default" = "Drupal\fitting\Form\FittingForm",
- *       "add" = "Drupal\fitting\Form\FittingForm",
- *       "edit" = "Drupal\fitting\Form\FittingForm",
- *       "delete" = "Drupal\fitting\Form\FittingDeleteForm",
+ *       "default" = "Drupal\neibers_hardware\Form\ServerForm",
+ *       "add" = "Drupal\neibers_hardware\Form\ServerForm",
+ *       "edit" = "Drupal\neibers_hardware\Form\ServerForm",
+ *       "delete" = "Drupal\neibers_hardware\Form\ServerDeleteForm",
  *     },
- *     "access" = "Drupal\fitting\FittingAccessControlHandler",
+ *     "access" = "Drupal\neibers_hardware\ServerAccessControlHandler",
  *     "route_provider" = {
- *       "html" = "Drupal\fitting\FittingHtmlRouteProvider",
+ *       "html" = "Drupal\neibers_hardware\ServerHtmlRouteProvider",
  *     },
  *   },
- *   base_table = "fitting",
- *   data_table = "fitting_field_data",
+ *   base_table = "neibers_hardware",
+ *   data_table = "neibers_hardware_field_data",
  *   translatable = TRUE,
- *   admin_permission = "administer fitting",
+ *   admin_permission = "administer neibers_hardware",
  *   entity_keys = {
  *     "id" = "id",
  *     "bundle" = "type",
@@ -49,18 +51,18 @@ use Drupal\user\UserInterface;
  *     "status" = "status",
  *   },
  *   links = {
- *     "canonical" = "/fitting/{fitting}",
- *     "add-page" = "/fitting/add",
- *     "add-form" = "/fitting/add/{fitting_type}",
- *     "edit-form" = "/fitting/{fitting}/edit",
- *     "delete-form" = "/fitting/{fitting}/delete",
- *     "collection" = "/fitting",
+ *     "canonical" = "/hardware/{neibers_hardware}",
+ *     "add-page" = "/hardware/add",
+ *     "add-form" = "/hardware/add/{neibers_hardware_type}",
+ *     "edit-form" = "/hardware/{neibers_hardware}/edit",
+ *     "delete-form" = "/hardware/{neibers_hardware}/delete",
+ *     "collection" = "/hardware",
  *   },
- *   bundle_entity_type = "fitting_type",
- *   field_ui_base_route = "entity.fitting_type.edit_form"
+ *   bundle_entity_type = "neibers_hardware_type",
+ *   field_ui_base_route = "entity.neibers_hardware_type.edit_form"
  * )
  */
-class Fitting extends ContentEntityBase implements FittingInterface {
+class Server extends ContentEntityBase implements ServerInterface {
 
   use EntityChangedTrait;
 
@@ -157,7 +159,7 @@ class Fitting extends ContentEntityBase implements FittingInterface {
 
     $fields['user_id'] = BaseFieldDefinition::create('entity_reference')
       ->setLabel(t('Authored by'))
-      ->setDescription(t('The user ID of author of the Fitting entity.'))
+      ->setDescription(t('The user ID of author of the Server entity.'))
       ->setRevisionable(TRUE)
       ->setSetting('target_type', 'user')
       ->setSetting('handler', 'default')
@@ -182,7 +184,7 @@ class Fitting extends ContentEntityBase implements FittingInterface {
 
     $fields['name'] = BaseFieldDefinition::create('string')
       ->setLabel(t('Name'))
-      ->setDescription(t('The name of the Fitting entity.'))
+      ->setDescription(t('The name of the Server entity.'))
       ->setSettings([
         'max_length' => 50,
         'text_processing' => 0,
@@ -201,107 +203,34 @@ class Fitting extends ContentEntityBase implements FittingInterface {
       ->setDisplayConfigurable('view', TRUE)
       ->setRequired(TRUE);
 
+    $fields['seat'] = BaseFieldDefinition::create('entity_reference')
+      ->setLabel(t('Seat'))
+      ->setSetting('target_type', 'seat')
+      ->setRequired(TRUE)
+      ->setDisplayOptions('view', [
+        'type' => 'entity_reference_label',
+        'weight' => 6,
+      ])
+      ->setDisplayOptions('form', [
+        'type' => 'entity_reference_autocomplete',
+        'weight' => 6,
+        'settings' => [
+          'match_operator' => 'CONTAINS',
+          'size' => '60',
+          'placeholder' => 'Server belong to seat.',
+        ],
+      ])
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE);
+
     $fields['status'] = BaseFieldDefinition::create('boolean')
       ->setLabel(t('Publishing status'))
-      ->setDescription(t('A boolean indicating whether the Fitting is published.'))
+      ->setDescription(t('A boolean indicating whether the Server is published.'))
       ->setDefaultValue(TRUE)
       ->setDisplayOptions('form', [
         'type' => 'boolean_checkbox',
         'weight' => -3,
       ]);
-
-    $fields['hardware'] = BaseFieldDefinition::create('entity_reference')
-      ->setLabel(t('Server'))
-      ->setSetting('target_type', 'neibers_hardware')
-      ->setDisplayOptions('view', [
-        'type' => 'entity_reference_label',
-        'weight' => 6,
-      ])
-      ->setDisplayOptions('form', [
-        'type' => 'entity_reference_autocomplete',
-        'weight' => 6,
-        'settings' => [
-          'match_operator' => 'CONTAINS',
-          'size' => '60',
-          'placeholder' => 'Which belong to hardware.',
-        ],
-      ])
-      ->setDisplayConfigurable('form', TRUE)
-      ->setDisplayConfigurable('view', TRUE);
-
-    $fields['seat'] = BaseFieldDefinition::create('entity_reference')
-      ->setLabel(t('Cabinet Seat'))
-      ->setSetting('target_type', 'seat')
-      ->setDisplayOptions('view', [
-        'type' => 'entity_reference_label',
-        'weight' => 6,
-      ])
-      ->setDisplayOptions('form', [
-        'type' => 'entity_reference_autocomplete',
-        'weight' => 6,
-        'settings' => [
-          'match_operator' => 'CONTAINS',
-          'size' => '60',
-          'placeholder' => 'IP belong to seat.',
-        ],
-      ])
-      ->setDisplayConfigurable('form', TRUE)
-      ->setDisplayConfigurable('view', TRUE);
-
-    $fields['state'] = BaseFieldDefinition::create('entity_status')
-      ->setLabel(t('State'))
-      ->setRequired(TRUE)
-      ->setRevisionable(TRUE)
-      ->setSetting('workflow_type', 'fitting_state')
-      ->setSetting('workflow', 'default_fitting_state')
-      ->setDefaultValue('draft')
-      ->setDisplayOptions('view', [
-        'type' => 'list_default',
-        'weight' => -2,
-      ])
-      ->setDisplayOptions('form', [
-        'type' => 'options_select',
-        'weight' => -2,
-        'disable' => TRUE,
-      ])
-      ->setDisplayConfigurable('form', TRUE)
-      ->setDisplayConfigurable('view', TRUE);
-
-    $fields['order_id'] = BaseFieldDefinition::create('entity_reference')
-      ->setLabel(t('Order'))
-      ->setDescription(t('The related order number.'))
-      ->setSetting('target_type', 'commerce_order')
-      // TODO need confirm the readonly.
-      ->setReadOnly(TRUE)
-      ->setDisplayOptions('view', [
-        'type' => 'entity_reference_label',
-        'weight' => 6,
-      ])
-      ->setDisplayOptions('form', [
-        'type' => 'entity_reference_autocomplete',
-        'weight' => 6,
-        'settings' => [
-          'match_operator' => 'CONTAINS',
-          'size' => '60',
-          'placeholder' => 'IP belong to Order.',
-        ],
-      ])
-      ->setDisplayConfigurable('form', TRUE)
-      ->setDisplayConfigurable('view', TRUE);
-
-    // Design to determine which fitting could be purchasable.
-    $fields['purchasable'] = BaseFieldDefinition::create('boolean')
-      ->setLabel(t('Purchasable'))
-      ->setDescription(t('A boolean indicating whether the Fitting is purchasable.'))
-      ->setDefaultValue(TRUE)
-      ->setDisplayOptions('form', [
-        'type' => 'boolean_checkbox',
-        'settings' => [
-          'display_label' => TRUE,
-        ],
-        'weight' => -3,
-      ])
-      ->setDisplayConfigurable('form', TRUE);
 
     $fields['created'] = BaseFieldDefinition::create('created')
       ->setLabel(t('Created'))

@@ -42,4 +42,4 @@ content:
 hidden:
   order_id: true
   seat: true
-  server: true
+  neibers_hardware: true

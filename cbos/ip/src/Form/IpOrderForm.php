@@ -66,8 +66,8 @@ class IpOrderForm extends FormBase {
 
     $inets = $this->entityTypeManager->getStorage('ip')->getInetsByOrder($this->order);
     foreach ($inets as $key => $entity_ip) {
-      $form['ips'][$key]['server'] = [
-        '#markup' => $entity_ip->server->entity->label(),
+      $form['ips'][$key]['hardware'] = [
+        '#markup' => $entity_ip->hardware->entity->label(),
       ];
       if ($display->getMode() == 'default') {
         $form['ips'][$key]['inet'] = [
@@ -134,7 +134,7 @@ class IpOrderForm extends FormBase {
     // TODO Polished
     if ($values['administer'] || $values['business']) {
       $administer = $ip_storage->load($values['administer']);
-      $administer->server->target_id = $values['server'];
+      $administer->hardware->target_id = $values['hardware'];
       $administer->order_id->target_id = $this->order->id();
       $administer->state->value = 'used';
       $administer->user_id->target_id = \Drupal::currentUser()->id();
@@ -145,7 +145,7 @@ class IpOrderForm extends FormBase {
         $business->order_id->target_id = $this->order->id();
         $business->state->value = 'used';
         if (!empty($this->inet)) {
-          $business->server->target_id = $this->inet->server->target_id;
+          $business->hardware->target_id = $this->inet->hardware->target_id;
           $business->seat->target_id = $this->inet->seat->target_id;
           $business->user_id->target_id = \Drupal::currentUser()->id();
         }
@@ -183,16 +183,16 @@ class IpOrderForm extends FormBase {
       '#required' => TRUE,
       '#ajax' => [
         'callback' => '::updateServer',
-        'wrapper' => 'edit-server-wrapper',
+        'wrapper' => 'edit-hardware-wrapper',
       ],
     ];
-    $form['allocate']['server'] = [
+    $form['allocate']['hardware'] = [
       '#title' => $this->t('Server'),
       '#type' => 'select',
-//      '#target_type' => 'server',
+//      '#target_type' => 'hardware',
       '#options' => [],
       '#required' => TRUE,
-      '#prefix' => '<div id="edit-server-wrapper">',
+      '#prefix' => '<div id="edit-hardware-wrapper">',
       '#suffix' => '</div>',
       '#ajax' => [
         'callback' => '::updateAdminister',
@@ -205,7 +205,7 @@ class IpOrderForm extends FormBase {
       '#target_type' => 'ip',
       '#required' => TRUE,
       '#size' => 40,
-      '#prefix' => '<div id="edit-server-wrapper">',
+      '#prefix' => '<div id="edit-hardware-wrapper">',
       '#suffix' => '</div>',
 //      '#ajax' => [
 //        'callback' => '::updateBusiness',
@@ -230,12 +230,12 @@ class IpOrderForm extends FormBase {
   }
 
   /**
-   * Handles switching the server selector.
+   * Handles switching the hardware selector.
    */
   public function updateServer($form, FormStateInterface $form_state) {
     // TODO
     $room = $form_state->getValue('room');
-    $query = \Drupal::database()->select('server_field_data', 'sfd');
+    $query = \Drupal::database()->select('neibers_hardware_field_data', 'sfd');
     $query->fields('sfd', ['id']);
     $query->leftJoin('seat_field_data', 'seat', 'sfd.seat = seat.id');
     $query->leftJoin('cabinet_field_data', 'cfd', 'seat.cabinet = cfd.id');
@@ -247,9 +247,6 @@ class IpOrderForm extends FormBase {
       return $item->id;
     }, $result);
 
-//    $server_query = \Drupal::entityQuery('server')
-//    ->condition('id', $ids, 'IN')
-//    ->//; $this->entityTypeManager->getStorage('server')
-    return $form['allocate']['server'];
+    return $form['allocate']['hardware'];
   }
 }

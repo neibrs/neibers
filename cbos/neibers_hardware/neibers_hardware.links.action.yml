@@ -1,0 +1,10 @@
+entity.neibers_hardware.add_form:
+  route_name: entity.neibers_hardware.add_page
+  title: 'Add Server'
+  appears_on:
+    - entity.neibers_hardware.collection
+entity.neibers_hardware_type.add_form:
+  route_name: entity.neibers_hardware_type.add_form
+  title: 'Add Server type'
+  appears_on:
+    - entity.neibers_hardware_type.collection
