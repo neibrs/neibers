@@ -3,7 +3,7 @@ type: module
 core: 8.x
 package: 'Neibrs'
 interface translation project: ip
-interface translation neibers_hardware pattern: modules/neibers/cbos/%project/translations/%project.%language.po
+interface translation server pattern: modules/neibers/cbos/%project/translations/%project.%language.po
 dependencies:
   - commerce:commerce_order
   - drupal:workflows
