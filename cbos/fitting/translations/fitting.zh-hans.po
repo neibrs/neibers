@@ -132,7 +132,7 @@ msgstr "指示配件是否已发布."
 
 #: modules/neibers/cbos/fitting/src/Entity/Fitting.php:214
 msgid "Hardware"
-msgstr "服务器"
+msgstr "设备"
 
 #: modules/neibers/cbos/fitting/src/Entity/Fitting.php:233
 msgid "Cabinet Seat"

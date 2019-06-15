@@ -67,7 +67,7 @@ msgstr "类型"
 
 #: modules/neibers/product/neibers_idc/neibers_idc.links.menu.yml:0;0 modules/neibers/product/neibers_idc/config/install/views.view.ip.yml:0
 msgid "Hardware"
-msgstr "服务器"
+msgstr "设备"
 
 #: modules/neibers/product/neibers_idc/neibers_idc.links.menu.yml:0;0
 msgid "Room"
