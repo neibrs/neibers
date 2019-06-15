@@ -9,7 +9,7 @@ id: hardware
 label: Hardware
 module: neibers_hardware
 description: 'Find and manage content.'
-tag: default 
+tag: default
 base_table: neibers_hardware_field_data
 base_field: id
 core: 8.x
@@ -409,95 +409,6 @@ display:
           entity_type: seat
           entity_field: type
           plugin_id: bundle
-        changed:
-          id: changed
-          table: neibers_hardware_field_data
-          field: changed
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: '='
-          value:
-            min: ''
-            max: ''
-            value: ''
-            type: date
-          group: 1
-          exposed: true
-          expose:
-            operator_id: changed_op
-            label: Changed
-            description: ''
-            use_operator: false
-            operator: changed_op
-            identifier: changed
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              implementor: '0'
-              system_administrator: '0'
-              site_manager: '0'
-              business: '0'
-            placeholder: ''
-            min_placeholder: ''
-            max_placeholder: ''
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          entity_type: neibers_hardware
-          entity_field: changed
-          plugin_id: date
-        seat:
-          id: seat
-          table: neibers_hardware_field_data
-          field: seat
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: '='
-          value: '1'
-          group: 1
-          exposed: true
-          expose:
-            operator_id: seat_op
-            label: Seat
-            description: ''
-            use_operator: false
-            operator: seat_op
-            identifier: seat
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          entity_type: neibers_hardware
-          entity_field: seat
-          plugin_id: numeric
         type_1:
           id: type_1
           table: neibers_hardware_field_data
@@ -574,6 +485,10 @@ display:
           plugin_id: standard
       arguments: {  }
       display_extenders: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
     display_plugin: default
     display_title: Master
     id: default
