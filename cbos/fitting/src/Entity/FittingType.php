@@ -10,6 +10,7 @@ use Drupal\Core\Config\Entity\ConfigEntityBundleBase;
  * @ConfigEntityType(
  *   id = "neibers_fitting_type",
  *   label = @Translation("Fitting type"),
+ *   label_collection = @Translation("Fitting type"),
  *   handlers = {
  *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
  *     "list_builder" = "Drupal\neibers_fitting\FittingTypeListBuilder",

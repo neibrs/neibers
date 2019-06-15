@@ -17,6 +17,7 @@ use Drupal\user\UserInterface;
  * @ContentEntityType(
  *   id = "neibers_fitting",
  *   label = @Translation("Fitting"),
+ *   label_collection = @Translation("Fitting"),
  *   bundle_label = @Translation("Fitting type"),
  *   handlers = {
  *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
