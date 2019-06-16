@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\ip\Entity;
+namespace Drupal\neibers_ip\Entity;
 
 use Drupal\Core\Config\Entity\ConfigEntityBundleBase;
 
@@ -8,34 +8,33 @@ use Drupal\Core\Config\Entity\ConfigEntityBundleBase;
  * Defines the IP type entity.
  *
  * @ConfigEntityType(
- *   id = "ip_type",
+ *   id = "neibers_ip_type",
  *   label = @Translation("IP type"),
- *   label_collection = @Translation("IP type"),
  *   handlers = {
  *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
- *     "list_builder" = "Drupal\ip\IPTypeListBuilder",
+ *     "list_builder" = "Drupal\neibers_ip\IPTypeListBuilder",
  *     "form" = {
- *       "add" = "Drupal\ip\Form\IPTypeForm",
- *       "edit" = "Drupal\ip\Form\IPTypeForm",
- *       "delete" = "Drupal\ip\Form\IPTypeDeleteForm"
+ *       "add" = "Drupal\neibers_ip\Form\IPTypeForm",
+ *       "edit" = "Drupal\neibers_ip\Form\IPTypeForm",
+ *       "delete" = "Drupal\neibers_ip\Form\IPTypeDeleteForm"
  *     },
  *     "route_provider" = {
- *       "html" = "Drupal\ip\IPTypeHtmlRouteProvider",
+ *       "html" = "Drupal\neibers_ip\IPTypeHtmlRouteProvider",
  *     },
  *   },
  *   config_prefix = "type",
  *   admin_permission = "administer site configuration",
- *   bundle_of = "ip",
+ *   bundle_of = "neibers_ip",
  *   entity_keys = {
  *     "id" = "id",
  *     "label" = "label",
  *     "uuid" = "uuid"
  *   },
  *   links = {
- *     "canonical" = "/ip/type/{ip_type}",
+ *     "canonical" = "/ip/type/{neibers_ip_type}",
  *     "add-form" = "/ip/type/add",
- *     "edit-form" = "/ip/type/{ip_type}/edit",
- *     "delete-form" = "/ip/type/{ip_type}/delete",
+ *     "edit-form" = "/ip/type/{neibers_ip_type}/edit",
+ *     "delete-form" = "/ip/type/{neibers_ip_type}/delete",
  *     "collection" = "/ip/type"
  *   }
  * )

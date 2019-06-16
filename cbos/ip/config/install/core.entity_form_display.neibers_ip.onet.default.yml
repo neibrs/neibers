@@ -2,9 +2,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - ip.type.onet
-id: ip.onet.default
-targetEntityType: ip
+    - neibers_ip.type.onet
+id: neibers_ip.onet.default
+targetEntityType: neibers_ip
 bundle: onet
 mode: default
 content:

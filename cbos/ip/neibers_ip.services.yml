@@ -1,4 +1,4 @@
 services:
-  ip.manager:
-    class: Drupal\ip\IPManager
+  neibers_ip.manager:
+    class: Drupal\neibers_ip\IPManager
     arguments: ['@entity_type.manager']

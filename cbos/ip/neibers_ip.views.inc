@@ -7,7 +7,7 @@
 /**
  * Implements hook_views_data_alter().
  */
-function ip_views_data_alter(array &$data) {
+function neibers_ip_views_data_alter(array &$data) {
 
   $data['commerce_order']['ip'] = [
     'title' => t('Business IP'),

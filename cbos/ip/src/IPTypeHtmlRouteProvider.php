@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\ip;
+namespace Drupal\neibers_ip;
 
 use Drupal\Core\Entity\EntityTypeInterface;
 use Drupal\Core\Entity\Routing\AdminHtmlRouteProvider;
@@ -20,7 +20,6 @@ class IPTypeHtmlRouteProvider extends AdminHtmlRouteProvider {
     $collection = parent::getRoutes($entity_type);
 
     // Provide your custom entity routes here.
-
     return $collection;
   }
 

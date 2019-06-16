@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\ip\Form;
+namespace Drupal\neibers_ip\Form;
 
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;

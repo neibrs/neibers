@@ -2,31 +2,27 @@
 
 /**
  * @file
- * Contains ip.module.
+ * Contains neibers_ip.module.
  */
 
 use Drupal\commerce_order\Entity\OrderType;
 use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Routing\RouteMatchInterface;
-use Drupal\ip\Entity\IPType;
+use Drupal\neibers_ip\Entity\IPType;
 
 /**
  * Implements hook_help().
  */
-function ip_help($route_name, RouteMatchInterface $route_match) {
+function neibers_ip_help($route_name, RouteMatchInterface $route_match) {
   switch ($route_name) {
-    // Main module help for the ip module.
-    case 'help.page.ip':
+    // Main module help for the neibers_ip module.
+    case 'help.page.neibers_ip':
       $output = '';
       $output .= '<h3>' . t('About') . '</h3>';
-      $output .= '<p>' . t('The hardware ip for idc industrial.') . '</p>';
+      $output .= '<p>' . t('Uip') . '</p>';
       return $output;
-    case 'entity.ip.add_form':
-    case 'entity.ip.edit_form':
-      $output = '';
-      $output .= '<p>' . t('The administer ip must bind to specify hardware on seat of cabinet.') . '</p>';
-      return $output;
+
     default:
   }
 }
@@ -34,41 +30,40 @@ function ip_help($route_name, RouteMatchInterface $route_match) {
 /**
  * Implements hook_theme().
  */
-function ip_theme() {
+function neibers_ip_theme() {
   $theme = [];
-  $theme['ip'] = [
+  $theme['neibers_ip'] = [
     'render element' => 'elements',
-    'file' => 'ip.page.inc',
-    'template' => 'ip',
+    'file' => 'neibers_ip.page.inc',
   ];
-  $theme['ip_content_add_list'] = [
+  $theme['neibers_ip_content_add_list'] = [
     'render element' => 'content',
     'variables' => ['content' => NULL],
-    'file' => 'ip.page.inc',
+    'file' => 'neibers_ip.page.inc',
   ];
   return $theme;
 }
 
 /**
-* Implements hook_theme_suggestions_HOOK().
-*/
-function ip_theme_suggestions_ip(array $variables) {
+ * Implements hook_theme_suggestions_HOOK().
+ */
+function neibers_ip_theme_suggestions_neibers_ip(array $variables) {
   $suggestions = [];
-  $entity = $variables['elements']['#ip'];
+  $entity = $variables['elements']['#neibers_ip'];
   $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
 
-  $suggestions[] = 'ip__' . $sanitized_view_mode;
-  $suggestions[] = 'ip__' . $entity->bundle();
-  $suggestions[] = 'ip__' . $entity->bundle() . '__' . $sanitized_view_mode;
-  $suggestions[] = 'ip__' . $entity->id();
-  $suggestions[] = 'ip__' . $entity->id() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'neibers_ip__' . $sanitized_view_mode;
+  $suggestions[] = 'neibers_ip__' . $entity->bundle();
+  $suggestions[] = 'neibers_ip__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'neibers_ip__' . $entity->id();
+  $suggestions[] = 'neibers_ip__' . $entity->id() . '__' . $sanitized_view_mode;
   return $suggestions;
 }
 
 /**
  * Implements hook_entity_extra_field_info().
  */
-function ip_entity_extra_field_info() {
+function neibers_ip_entity_extra_field_info() {
   $extra = [];
   foreach (OrderType::loadMultiple() as $bundle) {
     $extra['commerce_order'][$bundle->id()]['display']['ips'] = [
@@ -78,7 +73,7 @@ function ip_entity_extra_field_info() {
     ];
   }
   foreach (IPType::loadMultiple() as $bundle) {
-    $extra['ip'][$bundle->id()]['display']['order_ips'] = [
+    $extra['neibers_ip'][$bundle->id()]['display']['order_ips'] = [
       'label' => t('Order ips'),
       'description' => t('The ips belongs to current order.'),
       'weight' => 20,
@@ -90,8 +85,8 @@ function ip_entity_extra_field_info() {
 /**
  * Implements hook_ENTITY_TYPE_view().
  */
-function ip_commerce_order_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+function neibers_ip_commerce_order_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
   if ($display->getComponent('ips')) {
-    $build['ips'] = \Drupal::formBuilder()->getForm('\Drupal\ip\Form\IPOrderForm', $entity, $display);
+    $build['ips'] = \Drupal::formBuilder()->getForm('\Drupal\neibers_ip\Form\IPOrderForm', $entity, $display);
   }
 }

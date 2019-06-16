@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\ip\Entity;
+namespace Drupal\neibers_ip\Entity;
 
 use Drupal\Core\Config\Entity\ConfigEntityInterface;
 

@@ -1,13 +1,13 @@
 <?php
 
-namespace Drupal\ip\Form;
+namespace Drupal\neibers_ip\Form;
 
 use Drupal\Core\Entity\ContentEntityDeleteForm;
 
 /**
- * Provides a form for deleting IP.
+ * Provides a form for deleting IP entities.
  *
- * @ingroup ip
+ * @ingroup neibers_ip
  */
 class IPDeleteForm extends ContentEntityDeleteForm {
 

@@ -1,22 +1,65 @@
 <?php
 
-namespace Drupal\ip\Form;
+namespace Drupal\neibers_ip\Form;
 
+use Drupal\Component\Datetime\TimeInterface;
 use Drupal\Core\Entity\ContentEntityForm;
+use Drupal\Core\Entity\EntityRepositoryInterface;
+use Drupal\Core\Entity\EntityTypeBundleInfoInterface;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Session\AccountProxyInterface;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
  * Form controller for IP edit forms.
  *
- * @ingroup ip
+ * @ingroup neibers_ip
  */
 class IPForm extends ContentEntityForm {
+
+  /**
+   * The current user account.
+   *
+   * @var \Drupal\Core\Session\AccountProxyInterface
+   */
+  protected $account;
+
+  /**
+   * Constructs a new IPForm.
+   *
+   * @param \Drupal\Core\Entity\EntityRepositoryInterface $entity_repository
+   *   The entity repository service.
+   * @param \Drupal\Core\Entity\EntityTypeBundleInfoInterface $entity_type_bundle_info
+   *   The entity type bundle service.
+   * @param \Drupal\Component\Datetime\TimeInterface $time
+   *   The time service.
+   * @param \Drupal\Core\Session\AccountProxyInterface $account
+   *   The current user account.
+   */
+  public function __construct(EntityRepositoryInterface $entity_repository, EntityTypeBundleInfoInterface $entity_type_bundle_info = NULL, TimeInterface $time = NULL, AccountProxyInterface $account) {
+    parent::__construct($entity_repository, $entity_type_bundle_info, $time);
+
+    $this->account = $account;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public static function create(ContainerInterface $container) {
+    // Instantiates this form class.
+    return new static(
+      $container->get('entity.repository'),
+      $container->get('entity_type.bundle.info'),
+      $container->get('datetime.time'),
+      $container->get('current_user')
+    );
+  }
 
   /**
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
-    /* @var $entity \Drupal\ip\Entity\IP */
+    /* @var \Drupal\neibers_ip\Entity\IP $entity */
     $form = parent::buildForm($form, $form_state);
 
     if (!$this->entity->isNew()) {
@@ -44,8 +87,8 @@ class IPForm extends ContentEntityForm {
       $entity->setNewRevision();
 
       // If a new revision is created, save the current user as revision author.
-      $entity->setRevisionCreationTime(REQUEST_TIME);
-      $entity->setRevisionUserId(\Drupal::currentUser()->id());
+      $entity->setRevisionCreationTime($this->time->getRequestTime());
+      $entity->setRevisionUserId($this->account->id());
     }
     else {
       $entity->setNewRevision(FALSE);
@@ -55,17 +98,17 @@ class IPForm extends ContentEntityForm {
 
     switch ($status) {
       case SAVED_NEW:
-        drupal_set_message($this->t('Created the %label IP.', [
+        $this->messenger()->addMessage($this->t('Created the %label IP.', [
           '%label' => $entity->label(),
         ]));
         break;
 
       default:
-        drupal_set_message($this->t('Saved the %label IP.', [
+        $this->messenger()->addMessage($this->t('Saved the %label IP.', [
           '%label' => $entity->label(),
         ]));
     }
-    $form_state->setRedirect('entity.ip.canonical', ['ip' => $entity->id()]);
+    $form_state->setRedirect('entity.neibers_ip.canonical', ['neibers_ip' => $entity->id()]);
   }
 
 }

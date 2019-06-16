@@ -1,49 +1,49 @@
 <?php
 
-namespace Drupal\ip\Entity;
+namespace Drupal\neibers_ip\Entity;
 
 use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Field\BaseFieldDefinition;
 use Drupal\Core\Entity\RevisionableContentEntityBase;
 use Drupal\Core\Entity\RevisionableInterface;
 use Drupal\Core\Entity\EntityChangedTrait;
+use Drupal\Core\Entity\EntityPublishedTrait;
 use Drupal\Core\Entity\EntityTypeInterface;
 use Drupal\user\UserInterface;
 
 /**
  * Defines the IP entity.
  *
- * @ingroup ip
+ * @ingroup neibers_ip
  *
  * @ContentEntityType(
- *   id = "ip",
+ *   id = "neibers_ip",
  *   label = @Translation("IP"),
- *   label_collection = @Translation("IP"),
  *   bundle_label = @Translation("IP type"),
  *   handlers = {
- *     "storage" = "Drupal\ip\IPStorage",
- *     "view_builder" = "Drupal\ip\IPViewBuilder",
- *     "list_builder" = "Drupal\ip\IPListBuilder",
- *     "views_data" = "Drupal\ip\Entity\IPViewsData",
- *     "translation" = "Drupal\ip\IPTranslationHandler",
+ *     "storage" = "Drupal\neibers_ip\IPStorage",
+ *     "list_builder" = "Drupal\neibers_ip\IPListBuilder",
+ *     "view_builder" = "Drupal\neibers_ip\IPViewBuilder",
+ *     "views_data" = "Drupal\neibers_ip\Entity\IPViewsData",
+ *     "translation" = "Drupal\neibers_ip\IPTranslationHandler",
  *
  *     "form" = {
- *       "default" = "Drupal\ip\Form\IPForm",
- *       "add" = "Drupal\ip\Form\IPForm",
- *       "edit" = "Drupal\ip\Form\IPForm",
- *       "delete" = "Drupal\ip\Form\IPDeleteForm",
+ *       "default" = "Drupal\neibers_ip\Form\IPForm",
+ *       "add" = "Drupal\neibers_ip\Form\IPForm",
+ *       "edit" = "Drupal\neibers_ip\Form\IPForm",
+ *       "delete" = "Drupal\neibers_ip\Form\IPDeleteForm",
  *     },
- *     "access" = "Drupal\ip\IPAccessControlHandler",
  *     "route_provider" = {
- *       "html" = "Drupal\ip\IPHtmlRouteProvider",
+ *       "html" = "Drupal\neibers_ip\IPHtmlRouteProvider",
  *     },
+ *     "access" = "Drupal\neibers_ip\IPAccessControlHandler",
  *   },
- *   base_table = "ip",
- *   data_table = "ip_field_data",
- *   revision_table = "ip_revision",
- *   revision_data_table = "ip_field_revision",
+ *   base_table = "neibers_ip",
+ *   data_table = "neibers_ip_field_data",
+ *   revision_table = "neibers_ip_revision",
+ *   revision_data_table = "neibers_ip_field_revision",
  *   translatable = TRUE,
- *   admin_permission = "administer ip",
+ *   admin_permission = "administer ip entities",
  *   entity_keys = {
  *     "id" = "id",
  *     "revision" = "vid",
@@ -52,28 +52,29 @@ use Drupal\user\UserInterface;
  *     "uuid" = "uuid",
  *     "uid" = "user_id",
  *     "langcode" = "langcode",
- *     "status" = "status",
+ *     "published" = "status",
  *   },
  *   links = {
- *     "canonical" = "/ip/{ip}",
+ *     "canonical" = "/ip/{neibers_ip}",
  *     "add-page" = "/ip/add",
- *     "add-form" = "/ip/add/{ip_type}",
- *     "edit-form" = "/ip/{ip}/edit",
- *     "delete-form" = "/ip/{ip}/delete",
- *     "version-history" = "/ip/{ip}/revisions",
- *     "revision" = "/ip/{ip}/revisions/{ip_revision}/view",
- *     "revision_revert" = "/ip/{ip}/revisions/{ip_revision}/revert",
- *     "revision_delete" = "/ip/{ip}/revisions/{ip_revision}/delete",
- *     "translation_revert" = "/ip/{ip}/revisions/{ip_revision}/revert/{langcode}",
+ *     "add-form" = "/ip/add/{neibers_ip_type}",
+ *     "edit-form" = "/ip/{neibers_ip}/edit",
+ *     "delete-form" = "/ip/{neibers_ip}/delete",
+ *     "version-history" = "/ip/{neibers_ip}/revisions",
+ *     "revision" = "/ip/{neibers_ip}/revisions/{neibers_ip_revision}/view",
+ *     "revision_revert" = "/ip/{neibers_ip}/revisions/{neibers_ip_revision}/revert",
+ *     "revision_delete" = "/ip/{neibers_ip}/revisions/{neibers_ip_revision}/delete",
+ *     "translation_revert" = "/ip/{neibers_ip}/revisions/{neibers_ip_revision}/revert/{langcode}",
  *     "collection" = "/ip",
  *   },
- *   bundle_entity_type = "ip_type",
- *   field_ui_base_route = "entity.ip_type.edit_form"
+ *   bundle_entity_type = "neibers_ip_type",
+ *   field_ui_base_route = "entity.neibers_ip_type.edit_form"
  * )
  */
 class IP extends RevisionableContentEntityBase implements IPInterface {
 
   use EntityChangedTrait;
+  use EntityPublishedTrait;
 
   /**
    * {@inheritdoc}
@@ -148,6 +149,7 @@ class IP extends RevisionableContentEntityBase implements IPInterface {
     }
   }
 
+
   /**
    * {@inheritdoc}
    */
@@ -211,35 +213,11 @@ class IP extends RevisionableContentEntityBase implements IPInterface {
   /**
    * {@inheritdoc}
    */
-  public function isPublished() {
-    return (bool) $this->getEntityKey('status');
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function setPublished($published) {
-    $this->set('status', $published ? TRUE : FALSE);
-    return $this;
-  }
-
-  /**
-   * {@inheritdoc}
-   */
   public static function baseFieldDefinitions(EntityTypeInterface $entity_type) {
     $fields = parent::baseFieldDefinitions($entity_type);
 
-    $fields['type']
-      ->setDisplayOptions('view', [
-        'type' => 'entity_reference_label',
-        'weight' => -2,
-      ])
-      ->setDisplayOptions('form', [
-        'type' => 'options_select',
-        'weight' => -2,
-      ])
-      ->setDisplayConfigurable('form', TRUE)
-      ->setDisplayConfigurable('view', TRUE);
+    // Add the published field.
+    $fields += static::publishedBaseFieldDefinitions($entity_type);
 
     $fields['user_id'] = BaseFieldDefinition::create('entity_reference')
       ->setLabel(t('Authored by'))
@@ -269,7 +247,6 @@ class IP extends RevisionableContentEntityBase implements IPInterface {
     $fields['name'] = BaseFieldDefinition::create('string')
       ->setLabel(t('Name'))
       ->setDescription(t('The name of the IP entity.'))
-      ->addConstraint('UniqueField')
       ->setRevisionable(TRUE)
       ->setSettings([
         'max_length' => 50,
@@ -349,16 +326,6 @@ class IP extends RevisionableContentEntityBase implements IPInterface {
       ->setDisplayConfigurable('form', TRUE)
       ->setDisplayConfigurable('view', TRUE);
 
-    $fields['status'] = BaseFieldDefinition::create('boolean')
-      ->setLabel(t('Publishing status'))
-      ->setDescription(t('A boolean indicating whether the IP is published.'))
-      ->setRevisionable(TRUE)
-      ->setDefaultValue(TRUE)
-      ->setDisplayOptions('form', [
-        'type' => 'boolean_checkbox',
-        'weight' => -3,
-      ]);
-
     $fields['state'] = BaseFieldDefinition::create('entity_status')
       ->setLabel(t('State'))
       ->setRequired(TRUE)
@@ -377,6 +344,12 @@ class IP extends RevisionableContentEntityBase implements IPInterface {
       ])
       ->setDisplayConfigurable('form', TRUE)
       ->setDisplayConfigurable('view', TRUE);
+
+    $fields['status']->setDescription(t('A boolean indicating whether the IP is published.'))
+      ->setDisplayOptions('form', [
+        'type' => 'boolean_checkbox',
+        'weight' => -3,
+      ]);
 
     $fields['created'] = BaseFieldDefinition::create('created')
       ->setLabel(t('Created'))
@@ -419,5 +392,7 @@ class IP extends RevisionableContentEntityBase implements IPInterface {
 
     return $ip;
   }
+
+
 
 }

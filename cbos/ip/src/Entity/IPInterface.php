@@ -1,20 +1,23 @@
 <?php
 
-namespace Drupal\ip\Entity;
+namespace Drupal\neibers_ip\Entity;
 
 use Drupal\Core\Entity\ContentEntityInterface;
 use Drupal\Core\Entity\RevisionLogInterface;
 use Drupal\Core\Entity\EntityChangedInterface;
+use Drupal\Core\Entity\EntityPublishedInterface;
 use Drupal\user\EntityOwnerInterface;
 
 /**
- * Provides an interface for defining IP.
+ * Provides an interface for defining IP entities.
  *
- * @ingroup ip
+ * @ingroup neibers_ip
  */
-interface IPInterface extends ContentEntityInterface, RevisionLogInterface, EntityChangedInterface, EntityOwnerInterface {
+interface IPInterface extends ContentEntityInterface, RevisionLogInterface, EntityChangedInterface, EntityPublishedInterface, EntityOwnerInterface {
 
-  // Add get/set methods for your configuration properties here.
+  /**
+   * Add get/set methods for your configuration properties here.
+   */
 
   /**
    * Gets the IP name.
@@ -30,7 +33,7 @@ interface IPInterface extends ContentEntityInterface, RevisionLogInterface, Enti
    * @param string $name
    *   The IP name.
    *
-   * @return \Drupal\ip\Entity\IPInterface
+   * @return \Drupal\neibers_ip\Entity\IPInterface
    *   The called IP entity.
    */
   public function setName($name);
@@ -49,31 +52,10 @@ interface IPInterface extends ContentEntityInterface, RevisionLogInterface, Enti
    * @param int $timestamp
    *   The IP creation timestamp.
    *
-   * @return \Drupal\ip\Entity\IPInterface
+   * @return \Drupal\neibers_ip\Entity\IPInterface
    *   The called IP entity.
    */
   public function setCreatedTime($timestamp);
-
-  /**
-   * Returns the IP published status indicator.
-   *
-   * Unpublished IP are only visible to restricted users.
-   *
-   * @return bool
-   *   TRUE if the IP is published.
-   */
-  public function isPublished();
-
-  /**
-   * Sets the published status of a IP.
-   *
-   * @param bool $published
-   *   TRUE to set this IP to published, FALSE to set it to unpublished.
-   *
-   * @return \Drupal\ip\Entity\IPInterface
-   *   The called IP entity.
-   */
-  public function setPublished($published);
 
   /**
    * Gets the IP revision creation timestamp.
@@ -89,7 +71,7 @@ interface IPInterface extends ContentEntityInterface, RevisionLogInterface, Enti
    * @param int $timestamp
    *   The UNIX timestamp of when this revision was created.
    *
-   * @return \Drupal\ip\Entity\IPInterface
+   * @return \Drupal\neibers_ip\Entity\IPInterface
    *   The called IP entity.
    */
   public function setRevisionCreationTime($timestamp);
@@ -108,7 +90,7 @@ interface IPInterface extends ContentEntityInterface, RevisionLogInterface, Enti
    * @param int $uid
    *   The user ID of the revision author.
    *
-   * @return \Drupal\ip\Entity\IPInterface
+   * @return \Drupal\neibers_ip\Entity\IPInterface
    *   The called IP entity.
    */
   public function setRevisionUserId($uid);
@@ -124,5 +106,6 @@ interface IPInterface extends ContentEntityInterface, RevisionLogInterface, Enti
    * Unbind administer ip from used hardware for user.
    */
   public function unbindInet(IPInterface $ip);
+
 
 }

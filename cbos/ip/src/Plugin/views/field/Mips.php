@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\ip\Plugin\views\field;
+namespace Drupal\neibers_ip\Plugin\views\field;
 
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\views\Plugin\views\display\DisplayPluginBase;
@@ -63,7 +63,7 @@ class Mips extends PrerenderList {
   public function preRender(&$values) {
     $this->items = [];
 
-    $ip_storage = $this->entityTypeManager->getStorage('ip');
+    $ip_storage = $this->entityTypeManager->getStorage('neibers_ip');
 
     foreach ($values as $result) {
       $id = $this->getValue($result);

@@ -1,11 +1,11 @@
 <?php
 
-namespace Drupal\ip\Entity;
+namespace Drupal\neibers_ip\Entity;
 
 use Drupal\views\EntityViewsData;
 
 /**
- * Provides Views data for IP.
+ * Provides Views data for IP entities.
  */
 class IPViewsData extends EntityViewsData {
 
@@ -17,7 +17,6 @@ class IPViewsData extends EntityViewsData {
 
     // Additional information for Views integration, such as table joins, can be
     // put here.
-
     return $data;
   }
 

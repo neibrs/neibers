@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\ip\Form;
+namespace Drupal\neibers_ip\Form;
 
 use Drupal\Core\Entity\EntityForm;
 use Drupal\Core\Form\FormStateInterface;
@@ -16,23 +16,23 @@ class IPTypeForm extends EntityForm {
   public function form(array $form, FormStateInterface $form_state) {
     $form = parent::form($form, $form_state);
 
-    $ip_type = $this->entity;
+    $neibers_ip_type = $this->entity;
     $form['label'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Label'),
       '#maxlength' => 255,
-      '#default_value' => $ip_type->label(),
+      '#default_value' => $neibers_ip_type->label(),
       '#description' => $this->t("Label for the IP type."),
       '#required' => TRUE,
     ];
 
     $form['id'] = [
       '#type' => 'machine_name',
-      '#default_value' => $ip_type->id(),
+      '#default_value' => $neibers_ip_type->id(),
       '#machine_name' => [
-        'exists' => '\Drupal\ip\Entity\IPType::load',
+        'exists' => '\Drupal\neibers_ip\Entity\IPType::load',
       ],
-      '#disabled' => !$ip_type->isNew(),
+      '#disabled' => !$neibers_ip_type->isNew(),
     ];
 
     /* You will need additional form elements for your custom properties. */
@@ -44,22 +44,22 @@ class IPTypeForm extends EntityForm {
    * {@inheritdoc}
    */
   public function save(array $form, FormStateInterface $form_state) {
-    $ip_type = $this->entity;
-    $status = $ip_type->save();
+    $neibers_ip_type = $this->entity;
+    $status = $neibers_ip_type->save();
 
     switch ($status) {
       case SAVED_NEW:
-        drupal_set_message($this->t('Created the %label IP type.', [
-          '%label' => $ip_type->label(),
+        $this->messenger()->addMessage($this->t('Created the %label IP type.', [
+          '%label' => $neibers_ip_type->label(),
         ]));
         break;
 
       default:
-        drupal_set_message($this->t('Saved the %label IP type.', [
-          '%label' => $ip_type->label(),
+        $this->messenger()->addMessage($this->t('Saved the %label IP type.', [
+          '%label' => $neibers_ip_type->label(),
         ]));
     }
-    $form_state->setRedirectUrl($ip_type->toUrl('collection'));
+    $form_state->setRedirectUrl($neibers_ip_type->toUrl('collection'));
   }
 
 }

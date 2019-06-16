@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\ip\Form;
+namespace Drupal\neibers_ip\Form;
 
 use Drupal\Core\Database\Connection;
 use Drupal\Core\Entity\EntityStorageInterface;
@@ -12,7 +12,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 /**
  * Provides a form for deleting a IP revision.
  *
- * @ingroup ip
+ * @ingroup neibers_ip
  */
 class IPRevisionDeleteForm extends ConfirmFormBase {
 
@@ -20,7 +20,7 @@ class IPRevisionDeleteForm extends ConfirmFormBase {
   /**
    * The IP revision.
    *
-   * @var \Drupal\ip\Entity\IPInterface
+   * @var \Drupal\neibers_ip\Entity\IPInterface
    */
   protected $revision;
 
@@ -55,9 +55,9 @@ class IPRevisionDeleteForm extends ConfirmFormBase {
    * {@inheritdoc}
    */
   public static function create(ContainerInterface $container) {
-    $entity_manager = $container->get('entity.manager');
+    $entity_type_manager = $container->get('entity_type.manager');
     return new static(
-      $entity_manager->getStorage('ip'),
+      $entity_type_manager->getStorage('neibers_ip'),
       $container->get('database')
     );
   }
@@ -66,35 +66,37 @@ class IPRevisionDeleteForm extends ConfirmFormBase {
    * {@inheritdoc}
    */
   public function getFormId() {
-    return 'ip_revision_delete_confirm';
+    return 'neibers_ip_revision_delete_confirm';
   }
 
   /**
    * {@inheritdoc}
    */
   public function getQuestion() {
-    return t('Are you sure you want to delete the revision from %revision-date?', ['%revision-date' => format_date($this->revision->getRevisionCreationTime())]);
+    return $this->t('Are you sure you want to delete the revision from %revision-date?', [
+      '%revision-date' => format_date($this->revision->getRevisionCreationTime()),
+    ]);
   }
 
   /**
    * {@inheritdoc}
    */
   public function getCancelUrl() {
-    return new Url('entity.ip.version_history', ['ip' => $this->revision->id()]);
+    return new Url('entity.neibers_ip.version_history', ['neibers_ip' => $this->revision->id()]);
   }
 
   /**
    * {@inheritdoc}
    */
   public function getConfirmText() {
-    return t('Delete');
+    return $this->t('Delete');
   }
 
   /**
    * {@inheritdoc}
    */
-  public function buildForm(array $form, FormStateInterface $form_state, $ip_revision = NULL) {
-    $this->revision = $this->IPStorage->loadRevision($ip_revision);
+  public function buildForm(array $form, FormStateInterface $form_state, $neibers_ip_revision = NULL) {
+    $this->revision = $this->IPStorage->loadRevision($neibers_ip_revision);
     $form = parent::buildForm($form, $form_state);
 
     return $form;
@@ -107,15 +109,15 @@ class IPRevisionDeleteForm extends ConfirmFormBase {
     $this->IPStorage->deleteRevision($this->revision->getRevisionId());
 
     $this->logger('content')->notice('IP: deleted %title revision %revision.', ['%title' => $this->revision->label(), '%revision' => $this->revision->getRevisionId()]);
-    drupal_set_message(t('Revision from %revision-date of IP %title has been deleted.', ['%revision-date' => format_date($this->revision->getRevisionCreationTime()), '%title' => $this->revision->label()]));
+    $this->messenger()->addMessage(t('Revision from %revision-date of IP %title has been deleted.', ['%revision-date' => format_date($this->revision->getRevisionCreationTime()), '%title' => $this->revision->label()]));
     $form_state->setRedirect(
-      'entity.ip.canonical',
-       ['ip' => $this->revision->id()]
+      'entity.neibers_ip.canonical',
+       ['neibers_ip' => $this->revision->id()]
     );
-    if ($this->connection->query('SELECT COUNT(DISTINCT vid) FROM {ip_field_revision} WHERE id = :id', [':id' => $this->revision->id()])->fetchField() > 1) {
+    if ($this->connection->query('SELECT COUNT(DISTINCT vid) FROM {neibers_ip_field_revision} WHERE id = :id', [':id' => $this->revision->id()])->fetchField() > 1) {
       $form_state->setRedirect(
-        'entity.ip.version_history',
-         ['ip' => $this->revision->id()]
+        'entity.neibers_ip.version_history',
+         ['neibers_ip' => $this->revision->id()]
       );
     }
   }

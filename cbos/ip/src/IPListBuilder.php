@@ -1,15 +1,15 @@
 <?php
 
-namespace Drupal\ip;
+namespace Drupal\neibers_ip;
 
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\EntityListBuilder;
 use Drupal\Core\Link;
 
 /**
- * Defines a class to build a listing of IP.
+ * Defines a class to build a listing of IP entities.
  *
- * @ingroup ip
+ * @ingroup neibers_ip
  */
 class IPListBuilder extends EntityListBuilder {
 
@@ -26,12 +26,12 @@ class IPListBuilder extends EntityListBuilder {
    * {@inheritdoc}
    */
   public function buildRow(EntityInterface $entity) {
-    /* @var $entity \Drupal\ip\Entity\IP */
+    /* @var \Drupal\neibers_ip\Entity\IP $entity */
     $row['id'] = $entity->id();
     $row['name'] = Link::createFromRoute(
       $entity->label(),
-      'entity.ip.edit_form',
-      ['ip' => $entity->id()]
+      'entity.neibers_ip.edit_form',
+      ['neibers_ip' => $entity->id()]
     );
     return $row + parent::buildRow($entity);
   }

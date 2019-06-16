@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\ip\Form;
+namespace Drupal\neibers_ip\Form;
 
 use Drupal\Core\Entity\EntityConfirmFormBase;
 use Drupal\Core\Form\FormStateInterface;
@@ -22,7 +22,7 @@ class IPTypeDeleteForm extends EntityConfirmFormBase {
    * {@inheritdoc}
    */
   public function getCancelUrl() {
-    return new Url('entity.ip_type.collection');
+    return new Url('entity.neibers_ip_type.collection');
   }
 
   /**
@@ -38,13 +38,11 @@ class IPTypeDeleteForm extends EntityConfirmFormBase {
   public function submitForm(array &$form, FormStateInterface $form_state) {
     $this->entity->delete();
 
-    drupal_set_message(
-      $this->t('content @type: deleted @label.',
-        [
-          '@type' => $this->entity->bundle(),
-          '@label' => $this->entity->label(),
-        ]
-        )
+    $this->messenger()->addMessage(
+      $this->t('content @type: deleted @label.', [
+        '@type' => $this->entity->bundle(),
+        '@label' => $this->entity->label(),
+      ])
     );
 
     $form_state->setRedirectUrl($this->getCancelUrl());

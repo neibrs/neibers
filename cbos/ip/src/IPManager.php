@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\ip;
+namespace Drupal\neibers_ip;
 
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
@@ -58,7 +58,7 @@ class IPManager implements IPManagerInterface {
         'url' => Url::fromRoute('eabax_workflows.apply_transition', [
           'workflow_type' => $workflow->id(),
           'transition_id' => $transition->id(),
-          'entity_type' => 'ip',
+          'entity_type' => 'neibers_ip',
           'entity_id' => $entity->id(),
         ]),
       ];

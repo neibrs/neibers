@@ -15,10 +15,10 @@ vendor/bin/drush en -y coffee \
 
 vendor/bin/drush en -y commerce_checkout \
   commerce_price \
+  neibers_fitting \
   neibers_hardware \
   role_menu
 
-#  neibers_fitting \
 #  neibers_idc \
 #  neibers_mall \
 

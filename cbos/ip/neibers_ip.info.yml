@@ -1,9 +1,10 @@
 name: 'IP'
 type: module
+description: 'Uip'
 core: 8.x
 package: 'Neibers'
-interface translation project: ip
-interface translation server pattern: modules/neibers/cbos/%project/translations/%project.%language.po
+interface translation project: neibers_ip
+interface translation server pattern: modules/neibers/cbos/ip/translations/%project.%language.po
 dependencies:
   - commerce:commerce_order
   - eabax_workflows

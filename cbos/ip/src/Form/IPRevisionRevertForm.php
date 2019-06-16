@@ -1,19 +1,19 @@
 <?php
 
-namespace Drupal\ip\Form;
+namespace Drupal\neibers_ip\Form;
 
 use Drupal\Core\Datetime\DateFormatterInterface;
 use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Form\ConfirmFormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Url;
-use Drupal\ip\Entity\IPInterface;
+use Drupal\neibers_ip\Entity\IPInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
  * Provides a form for reverting a IP revision.
  *
- * @ingroup ip
+ * @ingroup neibers_ip
  */
 class IPRevisionRevertForm extends ConfirmFormBase {
 
@@ -21,7 +21,7 @@ class IPRevisionRevertForm extends ConfirmFormBase {
   /**
    * The IP revision.
    *
-   * @var \Drupal\ip\Entity\IPInterface
+   * @var \Drupal\neibers_ip\Entity\IPInterface
    */
   protected $revision;
 
@@ -57,7 +57,7 @@ class IPRevisionRevertForm extends ConfirmFormBase {
    */
   public static function create(ContainerInterface $container) {
     return new static(
-      $container->get('entity.manager')->getStorage('ip'),
+      $container->get('entity_type.manager')->getStorage('neibers_ip'),
       $container->get('date.formatter')
     );
   }
@@ -66,28 +66,30 @@ class IPRevisionRevertForm extends ConfirmFormBase {
    * {@inheritdoc}
    */
   public function getFormId() {
-    return 'ip_revision_revert_confirm';
+    return 'neibers_ip_revision_revert_confirm';
   }
 
   /**
    * {@inheritdoc}
    */
   public function getQuestion() {
-    return t('Are you sure you want to revert to the revision from %revision-date?', ['%revision-date' => $this->dateFormatter->format($this->revision->getRevisionCreationTime())]);
+    return $this->t('Are you sure you want to revert to the revision from %revision-date?', [
+      '%revision-date' => $this->dateFormatter->format($this->revision->getRevisionCreationTime()),
+    ]);
   }
 
   /**
    * {@inheritdoc}
    */
   public function getCancelUrl() {
-    return new Url('entity.ip.version_history', ['ip' => $this->revision->id()]);
+    return new Url('entity.neibers_ip.version_history', ['neibers_ip' => $this->revision->id()]);
   }
 
   /**
    * {@inheritdoc}
    */
   public function getConfirmText() {
-    return t('Revert');
+    return $this->t('Revert');
   }
 
   /**
@@ -100,8 +102,8 @@ class IPRevisionRevertForm extends ConfirmFormBase {
   /**
    * {@inheritdoc}
    */
-  public function buildForm(array $form, FormStateInterface $form_state, $ip_revision = NULL) {
-    $this->revision = $this->IPStorage->loadRevision($ip_revision);
+  public function buildForm(array $form, FormStateInterface $form_state, $neibers_ip_revision = NULL) {
+    $this->revision = $this->IPStorage->loadRevision($neibers_ip_revision);
     $form = parent::buildForm($form, $form_state);
 
     return $form;
@@ -116,26 +118,28 @@ class IPRevisionRevertForm extends ConfirmFormBase {
     $original_revision_timestamp = $this->revision->getRevisionCreationTime();
 
     $this->revision = $this->prepareRevertedRevision($this->revision, $form_state);
-    $this->revision->revision_log = t('Copy of the revision from %date.', ['%date' => $this->dateFormatter->format($original_revision_timestamp)]);
+    $this->revision->revision_log = $this->t('Copy of the revision from %date.', [
+      '%date' => $this->dateFormatter->format($original_revision_timestamp),
+    ]);
     $this->revision->save();
 
     $this->logger('content')->notice('IP: reverted %title revision %revision.', ['%title' => $this->revision->label(), '%revision' => $this->revision->getRevisionId()]);
-    drupal_set_message(t('IP %title has been reverted to the revision from %revision-date.', ['%title' => $this->revision->label(), '%revision-date' => $this->dateFormatter->format($original_revision_timestamp)]));
+    $this->messenger()->addMessage(t('IP %title has been reverted to the revision from %revision-date.', ['%title' => $this->revision->label(), '%revision-date' => $this->dateFormatter->format($original_revision_timestamp)]));
     $form_state->setRedirect(
-      'entity.ip.version_history',
-      ['ip' => $this->revision->id()]
+      'entity.neibers_ip.version_history',
+      ['neibers_ip' => $this->revision->id()]
     );
   }
 
   /**
    * Prepares a revision to be reverted.
    *
-   * @param \Drupal\ip\Entity\IPInterface $revision
+   * @param \Drupal\neibers_ip\Entity\IPInterface $revision
    *   The revision to be reverted.
    * @param \Drupal\Core\Form\FormStateInterface $form_state
    *   The current state of the form.
    *
-   * @return \Drupal\ip\Entity\IPInterface
+   * @return \Drupal\neibers_ip\Entity\IPInterface
    *   The prepared revision ready to be stored.
    */
   protected function prepareRevertedRevision(IPInterface $revision, FormStateInterface $form_state) {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\ip\Plugin\WorkflowType;
+namespace Drupal\neibers_ip\Plugin\WorkflowType;
 
 use Drupal\eabax_workflows\Plugin\WorkflowType\EntityWorkflowBase;
 

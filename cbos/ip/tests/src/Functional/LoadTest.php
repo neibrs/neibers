@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\Tests\ip\Functional;
+namespace Drupal\Tests\neibers_ip\Functional;
 
 use Drupal\Core\Url;
 use Drupal\Tests\BrowserTestBase;
@@ -8,7 +8,7 @@ use Drupal\Tests\BrowserTestBase;
 /**
  * Simple test to ensure that main page loads with module enabled.
  *
- * @group ip
+ * @group neibers_ip
  */
 class LoadTest extends BrowserTestBase {
 
@@ -17,7 +17,7 @@ class LoadTest extends BrowserTestBase {
    *
    * @var array
    */
-  public static $modules = ['ip'];
+  public static $modules = ['neibers_ip'];
 
   /**
    * A user with permission to administer site configuration.

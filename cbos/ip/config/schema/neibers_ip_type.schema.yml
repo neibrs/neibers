@@ -1,4 +1,4 @@
-ip.type.*:
+neibers_ip.type.*:
   type: config_entity
   label: 'IP type config'
   mapping:
@@ -11,7 +11,7 @@ ip.type.*:
     uuid:
       type: string
 
-ip.type.*.third_party.ip_state:
+neibers_ip.type.*.third_party.ip_state:
   type: mapping
   label: 'Workflow status settings'
   mapping:

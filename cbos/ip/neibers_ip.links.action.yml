@@ -1,38 +1,39 @@
-entity.ip.add_form:
-  route_name: entity.ip.add_page
+entity.neibers_ip.add_form:
+  route_name: entity.neibers_ip.add_page
   title: 'Add'
   class: \Drupal\eabax_core\Plugin\Menu\LocalAction\AddDestination
   options:
     query:
       destination: '/ip'
   appears_on:
-    - entity.ip.collection
-entity.ip_type.add_form:
-  route_name: entity.ip_type.add_form
-  title: 'Add'
+    - entity.neibers_ip.collection
+    -
+entity.neibers_ip_type.add_form:
+  route_name: entity.neibers_ip_type.add_form
+  title: 'Add type'
   options:
     query:
       destination: '/ip/type'
   appears_on:
-    - entity.ip_type.collection
+    - entity.neibers_ip_type.collection
 
 # Manual add
-ip.import:
+neibers_ip.import:
   route_name: import.entity_import
   title: 'Import'
   route_parameters:
-    entity_type_id: ip
+    entity_type_id: neibers_ip
   options:
     query:
       destination: '/ip'
   appears_on:
-    - entity.ip.collection
+    - entity.neibers_ip.collection
 
-ip.multiple.add_form:
-  route_name: ip.multiple.add_form
+neibers_ip.multle.add_form:
+  route_name: neibers_ip.multiple.add_form
   title: 'Add multiple'
   options:
     query:
       destination: '/ip'
   appears_on:
-    - entity.ip.collection
+    - entity.neibers_ip.collection

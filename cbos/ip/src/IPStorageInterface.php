@@ -1,28 +1,26 @@
 <?php
 
-namespace Drupal\ip;
+namespace Drupal\neibers_ip;
 
-use Drupal\commerce_order\Entity\OrderInterface;
 use Drupal\Core\Entity\ContentEntityStorageInterface;
 use Drupal\Core\Session\AccountInterface;
 use Drupal\Core\Language\LanguageInterface;
-use Drupal\ip\Entity\IPInterface;
-use Drupal\neibers_hardware\Entity\HardwareInterface;
+use Drupal\neibers_ip\Entity\IPInterface;
 
 /**
- * Defines the storage handler class for IP.
+ * Defines the storage handler class for IP entities.
  *
  * This extends the base storage class, adding required special handling for
- * IP.
+ * IP entities.
  *
- * @ingroup ip
+ * @ingroup neibers_ip
  */
 interface IPStorageInterface extends ContentEntityStorageInterface {
 
   /**
    * Gets a list of IP revision IDs for a specific IP.
    *
-   * @param \Drupal\ip\Entity\IPInterface $entity
+   * @param \Drupal\neibers_ip\Entity\IPInterface $entity
    *   The IP entity.
    *
    * @return int[]
@@ -44,7 +42,7 @@ interface IPStorageInterface extends ContentEntityStorageInterface {
   /**
    * Counts the number of revisions in the default language.
    *
-   * @param \Drupal\ip\Entity\IPInterface $entity
+   * @param \Drupal\neibers_ip\Entity\IPInterface $entity
    *   The IP entity.
    *
    * @return int
@@ -59,39 +57,5 @@ interface IPStorageInterface extends ContentEntityStorageInterface {
    *   The language object.
    */
   public function clearRevisionsLanguage(LanguageInterface $language);
-
-  /**
-   * @param \Drupal\commerce_order\Entity\OrderInterface $order
-   *
-   * @return \Drupal\ip\Entity\IPInterface[]
-   * @description Get Inet ip by order.
-   */
-  public function getInetsByOrder(OrderInterface $order);
-
-  /**
-   * @param \Drupal\commerce_order\Entity\OrderInterface $order
-   *
-   * @return \Drupal\ip\Entity\IPInterface[]
-   * @description Get Inet ip by order.
-   */
-  public function getOnetsByOrder(OrderInterface $order);
-
-  /**
-   * @param \Drupal\neibers_cabinet\Entity\SeatInterface $seat
-   *
-   * @return \Drupal\ip\Entity\IPInterface[]
-   * @description Get ips by seat.
-   */
-  public function getOnetsByInet(IPInterface $ip);
-
-  /**
-   * @return \Drupal\ip\Entity\IPInterface[]
-   */
-  public function getAvailableInetByHardware(HardwareInterface $neibers_hardware);
-
-  /**
-   * @return \Drupal\ip\Entity\IPInterface[]
-   */
-  public function getAvailableOnets();
 
 }
