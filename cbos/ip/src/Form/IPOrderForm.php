@@ -50,7 +50,7 @@ class IPOrderForm extends FormBase {
     $this->order = $order;
     // TODO add ip table for this order
 
-    $header = [$this->t('Hardware')];
+    $header = [$this->t('Hardware type'), $this->t('Hardware')];
     if ($display->getMode() == 'default') {
       $header = array_merge($header, [$this->t('Administer IP')]);
     }
@@ -65,6 +65,9 @@ class IPOrderForm extends FormBase {
 
     $inets = $this->entityTypeManager->getStorage('neibers_ip')->getInetsByOrder($this->order);
     foreach ($inets as $key => $entity_ip) {
+      $form['ips'][$key]['type'] = [
+        '#markup' => $entity_ip->hardware->entity->type->entity->label(),
+      ];
       $form['ips'][$key]['hardware'] = [
         '#markup' => $entity_ip->hardware->entity->label(),
       ];
