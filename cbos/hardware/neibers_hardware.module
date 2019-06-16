@@ -17,6 +17,11 @@ function neibers_hardware_help($route_name, RouteMatchInterface $route_match) {
       $output = '';
       $output .= '<h3>' . t('About') . '</h3>';
       return $output;
+    case 'entity.neibers_hardware.edit_form':
+      $output = '';
+      $output .= '<p>' . t('Hardware equipment must be assigned a seat.');
+
+      return $output;
 
     default:
   }

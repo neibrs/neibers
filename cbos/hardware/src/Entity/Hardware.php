@@ -211,6 +211,7 @@ class Hardware extends ContentEntityBase implements HardwareInterface {
 
     $fields['seat'] = BaseFieldDefinition::create('entity_reference')
       ->setLabel(t('Seat'))
+      ->setDescription(t('Hardware equipment must be assigned a location seat.'))
       ->setSetting('target_type', 'neibers_seat')
       ->setRequired(TRUE)
       ->setDisplayOptions('view', [
