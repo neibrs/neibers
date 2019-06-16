@@ -30,7 +30,6 @@ function neibers_hardware_theme() {
   $theme['neibers_hardware'] = [
     'render element' => 'elements',
     'file' => 'neibers_hardware.page.inc',
-    'template' => 'neibers_hardware',
   ];
   $theme['neibers_hardware_content_add_list'] = [
     'render element' => 'content',
