@@ -9,7 +9,7 @@ use Drupal\Core\Entity\EntityPublishedInterface;
 use Drupal\user\EntityOwnerInterface;
 
 /**
- * Provides an interface for defining IP entities.
+ * Provides an interface for defining IP.
  *
  * @ingroup neibers_ip
  */

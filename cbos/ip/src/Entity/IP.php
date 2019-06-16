@@ -43,7 +43,7 @@ use Drupal\user\UserInterface;
  *   revision_table = "neibers_ip_revision",
  *   revision_data_table = "neibers_ip_field_revision",
  *   translatable = TRUE,
- *   admin_permission = "administer ip entities",
+ *   admin_permission = "administer ip",
  *   entity_keys = {
  *     "id" = "id",
  *     "revision" = "vid",

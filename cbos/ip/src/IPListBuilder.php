@@ -7,7 +7,7 @@ use Drupal\Core\Entity\EntityListBuilder;
 use Drupal\Core\Link;
 
 /**
- * Defines a class to build a listing of IP entities.
+ * Defines a class to build a listing of IP.
  *
  * @ingroup neibers_ip
  */

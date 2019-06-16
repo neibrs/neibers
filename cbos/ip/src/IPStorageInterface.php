@@ -8,10 +8,10 @@ use Drupal\Core\Language\LanguageInterface;
 use Drupal\neibers_ip\Entity\IPInterface;
 
 /**
- * Defines the storage handler class for IP entities.
+ * Defines the storage handler class for IP.
  *
  * This extends the base storage class, adding required special handling for
- * IP entities.
+ * IP.
  *
  * @ingroup neibers_ip
  */

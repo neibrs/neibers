@@ -111,8 +111,8 @@ class IPController extends ControllerBase implements ContainerInjectionInterface
     $build['#title'] = $has_translations ? $this->t('@langname revisions for %title', ['@langname' => $langname, '%title' => $neibers_ip->label()]) : $this->t('Revisions for %title', ['%title' => $neibers_ip->label()]);
 
     $header = [$this->t('Revision'), $this->t('Operations')];
-    $revert_permission = (($account->hasPermission("revert all ip revisions") || $account->hasPermission('administer ip entities')));
-    $delete_permission = (($account->hasPermission("delete all ip revisions") || $account->hasPermission('administer ip entities')));
+    $revert_permission = (($account->hasPermission("revert all ip revisions") || $account->hasPermission('administer ip')));
+    $delete_permission = (($account->hasPermission("delete all ip revisions") || $account->hasPermission('administer ip')));
 
     $rows = [];
 
