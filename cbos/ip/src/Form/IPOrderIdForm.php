@@ -69,7 +69,7 @@ class IPOrderIdForm extends FormBase {
         'type' => ['#markup' => $ip->get('type')->entity->label()],
         // TODO Add link to label.
         'ip' => ['#markup' => $ip->label()],
-        'operations' => \Drupal::service('ip.manager')->buildOperations($ip),
+        'operations' => \Drupal::service('neibers_ip.manager')->buildOperations($ip),
       ];
     }
     return $form;

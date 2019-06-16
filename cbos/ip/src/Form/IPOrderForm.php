@@ -87,7 +87,7 @@ class IPOrderForm extends FormBase {
       ];
 
       if ($display->getMode() == 'default') {
-        $form['ips'][$key]['operation'] = \Drupal::service('ip.manager')->buildOperations($entity_ip);
+        $form['ips'][$key]['operation'] = \Drupal::service('neibers_ip.manager')->buildOperations($entity_ip);
       }
     }
 
@@ -105,7 +105,7 @@ class IPOrderForm extends FormBase {
     foreach ($bips as $key => $bip) {
       $form['bips'][$key]['id'] = ['#markup' => $i++];
       $form['bips'][$key]['ip'] = ['#markup' => $bip->label()];
-      $form['bips'][$key]['operations'] = \Drupal::service('ip.manager')->buildOperations($bip);
+      $form['bips'][$key]['operations'] = \Drupal::service('neibers_ip.manager')->buildOperations($bip);
     }
 
     if ($display->getMode() == 'default') {
