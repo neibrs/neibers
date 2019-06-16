@@ -86,7 +86,7 @@ process:
       source: Seat
     -
       plugin: entity_generate_plus
-      entity_type: seat
+      entity_type: neibers_seat
       value_key: name
       bundle_key: type
       bundle: default
@@ -101,7 +101,7 @@ process:
       source: Hardware
     -
       plugin: entity_generate_plus
-      entity_type: server
+      entity_type: neibers_hardware
       bundle_key: type
       bundle: default
       value_key: name
@@ -122,4 +122,4 @@ process:
         已用: used
 
 destination:
-  plugin: entity:ip
+  plugin: entity:neibers_ip

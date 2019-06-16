@@ -38,4 +38,4 @@ type_settings:
         - used
       to: free
       weight: 3
-  entity_type_id: ip
+  entity_type_id: neibers_ip
