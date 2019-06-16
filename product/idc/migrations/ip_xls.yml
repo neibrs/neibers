@@ -72,7 +72,7 @@ process:
       source: Cabinet
     -
       plugin: entity_generate_plus
-      entity_type: cabinet
+      entity_type: neibers_cabinet
       value_key: name
       ignore_case: true
       conditions:
@@ -89,13 +89,13 @@ process:
       entity_type: neibers_seat
       value_key: name
       bundle_key: type
-      bundle: default
+      bundle: multiple
       ignore_case: true
       conditions:
         cabinet: '@ip_cabinet'
       values:
         cabinet: '@ip_cabinet'
-  server:
+  hardware:
     - plugin: skip_on_empty
       method: process
       source: Hardware
@@ -103,7 +103,7 @@ process:
       plugin: entity_generate_plus
       entity_type: neibers_hardware
       bundle_key: type
-      bundle: default
+      bundle: server
       value_key: name
       ignore_case: true
       conditions:
