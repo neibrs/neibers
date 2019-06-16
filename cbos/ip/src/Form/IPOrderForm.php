@@ -54,12 +54,12 @@ class IPOrderForm extends FormBase {
     if ($display->getMode() == 'default') {
       $header = array_merge($header, [$this->t('Administer IP')]);
     }
-    $header = array_merge($header, [$this->t('Business IP'), $this->t('Fitting')]);
+    $header = array_merge($header, [$this->t('Business IP'), $this->t('Fitting'), $this->t('Operations')]);
     $form['ips'] = [
       '#caption' => $this->t('IP tables'),
       '#type' => 'table',
       '#title' => $this->t('All the Ips'),
-      '#header' => $display->getMode() == 'default' ? array_merge($header, [$this->t('Operations')]) : $header,
+      '#header' => $header,
       '#sticky' => TRUE,
     ];
 
@@ -89,9 +89,7 @@ class IPOrderForm extends FormBase {
         '#markup' => '',
       ];
 
-      if ($display->getMode() == 'default') {
-        $form['ips'][$key]['operation'] = \Drupal::service('neibers_ip.manager')->buildOperations($entity_ip);
-      }
+      $form['ips'][$key]['operation'] = \Drupal::service('neibers_ip.manager')->buildOperations($entity_ip);
     }
 
     $form['bips'] = [
