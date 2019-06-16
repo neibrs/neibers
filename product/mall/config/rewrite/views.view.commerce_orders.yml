@@ -7,7 +7,7 @@ dependencies:
     - commerce_order
     - commerce_price
     - commerce_store
-    - ip
+    - neibers_ip
     - options
     - state_machine
     - user

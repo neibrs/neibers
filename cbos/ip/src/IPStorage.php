@@ -2,9 +2,11 @@
 
 namespace Drupal\neibers_ip;
 
+use Drupal\commerce_order\Entity\OrderInterface;
 use Drupal\Core\Entity\Sql\SqlContentEntityStorage;
 use Drupal\Core\Session\AccountInterface;
 use Drupal\Core\Language\LanguageInterface;
+use Drupal\neibers_hardware\Entity\HardwareInterface;
 use Drupal\neibers_ip\Entity\IPInterface;
 
 /**
@@ -55,4 +57,66 @@ class IPStorage extends SqlContentEntityStorage implements IPStorageInterface {
       ->execute();
   }
 
+  /**
+   * {@inheritDoc}
+   */
+  public function getInetsByOrder(OrderInterface $order) {
+    $inets = $this->loadByProperties([
+      'order_id' => $order->id(),
+      'type' => 'inet',
+    ]);
+
+    return $inets;
+  }
+
+  public function getOnetsByOrder(OrderInterface $order) {
+    $onets = $this->loadByProperties([
+      'order_id' => $order->id(),
+      'type' => 'onet',
+    ]);
+
+    return $onets;
+  }
+
+  /**
+   * {@inheritDoc}
+   */
+  public function getOnetsByInet(IPInterface $ip) {
+    // TODO add client id condition.
+    /** @var \Drupal\neibers_ip\Entity\IPInterface[] $onets */
+    $onets = $this->loadByProperties([
+      'type' => 'onet',
+      'seat' => $ip->get('seat')->target_id,
+      'order_id' => $ip->get('order_id')->target_id,
+    ]);
+
+    return $onets;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function getAvailableInetByHardware(HardwareInterface $hardware) {
+    $ips = $this->loadByProperties([
+      'type' => 'inet',
+      'hardware' => $hardware->id(),
+      'state' => 'free',
+      // Add user_id condition for none client
+    ]);
+
+    return $ips;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function getAvailableOnets() {
+    $ips = $this->loadByProperties([
+      'type' => 'onet',
+      'state' => 'free',
+      // Add user_id condition for none client
+    ]);
+
+    return $ips;
+  }
 }

@@ -63,7 +63,7 @@ class IPOrderIdForm extends FormBase {
         'type' => 'onet',
       ]);
     foreach (array_merge($mips, $bips) as $key => $ip) {
-      /** @var \Drupal\ip\Entity\IPInterface $ip */
+      /** @var \Drupal\neibers_ip\Entity\IPInterface $ip */
       $form['ips'][$key] = [
         'id' => ['#markup' => $ip->id()],
         'type' => ['#markup' => $ip->get('type')->entity->label()],

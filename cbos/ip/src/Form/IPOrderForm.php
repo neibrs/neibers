@@ -63,7 +63,7 @@ class IPOrderForm extends FormBase {
       '#sticky' => TRUE,
     ];
 
-    $inets = $this->entityTypeManager->getStorage('ip')->getInetsByOrder($this->order);
+    $inets = $this->entityTypeManager->getStorage('neibers_ip')->getInetsByOrder($this->order);
     foreach ($inets as $key => $entity_ip) {
       $form['ips'][$key]['hardware'] = [
         '#markup' => $entity_ip->hardware->entity->label(),
@@ -76,7 +76,7 @@ class IPOrderForm extends FormBase {
 
       $onets = array_map(function ($ip) {
         return $ip->label();
-      }, $this->entityTypeManager->getStorage('ip')->getOnetsByInet($entity_ip));
+      }, $this->entityTypeManager->getStorage('neibers_ip')->getOnetsByInet($entity_ip));
       $form['ips'][$key]['onet'] = [
         '#markup' => implode(', ', $onets),
       ];
@@ -99,7 +99,7 @@ class IPOrderForm extends FormBase {
       '#sticky' => TRUE,
     ];
 
-    $bips = $this->entityTypeManager->getStorage('ip')->getOnetsByOrder($this->order);
+    $bips = $this->entityTypeManager->getStorage('neibers_ip')->getOnetsByOrder($this->order);
 
     $i = 1;
     foreach ($bips as $key => $bip) {
@@ -120,7 +120,7 @@ class IPOrderForm extends FormBase {
    */
   public function validateForm(array &$form, FormStateInterface $form_state) {
     if (!empty($form_state->getValue('administer'))) {
-      $this->inet = $this->entityTypeManager->getStorage('ip')->load($form_state->getValue('administer'));
+      $this->inet = $this->entityTypeManager->getStorage('neibers_ip')->load($form_state->getValue('administer'));
     }
   }
 
@@ -129,7 +129,7 @@ class IPOrderForm extends FormBase {
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
     $values = $form_state->getValues();
-    $ip_storage = $this->entityTypeManager->getStorage('ip');
+    $ip_storage = $this->entityTypeManager->getStorage('neibers_ip');
     // TODO Polished
     if ($values['administer'] || $values['business']) {
       $administer = $ip_storage->load($values['administer']);
@@ -201,7 +201,7 @@ class IPOrderForm extends FormBase {
     $form['allocate']['administer'] = [
       '#title' => $this->t('Administer IP'),
       '#type' => 'entity_autocomplete',
-      '#target_type' => 'ip',
+      '#target_type' => 'neibers_ip',
       '#required' => TRUE,
       '#size' => 40,
       '#prefix' => '<div id="edit-hardware-wrapper">',
@@ -214,7 +214,7 @@ class IPOrderForm extends FormBase {
     $form['allocate']['business'] = [
       '#title' => $this->t('Business IP'),
       '#type' => 'entity_autocomplete',
-      '#target_type' => 'ip',
+      '#target_type' => 'neibers_ip',
       '#size' => 40,
     ];
 
