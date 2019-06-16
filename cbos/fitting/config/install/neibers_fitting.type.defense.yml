@@ -6,5 +6,5 @@ dependencies:
   enforced:
     module:
       - neibers_fitting
-id: bandwidth
-label: 'Bandwidth'
+id: defense
+label: 'Defense'
