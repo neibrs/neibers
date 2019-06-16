@@ -107,5 +107,4 @@ interface IPInterface extends ContentEntityInterface, RevisionLogInterface, Enti
    */
   public function unbindInet(IPInterface $ip);
 
-
 }

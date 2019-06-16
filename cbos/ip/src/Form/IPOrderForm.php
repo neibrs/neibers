@@ -2,7 +2,6 @@
 
 namespace Drupal\neibers_ip\Form;
 
-use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
@@ -168,7 +167,7 @@ class IPOrderForm extends FormBase {
       '#attributes' => [
         'class' => [
           'container-inline',
-        ]
+        ],
       ],
       '#open' => TRUE,
     ];
@@ -189,7 +188,7 @@ class IPOrderForm extends FormBase {
     $form['allocate']['hardware'] = [
       '#title' => $this->t('Hardware'),
       '#type' => 'select',
-//      '#target_type' => 'hardware',
+    //      '#target_type' => 'hardware',
       '#options' => [],
       '#required' => TRUE,
       '#prefix' => '<div id="edit-hardware-wrapper">',
@@ -207,10 +206,10 @@ class IPOrderForm extends FormBase {
       '#size' => 40,
       '#prefix' => '<div id="edit-hardware-wrapper">',
       '#suffix' => '</div>',
-//      '#ajax' => [
-//        'callback' => '::updateBusiness',
-//        'wrapper' => 'edit-business-wrapper',
-//      ],
+    //      '#ajax' => [
+    //        'callback' => '::updateBusiness',
+    //        'wrapper' => 'edit-business-wrapper',
+    //      ],
     ];
     $form['allocate']['business'] = [
       '#title' => $this->t('Business IP'),
@@ -239,14 +238,15 @@ class IPOrderForm extends FormBase {
     $query->fields('sfd', ['id']);
     $query->leftJoin('seat_field_data', 'seat', 'sfd.seat = seat.id');
     $query->leftJoin('cabinet_field_data', 'cfd', 'seat.cabinet = cfd.id');
-//    $query->groupBy('sfd.name');
+    //    $query->groupBy('sfd.name');
     $query->condition('cfd.room', $room);
     $result = $query->execute()->fetchAll();
 
-    $ids = array_map(function($item) {
+    $ids = array_map(function ($item) {
       return $item->id;
     }, $result);
 
     return $form['allocate']['hardware'];
   }
+
 }

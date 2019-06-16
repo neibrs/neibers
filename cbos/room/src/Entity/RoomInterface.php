@@ -56,5 +56,4 @@ interface RoomInterface extends ContentEntityInterface, EntityChangedInterface, 
    */
   public function setCreatedTime($timestamp);
 
-
 }
