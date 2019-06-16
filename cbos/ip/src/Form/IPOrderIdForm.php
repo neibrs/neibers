@@ -5,7 +5,7 @@ namespace Drupal\neibers_ip\Form;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
-use Drupal\ip\Entity\IPInterface;
+use Drupal\neibers_ip\Entity\IPInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 class IPOrderIdForm extends FormBase {
@@ -33,7 +33,7 @@ class IPOrderIdForm extends FormBase {
    * {@inheritdoc}
    */
   public function getFormId() {
-    return 'ip_detail_with_order_id_form';
+    return 'ip_order_id_form';
   }
 
   /**
