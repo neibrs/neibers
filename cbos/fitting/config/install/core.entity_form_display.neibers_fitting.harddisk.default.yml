@@ -5,7 +5,7 @@ dependencies:
     module:
       - neibers_fitting
   config:
-    - neibers_fitting.type.defense
+    - neibers_fitting.type.harddisk
 id: neibers_fitting.harddisk.default
 targetEntityType: neibers_fitting
 bundle: defense
