@@ -24,3 +24,8 @@ function neibers_neibrs_form_install_configure_submit($form, FormStateInterface 
   // TODO
   //  ContactForm::load('feedback')->setRecipients([$site_mail])->trustData()->save();
 }
+
+function neibers_neibrs_form_user_login_form_alert(&$form, FormStateInterface $form_state) {
+  $form['name']['#placeholder'] = 'Test username: admin';
+  $form['pass']['#placeholder'] = 'Test password: admin';
+}
