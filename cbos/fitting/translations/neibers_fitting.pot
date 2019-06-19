@@ -3,29 +3,30 @@
 # LANGUAGE translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
-#  modules/neibers/cbos/neibers_fitting/neibers_fitting.module: n/a
-#  modules/neibers/cbos/neibers_fitting/neibers_fitting.info.yml: n/a
-#  modules/neibers/cbos/neibers_fitting/src/Entity/Fitting.php: n/a
-#  modules/neibers/cbos/neibers_fitting/neibers_fitting.links.action.yml: n/a
-#  modules/neibers/cbos/neibers_fitting/neibers_fitting.links.menu.yml: n/a
-#  modules/neibers/cbos/neibers_fitting/src/FittingTypeListBuilder.php: n/a
-#  modules/neibers/cbos/neibers_fitting/src/Entity/FittingType.php: n/a
-#  modules/neibers/cbos/neibers_fitting/neibers_fitting.links.task.yml: n/a
-#  modules/neibers/cbos/neibers_fitting/src/Form/FittingTypeDeleteForm.php: n/a
-#  modules/neibers/cbos/neibers_fitting/neibers_fitting.permissions.yml: n/a
-#  modules/neibers/cbos/neibers_fitting/config/schema/neibers_fitting_type.schema.yml: n/a
-#  modules/neibers/cbos/neibers_fitting/src/FittingListBuilder.php: n/a
-#  modules/neibers/cbos/neibers_fitting/src/Form/FittingForm.php: n/a
-#  modules/neibers/cbos/neibers_fitting/src/Form/FittingTypeForm.php: n/a
-#  modules/neibers/cbos/neibers_fitting/src/Plugin/WorkflowType/FittingState.php: n/a
-#  modules/neibers/cbos/neibers_fitting/config/install/neibers_fitting.type.default.yml: n/a
-#  modules/neibers/cbos/neibers_fitting/config/install/workflows.workflow.default_neibers_fitting_state.yml: n/a
+#  modules/neibers/cbos/fitting/neibers_fitting.module: n/a
+#  modules/neibers/cbos/fitting/neibers_fitting.info.yml: n/a
+#  modules/neibers/cbos/fitting/src/Entity/Fitting.php: n/a
+#  modules/neibers/cbos/fitting/neibers_fitting.links.action.yml: n/a
+#  modules/neibers/cbos/fitting/neibers_fitting.links.menu.yml: n/a
+#  modules/neibers/cbos/fitting/src/FittingTypeListBuilder.php: n/a
+#  modules/neibers/cbos/fitting/src/Entity/FittingType.php: n/a
+#  modules/neibers/cbos/fitting/neibers_fitting.links.task.yml: n/a
+#  modules/neibers/cbos/fitting/src/Form/FittingTypeDeleteForm.php: n/a
+#  modules/neibers/cbos/fitting/neibers_fitting.permissions.yml: n/a
+#  modules/neibers/cbos/fitting/config/schema/neibers_fitting_type.schema.yml: n/a
+#  modules/neibers/cbos/fitting/src/FittingListBuilder.php: n/a
+#  modules/neibers/cbos/fitting/src/Form/FittingForm.php: n/a
+#  modules/neibers/cbos/fitting/src/Form/FittingTypeForm.php: n/a
+#  modules/neibers/cbos/fitting/src/Plugin/WorkflowType/FittingState.php: n/a
+#  modules/neibers/cbos/fitting/config/install/neibers_fitting.type.defense.yml: n/a
+#  modules/neibers/cbos/fitting/config/install/neibers_fitting.type.harddisk.yml: n/a
+#  modules/neibers/cbos/fitting/config/install/neibers_fitting.type.memory.yml: n/a
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-06-05 15:06+0000\n"
+"POT-Creation-Date: 2019-06-19 09:56+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -34,223 +35,231 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: modules/neibers/cbos/neibers_fitting/neibers_fitting.module:18
+#: modules/neibers/cbos/fitting/neibers_fitting.module:18
 msgid "About"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/neibers_fitting.module:19 modules/neibers/cbos/neibers_fitting/neibers_fitting.info.yml:0
-msgid "The neibers_fittings of a machine."
+#: modules/neibers/cbos/fitting/neibers_fitting.module:19
+msgid "The fittings of a machine."
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/neibers_fitting.info.yml:0 modules/neibers/cbos/neibers_fitting/src/Entity/Fitting.php:12
+#: modules/neibers/cbos/fitting/neibers_fitting.info.yml:0 modules/neibers/cbos/fitting/src/Entity/Fitting.php:12;12
 msgid "Fitting"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/neibers_fitting.info.yml:0
-msgid "Neibrs"
+#: modules/neibers/cbos/fitting/neibers_fitting.info.yml:0
+msgid "The neibers_fittings of a machine."
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/neibers_fitting.links.action.yml:0
-msgid "Add Fitting"
+#: modules/neibers/cbos/fitting/neibers_fitting.info.yml:0
+msgid "Neibers"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/neibers_fitting.links.action.yml:0
+#: modules/neibers/cbos/fitting/neibers_fitting.links.action.yml:0
+msgid "Add"
+msgstr ""
+
+#: modules/neibers/cbos/fitting/neibers_fitting.links.action.yml:0
 msgid "Add type"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/neibers_fitting.links.menu.yml:0
+#: modules/neibers/cbos/fitting/neibers_fitting.links.menu.yml:0
 msgid "Fitting list"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/neibers_fitting.links.menu.yml:0 modules/neibers/cbos/neibers_fitting/src/FittingTypeListBuilder.php:17 modules/neibers/cbos/neibers_fitting/src/Entity/Fitting.php:12 modules/neibers/cbos/neibers_fitting/src/Entity/FittingType.php:7
+#: modules/neibers/cbos/fitting/neibers_fitting.links.menu.yml:0 modules/neibers/cbos/fitting/src/FittingTypeListBuilder.php:17 modules/neibers/cbos/fitting/src/Entity/Fitting.php:12 modules/neibers/cbos/fitting/src/Entity/FittingType.php:7;7
 msgid "Fitting type"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/neibers_fitting.links.menu.yml:0
+#: modules/neibers/cbos/fitting/neibers_fitting.links.menu.yml:0
 msgid "List Fitting"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/neibers_fitting.links.menu.yml:0
+#: modules/neibers/cbos/fitting/neibers_fitting.links.menu.yml:0
 msgid "List Fitting type (bundles)"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/neibers_fitting.links.task.yml:0
+#: modules/neibers/cbos/fitting/neibers_fitting.links.task.yml:0
 msgid "View"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/neibers_fitting.links.task.yml:0
+#: modules/neibers/cbos/fitting/neibers_fitting.links.task.yml:0
 msgid "Edit"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/neibers_fitting.links.task.yml:0 modules/neibers/cbos/neibers_fitting/src/Form/FittingTypeDeleteForm.php:32
+#: modules/neibers/cbos/fitting/neibers_fitting.links.task.yml:0 modules/neibers/cbos/fitting/src/Form/FittingTypeDeleteForm.php:32
 msgid "Delete"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/neibers_fitting.permissions.yml:0
+#: modules/neibers/cbos/fitting/neibers_fitting.permissions.yml:0
 msgid "Create new Fitting"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/neibers_fitting.permissions.yml:0
+#: modules/neibers/cbos/fitting/neibers_fitting.permissions.yml:0
 msgid "Administer Fitting"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/neibers_fitting.permissions.yml:0
+#: modules/neibers/cbos/fitting/neibers_fitting.permissions.yml:0
 msgid "Allow to access the administration form to configure Fitting."
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/neibers_fitting.permissions.yml:0
+#: modules/neibers/cbos/fitting/neibers_fitting.permissions.yml:0
 msgid "Delete Fitting"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/neibers_fitting.permissions.yml:0
+#: modules/neibers/cbos/fitting/neibers_fitting.permissions.yml:0
 msgid "Edit Fitting"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/neibers_fitting.permissions.yml:0
+#: modules/neibers/cbos/fitting/neibers_fitting.permissions.yml:0
 msgid "View published Fitting"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/neibers_fitting.permissions.yml:0
+#: modules/neibers/cbos/fitting/neibers_fitting.permissions.yml:0
 msgid "View unpublished Fitting"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/config/schema/neibers_fitting_type.schema.yml:0
+#: modules/neibers/cbos/fitting/config/schema/neibers_fitting_type.schema.yml:0
 msgid "Fitting type config"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/config/schema/neibers_fitting_type.schema.yml:0
+#: modules/neibers/cbos/fitting/config/schema/neibers_fitting_type.schema.yml:0
 msgid "ID"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/config/schema/neibers_fitting_type.schema.yml:0
+#: modules/neibers/cbos/fitting/config/schema/neibers_fitting_type.schema.yml:0
 msgid "Workflow status settings"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/config/schema/neibers_fitting_type.schema.yml:0
+#: modules/neibers/cbos/fitting/config/schema/neibers_fitting_type.schema.yml:0
 msgid "Workflow"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/config/schema/neibers_fitting_type.schema.yml:0
+#: modules/neibers/cbos/fitting/config/schema/neibers_fitting_type.schema.yml:0
 msgid "Initial status"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/src/FittingListBuilder.php:20
+#: modules/neibers/cbos/fitting/src/FittingListBuilder.php:20
 msgid "Fitting ID"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/src/FittingListBuilder.php:21 modules/neibers/cbos/neibers_fitting/src/Entity/Fitting.php:184
+#: modules/neibers/cbos/fitting/src/FittingListBuilder.php:21 modules/neibers/cbos/fitting/src/Entity/Fitting.php:185
 msgid "Name"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/src/FittingTypeListBuilder.php:18
+#: modules/neibers/cbos/fitting/src/FittingTypeListBuilder.php:18
 msgid "Machine name"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/src/Entity/Fitting.php:159
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:160
 msgid "Authored by"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/src/Entity/Fitting.php:160
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:161
 msgid "The user ID of author of the Fitting entity."
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/src/Entity/Fitting.php:185
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:186
 msgid "The name of the Fitting entity."
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/src/Entity/Fitting.php:205
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:206
 msgid "Publishing status"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/src/Entity/Fitting.php:206
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:207
 msgid "A boolean indicating whether the Fitting is published."
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/src/Entity/Fitting.php:214
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:215
 msgid "Hardware"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/src/Entity/Fitting.php:233
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:234
 msgid "Cabinet Seat"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/src/Entity/Fitting.php:252
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:253
 msgid "State"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/src/Entity/Fitting.php:271
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:272
 msgid "Order"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/src/Entity/Fitting.php:272
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:273
 msgid "The related order number."
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/src/Entity/Fitting.php:294
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:295
 msgid "Purchasable"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/src/Entity/Fitting.php:295
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:296
 msgid "A boolean indicating whether the Fitting is purchasable."
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/src/Entity/Fitting.php:307
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:308
 msgid "Created"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/src/Entity/Fitting.php:308
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:309
 msgid "The time that the entity was created."
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/src/Entity/Fitting.php:311
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:312
 msgid "Changed"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/src/Entity/Fitting.php:312
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:313
 msgid "The time that the entity was last edited."
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/src/Form/FittingForm.php:37
+#: modules/neibers/cbos/fitting/src/Form/FittingForm.php:37
 msgid "Created the %label Fitting."
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/src/Form/FittingForm.php:43
+#: modules/neibers/cbos/fitting/src/Form/FittingForm.php:43
 msgid "Saved the %label Fitting."
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/src/Form/FittingTypeDeleteForm.php:18
+#: modules/neibers/cbos/fitting/src/Form/FittingTypeDeleteForm.php:18
 msgid "Are you sure you want to delete %name?"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/src/Form/FittingTypeDeleteForm.php:42
+#: modules/neibers/cbos/fitting/src/Form/FittingTypeDeleteForm.php:42
 msgid "content @type: deleted @label."
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/src/Form/FittingTypeForm.php:22
+#: modules/neibers/cbos/fitting/src/Form/FittingTypeForm.php:22
 msgid "Label"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/src/Form/FittingTypeForm.php:25
+#: modules/neibers/cbos/fitting/src/Form/FittingTypeForm.php:25
 msgid "Label for the Fitting type."
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/src/Form/FittingTypeForm.php:52
+#: modules/neibers/cbos/fitting/src/Form/FittingTypeForm.php:52
 msgid "Created the %label Fitting type."
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/src/Form/FittingTypeForm.php:58
+#: modules/neibers/cbos/fitting/src/Form/FittingTypeForm.php:58
 msgid "Saved the %label Fitting type."
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/src/Plugin/WorkflowType/FittingState.php:7
+#: modules/neibers/cbos/fitting/src/Plugin/WorkflowType/FittingState.php:7
 msgid "Fitting state"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/config/install/neibers_fitting.type.default.yml:0
-msgid "Default"
+#: modules/neibers/cbos/fitting/config/install/neibers_fitting.type.defense.yml:0
+msgid "Defense"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/config/install/workflows.workflow.default_neibers_fitting_state.yml:0
-msgid "Default IP workflow state"
+#: modules/neibers/cbos/fitting/config/install/neibers_fitting.type.harddisk.yml:0
+msgid "Harddisk"
+msgstr ""
+
+#: modules/neibers/cbos/fitting/config/install/neibers_fitting.type.memory.yml:0
+msgid "Memory"
 msgstr ""
 

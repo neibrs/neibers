@@ -13,5 +13,5 @@ for file in `find modules/neibers -name "*.info.yml"`; do
     mkdir $(dirname $file)/translations;
     echo "mkdir $(dirname $file)/translations";
   fi
-  mv "$(pwd)/general.pot" "$(dirname $file)/translations/$(basename $(dirname $file)).pot"
+  mv "$(pwd)/general.pot" "$(dirname $file)/translations/$(basename ${file%%.*}).pot"
 done

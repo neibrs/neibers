@@ -3,28 +3,30 @@
 # LANGUAGE translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
-#  modules/neibers/cbos/neibers_hardware/neibers_hardware.module: n/a
-#  modules/neibers/cbos/neibers_hardware/neibers_hardware.info.yml: n/a
-#  modules/neibers/cbos/neibers_hardware/src/Entity/Hardware.php: n/a
-#  modules/neibers/cbos/neibers_hardware/neibers_hardware.links.action.yml: n/a
-#  modules/neibers/cbos/neibers_hardware/neibers_hardware.links.menu.yml: n/a
-#  modules/neibers/cbos/neibers_hardware/src/HardwareTypeListBuilder.php: n/a
-#  modules/neibers/cbos/neibers_hardware/src/Entity/HardwareType.php: n/a
-#  modules/neibers/cbos/neibers_hardware/neibers_hardware.links.task.yml: n/a
-#  modules/neibers/cbos/neibers_hardware/src/Form/HardwareTypeDeleteForm.php: n/a
-#  modules/neibers/cbos/neibers_hardware/neibers_hardware.permissions.yml: n/a
-#  modules/neibers/cbos/neibers_hardware/config/schema/neibers_hardware_type.schema.yml: n/a
-#  modules/neibers/cbos/neibers_hardware/src/HardwareListBuilder.php: n/a
-#  modules/neibers/cbos/neibers_hardware/src/Form/HardwareForm.php: n/a
-#  modules/neibers/cbos/neibers_hardware/src/Form/HardwareTypeForm.php: n/a
-#  modules/neibers/cbos/neibers_hardware/config/install/neibers_hardware.type.cabinet.yml: n/a
-#  modules/neibers/cbos/neibers_hardware/config/install/neibers_hardware.type.neibers_hardware.yml: n/a
+#  modules/neibers/cbos/hardware/neibers_hardware.module: n/a
+#  modules/neibers/cbos/hardware/neibers_hardware.info.yml: n/a
+#  modules/neibers/cbos/hardware/src/Entity/Hardware.php: n/a
+#  modules/neibers/cbos/hardware/neibers_hardware.links.action.yml: n/a
+#  modules/neibers/cbos/hardware/neibers_hardware.links.task.yml: n/a
+#  modules/neibers/cbos/hardware/src/Form/HardwareTypeDeleteForm.php: n/a
+#  modules/neibers/cbos/hardware/neibers_hardware.permissions.yml: n/a
+#  modules/neibers/cbos/hardware/config/schema/neibers_hardware_type.schema.yml: n/a
+#  modules/neibers/cbos/hardware/src/HardwareListBuilder.php: n/a
+#  modules/neibers/cbos/hardware/src/HardwareTypeListBuilder.php: n/a
+#  modules/neibers/cbos/hardware/src/Entity/HardwareType.php: n/a
+#  modules/neibers/cbos/hardware/src/Form/HardwareForm.php: n/a
+#  modules/neibers/cbos/hardware/src/Form/HardwareTypeForm.php: n/a
+#  modules/neibers/cbos/hardware/src/Plugin/EntityReferenceSelection/CabinetSelection.php: n/a
+#  modules/neibers/cbos/hardware/config/install/neibers_hardware.type.cabinet.yml: n/a
+#  modules/neibers/cbos/hardware/config/install/neibers_hardware.type.firewall.yml: n/a
+#  modules/neibers/cbos/hardware/config/install/neibers_hardware.type.server.yml: n/a
+#  modules/neibers/cbos/hardware/config/install/neibers_hardware.type.switcher.yml: n/a
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-06-05 15:06+0000\n"
+"POT-Creation-Date: 2019-06-19 09:56+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -33,183 +35,191 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: modules/neibers/cbos/neibers_hardware/neibers_hardware.module:18
+#: modules/neibers/cbos/hardware/neibers_hardware.module:18
 msgid "About"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/neibers_hardware.info.yml:0 modules/neibers/cbos/neibers_hardware/src/Entity/Hardware.php:12;12
+#: modules/neibers/cbos/hardware/neibers_hardware.module:22
+msgid "Hardware equipment must be assigned a seat."
+msgstr ""
+
+#: modules/neibers/cbos/hardware/neibers_hardware.info.yml:0 modules/neibers/cbos/hardware/src/Entity/Hardware.php:12;12
 msgid "Hardware"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/neibers_hardware.info.yml:0
-msgid "The neibers_hardware in the cabinet seat."
+#: modules/neibers/cbos/hardware/neibers_hardware.info.yml:0
+msgid "The hardware in the cabinet seat."
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/neibers_hardware.info.yml:0
-msgid "Neibrs"
+#: modules/neibers/cbos/hardware/neibers_hardware.info.yml:0
+msgid "Neibers"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/neibers_hardware.links.action.yml:0
-msgid "Add Hardware"
+#: modules/neibers/cbos/hardware/neibers_hardware.links.action.yml:0
+msgid "Add"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/neibers_hardware.links.action.yml:0
-msgid "Add Hardware type"
+#: modules/neibers/cbos/hardware/neibers_hardware.links.action.yml:0
+msgid "Add type"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/neibers_hardware.links.menu.yml:0
-msgid "Hardware list"
-msgstr ""
-
-#: modules/neibers/cbos/neibers_hardware/neibers_hardware.links.menu.yml:0 modules/neibers/cbos/neibers_hardware/src/HardwareTypeListBuilder.php:17 modules/neibers/cbos/neibers_hardware/src/Entity/Hardware.php:12 modules/neibers/cbos/neibers_hardware/src/Entity/HardwareType.php:7;7
-msgid "Hardware type"
-msgstr ""
-
-#: modules/neibers/cbos/neibers_hardware/neibers_hardware.links.menu.yml:0
-msgid "List Hardware"
-msgstr ""
-
-#: modules/neibers/cbos/neibers_hardware/neibers_hardware.links.menu.yml:0
-msgid "List Hardware type (bundles)"
-msgstr ""
-
-#: modules/neibers/cbos/neibers_hardware/neibers_hardware.links.task.yml:0
+#: modules/neibers/cbos/hardware/neibers_hardware.links.task.yml:0
 msgid "View"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/neibers_hardware.links.task.yml:0
+#: modules/neibers/cbos/hardware/neibers_hardware.links.task.yml:0
 msgid "Edit"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/neibers_hardware.links.task.yml:0 modules/neibers/cbos/neibers_hardware/src/Form/HardwareTypeDeleteForm.php:32
+#: modules/neibers/cbos/hardware/neibers_hardware.links.task.yml:0 modules/neibers/cbos/hardware/src/Form/HardwareTypeDeleteForm.php:32
 msgid "Delete"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/neibers_hardware.permissions.yml:0
+#: modules/neibers/cbos/hardware/neibers_hardware.permissions.yml:0
 msgid "Create new Hardware"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/neibers_hardware.permissions.yml:0
+#: modules/neibers/cbos/hardware/neibers_hardware.permissions.yml:0
 msgid "Administer Hardware"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/neibers_hardware.permissions.yml:0
+#: modules/neibers/cbos/hardware/neibers_hardware.permissions.yml:0
 msgid "Allow to access the administration form to configure Hardware."
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/neibers_hardware.permissions.yml:0
+#: modules/neibers/cbos/hardware/neibers_hardware.permissions.yml:0
 msgid "Delete Hardware"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/neibers_hardware.permissions.yml:0
+#: modules/neibers/cbos/hardware/neibers_hardware.permissions.yml:0
 msgid "Edit Hardware"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/neibers_hardware.permissions.yml:0
+#: modules/neibers/cbos/hardware/neibers_hardware.permissions.yml:0
 msgid "View published Hardware"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/neibers_hardware.permissions.yml:0
+#: modules/neibers/cbos/hardware/neibers_hardware.permissions.yml:0
 msgid "View unpublished Hardware"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/config/schema/neibers_hardware_type.schema.yml:0
+#: modules/neibers/cbos/hardware/config/schema/neibers_hardware_type.schema.yml:0
 msgid "Hardware type config"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/config/schema/neibers_hardware_type.schema.yml:0
+#: modules/neibers/cbos/hardware/config/schema/neibers_hardware_type.schema.yml:0
 msgid "ID"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/src/HardwareListBuilder.php:20
+#: modules/neibers/cbos/hardware/src/HardwareListBuilder.php:20
 msgid "Hardware ID"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/src/HardwareListBuilder.php:21 modules/neibers/cbos/neibers_hardware/src/Entity/Hardware.php:186
+#: modules/neibers/cbos/hardware/src/HardwareListBuilder.php:21 modules/neibers/cbos/hardware/src/Entity/Hardware.php:192
 msgid "Name"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/src/HardwareTypeListBuilder.php:18
+#: modules/neibers/cbos/hardware/src/HardwareTypeListBuilder.php:17 modules/neibers/cbos/hardware/src/Entity/Hardware.php:12 modules/neibers/cbos/hardware/src/Entity/HardwareType.php:7;7
+msgid "Hardware type"
+msgstr ""
+
+#: modules/neibers/cbos/hardware/src/HardwareTypeListBuilder.php:18
 msgid "Machine name"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/src/Entity/Hardware.php:161
+#: modules/neibers/cbos/hardware/src/Entity/Hardware.php:167
 msgid "Authored by"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/src/Entity/Hardware.php:162
+#: modules/neibers/cbos/hardware/src/Entity/Hardware.php:168
 msgid "The user ID of author of the Hardware entity."
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/src/Entity/Hardware.php:187
+#: modules/neibers/cbos/hardware/src/Entity/Hardware.php:193
 msgid "The name of the Hardware entity."
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/src/Entity/Hardware.php:207
+#: modules/neibers/cbos/hardware/src/Entity/Hardware.php:213
 msgid "Seat"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/src/Entity/Hardware.php:226
+#: modules/neibers/cbos/hardware/src/Entity/Hardware.php:214
+msgid "Hardware equipment must be assigned a location seat."
+msgstr ""
+
+#: modules/neibers/cbos/hardware/src/Entity/Hardware.php:234
 msgid "Publishing status"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/src/Entity/Hardware.php:227
+#: modules/neibers/cbos/hardware/src/Entity/Hardware.php:235
 msgid "A boolean indicating whether the Hardware is published."
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/src/Entity/Hardware.php:235
+#: modules/neibers/cbos/hardware/src/Entity/Hardware.php:243
 msgid "Created"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/src/Entity/Hardware.php:236
+#: modules/neibers/cbos/hardware/src/Entity/Hardware.php:244
 msgid "The time that the entity was created."
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/src/Entity/Hardware.php:239
+#: modules/neibers/cbos/hardware/src/Entity/Hardware.php:247
 msgid "Changed"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/src/Entity/Hardware.php:240
+#: modules/neibers/cbos/hardware/src/Entity/Hardware.php:248
 msgid "The time that the entity was last edited."
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/src/Form/HardwareForm.php:37
+#: modules/neibers/cbos/hardware/src/Form/HardwareForm.php:37
 msgid "Created the %label Hardware."
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/src/Form/HardwareForm.php:43
+#: modules/neibers/cbos/hardware/src/Form/HardwareForm.php:43
 msgid "Saved the %label Hardware."
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/src/Form/HardwareTypeDeleteForm.php:18
+#: modules/neibers/cbos/hardware/src/Form/HardwareTypeDeleteForm.php:18
 msgid "Are you sure you want to delete %name?"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/src/Form/HardwareTypeDeleteForm.php:42
+#: modules/neibers/cbos/hardware/src/Form/HardwareTypeDeleteForm.php:42
 msgid "content @type: deleted @label."
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/src/Form/HardwareTypeForm.php:22
+#: modules/neibers/cbos/hardware/src/Form/HardwareTypeForm.php:22
 msgid "Label"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/src/Form/HardwareTypeForm.php:25
+#: modules/neibers/cbos/hardware/src/Form/HardwareTypeForm.php:25
 msgid "Label for the Hardware type."
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/src/Form/HardwareTypeForm.php:52
+#: modules/neibers/cbos/hardware/src/Form/HardwareTypeForm.php:52
 msgid "Created the %label Hardware type."
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/src/Form/HardwareTypeForm.php:58
+#: modules/neibers/cbos/hardware/src/Form/HardwareTypeForm.php:58
 msgid "Saved the %label Hardware type."
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/config/install/neibers_hardware.type.cabinet.yml:0
+#: modules/neibers/cbos/hardware/src/Plugin/EntityReferenceSelection/CabinetSelection.php:8
+msgid "Hardware selection"
+msgstr ""
+
+#: modules/neibers/cbos/hardware/config/install/neibers_hardware.type.cabinet.yml:0
 msgid "Cabinet"
 msgstr ""
 
-#: modules/neibers/cbos/neibers_hardware/config/install/neibers_hardware.type.neibers_hardware.yml:0
-msgid "Hardware(Normal neibers_hardware)"
+#: modules/neibers/cbos/hardware/config/install/neibers_hardware.type.firewall.yml:0
+msgid "Firewall"
+msgstr ""
+
+#: modules/neibers/cbos/hardware/config/install/neibers_hardware.type.server.yml:0
+msgid "Server"
+msgstr ""
+
+#: modules/neibers/cbos/hardware/config/install/neibers_hardware.type.switcher.yml:0
+msgid "Switcher"
 msgstr ""
 

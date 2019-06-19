@@ -19,7 +19,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-06-05 15:06+0000\n"
+"POT-Creation-Date: 2019-06-19 09:56+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -28,8 +28,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: modules/neibers/core/eabax_core/eabax_core.info.yml:0;0;0
+#: modules/neibers/core/eabax_core/eabax_core.info.yml:0;0
 msgid "Neibrs core"
+msgstr ""
+
+#: modules/neibers/core/eabax_core/eabax_core.info.yml:0
+msgid "Neibers"
 msgstr ""
 
 #: modules/neibers/core/eabax_core/eabax_core.links.menu.yml:0

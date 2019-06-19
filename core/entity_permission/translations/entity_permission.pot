@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-06-05 15:06+0000\n"
+"POT-Creation-Date: 2019-06-19 09:56+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -24,16 +24,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: modules/neibers/core/entity_permission/entity_permission.module:140 modules/neibers/core/entity_permission/entity_permission.routing.yml:0
+#: modules/neibers/core/entity_permission/entity_permission.module:144 modules/neibers/core/entity_permission/entity_permission.routing.yml:0
 msgid "Edit entity permissions"
 msgstr ""
 
-#: modules/neibers/core/entity_permission/entity_permission.info.yml:0;0 modules/neibers/core/entity_permission/config/schema/entity_permission.schema.yml:0;0;0;0;0 modules/neibers/core/entity_permission/src/Form/EntityPermissionSettingsForm.php:33
+#: modules/neibers/core/entity_permission/entity_permission.info.yml:0;0 modules/neibers/core/entity_permission/config/schema/entity_permission.schema.yml:0;0;0;0;0 modules/neibers/core/entity_permission/src/Form/EntityPermissionSettingsForm.php:32
 msgid "Entity permission"
 msgstr ""
 
 #: modules/neibers/core/entity_permission/entity_permission.info.yml:0
-msgid "Neibrs core"
+msgid "Neibers"
 msgstr ""
 
 #: modules/neibers/core/entity_permission/entity_permission.permissions.yml:0
@@ -48,11 +48,11 @@ msgstr ""
 msgid "Entities which controled by entity permission"
 msgstr ""
 
-#: modules/neibers/core/entity_permission/config/schema/entity_permission.schema.yml:0;0;0 modules/neibers/core/entity_permission/src/Form/EntityPermissionSettingsForm.php:34 modules/neibers/core/entity_permission/src/Form/RoleEntityPermissionForm.php:109
+#: modules/neibers/core/entity_permission/config/schema/entity_permission.schema.yml:0;0;0 modules/neibers/core/entity_permission/src/Form/EntityPermissionSettingsForm.php:33 modules/neibers/core/entity_permission/src/Form/RoleEntityPermissionForm.php:109
 msgid "Bundle permission"
 msgstr ""
 
-#: modules/neibers/core/entity_permission/config/schema/entity_permission.schema.yml:0;0 modules/neibers/core/entity_permission/src/Form/EntityPermissionSettingsForm.php:35
+#: modules/neibers/core/entity_permission/config/schema/entity_permission.schema.yml:0;0 modules/neibers/core/entity_permission/src/Form/EntityPermissionSettingsForm.php:34
 msgid "Field permission"
 msgstr ""
 
@@ -80,7 +80,7 @@ msgstr ""
 msgid "Edit permission"
 msgstr ""
 
-#: modules/neibers/core/entity_permission/src/Form/EntityPermissionSettingsForm.php:32
+#: modules/neibers/core/entity_permission/src/Form/EntityPermissionSettingsForm.php:31
 msgid "Entity"
 msgstr ""
 

@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-06-05 15:06+0000\n"
+"POT-Creation-Date: 2019-06-19 09:55+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -32,6 +32,6 @@ msgid "Menu plus test"
 msgstr ""
 
 #: modules/neibers/core/menu_plus/tests/modules/menu_plus_test/menu_plus_test.info.yml:0
-msgid "Neibrs"
+msgid "Neibers"
 msgstr ""
 

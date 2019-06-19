@@ -14,7 +14,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-06-05 15:06+0000\n"
+"POT-Creation-Date: 2019-06-19 09:56+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -36,7 +36,7 @@ msgid "The commerce module with exsen theme for commerce purpose."
 msgstr ""
 
 #: modules/neibers/product/mall/neibers_mall.info.yml:0
-msgid "Neibrs"
+msgid "Neibers"
 msgstr ""
 
 #: modules/neibers/product/mall/neibers_mall.links.menu.yml:0
@@ -53,6 +53,14 @@ msgstr ""
 
 #: modules/neibers/product/mall/neibers_mall.links.menu.yml:0
 msgid "Product attributes"
+msgstr ""
+
+#: modules/neibers/product/mall/neibers_mall.links.menu.yml:0
+msgid "Orders"
+msgstr ""
+
+#: modules/neibers/product/mall/neibers_mall.links.menu.yml:0
+msgid "Orders collection"
 msgstr ""
 
 #: modules/neibers/product/mall/neibers_mall.routing.yml:0

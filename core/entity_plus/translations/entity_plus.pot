@@ -13,7 +13,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-03-21 13:29+0800\n"
+"POT-Creation-Date: 2019-06-19 09:55+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: modules/neibers/core/entity_plus/entity_plus.module:14
+#: modules/neibers/core/entity_plus/entity_plus.module:18
 msgid "Export"
 msgstr ""
 
@@ -31,18 +31,18 @@ msgid "Entity plus"
 msgstr ""
 
 #: modules/neibers/core/entity_plus/entity_plus.info.yml:0
-msgid "Neibers core"
+msgid "Neibers"
 msgstr ""
 
-#: modules/neibers/core/entity_plus/config/schema/entity_plus.schema.yml:0 modules/neibers/core/entity_plus/src/Plugin/Block/EntityOperationsMenuBlock.php:11
+#: modules/neibers/core/entity_plus/config/schema/entity_plus.schema.yml:0 modules/neibers/core/entity_plus/src/Plugin/Block/EntityOperationsMenuBlock.php:10
 msgid "Entity operations menu"
 msgstr ""
 
-#: modules/neibers/core/entity_plus/config/schema/entity_plus.schema.yml:0 modules/neibers/core/entity_plus/src/Plugin/Block/EntityOperationsMenuBlock.php:34
+#: modules/neibers/core/entity_plus/config/schema/entity_plus.schema.yml:0 modules/neibers/core/entity_plus/src/Plugin/Block/EntityOperationsMenuBlock.php:33
 msgid "Entity type ID"
 msgstr ""
 
-#: modules/neibers/core/entity_plus/src/Plugin/Block/EntityOperationsMenuBlock.php:71
+#: modules/neibers/core/entity_plus/src/Plugin/Block/EntityOperationsMenuBlock.php:70
 msgid "@entity information"
 msgstr ""
 

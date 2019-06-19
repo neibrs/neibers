@@ -12,7 +12,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-06-05 15:06+0000\n"
+"POT-Creation-Date: 2019-06-19 09:55+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -30,7 +30,7 @@ msgid "Edit role menu"
 msgstr ""
 
 #: modules/neibers/core/role_menu/role_menu.info.yml:0
-msgid "Neibrs core"
+msgid "Neibers"
 msgstr ""
 
 #: modules/neibers/core/role_menu/config/schema/role_menu.schema.yml:0
