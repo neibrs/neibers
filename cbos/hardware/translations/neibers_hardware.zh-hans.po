@@ -3,28 +3,30 @@
 # LANGUAGE translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
-#  modules/neibers/cbos/neibers_hardware/neibers_hardware.module: n/a
-#  modules/neibers/cbos/neibers_hardware/neibers_hardware.info.yml: n/a
-#  modules/neibers/cbos/neibers_hardware/src/Entity/Hardware.php: n/a
-#  modules/neibers/cbos/neibers_hardware/neibers_hardware.links.action.yml: n/a
-#  modules/neibers/cbos/neibers_hardware/neibers_hardware.links.menu.yml: n/a
-#  modules/neibers/cbos/neibers_hardware/src/HardwareTypeListBuilder.php: n/a
-#  modules/neibers/cbos/neibers_hardware/src/Entity/HardwareType.php: n/a
-#  modules/neibers/cbos/neibers_hardware/neibers_hardware.links.task.yml: n/a
-#  modules/neibers/cbos/neibers_hardware/src/Form/HardwareTypeDeleteForm.php: n/a
-#  modules/neibers/cbos/neibers_hardware/neibers_hardware.permissions.yml: n/a
-#  modules/neibers/cbos/neibers_hardware/config/schema/neibers_hardware_type.schema.yml: n/a
-#  modules/neibers/cbos/neibers_hardware/src/HardwareListBuilder.php: n/a
-#  modules/neibers/cbos/neibers_hardware/src/Form/HardwareForm.php: n/a
-#  modules/neibers/cbos/neibers_hardware/src/Form/HardwareTypeForm.php: n/a
-#  modules/neibers/cbos/neibers_hardware/config/install/neibers_hardware.type.cabinet.yml: n/a
-#  modules/neibers/cbos/neibers_hardware/config/install/neibers_hardware.type.neibers_hardware.yml: n/a
+#  modules/neibers/cbos/hardware/neibers_hardware.module: n/a
+#  modules/neibers/cbos/hardware/neibers_hardware.info.yml: n/a
+#  modules/neibers/cbos/hardware/src/Entity/Hardware.php: n/a
+#  modules/neibers/cbos/hardware/neibers_hardware.links.action.yml: n/a
+#  modules/neibers/cbos/hardware/neibers_hardware.links.task.yml: n/a
+#  modules/neibers/cbos/hardware/src/Form/HardwareTypeDeleteForm.php: n/a
+#  modules/neibers/cbos/hardware/neibers_hardware.permissions.yml: n/a
+#  modules/neibers/cbos/hardware/config/schema/neibers_hardware_type.schema.yml: n/a
+#  modules/neibers/cbos/hardware/src/HardwareListBuilder.php: n/a
+#  modules/neibers/cbos/hardware/src/HardwareTypeListBuilder.php: n/a
+#  modules/neibers/cbos/hardware/src/Entity/HardwareType.php: n/a
+#  modules/neibers/cbos/hardware/src/Form/HardwareForm.php: n/a
+#  modules/neibers/cbos/hardware/src/Form/HardwareTypeForm.php: n/a
+#  modules/neibers/cbos/hardware/src/Plugin/EntityReferenceSelection/CabinetSelection.php: n/a
+#  modules/neibers/cbos/hardware/config/install/neibers_hardware.type.cabinet.yml: n/a
+#  modules/neibers/cbos/hardware/config/install/neibers_hardware.type.firewall.yml: n/a
+#  modules/neibers/cbos/hardware/config/install/neibers_hardware.type.server.yml: n/a
+#  modules/neibers/cbos/hardware/config/install/neibers_hardware.type.switcher.yml: n/a
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-06-05 15:06+0000\n"
+"POT-Creation-Date: 2019-06-19 09:56+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -32,6 +34,18 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: modules/neibers/cbos/hardware/neibers_hardware.module:22
+msgid "Hardware equipment must be assigned a seat."
+msgstr ""
+
+#: modules/neibers/cbos/hardware/neibers_hardware.info.yml:0 modules/neibers/cbos/hardware/src/Entity/Hardware.php:12;12
+msgid "Hardware"
+msgstr "设备"
+
+#: modules/neibers/cbos/hardware/neibers_hardware.info.yml:0
+msgid "The hardware in the cabinet seat."
+msgstr "机位当中的设备."
 
 #: modules/neibers/cbos/neibers_hardware/neibers_hardware.permissions.yml:0
 msgid "Create new Hardware"
@@ -69,6 +83,10 @@ msgstr "设备类型配置"
 msgid "Hardware ID"
 msgstr "设备序号"
 
+#: modules/neibers/cbos/hardware/src/HardwareTypeListBuilder.php:17 modules/neibers/cbos/hardware/src/Entity/Hardware.php:12 modules/neibers/cbos/hardware/src/Entity/HardwareType.php:7;7
+msgid "Hardware type"
+msgstr "设备类型"
+
 #: modules/neibers/cbos/neibers_hardware/src/Entity/Hardware.php:162
 msgid "The user ID of author of the Hardware entity."
 msgstr "设备的用户ID."
@@ -80,6 +98,10 @@ msgstr "设备的名称."
 #: modules/neibers/cbos/neibers_hardware/src/Entity/Hardware.php:207
 msgid "Seat"
 msgstr "机位"
+
+#: modules/neibers/cbos/hardware/src/Entity/Hardware.php:214
+msgid "Hardware equipment must be assigned a location seat."
+msgstr "硬件设备必须指定所属机位."
 
 #: modules/neibers/cbos/neibers_hardware/src/Entity/Hardware.php:226
 msgid "Publishing status"
@@ -113,7 +135,15 @@ msgstr "已保存设备类型%label."
 msgid "Cabinet"
 msgstr "机柜"
 
-#: modules/neibers/cbos/neibers_hardware/config/install/neibers_hardware.type.neibers_hardware.yml:0
-msgid "Hardware(Normal neibers_hardware)"
-msgstr "设备"
+#: modules/neibers/cbos/hardware/config/install/neibers_hardware.type.firewall.yml:0
+msgid "Firewall"
+msgstr "防火墙"
+
+#: modules/neibers/cbos/hardware/config/install/neibers_hardware.type.server.yml:0
+msgid "Server"
+msgstr "服务器"
+
+#: modules/neibers/cbos/hardware/config/install/neibers_hardware.type.switcher.yml:0
+msgid "Switcher"
+msgstr "交换机"
 
