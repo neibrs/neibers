@@ -1,5 +1,5 @@
 neibers_idc.ip:
-  title: IP
+  title: 'IP collection'
   route_name: entity.neibers_ip.collection
   menu_name: business
   weight: 10
@@ -11,7 +11,7 @@ neibers_idc.ip.collection:
   weight: 10
 
 neibers_idc.ip.free:
-  title: 'Free IP'
+  title: 'Free IP collection'
   route_name: entity.neibers_ip.collection
   options:
     query:
@@ -20,7 +20,7 @@ neibers_idc.ip.free:
   weight: 13
 
 neibers_idc.ip.used:
-  title: 'Used IP'
+  title: 'Used IP collection'
   route_name: entity.neibers_ip.collection
   options:
     query:
@@ -29,7 +29,7 @@ neibers_idc.ip.used:
   weight: 15
 
 neibers_idc.ip.inet:
-  title: 'Inet IP'
+  title: 'Inet IP collection'
   route_name: entity.neibers_ip.collection
   options:
     query:
@@ -38,7 +38,7 @@ neibers_idc.ip.inet:
   weight: 17
 
 neibers_idc.ip.onet:
-  title: 'Onet IP'
+  title: 'Onet IP collection'
   route_name: entity.neibers_ip.collection
   options:
     query:
@@ -60,13 +60,13 @@ neibers_idc.neibers_ip_type.configuration.type:
 
 # Fitting
 neibers_idc.fitting:
-  title: Fitting
+  title: 'Fitting collection'
   route_name: entity.neibers_fitting.collection
   menu_name: business
   weight: 15
 
 neibers_idc.fitting.collection:
-  title: Fitting
+  title: 'Fitting collection'
   route_name: entity.neibers_fitting.collection
   parent: neibers_idc.fitting
   weight: 1
@@ -83,25 +83,25 @@ neibers_idc.fitting.configuration.type:
 
 # Room
 neibers_idc.room:
-  title: Room
+  title: 'Room collection'
   route_name: entity.neibers_room.collection
   menu_name: business
   weight: 20
 
 neibers_idc.room.collection:
-  title: Room
+  title: 'Room collection'
   route_name: entity.neibers_room.collection
   parent: neibers_idc.room
   weight: 31
 
 neibers_idc.cabinet.collection:
-  title: Cabinet
+  title: 'Cabinet collection'
   route_name: entity.neibers_cabinet.collection
   parent: neibers_idc.room
   weight: 40
 
 neibers_idc.seat.collection:
-  title: Seat
+  title: 'Seat collection'
   route_name: entity.neibers_seat.collection
   parent: neibers_idc.room
   weight: 45
@@ -127,13 +127,13 @@ neibers_idc.seat_type.configuration.type:
 
 # Hardware
 neibers_idc.hardware:
-  title: Hardware
+  title: 'Hardware collection'
   route_name: entity.neibers_hardware.collection
   menu_name: business
   weight: 30
 
 neibers_idc.hardware.collection:
-  title: Hardware
+  title: 'Hardware collection'
   route_name: entity.neibers_hardware.collection
   parent: neibers_idc.hardware
   weight: 10
