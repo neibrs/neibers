@@ -2,7 +2,6 @@
 
 namespace Drupal\neibers_ip\Entity;
 
-use Drupal\commerce_order\Entity\OrderInterface;
 use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Field\BaseFieldDefinition;
 use Drupal\Core\Entity\RevisionableContentEntityBase;

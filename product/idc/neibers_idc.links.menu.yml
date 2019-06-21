@@ -78,7 +78,7 @@ neibers_idc.ip_type.configuration:
   weight: 50
 
 neibers_idc.neibers_ip_type.configuration.type:
-  title: 'Type'
+  title: 'IP type'
   route_name: entity.neibers_ip_type.collection
   parent: neibers_idc.ip_type.configuration
   weight: 10
@@ -101,7 +101,7 @@ neibers_idc.fitting.configuration:
   parent: neibers_idc.fitting
   weight: 5
 neibers_idc.fitting.configuration.type:
-  title: 'Type'
+  title: 'Fitting type'
   route_name: entity.neibers_fitting_type.collection
   parent: neibers_idc.fitting.configuration
   weight: 1
