@@ -84,19 +84,26 @@ class IPOrderForm extends FormBase {
       '#target_type' => 'neibers_ip',
       '#selection_settings' => [
         'conditions' => [
-          'type' => 'onet',
+          'type' => 'inet',
+          'state' => 'free',
+          'status' => true,
         ],
       ],
-      '#required' => TRUE,
       '#size' => 40,
-      '#prefix' => '<div id="edit-administer-wrapper">',
-      '#suffix' => '</div>',
-      '#ajax' => [
-        'callback' => '::ajaxBusiness',
-        'wrapper' => 'edit-business-wrapper',
-      ],
     ];
-
+    $form['all']['business'] = [
+      '#title' => $this->t('Business IP'),
+      '#type' => 'entity_autocomplete',
+      '#target_type' => 'neibers_ip',
+      '#selection_settings' => [
+        'conditions' => [
+          'type' => 'onet',
+          'state' => 'free',
+          'status' => true,
+        ],
+      ],
+      '#size' => 40,
+    ];
     return $form['all'];
   }
 
@@ -110,4 +117,5 @@ class IPOrderForm extends FormBase {
   public function submitForm(array &$form, FormStateInterface $form_state) {
     // TODO: Implement submitForm() method.
   }
+
 }
