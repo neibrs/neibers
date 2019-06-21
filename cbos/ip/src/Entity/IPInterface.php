@@ -107,4 +107,35 @@ interface IPInterface extends ContentEntityInterface, RevisionLogInterface, Enti
    */
   public function unbindInet(IPInterface $ip);
 
+  /**
+   * @description Allocate ip to order
+   * Allocate administer ip
+   */
+  public function allocateInet($order = 0);
+  /**
+   * @description Allocate ip to order
+   * Allocate business ip
+   */
+  public function allocateOnet($seat = 0, $order = 0);
+
+  /**
+   * Add order to order_id field in entity ip.
+   */
+  public function setOrder($order = 0);
+
+  /**
+   * Get order to order_id field in entity ip.
+   */
+  public function getOrderId();
+
+  /**
+   * Add seat to seat field in entity ip of administer(inet) ip.
+   */
+  public function setSeat($seat = 0);
+
+  /**
+   * Get seat to seat field in entity ip of administer(inet) ip.
+   */
+  public function getSeat();
+
 }

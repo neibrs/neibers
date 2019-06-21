@@ -2,6 +2,7 @@
 
 namespace Drupal\neibers_ip\Entity;
 
+use Drupal\commerce_order\Entity\OrderInterface;
 use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Field\BaseFieldDefinition;
 use Drupal\Core\Entity\RevisionableContentEntityBase;
@@ -373,4 +374,53 @@ class IP extends RevisionableContentEntityBase implements IPInterface {
     return $ip;
   }
 
+  /**
+   * @description Allocate ip to order
+   */
+  public function allocateInet($order = 0) {
+    $this->setOrder($order);
+
+    return $this;
+  }
+  /**
+   * {@inheritdoc}
+   */
+  public function allocateOnet($seat = 0, $order = 0) {
+    $this->setSeat($seat);
+    $this->setOrder($order);
+
+    return $this;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function setOrder($order = 0) {
+    $this->set('order_id', $order);
+
+    return $this;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function getOrderId() {
+    return $this->get('order_id')->target_id;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function setSeat($seat = 0) {
+    $this->seat->target_id = $seat;
+
+    return $this;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function getSeat() {
+    return $this->seat->target_id;
+  }
 }

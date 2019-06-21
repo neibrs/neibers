@@ -42,7 +42,7 @@
 * 实体内的bundle数据需要锁定操作
   * hardware_type
   * ip_type inet, onet
-  
+* IP导入需要动态新增设备类型  
 * 可销售的物品有硬盘、内存、带宽、光模块(统称为Fitting)
 
 # 原始网站数据初始化流程
