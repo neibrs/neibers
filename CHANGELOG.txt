@@ -2,11 +2,12 @@
 Neibrs dev 8.x-1.x
 -----------------------
 - Added modules:
-  * cbos module: neibers_cabinet, neibers_fitting, ip, neibers_room, neibers_hardware
+  * cbos module: neibers_cabinet, neibers_fitting, neibers_ip, neibers_room, neibers_hardware
   * core module: menu_plus
   * product module: neibers_mall, neibers_idc
   * profiles: neibers_neibrs
   * themes: neibers_basestrap
+
 
 
 Tree like as below:
