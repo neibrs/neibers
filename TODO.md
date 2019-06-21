@@ -39,6 +39,9 @@
   * authenticated
 * IP分配
 * 个人订阅订单列表
+* 实体内的bundle数据需要锁定操作
+  * hardware_type
+  * ip_type inet, onet
   
 * 可销售的物品有硬盘、内存、带宽、光模块(统称为Fitting)
 
