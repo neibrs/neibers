@@ -40,7 +40,7 @@ msgid "Import"
 msgstr ""
 
 #: modules/neibers/core/import/import.info.yml:0
-msgid "Neibers"
+msgid "Neibers core"
 msgstr ""
 
 #: modules/neibers/core/import/import.links.action.yml:0

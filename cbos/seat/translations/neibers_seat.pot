@@ -45,7 +45,7 @@ msgid "Seat"
 msgstr ""
 
 #: modules/neibers/cbos/seat/neibers_seat.info.yml:0
-msgid "Neibers"
+msgid "Neibers cbos"
 msgstr ""
 
 #: modules/neibers/cbos/seat/neibers_seat.links.action.yml:0

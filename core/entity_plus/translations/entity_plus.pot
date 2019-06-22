@@ -31,7 +31,7 @@ msgid "Entity plus"
 msgstr ""
 
 #: modules/neibers/core/entity_plus/entity_plus.info.yml:0
-msgid "Neibers"
+msgid "Neibers core"
 msgstr ""
 
 #: modules/neibers/core/entity_plus/config/schema/entity_plus.schema.yml:0 modules/neibers/core/entity_plus/src/Plugin/Block/EntityOperationsMenuBlock.php:10

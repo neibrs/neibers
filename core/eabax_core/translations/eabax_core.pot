@@ -33,7 +33,7 @@ msgid "Neibrs core"
 msgstr ""
 
 #: modules/neibers/core/eabax_core/eabax_core.info.yml:0
-msgid "Neibers"
+msgid "Neibers core"
 msgstr ""
 
 #: modules/neibers/core/eabax_core/eabax_core.links.menu.yml:0

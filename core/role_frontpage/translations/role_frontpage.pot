@@ -33,7 +33,7 @@ msgid "Front page per role."
 msgstr ""
 
 #: modules/neibers/core/role_frontpage/role_frontpage.info.yml:0
-msgid "Neibers"
+msgid "Neibers core"
 msgstr ""
 
 #: modules/neibers/core/role_frontpage/config/schema/role_frontpage.schema.yml:0

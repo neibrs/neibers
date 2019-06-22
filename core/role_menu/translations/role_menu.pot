@@ -30,7 +30,7 @@ msgid "Edit role menu"
 msgstr ""
 
 #: modules/neibers/core/role_menu/role_menu.info.yml:0
-msgid "Neibers"
+msgid "Neibers core"
 msgstr ""
 
 #: modules/neibers/core/role_menu/config/schema/role_menu.schema.yml:0

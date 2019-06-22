@@ -6,7 +6,7 @@ version: VERSION
 interface translation project: neibers_neibrs
 interface translation server pattern: modules/neibers/profiles/neibrs/translations/%project.%language.po
 distribution:
-  name: 'Neibrs IDC'
+  name: 'Neibers IDC'
   langcode: en
   install:
     theme: neibers_basestrap

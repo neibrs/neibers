@@ -49,7 +49,7 @@ msgid "The machine room of store computer equipments."
 msgstr "用于放置计算机设备机器的房间."
 
 #: modules/neibers/cbos/room/neibers_room.info.yml:0
-msgid "Neibers"
+msgid "Neibers cbos"
 msgstr ""
 
 #: modules/neibers/cbos/room/neibers_room.links.action.yml:0

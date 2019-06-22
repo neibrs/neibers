@@ -4,7 +4,7 @@ description: 'The industry of neibers idc.'
 core: 8.x
 interface translation project: neibers_idc
 interface translation server pattern: modules/neibers/product/idc/translations/%project.%language.po
-package: 'Neibers'
+package: 'Neibers product'
 dependencies:
   - neibers_fitting
   - neibers_ip

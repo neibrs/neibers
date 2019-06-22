@@ -43,7 +43,7 @@ msgid "The neibers_cabinets of idc room."
 msgstr ""
 
 #: modules/neibers/cbos/cabinet/neibers_cabinet.info.yml:0
-msgid "Neibers"
+msgid "Neibers cbos"
 msgstr ""
 
 #: modules/neibers/cbos/cabinet/neibers_cabinet.links.action.yml:0

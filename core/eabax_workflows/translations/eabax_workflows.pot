@@ -33,7 +33,7 @@ msgid "Eabax workflows"
 msgstr ""
 
 #: modules/neibers/core/eabax_workflows/eabax_workflows.info.yml:0
-msgid "Neibers"
+msgid "Neibers core"
 msgstr ""
 
 #: modules/neibers/core/eabax_workflows/eabax_workflows.routing.yml:0

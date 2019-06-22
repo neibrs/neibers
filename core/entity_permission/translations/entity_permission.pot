@@ -33,7 +33,7 @@ msgid "Entity permission"
 msgstr ""
 
 #: modules/neibers/core/entity_permission/entity_permission.info.yml:0
-msgid "Neibers"
+msgid "Neibers core"
 msgstr ""
 
 #: modules/neibers/core/entity_permission/entity_permission.permissions.yml:0

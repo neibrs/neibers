@@ -2,7 +2,7 @@ name: 'Seat'
 type: module
 description: 'The seat of the cabinet.'
 core: 8.x
-package: 'Neibers'
+package: 'Neibers cbos'
 interface translation project: neibers_seat
 interface translation server pattern: modules/neibers/cbos/seat/translations/%project.%language.po
 dependencies:

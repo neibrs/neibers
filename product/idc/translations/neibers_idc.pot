@@ -38,7 +38,7 @@ msgid "The industry of neibers idc."
 msgstr ""
 
 #: modules/neibers/product/idc/neibers_idc.info.yml:0
-msgid "Neibers"
+msgid "Neibers product"
 msgstr ""
 
 #: modules/neibers/product/idc/neibers_idc.links.action.yml:0

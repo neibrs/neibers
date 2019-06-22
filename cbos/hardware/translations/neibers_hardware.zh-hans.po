@@ -52,7 +52,7 @@ msgid "The hardware in the cabinet seat."
 msgstr "机位当中的设备."
 
 #: modules/neibers/cbos/hardware/neibers_hardware.info.yml:0
-msgid "Neibers"
+msgid "Neibers cbos"
 msgstr ""
 
 #: modules/neibers/cbos/hardware/neibers_hardware.links.action.yml:0

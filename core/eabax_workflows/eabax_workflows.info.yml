@@ -4,7 +4,7 @@ description: 'Eabax workflows'
 core: 8.x
 interface translation project: eabax_workflows
 interface translation server pattern: modules/neibers/core/%project/translations/%project.%language.po
-package: 'Neibers'
+package: 'Neibers core'
 dependencies:
   - charts:charts_c3
   - drupal:rest

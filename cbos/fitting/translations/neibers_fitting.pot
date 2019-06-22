@@ -52,7 +52,7 @@ msgid "The neibers_fittings of a machine."
 msgstr ""
 
 #: modules/neibers/cbos/fitting/neibers_fitting.info.yml:0
-msgid "Neibers"
+msgid "Neibers cbos"
 msgstr ""
 
 #: modules/neibers/cbos/fitting/neibers_fitting.links.action.yml:0

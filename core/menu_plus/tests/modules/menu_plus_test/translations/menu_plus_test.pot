@@ -32,6 +32,6 @@ msgid "Menu plus test"
 msgstr ""
 
 #: modules/neibers/core/menu_plus/tests/modules/menu_plus_test/menu_plus_test.info.yml:0
-msgid "Neibers"
+msgid "Neibers core"
 msgstr ""
 

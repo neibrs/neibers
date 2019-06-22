@@ -22,6 +22,6 @@ msgid "Translation"
 msgstr ""
 
 #: modules/neibers/core/translation/neibers_translation.info.yml:0
-msgid "Neibers"
+msgid "Neibers core"
 msgstr ""
 

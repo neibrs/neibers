@@ -2,4 +2,4 @@ name: 'Menu plus test'
 type: module
 description: 'Test menu plus schema.'
 core: 8.x
-package: 'Neibers'
+package: 'Neibers core'

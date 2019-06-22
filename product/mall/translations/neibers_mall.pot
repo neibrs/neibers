@@ -48,7 +48,7 @@ msgid "The commerce module with exsen theme for commerce purpose."
 msgstr ""
 
 #: modules/neibers/product/mall/neibers_mall.info.yml:0
-msgid "Neibers"
+msgid "Neibers product"
 msgstr ""
 
 #: modules/neibers/product/mall/neibers_mall.links.menu.yml:0

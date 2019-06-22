@@ -84,7 +84,7 @@ msgid "IP"
 msgstr ""
 
 #: modules/neibers/cbos/ip/neibers_ip.info.yml:0
-msgid "Neibers"
+msgid "Neibers cbos"
 msgstr ""
 
 #: modules/neibers/cbos/ip/neibers_ip.links.action.yml:0
