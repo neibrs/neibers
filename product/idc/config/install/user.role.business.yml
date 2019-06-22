@@ -9,6 +9,8 @@ dependencies:
 third_party_settings:
   role_menu:
     menu: business
+  role_frontpage:
+    frontpage: '/ip'
 id: business
 label: Business
 weight: 113
