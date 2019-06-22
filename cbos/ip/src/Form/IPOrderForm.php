@@ -115,18 +115,14 @@ class IPOrderForm extends FormBase implements ContainerInjectionInterface {
         'wrapper' => 'administer-wrapper',
       ],
     ];
-
     $administer_conditions = [];
     if (!$form_state->getValue('resign')) {
-      $administer_conditions['state'] = 'free';
+//      $administer_conditions['state'] = 'free';
     }
 
     $administer_conditions['type'] = 'inet';
     $administer_conditions['status'] = true;
 
-    if ($form_state->getValue('resign')) {
-      $form['all']['administer']['widget'][0]['target_id']['#selection_settings']['conditions'] = $administer_conditions;
-    }
 
     // TODO Add condition for filter ip.
     $form['all']['administer'] = [
@@ -140,6 +136,11 @@ class IPOrderForm extends FormBase implements ContainerInjectionInterface {
       ],
       '#size' => 40,
     ];
+
+    if ($form_state->getValue('resign')) {
+      $form['all']['administer']['#selection_settings']['conditions'] = $administer_conditions;
+    }
+
 
     // Filter conditions for business ip:
     // 1. find the business ip, and administer ip on the same seat.
@@ -168,24 +169,26 @@ class IPOrderForm extends FormBase implements ContainerInjectionInterface {
     return $form['all']['administer'];
   }
 
-  /**
-   * {@inheritdoc}
-   */
-  public function validateForm(array &$form, FormStateInterface $form_state) {
-    $values = $form_state->getValues();
-    /** @var \Drupal\neibers_ip\Entity\IPInterface $administer */
-    $administer = $this->simplifyIp($values['administer']);
-    /** @var \Drupal\neibers_ip\Entity\IPInterface $business */
-    $business = $this->simplifyIp($values['business']);
-
-    if (empty($administer)) {
-      $this->messenger()->addError($this->t('Administer IP not exists.'));
-    }
-
-    if (!empty($values['business']) && empty($business)) {
-      $this->messenger()->addError($this->t('Business IP not exists.'));
-    }
-  }
+// Warning: call_user_func_array() expects parameter 1 to be a valid callback, class 'Drupal\Core\Entity\Element\EntityAutocomplete' does not have a method 'validateEntityAutocomplete' in Drupal\Core\Form\FormValidator->doValidateForm() (line 282 of core/lib/Drupal/Core/Form/FormValidator.php).
+//
+//  /**
+//   * {@inheritdoc}
+//   */
+//  public function validateForm(array &$form, FormStateInterface $form_state) {
+//    $values = $form_state->getValues();
+//    /** @var \Drupal\neibers_ip\Entity\IPInterface $administer */
+//    $administer = $this->simplifyIp($values['administer']);
+//    /** @var \Drupal\neibers_ip\Entity\IPInterface $business */
+//    $business = $this->simplifyIp($values['business']);
+//
+//    if (empty($administer)) {
+//      $this->messenger()->addError($this->t('Administer IP not exists.'));
+//    }
+//
+//    if (!empty($values['business']) && empty($business)) {
+//      $this->messenger()->addError($this->t('Business IP not exists.'));
+//    }
+//  }
 
   /**
    * {@inheritdoc}

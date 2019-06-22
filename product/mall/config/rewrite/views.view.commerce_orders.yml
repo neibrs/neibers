@@ -380,10 +380,11 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
+          type: ol
+          sepatraor: ','
           set_precision: false
           precision: 0
           decimal: .
-          separator: ','
           format_plural: 0
           format_plural_string: !!binary MQNAY291bnQ=
           prefix: ''

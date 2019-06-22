@@ -193,12 +193,9 @@ display:
           counter_start: 1
           plugin_id: counter
         name:
+          id: name
           table: neibers_ip_field_data
           field: name
-          id: name
-          entity_type: null
-          entity_field: name
-          plugin_id: field
           relationship: none
           group_type: group
           admin_label: ''
@@ -214,7 +211,8 @@ display:
           hide_alter_empty: true
           click_sort_column: value
           type: string
-          settings: {  }
+          settings:
+            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -225,6 +223,9 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          entity_type: null
+          entity_field: name
+          plugin_id: field
         name_1:
           id: name_1
           table: neibers_seat_field_data
@@ -744,7 +745,6 @@ display:
           entity_type: neibers_seat
           entity_field: hardware
           plugin_id: standard
-      arguments: {  }
       filter_groups:
         operator: AND
         groups:

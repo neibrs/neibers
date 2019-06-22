@@ -33,6 +33,10 @@ source:
       State: State
     11:
       HardwareType: HardwareType
+
+destination:
+  plugin: entity:neibers_ip
+
 process:
   name:
     -
@@ -42,6 +46,11 @@ process:
       message: 'IP name has not set'
     -
       plugin: get
+#    -
+#      plugin: entity_lookup
+#      value_key: name
+#      entity_type: neibers_ip
+#      ignore_case: true
   type:
     -
       plugin: skip_on_empty
@@ -127,5 +136,3 @@ process:
         空闲: free
         已用: used
 
-destination:
-  plugin: entity:neibers_ip
