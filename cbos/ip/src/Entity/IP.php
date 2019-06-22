@@ -265,25 +265,6 @@ class IP extends RevisionableContentEntityBase implements IPInterface {
       ->setDisplayConfigurable('view', TRUE)
       ->setRequired(TRUE);
 
-    $fields['hardware'] = BaseFieldDefinition::create('entity_reference')
-      ->setLabel(t('Hardware'))
-      ->setSetting('target_type', 'neibers_hardware')
-      ->setDisplayOptions('view', [
-        'type' => 'entity_reference_label',
-        'weight' => 6,
-      ])
-      ->setDisplayOptions('form', [
-        'type' => 'entity_reference_autocomplete',
-        'weight' => 6,
-        'settings' => [
-          'match_operator' => 'CONTAINS',
-          'size' => '60',
-          'placeholder' => 'Which belong to hardware.',
-        ],
-      ])
-      ->setDisplayConfigurable('form', TRUE)
-      ->setDisplayConfigurable('view', TRUE);
-
     $fields['seat'] = BaseFieldDefinition::create('entity_reference')
       ->setLabel(t('Cabinet Seat'))
       ->setSetting('target_type', 'neibers_seat')
