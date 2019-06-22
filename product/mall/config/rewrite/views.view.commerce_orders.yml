@@ -989,8 +989,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          operator: in
-          value: {  }
+          operator: 'not in'
+          value:
+            draft: draft
           group: 1
           exposed: true
           expose:
