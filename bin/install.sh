@@ -15,6 +15,7 @@ vendor/bin/drush en -y coffee \
 
 vendor/bin/drush en -y commerce_checkout \
   commerce_price \
+  commerce_recurring \
   neibers_idc \
   neibers_mall \
   role_menu
