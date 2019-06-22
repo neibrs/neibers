@@ -3,6 +3,9 @@
 namespace Drupal\neibers_ip\Plugin\views\field;
 
 use Drupal\Core\Entity\EntityTypeManagerInterface;
+use Drupal\Core\Link;
+use Drupal\Core\Url;
+use Drupal\Core\Utility\LinkGenerator;
 use Drupal\views\Plugin\views\display\DisplayPluginBase;
 use Drupal\views\Plugin\views\field\PrerenderList;
 use Drupal\views\ResultRow;
@@ -74,10 +77,10 @@ class BusinessIp extends PrerenderList {
         'order_id' => $id,
         'seat'     => $seat_id,
         'type' => 'onet',
-//        'state' => 'used',
+        'state' => 'used',
       ]);
       foreach ($ips as $ip) {
-        $this->items[$id][$ip->id()]['ip'] = $ip->label();
+        $this->items[$id][$ip->id()]['ip'] = $ip->label();//Link::createFromRoute($this->t('add'), 'entity.neibers_ip.collection')->toString();
       }
     }
 
