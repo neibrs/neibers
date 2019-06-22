@@ -11,14 +11,11 @@ vendor/bin/drush en -y coffee \
   commerce_checkout \
   content_translation \
   locale \
-  webprofiler
-
-vendor/bin/drush en -y commerce_checkout \
-  commerce_price \
-  commerce_recurring \
+  webprofiler \
+  neibers_fitting \
+  neibers_hardware \
   neibers_idc \
-  neibers_mall \
-  role_menu
+  neibers_mall
 
 
 # Initial demo data.

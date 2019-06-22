@@ -7,5 +7,4 @@ interface translation project: neibers_fitting
 interface translation server pattern: modules/neibers/cbos/fitting/translations/%project.%language.po
 dependencies:
   - eabax_workflows
-  - neibers_cabinet
-  - neibers_hardware
+  - neibers_seat

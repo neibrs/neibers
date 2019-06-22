@@ -209,27 +209,6 @@ class Hardware extends ContentEntityBase implements HardwareInterface {
       ->setDisplayConfigurable('view', TRUE)
       ->setRequired(TRUE);
 
-    $fields['seat'] = BaseFieldDefinition::create('entity_reference')
-      ->setLabel(t('Seat'))
-      ->setDescription(t('Hardware equipment must be assigned a location seat.'))
-      ->setSetting('target_type', 'neibers_seat')
-      ->setRequired(TRUE)
-      ->setDisplayOptions('view', [
-        'type' => 'entity_reference_label',
-        'weight' => 6,
-      ])
-      ->setDisplayOptions('form', [
-        'type' => 'entity_reference_autocomplete',
-        'weight' => 6,
-        'settings' => [
-          'match_operator' => 'CONTAINS',
-          'size' => '60',
-          'placeholder' => 'Hardware belong to seat.',
-        ],
-      ])
-      ->setDisplayConfigurable('form', TRUE)
-      ->setDisplayConfigurable('view', TRUE);
-
     $fields['status'] = BaseFieldDefinition::create('boolean')
       ->setLabel(t('Publishing status'))
       ->setDescription(t('A boolean indicating whether the Hardware is published.'))

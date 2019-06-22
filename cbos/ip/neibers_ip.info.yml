@@ -9,5 +9,5 @@ dependencies:
   - commerce:commerce_order
   - eabax_workflows
   - drupal:workflows
-  - neibers_cabinet
+  - neibers_seat
   - neibers_hardware
