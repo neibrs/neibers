@@ -2,6 +2,7 @@
 
 namespace Drupal\neibers_ip\Entity;
 
+use Drupal\commerce_order\Entity\OrderInterface;
 use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Field\BaseFieldDefinition;
 use Drupal\Core\Entity\RevisionableContentEntityBase;
@@ -9,6 +10,7 @@ use Drupal\Core\Entity\RevisionableInterface;
 use Drupal\Core\Entity\EntityChangedTrait;
 use Drupal\Core\Entity\EntityPublishedTrait;
 use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\neibers_seat\Entity\SeatInterface;
 use Drupal\user\UserInterface;
 
 /**
@@ -376,17 +378,21 @@ class IP extends RevisionableContentEntityBase implements IPInterface {
   /**
    * @description Allocate ip to order
    */
-  public function allocateInet($order = 0) {
+  public function allocateInet(OrderInterface $order, $user_id = 0) {
     $this->setOrder($order);
+    $this->setOwnerId($user_id);
+    $this->setState('used');
 
     return $this;
   }
   /**
    * {@inheritdoc}
    */
-  public function allocateOnet($seat = 0, $order = 0) {
+  public function allocateOnet(SeatInterface $seat, OrderInterface $order, $user_id = 0) {
     $this->setSeat($seat);
     $this->setOrder($order);
+    $this->setOwnerId($user_id);
+    $this->setState('used');
 
     return $this;
   }
@@ -394,8 +400,8 @@ class IP extends RevisionableContentEntityBase implements IPInterface {
   /**
    * {@inheritdoc}
    */
-  public function setOrder($order = 0) {
-    $this->set('order_id', $order);
+  public function setOrder(OrderInterface $order) {
+    $this->set('order_id', $order->id());
 
     return $this;
   }
@@ -410,8 +416,8 @@ class IP extends RevisionableContentEntityBase implements IPInterface {
   /**
    * {@inheritdoc}
    */
-  public function setSeat($seat = 0) {
-    $this->seat->target_id = $seat;
+  public function setSeat(SeatInterface $seat) {
+    $this->seat->target_id = $seat->id();
 
     return $this;
   }
@@ -420,6 +426,13 @@ class IP extends RevisionableContentEntityBase implements IPInterface {
    * {@inheritdoc}
    */
   public function getSeat() {
-    return $this->seat->target_id;
+    return $this->seat->entity;
+  }
+
+  public function setState($state = '') {
+    // TODO state for workflow transition.
+    $this->state->value = $state;
+
+    return;
   }
 }

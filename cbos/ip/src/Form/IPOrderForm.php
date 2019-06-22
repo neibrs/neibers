@@ -6,6 +6,7 @@ use Drupal\Core\DependencyInjection\ContainerInjectionInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\views\Views;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 class IPOrderForm extends FormBase implements ContainerInjectionInterface {
@@ -60,7 +61,7 @@ class IPOrderForm extends FormBase implements ContainerInjectionInterface {
       '#open' => TRUE,
     ];
     /** Build ips form. */
-    $form['ips'] = $this->buildIpsForm($form, $form_state, $order, $display);
+    $form['ips_collection'] = $this->buildIpsForm($form, $form_state, $order, $display);
 
     /** Build allocate ip form. */
     $form['all'] = $this->buildAllocateForm($form, $form_state, $order, $display);
@@ -72,22 +73,23 @@ class IPOrderForm extends FormBase implements ContainerInjectionInterface {
    * @description build ips form.
    */
   public function buildIpsForm(&$form, FormStateInterface $form_state, $order = NULL, $display = NULL) {
-    $header = [$this->t('Hardware type'), $this->t('Hardware')];
-    if ($display->getMode() == 'default') {
-      $header = array_merge($header, [$this->t('Administer IP')]);
-    }
-    $header = array_merge($header, [$this->t('Business IP'), $this->t('Fitting'), $this->t('Operations')]);
-    $form['ips'] = [
-      '#caption' => $this->t('IP tables'),
-      '#type' => 'table',
-      '#title' => $this->t('All the Ips'),
-      '#header' => $header,
-      '#sticky' => TRUE,
-      '#weight' => 0,
+    $view = Views::getView('ips_order_form');
+
+    $form['ips_collection'] = [
+      '#type' => 'details',
+      '#title' => $this->t('IP collection'),
+      '#weight' => 10,
+      '#open' => TRUE,
     ];
-
-
-    return $form['ips'];
+    $form['ips_collection']['ips'] = [
+      '#type' => 'view',
+      '#view' => $view,
+      '#display_id' => 'default',
+      '#arguments' => [
+        $this->order->id(),
+      ],
+    ];
+    return $form['ips_collection'];
   }
 
   /**
@@ -98,11 +100,6 @@ class IPOrderForm extends FormBase implements ContainerInjectionInterface {
       '#type' => 'details',
       '#title' => $this->t('Allocate'),
       '#weight' => 10,
-      '#attributes' => [
-        'class' => [
-          'container-inline',
-        ],
-      ],
       '#open' => TRUE,
     ];
     // Filter conditions for administer ip:
@@ -110,18 +107,36 @@ class IPOrderForm extends FormBase implements ContainerInjectionInterface {
     // 2. find seat by hardware.
     // 3. find ip collection by seat
     // 4. find free administer ip
+    $form['all']['resign'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Resign, Todo'),
+      '#ajax' => [
+        'callback' => '::ajaxAdminister',
+        'wrapper' => 'administer-wrapper',
+      ],
+    ];
+
+    $administer_conditions = [];
+    if (!$form_state->getValue('resign')) {
+      $administer_conditions['state'] = 'free';
+    }
+
+    $administer_conditions['type'] = 'inet';
+    $administer_conditions['status'] = true;
+
+    if ($form_state->getValue('resign')) {
+      $form['all']['administer']['widget'][0]['target_id']['#selection_settings']['conditions'] = $administer_conditions;
+    }
 
     // TODO Add condition for filter ip.
     $form['all']['administer'] = [
       '#title' => $this->t('Administer IP'),
       '#type' => 'entity_autocomplete',
       '#target_type' => 'neibers_ip',
+      '#prefix' => '<div id="administer-wrapper>',
+      '#suffix' => '</div>',
       '#selection_settings' => [
-        'conditions' => [
-          'type' => 'inet',
-          'state' => 'free',
-          'status' => true,
-        ],
+        'conditions' => $administer_conditions,
       ],
       '#size' => 40,
     ];
@@ -147,6 +162,10 @@ class IPOrderForm extends FormBase implements ContainerInjectionInterface {
     $form['all']['actions']['submit'] = ['#type' => 'submit', '#value' => $this->t('Save')];
 
     return $form['all'];
+  }
+
+  public function ajaxAdminister(array &$form, FormStateInterface $form_state) {
+    return $form['all']['administer'];
   }
 
   /**
@@ -181,11 +200,11 @@ class IPOrderForm extends FormBase implements ContainerInjectionInterface {
     /** @var \Drupal\neibers_ip\Entity\IPInterface $business */
     $business = $this->simplifyIp($values['business']);
 
-    $administer->allocateInet($this->order->id());
+    $administer->allocateInet($this->order, $this->order->id());
     $administer->save();
 
     if (!empty($administer)) {
-      $business->allocateOnet($administer->getSeat(), $this->order->id());
+      $business->allocateOnet($administer->getSeat(), $this->order, $this->order->getCustomerId());
       $business->save();
     }
   }

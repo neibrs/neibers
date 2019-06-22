@@ -1,0 +1,13 @@
+1. Entityreferenceautocompletewidget error by  Some mandatory parameters are missing (commerce_product) to generate a URL for route
+
+EntityReferenceAutocompleteWidget
+
+\Drupal::entityTypeManager()
+  ->getRouteProviders($target_type)['default']->getRoutes($entity_type)
+  ->get('entity.commerce_product_variation.add_form')
+  ->getOption('parameters')
+
+EntityRouteProviderSubscriber ->  onDynamicRouteEvent()
+
+2. IPOrderForm save action
+ Warning: call_user_func_array() expects parameter 1 to be a valid callback, class 'Drupal\Core\Entity\Element\EntityAutocomplete' does not have a method 'validateEntityAutocomplete' in Drupal\Core\Form\FormValidator->doValidateForm() (line 282 of core/lib/Drupal/Core/Form/FormValidator.php).

@@ -57,6 +57,9 @@ class IPStorage extends SqlContentEntityStorage implements IPStorageInterface {
       ->execute();
   }
 
+  public function getSeatByInet(IPInterface $ip) {
+    return $ip->getSeat();
+  }
   /**
    * {@inheritDoc}
    */

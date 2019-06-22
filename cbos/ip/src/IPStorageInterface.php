@@ -61,6 +61,11 @@ interface IPStorageInterface extends ContentEntityStorageInterface {
   public function clearRevisionsLanguage(LanguageInterface $language);
 
   /**
+   * @param IPInterface $ip
+   * @return \Drupal\neibers_seat\Entity\SeatInterface
+   */
+  public function getSeatByInet(IPInterface $ip);
+  /**
    * @param \Drupal\commerce_order\Entity\OrderInterface $order
    *
    * @return \Drupal\neibers_ip\Entity\IPInterface[]

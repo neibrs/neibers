@@ -2,10 +2,12 @@
 
 namespace Drupal\neibers_ip\Entity;
 
+use Drupal\commerce_order\Entity\OrderInterface;
 use Drupal\Core\Entity\ContentEntityInterface;
 use Drupal\Core\Entity\RevisionLogInterface;
 use Drupal\Core\Entity\EntityChangedInterface;
 use Drupal\Core\Entity\EntityPublishedInterface;
+use Drupal\neibers_seat\Entity\SeatInterface;
 use Drupal\user\EntityOwnerInterface;
 
 /**
@@ -111,31 +113,32 @@ interface IPInterface extends ContentEntityInterface, RevisionLogInterface, Enti
    * @description Allocate ip to order
    * Allocate administer ip
    */
-  public function allocateInet($order = 0);
+  public function allocateInet(OrderInterface $order, $user_id = 0);
   /**
    * @description Allocate ip to order
    * Allocate business ip
    */
-  public function allocateOnet($seat = 0, $order = 0);
+  public function allocateOnet(SeatInterface $seat, OrderInterface $order, $user_id = 0);
 
   /**
    * Add order to order_id field in entity ip.
    */
-  public function setOrder($order = 0);
+  public function setOrder(OrderInterface $order);
 
   /**
-   * Get order to order_id field in entity ip.
+   * Get order from order_id field in entity ip.
    */
   public function getOrderId();
 
   /**
    * Add seat to seat field in entity ip of administer(inet) ip.
    */
-  public function setSeat($seat = 0);
+  public function setSeat(SeatInterface $seat);
 
   /**
-   * Get seat to seat field in entity ip of administer(inet) ip.
+   * Get seat id to seat field in entity ip of administer(inet) ip.
    */
   public function getSeat();
 
+  public function setState($state = '');
 }
