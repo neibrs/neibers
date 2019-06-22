@@ -10,7 +10,7 @@ use Drupal\Core\Access\AccessResult;
 /**
  * Access controller for the Hardware type entity.
  *
- * @see \Drupal\neibers_hardware\Entity\PersonType.
+ * @see \Drupal\neibers_hardware\Entity\HardwareType.
  */
 class HardwareTypeAccessControlHandler extends EntityAccessControlHandler {
 
