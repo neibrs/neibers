@@ -6,3 +6,4 @@ dependencies:
       - neibers_hardware
 id: server
 label: 'Server'
+locked: true
