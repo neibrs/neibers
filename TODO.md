@@ -38,7 +38,7 @@
   * administer
   * authenticated
 * IP分配
-* 个人订阅订单列表
+* 个人订阅订单列表(Fixed)
 * 实体内的bundle数据需要锁定操作
   * hardware_type
   * ip_type inet, onet
