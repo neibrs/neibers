@@ -117,7 +117,7 @@ class IPOrderForm extends FormBase implements ContainerInjectionInterface {
     ];
     $administer_conditions = [];
     if (!$form_state->getValue('resign')) {
-//      $administer_conditions['state'] = 'free';
+      $administer_conditions['state'] = 'free';
     }
 
     $administer_conditions['type'] = 'inet';
