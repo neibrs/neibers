@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\neibers_cabinet\Form;
+namespace Drupal\neibers_seat\Form;
 
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
@@ -8,7 +8,7 @@ use Drupal\Core\Form\FormStateInterface;
 /**
  * Class SeatSettingsForm.
  *
- * @ingroup neibers_cabinet
+ * @ingroup neibers_seat
  */
 class SeatSettingsForm extends FormBase {
 

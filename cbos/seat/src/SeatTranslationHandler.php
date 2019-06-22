@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\neibers_cabinet;
+namespace Drupal\neibers_seat;
 
 use Drupal\content_translation\ContentTranslationHandler;
 

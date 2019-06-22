@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\neibers_cabinet;
+namespace Drupal\neibers_seat;
 
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\EntityListBuilder;
@@ -9,7 +9,7 @@ use Drupal\Core\Link;
 /**
  * Defines a class to build a listing of Seat.
  *
- * @ingroup neibers_cabinet
+ * @ingroup neibers_seat
  */
 class SeatListBuilder extends EntityListBuilder {
 
@@ -26,7 +26,7 @@ class SeatListBuilder extends EntityListBuilder {
    * {@inheritdoc}
    */
   public function buildRow(EntityInterface $entity) {
-    /* @var $entity \Drupal\neibers_cabinet\Entity\Seat */
+    /* @var $entity \Drupal\neibers_seat\Entity\Seat */
     $row['id'] = $entity->id();
     $row['name'] = Link::createFromRoute(
       $entity->label(),

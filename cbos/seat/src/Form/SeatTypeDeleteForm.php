@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\neibers_cabinet\Form;
+namespace Drupal\neibers_seat\Form;
 
 use Drupal\Core\Entity\EntityConfirmFormBase;
 use Drupal\Core\Form\FormStateInterface;

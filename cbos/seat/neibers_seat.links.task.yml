@@ -1,0 +1,17 @@
+# Seat routing definition
+
+entity.neibers_seat.canonical:
+  route_name: entity.neibers_seat.canonical
+  base_route: entity.neibers_seat.canonical
+  title: 'View'
+
+entity.neibers_seat.edit_form:
+  route_name: entity.neibers_seat.edit_form
+  base_route: entity.neibers_seat.canonical
+  title: 'Edit'
+
+entity.neibers_seat.delete_form:
+  route_name:  entity.neibers_seat.delete_form
+  base_route:  entity.neibers_seat.canonical
+  title: Delete
+  weight: 10

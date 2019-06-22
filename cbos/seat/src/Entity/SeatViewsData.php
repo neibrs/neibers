@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\neibers_cabinet\Entity;
+namespace Drupal\neibers_seat\Entity;
 
 use Drupal\views\EntityViewsData;
 

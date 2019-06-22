@@ -1,0 +1,19 @@
+add neibers seat:
+  title: 'Create new Seat'
+
+administer neibers seat:
+  title: 'Administer Seat'
+  description: 'Allow to access the administration form to configure Seat.'
+  restrict access: true
+
+delete neibers seat:
+  title: 'Delete Seat'
+
+edit neibers seat:
+  title: 'Edit Seat'
+
+view published neibers seat:
+  title: 'View published Seat'
+
+view unpublished neibers seat:
+  title: 'View unpublished Seat'

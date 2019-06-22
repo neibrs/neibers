@@ -1,13 +1,13 @@
 <?php
 
-namespace Drupal\neibers_cabinet\Form;
+namespace Drupal\neibers_seat\Form;
 
 use Drupal\Core\Entity\ContentEntityDeleteForm;
 
 /**
  * Provides a form for deleting Seat.
  *
- * @ingroup neibers_cabinet
+ * @ingroup neibers_seat
  */
 class SeatDeleteForm extends ContentEntityDeleteForm {
 

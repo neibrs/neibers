@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\neibers_cabinet\Form;
+namespace Drupal\neibers_seat\Form;
 
 use Drupal\Core\Entity\ContentEntityForm;
 use Drupal\Core\Form\FormStateInterface;
@@ -8,7 +8,7 @@ use Drupal\Core\Form\FormStateInterface;
 /**
  * Form controller for Seat edit forms.
  *
- * @ingroup neibers_cabinet
+ * @ingroup neibers_seat
  */
 class SeatForm extends ContentEntityForm {
 
@@ -16,7 +16,7 @@ class SeatForm extends ContentEntityForm {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
-    /* @var $entity \Drupal\neibers_cabinet\Entity\Seat */
+    /* @var $entity \Drupal\neibers_seat\Entity\Seat */
     $form = parent::buildForm($form, $form_state);
 
     $entity = $this->entity;

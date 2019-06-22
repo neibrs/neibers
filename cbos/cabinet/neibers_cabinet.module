@@ -38,16 +38,6 @@ function neibers_cabinet_theme() {
     'variables' => ['content' => NULL],
     'file' => 'neibers_cabinet.page.inc',
   ];
-  $theme['neibers_seat'] = [
-    'render element' => 'elements',
-    'file' => 'neibers_seat.page.inc',
-    'template' => 'neibers-seat',
-  ];
-  $theme['neibers_seat_content_add_list'] = [
-    'render element' => 'content',
-    'variables' => ['content' => NULL],
-    'file' => 'neibers_seat.page.inc',
-  ];
   return $theme;
 }
 
@@ -64,21 +54,5 @@ function neibers_cabinet_theme_suggestions_neibers_cabinet(array $variables) {
   $suggestions[] = 'neibers_cabinet__' . $entity->bundle() . '__' . $sanitized_view_mode;
   $suggestions[] = 'neibers_cabinet__' . $entity->id();
   $suggestions[] = 'neibers_cabinet__' . $entity->id() . '__' . $sanitized_view_mode;
-  return $suggestions;
-}
-
-/**
-* Implements hook_theme_suggestions_HOOK().
-*/
-function neibers_cabinet_theme_suggestions_neibers_seat(array $variables) {
-  $suggestions = [];
-  $entity = $variables['elements']['#neibers_seat'];
-  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
-
-  $suggestions[] = 'neibers_seat__' . $sanitized_view_mode;
-  $suggestions[] = 'neibers_seat__' . $entity->bundle();
-  $suggestions[] = 'neibers_seat__' . $entity->bundle() . '__' . $sanitized_view_mode;
-  $suggestions[] = 'neibers_seat__' . $entity->id();
-  $suggestions[] = 'neibers_seat__' . $entity->id() . '__' . $sanitized_view_mode;
   return $suggestions;
 }

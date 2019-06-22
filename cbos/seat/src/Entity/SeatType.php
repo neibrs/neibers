@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\neibers_cabinet\Entity;
+namespace Drupal\neibers_seat\Entity;
 
 use Drupal\Core\Config\Entity\ConfigEntityBundleBase;
 
@@ -13,17 +13,17 @@ use Drupal\Core\Config\Entity\ConfigEntityBundleBase;
  *   label_collection = @Translation("Seat type"),
  *   handlers = {
  *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
- *     "list_builder" = "Drupal\neibers_cabinet\SeatTypeListBuilder",
+ *     "list_builder" = "Drupal\neibers_seat\SeatTypeListBuilder",
  *     "form" = {
- *       "add" = "Drupal\neibers_cabinet\Form\SeatTypeForm",
- *       "edit" = "Drupal\neibers_cabinet\Form\SeatTypeForm",
- *       "delete" = "Drupal\neibers_cabinet\Form\SeatTypeDeleteForm"
+ *       "add" = "Drupal\neibers_seat\Form\SeatTypeForm",
+ *       "edit" = "Drupal\neibers_seat\Form\SeatTypeForm",
+ *       "delete" = "Drupal\neibers_seat\Form\SeatTypeDeleteForm"
  *     },
  *     "route_provider" = {
- *       "html" = "Drupal\neibers_cabinet\SeatTypeHtmlRouteProvider",
+ *       "html" = "Drupal\neibers_seat\SeatTypeHtmlRouteProvider",
  *     },
  *   },
- *   config_prefix = "seat_type",
+ *   config_prefix = "type",
  *   admin_permission = "administer site configuration",
  *   bundle_of = "neibers_seat",
  *   entity_keys = {

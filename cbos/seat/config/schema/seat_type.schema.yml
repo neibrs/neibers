@@ -1,4 +1,4 @@
-neibers_cabinet.seat_type.*:
+neibers_seat.type.*:
   type: config_entity
   label: 'Seat type config'
   mapping:

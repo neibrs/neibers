@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\neibers_cabinet\Form;
+namespace Drupal\neibers_seat\Form;
 
 use Drupal\Core\Entity\EntityForm;
 use Drupal\Core\Form\FormStateInterface;
@@ -30,7 +30,7 @@ class SeatTypeForm extends EntityForm {
       '#type' => 'machine_name',
       '#default_value' => $neibers_seat_type->id(),
       '#machine_name' => [
-        'exists' => '\Drupal\neibers_cabinet\Entity\SeatType::load',
+        'exists' => '\Drupal\neibers_seat\Entity\SeatType::load',
       ],
       '#disabled' => !$neibers_seat_type->isNew(),
     ];

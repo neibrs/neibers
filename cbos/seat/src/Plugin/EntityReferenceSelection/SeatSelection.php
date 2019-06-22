@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\neibers_cabinet\Plugin\EntityReferenceSelection;
+namespace Drupal\neibers_seat\Plugin\EntityReferenceSelection;
 
 use Drupal\Component\Utility\Html;
 use Drupal\Core\Entity\Plugin\EntityReferenceSelection\DefaultSelection;

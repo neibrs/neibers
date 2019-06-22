@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\neibers_cabinet\Entity;
+namespace Drupal\neibers_seat\Entity;
 
 use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Field\BaseFieldDefinition;
@@ -12,7 +12,7 @@ use Drupal\user\UserInterface;
 /**
  * Defines the Seat entity.
  *
- * @ingroup neibers_cabinet
+ * @ingroup neibers_seat
  *
  * @ContentEntityType(
  *   id = "neibers_seat",
@@ -21,19 +21,19 @@ use Drupal\user\UserInterface;
  *   bundle_label = @Translation("Seat type"),
  *   handlers = {
  *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
- *     "list_builder" = "Drupal\neibers_cabinet\SeatListBuilder",
- *     "views_data" = "Drupal\neibers_cabinet\Entity\SeatViewsData",
- *     "translation" = "Drupal\neibers_cabinet\SeatTranslationHandler",
+ *     "list_builder" = "Drupal\neibers_seat\SeatListBuilder",
+ *     "views_data" = "Drupal\neibers_seat\Entity\SeatViewsData",
+ *     "translation" = "Drupal\neibers_seat\SeatTranslationHandler",
  *
  *     "form" = {
- *       "default" = "Drupal\neibers_cabinet\Form\SeatForm",
- *       "add" = "Drupal\neibers_cabinet\Form\SeatForm",
- *       "edit" = "Drupal\neibers_cabinet\Form\SeatForm",
- *       "delete" = "Drupal\neibers_cabinet\Form\SeatDeleteForm",
+ *       "default" = "Drupal\neibers_seat\Form\SeatForm",
+ *       "add" = "Drupal\neibers_seat\Form\SeatForm",
+ *       "edit" = "Drupal\neibers_seat\Form\SeatForm",
+ *       "delete" = "Drupal\neibers_seat\Form\SeatDeleteForm",
  *     },
- *     "access" = "Drupal\neibers_cabinet\SeatAccessControlHandler",
+ *     "access" = "Drupal\neibers_seat\SeatAccessControlHandler",
  *     "route_provider" = {
- *       "html" = "Drupal\neibers_cabinet\SeatHtmlRouteProvider",
+ *       "html" = "Drupal\neibers_seat\SeatHtmlRouteProvider",
  *     },
  *   },
  *   base_table = "neibers_seat",
@@ -204,7 +204,7 @@ class Seat extends ContentEntityBase implements SeatInterface {
 
     $fields['cabinet'] = BaseFieldDefinition::create('entity_reference')
       ->setLabel(t('Cabinet'))
-      ->setSetting('target_type', 'neibers_cabinet')
+      ->setSetting('target_type', 'neibers_seat')
       ->setDisplayOptions('view', [
         'type' => 'entity_reference_label',
         'weight' => 6,
@@ -216,6 +216,25 @@ class Seat extends ContentEntityBase implements SeatInterface {
           'match_operator' => 'CONTAINS',
           'size' => '60',
           'placeholder' => '',
+        ],
+      ])
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE);
+
+    $fields['hardware'] = BaseFieldDefinition::create('entity_reference')
+      ->setLabel(t('Hardware'))
+      ->setSetting('target_type', 'neibers_hardware')
+      ->setDisplayOptions('view', [
+        'type' => 'entity_reference_label',
+        'weight' => 6,
+      ])
+      ->setDisplayOptions('form', [
+        'type' => 'entity_reference_autocomplete',
+        'weight' => 6,
+        'settings' => [
+          'match_operator' => 'CONTAINS',
+          'size' => '60',
+          'placeholder' => 'Which belong to hardware.',
         ],
       ])
       ->setDisplayConfigurable('form', TRUE)

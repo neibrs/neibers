@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\neibers_cabinet;
+namespace Drupal\neibers_seat;
 
 use Drupal\Core\Entity\EntityTypeInterface;
 use Drupal\Core\Entity\Routing\AdminHtmlRouteProvider;
@@ -43,7 +43,7 @@ class SeatHtmlRouteProvider extends AdminHtmlRouteProvider {
       $route = new Route("/admin/structure/{$entity_type->id()}/settings");
       $route
         ->setDefaults([
-          '_form' => 'Drupal\neibers_cabinet\Form\SeatSettingsForm',
+          '_form' => 'Drupal\neibers_seat\Form\SeatSettingsForm',
           '_title' => "{$entity_type->getLabel()} settings",
         ])
         ->setRequirement('_permission', $entity_type->getAdminPermission())

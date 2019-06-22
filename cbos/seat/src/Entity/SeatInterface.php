@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\neibers_cabinet\Entity;
+namespace Drupal\neibers_seat\Entity;
 
 use Drupal\Core\Entity\ContentEntityInterface;
 use Drupal\Core\Entity\EntityChangedInterface;
@@ -9,7 +9,7 @@ use Drupal\user\EntityOwnerInterface;
 /**
  * Provides an interface for defining Seat.
  *
- * @ingroup neibers_cabinet
+ * @ingroup neibers_seat
  */
 interface SeatInterface extends ContentEntityInterface, EntityChangedInterface, EntityOwnerInterface {
 
@@ -29,7 +29,7 @@ interface SeatInterface extends ContentEntityInterface, EntityChangedInterface, 
    * @param string $name
    *   The Seat name.
    *
-   * @return \Drupal\neibers_cabinet\Entity\SeatInterface
+   * @return \Drupal\neibers_seat\Entity\SeatInterface
    *   The called Seat entity.
    */
   public function setName($name);
@@ -48,7 +48,7 @@ interface SeatInterface extends ContentEntityInterface, EntityChangedInterface, 
    * @param int $timestamp
    *   The Seat creation timestamp.
    *
-   * @return \Drupal\neibers_cabinet\Entity\SeatInterface
+   * @return \Drupal\neibers_seat\Entity\SeatInterface
    *   The called Seat entity.
    */
   public function setCreatedTime($timestamp);
@@ -69,7 +69,7 @@ interface SeatInterface extends ContentEntityInterface, EntityChangedInterface, 
    * @param bool $published
    *   TRUE to set this Seat to published, FALSE to set it to unpublished.
    *
-   * @return \Drupal\neibers_cabinet\Entity\SeatInterface
+   * @return \Drupal\neibers_seat\Entity\SeatInterface
    *   The called Seat entity.
    */
   public function setPublished($published);

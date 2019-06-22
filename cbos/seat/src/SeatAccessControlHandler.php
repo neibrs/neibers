@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\neibers_cabinet;
+namespace Drupal\neibers_seat;
 
 use Drupal\Core\Entity\EntityAccessControlHandler;
 use Drupal\Core\Entity\EntityInterface;
@@ -10,7 +10,7 @@ use Drupal\Core\Access\AccessResult;
 /**
  * Access controller for the Seat entity.
  *
- * @see \Drupal\neibers_cabinet\Entity\Seat.
+ * @see \Drupal\neibers_seat\Entity\Seat.
  */
 class SeatAccessControlHandler extends EntityAccessControlHandler {
 
@@ -18,7 +18,7 @@ class SeatAccessControlHandler extends EntityAccessControlHandler {
    * {@inheritdoc}
    */
   protected function checkAccess(EntityInterface $entity, $operation, AccountInterface $account) {
-    /** @var \Drupal\neibers_cabinet\Entity\SeatInterface $entity */
+    /** @var \Drupal\neibers_seat\Entity\SeatInterface $entity */
     switch ($operation) {
       case 'view':
         if (!$entity->isPublished()) {

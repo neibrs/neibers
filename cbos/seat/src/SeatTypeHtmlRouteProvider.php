@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\neibers_cabinet;
+namespace Drupal\neibers_seat;
 
 use Drupal\Core\Entity\EntityTypeInterface;
 use Drupal\Core\Entity\Routing\AdminHtmlRouteProvider;

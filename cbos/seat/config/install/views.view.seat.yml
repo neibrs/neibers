@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   module:
-    - neibers_cabinet
+    - neibers_seat
     - user
 id: seat
 label: Seat
@@ -399,7 +399,7 @@ display:
           plugin_id: field
         size:
           id: size
-          table: neibers_cabinet_field_data
+          table: neibers_seat_field_data
           field: size
           relationship: cabinet
           group_type: group
@@ -460,12 +460,12 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: neibers_cabinet
+          entity_type: neibers_seat
           entity_field: size
           plugin_id: field
         room:
           id: room
-          table: neibers_cabinet_field_data
+          table: neibers_seat_field_data
           field: room
           relationship: cabinet
           group_type: group
@@ -525,7 +525,7 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: neibers_cabinet
+          entity_type: neibers_seat
           entity_field: room
           plugin_id: field
         status:
