@@ -224,7 +224,6 @@ class Seat extends ContentEntityBase implements SeatInterface {
     $fields['parent'] = BaseFieldDefinition::create('entity_reference')
       ->setLabel(t('Parent'))
       ->setDescription(t('The parent of current seat.'))
-      ->setRequired(TRUE)
       ->setDefaultValue(0)
       ->setSetting('target_type', 'neibers_seat')
       ->setDisplayOptions('view', [
@@ -237,7 +236,6 @@ class Seat extends ContentEntityBase implements SeatInterface {
         'settings' => [
           'match_operator' => 'CONTAINS',
           'size' => '15',
-          'placeholder' => t('Item'),
         ],
       ])
       ->setDisplayConfigurable('form', TRUE)
