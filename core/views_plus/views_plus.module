@@ -1,0 +1,79 @@
+<?php
+
+/**
+ * @file
+ */
+
+use Drupal\Core\Template\Attribute;
+use Drupal\views\ViewExecutable;
+
+/**
+ * Implements hook_views_pre_view().
+ */
+function views_plus_views_pre_view(ViewExecutable $view, $display_id, array &$args) {
+  $display =& $view->storage->getDisplay('default');
+  if (isset($display['display_options']['exposed_form']['type']) && $display['display_options']['exposed_form']['type'] == 'basic') {
+    $display['display_options']['exposed_form']['type'] = 'ajax';
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for views_view_table.
+ */
+function views_plus_preprocess_views_view_table(&$variables) {
+  // Exit if no content available
+  if (empty($variables['result'])) {
+    return;
+  }
+
+  $view = $variables['view'];
+
+  // Add entity id to <tr> tag
+  foreach ($variables['rows'] as $key => $row) {
+    if ($entity = $variables['result'][$key]->_entity) {
+      $variables['rows'][$key]['attributes'] = new Attribute(['entity-id' => $entity->id()]);
+    }
+  }
+
+  if (isset($view->style_plugin->options['tree_column'])) {
+    $tree_column = $view->style_plugin->options['tree_column'];
+    foreach ($variables['rows'] as $key => $row) {
+      $markup = $row['columns'][$tree_column]['content'][0]['field_output']['#markup'];
+      $entity = $variables['result'][$key]->_entity;
+      if (!empty($entity)) {
+        $data_url = '';
+        \Drupal::moduleHandler()->alter('views_tree_data_url', $data_url, $view, $entity);
+      }
+
+      if (!empty($data_url)) {
+        $icon = '<span class="views-tree-icon views-tree-icon-folder" data-url="' . $data_url . '"></span>';
+      }
+      else {
+        $icon = '<span class="views-tree-icon views-tree-icon-leaf"></span>';
+      }
+      $variables['rows'][$key]['columns'][$tree_column]['content'][0]['field_output']['#markup'] = $icon . $markup;
+
+      $variables['rows'][$key]['columns'][$tree_column]['attributes'] = new Attribute(['class' => ['tree-column']]);
+    }
+  }
+
+}
+
+/**
+ * Implements hook_theme().
+ */
+function views_plus_theme($existing, $type, $theme, $path) {
+  return [
+    'views_plus_style_plugin_table_tree' => [
+      'render element' => 'form',
+      'file' => 'views_plus.theme.inc',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_views_plugins_display_alter().
+ */
+function views_plus_views_plugins_display_alter(array &$plugins) {
+  $plugins['page']['class'] = '\Drupal\views_plus\Plugin\views\display\Page';
+}
