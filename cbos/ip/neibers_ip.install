@@ -1,0 +1,9 @@
+<?php
+
+function neibers_ip_install() {
+  $locked = \Drupal::state()->get('neibers_ip.type.locked');
+  $locked['inet'] = 'inet';
+  $locked['onet'] = 'onet';
+  $locked['snet'] = 'snet';
+  \Drupal::state()->set('neibers_ip.type.locked', $locked);
+}

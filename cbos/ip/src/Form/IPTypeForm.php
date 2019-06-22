@@ -32,7 +32,7 @@ class IPTypeForm extends EntityForm {
       '#machine_name' => [
         'exists' => '\Drupal\neibers_ip\Entity\IPType::load',
       ],
-      '#disabled' => !$neibers_ip_type->isNew(),
+      '#disabled' => $neibers_ip_type->isLocked(),
     ];
 
     /* You will need additional form elements for your custom properties. */

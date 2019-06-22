@@ -11,6 +11,7 @@ use Drupal\Core\Config\Entity\ConfigEntityBundleBase;
  *   id = "neibers_ip_type",
  *   label = @Translation("IP type"),
  *   handlers = {
+ *     "access" = "Drupal\neibers_ip\IPTypeAccessControlHandler",
  *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
  *     "list_builder" = "Drupal\neibers_ip\IPTypeListBuilder",
  *     "form" = {
