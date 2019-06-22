@@ -22,7 +22,6 @@ use Drupal\Core\Config\Entity\ConfigEntityBundleBase;
  *     "route_provider" = {
  *       "html" = "Drupal\neibers_hardware\HardwareTypeHtmlRouteProvider",
  *     },
- *     "access" = "Drupal\neibers_hardware\HardwareTypeAccessControlHandler"
  *   },
  *   config_prefix = "type",
  *   admin_permission = "administer site configuration",
@@ -57,17 +56,4 @@ class HardwareType extends ConfigEntityBundleBase implements HardwareTypeInterfa
    */
   protected $label;
 
-  /**
-   * The locked status of this hardware.
-   *
-   * @var bool
-   */
-  protected $locked = FALSE;
-
-  /**
-   * {@inheritdoc}
-   */
-  public function isLocked() {
-    return (bool) $this->locked;
-  }
 }

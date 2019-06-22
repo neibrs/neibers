@@ -35,10 +35,8 @@
 * 配件添加表单增加管理IP的编辑，隐藏机位，隐性添加配件的机位属性
 * 一个设备可同时占用多个机位.
 * 角色首页定义
-  * business(Fixed)
   * administer
   * authenticated
-    * 修改普通用户的首页跳转页面.
 * IP分配
 * 个人订阅订单列表(Fixed)
 * 实体内的bundle数据需要锁定操作

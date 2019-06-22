@@ -9,11 +9,5 @@ use Drupal\Core\Config\Entity\ConfigEntityInterface;
  */
 interface HardwareTypeInterface extends ConfigEntityInterface {
 
-  /**
-   * Determines if this menu is locked.
-   *
-   * @return bool
-   *   TRUE if the hardware is locked, FALSE otherwise.
-   */
-  public function isLocked();
+  // Add get/set methods for your configuration properties here.
 }
