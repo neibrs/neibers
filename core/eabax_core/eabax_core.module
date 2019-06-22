@@ -11,6 +11,30 @@ use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
+ * Implement hook_theme().
+ */
+function eabax_core_theme() {
+  return [
+    'avatar_toggle' => [
+      'variables' => ['content' => NULL],
+    ],
+    'info_box' => [
+      'variables' => ['background' => 'bg-aqua', 'icon' => 'ion ion-ios-gear-outline', 'text' => '', 'number' => ''],
+    ],
+    'percent_bar' => [
+      'render element' => 'elements',
+      'variables' => ['percent' => NULL],
+    ],
+    'tree' => [
+      'variables' => ['items' => [], 'attributes' => []],
+    ],
+    'dropdown_toggle' => [
+      'variables' => ['items' => [], 'icon_pre' => [], 'icon' => [], 'title' => '', 'wrapper_attributes' => [], 'attributes' => [], 'empty' => NULL, 'more_link' => NULL],
+    ],
+  ];
+}
+
+/**
  * Implements hook_entity_view_alter().
  */
 function eabax_core_entity_view_alter(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display) {
@@ -126,26 +150,7 @@ function _eabax_core_icon_combine($icons1, $icons2) {
   return implode(' ', $combines);
 }
 
-/**
- * Implement hook_theme().
- */
-function eabax_core_theme() {
-  return [
-    'avatar_toggle' => [
-      'variables' => ['content' => NULL],
-    ],
-    'percent_bar' => [
-      'render element' => 'elements',
-      'variables' => ['percent' => NULL],
-    ],
-    'tree' => [
-      'variables' => ['items' => [], 'attributes' => []],
-    ],
-    'dropdown_toggle' => [
-      'variables' => ['items' => [], 'icon_pre' => [], 'icon' => [], 'title' => '', 'wrapper_attributes' => [], 'attributes' => [], 'empty' => NULL, 'more_link' => NULL],
-    ],
-  ];
-}
+
 
 /**
  * Implements hook_block_view_BASE_BLOCK_ID_alter() for page_title_block.

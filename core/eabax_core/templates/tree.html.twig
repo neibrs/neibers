@@ -46,7 +46,12 @@
       ]
       %}
       <li{{ item.attributes.addClass(classes) }}>
-        {{ link(item.title, item.url) }}
+        {% if item.url %}
+          {{ link(item.title, item.url) }}
+        {% else %}
+          <span>{{ item.title }}</span>
+        {% endif %}
+
         {% if item.below %}
           {{ tree.links(item.below, attributes, menu_level + 1) }}
         {% endif %}

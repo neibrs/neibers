@@ -27,3 +27,9 @@ jstree:
       node_modules/jstree/dist/themes/default/style.css: {}
   dependencies:
     - core/jquery
+
+c3_chart:
+  js:
+    js/c3_chart.js: {}
+  dependencies:
+    - charts_c3/c3
