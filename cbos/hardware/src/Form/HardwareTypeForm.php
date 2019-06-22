@@ -32,7 +32,7 @@ class HardwareTypeForm extends EntityForm {
       '#machine_name' => [
         'exists' => '\Drupal\neibers_hardware\Entity\HardwareType::load',
       ],
-      '#disabled' => !$neibers_hardware_type->isNew(),
+      '#disabled' => $neibers_hardware_type->isLocked(),
     ];
 
     /* You will need additional form elements for your custom properties. */

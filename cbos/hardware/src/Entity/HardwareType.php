@@ -12,6 +12,7 @@ use Drupal\Core\Config\Entity\ConfigEntityBundleBase;
  *   label = @Translation("Hardware type"),
  *   label_collection = @Translation("Hardware type"),
  *   handlers = {
+ *     "access" = "Drupal\neibers_hardware\HardwareTypeAccessControlHandler",
  *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
  *     "list_builder" = "Drupal\neibers_hardware\HardwareTypeListBuilder",
  *     "form" = {
@@ -56,4 +57,12 @@ class HardwareType extends ConfigEntityBundleBase implements HardwareTypeInterfa
    */
   protected $label;
 
+
+  /**
+   * {@inheritdoc}
+   */
+  public function isLocked() {
+    $locked = \Drupal::state()->get('neibers_hardware.type.locked');
+    return isset($locked[$this->id()]) ? $locked[$this->id()] : FALSE;
+  }
 }
