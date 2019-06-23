@@ -21,6 +21,13 @@ class SeatForm extends ContentEntityForm {
 
     $entity = $this->entity;
 
+    $form['occupation'] = [
+      '#type' => 'integer',
+      '#title' => $this->t('Occupation'),
+      '#description' => $this->t('The number of hardware occupation.'),
+      '#default_value' => 1,
+    ];
+
     return $form;
   }
 
@@ -30,6 +37,9 @@ class SeatForm extends ContentEntityForm {
   public function save(array $form, FormStateInterface $form_state) {
     $entity = $this->entity;
 
+    for ($i=1; $i < $form_state->getValue('occupation'); $i++) {
+      // TODO save times by occupation.
+    }
     $status = parent::save($form, $form_state);
 
     switch ($status) {
