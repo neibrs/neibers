@@ -17,7 +17,7 @@ display:
       access:
         type: perm
         options:
-          perm: 'administer neibers_hardware'
+          perm: 'administer hardware'
       cache:
         type: tag
       query:

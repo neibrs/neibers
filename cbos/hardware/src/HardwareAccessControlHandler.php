@@ -22,15 +22,15 @@ class HardwareAccessControlHandler extends EntityAccessControlHandler {
     switch ($operation) {
       case 'view':
         if (!$entity->isPublished()) {
-          return AccessResult::allowedIfHasPermission($account, 'view unpublished neibers_hardware');
+          return AccessResult::allowedIfHasPermission($account, 'view unpublished hardware');
         }
-        return AccessResult::allowedIfHasPermission($account, 'view published neibers_hardware');
+        return AccessResult::allowedIfHasPermission($account, 'view published hardware');
 
       case 'update':
-        return AccessResult::allowedIfHasPermission($account, 'edit neibers_hardware');
+        return AccessResult::allowedIfHasPermission($account, 'edit hardware');
 
       case 'delete':
-        return AccessResult::allowedIfHasPermission($account, 'delete neibers_hardware');
+        return AccessResult::allowedIfHasPermission($account, 'delete hardware');
     }
 
     // Unknown operation, no opinion.
@@ -41,7 +41,7 @@ class HardwareAccessControlHandler extends EntityAccessControlHandler {
    * {@inheritdoc}
    */
   protected function checkCreateAccess(AccountInterface $account, array $context, $entity_bundle = NULL) {
-    return AccessResult::allowedIfHasPermission($account, 'add neibers_hardware');
+    return AccessResult::allowedIfHasPermission($account, 'add hardware');
   }
 
 }

@@ -1,19 +1,19 @@
-add neibers_hardware:
+add hardware:
   title: 'Create new Hardware'
 
-administer neibers_hardware:
+administer hardware:
   title: 'Administer Hardware'
   description: 'Allow to access the administration form to configure Hardware.'
   restrict access: true
 
-delete neibers_hardware:
+delete hardware:
   title: 'Delete Hardware'
 
-edit neibers_hardware:
+edit hardware:
   title: 'Edit Hardware'
 
-view published neibers_hardware:
+view published hardware:
   title: 'View published Hardware'
 
-view unpublished neibers_hardware:
+view unpublished hardware:
   title: 'View unpublished Hardware'

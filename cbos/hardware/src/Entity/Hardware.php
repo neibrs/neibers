@@ -40,7 +40,7 @@ use Drupal\user\UserInterface;
  *   base_table = "neibers_hardware",
  *   data_table = "neibers_hardware_field_data",
  *   translatable = TRUE,
- *   admin_permission = "administer neibers_hardware",
+ *   admin_permission = "administer hardware",
  *   entity_keys = {
  *     "id" = "id",
  *     "bundle" = "type",

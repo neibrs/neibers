@@ -20,7 +20,7 @@ class HardwareTypeAccessControlHandler extends EntityAccessControlHandler {
   protected function checkAccess(EntityInterface $entity, $operation, AccountInterface $account) {
     switch ($operation) {
       case 'view':
-        return AccessResult::allowedIfHasPermission($account, 'view published neibers_hardware');
+        return AccessResult::allowedIfHasPermission($account, 'view published hardware');
 
       case 'delete':
         if ($entity->isLocked()) {
