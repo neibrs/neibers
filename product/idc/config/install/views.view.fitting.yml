@@ -11,7 +11,7 @@ dependencies:
     - user
 id: fitting
 label: Fitting
-module: neibers_fitting 
+module: neibers_idc
 description: 'Find and manage content.'
 tag: default
 base_table: neibers_fitting_field_data
