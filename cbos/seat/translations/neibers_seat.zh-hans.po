@@ -1,0 +1,166 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  modules/neibers/cbos/seat/neibers_seat.module: n/a
+#  modules/neibers/cbos/seat/neibers_seat.info.yml: n/a
+#  modules/neibers/cbos/seat/src/Entity/Seat.php: n/a
+#  modules/neibers/cbos/seat/neibers_seat.links.action.yml: n/a
+#  modules/neibers/cbos/seat/neibers_seat.links.task.yml: n/a
+#  modules/neibers/cbos/seat/src/Form/SeatTypeDeleteForm.php: n/a
+#  modules/neibers/cbos/seat/neibers_seat.permissions.yml: n/a
+#  modules/neibers/cbos/seat/config/schema/seat_type.schema.yml: n/a
+#  modules/neibers/cbos/seat/src/SeatListBuilder.php: n/a
+#  modules/neibers/cbos/seat/src/SeatTypeListBuilder.php: n/a
+#  modules/neibers/cbos/seat/src/Entity/SeatType.php: n/a
+#  modules/neibers/cbos/seat/src/Form/SeatForm.php: n/a
+#  modules/neibers/cbos/seat/src/Form/SeatTypeForm.php: n/a
+#  modules/neibers/cbos/seat/src/Plugin/EntityReferenceSelection/SeatSelection.php: n/a
+#  modules/neibers/cbos/seat/config/install/neibers_seat.type.multiple.yml: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2019-06-23 03:40+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: modules/neibers/cbos/seat/neibers_seat.module:18
+msgid "About"
+msgstr ""
+
+#: modules/neibers/cbos/seat/neibers_seat.module:19 modules/neibers/cbos/seat/neibers_seat.info.yml:0
+msgid "The seat of the cabinet."
+msgstr ""
+
+#: modules/neibers/cbos/seat/neibers_seat.info.yml:0 modules/neibers/cbos/seat/src/Entity/Seat.php:12;12
+msgid "Seat"
+msgstr "机位"
+
+#: modules/neibers/cbos/seat/neibers_seat.info.yml:0
+msgid "Neibers"
+msgstr ""
+
+#: modules/neibers/cbos/seat/neibers_seat.links.action.yml:0
+msgid "Add"
+msgstr ""
+
+#: modules/neibers/cbos/seat/neibers_seat.links.action.yml:0
+msgid "Add type"
+msgstr ""
+
+#: modules/neibers/cbos/seat/neibers_seat.permissions.yml:0
+msgid "Create new Seat"
+msgstr "创建机位"
+
+#: modules/neibers/cbos/seat/neibers_seat.permissions.yml:0
+msgid "Administer Seat"
+msgstr "管理机位"
+
+#: modules/neibers/cbos/seat/neibers_seat.permissions.yml:0
+msgid "Allow to access the administration form to configure Seat."
+msgstr ""
+
+#: modules/neibers/cbos/seat/neibers_seat.permissions.yml:0
+msgid "Delete Seat"
+msgstr "删除机位"
+
+#: modules/neibers/cbos/seat/neibers_seat.permissions.yml:0
+msgid "Edit Seat"
+msgstr "编辑机位"
+
+#: modules/neibers/cbos/seat/neibers_seat.permissions.yml:0
+msgid "View published Seat"
+msgstr ""
+
+#: modules/neibers/cbos/seat/neibers_seat.permissions.yml:0
+msgid "View unpublished Seat"
+msgstr ""
+
+#: modules/neibers/cbos/seat/config/schema/seat_type.schema.yml:0
+msgid "Seat type config"
+msgstr "机位类型配置"
+
+#: modules/neibers/cbos/seat/config/schema/seat_type.schema.yml:0
+msgid "ID"
+msgstr ""
+
+#: modules/neibers/cbos/seat/src/SeatListBuilder.php:20
+msgid "Seat ID"
+msgstr "机位ID"
+
+#: modules/neibers/cbos/seat/src/Entity/Seat.php:245
+msgid "The parent of current seat."
+msgstr ""
+
+#: modules/neibers/cbos/seat/src/Entity/Seat.php:264
+msgid "Publishing status"
+msgstr ""
+
+#: modules/neibers/cbos/seat/src/Entity/Seat.php:265
+msgid "A boolean indicating whether the Seat is published."
+msgstr ""
+
+#: modules/neibers/cbos/seat/src/Entity/Seat.php:273
+msgid "Created"
+msgstr ""
+
+#: modules/neibers/cbos/seat/src/Entity/Seat.php:274
+msgid "The time that the entity was created."
+msgstr ""
+
+#: modules/neibers/cbos/seat/src/Entity/Seat.php:277
+msgid "Changed"
+msgstr ""
+
+#: modules/neibers/cbos/seat/src/Entity/Seat.php:278
+msgid "The time that the entity was last edited."
+msgstr ""
+
+#: modules/neibers/cbos/seat/src/Form/SeatForm.php:37
+msgid "Created the %label Seat."
+msgstr ""
+
+#: modules/neibers/cbos/seat/src/Form/SeatForm.php:43
+msgid "Saved the %label Seat."
+msgstr ""
+
+#: modules/neibers/cbos/seat/src/Form/SeatTypeDeleteForm.php:18
+msgid "Are you sure you want to delete %name?"
+msgstr ""
+
+#: modules/neibers/cbos/seat/src/Form/SeatTypeDeleteForm.php:42
+msgid "content @type: deleted @label."
+msgstr ""
+
+#: modules/neibers/cbos/seat/src/Form/SeatTypeForm.php:22
+msgid "Label"
+msgstr ""
+
+#: modules/neibers/cbos/seat/src/Form/SeatTypeForm.php:25
+msgid "Label for the Seat type."
+msgstr ""
+
+#: modules/neibers/cbos/seat/src/Form/SeatTypeForm.php:52
+msgid "Created the %label Seat type."
+msgstr ""
+
+#: modules/neibers/cbos/seat/src/Form/SeatTypeForm.php:58
+msgid "Saved the %label Seat type."
+msgstr ""
+
+#: modules/neibers/cbos/seat/src/Plugin/EntityReferenceSelection/SeatSelection.php:8
+msgid "Seat selection"
+msgstr ""
+
+#: modules/neibers/cbos/seat/config/install/neibers_seat.type.multiple.yml:0
+msgid "Multiple"
+msgstr ""
+

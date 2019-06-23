@@ -6,10 +6,11 @@ interface translation project: neibers_mall
 interface translation server pattern: modules/neibers/product/mall/translations/%project.%language.po
 package: 'Neibers'
 dependencies:
-  - commerce:commerce_store
   - commerce:commerce_cart
+  - commerce:commerce_checkout
   - commerce:commerce_order
   - commerce:commerce_recurring
+  - commerce:commerce_store
   - config_rewrite:config_rewrite
   - menu_plus
   - migrate_source_xls:migrate_source_xls
