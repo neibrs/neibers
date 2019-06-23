@@ -17,7 +17,7 @@ function neibers_translation_locale_translation_projects_alter(&$projects) {
     'rules',
     'token',
   ];
-  $path = drupal_get_path('module', 'translation');
+  $path = drupal_get_path('module', 'neibers_translation');
   foreach ($modules as $module) {
     $projects[$module]['info']['interface translation project'] = 'translation';
     $projects[$module]['info']['interface translation server pattern'] = $path . '/translations/' . $module . '.%language.po';

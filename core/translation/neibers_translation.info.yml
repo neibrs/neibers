@@ -3,7 +3,7 @@ type: module
 description: 'Translation'
 core: 8.x
 interface translation project: neibers_translation
-interface translation server pattern: modules/neibers/core/translation/translations/translation.%language.po
+interface translation server pattern: modules/neibers/core/translation/translations/%project.%language.po
 package: 'Neibers'
 dependencies:
   - drupal:content_translation

@@ -23,7 +23,7 @@ neibers_mall.commerce.product_attribute:
   weight: 30
 
 neibers_mall.orders:
-  title: 'Orders'
+  title: 'Orders management'
   route_name: entity.commerce_order.collection
   menu_name: business
   weight: 100
