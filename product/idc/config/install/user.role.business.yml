@@ -13,6 +13,6 @@ third_party_settings:
     frontpage: '/ip'
 id: business
 label: Business
-weight: 113
+weight: -10
 is_admin: true
 permissions: {  }
