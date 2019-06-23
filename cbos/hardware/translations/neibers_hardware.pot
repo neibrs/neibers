@@ -26,7 +26,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-06-19 09:56+0000\n"
+"POT-Creation-Date: 2019-06-23 03:40+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -140,34 +140,26 @@ msgid "The name of the Hardware entity."
 msgstr ""
 
 #: modules/neibers/cbos/hardware/src/Entity/Hardware.php:213
-msgid "Seat"
-msgstr ""
-
-#: modules/neibers/cbos/hardware/src/Entity/Hardware.php:214
-msgid "Hardware equipment must be assigned a location seat."
-msgstr ""
-
-#: modules/neibers/cbos/hardware/src/Entity/Hardware.php:234
 msgid "Publishing status"
 msgstr ""
 
-#: modules/neibers/cbos/hardware/src/Entity/Hardware.php:235
+#: modules/neibers/cbos/hardware/src/Entity/Hardware.php:214
 msgid "A boolean indicating whether the Hardware is published."
 msgstr ""
 
-#: modules/neibers/cbos/hardware/src/Entity/Hardware.php:243
+#: modules/neibers/cbos/hardware/src/Entity/Hardware.php:222
 msgid "Created"
 msgstr ""
 
-#: modules/neibers/cbos/hardware/src/Entity/Hardware.php:244
+#: modules/neibers/cbos/hardware/src/Entity/Hardware.php:223
 msgid "The time that the entity was created."
 msgstr ""
 
-#: modules/neibers/cbos/hardware/src/Entity/Hardware.php:247
+#: modules/neibers/cbos/hardware/src/Entity/Hardware.php:226
 msgid "Changed"
 msgstr ""
 
-#: modules/neibers/cbos/hardware/src/Entity/Hardware.php:248
+#: modules/neibers/cbos/hardware/src/Entity/Hardware.php:227
 msgid "The time that the entity was last edited."
 msgstr ""
 

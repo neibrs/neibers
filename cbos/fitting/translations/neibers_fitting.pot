@@ -26,7 +26,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-06-19 09:56+0000\n"
+"POT-Creation-Date: 2019-06-23 03:40+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -172,46 +172,42 @@ msgid "A boolean indicating whether the Fitting is published."
 msgstr ""
 
 #: modules/neibers/cbos/fitting/src/Entity/Fitting.php:215
-msgid "Hardware"
-msgstr ""
-
-#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:234
 msgid "Cabinet Seat"
 msgstr ""
 
-#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:253
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:234
 msgid "State"
 msgstr ""
 
-#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:272
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:253
 msgid "Order"
 msgstr ""
 
-#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:273
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:254
 msgid "The related order number."
 msgstr ""
 
-#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:295
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:276
 msgid "Purchasable"
 msgstr ""
 
-#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:296
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:277
 msgid "A boolean indicating whether the Fitting is purchasable."
 msgstr ""
 
-#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:308
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:289
 msgid "Created"
 msgstr ""
 
-#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:309
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:290
 msgid "The time that the entity was created."
 msgstr ""
 
-#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:312
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:293
 msgid "Changed"
 msgstr ""
 
-#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:313
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:294
 msgid "The time that the entity was last edited."
 msgstr ""
 

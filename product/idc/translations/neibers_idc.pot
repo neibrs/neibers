@@ -12,7 +12,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-06-19 09:56+0000\n"
+"POT-Creation-Date: 2019-06-23 03:40+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -45,32 +45,36 @@ msgstr ""
 msgid "Import"
 msgstr ""
 
-#: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
-msgid "IP"
-msgstr ""
-
-#: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
-msgid "IP collection"
-msgstr ""
-
-#: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
-msgid "Free IP"
-msgstr ""
-
-#: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
-msgid "Used IP"
-msgstr ""
-
-#: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
-msgid "Inet IP"
-msgstr ""
-
-#: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
-msgid "Onet IP"
+#: modules/neibers/product/idc/neibers_idc.links.menu.yml:0;0
+msgid "Hardware collection"
 msgstr ""
 
 #: modules/neibers/product/idc/neibers_idc.links.menu.yml:0;0;0;0
 msgid "Configuration"
+msgstr ""
+
+#: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
+msgid "Hardware type"
+msgstr ""
+
+#: modules/neibers/product/idc/neibers_idc.links.menu.yml:0;0
+msgid "IP collection"
+msgstr ""
+
+#: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
+msgid "Free IP collection"
+msgstr ""
+
+#: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
+msgid "Used IP collection"
+msgstr ""
+
+#: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
+msgid "Inet IP collection"
+msgstr ""
+
+#: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
+msgid "Onet IP collection"
 msgstr ""
 
 #: modules/neibers/product/idc/neibers_idc.links.menu.yml:0;0
@@ -78,19 +82,19 @@ msgid "Type"
 msgstr ""
 
 #: modules/neibers/product/idc/neibers_idc.links.menu.yml:0;0
-msgid "Fitting"
+msgid "Fitting collection"
 msgstr ""
 
 #: modules/neibers/product/idc/neibers_idc.links.menu.yml:0;0
-msgid "Room"
+msgid "Room collection"
 msgstr ""
 
 #: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
-msgid "Cabinet"
+msgid "Cabinet collection"
 msgstr ""
 
 #: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
-msgid "Seat"
+msgid "Seat collection"
 msgstr ""
 
 #: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
@@ -99,13 +103,5 @@ msgstr ""
 
 #: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
 msgid "Seat type"
-msgstr ""
-
-#: modules/neibers/product/idc/neibers_idc.links.menu.yml:0;0
-msgid "Hardware"
-msgstr ""
-
-#: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
-msgid "Hardware type"
 msgstr ""
 

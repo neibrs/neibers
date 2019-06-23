@@ -6,29 +6,18 @@
 #  modules/neibers/cbos/cabinet/neibers_cabinet.module: n/a
 #  modules/neibers/cbos/cabinet/neibers_cabinet.info.yml: n/a
 #  modules/neibers/cbos/cabinet/src/Entity/Cabinet.php: n/a
-#  modules/neibers/cbos/cabinet/src/Entity/Seat.php: n/a
 #  modules/neibers/cbos/cabinet/neibers_cabinet.links.action.yml: n/a
-#  modules/neibers/cbos/cabinet/neibers_cabinet.links.menu.yml: n/a
-#  modules/neibers/cbos/cabinet/src/SeatTypeListBuilder.php: n/a
-#  modules/neibers/cbos/cabinet/src/Entity/SeatType.php: n/a
 #  modules/neibers/cbos/cabinet/neibers_cabinet.links.task.yml: n/a
-#  modules/neibers/cbos/cabinet/src/Form/SeatTypeDeleteForm.php: n/a
 #  modules/neibers/cbos/cabinet/neibers_cabinet.permissions.yml: n/a
-#  modules/neibers/cbos/cabinet/config/schema/seat_type.schema.yml: n/a
 #  modules/neibers/cbos/cabinet/src/CabinetListBuilder.php: n/a
-#  modules/neibers/cbos/cabinet/src/SeatListBuilder.php: n/a
 #  modules/neibers/cbos/cabinet/src/Form/CabinetForm.php: n/a
-#  modules/neibers/cbos/cabinet/src/Form/SeatForm.php: n/a
-#  modules/neibers/cbos/cabinet/src/Form/SeatTypeForm.php: n/a
 #  modules/neibers/cbos/cabinet/src/Plugin/EntityReferenceSelection/CabinetSelection.php: n/a
-#  modules/neibers/cbos/cabinet/src/Plugin/EntityReferenceSelection/SeatSelection.php: n/a
-#  modules/neibers/cbos/cabinet/config/install/neibers_cabinet.seat_type.multiple.yml: n/a
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-06-19 09:56+0000\n"
+"POT-Creation-Date: 2019-06-23 03:40+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -45,7 +34,7 @@ msgstr ""
 msgid "The hardware neibers_cabinet for idc industrial."
 msgstr ""
 
-#: modules/neibers/cbos/cabinet/neibers_cabinet.info.yml:0 modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:12;12 modules/neibers/cbos/cabinet/src/Entity/Seat.php:206
+#: modules/neibers/cbos/cabinet/neibers_cabinet.info.yml:0 modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:12;12
 msgid "Cabinet"
 msgstr ""
 
@@ -57,43 +46,23 @@ msgstr ""
 msgid "Neibers"
 msgstr ""
 
-#: modules/neibers/cbos/cabinet/neibers_cabinet.links.action.yml:0;0
-msgid "Add"
-msgstr ""
-
 #: modules/neibers/cbos/cabinet/neibers_cabinet.links.action.yml:0
-msgid "Add type"
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/neibers_cabinet.links.menu.yml:0 modules/neibers/cbos/cabinet/src/Entity/Seat.php:12;12
-msgid "Seat"
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/neibers_cabinet.links.menu.yml:0 modules/neibers/cbos/cabinet/src/SeatTypeListBuilder.php:17 modules/neibers/cbos/cabinet/src/Entity/Seat.php:12 modules/neibers/cbos/cabinet/src/Entity/SeatType.php:7;7
-msgid "Seat type"
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/neibers_cabinet.links.menu.yml:0
-msgid "List Seat"
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/neibers_cabinet.links.menu.yml:0
-msgid "List Seat type (bundles)"
+msgid "Add"
 msgstr ""
 
 #: modules/neibers/cbos/cabinet/neibers_cabinet.links.task.yml:0
 msgid "Settings"
 msgstr ""
 
-#: modules/neibers/cbos/cabinet/neibers_cabinet.links.task.yml:0;0
+#: modules/neibers/cbos/cabinet/neibers_cabinet.links.task.yml:0
 msgid "View"
 msgstr ""
 
-#: modules/neibers/cbos/cabinet/neibers_cabinet.links.task.yml:0;0
+#: modules/neibers/cbos/cabinet/neibers_cabinet.links.task.yml:0
 msgid "Edit"
 msgstr ""
 
-#: modules/neibers/cbos/cabinet/neibers_cabinet.links.task.yml:0;0 modules/neibers/cbos/cabinet/src/Form/SeatTypeDeleteForm.php:32
+#: modules/neibers/cbos/cabinet/neibers_cabinet.links.task.yml:0
 msgid "Delete"
 msgstr ""
 
@@ -125,59 +94,15 @@ msgstr ""
 msgid "View unpublished Cabinet"
 msgstr ""
 
-#: modules/neibers/cbos/cabinet/neibers_cabinet.permissions.yml:0
-msgid "Create new Seat"
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/neibers_cabinet.permissions.yml:0
-msgid "Administer Seat"
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/neibers_cabinet.permissions.yml:0
-msgid "Allow to access the administration form to configure Seat."
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/neibers_cabinet.permissions.yml:0
-msgid "Delete Seat"
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/neibers_cabinet.permissions.yml:0
-msgid "Edit Seat"
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/neibers_cabinet.permissions.yml:0
-msgid "View published Seat"
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/neibers_cabinet.permissions.yml:0
-msgid "View unpublished Seat"
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/config/schema/seat_type.schema.yml:0
-msgid "Seat type config"
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/config/schema/seat_type.schema.yml:0
-msgid "ID"
-msgstr ""
-
 #: modules/neibers/cbos/cabinet/src/CabinetListBuilder.php:20
 msgid "Cabinet ID"
 msgstr ""
 
-#: modules/neibers/cbos/cabinet/src/CabinetListBuilder.php:21 modules/neibers/cbos/cabinet/src/SeatListBuilder.php:21 modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:182 modules/neibers/cbos/cabinet/src/Entity/Seat.php:185
+#: modules/neibers/cbos/cabinet/src/CabinetListBuilder.php:21 modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:182
 msgid "Name"
 msgstr ""
 
-#: modules/neibers/cbos/cabinet/src/SeatListBuilder.php:20
-msgid "Seat ID"
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/src/SeatTypeListBuilder.php:18
-msgid "Machine name"
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:157 modules/neibers/cbos/cabinet/src/Entity/Seat.php:160
+#: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:157
 msgid "Authored by"
 msgstr ""
 
@@ -201,7 +126,7 @@ msgstr ""
 msgid "Room"
 msgstr ""
 
-#: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:234 modules/neibers/cbos/cabinet/src/Entity/Seat.php:247
+#: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:234
 msgid "Publishing status"
 msgstr ""
 
@@ -209,44 +134,20 @@ msgstr ""
 msgid "A boolean indicating whether the Cabinet is published."
 msgstr ""
 
-#: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:243 modules/neibers/cbos/cabinet/src/Entity/Seat.php:256
+#: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:243
 msgid "Created"
 msgstr ""
 
-#: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:244 modules/neibers/cbos/cabinet/src/Entity/Seat.php:257
+#: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:244
 msgid "The time that the entity was created."
 msgstr ""
 
-#: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:247 modules/neibers/cbos/cabinet/src/Entity/Seat.php:260
+#: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:247
 msgid "Changed"
 msgstr ""
 
-#: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:248 modules/neibers/cbos/cabinet/src/Entity/Seat.php:261
+#: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:248
 msgid "The time that the entity was last edited."
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/src/Entity/Seat.php:161
-msgid "The user ID of author of the Seat entity."
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/src/Entity/Seat.php:186
-msgid "The name of the Seat entity."
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/src/Entity/Seat.php:225
-msgid "Parent"
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/src/Entity/Seat.php:226
-msgid "The parent of current seat."
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/src/Entity/Seat.php:240
-msgid "Item"
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/src/Entity/Seat.php:248
-msgid "A boolean indicating whether the Seat is published."
 msgstr ""
 
 #: modules/neibers/cbos/cabinet/src/Form/CabinetForm.php:37
@@ -257,47 +158,7 @@ msgstr ""
 msgid "Saved the %label Cabinet."
 msgstr ""
 
-#: modules/neibers/cbos/cabinet/src/Form/SeatForm.php:37
-msgid "Created the %label Seat."
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/src/Form/SeatForm.php:43
-msgid "Saved the %label Seat."
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/src/Form/SeatTypeDeleteForm.php:18
-msgid "Are you sure you want to delete %name?"
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/src/Form/SeatTypeDeleteForm.php:42
-msgid "content @type: deleted @label."
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/src/Form/SeatTypeForm.php:22
-msgid "Label"
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/src/Form/SeatTypeForm.php:25
-msgid "Label for the Seat type."
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/src/Form/SeatTypeForm.php:52
-msgid "Created the %label Seat type."
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/src/Form/SeatTypeForm.php:58
-msgid "Saved the %label Seat type."
-msgstr ""
-
 #: modules/neibers/cbos/cabinet/src/Plugin/EntityReferenceSelection/CabinetSelection.php:8
 msgid "Cabinet selection"
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/src/Plugin/EntityReferenceSelection/SeatSelection.php:8
-msgid "Seat selection"
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/config/install/neibers_cabinet.seat_type.multiple.yml:0
-msgid "Multiple"
 msgstr ""
 

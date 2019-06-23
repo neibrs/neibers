@@ -34,7 +34,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-06-19 09:56+0000\n"
+"POT-Creation-Date: 2019-06-23 03:40+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -247,51 +247,47 @@ msgstr ""
 msgid "The name of the IP entity."
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Entity/IP.php:269 modules/neibers/cbos/ip/src/Form/IPOrderForm.php:53;190
-msgid "Hardware"
-msgstr ""
-
-#: modules/neibers/cbos/ip/src/Entity/IP.php:288
+#: modules/neibers/cbos/ip/src/Entity/IP.php:269
 msgid "Cabinet Seat"
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Entity/IP.php:307
+#: modules/neibers/cbos/ip/src/Entity/IP.php:288
 msgid "Order"
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Entity/IP.php:308
+#: modules/neibers/cbos/ip/src/Entity/IP.php:289
 msgid "The related order number."
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Entity/IP.php:329
+#: modules/neibers/cbos/ip/src/Entity/IP.php:310
 msgid "State"
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Entity/IP.php:347
+#: modules/neibers/cbos/ip/src/Entity/IP.php:328
 msgid "A boolean indicating whether the IP is published."
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Entity/IP.php:354
+#: modules/neibers/cbos/ip/src/Entity/IP.php:335
 msgid "Created"
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Entity/IP.php:355
+#: modules/neibers/cbos/ip/src/Entity/IP.php:336
 msgid "The time that the entity was created."
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Entity/IP.php:358
+#: modules/neibers/cbos/ip/src/Entity/IP.php:339
 msgid "Changed"
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Entity/IP.php:359
+#: modules/neibers/cbos/ip/src/Entity/IP.php:340
 msgid "The time that the entity was last edited."
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Entity/IP.php:362
+#: modules/neibers/cbos/ip/src/Entity/IP.php:343
 msgid "Revision translation affected"
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Entity/IP.php:363
+#: modules/neibers/cbos/ip/src/Entity/IP.php:344
 msgid "Indicates if the last edit of a translation belongs to current revision."
 msgstr ""
 
@@ -325,6 +321,10 @@ msgstr ""
 
 #: modules/neibers/cbos/ip/src/Form/IPOrderForm.php:53
 msgid "Hardware type"
+msgstr ""
+
+#: modules/neibers/cbos/ip/src/Form/IPOrderForm.php:53;190
+msgid "Hardware"
 msgstr ""
 
 #: modules/neibers/cbos/ip/src/Form/IPOrderForm.php:57

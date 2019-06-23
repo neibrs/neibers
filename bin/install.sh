@@ -9,8 +9,6 @@ vendor/bin/drupal site:mode dev
 vendor/bin/drush pmu -y toolbar
 vendor/bin/drush en -y coffee \
   commerce_checkout \
-  content_translation \
-  locale \
   webprofiler \
   neibers_fitting \
   neibers_hardware \
