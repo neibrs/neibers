@@ -63,10 +63,89 @@ class IPOrderForm extends FormBase implements ContainerInjectionInterface {
     /** Build ips form. */
     $form['ips_collection'] = $this->buildIpsForm($form, $form_state, $order, $display);
 
+    $form['ips'] = $this->buildIpsTableForm($form, $form_state, $order, $display);
+
+    $form['bips'] = $this->buildBipsTableForm($form, $form_state, $order, $display);
+
     /** Build allocate ip form. */
     $form['all'] = $this->buildAllocateForm($form, $form_state, $order, $display);
 
     return $form;
+  }
+
+  /**
+   * @description build bips form.
+   */
+  public function buildBipsTableForm(&$form, FormStateInterface $form_state, $order = NULL, $display = NULL) {
+    $form['bips'] = [
+      '#caption' => $this->t('All business ip collection'),
+      '#type' => 'table',
+      '#title' => $this->t('IP'),
+      '#header' => [$this->t('No.'), $this->t('IP'), $this->t('Operations')],
+      '#sticky' => TRUE,
+    ];
+
+    $bips = $this->entityTypeManager->getStorage('neibers_ip')->getOnetsByOrder($this->order);
+
+    $i = 1;
+    foreach ($bips as $key => $bip) {
+      $form['bips'][$key]['id'] = ['#markup' => $i++];
+      $form['bips'][$key]['ip'] = ['#markup' => $bip->label()];
+      $form['bips'][$key]['operations'] = \Drupal::service('neibers_ip.manager')->buildOperations($bip);
+    }
+
+    return $form['bips'];
+  }
+
+  /**
+   * @description build ips form.
+   */
+  public function buildIpsTableForm(&$form, FormStateInterface $form_state, $order = NULL, $display = NULL) {
+
+    $header = [$this->t('Server')];
+    if ($display->getMode() == 'default') {
+      $header = array_merge($header, [$this->t('Administer IP')]);
+    }
+    $header = array_merge($header, [$this->t('Business IP'), $this->t('Fitting')]);
+
+    $form['ips'] = [
+      '#type' => 'table',
+      '#title' => $this->t('All the Ips'),
+      '#header' => $display->getMode() == 'default' ? array_merge($header, [$this->t('Operations')]) : $header,
+      '#sticky' => TRUE,
+    ];
+
+    $inets = $this->entityTypeManager->getStorage('neibers_ip')->getInetsByOrder($order);
+    foreach ($inets as $key => $inet) {
+      $form['ips'][$key]['server'] = [
+        '#markup' => $inet->seat->entity->hardware->entity->label(),
+      ];
+      if ($display->getMode() == 'default') {
+        $form['ips'][$key]['inet'] = [
+          '#markup' => $inet->label(),
+        ];
+      }
+
+      $onets = array_map(function ($ip) {
+        return $ip->label();
+      }, $this->entityTypeManager->getStorage('neibers_ip')->getOnetsByInet($inet));
+
+      $form['ips'][$key]['onet'] = [
+        '#markup' => implode(', ', $onets),
+      ];
+
+      $form['ips'][$key]['fitting'] = [
+        // TODO
+        '#markup' => '',
+      ];
+
+      if ($display->getMode() == 'default') {
+        $form['ips'][$key]['operation'] = \Drupal::service('neibers_ip.manager')->buildOperations($inet);
+      }
+    }
+
+
+    return $form['ips'];
   }
 
   /**
