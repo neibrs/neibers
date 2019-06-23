@@ -14,7 +14,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-06-05 15:06+0000\n"
+"POT-Creation-Date: 2019-06-23 17:07+0800\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -55,13 +55,21 @@ msgstr "商品类型"
 msgid "Product attributes"
 msgstr "产品属性"
 
+#: modules/neibers/product/mall/neibers_mall.links.menu.yml:0
+msgid "Orders management"
+msgstr "订单管理"
+
+#: modules/neibers/product/mall/neibers_mall.links.menu.yml:0
+msgid "Orders collection"
+msgstr "订单列表"
+
 #: modules/neibers/product/mall/neibers_mall.routing.yml:0
 msgid "Platform"
-msgstr "平台"
+msgstr "平台管理"
 
 #: modules/neibers/product/mall/src/Plugin/Block/NavigateBlock.php:11
 msgid "Navigate block for exsen theme"
-msgstr "Exsen导航区块"
+msgstr "导航区块"
 
 #: modules/neibers/product/mall/src/Plugin/Block/SidebarBlock.php:12
 msgid "Sidebar block"

@@ -3,7 +3,7 @@ type: module
 description: Role menu
 core: 8.x
 interface translation project: role_menu
-interface translation server pattern: modules/neibers/core/%project/translations/role_menu.%language.po
+interface translation server pattern: modules/neibers/core/%project/translations/%project.%language.po
 package: 'Neibers'
 dependencies:
   - drupal:menu_ui

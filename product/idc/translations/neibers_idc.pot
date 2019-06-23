@@ -12,7 +12,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-06-23 14:31+0800\n"
+"POT-Creation-Date: 2019-06-23 17:00+0800\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -53,8 +53,8 @@ msgstr ""
 msgid "Hardware collection"
 msgstr ""
 
-#: modules/neibers/product/idc/neibers_idc.links.menu.yml:0;0;0;0
-msgid "Configuration"
+#: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
+msgid "Hardware configuration"
 msgstr ""
 
 #: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
@@ -85,6 +85,10 @@ msgstr ""
 msgid "Onet IP collection"
 msgstr ""
 
+#: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
+msgid "IP configuration"
+msgstr ""
+
 #: modules/neibers/product/idc/neibers_idc.links.menu.yml:0;0
 msgid "Type"
 msgstr ""
@@ -95,6 +99,10 @@ msgstr ""
 
 #: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
 msgid "Fitting collection"
+msgstr ""
+
+#: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
+msgid "Fitting configuration"
 msgstr ""
 
 #: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
@@ -111,6 +119,10 @@ msgstr ""
 
 #: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
 msgid "Seat collection"
+msgstr ""
+
+#: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
+msgid "Room configuration"
 msgstr ""
 
 #: modules/neibers/product/idc/neibers_idc.links.menu.yml:0

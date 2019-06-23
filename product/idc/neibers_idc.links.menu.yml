@@ -12,7 +12,7 @@ neibers_idc.hardware.collection:
   weight: 10
 
 neibers_idc.hardware_type.configuration:
-  title: 'Configuration'
+  title: 'Hardware configuration'
   route_name: entity.neibers_hardware_type.collection
   parent: neibers_idc.hardware
   weight: 20
@@ -72,7 +72,7 @@ neibers_idc.ip.onet:
   weight: 19
 
 neibers_idc.ip_type.configuration:
-  title: 'Configuration'
+  title: 'IP configuration'
   route_name: entity.neibers_ip_type.collection
   parent: neibers_idc.ip
   weight: 50
@@ -96,7 +96,7 @@ neibers_idc.fitting.collection:
   parent: neibers_idc.fitting
   weight: 1
 neibers_idc.fitting.configuration:
-  title: 'Configuration'
+  title: 'Fitting configuration'
   route_name: entity.neibers_fitting_type.collection
   parent: neibers_idc.fitting
   weight: 5
@@ -132,7 +132,7 @@ neibers_idc.seat.collection:
   weight: 45
 
 neibers_idc.room_type.configuration:
-  title: 'Configuration'
+  title: 'Room configuration'
   route_name: entity.neibers_room_type.collection
   parent: neibers_idc.room
   weight: 50

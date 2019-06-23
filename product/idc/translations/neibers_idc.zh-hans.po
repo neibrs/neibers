@@ -12,7 +12,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-06-23 14:31+0800\n"
+"POT-Creation-Date: 2019-06-23 17:00+0800\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -27,39 +27,71 @@ msgstr ""
 
 #: modules/neibers/product/idc/neibers_idc.module:22
 msgid "The industry of neibers_idc."
-msgstr "IDC行业。"
+msgstr "IDC 行业."
 
-#: modules/neibers/product/neibers_idc/neibers_idc.links.menu.yml:0
-msgid "IP collection"
-msgstr "IP列表"
+#: modules/neibers/product/idc/neibers_idc.info.yml:0
+msgid "IDC"
+msgstr ""
 
-#: modules/neibers/product/neibers_idc/neibers_idc.links.menu.yml:0
-msgid "Free IP"
-msgstr "空闲IP"
+#: modules/neibers/product/idc/neibers_idc.info.yml:0
+msgid "The industry of neibers idc."
+msgstr "IDC 行业."
 
-#: modules/neibers/product/neibers_idc/neibers_idc.links.menu.yml:0
-msgid "Used IP"
-msgstr "已用IP"
+#: modules/neibers/product/idc/neibers_idc.info.yml:0
+msgid "Neibers"
+msgstr ""
 
-#: modules/neibers/product/neibers_idc/neibers_idc.links.menu.yml:0
-msgid "Inet IP"
-msgstr "管理IP"
+#: modules/neibers/product/idc/neibers_idc.links.action.yml:0
+#msgid "Import"
+#msgstr ""
 
-#: modules/neibers/product/neibers_idc/neibers_idc.links.menu.yml:0
-msgid "Onet IP"
-msgstr "公网IP"
+#: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
+msgid "Hardware management"
+msgstr "设备管理"
 
-#: modules/neibers/product/neibers_idc/neibers_idc.links.menu.yml:0;0 modules/neibers/product/neibers_idc/config/install/views.view.ip.yml:0;0 modules/neibers/product/neibers_idc/config/install/views.view.neibers_room.yml:0
-msgid "Type"
-msgstr "类型"
+#: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
+msgid "Hardware collection"
+msgstr "设备列表"
+
+#: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
+msgid "Hardware configuration"
+msgstr "设备配置"
 
 #: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
 msgid "Hardware type"
 msgstr "设备类型"
 
 #: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
+msgid "IP management"
+msgstr "IP管理"
+
+#: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
+msgid "IP collection"
+msgstr "IP列表"
+
+#: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
+msgid "Free IP collection"
+msgstr "空闲IP"
+
+#: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
+msgid "Used IP collection"
+msgstr "已用IP"
+
+#: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
+msgid "Inet IP collection"
+msgstr "管理IP"
+
+#: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
 msgid "Onet IP collection"
-msgstr "公网IP列表"
+msgstr "公网IP"
+
+#: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
+msgid "IP configuration"
+msgstr "IP配置"
+
+#: modules/neibers/product/idc/neibers_idc.links.menu.yml:0;0
+msgid "Type"
+msgstr "类型"
 
 #: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
 msgid "Fitting management"
@@ -68,6 +100,10 @@ msgstr "配件管理"
 #: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
 msgid "Fitting collection"
 msgstr "配件列表"
+
+#: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
+msgid "Fitting configuration"
+msgstr "配件配置"
 
 #: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
 msgid "Room management"
@@ -84,6 +120,10 @@ msgstr "机柜列表"
 #: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
 msgid "Seat collection"
 msgstr "机位列表"
+
+#: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
+msgid "Room configuration"
+msgstr "机房配置"
 
 #: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
 msgid "Room type"
