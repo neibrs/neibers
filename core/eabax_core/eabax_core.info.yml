@@ -15,5 +15,5 @@ dependencies:
   - neibers:entity_permission
   - neibers:role_frontpage
   - neibers:role_menu
-  - neibers:translation
+  - neibers:neibers_translation
   - rules:rules
