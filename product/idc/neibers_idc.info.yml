@@ -6,6 +6,7 @@ interface translation project: neibers_idc
 interface translation server pattern: modules/neibers/product/idc/translations/%project.%language.po
 package: 'Neibers'
 dependencies:
+  - neibers_fitting
   - neibers_ip
   - neibers_room
   - import

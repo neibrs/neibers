@@ -6,18 +6,14 @@ dependencies:
     - user
 id: room
 label: Room
-module: neibers_idc
-description: 'Find and manage contents.'
+module: neibers_idc 
+description: 'Find and manage content.'
 tag: default
 base_table: neibers_room_field_data
 base_field: id
 core: 8.x
 display:
   default:
-    display_plugin: default
-    id: default
-    display_title: Master
-    position: 0
     display_options:
       access:
         type: perm
@@ -25,15 +21,8 @@ display:
           perm: 'administer room'
       cache:
         type: tag
-        options: {  }
       query:
         type: views_query
-        options:
-          disable_sql_rewrite: false
-          distinct: false
-          replica: false
-          query_comment: ''
-          query_tags: {  }
       exposed_form:
         type: basic
         options:
@@ -48,23 +37,11 @@ display:
         type: full
         options:
           items_per_page: 20
-          offset: 0
-          id: 0
-          total_pages: null
           tags:
             previous: ‹‹
             next: ››
             first: '« First'
             last: 'Last »'
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-          quantity: 9
       style:
         type: table
         options:
@@ -85,35 +62,35 @@ display:
             operations: operations
           info:
             counter:
-              sortable: false
+              sortable: true
               default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
               responsive: ''
             name:
-              sortable: false
+              sortable: true
               default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
               responsive: ''
             type:
-              sortable: false
+              sortable: true
               default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
               responsive: ''
             status:
-              sortable: false
+              sortable: true
               default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
               responsive: ''
             changed:
-              sortable: false
+              sortable: true
               default_sort_order: asc
               align: ''
               separator: ''
@@ -124,7 +101,7 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
-          default: '-1'
+          default: changed
           empty_table: true
       row:
         type: fields
@@ -140,38 +117,7 @@ display:
           exclude: false
           alter:
             alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
           element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
           element_default_classes: true
           empty: ''
           hide_empty: false
@@ -193,38 +139,7 @@ display:
           exclude: false
           alter:
             alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
           element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
           element_default_classes: true
           empty: ''
           hide_empty: false
@@ -315,42 +230,11 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Status
+          label: Published
           exclude: false
           alter:
             alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
           element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
           element_default_classes: true
           empty: ''
           hide_empty: false
@@ -372,9 +256,9 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          plugin_id: field
           entity_type: neibers_room
           entity_field: status
-          plugin_id: field
         changed:
           id: changed
           table: neibers_room_field_data
@@ -386,38 +270,7 @@ display:
           exclude: false
           alter:
             alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
           element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
           element_default_classes: true
           empty: ''
           hide_empty: false
@@ -426,7 +279,7 @@ display:
           click_sort_column: value
           type: timestamp
           settings:
-            date_format: medium
+            date_format: html_date
             custom_date_format: ''
             timezone: ''
           group_column: value
@@ -439,9 +292,9 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          plugin_id: field
           entity_type: neibers_room
           entity_field: changed
-          plugin_id: field
         operations:
           id: operations
           table: neibers_room
@@ -493,7 +346,92 @@ display:
           destination: false
           entity_type: neibers_room
           plugin_id: entity_operations
-      filters: {  }
+      filters:
+        combine:
+          id: combine
+          table: views
+          field: combine
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: contains
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: combine_op
+            label: Filter
+            description: ''
+            use_operator: false
+            operator: combine_op
+            identifier: combine
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          fields:
+            name: name
+            type: type
+          plugin_id: combine
+        status:
+          id: status
+          table: neibers_room_field_data
+          field: status
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: All
+          group: 1
+          exposed: true
+          expose:
+            operator_id: ''
+            label: Status
+            description: ''
+            use_operator: false
+            operator: status_op
+            identifier: status
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              implementor: '0'
+              system_administrator: '0'
+              site_manager: '0'
+              business: '0'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: boolean
+          entity_type: neibers_room
+          entity_field: status
       sorts: {  }
       title: Room
       header: {  }
@@ -502,27 +440,37 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+    display_plugin: default
+    display_title: Master
+    id: default
+    position: 0
     cache_metadata:
-      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
         - user.permissions
+      max-age: -1
       tags: {  }
   page_1:
-    display_plugin: page
-    id: page_1
-    display_title: Page
-    position: 1
     display_options:
-      display_extenders: {  }
       path: room
+      display_extenders: {  }
+    display_plugin: page
+    display_title: Page
+    id: page_1
+    position: 1
     cache_metadata:
-      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
         - user.permissions
+      max-age: -1
       tags: {  }

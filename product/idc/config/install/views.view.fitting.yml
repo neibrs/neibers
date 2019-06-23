@@ -2,29 +2,28 @@ langcode: en
 status: true
 dependencies:
   module:
+    - eabax_workflows
     - neibers_cabinet
-    - neibers_ip
+    - neibers_fitting
+    - neibers_hardware
+    - neibers_seat
     - options
     - user
-id: ip
-label: IP
-module: neibers_idc 
-description: 'Find and manage contents.'
+id: fitting
+label: Fitting
+module: neibers_fitting 
+description: 'Find and manage content.'
 tag: default
-base_table: neibers_ip_field_data
+base_table: neibers_fitting_field_data
 base_field: id
 core: 8.x
 display:
   default:
-    display_plugin: default
-    id: default
-    display_title: Master
-    position: 0
     display_options:
       access:
         type: perm
         options:
-          perm: 'administer ip'
+          perm: 'administer neibers fitting'
       cache:
         type: tag
         options: {  }
@@ -79,22 +78,22 @@ display:
           summary: ''
           description: ''
           columns:
-            neibers_ip_bulk_form: neibers_ip_bulk_form
+            neibers_fitting_bulk_form: neibers_fitting_bulk_form
             counter: counter
             name: name
-            hardware: hardware
             type: type
-            user_id: user_id
-            state: state
-            seat: seat
-            cabinet: cabinet
+            name_3: name_3
+            name_1: name_1
             room: room
+            name_2: name_2
+            order_id: order_id
+            state: state
             status: status
+            user_id: user_id
             changed: changed
             operations: operations
-            room: room
           info:
-            neibers_ip_bulk_form:
+            neibers_fitting_bulk_form:
               align: ''
               separator: ''
               empty_column: false
@@ -113,20 +112,6 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
-            hardware:
-              sortable: true
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            seat:
-              sortable: true
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
             type:
               sortable: true
               default_sort_order: asc
@@ -134,7 +119,35 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
-            user_id:
+            name_3:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            name_1:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            room:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            name_2:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            order_id:
               sortable: true
               default_sort_order: asc
               align: ''
@@ -155,21 +168,14 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
+            user_id:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
             changed:
-              sortable: true
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            status:
-              sortable: true
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            room:
               sortable: true
               default_sort_order: asc
               align: ''
@@ -186,10 +192,10 @@ display:
       row:
         type: fields
       fields:
-        neibers_ip_bulk_form:
-          id: neibers_ip_bulk_form
-          table: neibers_ip
-          field: neibers_ip_bulk_form
+        neibers_fitting_bulk_form:
+          id: neibers_fitting_bulk_form
+          table: neibers_fitting
+          field: neibers_fitting_bulk_form
           relationship: none
           group_type: group
           admin_label: ''
@@ -197,38 +203,7 @@ display:
           exclude: false
           alter:
             alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
           element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
           element_default_classes: true
           empty: ''
           hide_empty: false
@@ -237,8 +212,8 @@ display:
           action_title: Action
           include_exclude: exclude
           selected_actions: {  }
-          entity_type: neibers_ip
           plugin_id: bulk_form
+          entity_type: neibers_fitting
         counter:
           id: counter
           table: views
@@ -250,38 +225,7 @@ display:
           exclude: false
           alter:
             alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
           element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
           element_default_classes: true
           empty: ''
           hide_empty: false
@@ -290,7 +234,7 @@ display:
           counter_start: 1
           plugin_id: counter
         name:
-          table: neibers_ip_field_data
+          table: neibers_fitting_field_data
           field: name
           id: name
           entity_type: null
@@ -303,38 +247,7 @@ display:
           exclude: false
           alter:
             alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
           element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
           element_default_classes: true
           empty: ''
           hide_empty: false
@@ -353,74 +266,9 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        hardware:
-          id: hardware
-          table: neibers_ip_field_data
-          field: hardware
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: Hardware
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
-          settings:
-            link: true
-          group_column: target_id
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          entity_type: neibers_ip
-          entity_field: hardware
-          plugin_id: field
         type:
           id: type
-          table: neibers_ip_field_data
+          table: neibers_fitting_field_data
           field: type
           relationship: none
           group_type: group
@@ -480,82 +328,17 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: neibers_ip
+          entity_type: neibers_fitting
           entity_field: type
           plugin_id: field
-        user_id:
-          id: user_id
-          table: neibers_ip_field_data
-          field: user_id
-          relationship: none
+        name_3:
+          id: name_3
+          table: neibers_hardware_field_data
+          field: name
+          relationship: hardware
           group_type: group
           admin_label: ''
-          label: Client
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
-          settings:
-            link: true
-          group_column: target_id
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          entity_type: neibers_ip
-          entity_field: user_id
-          plugin_id: field
-        state:
-          id: state
-          table: neibers_ip_field_data
-          field: state
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: State
+          label: Hardware
           exclude: false
           alter:
             alter_text: false
@@ -597,8 +380,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: list_default
-          settings: {  }
+          type: string
+          settings:
+            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -609,46 +393,20 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: neibers_ip
-          entity_field: state
+          entity_type: neibers_hardware
+          entity_field: name
           plugin_id: field
-        seat:
-          id: seat
-          table: neibers_ip_field_data
-          field: seat
-          relationship: none
+        name_1:
+          id: name_1
+          table: neibers_seat_field_data
+          field: name
+          relationship: seat
           group_type: group
           admin_label: ''
           label: Seat
           exclude: false
           alter:
             alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
           element_class: ''
           element_label_type: ''
           element_label_class: ''
@@ -660,76 +418,11 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
+          click_sort_column: value
+          type: string
           settings:
-            link: true
-          group_column: target_id
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          entity_type: neibers_ip
-          entity_field: seat
-          plugin_id: field
-        cabinet:
-          id: cabinet
-          table: neibers_seat_field_data
-          field: cabinet
-          relationship: seat
-          group_type: group
-          admin_label: ''
-          label: Cabinet
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
-          settings:
-            link: true
-          group_column: target_id
+            link_to_entity: true
+          group_column: value
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -740,7 +433,7 @@ display:
           separator: ', '
           field_api_classes: false
           entity_type: neibers_seat
-          entity_field: cabinet
+          entity_field: name
           plugin_id: field
         room:
           id: room
@@ -807,14 +500,14 @@ display:
           entity_type: neibers_cabinet
           entity_field: room
           plugin_id: field
-        status:
-          id: status
-          table: neibers_ip_field_data
-          field: status
-          relationship: none
+        name_2:
+          id: name_2
+          table: neibers_cabinet_field_data
+          field: name
+          relationship: cabinet
           group_type: group
           admin_label: ''
-          label: Status
+          label: Cabinet
           exclude: false
           alter:
             alter_text: false
@@ -850,6 +543,107 @@ display:
           element_label_colon: true
           element_wrapper_type: ''
           element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: neibers_cabinet
+          entity_field: name
+          plugin_id: field
+        order_id:
+          id: order_id
+          table: neibers_fitting_field_data
+          field: order_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: Order
+          exclude: false
+          alter:
+            alter_text: false
+          element_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+          entity_type: neibers_fitting
+          entity_field: order_id
+        state:
+          id: state
+          table: neibers_fitting_field_data
+          field: state
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: State
+          exclude: false
+          alter:
+            alter_text: false
+          element_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: list_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+          entity_type: neibers_fitting
+          entity_field: state
+        status:
+          id: status
+          table: neibers_fitting_field_data
+          field: status
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: Status
+          exclude: false
+          alter:
+            alter_text: false
+          element_class: ''
           element_default_classes: true
           empty: ''
           hide_empty: false
@@ -871,12 +665,46 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: neibers_ip
-          entity_field: status
           plugin_id: field
+          entity_type: neibers_fitting
+          entity_field: status
+        user_id:
+          id: user_id
+          table: neibers_fitting_field_data
+          field: user_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Authored by'
+          exclude: false
+          alter:
+            alter_text: false
+          element_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+          entity_type: neibers_fitting
+          entity_field: user_id
         changed:
           id: changed
-          table: neibers_ip_field_data
+          table: neibers_fitting_field_data
           field: changed
           relationship: none
           group_type: group
@@ -885,38 +713,7 @@ display:
           exclude: false
           alter:
             alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
           element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
           element_default_classes: true
           empty: ''
           hide_empty: false
@@ -925,7 +722,7 @@ display:
           click_sort_column: value
           type: timestamp
           settings:
-            date_format: medium
+            date_format: short
             custom_date_format: ''
             timezone: ''
           group_column: value
@@ -938,12 +735,12 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: neibers_ip
-          entity_field: changed
           plugin_id: field
+          entity_type: neibers_fitting
+          entity_field: changed
         operations:
           id: operations
-          table: neibers_ip
+          table: neibers_fitting
           field: operations
           relationship: none
           group_type: group
@@ -990,35 +787,156 @@ display:
           empty_zero: false
           hide_alter_empty: true
           destination: false
-          entity_type: neibers_ip
+          entity_type: neibers_fitting
           plugin_id: entity_operations
       filters:
-        status:
-          value: '1'
-          table: neibers_ip_field_data
-          field: status
-          plugin_id: boolean
-          entity_type: neibers_ip
-          entity_field: status
-          id: status
-          expose:
-            operator: ''
+        combine:
+          id: combine
+          table: views
+          field: combine
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: contains
+          value: ''
           group: 1
+          exposed: true
+          expose:
+            operator_id: combine_op
+            label: Filter
+            description: ''
+            use_operator: false
+            operator: combine_op
+            identifier: combine
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          fields:
+            name: name
+            type: type
+            name_3: name_3
+            name_1: name_1
+            name_2: name_2
+          plugin_id: combine
+        type:
+          id: type
+          table: neibers_fitting_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: type_op
+            label: 'Type'
+            description: ''
+            use_operator: false
+            operator: type_op
+            identifier: type
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: bundle
+          entity_type: neibers_fitting
+          entity_field: type
+        state:
+          id: state
+          table: neibers_fitting_field_data
+          field: state
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: state_op
+            label: State
+            description: ''
+            use_operator: false
+            operator: state_op
+            identifier: state
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: neibers_fitting
+          entity_field: state
+          plugin_id: entity_status
       sorts: {  }
-      title: IP
-      header: {  }
-      footer: {  }
-      empty: {  }
+      title: Fitting
+      empty:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          empty: true
+          content: 'No content available.'
+          plugin_id: text_custom
       relationships:
         seat:
           id: seat
-          table: neibers_ip_field_data
+          table: neibers_fitting_field_data
           field: seat
           relationship: none
           group_type: group
           admin_label: Seat
           required: false
-          entity_type: neibers_ip
+          entity_type: neibers_fitting
           entity_field: seat
           plugin_id: standard
         cabinet:
@@ -1032,29 +950,46 @@ display:
           entity_type: neibers_seat
           entity_field: cabinet
           plugin_id: standard
+        hardware:
+          id: hardware
+          table: neibers_seat_field_data
+          field: hardware
+          relationship: seat
+          group_type: group
+          admin_label: Hardware
+          required: false
+          entity_type: neibers_seat
+          entity_field: hardware
+          plugin_id: standard
       arguments: {  }
       display_extenders: {  }
+    display_plugin: default
+    display_title: Master
+    id: default
+    position: 0
     cache_metadata:
-      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
         - user.permissions
+      max-age: 0
       tags: {  }
   page_1:
-    display_plugin: page
-    id: page_1
-    display_title: Page
-    position: 1
     display_options:
+      path: fitting
       display_extenders: {  }
-      path: ip
+    display_plugin: page
+    display_title: Page
+    id: page_1
+    position: 1
     cache_metadata:
-      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
         - user.permissions
+      max-age: 0
       tags: {  }

@@ -204,7 +204,7 @@ class Seat extends ContentEntityBase implements SeatInterface {
 
     $fields['cabinet'] = BaseFieldDefinition::create('entity_reference')
       ->setLabel(t('Cabinet'))
-      ->setSetting('target_type', 'neibers_seat')
+      ->setSetting('target_type', 'neibers_cabinet')
       ->setDisplayOptions('view', [
         'type' => 'entity_reference_label',
         'weight' => 6,

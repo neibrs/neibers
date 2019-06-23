@@ -10,4 +10,3 @@ dependencies:
   - eabax_workflows
   - drupal:workflows
   - neibers_seat
-  - neibers_hardware
