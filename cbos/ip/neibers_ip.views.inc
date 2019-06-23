@@ -11,7 +11,7 @@
 function neibers_ip_views_data_alter(array &$data) {
 
   $data['commerce_order']['ip'] = [
-    'title' => t('Business IP'),
+    'title' => t('Order business IP'),
     'help' => t('The business ip in order'),
     'field' => [
       'id' => 'bips',
@@ -19,7 +19,7 @@ function neibers_ip_views_data_alter(array &$data) {
   ];
 
   $data['commerce_order']['mip'] = [
-    'title' => t('Administer IP'),
+    'title' => t('Order administer IP'),
     'help' => t('The administer ip in order'),
     'field' => [
       'id' => 'mips',

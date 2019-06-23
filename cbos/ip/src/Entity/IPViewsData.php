@@ -16,7 +16,7 @@ class IPViewsData extends EntityViewsData {
     $data = parent::getViewsData();
 
     $data['neibers_ip_field_data']['business_ips'] = [
-      'title' => t('Business IP'),
+      'title' => t('Admin business IP'),
       'field' => [
         'id' => 'business_ips',
       ],
