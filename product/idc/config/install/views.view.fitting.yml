@@ -23,7 +23,7 @@ display:
       access:
         type: perm
         options:
-          perm: 'administer neibers fitting'
+          perm: 'administer fitting'
       cache:
         type: tag
         options: {  }

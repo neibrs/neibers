@@ -20,7 +20,7 @@ class FittingTypeAccessControlHandler extends EntityAccessControlHandler {
   protected function checkAccess(EntityInterface $entity, $operation, AccountInterface $account) {
     switch ($operation) {
       case 'view':
-        return AccessResult::allowedIfHasPermission($account, 'view published neibers seat');
+        return AccessResult::allowedIfHasPermission($account, 'view published seat');
 
       case 'delete':
         if ($entity->isLocked()) {

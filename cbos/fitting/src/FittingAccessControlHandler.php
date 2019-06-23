@@ -22,15 +22,15 @@ class FittingAccessControlHandler extends EntityAccessControlHandler {
     switch ($operation) {
       case 'view':
         if (!$entity->isPublished()) {
-          return AccessResult::allowedIfHasPermission($account, 'view unpublished neibers fitting');
+          return AccessResult::allowedIfHasPermission($account, 'view unpublished fitting');
         }
-        return AccessResult::allowedIfHasPermission($account, 'view published neibers fitting');
+        return AccessResult::allowedIfHasPermission($account, 'view published fitting');
 
       case 'update':
-        return AccessResult::allowedIfHasPermission($account, 'edit neibers fitting');
+        return AccessResult::allowedIfHasPermission($account, 'edit fitting');
 
       case 'delete':
-        return AccessResult::allowedIfHasPermission($account, 'delete neibers fitting');
+        return AccessResult::allowedIfHasPermission($account, 'delete fitting');
     }
 
     // Unknown operation, no opinion.
@@ -41,7 +41,7 @@ class FittingAccessControlHandler extends EntityAccessControlHandler {
    * {@inheritdoc}
    */
   protected function checkCreateAccess(AccountInterface $account, array $context, $entity_bundle = NULL) {
-    return AccessResult::allowedIfHasPermission($account, 'add neibers fitting');
+    return AccessResult::allowedIfHasPermission($account, 'add fitting');
   }
 
 }

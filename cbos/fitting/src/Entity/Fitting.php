@@ -39,7 +39,7 @@ use Drupal\user\UserInterface;
  *   base_table = "neibers_fitting",
  *   data_table = "neibers_fitting_field_data",
  *   translatable = TRUE,
- *   admin_permission = "administer neibers fitting",
+ *   admin_permission = "administer fitting",
  *   entity_keys = {
  *     "id" = "id",
  *     "bundle" = "type",

@@ -39,7 +39,7 @@ use Drupal\user\UserInterface;
  *   base_table = "neibers_seat",
  *   data_table = "neibers_seat_field_data",
  *   translatable = TRUE,
- *   admin_permission = "administer neibers seat",
+ *   admin_permission = "administer seat",
  *   entity_keys = {
  *     "id" = "id",
  *     "bundle" = "type",

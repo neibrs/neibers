@@ -1,19 +1,19 @@
-add neibers fitting:
+add fitting:
   title: 'Create new Fitting'
 
-administer neibers fitting:
+administer fitting:
   title: 'Administer Fitting'
   description: 'Allow to access the administration form to configure Fitting.'
   restrict access: true
 
-delete neibers fitting:
+delete fitting:
   title: 'Delete Fitting'
 
-edit neibers fitting:
+edit fitting:
   title: 'Edit Fitting'
 
-view published neibers fitting:
+view published fitting:
   title: 'View published Fitting'
 
-view unpublished neibers fitting:
+view unpublished fitting:
   title: 'View unpublished Fitting'

@@ -22,15 +22,15 @@ class SeatAccessControlHandler extends EntityAccessControlHandler {
     switch ($operation) {
       case 'view':
         if (!$entity->isPublished()) {
-          return AccessResult::allowedIfHasPermission($account, 'view unpublished neibers seat');
+          return AccessResult::allowedIfHasPermission($account, 'view unpublished seat');
         }
-        return AccessResult::allowedIfHasPermission($account, 'view published neibers seat');
+        return AccessResult::allowedIfHasPermission($account, 'view published seat');
 
       case 'update':
-        return AccessResult::allowedIfHasPermission($account, 'edit neibers seat');
+        return AccessResult::allowedIfHasPermission($account, 'edit seat');
 
       case 'delete':
-        return AccessResult::allowedIfHasPermission($account, 'delete neibers seat');
+        return AccessResult::allowedIfHasPermission($account, 'delete seat');
     }
 
     // Unknown operation, no opinion.
@@ -41,7 +41,7 @@ class SeatAccessControlHandler extends EntityAccessControlHandler {
    * {@inheritdoc}
    */
   protected function checkCreateAccess(AccountInterface $account, array $context, $entity_bundle = NULL) {
-    return AccessResult::allowedIfHasPermission($account, 'add neibers seat');
+    return AccessResult::allowedIfHasPermission($account, 'add seat');
   }
 
 }
