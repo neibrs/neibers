@@ -20,7 +20,6 @@ function neibers_neibrs_install() {
 
   $user = User::load(1);
   $user->addRole('business');
-  $user->addRole('site_manager');
 
   $user->save();
 

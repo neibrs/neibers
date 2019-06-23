@@ -1,6 +1,6 @@
 # Hardware
 neibers_idc.hardware:
-  title: 'Hardware collection'
+  title: 'Hardware management'
   route_name: entity.neibers_hardware.collection
   menu_name: business
   weight: 0
@@ -24,7 +24,7 @@ neibers_idc.hardware_type.configuration.type:
   weight: 10
 
 neibers_idc.ip:
-  title: 'IP collection'
+  title: 'IP management'
   route_name: entity.neibers_ip.collection
   menu_name: business
   weight: 10
@@ -85,7 +85,7 @@ neibers_idc.neibers_ip_type.configuration.type:
 
 # Fitting
 neibers_idc.fitting:
-  title: 'Fitting collection'
+  title: 'Fitting management'
   route_name: entity.neibers_fitting.collection
   menu_name: business
   weight: 15
@@ -108,7 +108,7 @@ neibers_idc.fitting.configuration.type:
 
 # Room
 neibers_idc.room:
-  title: 'Room collection'
+  title: 'Room management'
   route_name: entity.neibers_room.collection
   menu_name: business
   weight: 20
