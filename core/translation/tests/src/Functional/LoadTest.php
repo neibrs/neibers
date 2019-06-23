@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\Tests\translation\Functional;
+namespace Drupal\Tests\neibers_translation\Functional;
 
 use Drupal\Core\Url;
 use Drupal\Tests\BrowserTestBase;

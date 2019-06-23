@@ -8,7 +8,7 @@
 /**
  * Implements hook_locale_translation_projects_alter().
  */
-function translation_locale_translation_projects_alter(&$projects) {
+function neibers_translation_locale_translation_projects_alter(&$projects) {
   $modules = [
     'drupal',
     'features',
