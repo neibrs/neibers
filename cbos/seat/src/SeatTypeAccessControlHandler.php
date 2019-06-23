@@ -12,7 +12,7 @@ use Drupal\Core\Access\AccessResult;
  *
  * @see \Drupal\neibers_seat\Entity\IPType.
  */
-class FittingTypeAccessControlHandler extends EntityAccessControlHandler {
+class SeatTypeAccessControlHandler extends EntityAccessControlHandler {
 
   /**
    * {@inheritdoc}

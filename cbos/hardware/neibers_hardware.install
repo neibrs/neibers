@@ -3,5 +3,6 @@
 function neibers_hardware_install() {
   $locked = \Drupal::state()->get('neibers_hardware.type.locked');
   $locked['server'] = 'server';
+  $locked['switcher'] = 'switcher';
   \Drupal::state()->set('neibers_hardware.type.locked', $locked);
 }
