@@ -12,6 +12,7 @@ use Drupal\Core\Config\Entity\ConfigEntityBundleBase;
  *   label = @Translation("Fitting type"),
  *   label_collection = @Translation("Fitting type"),
  *   handlers = {
+ *     "access" = "Drupal\neibers_fitting\FittingTypeAccessControlHandler",
  *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
  *     "list_builder" = "Drupal\neibers_fitting\FittingTypeListBuilder",
  *     "form" = {
@@ -56,4 +57,11 @@ class FittingType extends ConfigEntityBundleBase implements FittingTypeInterface
    */
   protected $label;
 
+  /**
+   * {@inheritdoc}
+   */
+  public function isLocked() {
+    $locked = \Drupal::state()->get('neibers_fitting.type.locked');
+    return isset($locked[$this->id()]) ? $locked[$this->id()] : FALSE;
+  }
 }

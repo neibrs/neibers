@@ -12,6 +12,7 @@ use Drupal\Core\Config\Entity\ConfigEntityBundleBase;
  *   label = @Translation("Room type"),
  *   label_collection = @Translation("Room type"),
  *   handlers = {
+ *     "access" = "Drupal\neibers_room\RoomTypeAccessControlHandler",
  *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
  *     "list_builder" = "Drupal\neibers_room\RoomTypeListBuilder",
  *     "form" = {
@@ -55,5 +56,13 @@ class RoomType extends ConfigEntityBundleBase implements RoomTypeInterface {
    * @var string
    */
   protected $label;
+
+  /**
+   * {@inheritdoc}
+   */
+  public function isLocked() {
+    $locked = \Drupal::state()->get('neibers_room.type.locked');
+    return isset($locked[$this->id()]) ? $locked[$this->id()] : FALSE;
+  }
 
 }

@@ -12,6 +12,7 @@ use Drupal\Core\Config\Entity\ConfigEntityBundleBase;
  *   label = @Translation("Seat type"),
  *   label_collection = @Translation("Seat type"),
  *   handlers = {
+ *     "access" = "Drupal\neibers_seat\SeatTypeAccessControlHandler",
  *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
  *     "list_builder" = "Drupal\neibers_seat\SeatTypeListBuilder",
  *     "form" = {
@@ -56,4 +57,11 @@ class SeatType extends ConfigEntityBundleBase implements SeatTypeInterface {
    */
   protected $label;
 
+  /**
+   * {@inheritdoc}
+   */
+  public function isLocked() {
+    $locked = \Drupal::state()->get('neibers_seat.type.locked');
+    return isset($locked[$this->id()]) ? $locked[$this->id()] : FALSE;
+  }
 }

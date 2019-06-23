@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * Implements hook_install().
+ */
 function neibers_ip_install() {
   $locked = \Drupal::state()->get('neibers_ip.type.locked');
   $locked['inet'] = 'inet';

@@ -1,0 +1,7 @@
+<?php
+
+function neibers_fitting_install() {
+  $locked = \Drupal::state()->get('neibers_fitting.type.locked');
+  $locked['default'] = 'default';
+  \Drupal::state()->set('neibers_fitting.type.locked', $locked);
+}

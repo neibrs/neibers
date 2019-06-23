@@ -1,0 +1,10 @@
+<?php
+
+/**
+ * Implements hook_install().
+ */
+function neibers_seat_install() {
+  $locked = \Drupal::state()->get('neibers_seat.type.locked');
+  $locked['multiple'] = 'multiple';
+  \Drupal::state()->set('neibers_seat.type.locked', $locked);
+}

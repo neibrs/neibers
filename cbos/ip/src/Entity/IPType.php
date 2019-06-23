@@ -56,4 +56,12 @@ class IPType extends ConfigEntityBundleBase implements IPTypeInterface {
    */
   protected $label;
 
+
+  /**
+   * {@inheritdoc}
+   */
+  public function isLocked() {
+    $locked = \Drupal::state()->get('neibers_ip.type.locked');
+    return isset($locked[$this->id()]) ? $locked[$this->id()] : FALSE;
+  }
 }

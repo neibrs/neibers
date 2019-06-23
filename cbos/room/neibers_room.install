@@ -1,0 +1,11 @@
+<?php
+
+/**
+ * Implements hook_install().
+ */
+function neibers_room_install() {
+  $locked = \Drupal::state()->get('neibers_room.type.locked');
+  $locked['default'] = 'default';
+  \Drupal::state()->set('neibers_room.type.locked', $locked);
+
+}
