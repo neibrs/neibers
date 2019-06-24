@@ -3,29 +3,30 @@
 # LANGUAGE translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
-#  modules/neibers/cbos/neibers_fitting/neibers_fitting.module: n/a
-#  modules/neibers/cbos/neibers_fitting/neibers_fitting.info.yml: n/a
-#  modules/neibers/cbos/neibers_fitting/src/Entity/Fitting.php: n/a
-#  modules/neibers/cbos/neibers_fitting/neibers_fitting.links.action.yml: n/a
-#  modules/neibers/cbos/neibers_fitting/neibers_fitting.links.menu.yml: n/a
-#  modules/neibers/cbos/neibers_fitting/src/FittingTypeListBuilder.php: n/a
-#  modules/neibers/cbos/neibers_fitting/src/Entity/FittingType.php: n/a
-#  modules/neibers/cbos/neibers_fitting/neibers_fitting.links.task.yml: n/a
-#  modules/neibers/cbos/neibers_fitting/src/Form/FittingTypeDeleteForm.php: n/a
-#  modules/neibers/cbos/neibers_fitting/neibers_fitting.permissions.yml: n/a
-#  modules/neibers/cbos/neibers_fitting/config/schema/neibers_fitting_type.schema.yml: n/a
-#  modules/neibers/cbos/neibers_fitting/src/FittingListBuilder.php: n/a
-#  modules/neibers/cbos/neibers_fitting/src/Form/FittingForm.php: n/a
-#  modules/neibers/cbos/neibers_fitting/src/Form/FittingTypeForm.php: n/a
-#  modules/neibers/cbos/neibers_fitting/src/Plugin/WorkflowType/FittingState.php: n/a
-#  modules/neibers/cbos/neibers_fitting/config/install/neibers_fitting.type.default.yml: n/a
-#  modules/neibers/cbos/neibers_fitting/config/install/workflows.workflow.default_neibers_fitting_state.yml: n/a
+#  modules/neibers/cbos/fitting/neibers_fitting.module: n/a
+#  modules/neibers/cbos/fitting/neibers_fitting.info.yml: n/a
+#  modules/neibers/cbos/fitting/src/Entity/Fitting.php: n/a
+#  modules/neibers/cbos/fitting/neibers_fitting.links.action.yml: n/a
+#  modules/neibers/cbos/fitting/neibers_fitting.links.menu.yml: n/a
+#  modules/neibers/cbos/fitting/src/FittingTypeListBuilder.php: n/a
+#  modules/neibers/cbos/fitting/src/Entity/FittingType.php: n/a
+#  modules/neibers/cbos/fitting/neibers_fitting.links.task.yml: n/a
+#  modules/neibers/cbos/fitting/src/Form/FittingTypeDeleteForm.php: n/a
+#  modules/neibers/cbos/fitting/neibers_fitting.permissions.yml: n/a
+#  modules/neibers/cbos/fitting/config/schema/neibers_fitting_type.schema.yml: n/a
+#  modules/neibers/cbos/fitting/src/FittingListBuilder.php: n/a
+#  modules/neibers/cbos/fitting/src/Form/FittingForm.php: n/a
+#  modules/neibers/cbos/fitting/src/Form/FittingTypeForm.php: n/a
+#  modules/neibers/cbos/fitting/src/Plugin/WorkflowType/FittingState.php: n/a
+#  modules/neibers/cbos/fitting/config/install/neibers_fitting.type.defense.yml: n/a
+#  modules/neibers/cbos/fitting/config/install/neibers_fitting.type.harddisk.yml: n/a
+#  modules/neibers/cbos/fitting/config/install/neibers_fitting.type.memory.yml: n/a
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-06-05 15:06+0000\n"
+"POT-Creation-Date: 2019-06-24 11:25+0800\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -34,151 +35,227 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: modules/neibers/cbos/neibers_fitting/neibers_fitting.module:19 modules/neibers/cbos/neibers_fitting/neibers_fitting.info.yml:0
-msgid "The neibers_fittings of a machine."
-msgstr "配件机器名."
+#: modules/neibers/cbos/fitting/neibers_fitting.module:18
+msgid "About"
+msgstr "关于"
 
-#: modules/neibers/cbos/neibers_fitting/neibers_fitting.info.yml:0 modules/neibers/cbos/neibers_fitting/src/Entity/Fitting.php:12
+#: modules/neibers/cbos/fitting/neibers_fitting.module:19
+msgid "The fittings of a machine."
+msgstr "配件的机器名."
+
+#: modules/neibers/cbos/fitting/neibers_fitting.info.yml:0 modules/neibers/cbos/fitting/src/Entity/Fitting.php:12;12
 msgid "Fitting"
 msgstr "配件"
 
-#: modules/neibers/cbos/neibers_fitting/neibers_fitting.info.yml:0
-msgid "Neibrs"
+#: modules/neibers/cbos/fitting/neibers_fitting.info.yml:0
+msgid "The neibers_fittings of a machine."
 msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/neibers_fitting.links.action.yml:0
-msgid "Add Fitting"
-msgstr "添加配件"
+#: modules/neibers/cbos/fitting/neibers_fitting.info.yml:0
+msgid "Neibers"
+msgstr ""
 
-#: modules/neibers/cbos/neibers_fitting/neibers_fitting.links.action.yml:0
+#: modules/neibers/cbos/fitting/neibers_fitting.links.action.yml:0
+msgid "Add"
+msgstr "添加"
+
+#: modules/neibers/cbos/fitting/neibers_fitting.links.action.yml:0
 msgid "Add type"
 msgstr "添加类型"
 
-#: modules/neibers/cbos/neibers_fitting/neibers_fitting.links.menu.yml:0
+#: modules/neibers/cbos/fitting/neibers_fitting.links.menu.yml:0
 msgid "Fitting list"
 msgstr "配件列表"
 
-#: modules/neibers/cbos/neibers_fitting/neibers_fitting.links.menu.yml:0 modules/neibers/cbos/neibers_fitting/src/FittingTypeListBuilder.php:17 modules/neibers/cbos/neibers_fitting/src/Entity/Fitting.php:12 modules/neibers/cbos/neibers_fitting/src/Entity/FittingType.php:7
+#: modules/neibers/cbos/fitting/neibers_fitting.links.menu.yml:0 modules/neibers/cbos/fitting/src/FittingTypeListBuilder.php:17 modules/neibers/cbos/fitting/src/Entity/Fitting.php:12 modules/neibers/cbos/fitting/src/Entity/FittingType.php:7;7
 msgid "Fitting type"
 msgstr "配件类型"
 
-#: modules/neibers/cbos/neibers_fitting/neibers_fitting.links.menu.yml:0
+#: modules/neibers/cbos/fitting/neibers_fitting.links.menu.yml:0
 msgid "List Fitting"
 msgstr "配件列表"
 
-#: modules/neibers/cbos/neibers_fitting/neibers_fitting.links.menu.yml:0
+#: modules/neibers/cbos/fitting/neibers_fitting.links.menu.yml:0
 msgid "List Fitting type (bundles)"
 msgstr "配件类型"
 
-#: modules/neibers/cbos/neibers_fitting/neibers_fitting.permissions.yml:0
+#: modules/neibers/cbos/fitting/neibers_fitting.links.task.yml:0
+msgid "View"
+msgstr "查看"
+
+#: modules/neibers/cbos/fitting/neibers_fitting.links.task.yml:0
+msgid "Edit"
+msgstr "编辑"
+
+#: modules/neibers/cbos/fitting/neibers_fitting.links.task.yml:0 modules/neibers/cbos/fitting/src/Form/FittingTypeDeleteForm.php:32
+msgid "Delete"
+msgstr "删除"
+
+#: modules/neibers/cbos/fitting/neibers_fitting.permissions.yml:0
 msgid "Create new Fitting"
 msgstr "创建配件"
 
-#: modules/neibers/cbos/neibers_fitting/neibers_fitting.permissions.yml:0
+#: modules/neibers/cbos/fitting/neibers_fitting.permissions.yml:0
 msgid "Administer Fitting"
 msgstr "管理配件"
 
-#: modules/neibers/cbos/neibers_fitting/neibers_fitting.permissions.yml:0
+#: modules/neibers/cbos/fitting/neibers_fitting.permissions.yml:0
 msgid "Allow to access the administration form to configure Fitting."
 msgstr "允许使用配件的配置管理表单."
 
-#: modules/neibers/cbos/neibers_fitting/neibers_fitting.permissions.yml:0
+#: modules/neibers/cbos/fitting/neibers_fitting.permissions.yml:0
 msgid "Delete Fitting"
 msgstr "删除配件"
 
-#: modules/neibers/cbos/neibers_fitting/neibers_fitting.permissions.yml:0
+#: modules/neibers/cbos/fitting/neibers_fitting.permissions.yml:0
 msgid "Edit Fitting"
 msgstr "编辑配件"
 
-#: modules/neibers/cbos/neibers_fitting/neibers_fitting.permissions.yml:0
+#: modules/neibers/cbos/fitting/neibers_fitting.permissions.yml:0
 msgid "View published Fitting"
 msgstr "查看已发布的配件"
 
-#: modules/neibers/cbos/neibers_fitting/neibers_fitting.permissions.yml:0
+#: modules/neibers/cbos/fitting/neibers_fitting.permissions.yml:0
 msgid "View unpublished Fitting"
 msgstr "查看未发布的配件"
 
-#: modules/neibers/cbos/neibers_fitting/config/schema/neibers_fitting_type.schema.yml:0
+#: modules/neibers/cbos/fitting/config/schema/neibers_fitting_type.schema.yml:0
 msgid "Fitting type config"
 msgstr "配置类型配置"
 
-#: modules/neibers/cbos/neibers_fitting/config/schema/neibers_fitting_type.schema.yml:0
+#: modules/neibers/cbos/fitting/config/schema/neibers_fitting_type.schema.yml:0
+msgid "ID"
+msgstr ""
+
+#: modules/neibers/cbos/fitting/config/schema/neibers_fitting_type.schema.yml:0
 msgid "Workflow status settings"
 msgstr "工作流状态设置"
 
-#: modules/neibers/cbos/neibers_fitting/config/schema/neibers_fitting_type.schema.yml:0
+#: modules/neibers/cbos/fitting/config/schema/neibers_fitting_type.schema.yml:0
 msgid "Workflow"
 msgstr "工作流"
 
-#: modules/neibers/cbos/neibers_fitting/config/schema/neibers_fitting_type.schema.yml:0
+#: modules/neibers/cbos/fitting/config/schema/neibers_fitting_type.schema.yml:0
 msgid "Initial status"
 msgstr "初始状态"
 
-#: modules/neibers/cbos/neibers_fitting/src/FittingListBuilder.php:20
+#: modules/neibers/cbos/fitting/src/FittingListBuilder.php:20
 msgid "Fitting ID"
 msgstr "配件ID"
 
-#: modules/neibers/cbos/neibers_fitting/src/Entity/Fitting.php:160
+#: modules/neibers/cbos/fitting/src/FittingListBuilder.php:21 modules/neibers/cbos/fitting/src/Entity/Fitting.php:185
+msgid "Name"
+msgstr "名称"
+
+#: modules/neibers/cbos/fitting/src/FittingTypeListBuilder.php:18
+msgid "Machine name"
+msgstr "机器名"
+
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:160
+msgid "Authored by"
+msgstr "客户"
+
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:161
 msgid "The user ID of author of the Fitting entity."
 msgstr "配件所属的用户ID."
 
-#: modules/neibers/cbos/neibers_fitting/src/Entity/Fitting.php:185
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:186
 msgid "The name of the Fitting entity."
 msgstr "配件实体名称."
 
-#: modules/neibers/cbos/neibers_fitting/src/Entity/Fitting.php:206
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:206
+msgid "Publishing status"
+msgstr "状态"
+
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:207
 msgid "A boolean indicating whether the Fitting is published."
 msgstr "指示配件是否已发布."
 
-#: modules/neibers/cbos/neibers_fitting/src/Entity/Fitting.php:214
-msgid "Hardware"
-msgstr "设备"
-
-#: modules/neibers/cbos/neibers_fitting/src/Entity/Fitting.php:233
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:215
 msgid "Cabinet Seat"
-msgstr "机柜机位"
+msgstr "机位"
 
-#: modules/neibers/cbos/neibers_fitting/src/Entity/Fitting.php:272
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:234
+msgid "State"
+msgstr "状态"
+
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:253
+msgid "Order"
+msgstr "订单"
+
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:254
 msgid "The related order number."
 msgstr "与之相关联的订单编号."
 
-#: modules/neibers/cbos/neibers_fitting/src/Entity/Fitting.php:294
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:276
 msgid "Purchasable"
 msgstr "可购买的"
 
-#: modules/neibers/cbos/neibers_fitting/src/Entity/Fitting.php:295
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:277
 msgid "A boolean indicating whether the Fitting is purchasable."
 msgstr "指示配件是否可购买."
 
-#: modules/neibers/cbos/neibers_fitting/src/Form/FittingForm.php:37
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:289
+msgid "Created"
+msgstr "已创建"
+
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:290
+msgid "The time that the entity was created."
+msgstr "配件的创建时间."
+
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:293
+msgid "Changed"
+msgstr "修改"
+
+#: modules/neibers/cbos/fitting/src/Entity/Fitting.php:294
+msgid "The time that the entity was last edited."
+msgstr "配件的修改时间."
+
+#: modules/neibers/cbos/fitting/src/Form/FittingForm.php:37
 msgid "Created the %label Fitting."
 msgstr "已创建配件%label."
 
-#: modules/neibers/cbos/neibers_fitting/src/Form/FittingForm.php:43
+#: modules/neibers/cbos/fitting/src/Form/FittingForm.php:43
 msgid "Saved the %label Fitting."
 msgstr "已保存配件%label."
 
-#: modules/neibers/cbos/neibers_fitting/src/Form/FittingTypeForm.php:25
+#: modules/neibers/cbos/fitting/src/Form/FittingTypeDeleteForm.php:18
+msgid "Are you sure you want to delete %name?"
+msgstr "你确定需要删除配件%name?"
+
+#: modules/neibers/cbos/fitting/src/Form/FittingTypeDeleteForm.php:42
+msgid "content @type: deleted @label."
+msgstr ""
+
+#: modules/neibers/cbos/fitting/src/Form/FittingTypeForm.php:22
+msgid "Label"
+msgstr "名称"
+
+#: modules/neibers/cbos/fitting/src/Form/FittingTypeForm.php:25
 msgid "Label for the Fitting type."
 msgstr "配件类型称."
 
-#: modules/neibers/cbos/neibers_fitting/src/Form/FittingTypeForm.php:52
+#: modules/neibers/cbos/fitting/src/Form/FittingTypeForm.php:52
 msgid "Created the %label Fitting type."
 msgstr "已创建配件类型%label."
 
-#: modules/neibers/cbos/neibers_fitting/src/Form/FittingTypeForm.php:58
+#: modules/neibers/cbos/fitting/src/Form/FittingTypeForm.php:58
 msgid "Saved the %label Fitting type."
 msgstr "已保存配件类型%label."
 
-#: modules/neibers/cbos/neibers_fitting/src/Plugin/WorkflowType/FittingState.php:7
+#: modules/neibers/cbos/fitting/src/Plugin/WorkflowType/FittingState.php:7
 msgid "Fitting state"
 msgstr "配件状态"
 
-#: modules/neibers/cbos/neibers_fitting/config/install/neibers_fitting.type.default.yml:0
-msgid "Default"
-msgstr "默认"
+#: modules/neibers/cbos/fitting/config/install/neibers_fitting.type.defense.yml:0
+msgid "Defense"
+msgstr "防御"
 
-#: modules/neibers/cbos/neibers_fitting/config/install/workflows.workflow.default_neibers_fitting_state.yml:0
-msgid "Default IP workflow state"
-msgstr "默认IP工作流状态"
+#: modules/neibers/cbos/fitting/config/install/neibers_fitting.type.harddisk.yml:0
+msgid "Harddisk"
+msgstr "硬盘"
+
+#: modules/neibers/cbos/fitting/config/install/neibers_fitting.type.memory.yml:0
+msgid "Memory"
+msgstr "内存"
 

@@ -23,7 +23,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-06-23 03:40+0000\n"
+"POT-Creation-Date: 2019-06-24 11:25+0800\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -172,11 +172,19 @@ msgstr ""
 msgid "The time that the entity was last edited."
 msgstr ""
 
-#: modules/neibers/cbos/seat/src/Form/SeatForm.php:37
+#: modules/neibers/cbos/seat/src/Form/SeatForm.php:26
+msgid "Occupation"
+msgstr ""
+
+#: modules/neibers/cbos/seat/src/Form/SeatForm.php:27
+msgid "The number of hardware occupation."
+msgstr ""
+
+#: modules/neibers/cbos/seat/src/Form/SeatForm.php:47
 msgid "Created the %label Seat."
 msgstr ""
 
-#: modules/neibers/cbos/seat/src/Form/SeatForm.php:43
+#: modules/neibers/cbos/seat/src/Form/SeatForm.php:53
 msgid "Saved the %label Seat."
 msgstr ""
 

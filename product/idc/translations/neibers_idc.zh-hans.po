@@ -42,8 +42,8 @@ msgid "Neibers"
 msgstr ""
 
 #: modules/neibers/product/idc/neibers_idc.links.action.yml:0
-#msgid "Import"
-#msgstr ""
+msgid "Import"
+msgstr "导入"
 
 #: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
 msgid "Hardware management"

@@ -14,7 +14,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-06-23 17:07+0800\n"
+"POT-Creation-Date: 2019-06-24 11:25+0800\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -36,7 +36,7 @@ msgid "The commerce module with exsen theme for commerce purpose."
 msgstr "基于主题Exsen的商城配置模块。"
 
 #: modules/neibers/product/mall/neibers_mall.info.yml:0
-msgid "Neibrs"
+msgid "Neibers"
 msgstr ""
 
 #: modules/neibers/product/mall/neibers_mall.links.menu.yml:0
