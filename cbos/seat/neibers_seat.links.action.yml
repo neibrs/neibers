@@ -1,9 +1,6 @@
 entity.neibers_seat.add_form:
   route_name: entity.neibers_seat.add_page
   title: 'Add'
-  options:
-    query:
-      destination: '/seat'
   appears_on:
     - entity.neibers_seat.collection
 entity.neibers_seat_type.add_form:

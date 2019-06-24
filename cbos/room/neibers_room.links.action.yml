@@ -1,9 +1,6 @@
 entity.neibers_room.add_form:
   route_name: entity.neibers_room.add_page
   title: 'Add Room'
-  options:
-    query:
-      destination: '/room'
   appears_on:
     - entity.neibers_room.collection
 entity.neibers_room_type.add_form:
