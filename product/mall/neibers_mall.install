@@ -3,7 +3,10 @@
 /**
  * @file
  */
-
+use Drupal\commerce_product\Entity\Product;
+use Drupal\commerce_product\Entity\ProductVariation;
+use Drupal\commerce_product\Entity\ProductVariationType;
+use Drupal\commerce_recurring\Entity\BillingSchedule;
 use Drupal\commerce_store\Entity\Store;
 
 /**
@@ -18,6 +21,54 @@ function neibers_mall_install() {
     'default_currency' => 'CNY',
   ]);
   $store->save();
+
+  /** @var \Drupal\commerce\EntityTraitManagerInterface $trait_manager */
+  $trait_manager = \Drupal::service('plugin.manager.commerce_entity_trait');
+  $trait = $trait_manager->createInstance('purchasable_entity_subscription');
+  $trait_manager->installTrait($trait, 'commerce_product_variation', 'default');
+
+  $commerce_product_variation_type = ProductVariationType::load('default');
+  $commerce_product_variation_type->setTraits(['purchasable_entity_subscription']);
+  $commerce_product_variation_type->save();
+
+  // Add demo billing schedule
+  $billingschedule = BillingSchedule::create([
+    'id' => 'prepay_by_day_with_an_hour',
+    'label' => 'PrepayByDayWithTryAnHour',
+    'displayLabel' => 'PrepayByDayWithTryAnHour',
+    'billingType' => BillingSchedule::BILLING_TYPE_POSTPAID,
+    'plugin' => 'fixed',
+    'configuration' => [
+      'interval' => [
+        'number' => '1',
+        'unit' => 'hour',
+      ],
+    ],
+  ]);
+  $billingschedule->save();
+
+  $product_variation = ProductVariation::create([
+    'type' => 'default',
+    'sku' => 'test1',
+    'price' => [
+      'number' => '39.99',
+      'currency_code' => 'USD',
+    ],
+    'billing_schedule' => $billingschedule->id(),
+  ]);
+  $product_variation->save();
+
+  $product = Product::create([
+    'type' => 'default',
+    'title' => '配置一',
+    'variations' => [$product_variation->id()],
+    'stores' => [$store->id()],
+  ]);
+  $product->save();
+
+
+
+
 
   // Init order type workflow.
   /** @var \Drupal\commerce_order\Entity\OrderTypeInterface $commerce_order_type_default */

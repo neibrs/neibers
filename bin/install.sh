@@ -16,7 +16,7 @@ vendor/bin/drush en -y coffee \
 
 
 # Initial demo data.
-#vendor/bin/drush mim ip_xls
+vendor/bin/drush mim ip_xls
 #vendor/bin/drush mim product_xls
 
 vendor/bin/drupal locale:language:add zh-hans
