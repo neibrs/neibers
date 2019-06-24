@@ -2,7 +2,7 @@
 #rm sites/default/settings.php
 
 #vendor/bin/drush site:install -y --account-pass=admin --db-url=mysql://root:root@mariadb/neibrs
-vendor/bin/drush site:install -y --account-pass=admin --db-url=mysql://root:root@127.0.0.1/devneibrs
+vendor/bin/drush site:install -y --account-pass=admin --db-url=mysql://root:root@127.0.0.1/neibrs
 
 vendor/bin/drupal site:mode dev
 
@@ -10,10 +10,12 @@ vendor/bin/drush pmu -y toolbar
 vendor/bin/drush en -y coffee \
   entity_plus \
   webprofiler \
+  memcache_admin \
   neibers_idc \
   neibers_mall \
   neibers_translation
 
+sudo echo "include $app_root . '/' . $site_path . '/settings.local.php';" > sites/default/settings.php
 
 # Initial demo data.
 vendor/bin/drush mim ip_xls

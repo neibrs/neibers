@@ -6,6 +6,7 @@ use Drupal\Core\DependencyInjection\ContainerInjectionInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\neibers_ip\Entity\IPInterface;
 use Drupal\views\Views;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
@@ -250,44 +251,32 @@ class IPOrderForm extends FormBase implements ContainerInjectionInterface {
 
 // Warning: call_user_func_array() expects parameter 1 to be a valid callback, class 'Drupal\Core\Entity\Element\EntityAutocomplete' does not have a method 'validateEntityAutocomplete' in Drupal\Core\Form\FormValidator->doValidateForm() (line 282 of core/lib/Drupal/Core/Form/FormValidator.php).
 //
-//  /**
-//   * {@inheritdoc}
-//   */
-//  public function validateForm(array &$form, FormStateInterface $form_state) {
-//    $values = $form_state->getValues();
-//    /** @var \Drupal\neibers_ip\Entity\IPInterface $administer */
-//    $administer = $this->simplifyIp($values['administer']);
-//    /** @var \Drupal\neibers_ip\Entity\IPInterface $business */
-//    $business = $this->simplifyIp($values['business']);
-//
-//    if (empty($administer)) {
-//      $this->messenger()->addError($this->t('Administer IP not exists.'));
-//    }
-//
-//    if (!empty($values['business']) && empty($business)) {
-//      $this->messenger()->addError($this->t('Business IP not exists.'));
-//    }
-//  }
+  /**
+   * {@inheritdoc}
+   */
+  public function validateForm(array &$form, FormStateInterface $form_state) {
+    $values = $form_state->getValues();
+    $this->administer = $this->entityTypeManager->getStorage('neibers_ip')->load($values['administer']);
+    $this->business   = $this->entityTypeManager->getStorage('neibers_ip')->load($values['business']);
+
+    if (! $this->administer instanceof IPInterface) {
+      $this->messenger()->addError($this->t('Administer IP not exists.'));
+    }
+    if (! $this->business instanceof IPInterface) {
+      $this->messenger()->addError($this->t('Administer IP not exists.'));
+    }
+  }
 
   /**
    * {@inheritdoc}
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
-    $values = $form_state->getValues();
+    $this->administer->allocateInet($this->order);
+    $this->administer->save();
 
-    // TODO Polish.
-
-    /** @var \Drupal\neibers_ip\Entity\IPInterface $administer */
-    $administer = $this->simplifyIp($values['administer']);
-    /** @var \Drupal\neibers_ip\Entity\IPInterface $business */
-    $business = $this->simplifyIp($values['business']);
-
-    $administer->allocateInet($this->order);
-    $administer->save();
-
-    if (!empty($administer)) {
-      $business->allocateOnet($administer->getSeat(), $this->order);
-      $business->save();
+    if (!empty($this->administer)) {
+      $this->business->allocateOnet($this->administer->getSeat(), $this->order);
+      $this->business->save();
     }
   }
 
