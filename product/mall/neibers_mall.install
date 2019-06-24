@@ -3,6 +3,8 @@
 /**
  * @file
  */
+
+use Drupal\commerce_payment\Entity\PaymentGateway;
 use Drupal\commerce_product\Entity\Product;
 use Drupal\commerce_product\Entity\ProductVariation;
 use Drupal\commerce_product\Entity\ProductVariationType;
@@ -32,18 +34,30 @@ function neibers_mall_install() {
   $commerce_product_variation_type->save();
 
   // Add demo billing schedule
+  // Add billing schedule of try or not by manual for the recurring order.
   $billingschedule = BillingSchedule::create([
-    'id' => 'prepay_by_day_with_an_hour',
-    'label' => 'PrepayByDayWithTryAnHour',
-    'displayLabel' => 'PrepayByDayWithTryAnHour',
-    'billingType' => BillingSchedule::BILLING_TYPE_POSTPAID,
+    'id' => 'prepaybyweekaftertry',
+    'label' => 'PrepayByWeekAfterTry',
+    'displayLabel' => 'PrepayByWeekAfterTry',
+    'billingType' => BillingSchedule::BILLING_TYPE_PREPAID,
+    'retrySchedule' => [1, 3, 5],
+    'unpaidSubscriptionState' => 'canceled',
     'plugin' => 'fixed',
     'configuration' => [
-      'interval' => [
-        'number' => '1',
+      'trial_interval' => [
+        'number' => '3',
         'unit' => 'hour',
       ],
+      'interval' => [
+        'number' => '1',
+        'unit' => 'week',
+      ],
+      'start_month' => 1,
+      'start_day' => 1,
     ],
+    'prorater' => 'full_price',
+    'proraterConfiguration' => [],
+    'status' => TRUE,
   ]);
   $billingschedule->save();
 
@@ -66,8 +80,21 @@ function neibers_mall_install() {
   ]);
   $product->save();
 
-
-
+  // Add payment on-site.
+  $paymentGateway = PaymentGateway::create([
+    'id' => 'example',
+    'label' => 'Example',
+    'plugin' => 'example_onsite',
+    'configuration' => [
+      'api_key' => '2323',
+      'display_label' => 'Example',
+      'mode' => 'test',
+      'payment_method_types' => [
+        'credit_card',
+      ],
+    ],
+  ]);
+  $paymentGateway->save();
 
 
   // Init order type workflow.

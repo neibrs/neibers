@@ -9,6 +9,7 @@ dependencies:
   - commerce:commerce_cart
   - commerce:commerce_checkout
   - commerce:commerce_order
+  - commerce:commerce_payment_example
   - commerce:commerce_recurring
   - commerce:commerce_store
   - config_rewrite:config_rewrite
