@@ -34,7 +34,6 @@ function neibers_mall_install() {
   $commerce_product_variation_type->save();
 
   // Add demo billing schedule
-  // Add billing schedule of try or not by manual for the recurring order.
   $billingschedule = BillingSchedule::create([
     'id' => 'prepaybyweekaftertry',
     'label' => 'PrepayByWeekAfterTry',
@@ -69,6 +68,9 @@ function neibers_mall_install() {
       'currency_code' => 'USD',
     ],
     'billing_schedule' => $billingschedule->id(),
+    'subscription_type' => [
+      'target_plugin_id' => 'product_variation',
+    ],
   ]);
   $product_variation->save();
 
