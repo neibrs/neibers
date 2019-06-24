@@ -11,9 +11,7 @@ dependencies:
   - drupal:config
   - drupal:workflows
   - drupal:file
-  - drupal:locale
   - neibers:entity_permission
   - neibers:role_frontpage
   - neibers:role_menu
-  - neibers:neibers_translation
   - rules:rules

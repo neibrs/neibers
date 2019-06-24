@@ -10,7 +10,8 @@ vendor/bin/drush pmu -y toolbar
 vendor/bin/drush en -y coffee \
   webprofiler \
   neibers_idc \
-  neibers_mall
+  neibers_mall \
+  neibers_translation
 
 
 # Initial demo data.
