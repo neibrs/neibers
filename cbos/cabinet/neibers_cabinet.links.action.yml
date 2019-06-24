@@ -1,5 +1,8 @@
 entity.neibers_cabinet.add_form:
   route_name: entity.neibers_cabinet.add_form
   title: 'Add'
+  options:
+    query:
+      destination: '/cabinet'
   appears_on:
     - entity.neibers_cabinet.collection

@@ -8,6 +8,7 @@ vendor/bin/drupal site:mode dev
 
 vendor/bin/drush pmu -y toolbar
 vendor/bin/drush en -y coffee \
+  entity_plus \
   webprofiler \
   neibers_idc \
   neibers_mall \

@@ -1,11 +1,17 @@
 entity.neibers_fitting.add_form:
   route_name: entity.neibers_fitting.add_page
   title: 'Add'
+  options:
+    query:
+      destination: '/fitting'
   appears_on:
     - entity.neibers_fitting.collection
 
 entity.neibers_fitting_type.add_form:
   route_name: entity.neibers_fitting_type.add_form
   title: 'Add type'
+  options:
+    query:
+      destination: '/fitting/type'
   appears_on:
     - entity.neibers_fitting_type.collection

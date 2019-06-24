@@ -1,10 +1,16 @@
 entity.neibers_hardware.add_form:
   route_name: entity.neibers_hardware.add_page
   title: 'Add'
+  options:
+    query:
+      destination: '/hardware'
   appears_on:
     - entity.neibers_hardware.collection
 entity.neibers_hardware_type.add_form:
   route_name: entity.neibers_hardware_type.add_form
   title: 'Add type'
+  options:
+    query:
+      destination: '/hardware/type'
   appears_on:
     - entity.neibers_hardware_type.collection
