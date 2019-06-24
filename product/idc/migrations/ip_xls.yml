@@ -31,6 +31,8 @@ source:
       Seat: Seat
     10:
       State: State
+    11:
+      HardwareType: HardwareType
 process:
   name:
     -
@@ -51,7 +53,23 @@ process:
         管理IP: inet
         业务IP: onet
         交换机IP: snet
-# TODO need to fix import field data.
+#  hd_hardware_type:
+#    -
+#      plugin: skip_on_empty
+#      method: process
+#      source: HardwareType
+  ip_hardware:
+    - plugin: skip_on_empty
+      method: process
+      source: Hardware
+    -
+      plugin: entity_generate
+      entity_type: neibers_hardware
+      bundle_key: type
+      bundle: server
+      value_key: name
+      ignore_case: true
+## TODO need to fix import field data.
   ip_room:
     -
       plugin: skip_on_empty
@@ -93,23 +111,11 @@ process:
       ignore_case: true
       conditions:
         cabinet: '@ip_cabinet'
+        hardware: '@ip_hardware'
       values:
         cabinet: '@ip_cabinet'
-  hardware:
-    - plugin: skip_on_empty
-      method: process
-      source: Hardware
-    -
-      plugin: entity_generate_plus
-      entity_type: neibers_hardware
-      bundle_key: type
-      bundle: server
-      value_key: name
-      ignore_case: true
-      conditions:
-        seat: '@seat'
-      values:
-        seat: '@seat'
+        hardware: '@ip_hardware'
+
   state:
     -
       plugin: skip_on_empty
