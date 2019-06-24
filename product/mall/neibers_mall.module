@@ -16,7 +16,6 @@ function neibers_mall_help($route_name, RouteMatchInterface $route_match) {
   switch ($route_name) {
     case 'neibers_mall.order_canonical':
       $output = '';
-      $output .= '<h3>' . t('About') . '</h3>';
       $output .= '<p>' . t('The administer ip only be allocate once. need to update(TODO).');
 
       return $output;
