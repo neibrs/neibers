@@ -10,6 +10,8 @@
  */
 function neibers_translation_locale_translation_projects_alter(&$projects) {
   $modules = [
+    'commerce',
+    'commerce_recurring',
     'drupal',
     'features',
     'inline_entity_form',
