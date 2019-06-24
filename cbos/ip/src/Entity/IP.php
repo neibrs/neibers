@@ -377,9 +377,9 @@ class IP extends RevisionableContentEntityBase implements IPInterface {
   /**
    * @description Allocate ip to order
    */
-  public function allocateInet(OrderInterface $order, $user_id = 0) {
+  public function allocateInet(OrderInterface $order) {
     $this->setOrder($order);
-    $this->setOwnerId($user_id);
+    $this->setOwnerId($order->getCustomerId());
     $this->setState('used');
 
     return $this;
@@ -387,10 +387,10 @@ class IP extends RevisionableContentEntityBase implements IPInterface {
   /**
    * {@inheritdoc}
    */
-  public function allocateOnet(SeatInterface $seat, OrderInterface $order, $user_id = 0) {
+  public function allocateOnet(SeatInterface $seat, OrderInterface $order) {
     $this->setSeat($seat);
     $this->setOrder($order);
-    $this->setOwnerId($user_id);
+    $this->setOwnerId($order->getCustomerId());
     $this->setState('used');
 
     return $this;

@@ -282,11 +282,11 @@ class IPOrderForm extends FormBase implements ContainerInjectionInterface {
     /** @var \Drupal\neibers_ip\Entity\IPInterface $business */
     $business = $this->simplifyIp($values['business']);
 
-    $administer->allocateInet($this->order, $this->order->id());
+    $administer->allocateInet($this->order);
     $administer->save();
 
     if (!empty($administer)) {
-      $business->allocateOnet($administer->getSeat(), $this->order, $this->order->getCustomerId());
+      $business->allocateOnet($administer->getSeat(), $this->order);
       $business->save();
     }
   }

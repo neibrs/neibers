@@ -113,12 +113,12 @@ interface IPInterface extends ContentEntityInterface, RevisionLogInterface, Enti
    * @description Allocate ip to order
    * Allocate administer ip
    */
-  public function allocateInet(OrderInterface $order, $user_id = 0);
+  public function allocateInet(OrderInterface $order);
   /**
    * @description Allocate ip to order
    * Allocate business ip
    */
-  public function allocateOnet(SeatInterface $seat, OrderInterface $order, $user_id = 0);
+  public function allocateOnet(SeatInterface $seat, OrderInterface $order);
 
   /**
    * Add order to order_id field in entity ip.
