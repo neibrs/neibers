@@ -156,6 +156,13 @@ class Fitting extends ContentEntityBase implements FittingInterface {
   public static function baseFieldDefinitions(EntityTypeInterface $entity_type) {
     $fields = parent::baseFieldDefinitions($entity_type);
 
+    $fields['type']
+      ->setDisplayOptions('view', [
+        'type' => 'entity_reference_label',
+        'weight' => -10,
+      ])
+      ->setDisplayConfigurable('view', TRUE);
+
     $fields['user_id'] = BaseFieldDefinition::create('entity_reference')
       ->setLabel(t('Authored by'))
       ->setDescription(t('The user ID of author of the Fitting entity.'))
