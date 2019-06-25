@@ -98,3 +98,13 @@ msgstr "侧边栏"
 
 msgid "Initial order"
 msgstr "原始订单"
+
+## Manual
+msgid "You have no subscriptions."
+msgstr "您还没有订阅订单."
+
+msgid "Display a list of subscriptions for a user."
+msgstr "为用户显示订阅订单列表."
+
+msgid "subscription"
+msgstr "订阅订单"
