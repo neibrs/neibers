@@ -108,3 +108,6 @@ msgstr "为用户显示订阅订单列表."
 
 msgid "subscription"
 msgstr "订阅订单"
+
+msgid "Billing schedule"
+msgstr "账单周期"

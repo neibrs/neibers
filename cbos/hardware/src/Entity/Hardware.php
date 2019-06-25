@@ -160,8 +160,14 @@ class Hardware extends ContentEntityBase implements HardwareInterface {
     $fields['type']
       ->setDisplayOptions('view', [
         'type' => 'entity_reference_label',
-        'weight' => 6,
-      ]);
+        'weight' => -10,
+      ])
+      ->setDisplayOptions('form', [
+        'type' => 'options_select',
+        'weight' => -10,
+      ])
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE);
 
     $fields['user_id'] = BaseFieldDefinition::create('entity_reference')
       ->setLabel(t('Authored by'))
