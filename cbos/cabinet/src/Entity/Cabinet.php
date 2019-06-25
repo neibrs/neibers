@@ -187,7 +187,7 @@ class Cabinet extends ContentEntityBase implements CabinetInterface {
       ])
       ->setDefaultValue('')
       ->setDisplayOptions('view', [
-        'label' => 'above',
+        'label' => 'hidden',
         'type' => 'string',
         'weight' => -4,
       ])

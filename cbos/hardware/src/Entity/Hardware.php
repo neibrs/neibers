@@ -197,7 +197,7 @@ class Hardware extends ContentEntityBase implements HardwareInterface {
       ])
       ->setDefaultValue('')
       ->setDisplayOptions('view', [
-        'label' => 'above',
+        'label' => 'hidden',
         'type' => 'string',
         'weight' => -4,
       ])

@@ -190,7 +190,7 @@ class Seat extends ContentEntityBase implements SeatInterface {
       ])
       ->setDefaultValue('')
       ->setDisplayOptions('view', [
-        'label' => 'above',
+        'label' => 'hidden',
         'type' => 'string',
         'weight' => -4,
       ])

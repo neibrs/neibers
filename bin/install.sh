@@ -15,7 +15,7 @@ vendor/bin/drush en -y coffee \
   neibers_mall \
   neibers_translation
 
-sudo echo "include $app_root . '/' . $site_path . '/settings.local.php';" > sites/default/settings.php
+echo "include $app_root . '/' . $site_path . '/settings.local.php';" > sites/default/settings.php
 
 # Initial demo data.
 vendor/bin/drush mim ip_xls

@@ -255,7 +255,7 @@ class IP extends RevisionableContentEntityBase implements IPInterface {
       ])
       ->setDefaultValue('')
       ->setDisplayOptions('view', [
-        'label' => 'above',
+        'label' => 'hidden',
         'type' => 'string',
         'weight' => -4,
       ])
