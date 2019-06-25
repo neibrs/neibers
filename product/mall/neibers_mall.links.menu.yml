@@ -33,3 +33,9 @@ neibers_mall.orders.collection:
   route_name: entity.commerce_order.collection
   parent: neibers_mall.orders
   weight: 10
+
+neibers_mall.orders.subscriber:
+  title: 'Orders subscriber'
+  route_name: entity.commerce_subscription.collection
+  parent: neibers_mall.orders
+  weight: 20
