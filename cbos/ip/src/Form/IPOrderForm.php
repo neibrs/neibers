@@ -68,8 +68,10 @@ class IPOrderForm extends FormBase implements ContainerInjectionInterface {
 
     $form['bips'] = $this->buildBipsTableForm($form, $form_state, $order, $display);
 
-    /** Build allocate ip form. */
-    $form['all'] = $this->buildAllocateForm($form, $form_state, $order, $display);
+    if ($display->getMode() == 'default') {
+      /** Build allocate ip form. */
+      $form['all'] = $this->buildAllocateForm($form, $form_state, $order, $display);
+    }
 
     return $form;
   }
