@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-05-24 17:48+0800\n"
+"POT-Creation-Date: 2019-06-25 13:02+0800\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -24,25 +24,61 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: modules/neibers/core/entity_permission/entity_permission.module:140 modules/neibers/core/entity_permission/entity_permission.routing.yml:0
+#: modules/neibers/core/entity_permission/entity_permission.module:144 modules/neibers/core/entity_permission/entity_permission.routing.yml:0
 msgid "Edit entity permissions"
 msgstr "编辑实体权限"
 
-#: modules/neibers/core/entity_permission/entity_permission.info.yml:0;0 modules/neibers/core/entity_permission/config/schema/entity_permission.schema.yml:0;0;0;0;0 modules/neibers/core/entity_permission/src/Form/EntityPermissionSettingsForm.php:33
+#: modules/neibers/core/entity_permission/entity_permission.info.yml:0;0 modules/neibers/core/entity_permission/config/schema/entity_permission.schema.yml:0;0;0;0;0 modules/neibers/core/entity_permission/src/Form/EntityPermissionSettingsForm.php:32
 msgid "Entity permission"
 msgstr "实体权限"
+
+#: modules/neibers/core/entity_permission/entity_permission.permissions.yml:0
+msgid "Administer entity permissions"
+msgstr "管理实体权限"
 
 #: modules/neibers/core/entity_permission/entity_permission.routing.yml:0 modules/neibers/core/entity_permission/config/schema/entity_permission.schema.yml:0
 msgid "Entity permission settings"
 msgstr "实体权限设置"
 
-#: modules/neibers/core/entity_permission/config/schema/entity_permission.schema.yml:0;0;0 modules/neibers/core/entity_permission/src/Form/EntityPermissionSettingsForm.php:34 modules/neibers/core/entity_permission/src/Form/RoleEntityPermissionForm.php:109
+#: modules/neibers/core/entity_permission/config/schema/entity_permission.schema.yml:0
+msgid "Entities which controled by entity permission"
+msgstr "实体权限控制的那些实体"
+
+#: modules/neibers/core/entity_permission/config/schema/entity_permission.schema.yml:0;0;0 modules/neibers/core/entity_permission/src/Form/EntityPermissionSettingsForm.php:33 modules/neibers/core/entity_permission/src/Form/RoleEntityPermissionForm.php:109
 msgid "Bundle permission"
 msgstr "包权限"
 
-#: modules/neibers/core/entity_permission/config/schema/entity_permission.schema.yml:0;0 modules/neibers/core/entity_permission/src/Form/EntityPermissionSettingsForm.php:35
+#: modules/neibers/core/entity_permission/config/schema/entity_permission.schema.yml:0;0 modules/neibers/core/entity_permission/src/Form/EntityPermissionSettingsForm.php:34
 msgid "Field permission"
 msgstr "字段权限"
+
+#: modules/neibers/core/entity_permission/config/schema/entity_permission.schema.yml:0;0;0
+msgid "View permission"
+msgstr "查看权限"
+
+#: modules/neibers/core/entity_permission/config/schema/entity_permission.schema.yml:0;0
+msgid "Update permission"
+msgstr "更新权限"
+
+#: modules/neibers/core/entity_permission/config/schema/entity_permission.schema.yml:0;0
+msgid "Delete permission"
+msgstr "删除权限"
+
+#: modules/neibers/core/entity_permission/config/schema/entity_permission.schema.yml:0;0
+msgid "Create permission"
+msgstr "创建权限"
+
+#: modules/neibers/core/entity_permission/config/schema/entity_permission.schema.yml:0
+msgid "Bundle field permission"
+msgstr "类型字段权限"
+
+#: modules/neibers/core/entity_permission/config/schema/entity_permission.schema.yml:0
+msgid "Edit permission"
+msgstr "编辑权限"
+
+#: modules/neibers/core/entity_permission/src/Form/EntityPermissionSettingsForm.php:31
+msgid "Entity"
+msgstr "实体"
 
 #: modules/neibers/core/entity_permission/src/Form/RoleEntityPermissionForm.php:33
 msgid "Need to setup entities to manage permissions."

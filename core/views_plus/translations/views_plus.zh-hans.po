@@ -3,18 +3,18 @@
 # LANGUAGE translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
-#  modules/eabax/core/views_plus/views_plus.theme.inc: n/a
-#  modules/eabax/core/views_plus/config/schema/views_plus.schema.yml: n/a
-#  modules/eabax/core/views_plus/views_plus.info.yml: n/a
-#  modules/eabax/core/views_plus/views_plus.links.action.yml: n/a
-#  modules/eabax/core/views_plus/src/Plugin/views/style/TableTree.php: n/a
-#  modules/eabax/core/views_plus/src/Plugin/views/exposed_form/AjaxExposedForm.php: n/a
+#  modules/neibers/core/views_plus/views_plus.theme.inc: n/a
+#  modules/neibers/core/views_plus/config/schema/views_plus.schema.yml: n/a
+#  modules/neibers/core/views_plus/views_plus.info.yml: n/a
+#  modules/neibers/core/views_plus/views_plus.links.action.yml: n/a
+#  modules/neibers/core/views_plus/src/Plugin/views/style/TableTree.php: n/a
+#  modules/neibers/core/views_plus/src/Plugin/views/exposed_form/AjaxExposedForm.php: n/a
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-12-09 05:41+0000\n"
+"POT-Creation-Date: 2019-06-25 13:01+0800\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"

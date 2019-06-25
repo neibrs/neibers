@@ -27,7 +27,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-06-24 11:26+0800\n"
+"POT-Creation-Date: 2019-06-25 13:02+0800\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -45,7 +45,7 @@ msgid "Uses the Bootstrap framework Sass source files and must be compiled (not 
 msgstr ""
 
 #: modules/neibers/themes/basestrap/neibers_basestrap.info.yml:0
-msgid "Neibers"
+msgid "Neibers themes"
 msgstr ""
 
 #: modules/neibers/themes/basestrap/config/schema/neibers_basestrap.schema.yml:0

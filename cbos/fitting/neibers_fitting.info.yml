@@ -1,6 +1,5 @@
 name: 'Fitting'
 type: module
-description: 'The neibers_fittings of a machine.'
 core: 8.x
 package: 'Neibers cbos'
 interface translation project: neibers_fitting

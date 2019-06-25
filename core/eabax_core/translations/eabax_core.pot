@@ -12,6 +12,8 @@
 #  modules/neibers/core/eabax_core/src/Form/BundleDeleteForm.php: n/a
 #  modules/neibers/core/eabax_core/src/Plugin/BlockStyle/Box.php: n/a
 #  modules/neibers/core/eabax_core/src/Plugin/Field/FieldFormatter/EntityReferenceCustom.php: n/a
+#  modules/neibers/core/eabax_core/src/Plugin/Field/FieldFormatter/EntityReferenceLabelPlusFormatter.php: n/a
+#  modules/neibers/core/eabax_core/src/Plugin/Field/FieldFormatter/StringPlusFormatter.php: n/a
 #  modules/neibers/core/eabax_core/src/Plugin/Field/FieldFormatter/PercentBarFormatter.php: n/a
 #  modules/neibers/core/eabax_core/templates/avatar-toggle.html.twig: n/a
 #
@@ -19,7 +21,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-06-24 11:25+0800\n"
+"POT-Creation-Date: 2019-06-25 13:02+0800\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -174,12 +176,24 @@ msgstr ""
 msgid "Display the referenced entity."
 msgstr ""
 
+#: modules/neibers/core/eabax_core/src/Plugin/Field/FieldFormatter/EntityReferenceLabelPlusFormatter.php:36 modules/neibers/core/eabax_core/src/Plugin/Field/FieldFormatter/StringPlusFormatter.php:39
+msgid "Link relationship type"
+msgstr ""
+
+#: modules/neibers/core/eabax_core/src/Plugin/Field/FieldFormatter/EntityReferenceLabelPlusFormatter.php:10
+msgid "Label plus"
+msgstr ""
+
 #: modules/neibers/core/eabax_core/src/Plugin/Field/FieldFormatter/PercentBarFormatter.php:27
 msgid "This field has percent bar."
 msgstr ""
 
 #: modules/neibers/core/eabax_core/src/Plugin/Field/FieldFormatter/PercentBarFormatter.php:8
 msgid "Percent Bar"
+msgstr ""
+
+#: modules/neibers/core/eabax_core/src/Plugin/Field/FieldFormatter/StringPlusFormatter.php:10
+msgid "Plain text plus"
 msgstr ""
 
 #: modules/neibers/core/eabax_core/templates/avatar-toggle.html.twig:12

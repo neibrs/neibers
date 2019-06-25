@@ -3,18 +3,18 @@
 # LANGUAGE translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
-#  modules/eabax/core/views_plus/views_plus.theme.inc: n/a
-#  modules/eabax/core/views_plus/config/schema/views_plus.schema.yml: n/a
-#  modules/eabax/core/views_plus/views_plus.info.yml: n/a
-#  modules/eabax/core/views_plus/views_plus.links.action.yml: n/a
-#  modules/eabax/core/views_plus/src/Plugin/views/style/TableTree.php: n/a
-#  modules/eabax/core/views_plus/src/Plugin/views/exposed_form/AjaxExposedForm.php: n/a
+#  modules/neibers/core/views_plus/views_plus.theme.inc: n/a
+#  modules/neibers/core/views_plus/config/schema/views_plus.schema.yml: n/a
+#  modules/neibers/core/views_plus/views_plus.info.yml: n/a
+#  modules/neibers/core/views_plus/views_plus.links.action.yml: n/a
+#  modules/neibers/core/views_plus/src/Plugin/views/style/TableTree.php: n/a
+#  modules/neibers/core/views_plus/src/Plugin/views/exposed_form/AjaxExposedForm.php: n/a
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-03-21 13:29+0800\n"
+"POT-Creation-Date: 2019-06-25 13:01+0800\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -23,83 +23,83 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: modules/eabax/core/views_plus/views_plus.theme.inc:13
+#: modules/neibers/core/views_plus/views_plus.theme.inc:16
 msgid "Field"
 msgstr ""
 
-#: modules/eabax/core/views_plus/views_plus.theme.inc:14
+#: modules/neibers/core/views_plus/views_plus.theme.inc:17
 msgid "Column"
 msgstr ""
 
-#: modules/eabax/core/views_plus/views_plus.theme.inc:15
+#: modules/neibers/core/views_plus/views_plus.theme.inc:18
 msgid "Align"
 msgstr ""
 
-#: modules/eabax/core/views_plus/views_plus.theme.inc:16
+#: modules/neibers/core/views_plus/views_plus.theme.inc:19
 msgid "Separator"
 msgstr ""
 
-#: modules/eabax/core/views_plus/views_plus.theme.inc:17 modules/eabax/core/views_plus/config/schema/views_plus.schema.yml:0
+#: modules/neibers/core/views_plus/views_plus.theme.inc:20 modules/neibers/core/views_plus/config/schema/views_plus.schema.yml:0
 msgid "Tree column"
 msgstr ""
 
-#: modules/eabax/core/views_plus/views_plus.theme.inc:19
+#: modules/neibers/core/views_plus/views_plus.theme.inc:22
 msgid "Sortable"
 msgstr ""
 
-#: modules/eabax/core/views_plus/views_plus.theme.inc:23
+#: modules/neibers/core/views_plus/views_plus.theme.inc:26
 msgid "Default order"
 msgstr ""
 
-#: modules/eabax/core/views_plus/views_plus.theme.inc:27
+#: modules/neibers/core/views_plus/views_plus.theme.inc:30
 msgid "Default sort"
 msgstr ""
 
-#: modules/eabax/core/views_plus/views_plus.theme.inc:31
+#: modules/neibers/core/views_plus/views_plus.theme.inc:34
 msgid "Hide empty column"
 msgstr ""
 
-#: modules/eabax/core/views_plus/views_plus.theme.inc:35
+#: modules/neibers/core/views_plus/views_plus.theme.inc:38
 msgid "Responsive"
 msgstr ""
 
-#: modules/eabax/core/views_plus/views_plus.theme.inc:83
+#: modules/neibers/core/views_plus/views_plus.theme.inc:86
 msgid "None"
 msgstr ""
 
-#: modules/eabax/core/views_plus/views_plus.info.yml:0;0
+#: modules/neibers/core/views_plus/views_plus.info.yml:0;0
 msgid "Views plus"
 msgstr ""
 
-#: modules/eabax/core/views_plus/views_plus.info.yml:0
-msgid "Eabax core"
+#: modules/neibers/core/views_plus/views_plus.info.yml:0
+msgid "Neibers core"
 msgstr ""
 
-#: modules/eabax/core/views_plus/views_plus.links.action.yml:0
+#: modules/neibers/core/views_plus/views_plus.links.action.yml:0
 msgid "Export config"
 msgstr ""
 
-#: modules/eabax/core/views_plus/config/schema/views_plus.schema.yml:0
+#: modules/neibers/core/views_plus/config/schema/views_plus.schema.yml:0
 msgid "Bundle fields"
 msgstr ""
 
-#: modules/eabax/core/views_plus/config/schema/views_plus.schema.yml:0
+#: modules/neibers/core/views_plus/config/schema/views_plus.schema.yml:0
 msgid "Entity reference in operator"
 msgstr ""
 
-#: modules/eabax/core/views_plus/config/schema/views_plus.schema.yml:0 modules/eabax/core/views_plus/src/Plugin/views/style/TableTree.php:9
+#: modules/neibers/core/views_plus/config/schema/views_plus.schema.yml:0 modules/neibers/core/views_plus/src/Plugin/views/style/TableTree.php:9
 msgid "Table tree"
 msgstr ""
 
-#: modules/eabax/core/views_plus/src/Plugin/views/exposed_form/AjaxExposedForm.php:8
+#: modules/neibers/core/views_plus/src/Plugin/views/exposed_form/AjaxExposedForm.php:8
 msgid "Ajax"
 msgstr ""
 
-#: modules/eabax/core/views_plus/src/Plugin/views/exposed_form/AjaxExposedForm.php:8
+#: modules/neibers/core/views_plus/src/Plugin/views/exposed_form/AjaxExposedForm.php:8
 msgid "Ajax exposed form"
 msgstr ""
 
-#: modules/eabax/core/views_plus/src/Plugin/views/style/TableTree.php:52
+#: modules/neibers/core/views_plus/src/Plugin/views/style/TableTree.php:52
 msgid "Tree"
 msgstr ""
 

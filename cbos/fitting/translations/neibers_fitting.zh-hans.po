@@ -26,7 +26,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-06-24 11:25+0800\n"
+"POT-Creation-Date: 2019-06-25 13:02+0800\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -35,10 +35,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: modules/neibers/cbos/fitting/neibers_fitting.module:18
-msgid "About"
-msgstr "关于"
-
 #: modules/neibers/cbos/fitting/neibers_fitting.module:19
 msgid "The fittings of a machine."
 msgstr "配件的机器名."
@@ -46,14 +42,6 @@ msgstr "配件的机器名."
 #: modules/neibers/cbos/fitting/neibers_fitting.info.yml:0 modules/neibers/cbos/fitting/src/Entity/Fitting.php:12;12
 msgid "Fitting"
 msgstr "配件"
-
-#: modules/neibers/cbos/fitting/neibers_fitting.info.yml:0
-msgid "The neibers_fittings of a machine."
-msgstr ""
-
-#: modules/neibers/cbos/fitting/neibers_fitting.info.yml:0
-msgid "Neibers cbos"
-msgstr ""
 
 #: modules/neibers/cbos/fitting/neibers_fitting.links.action.yml:0
 msgid "Add"

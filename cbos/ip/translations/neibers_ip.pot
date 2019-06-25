@@ -4,27 +4,29 @@
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
 #  modules/neibers/cbos/ip/neibers_ip.views.inc: n/a
-#  modules/neibers/cbos/ip/src/Form/IPOrderForm.php: n/a
-#  modules/neibers/cbos/ip/neibers_ip.permissions.yml: n/a
 #  modules/neibers/cbos/ip/neibers_ip.module: n/a
 #  modules/neibers/cbos/ip/neibers_ip.info.yml: n/a
 #  modules/neibers/cbos/ip/src/Entity/IP.php: n/a
 #  modules/neibers/cbos/ip/src/Form/IPMultipleForm.php: n/a
+#  modules/neibers/cbos/ip/src/Form/IPOrderForm.php: n/a
 #  modules/neibers/cbos/ip/src/Form/IPOrderIdForm.php: n/a
 #  modules/neibers/cbos/ip/neibers_ip.links.action.yml: n/a
 #  modules/neibers/cbos/ip/neibers_ip.links.task.yml: n/a
 #  modules/neibers/cbos/ip/src/Controller/IPController.php: n/a
 #  modules/neibers/cbos/ip/src/Form/IPRevisionDeleteForm.php: n/a
 #  modules/neibers/cbos/ip/src/Form/IPTypeDeleteForm.php: n/a
+#  modules/neibers/cbos/ip/neibers_ip.permissions.yml: n/a
 #  modules/neibers/cbos/ip/neibers_ip.routing.yml: n/a
 #  modules/neibers/cbos/ip/config/schema/neibers_ip_type.schema.yml: n/a
 #  modules/neibers/cbos/ip/src/IPListBuilder.php: n/a
 #  modules/neibers/cbos/ip/src/IPTypeListBuilder.php: n/a
 #  modules/neibers/cbos/ip/src/Entity/IPType.php: n/a
 #  modules/neibers/cbos/ip/src/Form/IPRevisionRevertForm.php: n/a
+#  modules/neibers/cbos/ip/src/Entity/IPViewsData.php: n/a
 #  modules/neibers/cbos/ip/src/Form/IPForm.php: n/a
 #  modules/neibers/cbos/ip/src/Form/IPRevisionRevertTranslationForm.php: n/a
 #  modules/neibers/cbos/ip/src/Form/IPTypeForm.php: n/a
+#  modules/neibers/cbos/ip/src/Plugin/EntityReferenceSelection/IPSelection.php: n/a
 #  modules/neibers/cbos/ip/src/Plugin/WorkflowType/IpState.php: n/a
 #  modules/neibers/cbos/ip/config/install/neibers_ip.type.inet.yml: n/a
 #  modules/neibers/cbos/ip/config/install/neibers_ip.type.onet.yml: n/a
@@ -34,7 +36,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-06-24 11:25+0800\n"
+"POT-Creation-Date: 2019-06-25 13:02+0800\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -43,19 +45,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: modules/neibers/cbos/ip/neibers_ip.views.inc:13 modules/neibers/cbos/ip/src/Form/IPOrderForm.php:57;216
-msgid "Business IP"
+#: modules/neibers/cbos/ip/neibers_ip.views.inc:14
+msgid "Order business IP"
 msgstr ""
 
-#: modules/neibers/cbos/ip/neibers_ip.views.inc:14
+#: modules/neibers/cbos/ip/neibers_ip.views.inc:15
 msgid "The business ip in order"
 msgstr ""
 
-#: modules/neibers/cbos/ip/neibers_ip.views.inc:21 modules/neibers/cbos/ip/neibers_ip.permissions.yml:0 modules/neibers/cbos/ip/src/Form/IPOrderForm.php:55;203
-msgid "Administer IP"
+#: modules/neibers/cbos/ip/neibers_ip.views.inc:22
+msgid "Order administer IP"
 msgstr ""
 
-#: modules/neibers/cbos/ip/neibers_ip.views.inc:22
+#: modules/neibers/cbos/ip/neibers_ip.views.inc:23
 msgid "The administer ip in order"
 msgstr ""
 
@@ -79,7 +81,7 @@ msgstr ""
 msgid "Order ips"
 msgstr ""
 
-#: modules/neibers/cbos/ip/neibers_ip.info.yml:0 modules/neibers/cbos/ip/src/Entity/IP.php:14 modules/neibers/cbos/ip/src/Form/IPMultipleForm.php:53 modules/neibers/cbos/ip/src/Form/IPOrderForm.php:98;99 modules/neibers/cbos/ip/src/Form/IPOrderIdForm.php:51
+#: modules/neibers/cbos/ip/neibers_ip.info.yml:0 modules/neibers/cbos/ip/src/Entity/IP.php:16 modules/neibers/cbos/ip/src/Form/IPMultipleForm.php:53 modules/neibers/cbos/ip/src/Form/IPOrderForm.php:84;85 modules/neibers/cbos/ip/src/Form/IPOrderIdForm.php:51
 msgid "IP"
 msgstr ""
 
@@ -121,6 +123,10 @@ msgstr ""
 
 #: modules/neibers/cbos/ip/neibers_ip.permissions.yml:0
 msgid "Create new IP"
+msgstr ""
+
+#: modules/neibers/cbos/ip/neibers_ip.permissions.yml:0 modules/neibers/cbos/ip/src/Form/IPOrderForm.php:108;209
+msgid "Administer IP"
 msgstr ""
 
 #: modules/neibers/cbos/ip/neibers_ip.permissions.yml:0
@@ -191,11 +197,11 @@ msgstr ""
 msgid "IP ID"
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/IPListBuilder.php:21 modules/neibers/cbos/ip/src/Entity/IP.php:247
+#: modules/neibers/cbos/ip/src/IPListBuilder.php:21 modules/neibers/cbos/ip/src/Entity/IP.php:249
 msgid "Name"
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/IPTypeListBuilder.php:17 modules/neibers/cbos/ip/src/Entity/IP.php:14 modules/neibers/cbos/ip/src/Entity/IPType.php:7
+#: modules/neibers/cbos/ip/src/IPTypeListBuilder.php:17 modules/neibers/cbos/ip/src/Entity/IP.php:16 modules/neibers/cbos/ip/src/Entity/IPType.php:7
 msgid "IP type"
 msgstr ""
 
@@ -219,7 +225,7 @@ msgstr ""
 msgid "Revision"
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Controller/IPController.php:113 modules/neibers/cbos/ip/src/Form/IPMultipleForm.php:53 modules/neibers/cbos/ip/src/Form/IPOrderForm.php:57;99 modules/neibers/cbos/ip/src/Form/IPOrderIdForm.php:51
+#: modules/neibers/cbos/ip/src/Controller/IPController.php:113 modules/neibers/cbos/ip/src/Form/IPMultipleForm.php:53 modules/neibers/cbos/ip/src/Form/IPOrderForm.php:85;115 modules/neibers/cbos/ip/src/Form/IPOrderIdForm.php:51
 msgid "Operations"
 msgstr ""
 
@@ -235,60 +241,64 @@ msgstr ""
 msgid "@date by @username"
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Entity/IP.php:222
+#: modules/neibers/cbos/ip/src/Entity/IP.php:224
 msgid "Authored by"
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Entity/IP.php:223
+#: modules/neibers/cbos/ip/src/Entity/IP.php:225
 msgid "The user ID of author of the IP entity."
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Entity/IP.php:248
+#: modules/neibers/cbos/ip/src/Entity/IP.php:250
 msgid "The name of the IP entity."
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Entity/IP.php:269
+#: modules/neibers/cbos/ip/src/Entity/IP.php:271
 msgid "Cabinet Seat"
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Entity/IP.php:288
+#: modules/neibers/cbos/ip/src/Entity/IP.php:290
 msgid "Order"
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Entity/IP.php:289
+#: modules/neibers/cbos/ip/src/Entity/IP.php:291
 msgid "The related order number."
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Entity/IP.php:310
+#: modules/neibers/cbos/ip/src/Entity/IP.php:312
 msgid "State"
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Entity/IP.php:328
+#: modules/neibers/cbos/ip/src/Entity/IP.php:330
 msgid "A boolean indicating whether the IP is published."
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Entity/IP.php:335
+#: modules/neibers/cbos/ip/src/Entity/IP.php:337
 msgid "Created"
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Entity/IP.php:336
+#: modules/neibers/cbos/ip/src/Entity/IP.php:338
 msgid "The time that the entity was created."
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Entity/IP.php:339
+#: modules/neibers/cbos/ip/src/Entity/IP.php:341
 msgid "Changed"
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Entity/IP.php:340
+#: modules/neibers/cbos/ip/src/Entity/IP.php:342
 msgid "The time that the entity was last edited."
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Entity/IP.php:343
+#: modules/neibers/cbos/ip/src/Entity/IP.php:345
 msgid "Revision translation affected"
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Entity/IP.php:344
+#: modules/neibers/cbos/ip/src/Entity/IP.php:346
 msgid "Indicates if the last edit of a translation belongs to current revision."
+msgstr ""
+
+#: modules/neibers/cbos/ip/src/Entity/IPViewsData.php:19
+msgid "Admin business IP"
 msgstr ""
 
 #: modules/neibers/cbos/ip/src/Form/IPForm.php:68
@@ -319,48 +329,52 @@ msgstr ""
 msgid "Mark"
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Form/IPOrderForm.php:53
-msgid "Hardware type"
+#: modules/neibers/cbos/ip/src/Form/IPOrderForm.php:56
+msgid "Ips in this order."
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Form/IPOrderForm.php:53;190
-msgid "Hardware"
-msgstr ""
-
-#: modules/neibers/cbos/ip/src/Form/IPOrderForm.php:57
-msgid "Fitting"
-msgstr ""
-
-#: modules/neibers/cbos/ip/src/Form/IPOrderForm.php:59
-msgid "IP tables"
-msgstr ""
-
-#: modules/neibers/cbos/ip/src/Form/IPOrderForm.php:61
-msgid "All the Ips"
-msgstr ""
-
-#: modules/neibers/cbos/ip/src/Form/IPOrderForm.php:96
+#: modules/neibers/cbos/ip/src/Form/IPOrderForm.php:82
 msgid "All business ip collection"
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Form/IPOrderForm.php:99
+#: modules/neibers/cbos/ip/src/Form/IPOrderForm.php:85
 msgid "No."
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Form/IPOrderForm.php:155
-msgid "Save success."
+#: modules/neibers/cbos/ip/src/Form/IPOrderForm.php:106
+msgid "Server"
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Form/IPOrderForm.php:167
+#: modules/neibers/cbos/ip/src/Form/IPOrderForm.php:110;229
+msgid "Business IP"
+msgstr ""
+
+#: modules/neibers/cbos/ip/src/Form/IPOrderForm.php:110
+msgid "Fitting"
+msgstr ""
+
+#: modules/neibers/cbos/ip/src/Form/IPOrderForm.php:114
+msgid "All the Ips"
+msgstr ""
+
+#: modules/neibers/cbos/ip/src/Form/IPOrderForm.php:160
+msgid "IP collection"
+msgstr ""
+
+#: modules/neibers/cbos/ip/src/Form/IPOrderForm.php:181
 msgid "Allocate"
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Form/IPOrderForm.php:180
-msgid "Room"
+#: modules/neibers/cbos/ip/src/Form/IPOrderForm.php:192
+msgid "Resign, Todo"
 msgstr ""
 
-#: modules/neibers/cbos/ip/src/Form/IPOrderForm.php:225
+#: modules/neibers/cbos/ip/src/Form/IPOrderForm.php:243
 msgid "Save"
+msgstr ""
+
+#: modules/neibers/cbos/ip/src/Form/IPOrderForm.php:263;266
+msgid "Administer IP not exists."
 msgstr ""
 
 #: modules/neibers/cbos/ip/src/Form/IPOrderIdForm.php:48
@@ -433,6 +447,10 @@ msgstr ""
 
 #: modules/neibers/cbos/ip/src/Form/IPTypeForm.php:58
 msgid "Saved the %label IP type."
+msgstr ""
+
+#: modules/neibers/cbos/ip/src/Plugin/EntityReferenceSelection/IPSelection.php:7
+msgid "IP selection"
 msgstr ""
 
 #: modules/neibers/cbos/ip/src/Plugin/WorkflowType/IpState.php:7

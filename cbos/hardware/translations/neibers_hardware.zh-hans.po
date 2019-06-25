@@ -26,7 +26,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-06-23 03:40+0000\n"
+"POT-Creation-Date: 2019-06-25 13:02+0800\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -35,13 +35,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: modules/neibers/cbos/hardware/neibers_hardware.module:18
-msgid "About"
-msgstr ""
-
 #: modules/neibers/cbos/hardware/neibers_hardware.module:22
 msgid "Hardware equipment must be assigned a seat."
-msgstr ""
+msgstr "机器设备必须指定到机位."
 
 #: modules/neibers/cbos/hardware/neibers_hardware.info.yml:0 modules/neibers/cbos/hardware/src/Entity/Hardware.php:12;12
 msgid "Hardware"
@@ -50,30 +46,6 @@ msgstr "设备"
 #: modules/neibers/cbos/hardware/neibers_hardware.info.yml:0
 msgid "The hardware in the cabinet seat."
 msgstr "机位当中的设备."
-
-#: modules/neibers/cbos/hardware/neibers_hardware.info.yml:0
-msgid "Neibers cbos"
-msgstr ""
-
-#: modules/neibers/cbos/hardware/neibers_hardware.links.action.yml:0
-msgid "Add"
-msgstr ""
-
-#: modules/neibers/cbos/hardware/neibers_hardware.links.action.yml:0
-msgid "Add type"
-msgstr ""
-
-#: modules/neibers/cbos/hardware/neibers_hardware.links.task.yml:0
-msgid "View"
-msgstr ""
-
-#: modules/neibers/cbos/hardware/neibers_hardware.links.task.yml:0
-msgid "Edit"
-msgstr ""
-
-#: modules/neibers/cbos/hardware/neibers_hardware.links.task.yml:0 modules/neibers/cbos/hardware/src/Form/HardwareTypeDeleteForm.php:32
-msgid "Delete"
-msgstr ""
 
 #: modules/neibers/cbos/hardware/neibers_hardware.permissions.yml:0
 msgid "Create new Hardware"
@@ -107,29 +79,17 @@ msgstr "查看未发布的设备"
 msgid "Hardware type config"
 msgstr "设备类型配置"
 
-#: modules/neibers/cbos/hardware/config/schema/neibers_hardware_type.schema.yml:0
-msgid "ID"
-msgstr ""
-
 #: modules/neibers/cbos/hardware/src/HardwareListBuilder.php:20
 msgid "Hardware ID"
-msgstr ""
-
-#: modules/neibers/cbos/hardware/src/HardwareListBuilder.php:21 modules/neibers/cbos/hardware/src/Entity/Hardware.php:192
-msgid "Name"
-msgstr ""
+msgstr "设备序号"
 
 #: modules/neibers/cbos/hardware/src/HardwareTypeListBuilder.php:17 modules/neibers/cbos/hardware/src/Entity/Hardware.php:12 modules/neibers/cbos/hardware/src/Entity/HardwareType.php:7;7
 msgid "Hardware type"
 msgstr "设备类型"
 
-#: modules/neibers/cbos/hardware/src/HardwareTypeListBuilder.php:18
-msgid "Machine name"
-msgstr ""
-
 #: modules/neibers/cbos/hardware/src/Entity/Hardware.php:167
 msgid "Authored by"
-msgstr ""
+msgstr "客户"
 
 #: modules/neibers/cbos/hardware/src/Entity/Hardware.php:168
 msgid "The user ID of author of the Hardware entity."
@@ -141,47 +101,19 @@ msgstr "设备的名称."
 
 #: modules/neibers/cbos/hardware/src/Entity/Hardware.php:213
 msgid "Publishing status"
-msgstr ""
+msgstr "发布状态"
 
 #: modules/neibers/cbos/hardware/src/Entity/Hardware.php:214
 msgid "A boolean indicating whether the Hardware is published."
-msgstr ""
-
-#: modules/neibers/cbos/hardware/src/Entity/Hardware.php:222
-msgid "Created"
-msgstr ""
-
-#: modules/neibers/cbos/hardware/src/Entity/Hardware.php:223
-msgid "The time that the entity was created."
-msgstr ""
-
-#: modules/neibers/cbos/hardware/src/Entity/Hardware.php:226
-msgid "Changed"
-msgstr ""
-
-#: modules/neibers/cbos/hardware/src/Entity/Hardware.php:227
-msgid "The time that the entity was last edited."
-msgstr ""
+msgstr "指示设备是否已发布."
 
 #: modules/neibers/cbos/hardware/src/Form/HardwareForm.php:37
 msgid "Created the %label Hardware."
-msgstr ""
+msgstr "已创建设备%label."
 
 #: modules/neibers/cbos/hardware/src/Form/HardwareForm.php:43
 msgid "Saved the %label Hardware."
-msgstr ""
-
-#: modules/neibers/cbos/hardware/src/Form/HardwareTypeDeleteForm.php:18
-msgid "Are you sure you want to delete %name?"
-msgstr ""
-
-#: modules/neibers/cbos/hardware/src/Form/HardwareTypeDeleteForm.php:42
-msgid "content @type: deleted @label."
-msgstr ""
-
-#: modules/neibers/cbos/hardware/src/Form/HardwareTypeForm.php:22
-msgid "Label"
-msgstr ""
+msgstr "已保存设备%label."
 
 #: modules/neibers/cbos/hardware/src/Form/HardwareTypeForm.php:25
 msgid "Label for the Hardware type."
@@ -193,7 +125,7 @@ msgstr "已创建设备类型%label."
 
 #: modules/neibers/cbos/hardware/src/Form/HardwareTypeForm.php:58
 msgid "Saved the %label Hardware type."
-msgstr ""
+msgstr "已保存设备类型%label."
 
 #: modules/neibers/cbos/hardware/src/Plugin/EntityReferenceSelection/CabinetSelection.php:8
 msgid "Hardware selection"

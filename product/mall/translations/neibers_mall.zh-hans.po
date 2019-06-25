@@ -3,6 +3,7 @@
 # LANGUAGE translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
+#  modules/neibers/product/mall/neibers_mall.module: n/a
 #  modules/neibers/product/mall/neibers_mall.install: n/a
 #  modules/neibers/product/mall/neibers_mall.info.yml: n/a
 #  modules/neibers/product/mall/neibers_mall.links.menu.yml: n/a
@@ -14,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-06-24 11:25+0800\n"
+"POT-Creation-Date: 2019-06-25 13:02+0800\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -23,7 +24,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: modules/neibers/product/mall/neibers_mall.install:15
+#: modules/neibers/product/mall/neibers_mall.module:19
+msgid "The administer ip only be allocate once. need to update(TODO)."
+msgstr "目前管理仅能分配一次，待改进."
+
+#: modules/neibers/product/mall/neibers_mall.install:21
 msgid "Default Store Name"
 msgstr "默认商店名称"
 
@@ -49,7 +54,7 @@ msgstr "基于主题Exsen的商城配置模块。"
 
 #: modules/neibers/product/mall/neibers_mall.info.yml:0
 msgid "Neibers product"
-msgstr ""
+msgstr "商品"
 
 #: modules/neibers/product/mall/neibers_mall.links.menu.yml:0
 msgid "Commerce products"

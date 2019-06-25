@@ -12,7 +12,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-06-24 11:25+0800\n"
+"POT-Creation-Date: 2019-06-25 13:02+0800\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -89,8 +89,8 @@ msgstr ""
 msgid "IP configuration"
 msgstr ""
 
-#: modules/neibers/product/idc/neibers_idc.links.menu.yml:0;0
-msgid "Type"
+#: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
+msgid "IP type"
 msgstr ""
 
 #: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
@@ -103,6 +103,10 @@ msgstr ""
 
 #: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
 msgid "Fitting configuration"
+msgstr ""
+
+#: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
+msgid "Fitting type"
 msgstr ""
 
 #: modules/neibers/product/idc/neibers_idc.links.menu.yml:0

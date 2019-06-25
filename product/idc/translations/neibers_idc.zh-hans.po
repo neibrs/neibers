@@ -12,7 +12,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-06-23 17:00+0800\n"
+"POT-Creation-Date: 2019-06-25 13:02+0800\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -20,10 +20,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-
-#: modules/neibers/product/idc/neibers_idc.module:21
-msgid "About"
-msgstr ""
 
 #: modules/neibers/product/idc/neibers_idc.module:22
 msgid "The industry of neibers_idc."
@@ -36,10 +32,6 @@ msgstr ""
 #: modules/neibers/product/idc/neibers_idc.info.yml:0
 msgid "The industry of neibers idc."
 msgstr "IDC 行业."
-
-#: modules/neibers/product/idc/neibers_idc.info.yml:0
-msgid "Neibers product"
-msgstr ""
 
 #: modules/neibers/product/idc/neibers_idc.links.action.yml:0
 msgid "Import"
@@ -89,9 +81,9 @@ msgstr "公网IP"
 msgid "IP configuration"
 msgstr "IP配置"
 
-#: modules/neibers/product/idc/neibers_idc.links.menu.yml:0;0
-msgid "Type"
-msgstr "类型"
+#: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
+msgid "IP type"
+msgstr "IP类型"
 
 #: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
 msgid "Fitting management"
@@ -104,6 +96,10 @@ msgstr "配件列表"
 #: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
 msgid "Fitting configuration"
 msgstr "配件配置"
+
+#: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
+msgid "Fitting type"
+msgstr "配件类型"
 
 #: modules/neibers/product/idc/neibers_idc.links.menu.yml:0
 msgid "Room management"

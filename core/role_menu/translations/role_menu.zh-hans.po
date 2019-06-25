@@ -12,7 +12,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-07-16 15:33+0800\n"
+"POT-Creation-Date: 2019-06-25 13:02+0800\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -30,8 +30,8 @@ msgid "Edit role menu"
 msgstr "编辑角色菜单"
 
 #: modules/neibers/core/role_menu/role_menu.info.yml:0
-msgid "Neibrs core"
-msgstr "Neibrs core"
+msgid "Neibers core"
+msgstr ""
 
 #: modules/neibers/core/role_menu/config/schema/role_menu.schema.yml:0
 msgid "Per-role role menu settings"
@@ -41,7 +41,7 @@ msgstr "单个角色菜单设置"
 msgid "Menu"
 msgstr "菜单"
 
-#: modules/neibers/core/role_menu/src/Plugin/Block/RoleMenuBlock.php:76
+#: modules/neibers/core/role_menu/src/Plugin/Block/RoleMenuBlock.php:77
 msgid "@role navigation"
 msgstr "@role导航"
 

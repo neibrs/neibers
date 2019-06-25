@@ -11,7 +11,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-07-16 15:33+0800\n"
+"POT-Creation-Date: 2019-06-25 13:02+0800\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -33,8 +33,8 @@ msgid "Front page per role."
 msgstr "单个角色的首页。"
 
 #: modules/neibers/core/role_frontpage/role_frontpage.info.yml:0
-msgid "Neibrs core"
-msgstr "Neibrs core"
+msgid "Neibers core"
+msgstr ""
 
 #: modules/neibers/core/role_frontpage/config/schema/role_frontpage.schema.yml:0
 msgid "Per-role role front page settings"

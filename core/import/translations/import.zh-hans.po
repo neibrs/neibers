@@ -26,7 +26,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-12-09 05:41+0000\n"
+"POT-Creation-Date: 2019-06-25 13:02+0800\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -36,8 +36,8 @@ msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
 #: modules/neibers/core/import/import.info.yml:0
-msgid "Neibrs core"
-msgstr "金算盘核心"
+msgid "Neibers core"
+msgstr ""
 
 #: modules/neibers/core/import/import.links.action.yml:0
 msgid "Add Excel migrate"
@@ -72,10 +72,6 @@ msgid "Excel migrate config"
 msgstr "Excel导入配置"
 
 #: modules/neibers/core/import/config/schema/excel_migrate.schema.yml:0
-msgid "ID"
-msgstr ""
-
-#: modules/neibers/core/import/config/schema/excel_migrate.schema.yml:0
 msgid "File path"
 msgstr "文件路径"
 
@@ -87,31 +83,27 @@ msgstr "常量"
 msgid "Import selected excel migrate"
 msgstr "导入选择的Excel文件"
 
-#: modules/neibers/core/import/config/schema/import.schema.yml:0 modules/neibers/core/import/src/Form/ExcelImportForm.php:74 modules/neibers/core/import/src/Form/ExcelImportSelectSheetForm.php:87 modules/neibers/core/import/src/Form/ImportDemoDataForm.php:26 modules/neibers/core/import/src/Plugin/Action/ImportExcelMigrate.php:64
+#: modules/neibers/core/import/config/schema/import.schema.yml:0 modules/neibers/core/import/src/Form/ExcelImportForm.php:74 modules/neibers/core/import/src/Form/ExcelImportSelectSheetForm.php:90 modules/neibers/core/import/src/Form/ImportDemoDataForm.php:26 modules/neibers/core/import/src/Plugin/Action/ImportExcelMigrate.php:64
 msgid "Update"
 msgstr "更新"
 
-#: modules/neibers/core/import/src/ExcelMigrateListBuilder.php:18
-msgid "Machine name"
-msgstr "机器名"
-
-#: modules/neibers/core/import/src/MigrateBatchExecutable.php:93
-msgid "Importing %migration (@percent%)."
-msgstr "导入%migration (@percent%)."
-
-#: modules/neibers/core/import/src/MigrateBatchExecutable.php:118;120
+#: modules/neibers/core/import/src/MigrateBatchExecutable.php:45;47
 msgid "Migrating %migrate"
 msgstr "迁移%migrate"
 
-#: modules/neibers/core/import/src/MigrateBatchExecutable.php:119
+#: modules/neibers/core/import/src/MigrateBatchExecutable.php:46
 msgid "Start migrating %migrate"
 msgstr "开始迁移%migrate"
 
-#: modules/neibers/core/import/src/MigrateBatchExecutable.php:121
+#: modules/neibers/core/import/src/MigrateBatchExecutable.php:48
 msgid "An error occurred while migrating %migrate."
 msgstr "迁移%migrate时发生错误"
 
-#: modules/neibers/core/import/src/Controller/ImportController.php:64
+#: modules/neibers/core/import/src/MigrateBatchExecutable.php:182
+msgid "Importing %migration (@percent%)."
+msgstr "导入%migration (@percent%)."
+
+#: modules/neibers/core/import/src/Controller/ImportController.php:62
 msgid "@entity_type import"
 msgstr "@entity_type导入"
 
@@ -127,7 +119,7 @@ msgstr "Excel文件"
 msgid "The import file which needs import."
 msgstr "需要导入的文件."
 
-#: modules/neibers/core/import/src/Form/ExcelImportForm.php:96 modules/neibers/core/import/src/Form/ImportForm.php:128
+#: modules/neibers/core/import/src/Form/ExcelImportForm.php:96 modules/neibers/core/import/src/Form/ImportForm.php:127
 msgid "File to import not found."
 msgstr "待导入的文件未找到."
 
@@ -137,19 +129,19 @@ msgid_plural "%s not exist."
 msgstr[0] "你不能导入"
 msgstr[1] "不存在的文件%s"
 
-#: modules/neibers/core/import/src/Form/ExcelImportSelectSheetForm.php:54
+#: modules/neibers/core/import/src/Form/ExcelImportSelectSheetForm.php:57
 msgid "- Select -"
 msgstr "- 选择 -"
 
-#: modules/neibers/core/import/src/Form/ExcelImportSelectSheetForm.php:64 modules/neibers/core/import/src/Form/ImportFormSelectSheet.php:43
+#: modules/neibers/core/import/src/Form/ExcelImportSelectSheetForm.php:67 modules/neibers/core/import/src/Form/ImportFormSelectSheet.php:46
 msgid "Sheet"
 msgstr "工作表"
 
-#: modules/neibers/core/import/src/Form/ExcelImportSelectSheetForm.php:64 modules/neibers/core/import/src/Form/ImportRulesForm.php:62
+#: modules/neibers/core/import/src/Form/ExcelImportSelectSheetForm.php:67 modules/neibers/core/import/src/Form/ImportRulesForm.php:62
 msgid "Migration"
 msgstr "迁移"
 
-#: modules/neibers/core/import/src/Form/ExcelImportSelectSheetForm.php:115
+#: modules/neibers/core/import/src/Form/ExcelImportSelectSheetForm.php:118
 msgid "Import successed."
 msgstr "导入成功."
 
@@ -173,47 +165,47 @@ msgstr "已保存Excel导入%label"
 msgid "Install demo data"
 msgstr "安装演示数据"
 
-#: modules/neibers/core/import/src/Form/ImportForm.php:39
+#: modules/neibers/core/import/src/Form/ImportForm.php:38
 msgid "Import template not found."
 msgstr "导入模板未找到."
 
-#: modules/neibers/core/import/src/Form/ImportForm.php:44
+#: modules/neibers/core/import/src/Form/ImportForm.php:43
 msgid "Template"
 msgstr "模板"
 
-#: modules/neibers/core/import/src/Form/ImportForm.php:59
+#: modules/neibers/core/import/src/Form/ImportForm.php:58
 msgid "Data file"
 msgstr "数据文件"
 
-#: modules/neibers/core/import/src/Form/ImportForm.php:62
+#: modules/neibers/core/import/src/Form/ImportForm.php:61
 msgid "A import file."
 msgstr "导入文件"
 
-#: modules/neibers/core/import/src/Form/ImportForm.php:74
+#: modules/neibers/core/import/src/Form/ImportForm.php:73
 msgid "Update existing data"
 msgstr "更新已有数据"
 
-#: modules/neibers/core/import/src/Form/ImportForm.php:109
+#: modules/neibers/core/import/src/Form/ImportForm.php:108
 msgid "A import file. %template"
 msgstr "导入文件的模板, %template"
 
-#: modules/neibers/core/import/src/Form/ImportForm.php:110
+#: modules/neibers/core/import/src/Form/ImportForm.php:109
 msgid "Download template"
 msgstr "下载模板"
 
-#: modules/neibers/core/import/src/Form/ImportFormSelectSheet.php:61
+#: modules/neibers/core/import/src/Form/ImportFormSelectSheet.php:64
 msgid "Header row"
 msgstr "起始行"
 
-#: modules/neibers/core/import/src/Form/ImportFormSelectSheet.php:78
+#: modules/neibers/core/import/src/Form/ImportFormSelectSheet.php:80
 msgid "Sources"
 msgstr "来源"
 
-#: modules/neibers/core/import/src/Form/ImportFormSelectSheet.php:80
+#: modules/neibers/core/import/src/Form/ImportFormSelectSheet.php:82
 msgid "Data item"
 msgstr "数据项"
 
-#: modules/neibers/core/import/src/Form/ImportFormSelectSheet.php:80
+#: modules/neibers/core/import/src/Form/ImportFormSelectSheet.php:82
 msgid "Excel column"
 msgstr "Excel栏目"
 

@@ -23,7 +23,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-06-24 11:25+0800\n"
+"POT-Creation-Date: 2019-06-25 13:02+0800\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -66,7 +66,7 @@ msgstr "管理机位"
 
 #: modules/neibers/cbos/seat/neibers_seat.permissions.yml:0
 msgid "Allow to access the administration form to configure Seat."
-msgstr ""
+msgstr "允许访问机位的管理配置表单."
 
 #: modules/neibers/cbos/seat/neibers_seat.permissions.yml:0
 msgid "Delete Seat"
@@ -88,123 +88,84 @@ msgstr ""
 msgid "Seat type config"
 msgstr "机位类型配置"
 
-#: modules/neibers/cbos/seat/config/schema/seat_type.schema.yml:0
-msgid "ID"
-msgstr ""
-
 #: modules/neibers/cbos/seat/src/SeatListBuilder.php:20
 msgid "Seat ID"
 msgstr "机位ID"
 
-#: modules/neibers/cbos/seat/src/SeatListBuilder.php:21 modules/neibers/cbos/seat/src/Entity/Seat.php:185
-msgid "Name"
-msgstr ""
 
 #: modules/neibers/cbos/seat/src/SeatTypeListBuilder.php:17 modules/neibers/cbos/seat/src/Entity/Seat.php:12 modules/neibers/cbos/seat/src/Entity/SeatType.php:7;7
 msgid "Seat type"
-msgstr ""
-
-#: modules/neibers/cbos/seat/src/SeatTypeListBuilder.php:18
-msgid "Machine name"
-msgstr ""
+msgstr "机位类型"
 
 #: modules/neibers/cbos/seat/src/Entity/Seat.php:160
 msgid "Authored by"
-msgstr ""
+msgstr "客户"
 
 #: modules/neibers/cbos/seat/src/Entity/Seat.php:161
 msgid "The user ID of author of the Seat entity."
-msgstr ""
+msgstr "机位所属的客户。"
 
 #: modules/neibers/cbos/seat/src/Entity/Seat.php:186
 msgid "The name of the Seat entity."
-msgstr ""
+msgstr "机位名称."
 
 #: modules/neibers/cbos/seat/src/Entity/Seat.php:206
 msgid "Cabinet"
-msgstr ""
+msgstr "机柜"
 
 #: modules/neibers/cbos/seat/src/Entity/Seat.php:225
 msgid "Hardware"
-msgstr ""
+msgstr "设备"
 
 #: modules/neibers/cbos/seat/src/Entity/Seat.php:244
 msgid "Parent"
-msgstr ""
+msgstr "上级"
 
 #: modules/neibers/cbos/seat/src/Entity/Seat.php:245
 msgid "The parent of current seat."
-msgstr ""
+msgstr "当前机位的上级."
 
 #: modules/neibers/cbos/seat/src/Entity/Seat.php:264
 msgid "Publishing status"
-msgstr ""
+msgstr "发布状态"
 
 #: modules/neibers/cbos/seat/src/Entity/Seat.php:265
 msgid "A boolean indicating whether the Seat is published."
-msgstr ""
-
-#: modules/neibers/cbos/seat/src/Entity/Seat.php:273
-msgid "Created"
-msgstr ""
-
-#: modules/neibers/cbos/seat/src/Entity/Seat.php:274
-msgid "The time that the entity was created."
-msgstr ""
-
-#: modules/neibers/cbos/seat/src/Entity/Seat.php:277
-msgid "Changed"
-msgstr ""
-
-#: modules/neibers/cbos/seat/src/Entity/Seat.php:278
-msgid "The time that the entity was last edited."
-msgstr ""
+msgstr "指示机位是否已发布."
 
 #: modules/neibers/cbos/seat/src/Form/SeatForm.php:26
 msgid "Occupation"
-msgstr ""
+msgstr "占用"
 
 #: modules/neibers/cbos/seat/src/Form/SeatForm.php:27
 msgid "The number of hardware occupation."
-msgstr ""
+msgstr "设备所占用的机位数."
 
 #: modules/neibers/cbos/seat/src/Form/SeatForm.php:47
 msgid "Created the %label Seat."
-msgstr ""
+msgstr "已创建机位%label."
 
 #: modules/neibers/cbos/seat/src/Form/SeatForm.php:53
 msgid "Saved the %label Seat."
-msgstr ""
-
-#: modules/neibers/cbos/seat/src/Form/SeatTypeDeleteForm.php:18
-msgid "Are you sure you want to delete %name?"
-msgstr ""
-
-#: modules/neibers/cbos/seat/src/Form/SeatTypeDeleteForm.php:42
-msgid "content @type: deleted @label."
-msgstr ""
-
-#: modules/neibers/cbos/seat/src/Form/SeatTypeForm.php:22
-msgid "Label"
-msgstr ""
+msgstr "已保存机位%label."
 
 #: modules/neibers/cbos/seat/src/Form/SeatTypeForm.php:25
 msgid "Label for the Seat type."
-msgstr ""
+msgstr "机位类型的名称."
 
 #: modules/neibers/cbos/seat/src/Form/SeatTypeForm.php:52
 msgid "Created the %label Seat type."
-msgstr ""
+msgstr "已创建机位类型%label."
 
 #: modules/neibers/cbos/seat/src/Form/SeatTypeForm.php:58
 msgid "Saved the %label Seat type."
-msgstr ""
+msgstr "已保存机位类型%label."
 
 #: modules/neibers/cbos/seat/src/Plugin/EntityReferenceSelection/SeatSelection.php:8
 msgid "Seat selection"
-msgstr ""
+msgstr "机位选择"
 
 #: modules/neibers/cbos/seat/config/install/neibers_seat.type.multiple.yml:0
 msgid "Multiple"
-msgstr ""
+msgstr "复合机位"
 

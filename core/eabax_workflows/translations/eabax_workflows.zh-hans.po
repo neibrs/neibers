@@ -4,14 +4,22 @@
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
 #  modules/neibers/core/eabax_workflows/eabax_workflows.info.yml: n/a
+#  modules/neibers/core/eabax_workflows/eabax_workflows.routing.yml: n/a
+#  modules/neibers/core/eabax_workflows/config/schema/eabax_workflows.schema.yml: n/a
+#  modules/neibers/core/eabax_workflows/src/Plugin/EntityTransitionForm.php: n/a
 #  modules/neibers/core/eabax_workflows/config/schema/eabax_workflows.views.schema.yml: n/a
 #  modules/neibers/core/eabax_workflows/src/Plugin/Field/FieldType/EntityStatusFieldItem.php: n/a
+#  modules/neibers/core/eabax_workflows/src/Controller/EabaxWorkflowsController.php: n/a
+#  modules/neibers/core/eabax_workflows/src/Form/ConditionForm.php: n/a
+#  modules/neibers/core/eabax_workflows/src/Plugin/EntityStateForm.php: n/a
+#  modules/neibers/core/eabax_workflows/src/Plugin/Action/WorkflowStatusTransition.php: n/a
+#  modules/neibers/core/eabax_workflows/src/Plugin/Action/Derivative/EntityStatusTransitionDeriver.php: n/a
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-07-16 15:34+0800\n"
+"POT-Creation-Date: 2019-06-25 13:02+0800\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -25,8 +33,12 @@ msgid "Eabax workflows"
 msgstr "金算盘工作流"
 
 #: modules/neibers/core/eabax_workflows/eabax_workflows.info.yml:0
-msgid "Neibrs core"
+msgid "Neibers core"
 msgstr ""
+
+#: modules/neibers/core/eabax_workflows/eabax_workflows.routing.yml:0
+msgid "Transition Condition"
+msgstr "转换条件"
 
 #: modules/neibers/core/eabax_workflows/config/schema/eabax_workflows.schema.yml:0
 msgid "Fields access"
@@ -48,51 +60,55 @@ msgstr "工作流类型值"
 msgid "Values"
 msgstr "值"
 
-#: modules/neibers/core/eabax_workflows/src/Controller/EabaxWorkflowsController.php:50
+#: modules/neibers/core/eabax_workflows/src/Controller/EabaxWorkflowsController.php:100
 msgid "It's success to transition to %to from %from"
 msgstr "状态成功从%from转化到%to"
 
-#: modules/neibers/core/eabax_workflows/src/Controller/EabaxWorkflowsController.php:53
+#: modules/neibers/core/eabax_workflows/src/Controller/EabaxWorkflowsController.php:108
 msgid "The status of transition not work."
 msgstr "状态转化未成功."
 
-#: modules/neibers/core/eabax_workflows/src/Form/EntityStateForm.php:19
+#: modules/neibers/core/eabax_workflows/src/Form/ConditionForm.php:50
+msgid "Continue"
+msgstr "继续"
+
+#: modules/neibers/core/eabax_workflows/src/Plugin/EntityStateForm.php:19
 msgid "Field control"
 msgstr "字段控制"
 
-#: modules/neibers/core/eabax_workflows/src/Form/EntityStateForm.php:21
+#: modules/neibers/core/eabax_workflows/src/Plugin/EntityStateForm.php:21
 msgid "Field name"
 msgstr "字段名称"
 
-#: modules/neibers/core/eabax_workflows/src/Form/EntityStateForm.php:22;41
+#: modules/neibers/core/eabax_workflows/src/Plugin/EntityStateForm.php:22;41
 msgid "Can view"
 msgstr "可查看"
 
-#: modules/neibers/core/eabax_workflows/src/Form/EntityStateForm.php:23;47
+#: modules/neibers/core/eabax_workflows/src/Plugin/EntityStateForm.php:23;47
 msgid "Can update"
 msgstr "可更新"
 
-#: modules/neibers/core/eabax_workflows/src/Form/EntityStateForm.php:24
+#: modules/neibers/core/eabax_workflows/src/Plugin/EntityStateForm.php:24
 msgid "Value"
 msgstr "值"
 
-#: modules/neibers/core/eabax_workflows/src/Form/EntityStateForm.php:25
+#: modules/neibers/core/eabax_workflows/src/Plugin/EntityStateForm.php:25
 msgid "Usage"
 msgstr "用法"
 
-#: modules/neibers/core/eabax_workflows/src/Form/EntityStateForm.php:61
+#: modules/neibers/core/eabax_workflows/src/Plugin/EntityStateForm.php:61
 msgid "Status setting"
 msgstr "状态设置"
 
-#: modules/neibers/core/eabax_workflows/src/Form/EntityStateForm.php:64
+#: modules/neibers/core/eabax_workflows/src/Plugin/EntityStateForm.php:64
 msgid "Defaults value"
 msgstr "默认值"
 
-#: modules/neibers/core/eabax_workflows/src/Form/EntityStateForm.php:65
+#: modules/neibers/core/eabax_workflows/src/Plugin/EntityStateForm.php:65
 msgid "Not used"
 msgstr "不使用"
 
-#: modules/neibers/core/eabax_workflows/src/Form/EntityStateForm.php:66
+#: modules/neibers/core/eabax_workflows/src/Plugin/EntityStateForm.php:66
 msgid "Sets value"
 msgstr "设置值"
 
@@ -107,10 +123,6 @@ msgstr "转化@entity_type的状态"
 #: modules/neibers/core/eabax_workflows/src/Plugin/Field/FieldType/EntityStatusFieldItem.php:82
 msgid "Workflow type"
 msgstr "工作流类型"
-
-#: modules/neibers/core/eabax_workflows/src/Plugin/Field/FieldType/EntityStatusFieldItem.php:101
-msgid "Workflow"
-msgstr "工作流"
 
 #: modules/neibers/core/eabax_workflows/src/Plugin/Field/FieldType/EntityStatusFieldItem.php:50
 msgid "State"

@@ -17,7 +17,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-06-23 03:40+0000\n"
+"POT-Creation-Date: 2019-06-25 13:02+0800\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -26,45 +26,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: modules/neibers/cbos/cabinet/neibers_cabinet.module:18
-msgid "About"
-msgstr ""
-
 #: modules/neibers/cbos/cabinet/neibers_cabinet.module:19
 msgid "The hardware neibers_cabinet for idc industrial."
-msgstr ""
+msgstr "IDC行业中的硬件设备."
 
 #: modules/neibers/cbos/cabinet/neibers_cabinet.info.yml:0 modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:12;12
 msgid "Cabinet"
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/neibers_cabinet.info.yml:0
-msgid "The neibers_cabinets of idc room."
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/neibers_cabinet.info.yml:0
-msgid "Neibers cbos"
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/neibers_cabinet.links.action.yml:0
-msgid "Add"
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/neibers_cabinet.links.task.yml:0
-msgid "Settings"
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/neibers_cabinet.links.task.yml:0
-msgid "View"
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/neibers_cabinet.links.task.yml:0
-msgid "Edit"
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/neibers_cabinet.links.task.yml:0
-msgid "Delete"
-msgstr ""
+msgstr "机柜"
 
 #: modules/neibers/cbos/cabinet/neibers_cabinet.permissions.yml:0
 msgid "Create new Cabinet"
@@ -76,51 +44,47 @@ msgstr "管理机柜"
 
 #: modules/neibers/cbos/cabinet/neibers_cabinet.permissions.yml:0
 msgid "Allow to access the administration form to configure Cabinet."
-msgstr ""
+msgstr "允许访问机柜的管理配置表单."
 
 #: modules/neibers/cbos/cabinet/neibers_cabinet.permissions.yml:0
 msgid "Delete Cabinet"
-msgstr ""
+msgstr "删除机柜"
 
 #: modules/neibers/cbos/cabinet/neibers_cabinet.permissions.yml:0
 msgid "Edit Cabinet"
-msgstr ""
+msgstr "编辑机柜"
 
 #: modules/neibers/cbos/cabinet/neibers_cabinet.permissions.yml:0
 msgid "View published Cabinet"
-msgstr ""
+msgstr "查看已发布的机柜"
 
 #: modules/neibers/cbos/cabinet/neibers_cabinet.permissions.yml:0
 msgid "View unpublished Cabinet"
-msgstr ""
+msgstr "查看未发布的机柜"
 
 #: modules/neibers/cbos/cabinet/src/CabinetListBuilder.php:20
 msgid "Cabinet ID"
-msgstr ""
-
-#: modules/neibers/cbos/cabinet/src/CabinetListBuilder.php:21 modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:182
-msgid "Name"
-msgstr ""
+msgstr "机柜序号"
 
 #: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:157
 msgid "Authored by"
-msgstr "客户"
+msgstr "创建人"
 
 #: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:158
 msgid "The user ID of author of the Cabinet entity."
-msgstr ""
+msgstr "机柜的创建人ID."
 
 #: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:183
 msgid "The name of the Cabinet entity."
-msgstr ""
+msgstr "机柜名称."
 
 #: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:203
 msgid "Size"
-msgstr ""
+msgstr "大小"
 
 #: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:204
 msgid "Switch occupied neibers_seat in digit."
-msgstr ""
+msgstr "机柜的U位数."
 
 #: modules/neibers/cbos/cabinet/src/Entity/Cabinet.php:215
 msgid "Room"

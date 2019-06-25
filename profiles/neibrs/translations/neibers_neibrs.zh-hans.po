@@ -2,14 +2,13 @@
 #
 # LANGUAGE translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
-# Generated from files:
-#  profiles/neibrs/neibrs.info.yml: n/a
+# Generated from file: modules/neibers/profiles/neibrs/neibers_neibrs.info.yml: n/a
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-06-05 15:06+0000\n"
+"POT-Creation-Date: 2019-06-25 13:02+0800\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -18,11 +17,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: profiles/neibrs/neibrs.info.yml:0;0 modules/neibers/core/menu_plus/menu_plus.info.yml:0 modules/neibers/core/user_plus/user_plus.info.yml:0 modules/neibers/product/mall/neibers_mall.info.yml:0 profiles/neibrs/themes/exmall/exneibers_mall.info.yml:0 profiles/neibrs/themes/exsen/exsen.info.yml:0
-msgid "Neibrs"
+#: modules/neibers/profiles/neibrs/neibers_neibrs.info.yml:0
+msgid "Neibrs IDC"
 msgstr ""
 
-#: modules/neibers/profiles/neibrs/neibrs.info.yml:0
+#: modules/neibers/profiles/neibrs/neibers_neibrs.info.yml:0
 msgid "Manage for IDC service."
 msgstr "管理IDC服务."
 

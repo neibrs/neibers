@@ -1,6 +1,5 @@
 name: 'Cabinet'
 type: module
-description: 'The neibers_cabinets of idc room.'
 core: 8.x
 package: 'Neibers cbos'
 interface translation project: neibers_cabinet

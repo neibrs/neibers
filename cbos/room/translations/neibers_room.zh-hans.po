@@ -23,7 +23,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-06-24 11:25+0800\n"
+"POT-Creation-Date: 2019-06-25 13:02+0800\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -32,33 +32,25 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: modules/neibers/cbos/room/neibers_room.module:18
-msgid "About"
-msgstr ""
-
 #: modules/neibers/cbos/room/neibers_room.module:19
 msgid "The idc."
-msgstr ""
+msgstr "IDC."
 
 #: modules/neibers/cbos/room/neibers_room.info.yml:0 modules/neibers/cbos/room/src/Entity/Room.php:13;13
 msgid "Room"
-msgstr ""
+msgstr "机房"
 
 #: modules/neibers/cbos/room/neibers_room.info.yml:0
 msgid "The machine room of store computer equipments."
 msgstr "用于放置计算机设备机器的房间."
 
-#: modules/neibers/cbos/room/neibers_room.info.yml:0
-msgid "Neibers cbos"
-msgstr ""
-
 #: modules/neibers/cbos/room/neibers_room.links.action.yml:0
 msgid "Add Room"
-msgstr ""
+msgstr "添加机房"
 
 #: modules/neibers/cbos/room/neibers_room.links.action.yml:0
 msgid "Add Room type"
-msgstr ""
+msgstr "添加机房类型"
 
 #: modules/neibers/cbos/room/neibers_room.links.menu.yml:0
 msgid "Room list"
@@ -75,18 +67,6 @@ msgstr "机房列表"
 #: modules/neibers/cbos/room/neibers_room.links.menu.yml:0
 msgid "List Room type (bundles)"
 msgstr "机房类型"
-
-#: modules/neibers/cbos/room/neibers_room.links.task.yml:0
-msgid "View"
-msgstr ""
-
-#: modules/neibers/cbos/room/neibers_room.links.task.yml:0
-msgid "Edit"
-msgstr ""
-
-#: modules/neibers/cbos/room/neibers_room.links.task.yml:0 modules/neibers/cbos/room/src/Form/RoomTypeDeleteForm.php:32
-msgid "Delete"
-msgstr ""
 
 #: modules/neibers/cbos/room/neibers_room.permissions.yml:0
 msgid "Create new Room"
@@ -120,25 +100,13 @@ msgstr "查看未发布的机房"
 msgid "Room type config"
 msgstr "机房类型配置"
 
-#: modules/neibers/cbos/room/config/schema/neibers_room_type.schema.yml:0
-msgid "ID"
-msgstr ""
-
 #: modules/neibers/cbos/room/src/RoomListBuilder.php:20
 msgid "Room ID"
 msgstr "机房序号"
 
-#: modules/neibers/cbos/room/src/RoomListBuilder.php:21 modules/neibers/cbos/room/src/Entity/Room.php:175
-msgid "Name"
-msgstr ""
-
-#: modules/neibers/cbos/room/src/RoomTypeListBuilder.php:18
-msgid "Machine name"
-msgstr ""
-
 #: modules/neibers/cbos/room/src/Entity/Room.php:150
 msgid "Authored by"
-msgstr ""
+msgstr "客户"
 
 #: modules/neibers/cbos/room/src/Entity/Room.php:151
 msgid "The user ID of author of the Room entity."
@@ -152,22 +120,6 @@ msgstr "机房名称."
 msgid "A boolean indicating whether the Room is published."
 msgstr "指示机房是否已发布."
 
-#: modules/neibers/cbos/room/src/Entity/Room.php:202
-msgid "Created"
-msgstr ""
-
-#: modules/neibers/cbos/room/src/Entity/Room.php:203
-msgid "The time that the entity was created."
-msgstr ""
-
-#: modules/neibers/cbos/room/src/Entity/Room.php:206
-msgid "Changed"
-msgstr ""
-
-#: modules/neibers/cbos/room/src/Entity/Room.php:207
-msgid "The time that the entity was last edited."
-msgstr ""
-
 #: modules/neibers/cbos/room/src/Form/RoomForm.php:80
 msgid "Created the %label Room."
 msgstr "已创建机房%label."
@@ -175,18 +127,6 @@ msgstr "已创建机房%label."
 #: modules/neibers/cbos/room/src/Form/RoomForm.php:86
 msgid "Saved the %label Room."
 msgstr "已保存机房%label."
-
-#: modules/neibers/cbos/room/src/Form/RoomTypeDeleteForm.php:18
-msgid "Are you sure you want to delete %name?"
-msgstr ""
-
-#: modules/neibers/cbos/room/src/Form/RoomTypeDeleteForm.php:42
-msgid "content @type: deleted @label."
-msgstr ""
-
-#: modules/neibers/cbos/room/src/Form/RoomTypeForm.php:22
-msgid "Label"
-msgstr ""
 
 #: modules/neibers/cbos/room/src/Form/RoomTypeForm.php:25
 msgid "Label for the Room type."

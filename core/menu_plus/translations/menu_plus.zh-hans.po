@@ -3,15 +3,15 @@
 # LANGUAGE translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
-#  modules/neibrs/core/menu_plus/menu_plus.module: n/a
-#  modules/neibrs/core/menu_plus/menu_plus.info.yml: n/a
-#  modules/neibrs/core/menu_plus/config/schema/menu_plus.schema.yml: n/a
+#  modules/neibers/core/menu_plus/menu_plus.module: n/a
+#  modules/neibers/core/menu_plus/menu_plus.info.yml: n/a
+#  modules/neibers/core/menu_plus/config/schema/menu_plus.schema.yml: n/a
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-05-07 00:49+0000\n"
+"POT-Creation-Date: 2019-06-25 13:02+0800\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -20,9 +20,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: modules/neibrs/core/menu_plus/menu_plus.module:22
-msgid "About"
-msgstr ""
 
 #: modules/neibrs/core/menu_plus/menu_plus.module:23
 msgid "The role menu plus for opened navigation."
@@ -48,13 +45,6 @@ msgstr "菜单的自定义图标."
 msgid "Menu Plus"
 msgstr "增强菜单"
 
-#: modules/neibrs/core/menu_plus/menu_plus.info.yml:0
-msgid "The menu plus for opened navigation. It is compatable with theme exsen"
-msgstr ""
-
-#: modules/neibrs/core/menu_plus/menu_plus.info.yml:0
-msgid "Neibrs"
-msgstr ""
 
 #: modules/neibrs/core/menu_plus/config/schema/menu_plus.schema.yml:0
 msgid "Menu plus settings"

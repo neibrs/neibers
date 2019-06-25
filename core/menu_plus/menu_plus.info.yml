@@ -1,6 +1,5 @@
 name: 'Menu Plus'
 type: module
-description: "The menu plus for opened navigation. It is compatable with theme exsen"
 core: 8.x
 package: Neibrs
 interface translation project: menu_plus

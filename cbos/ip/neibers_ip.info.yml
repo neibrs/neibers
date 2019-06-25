@@ -1,6 +1,5 @@
 name: 'IP'
 type: module
-description: 'Uip'
 core: 8.x
 package: 'Neibers cbos'
 interface translation project: neibers_ip
