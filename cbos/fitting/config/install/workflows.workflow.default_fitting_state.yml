@@ -5,7 +5,7 @@ dependencies:
     module:
       - neibers_fitting
 id: default_fitting_state
-label: 'Default IP workflow state'
+label: 'Default fitting workflow state'
 type: fitting_state
 type_settings:
   states:

@@ -112,10 +112,6 @@ msgid "Fitting type config"
 msgstr "配置类型配置"
 
 #: modules/neibers/cbos/fitting/config/schema/neibers_fitting_type.schema.yml:0
-msgid "ID"
-msgstr ""
-
-#: modules/neibers/cbos/fitting/config/schema/neibers_fitting_type.schema.yml:0
 msgid "Workflow status settings"
 msgstr "工作流状态设置"
 
@@ -130,14 +126,6 @@ msgstr "初始状态"
 #: modules/neibers/cbos/fitting/src/FittingListBuilder.php:20
 msgid "Fitting ID"
 msgstr "配件ID"
-
-#: modules/neibers/cbos/fitting/src/FittingListBuilder.php:21 modules/neibers/cbos/fitting/src/Entity/Fitting.php:185
-msgid "Name"
-msgstr "名称"
-
-#: modules/neibers/cbos/fitting/src/FittingTypeListBuilder.php:18
-msgid "Machine name"
-msgstr "机器名"
 
 #: modules/neibers/cbos/fitting/src/Entity/Fitting.php:160
 msgid "Authored by"

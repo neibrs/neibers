@@ -96,3 +96,5 @@ msgstr "导航区块"
 msgid "Sidebar block"
 msgstr "侧边栏"
 
+msgid "Initial order"
+msgstr "原始订单"
