@@ -280,6 +280,9 @@ class IPOrderForm extends FormBase implements ContainerInjectionInterface {
       $this->business->allocateOnet($this->administer->getSeat(), $this->order);
       $this->business->save();
     }
+
+    // TODO commerce_user_orders viwes not fresh
+    $this->order->save();
   }
 
   // TODO Polished.
