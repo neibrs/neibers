@@ -20,9 +20,10 @@ class IPViewBuilder extends EntityViewBuilder {
     foreach ($entities as $id => $entity) {
       $bundle = $entity->bundle();
       $display = $displays[$bundle];
-      // Add Orders ip
-      if ($display->getComponent('order_ips')) {
-        $build[$id]['order_ips'] = \Drupal::formBuilder()->getForm('\Drupal\neibers_ip\Form\IPOrderIdForm', $entity);
+
+      // Add ip associated
+      if ($display->getComponent('ip_associated')) {
+        $build[$id]['ip_associated'] = views_embed_view('ip_associated', 'default', $entity->seat->target_id);
       }
     }
     parent::buildComponents($build, $entities, $displays, $view_mode);

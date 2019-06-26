@@ -78,6 +78,12 @@ function neibers_ip_entity_extra_field_info() {
       'description' => t('The ips belongs to current order.'),
       'weight' => 20,
     ];
+
+    $extra['neibers_ip'][$bundle->id()]['display']['ip_associated'] = [
+      'label' => t('IPs associated'),
+      'description' => t('The ips associate with this ip.'),
+      'weight' => 30,
+    ];
   }
   return $extra;
 }
