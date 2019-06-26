@@ -82,7 +82,7 @@ msgstr "订单列表"
 
 #: modules/neibers/product/mall/neibers_mall.links.menu.yml:0
 msgid "Orders subscriber"
-msgstr "周期订单"
+msgstr "订阅订单"
 
 #: modules/neibers/product/mall/neibers_mall.routing.yml:0
 msgid "Platform"
