@@ -61,7 +61,7 @@ class IPOrderForm extends FormBase implements ContainerInjectionInterface {
       '#open' => TRUE,
     ];
     /** Build ips form. */
-    $form['ips_collection'] = $this->buildIpsForm($form, $form_state, $order, $display);
+//    $form['ips_collection'] = $this->buildIpsForm($form, $form_state, $order, $display);
 
     $form['ips'] = $this->buildIpsTableForm($form, $form_state, $order, $display);
 
