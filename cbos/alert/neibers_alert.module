@@ -1,0 +1,57 @@
+<?php
+
+/**
+ * @file
+ * Contains neibers_alert.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function neibers_alert_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the neibers_alert module.
+    case 'help.page.neibers_alert':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function neibers_alert_theme() {
+  return [
+    'neibers_alert' => [
+      'render element' => 'elements',
+      'file' => 'neibers_alert.page.inc',
+      'template' => 'neibers_alert',
+    ],
+    'neibers_alert_content_add_list' => [
+      'render element' => 'content',
+      'variables' => ['content' => NULL],
+      'file' => 'neibers_alert.page.inc',
+    ],
+  ];
+}
+
+/**
+* Implements hook_theme_suggestions_HOOK().
+*/
+function neibers_alert_theme_suggestions_neibers_alert(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#neibers_alert'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'neibers_alert__' . $sanitized_view_mode;
+  $suggestions[] = 'neibers_alert__' . $entity->bundle();
+  $suggestions[] = 'neibers_alert__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'neibers_alert__' . $entity->id();
+  $suggestions[] = 'neibers_alert__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}

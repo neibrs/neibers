@@ -1,0 +1,17 @@
+
+# Alert menu items definition
+entity.neibers_alert.collection:
+  title: 'Alert list'
+  route_name: entity.neibers_alert.collection
+  description: 'List neibers_alerts'
+  parent: system.admin_structure
+  weight: 100
+
+
+# Alert type menu items definition
+entity.neibers_alert_type.collection:
+  title: 'Alert type'
+  route_name: entity.neibers_alert_type.collection
+  description: 'List Alert type (bundles)'
+  parent: system.admin_structure
+  weight: 99

@@ -1,0 +1,275 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  modules/neibers/cbos/alert/neibers_alert.module: n/a
+#  modules/neibers/cbos/alert/neibers_alert.info.yml: n/a
+#  modules/neibers/cbos/alert/src/Entity/Alert.php: n/a
+#  modules/neibers/cbos/alert/config/install/views.view.neibers_alert.yml: n/a
+#  modules/neibers/cbos/alert/neibers_alert.links.action.yml: n/a
+#  modules/neibers/cbos/alert/neibers_alert.links.menu.yml: n/a
+#  modules/neibers/cbos/alert/src/AlertTypeListBuilder.php: n/a
+#  modules/neibers/cbos/alert/src/Entity/AlertType.php: n/a
+#  modules/neibers/cbos/alert/neibers_alert.links.task.yml: n/a
+#  modules/neibers/cbos/alert/neibers_alert.permissions.yml: n/a
+#  modules/neibers/cbos/alert/config/schema/neibers_alert_type.schema.yml: n/a
+#  modules/neibers/cbos/alert/src/Form/AlertTypeForm.php: n/a
+#  modules/neibers/cbos/alert/src/AlertListBuilder.php: n/a
+#  modules/neibers/cbos/alert/src/Form/AlertForm.php: n/a
+#  modules/neibers/cbos/alert/src/Plugin/Block/AlertIconBlock.php: n/a
+#  modules/neibers/cbos/alert/config/install/core.entity_view_mode.neibers_alert.compact.yml: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2019-06-27 11:58+0800\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: modules/neibers/cbos/alert/neibers_alert.module:18
+msgid "About"
+msgstr ""
+
+#: modules/neibers/cbos/alert/neibers_alert.info.yml:0 modules/neibers/cbos/alert/src/Entity/Alert.php:12 modules/neibers/cbos/alert/config/install/views.view.neibers_alert.yml:0;0
+msgid "Alert"
+msgstr ""
+
+#: modules/neibers/cbos/alert/neibers_alert.info.yml:0
+msgid "Neibers cbos"
+msgstr ""
+
+#: modules/neibers/cbos/alert/neibers_alert.links.action.yml:0
+msgid "Add Alert"
+msgstr ""
+
+#: modules/neibers/cbos/alert/neibers_alert.links.action.yml:0
+msgid "Add Alert type"
+msgstr ""
+
+#: modules/neibers/cbos/alert/neibers_alert.links.menu.yml:0
+msgid "Alert list"
+msgstr ""
+
+#: modules/neibers/cbos/alert/neibers_alert.links.menu.yml:0 modules/neibers/cbos/alert/src/AlertTypeListBuilder.php:17 modules/neibers/cbos/alert/src/Entity/Alert.php:12 modules/neibers/cbos/alert/src/Entity/AlertType.php:8
+msgid "Alert type"
+msgstr ""
+
+#: modules/neibers/cbos/alert/neibers_alert.links.menu.yml:0
+msgid "List neibers_alerts"
+msgstr ""
+
+#: modules/neibers/cbos/alert/neibers_alert.links.menu.yml:0
+msgid "List Alert type (bundles)"
+msgstr ""
+
+#: modules/neibers/cbos/alert/neibers_alert.links.task.yml:0
+msgid "View"
+msgstr ""
+
+#: modules/neibers/cbos/alert/neibers_alert.links.task.yml:0
+msgid "Edit"
+msgstr ""
+
+#: modules/neibers/cbos/alert/neibers_alert.links.task.yml:0
+msgid "Delete"
+msgstr ""
+
+#: modules/neibers/cbos/alert/neibers_alert.permissions.yml:0
+msgid "Create new neibers_alerts"
+msgstr ""
+
+#: modules/neibers/cbos/alert/neibers_alert.permissions.yml:0
+msgid "Administer neibers_alerts"
+msgstr ""
+
+#: modules/neibers/cbos/alert/neibers_alert.permissions.yml:0
+msgid "Allow to access the administration form to configure neibers_alerts."
+msgstr ""
+
+#: modules/neibers/cbos/alert/neibers_alert.permissions.yml:0
+msgid "Delete neibers_alerts"
+msgstr ""
+
+#: modules/neibers/cbos/alert/neibers_alert.permissions.yml:0
+msgid "Edit neibers_alerts"
+msgstr ""
+
+#: modules/neibers/cbos/alert/neibers_alert.permissions.yml:0
+msgid "View neibers_alerts"
+msgstr ""
+
+#: modules/neibers/cbos/alert/config/schema/neibers_alert_type.schema.yml:0
+msgid "Alert type config"
+msgstr ""
+
+#: modules/neibers/cbos/alert/config/schema/neibers_alert_type.schema.yml:0
+msgid "ID"
+msgstr ""
+
+#: modules/neibers/cbos/alert/config/schema/neibers_alert_type.schema.yml:0 modules/neibers/cbos/alert/src/Form/AlertTypeForm.php:39
+msgid "Description"
+msgstr ""
+
+#: modules/neibers/cbos/alert/config/schema/neibers_alert_type.schema.yml:0 modules/neibers/cbos/alert/src/Form/AlertTypeForm.php:46
+msgid "Color"
+msgstr ""
+
+#: modules/neibers/cbos/alert/src/AlertListBuilder.php:19
+msgid "Alert ID"
+msgstr ""
+
+#: modules/neibers/cbos/alert/src/AlertListBuilder.php:20
+msgid "Name"
+msgstr ""
+
+#: modules/neibers/cbos/alert/src/Entity/Alert.php:142
+msgid "Authored by"
+msgstr ""
+
+#: modules/neibers/cbos/alert/src/Entity/Alert.php:143
+msgid "The user ID of author of the Alert entity."
+msgstr ""
+
+#: modules/neibers/cbos/alert/src/Entity/Alert.php:167
+msgid "Message text"
+msgstr ""
+
+#: modules/neibers/cbos/alert/src/Entity/Alert.php:187 modules/neibers/cbos/alert/config/install/views.view.neibers_alert.yml:0
+msgid "Created"
+msgstr ""
+
+#: modules/neibers/cbos/alert/src/Entity/Alert.php:188
+msgid "The time that the entity was created."
+msgstr ""
+
+#: modules/neibers/cbos/alert/src/Entity/Alert.php:191
+msgid "Changed"
+msgstr ""
+
+#: modules/neibers/cbos/alert/src/Entity/Alert.php:192
+msgid "The time that the entity was last edited."
+msgstr ""
+
+#: modules/neibers/cbos/alert/src/Entity/Alert.php:12
+msgid "Alerts"
+msgstr ""
+
+#: modules/neibers/cbos/alert/src/Entity/AlertType.php:8
+msgid "Alert types"
+msgstr ""
+
+#: modules/neibers/cbos/alert/src/Form/AlertForm.php:37
+msgid "Created the %label Alert."
+msgstr ""
+
+#: modules/neibers/cbos/alert/src/Form/AlertForm.php:43
+msgid "Saved the %label Alert."
+msgstr ""
+
+#: modules/neibers/cbos/alert/src/Form/AlertTypeForm.php:22
+msgid "Label"
+msgstr ""
+
+#: modules/neibers/cbos/alert/src/Form/AlertTypeForm.php:25
+msgid "Label for the Alert type."
+msgstr ""
+
+#: modules/neibers/cbos/alert/src/Form/AlertTypeForm.php:62
+msgid "Created the %label Alert type."
+msgstr ""
+
+#: modules/neibers/cbos/alert/src/Form/AlertTypeForm.php:68
+msgid "Saved the %label Alert type."
+msgstr ""
+
+#: modules/neibers/cbos/alert/src/Plugin/Block/AlertIconBlock.php:87
+msgid "You have %num notifications"
+msgstr ""
+
+#: modules/neibers/cbos/alert/src/Plugin/Block/AlertIconBlock.php:88
+msgid "No notifications."
+msgstr ""
+
+#: modules/neibers/cbos/alert/src/Plugin/Block/AlertIconBlock.php:14
+msgid "Alert icon block"
+msgstr ""
+
+#: modules/neibers/cbos/alert/config/install/core.entity_view_mode.neibers_alert.compact.yml:0
+msgid "Compact"
+msgstr ""
+
+#: modules/neibers/cbos/alert/config/install/views.view.neibers_alert.yml:0
+msgid "Find and manage neibers_alerts."
+msgstr ""
+
+#: modules/neibers/cbos/alert/config/install/views.view.neibers_alert.yml:0
+msgid "Filter"
+msgstr ""
+
+#: modules/neibers/cbos/alert/config/install/views.view.neibers_alert.yml:0
+msgid "Reset"
+msgstr ""
+
+#: modules/neibers/cbos/alert/config/install/views.view.neibers_alert.yml:0
+msgid "Sort by"
+msgstr ""
+
+#: modules/neibers/cbos/alert/config/install/views.view.neibers_alert.yml:0
+msgid "Asc"
+msgstr ""
+
+#: modules/neibers/cbos/alert/config/install/views.view.neibers_alert.yml:0
+msgid "Desc"
+msgstr ""
+
+#: modules/neibers/cbos/alert/config/install/views.view.neibers_alert.yml:0
+msgid "‹ Previous"
+msgstr ""
+
+#: modules/neibers/cbos/alert/config/install/views.view.neibers_alert.yml:0
+msgid "Next ›"
+msgstr ""
+
+#: modules/neibers/cbos/alert/config/install/views.view.neibers_alert.yml:0
+msgid "« First"
+msgstr ""
+
+#: modules/neibers/cbos/alert/config/install/views.view.neibers_alert.yml:0
+msgid "Last »"
+msgstr ""
+
+#: modules/neibers/cbos/alert/config/install/views.view.neibers_alert.yml:0;0
+msgid "Message"
+msgstr ""
+
+#: modules/neibers/cbos/alert/config/install/views.view.neibers_alert.yml:0;0
+msgid "Type"
+msgstr ""
+
+#: modules/neibers/cbos/alert/config/install/views.view.neibers_alert.yml:0
+msgid ", "
+msgstr ""
+
+#: modules/neibers/cbos/alert/config/install/views.view.neibers_alert.yml:0
+msgid "Operations"
+msgstr ""
+
+#: modules/neibers/cbos/alert/config/install/views.view.neibers_alert.yml:0
+msgid "No content available."
+msgstr ""
+
+#: modules/neibers/cbos/alert/config/install/views.view.neibers_alert.yml:0
+msgid "Master"
+msgstr ""
+
+#: modules/neibers/cbos/alert/config/install/views.view.neibers_alert.yml:0
+msgid "Page"
+msgstr ""
+

@@ -1,0 +1,16 @@
+add neibers_alerts:
+  title: 'Create new neibers_alerts'
+
+administer neibers_alerts:
+  title: 'Administer neibers_alerts'
+  description: 'Allow to access the administration form to configure neibers_alerts.'
+  restrict access: true
+
+delete neibers_alerts:
+  title: 'Delete neibers_alerts'
+
+edit neibers_alerts:
+  title: 'Edit neibers_alerts'
+
+view neibers_alerts:
+  title: 'View neibers_alerts'

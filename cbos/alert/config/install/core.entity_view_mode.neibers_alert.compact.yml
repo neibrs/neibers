@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - neibers_alert
+id: neibers_alert.compact
+label: Compact
+targetEntityType: neibers_alert
+cache: true

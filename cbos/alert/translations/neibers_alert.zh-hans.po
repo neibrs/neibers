@@ -1,0 +1,185 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  modules/neibers/cbos/alert/neibers_alert.module: n/a
+#  modules/neibers/cbos/alert/neibers_alert.info.yml: n/a
+#  modules/neibers/cbos/alert/src/Entity/Alert.php: n/a
+#  modules/neibers/cbos/alert/config/install/views.view.neibers_alert.yml: n/a
+#  modules/neibers/cbos/alert/neibers_alert.links.action.yml: n/a
+#  modules/neibers/cbos/alert/neibers_alert.links.menu.yml: n/a
+#  modules/neibers/cbos/alert/src/AlertTypeListBuilder.php: n/a
+#  modules/neibers/cbos/alert/src/Entity/AlertType.php: n/a
+#  modules/neibers/cbos/alert/neibers_alert.links.task.yml: n/a
+#  modules/neibers/cbos/alert/neibers_alert.permissions.yml: n/a
+#  modules/neibers/cbos/alert/config/schema/neibers_alert_type.schema.yml: n/a
+#  modules/neibers/cbos/alert/src/Form/AlertTypeForm.php: n/a
+#  modules/neibers/cbos/alert/src/AlertListBuilder.php: n/a
+#  modules/neibers/cbos/alert/src/Form/AlertForm.php: n/a
+#  modules/neibers/cbos/alert/src/Plugin/Block/AlertIconBlock.php: n/a
+#  modules/neibers/cbos/alert/config/install/core.entity_view_mode.neibers_alert.compact.yml: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2019-06-27 11:58+0800\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: modules/neibers/cbos/alert/neibers_alert.module:18
+msgid "About"
+msgstr "关于"
+
+#: modules/neibers/cbos/alert/neibers_alert.info.yml:0 modules/neibers/cbos/alert/src/Entity/Alert.php:12 modules/neibers/cbos/alert/config/install/views.view.neibers_alert.yml:0;0
+msgid "Alert"
+msgstr "预警"
+
+#: modules/neibers/cbos/alert/neibers_alert.info.yml:0
+msgid "Neibers cbos"
+msgstr "eAbax 公共对象"
+
+#: modules/neibers/cbos/alert/neibers_alert.links.action.yml:0
+msgid "Add Alert"
+msgstr "添加预警"
+
+#: modules/neibers/cbos/alert/neibers_alert.links.action.yml:0
+msgid "Add Alert type"
+msgstr "添加预警类型"
+
+#: modules/neibers/cbos/alert/neibers_alert.links.menu.yml:0
+msgid "Alert list"
+msgstr "预警列表"
+
+#: modules/neibers/cbos/alert/neibers_alert.links.menu.yml:0 modules/neibers/cbos/alert/src/AlertTypeListBuilder.php:17 modules/neibers/cbos/alert/src/Entity/Alert.php:12 modules/neibers/cbos/alert/src/Entity/AlertType.php:8
+msgid "Alert type"
+msgstr "预警类型"
+
+#: modules/neibers/cbos/alert/neibers_alert.links.menu.yml:0
+msgid "List neibers_alerts"
+msgstr "预警列表"
+
+#: modules/neibers/cbos/alert/neibers_alert.links.menu.yml:0
+msgid "List Alert type (bundles)"
+msgstr "预警类型列表"
+
+#: modules/neibers/cbos/alert/neibers_alert.links.task.yml:0
+msgid "View"
+msgstr "查看"
+
+#: modules/neibers/cbos/alert/neibers_alert.links.task.yml:0
+msgid "Edit"
+msgstr "编辑"
+
+#: modules/neibers/cbos/alert/neibers_alert.links.task.yml:0
+msgid "Delete"
+msgstr "删除"
+
+#: modules/neibers/cbos/alert/neibers_alert.permissions.yml:0
+msgid "Create new neibers_alerts"
+msgstr "创建预警"
+
+#: modules/neibers/cbos/alert/neibers_alert.permissions.yml:0
+msgid "Administer neibers_alerts"
+msgstr "管理预警"
+
+#: modules/neibers/cbos/alert/neibers_alert.permissions.yml:0
+msgid "Allow to access the administration form to configure neibers_alerts."
+msgstr "允许访问预警配置表单。"
+
+#: modules/neibers/cbos/alert/neibers_alert.permissions.yml:0
+msgid "Delete neibers_alerts"
+msgstr "删除预警"
+
+#: modules/neibers/cbos/alert/neibers_alert.permissions.yml:0
+msgid "Edit neibers_alerts"
+msgstr "编辑预警"
+
+#: modules/neibers/cbos/alert/neibers_alert.permissions.yml:0
+msgid "View neibers_alerts"
+msgstr "查看预警"
+
+#: modules/neibers/cbos/alert/config/schema/neibers_alert_type.schema.yml:0
+msgid "Alert type config"
+msgstr "预警类型配置"
+
+
+
+#: modules/neibers/cbos/alert/config/schema/neibers_alert_type.schema.yml:0 modules/neibers/cbos/alert/src/Form/AlertTypeForm.php:46
+msgid "Color"
+msgstr "颜色"
+
+#: modules/neibers/cbos/alert/src/AlertListBuilder.php:19
+msgid "Alert ID"
+msgstr "预警序号"
+
+#: modules/neibers/cbos/alert/src/Entity/Alert.php:143
+msgid "The user ID of author of the Alert entity."
+msgstr "预警的创建者ID"
+
+#: modules/neibers/cbos/alert/src/Entity/Alert.php:167
+msgid "Message text"
+msgstr "内容"
+
+#: modules/neibers/cbos/alert/src/Entity/Alert.php:188
+msgid "The time that the entity was created."
+msgstr "预警的创建时间。"
+
+#: modules/neibers/cbos/alert/src/Entity/Alert.php:192
+msgid "The time that the entity was last edited."
+msgstr "预警的最近一次变更时间。"
+
+#: modules/neibers/cbos/alert/src/Entity/Alert.php:12
+msgid "Alerts"
+msgstr "预警"
+
+#: modules/neibers/cbos/alert/src/Entity/AlertType.php:8
+msgid "Alert types"
+msgstr "预警类型"
+
+#: modules/neibers/cbos/alert/src/Form/AlertForm.php:37
+msgid "Created the %label Alert."
+msgstr "已创建预警 %label 。"
+
+#: modules/neibers/cbos/alert/src/Form/AlertForm.php:43
+msgid "Saved the %label Alert."
+msgstr "已保存预警%label."
+
+#: modules/neibers/cbos/alert/src/Form/AlertTypeForm.php:22
+msgid "Label"
+msgstr "名称"
+
+#: modules/neibers/cbos/alert/src/Form/AlertTypeForm.php:25
+msgid "Label for the Alert type."
+msgstr "预警类型名称"
+
+#: modules/neibers/cbos/alert/src/Form/AlertTypeForm.php:62
+msgid "Created the %label Alert type."
+msgstr "已创建预警类型 %label 。"
+
+#: modules/neibers/cbos/alert/src/Form/AlertTypeForm.php:68
+msgid "Saved the %label Alert type."
+msgstr "已保存预警类型 %label 。"
+
+#: modules/neibers/cbos/alert/src/Plugin/Block/AlertIconBlock.php:87
+msgid "You have %num notifications"
+msgstr "您有%num个未读信息"
+
+#: modules/neibers/cbos/alert/src/Plugin/Block/AlertIconBlock.php:88
+msgid "No notifications."
+msgstr "暂无信息."
+
+#: modules/neibers/cbos/alert/src/Plugin/Block/AlertIconBlock.php:14
+msgid "Alert icon block"
+msgstr "预警信息图标区块"
+
+#: modules/neibers/cbos/alert/config/install/core.entity_view_mode.neibers_alert.compact.yml:0
+msgid "Compact"
+msgstr "复合"
+

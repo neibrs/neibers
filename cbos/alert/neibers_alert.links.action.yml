@@ -1,0 +1,10 @@
+entity.neibers_alert.add_form:
+  route_name: entity.neibers_alert.add_page
+  title: 'Add Alert'
+  appears_on:
+    - entity.neibers_alert.collection
+entity.neibers_alert_type.add_form:
+  route_name: entity.neibers_alert_type.add_form
+  title: 'Add Alert type'
+  appears_on:
+    - entity.neibers_alert_type.collection
