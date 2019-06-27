@@ -3,5 +3,9 @@ services:
     class: Drupal\neibers_recurring\RecurringOrderManager
     arguments: ['@entity_type.manager', '@datetime.time']
    
-
+  neibers_recurring.event_subscriber.order_subscriber:
+    class: Drupal\neibers_recurring\EventSubscriber\OrderSubscriber
+    arguments: ['@entity_type.manager', '@commerce_recurring.order_manager', '@datetime.time']
+    tags:
+      - { name: event_subscriber }
 
