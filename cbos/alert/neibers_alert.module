@@ -30,7 +30,7 @@ function neibers_alert_theme() {
     'neibers_alert' => [
       'render element' => 'elements',
       'file' => 'neibers_alert.page.inc',
-      'template' => 'neibers_alert',
+      'template' => 'neibers-alert',
     ],
     'neibers_alert_content_add_list' => [
       'render element' => 'content',
