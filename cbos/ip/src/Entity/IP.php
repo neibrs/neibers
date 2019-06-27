@@ -133,7 +133,7 @@ class IP extends RevisionableContentEntityBase implements IPInterface {
       if ($route_parameters->get('transition_id') == 'stop') {
         // Stop use ip.
         if ($this->type->entity->id() == 'inet') {
-          $bips = $this->entityTypeManager()->getStorage('ip')->loadByProperties([
+          $bips = $this->entityTypeManager()->getStorage('neibers_ip')->loadByProperties([
             'type' => 'onet',
             'order_id' => $this->order_id->target_id,
           ]);
