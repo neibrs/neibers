@@ -1,0 +1,10 @@
+name: Mall
+type: theme
+description: 'The frontend theme of mall.'
+package: Neibers
+core: 8.x
+libraries:
+  - neibers_mall/global
+ 
+base theme: false
+
