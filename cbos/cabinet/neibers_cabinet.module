@@ -27,18 +27,18 @@ function neibers_cabinet_help($route_name, RouteMatchInterface $route_match) {
  * Implements hook_theme().
  */
 function neibers_cabinet_theme() {
-  $theme = [];
-  $theme['neibers_cabinet'] = [
-    'render element' => 'elements',
-    'file' => 'neibers_cabinet.page.inc',
-    'template' => 'neibers-cabinet',
+  return [
+    'neibers_cabinet' => [
+      'render element' => 'elements',
+      'file' => 'neibers_cabinet.page.inc',
+      'template' => 'neibers-cabinet',
+    ],
+    'neibers_cabinet_content_add_list' => [
+      'render element' => 'content',
+      'variables' => ['content' => NULL],
+      'file' => 'neibers_cabinet.page.inc',
+    ],
   ];
-  $theme['neibers_cabinet_content_add_list'] = [
-    'render element' => 'content',
-    'variables' => ['content' => NULL],
-    'file' => 'neibers_cabinet.page.inc',
-  ];
-  return $theme;
 }
 
 /**

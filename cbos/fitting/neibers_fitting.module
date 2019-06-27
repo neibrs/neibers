@@ -27,18 +27,18 @@ function neibers_fitting_help($route_name, RouteMatchInterface $route_match) {
  * Implements hook_theme().
  */
 function neibers_fitting_theme() {
-  $theme = [];
-  $theme['neibers_fitting'] = [
-    'render element' => 'elements',
-    'file' => 'neibers_fitting.page.inc',
-    'template' => 'neibers-fitting',
+  return [
+    'neibers_fitting' => [
+      'render element' => 'elements',
+      'file' => 'neibers_fitting.page.inc',
+      'template' => 'neibers-fitting',
+    ],
+    'neibers_fitting_content_add_list' => [
+      'render element' => 'content',
+      'variables' => ['content' => NULL],
+      'file' => 'neibers_fitting.page.inc',
+    ],
   ];
-  $theme['neibers_fitting_content_add_list'] = [
-    'render element' => 'content',
-    'variables' => ['content' => NULL],
-    'file' => 'neibers_fitting.page.inc',
-  ];
-  return $theme;
 }
 
 /**

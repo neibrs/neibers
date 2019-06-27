@@ -31,17 +31,17 @@ function neibers_ip_help($route_name, RouteMatchInterface $route_match) {
  * Implements hook_theme().
  */
 function neibers_ip_theme() {
-  $theme = [];
-  $theme['neibers_ip'] = [
-    'render element' => 'elements',
-    'file' => 'neibers_ip.page.inc',
+  return [
+    'neibers_ip' => [
+      'render element' => 'elements',
+      'file' => 'neibers_ip.page.inc',
+    ],
+    'neibers_ip_content_add_list' => [
+      'render element' => 'content',
+      'variables' => ['content' => NULL],
+      'file' => 'neibers_ip.page.inc',
+    ],
   ];
-  $theme['neibers_ip_content_add_list'] = [
-    'render element' => 'content',
-    'variables' => ['content' => NULL],
-    'file' => 'neibers_ip.page.inc',
-  ];
-  return $theme;
 }
 
 /**

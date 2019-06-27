@@ -1,4 +1,3 @@
-# Zh-hans
 * neibers_cabinet(机柜)
 
 * Seat type:

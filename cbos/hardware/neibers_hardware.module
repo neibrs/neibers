@@ -31,17 +31,17 @@ function neibers_hardware_help($route_name, RouteMatchInterface $route_match) {
  * Implements hook_theme().
  */
 function neibers_hardware_theme() {
-  $theme = [];
-  $theme['neibers_hardware'] = [
-    'render element' => 'elements',
-    'file' => 'neibers_hardware.page.inc',
+  return [
+    'neibers_hardware' => [
+      'render element' => 'elements',
+      'file' => 'neibers_hardware.page.inc',
+    ],
+    'neibers_hardware_content_add_list' => [
+      'render element' => 'content',
+      'variables' => ['content' => NULL],
+      'file' => 'neibers_hardware.page.inc',
+    ],
   ];
-  $theme['neibers_hardware_content_add_list'] = [
-    'render element' => 'content',
-    'variables' => ['content' => NULL],
-    'file' => 'neibers_hardware.page.inc',
-  ];
-  return $theme;
 }
 
 /**

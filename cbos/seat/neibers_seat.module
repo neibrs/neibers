@@ -28,19 +28,18 @@ function neibers_seat_help($route_name, RouteMatchInterface $route_match) {
  * Implements hook_theme().
  */
 function neibers_seat_theme() {
-  $theme = [];
-
-  $theme['neibers_seat'] = [
-    'render element' => 'elements',
-    'file' => 'neibers_seat.page.inc',
-    'template' => 'neibers-seat',
+  return [
+    'neibers_seat' => [
+      'render element' => 'elements',
+      'file' => 'neibers_seat.page.inc',
+      'template' => 'neibers-seat',
+    ],
+    'neibers_seat_content_add_list' => [
+      'render element' => 'content',
+      'variables' => ['content' => NULL],
+      'file' => 'neibers_seat.page.inc',
+    ],
   ];
-  $theme['neibers_seat_content_add_list'] = [
-    'render element' => 'content',
-    'variables' => ['content' => NULL],
-    'file' => 'neibers_seat.page.inc',
-  ];
-  return $theme;
 }
 
 /**
