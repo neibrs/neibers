@@ -324,11 +324,11 @@ display:
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
-          empty: ''
+          empty: '-'
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          type: separator
+          type: ol
           separator: ', '
           entity_type: commerce_order
           plugin_id: mips
@@ -376,11 +376,12 @@ display:
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
-          empty: ''
+          empty: '-'
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           type: ol
+          separator: ', '
           sepatraor: ','
           set_precision: false
           precision: 0
