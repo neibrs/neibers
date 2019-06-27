@@ -60,6 +60,8 @@ class IPManager implements IPManagerInterface {
           'transition_id' => $transition->id(),
           'entity_type' => 'neibers_ip',
           'entity_id' => $entity->id(),
+        ], [
+          'query' => \Drupal::destination()->getAsArray(),
         ]),
       ];
     }
