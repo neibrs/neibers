@@ -8,11 +8,10 @@ package: 'Neibers product'
 dependencies:
   - commerce:commerce_cart
   - commerce:commerce_checkout
-  - commerce:commerce_order
   - commerce:commerce_payment_example
-  - commerce:commerce_recurring
   - commerce:commerce_store
   - config_rewrite:config_rewrite
   - menu_plus
   - migrate_source_xls:migrate_source_xls
   - migrate_tools:migrate_tools
+  - neibers_recurring

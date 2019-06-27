@@ -1,0 +1,7 @@
+name: 'Recurring'
+type: module
+description: 'The override of commerce recurring.'
+core: 8.x
+package: 'Neibers'
+dependencies:
+  - commerce_recurring
