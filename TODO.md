@@ -50,6 +50,9 @@
 * /ipIP管理页面添加表单选择器table select.
 * ips_order_form视图优化
 
+改进:
+* 将recurring相关内容独立出来，放入product类里。
+
 
 # 原始网站数据初始化流程
 * 添加人民币币种
