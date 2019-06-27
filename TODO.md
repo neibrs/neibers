@@ -41,8 +41,8 @@
   * 单一IP分配(Fixed)
   * 业务IP批量分配
   * 管理IP可支持重复分配给客户
-* 客户订单详情内的IP列表
-  * 订单详情内可停用业务IP
+* 客户订单详情内的IP列表(Fixed)(Need to update with views.)
+  * 订单详情内可停用业务IP(Fixed)
 * 个人订阅订单列表(Fixed)
 * 实体内的bundle数据需要锁定操作(Fixed)
   * hardware_type(Fixed)
@@ -54,6 +54,7 @@
 * 管理IP详情添加绑定该服务器的业务IP列表
 * 业务IP详情添加显示所属服务器的其他相关IP
 * 原始订单详情内添加虚拟字段(周期性订单列表,含费用)
+* 新产生的周期订单是否需要显示各种IP？(需求)
 
 难点:
 * /ipIP管理页面添加表单选择器table select.
