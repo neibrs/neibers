@@ -5,3 +5,5 @@ neibers_mall.platform:
     _title: 'Platform'
   requirements:
     _permission: 'access administration pages'
+neibers_mall.order_canonical:
+  path: '/admin/commerce/orders/{order_id}'
