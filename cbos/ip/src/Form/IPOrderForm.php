@@ -60,6 +60,8 @@ class IPOrderForm extends FormBase implements ContainerInjectionInterface {
       ],
       '#open' => TRUE,
     ];
+    /** Build ips form. */
+    $form['ips_collection'] = $this->buildIpsForm($form, $form_state, $order, $display);
 
     $form['ips'] = $this->buildIpsTableForm($form, $form_state, $order, $display);
 
@@ -144,6 +146,29 @@ class IPOrderForm extends FormBase implements ContainerInjectionInterface {
 
 
     return $form['ips'];
+  }
+
+  /**
+   * @description build ips form.
+   */
+  public function buildIpsForm(&$form, FormStateInterface $form_state, $order = NULL, $display = NULL) {
+    $view = Views::getView('ips_order_form');
+
+    $form['ips_collection'] = [
+      '#type' => 'details',
+      '#title' => $this->t('IP collection'),
+      '#weight' => 10,
+      '#open' => TRUE,
+    ];
+    $form['ips_collection']['ips'] = [
+      '#type' => 'view',
+      '#view' => $view,
+      '#display_id' => 'default',
+      '#arguments' => [
+        $this->order->id(),
+      ],
+    ];
+    return $form['ips_collection'];
   }
 
   /**
