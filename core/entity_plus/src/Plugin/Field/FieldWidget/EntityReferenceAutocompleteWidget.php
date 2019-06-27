@@ -25,10 +25,6 @@ class EntityReferenceAutocompleteWidget extends EntityReferenceAutocompleteWidge
       if ($entity_type->hasLinkTemplate('add-page')) {
         $add_route = 'entity.' . $target_type . '.add_page';
       }
-      elseif ($entity_type->hasLinkTemplate('add-form')) {
-        $add_route = 'entity.' . $target_type . '.add_form';
-        $element['target_id']['#attributes']['data-add-path'] = Url::fromRoute('entity.' . $target_type . '.add_form')->toString();
-      }
       if (isset($add_route)) {
         $element['target_id']['#attributes']['data-add-path'] = Url::fromRoute($add_route, [], [
           'query' => \Drupal::destination()->getAsArray(),
