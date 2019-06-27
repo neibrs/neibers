@@ -1,0 +1,7 @@
+services:
+  neibers_recurring.order_manager:
+    class: \Drupal\neibers_recurring\RecurringOrderManager
+    arguments: ['@entity_type.manager', '@datetime.time']
+   
+
+
