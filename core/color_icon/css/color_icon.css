@@ -1,0 +1,6 @@
+.color-square {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #f4f4f4;
+}

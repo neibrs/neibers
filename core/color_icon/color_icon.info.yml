@@ -1,0 +1,7 @@
+name: 'Color icon'
+type: module
+description: 'Color icon'
+core: 8.x
+interface translation project: color_icon
+interface translation server pattern: modules/neibers/core/%project/translations/%project.%language.po
+package: 'Neibers core'

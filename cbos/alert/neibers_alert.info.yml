@@ -2,7 +2,7 @@ name: Alert
 type: module
 core: 8.x
 interface translation project: neibers_alert
-interface translation server pattern: modules/neibers/cbos/%project/translations/%project.%language.po
+interface translation server pattern: modules/neibers/cbos/alert/translations/%project.%language.po
 package: Neibers cbos
 dependencies:
   - color_icon
