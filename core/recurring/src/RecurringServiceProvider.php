@@ -12,6 +12,6 @@ class RecurringServiceProvider implements ServiceModifierInterface {
    */
   public function alter(ContainerBuilder $container) {
     $definition = $container->getDefinition('commerce_recurring.order_manager');
-    $definition->setClass('Drupal\neibers_recurring\RecurringOrderManagerBase');
+    $definition->setClass('Drupal\neibers_recurring\RecurringOrderManager');
   }
 }
