@@ -9,11 +9,11 @@ use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
- * Provides a 'NavigateBlock' block.
+ * Provides a 'ModuleMenuBlock' block.
  *
  * @Block(
  *  id = "module_menu_block",
- *  admin_label = @Translation("Navigate block for exsen theme"),
+ *  admin_label = @Translation("Module menu block"),
  * )
  */
 class ModuleMenuBlock extends BlockBase implements ContainerFactoryPluginInterface {
