@@ -8138,6 +8138,10 @@ body.navbar-is-fixed-bottom {
   }
 }
 
+.navbar.container-fluid {
+  width: 100%;
+}
+
 /**
  * Node styling.
  */

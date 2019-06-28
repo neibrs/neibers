@@ -12,11 +12,11 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  * Provides a 'NavigateBlock' block.
  *
  * @Block(
- *  id = "navigate_block",
+ *  id = "module_menu_block",
  *  admin_label = @Translation("Navigate block for exsen theme"),
  * )
  */
-class NavigateBlock extends BlockBase implements ContainerFactoryPluginInterface {
+class ModuleMenuBlock extends BlockBase implements ContainerFactoryPluginInterface {
 
   /**
  * @var \Drupal\Core\Entity\EntityTypeManagerInterface  */
@@ -60,7 +60,7 @@ class NavigateBlock extends BlockBase implements ContainerFactoryPluginInterface
     }
 
     $build['navigate_block'] = [
-      '#theme' => 'navigate_item_list',
+      '#theme' => 'module_menu_item_list',
       '#items' => $items,
     ];
 

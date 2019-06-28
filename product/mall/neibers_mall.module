@@ -26,7 +26,7 @@ function neibers_mall_help($route_name, RouteMatchInterface $route_match) {
  */
 function neibers_mall_theme($existing, $type, $theme, $path) {
   return [
-    'navigate_item_list' => [
+    'module_menu_item_list' => [
       'variables' => [
         'items' => [],
       ],
