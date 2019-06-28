@@ -8142,6 +8142,43 @@ body.navbar-is-fixed-bottom {
   width: 100%;
 }
 
+.navbar .module-menu {
+  float: left;
+  overflow: hidden;
+}
+
+.navbar .module-menu ul {
+  margin-left: -1px;
+}
+
+.navbar .module-menu ul li {
+  line-height: 16px;
+  height: 16px;
+  margin: 16px 0;
+  box-shadow: -1px 0 0 rgba(0, 0, 0, 0.15);
+  float: left;
+}
+
+.navbar .module-menu ul li a {
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  display: block;
+  height: 20px;
+  padding: 14px 25px;
+  margin-top: -16px;
+  margin-left: 1px;
+  margin-right: 2px;
+  opacity: 0.8;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.navbar .module-menu ul.active a {
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#26000000', endColorstr='#26000000');
+  background: rgba(0, 0, 0, 0.15);
+  opacity: 1;
+}
+
 /**
  * Node styling.
  */
@@ -8562,6 +8599,11 @@ ol, ul {
 
 .popover ol:last-child, .popover ul:last-child {
   margin-bottom: 0;
+}
+
+ul, ol, li {
+  list-style-image: none;
+  list-style-type: none;
 }
 
 .page-header {
