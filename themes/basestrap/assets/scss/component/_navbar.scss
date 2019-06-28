@@ -105,3 +105,36 @@ body {
   }
 }
 
+div.bgSelector div#bgColorSelector {
+  width: 100%;
+  overflow: hidden;
+  #bscParent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 9998;
+    #bscDrag {
+      position: absolute;
+      left: 0;
+      float: left;
+      z-index: 9999;
+      img {
+        position: relative;
+        z-index: -1;
+        width: 47px;
+        height: 35px;
+        cursor: ew-resize;
+      }
+    }
+    #bscDrop {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      td {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}

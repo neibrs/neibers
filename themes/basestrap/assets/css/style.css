@@ -8179,6 +8179,45 @@ body.navbar-is-fixed-bottom {
   opacity: 1;
 }
 
+div.bgSelector div#bgColorSelector {
+  width: 100%;
+  overflow: hidden;
+}
+
+div.bgSelector div#bgColorSelector #bscParent {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 9998;
+}
+
+div.bgSelector div#bgColorSelector #bscParent #bscDrag {
+  position: absolute;
+  left: 0;
+  float: left;
+  z-index: 9999;
+}
+
+div.bgSelector div#bgColorSelector #bscParent #bscDrag img {
+  position: relative;
+  z-index: -1;
+  width: 47px;
+  height: 35px;
+  cursor: ew-resize;
+}
+
+div.bgSelector div#bgColorSelector #bscParent #bscDrop {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+div.bgSelector div#bgColorSelector #bscParent #bscDrop td {
+  margin: 0;
+  padding: 0;
+}
+
 /**
  * Node styling.
  */

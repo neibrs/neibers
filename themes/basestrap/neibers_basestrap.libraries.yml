@@ -9,3 +9,12 @@ framework:
     - core/jquery
     - core/drupal
     - core/drupalSettings
+
+basestrap.colorSelector:
+  js:
+    assets/plugins/jquery/jquery.bgColorSelector.js: {}
+    assets/js/colorSelector.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.cookie
+    - core/jquery.once
