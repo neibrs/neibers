@@ -70,7 +70,12 @@ body {
 .navbar.container-fluid {
   width: 100%;
 }
-
+#navbar {
+  background-color: rgb(171, 50, 85);
+  a {
+    color: #fff;
+  }
+}
 // Module menu
 .navbar .module-menu {
   float: left;

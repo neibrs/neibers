@@ -8142,6 +8142,14 @@ body.navbar-is-fixed-bottom {
   width: 100%;
 }
 
+#navbar {
+  background-color: #ab3255;
+}
+
+#navbar a {
+  color: #fff;
+}
+
 .navbar .module-menu {
   float: left;
   overflow: hidden;
