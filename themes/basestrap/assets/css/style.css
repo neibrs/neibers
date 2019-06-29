@@ -8229,6 +8229,11 @@ div.bgSelector div#bgColorSelector #bscParent #bscDrop td {
   padding: 0;
 }
 
+div.bgSelector div#bgColorSelector #bscParent #bscDrop td span {
+  display: block;
+  width: 100%;
+}
+
 /**
  * Node styling.
  */
