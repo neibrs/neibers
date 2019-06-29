@@ -18,3 +18,5 @@ basestrap.colorSelector:
     - core/jquery
     - core/jquery.cookie
     - core/jquery.once
+    - core/jquery.ui.droppable
+    - core/jquery.ui.draggable

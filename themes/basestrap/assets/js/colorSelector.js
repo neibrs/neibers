@@ -60,14 +60,14 @@
           if ($(this).html() == '') {
             $(this).sColor({
               colors: bgColorSelectorColors,  // 必填，所有颜色 c:色号（必填） cName:颜色名称（可空）
-              colorsWidth: '50px',  // 必填，颜色的高度
-              colorsHeight: '31px',  // 必填，颜色的高度
+              // colorsWidth: 47,  // 必填，颜色的高度
+              colorsHeight: 30,  // 必填，颜色的高度
               curTop: '0', // 可选，颜色选择对象高偏移，默认0
-              curImg: '../images/cur.png',  //必填，颜色选择对象图片路径
+              curImg: settings.theme.path + '/assets/images/cur.png',  //必填，颜色选择对象图片路径
               form: 'drag', // 可选，切换方式，drag或click，默认drag
               keyEvent: true,  // 可选，开启键盘控制，默认true
               prevColor: true, // 可选，开启切换页面后背景色是上一页面所选背景色，如不填则换页后背景色是defaultItem，默认false
-              defaultItem: ($.cookie('bgColorSelectorPosition') != null) ? $.cookie('bgColorSelectorPosition') : 22  // 可选，第几个颜色的索引作为初始颜色，默认第1个颜色
+              defaultItem: ($.cookie('bgColorSelectorPosition') != null) ? $.cookie('bgColorSelectorPosition') : 48  // 可选，第几个颜色的索引作为初始颜色，默认第1个颜色
             });
           }
         });

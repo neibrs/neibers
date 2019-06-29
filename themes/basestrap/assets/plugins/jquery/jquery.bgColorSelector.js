@@ -1,9 +1,9 @@
-(function($) {
+(function($, Drupal, drupalSettings) {
     $.fn.sColor = function(d) {
         var f = {
             colors: '',
             colorsHeight: 26,
-            curImg: 'images/cur.png',
+            curImg: drupalSettings.theme.path + '/assets/images/cur.png',
             curTop: 0,
             form: 'drag',
             keyEvent: true,
@@ -29,7 +29,7 @@
         var x = '<div id="bgColorSelector"><div id="bscParent"><div id="bscDrag" title="滑动一下，焕新色彩"><img src="' + s + '" alt="" /></div><table id="bscDrop" cellpadding="0" cellspacing="0"><tr>';
         $.each(q,
         function(i, a) {
-            x += '<td><span style="background-color:' + a.c + '">&nbsp;</span></td>'
+            x += '<td style="width: ' + $(o).width()/$(q).length +'"><span style="background-color:' + a.c + '">&nbsp;</span></td>'
         });
         x += '</tr></table></div></div>';
         $(this).empty().append(x);
@@ -63,7 +63,7 @@
             var D = $(p).eq(h).find('span').offset().left - $(n).offset().left;
             if (h > 0) $(o).css('left', D);
             var E = $(p).eq(h).find('span').css('background-color');
-            $('body').css('background-color', E);
+            $('#navbar').css('background-color', E);
             $(o).attr('title', $(p).eq(h).find('span').attr('title'));
             if (j > 1) {
                 if (v) {
@@ -88,7 +88,7 @@
                         function() {
                             k = true;
                             var a = $(p).eq(h).find('span').css('background-color');
-                            $('body').css('background-color', a);
+                            $('#navbar').css('background-color', a);
                             $(this).attr('title', $(p).eq(h).find('span').attr('title'))
                         })
                     })
@@ -105,7 +105,7 @@
                         function() {
                             k = true;
                             var a = $(p).eq(h).find('span').css('background-color');
-                            $('body').css('background-color', a);
+                            $('#navbar').css('background-color', a);
                             $(this).attr('title', $(p).eq(h).find('span').attr('title'))
                         })
                     })
@@ -119,7 +119,7 @@
                         accept: o,
                         over: function(a, b) {
                             var c = $(this).find('span').css('background-color');
-                            $('body').css('background-color', c);
+                            $('#navbar').css('background-color', c);
                             h = $(p).find('span').index($(this).find('span'))
                         },
                         drop: function(a, b) {
@@ -131,7 +131,7 @@
                                 $(this).attr('title', $(p).eq(h).find('span').attr('title'))
                             });
                             var c = $(this).find('span').css('background-color');
-                            $('body').css('background-color', c);
+                            $('#navbar').css('background-color', c);
                             h = $(p).find('span').index($(this).find('span'));
                             B(h)
                         }
@@ -142,4 +142,4 @@
             }
         }
     }
-})(jQuery)
+})(jQuery, Drupal, drupalSettings);

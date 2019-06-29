@@ -8143,6 +8143,7 @@ body.navbar-is-fixed-bottom {
 }
 
 #navbar {
+  height: 48px;
   background-color: #ab3255;
 }
 
@@ -8150,16 +8151,18 @@ body.navbar-is-fixed-bottom {
   color: #fff;
 }
 
-.navbar .module-menu {
+.module-menu {
   float: left;
   overflow: hidden;
 }
 
-.navbar .module-menu ul {
+.module-menu ul {
   margin-left: -1px;
 }
 
-.navbar .module-menu ul li {
+.module-menu ul li {
+  list-style-image: none;
+  list-style-type: none;
   line-height: 16px;
   height: 16px;
   margin: 16px 0;
@@ -8167,7 +8170,7 @@ body.navbar-is-fixed-bottom {
   float: left;
 }
 
-.navbar .module-menu ul li a {
+.module-menu ul li a {
   font-size: 16px;
   line-height: 20px;
   color: #fff;
@@ -8181,7 +8184,7 @@ body.navbar-is-fixed-bottom {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
 }
 
-.navbar .module-menu ul.active a {
+.module-menu ul.active a {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#26000000', endColorstr='#26000000');
   background: rgba(0, 0, 0, 0.15);
   opacity: 1;
@@ -8646,11 +8649,6 @@ ol, ul {
 
 .popover ol:last-child, .popover ul:last-child {
   margin-bottom: 0;
-}
-
-ul, ol, li {
-  list-style-image: none;
-  list-style-type: none;
 }
 
 .page-header {

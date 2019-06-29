@@ -71,18 +71,21 @@ body {
   width: 100%;
 }
 #navbar {
+  height: 48px;
   background-color: rgb(171, 50, 85);
   a {
     color: #fff;
   }
 }
 // Module menu
-.navbar .module-menu {
+.module-menu {
   float: left;
   overflow: hidden;
   ul {
     margin-left: -1px;
     li {
+      list-style-image: none;
+      list-style-type: none;
       line-height: 16px;
       height: 16px;
       margin: 16px 0;
