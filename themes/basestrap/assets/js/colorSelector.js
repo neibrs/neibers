@@ -73,9 +73,9 @@
         });
       });
       if ($.cookie('bgColorSelectorPosition') != null) {
-        $('.navbar').css('background-color', bgColorSelectorColors[$.cookie('bgColorSelectorPosition')].c);
+        $('#navbar').css('background-color', bgColorSelectorColors[$.cookie('bgColorSelectorPosition')].c);
       } else {
-        $('.navbar').css('background-color', bgColorSelectorColors[48].c);
+        $('#navbar').css('background-color', bgColorSelectorColors[48].c);
       }
     }
   };
