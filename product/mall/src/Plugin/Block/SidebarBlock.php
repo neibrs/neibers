@@ -70,8 +70,8 @@ class SidebarBlock extends BlockBase implements ContainerFactoryPluginInterface 
     $menus = $this->menuPlusManager->getMenuPlus();
 
     foreach ($menus as $menu) {
-      $items = $this->buildMenu($menu->id())['#items'];
-      $items = is_null($items) ? [] : $items;
+      $items = $this->buildMenu($menu->id());
+      $items = isset($items['#items']) ? $items['#items'] : [];
       $tree[$menu->id()]['items'] = $items;
       $tree[$menu->id()]['active'] = $this->getActiveTag($items);
     }

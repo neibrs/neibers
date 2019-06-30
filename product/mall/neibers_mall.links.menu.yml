@@ -1,7 +1,7 @@
 neibers_mall.commerce:
   title: 'Commerce products'
   route_name: entity.commerce_product.collection
-  menu_name: business
+  menu_name: commerce
   weight: 200
 
 neibers_mall.commerce.product:
