@@ -11,8 +11,10 @@
  */
 
 // Set the directory for the theme root used to locate images, fonts etc.
-$theme-root: '..';
+$theme-root: '../..';
 
 // Set other directories relative to theme root.
-$image-path: '#{$theme-root}/images';
-$icon-font-path: '#{$theme-root}/node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+$image-path: '#{$theme-root}/assets/images';
+$icon-font-path: '#{$theme-root}/assets/node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+$font-awesome-path: '#{$theme-root}/assets/node_modules/font-awesome/fonts/';

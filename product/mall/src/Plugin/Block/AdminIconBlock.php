@@ -19,7 +19,7 @@ class AdminIconBlock extends BlockBase {
    */
   public function build() {
     $build = [];
-    $build['admin_icon_block']['#markup'] = 'Implement AdminIconBlock.';
+    $build['admin_icon_block']['#markup'] = 'Implement icons for admin right navbar.';
 
     return $build;
   }

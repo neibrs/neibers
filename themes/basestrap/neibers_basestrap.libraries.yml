@@ -5,6 +5,7 @@ framework:
   js:
     assets/node_modules/bootstrap-sass/assets/javascripts/bootstrap.js: {}
     assets/js/global.js: {}
+    assets/js/framework-admin.js: {}
   dependencies:
     - core/jquery
     - core/drupal
