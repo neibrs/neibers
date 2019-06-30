@@ -113,8 +113,11 @@
       {# Sidebar First #}
       {% if page.sidebar_first %}
         {% block sidebar_first %}
-          <aside class="col-sm-2" role="complementary">
-            {{ page.sidebar_first }}
+          {#<div class="top-border"></div>#}
+          <aside class="col-sm-2" class="admin-main-left" role="complementary">
+            <div class="admincj_nav">
+              {{ page.sidebar_first }}
+            </div>
           </aside>
         {% endblock %}
       {% endif %}
