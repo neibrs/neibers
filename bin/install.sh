@@ -15,13 +15,10 @@ vendor/bin/drush en -y coffee \
 
 vendor/bin/drush en -y commerce_checkout \
   commerce_price \
-  neibers_fitting \
-  neibers_hardware \
-  neibers_ip \
+  neibers_idc \
+  neibers_mall \
   role_menu
 
-#  neibers_idc \
-#  neibers_mall \
 
 # Initial demo data.
 #vendor/bin/drush mim ip_xls

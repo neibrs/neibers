@@ -7,8 +7,8 @@ interface translation server pattern: modules/neibers/product/idc/translations/%
 package: 'Neibers'
 dependencies:
   - neibers_cabinet
+  - neibers_hardware
+  - neibers_ip
   - import
-#  - ip
   - migrate_source_xls:migrate_source_xls
   - role_menu
-  - neibers_hardware

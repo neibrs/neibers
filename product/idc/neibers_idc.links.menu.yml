@@ -145,7 +145,7 @@ neibers_idc.hardware_type.configuration:
   weight: 20
 
 neibers_idc.hardware_type.configuration.type:
-  title: 'Type'
+  title: 'Hardware type'
   route_name: entity.neibers_hardware_type.collection
   parent: neibers_idc.hardware_type.configuration
   weight: 10
