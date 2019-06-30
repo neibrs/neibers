@@ -3,7 +3,7 @@ status: true
 dependencies:
   enforced:
     module:
-      - neibers_fitting
+      - neibers_ip
   config:
     - neibers_ip.type.onet
 id: neibers_ip.onet.default
