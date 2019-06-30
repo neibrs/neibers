@@ -14,6 +14,9 @@ use Drupal\bootstrap\Plugin\Preprocess\PreprocessInterface;
  */
 class Page extends PreprocessBase implements PreprocessInterface {
 
+  /**
+   * {@inheritdoc}
+   */
   public function preprocess(array &$variables, $hook, array $info) {
     global $base_url;
     $theme = \Drupal::theme()->getActiveTheme();
