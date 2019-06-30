@@ -9,7 +9,7 @@ use Drupal\Core\Block\BlockBase;
  *
  * @Block(
  *  id = "admin_icon_block",
- *  admin_label = @Translation("Admin icon block"),
+ *  admin_label = @Translation("Admin icons"),
  * )
  */
 class AdminIconBlock extends BlockBase {

@@ -13,7 +13,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  *
  * @Block(
  *  id = "module_menu_block",
- *  admin_label = @Translation("Module menu block"),
+ *  admin_label = @Translation("Module menus"),
  * )
  */
 class ModuleMenuBlock extends BlockBase implements ContainerFactoryPluginInterface {
