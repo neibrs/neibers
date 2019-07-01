@@ -46,6 +46,23 @@
         }
       });
 
+      /* 后台消息提示 展开伸缩*/
+      $("[ectype='msg_tit']").once('msg_tit').on("click",function(){
+        var t = $(this),
+          con = t.siblings(".msg_content"),
+          Item = t.parents(".item");
+
+        if(con.is(":hidden")){
+          con.slideDown();
+          Item.siblings().find(".msg_content").slideUp();
+          t.find(".iconfont").addClass("icon-up").removeClass("icon-down");
+          Item.siblings().find(".iconfont").removeClass("icon-up").addClass("icon-down");
+        }else{
+          con.slideUp();
+          t.find(".iconfont").removeClass("icon-up").addClass("icon-down");
+        }
+      });
+
       // fold left sidebar menu block
       $(".foldsider").once('foldsider').on('click', function(){
         var leftdiv = $(".admin-main");

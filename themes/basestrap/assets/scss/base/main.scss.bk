@@ -525,19 +525,7 @@ input.error,textarea.error{ background-color: #FFF0F0;background-repeat: repeat;
 .current .icon_27_interface{ background-position:-27px -771px;}
 
 
-.admin-main-left .admincj_nav .item .sub-menu{ float:left; width:140px; display:none; position:relative;}
-.admin-main-left .admincj_nav .item .sub-menu li{ height:40px; width:100%; position:relative;}
-.admin-main-left .admincj_nav .item .sub-menu li a{ display:block; line-height:40px; color:#343434; padding-left:28px; text-shadow: 1px 1px 0 rgba(255,255,255,0.75); text-overflow: ellipsis; white-space: nowrap; overflow: hidden; width: calc(100% - 28px);}
-.admin-main-left .admincj_nav .item .sub-menu li s{ position:absolute; width:2px; height:2px; display:block; background:#acacac; top:19px; left:18px;}
-.admin-main-left .admincj_nav .item .sub-menu li:hover{ filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#7FFFFFFF', endColorstr='#7FFFFFFF');background: rgba(255,255,255,0.5);}
 
-.admin-main-left .admincj_nav .current,.fold .admin-main-left .admincj_nav .item:hover{ z-index:3;}
-.admin-main-left .admincj_nav .current .tit,.fold .admin-main-left .admincj_nav .item:hover .tit{ background-position:-18px -106px;}
-.admin-main-left .admincj_nav .current .sub-menu,.fold .admin-main-left .admincj_nav .item:hover .sub-menu{ display:block;}
-
-.admin-main-left .admincj_nav .item .sub-menu .curr a{ background-position:-82px -106px;}
-.admin-main-left .admincj_nav .item .sub-menu .curr s{ background:#000;}
-.admin-main-left .admincj_nav .item .sub-menu .curr a{ color:#000; font-weight:700;}
 
 .admin-main-right{ background-color: #F7F7F7;position: absolute;z-index: 1;top: 2px;right: 0;bottom: 0;left: 204px;}
 .top-border{ font-size: 0;line-height: 0;filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#26000000', endColorstr='#26000000');background:rgba(0,0,0,0.15);display: block;width: 100%;height: 2px;position: absolute;z-index: 1;top: 0;left: 0;}

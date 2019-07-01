@@ -708,22 +708,7 @@ $(function(){
         }
     }, 'GET', 'JSON');
 	
-	/* 后台消息提示 展开伸缩*/
-	$("[ectype='msg_tit']").on("click",function(){
-		var t = $(this),
-			con = t.siblings(".msg_content"),
-			Item = t.parents(".item");
-			
-		if(con.is(":hidden")){
-			con.slideDown();
-			Item.siblings().find(".msg_content").slideUp();
-			t.find(".iconfont").addClass("icon-up").removeClass("icon-down");
-			Item.siblings().find(".iconfont").removeClass("icon-up").addClass("icon-down");
-		}else{
-			con.slideUp();
-			t.find(".iconfont").removeClass("icon-up").addClass("icon-down");
-		}
-	});
+
 	
 	/* 判断浏览器是ie6 - ie8 后台不可以进入*/
 	if(!$.support.leadingWhitespace){

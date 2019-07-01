@@ -39,3 +39,56 @@ neibers_mall.orders.subscriber:
   route_name: entity.commerce_subscription.collection
   parent: neibers_mall.orders
   weight: 20
+
+
+
+
+
+
+neibers_mall.cloud_service:
+  title: '云服'
+  route_name: entity.commerce_product.collection
+  menu_name: resource
+  weight: 10
+
+neibers_mall.cloud_service.self_update:
+  title: '在线更新'
+  route_name: entity.commerce_product.collection
+  parent: neibers_mall.cloud_service
+  weight: 10
+
+neibers_mall.cloud_service.recommend:
+  title: '平台推荐'
+  route_name: entity.commerce_product.collection
+  parent: neibers_mall.cloud_service
+  weight: 20
+
+neibers_mall.cloud_service.goods:
+  title: '好货推荐'
+  route_name: entity.commerce_product.collection
+  parent: neibers_mall.cloud_service
+  weight: 30
+
+neibers_mall.phone:
+  title: '手机'
+  route_name: entity.commerce_product.collection
+  menu_name: resource
+  weight: 20
+
+neibers_mall.phone.self_update:
+  title: '授权登录'
+  route_name: entity.commerce_product.collection
+  parent: neibers_mall.cloud_service
+  weight: 10
+
+neibers_mall.phone.recommend:
+  title: '导航管理'
+  route_name: entity.commerce_product.collection
+  parent: neibers_mall.cloud_service
+  weight: 20
+
+neibers_mall.phone.goods:
+  title: '广告管理'
+  route_name: entity.commerce_product.collection
+  parent: neibers_mall.cloud_service
+  weight: 30
