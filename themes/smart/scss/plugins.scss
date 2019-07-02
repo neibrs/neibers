@@ -1,0 +1,47 @@
+/*!
+ * SmartAdmin - Responsive WebApp
+ *
+ * Copyright 2014 bootstraphunter.com
+ * Designed and built with all the love in the world by @bootstraphunt.
+ */
+
+// Core variables and mixins
+@import "variables";
+@import "bootstrap/mixins";
+
+
+// Plugins imported alphabatically and by order (remove if not needed)
+
+@import "resource/plugin-bootstrap-tree"; // new with v1.5
+@import "resource/plugin-bootstrap-duallistbox"; // new with v1.5
+@import "resource/plugin-bootstrap-markdown";
+@import "resource/plugin-bootstrap-slider";
+@import "resource/plugin-bootstrap-tagsinput";
+@import "resource/plugin-bootstrap-timepicker";
+@import "resource/plugin-bootstrap-validator"; // new with v1.5
+@import "resource/plugin-cssemotions"; // new with v1.5
+@import "resource/plugin-clockpicker";
+@import "resource/plugin-colorpicker";
+@import "resource/plugin-dataTables.bootstrap";
+@import "resource/plugin-dataTables.colReorder";
+@import "resource/plugin-dataTables.colVis";
+@import "resource/plugin-dataTables.tableTools";
+@import "resource/plugin-dataTables.responsive";
+@import "resource/plugin-dataTables-cust";
+@import "resource/plugin-dropzone";
+@import "resource/plugin-easypiechart";
+@import "resource/plugin-fd-slider";
+@import "resource/plugin-fullcalendar";
+@import "resource/plugin-ion";
+@import "resource/plugin-jarviswidget";
+@import "resource/plugin-jcrop";
+@import "resource/plugin-jqgrid";
+@import "resource/_plugin-jvectormap";
+@import "resource/plugin-select2";
+@import "resource/plugin-smartchat"; // new with v1.5
+@import "resource/plugin-xeditable";
+@import "resource/plugin-smart-notifications";
+@import "resource/plugin-sparklines";
+@import "resource/plugin-summernote";
+@import "resource/plugin-superbox";
+@import "resource/plugin-voicecommand";

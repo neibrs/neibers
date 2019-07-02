@@ -1,8 +1,17 @@
 global:
   version: VERSION
+  css:
+    theme:
+      https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700: { type: external }
+      assets/css/bootstrap.css: {}
+      assets/css/font-awesome.css: {}
+      assets/css/production.css: {}
+      assets/css/skins.css: {}
   js:
     node_modules/bootstrap-sass/assets/javascripts/bootstrap.js: {}
+    assets/js/init.js: {}
   dependencies:
     - core/jquery
+    - core/jquery.ui
     - core/drupal
     - core/drupalSettings

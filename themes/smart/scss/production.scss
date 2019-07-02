@@ -1,0 +1,68 @@
+/*!
+ * SmartAdmin - Responsive WebApp
+ *
+ * Copyright 2014 bootstraphunter.com
+ * Designed and built with all the love in the world by @bootstraphunt.
+ */
+
+// Core variables and mixins
+@import "variables";
+@import "bootstrap/mixins";
+@import "custom"; // custom variable overrides
+
+// Plugins have been moved to "resource-production-plugins.less" file (because IE cannot handle more than 4096 selectors in a stylesheet)
+
+// Libraries (Remove if not needed)
+@import "library/animation/animation-engine";
+@import "library/jqueryui/jquery-ui-1.10.3.custom";
+@import "library/flags/flags";
+@import "library/cursors/cursors";
+
+// Individual pages, sections, and components.  You can remove any of these sections you don't use
+
+// Components
+@import "resource/component-fullscreen";
+@import "resource/component-jqueryui"; // dependency: jquery-ui-1.10.3.custom
+@import "resource/component-pricingtable";
+@import "resource/component-pace";
+@import "resource/component-smartchat";
+@import "resource/component-smartforms";
+
+// Pages
+@import "resource/page-error";
+@import "resource/page-extr";
+
+// Sections
+@import "resource/section-nestables";
+@import "resource/section-calendar";
+@import "resource/section-inbox";
+@import "resource/section-profile";
+@import "resource/section-search";
+@import "resource/section-todo";
+@import "resource/section-timeline";
+@import "resource/section-forum";
+@import "resource/section-ajax-msg";
+@import "resource/section-projects";
+@import "resource/section-ecommerce";
+@import "resource/section-dashboard-social";
+
+// Main THEME (Imports by order - do not change order)
+@import "resource/main";
+@import "resource/main-progress";
+@import "resource/main-container-fix";
+@import "resource/main-special-class";
+@import "resource/main-form-radiocheck";
+@import "resource/main-animated";
+@import "resource/main-colorpallet";
+@import "resource/main-page-footer";
+@import "resource/main-responsive";
+
+// Patches
+@import "resource/ie-fix";
+
+// UI (overrides and new)
+@import "resource/top-menu";
+@import "resource/no-menu";
+
+// Overrides
+@import "overrides";
