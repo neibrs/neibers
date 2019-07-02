@@ -5,8 +5,6 @@ package: Neibers
 core: 8.x
 libraries:
   - neibers_smart/global
- 
 base theme: seven
-
 regions:
   content: Content
