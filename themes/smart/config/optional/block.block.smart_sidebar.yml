@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - neibers_mall
+  theme:
+    - neibers_smart
+third_party_settings:
+  block_style_plugins:
+    simple_class:
+      simple_class: ''
+    box:
+      box_style: ''
+id: smart_sidebar
+theme: neibers_smart
+region: sidebar_first
+weight: 0
+provider: null
+plugin: leftside_block
+settings:
+  id: leftside_block
+  label: 'Sidebar block'
+  provider: neibers_mall
+  label_display: '0'
+visibility: {  }
