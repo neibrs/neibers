@@ -27,7 +27,7 @@
       /*
        * GLOBAL: Sound Config (define sound path, enable or disable all sounds)
        */
-      $.sound_path = "sound/";
+      $.sound_path = settings.theme.path + "/sound/";
       $.sound_on = true;
       /*
        * SAVE INSTANCE REFERENCE (DO NOT CHANGE)

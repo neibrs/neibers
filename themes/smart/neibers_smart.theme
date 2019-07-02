@@ -38,7 +38,12 @@ function neibers_smart_page_attachments_alter(array &$page) {
  * Implements hook_preprocess_page() for page.html.twig.
  */
 function neibers_smart_preprocess_page(array &$variables) {
-
+  global $base_url;
+  $theme = \Drupal::theme()->getActiveTheme();
+  $variables['#attached']['drupalSettings']['theme'] = [
+    'path' => $base_url . '/' . $theme->getPath(),
+  ];
+  $variables['themePath'] = $base_url . '/' . $theme->getPath();
 }
 
 /**
