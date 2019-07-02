@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - neibers_mall
+  theme:
+    - exsen
+id: exsen_admin_icons
+theme: exsen
+region: header
+weight: 0
+provider: null
+plugin: admin_icon_block
+settings:
+  id: admin_icon_block
+  label: 'Admin icons'
+  provider: neibers_mall
+  label_display: '0'
+visibility: {  }
