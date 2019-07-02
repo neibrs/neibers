@@ -7,4 +7,12 @@ libraries:
   - neibers_smart/global
 base theme: seven
 regions:
+  header: Header
+  sidebar_first: 'Sidebar First'
+  sidebar_second: 'Sidebar Second'
+  ribbon: Ribbon
+  first: First
+  second: Second
   content: Content
+  footer: Footer
+  shortcut: Shortcut
