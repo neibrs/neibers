@@ -6,7 +6,7 @@ Neibrs dev 8.x-1.x
   * core module: menu_plus, view_plus, neibers_recurring, color_icon
   * product module: neibers_mall, neibers_idc
   * profiles: neibers_neibrs
-  * themes: neibers_basestrap
+  * themes: neibers_smart
 
 
 
