@@ -8,10 +8,29 @@ global:
       assets/css/production.css: {}
       assets/css/skins.css: {}
   js:
-    node_modules/bootstrap-sass/assets/javascripts/bootstrap.js: {}
+#    node_modules/bootstrap-sass/assets/javascripts/bootstrap.js: {}
+    assets/js/bootstrap/bootstrap.js: {}
+    assets/js/app.config.js: {}
     assets/js/init.js: {}
   dependencies:
     - core/jquery
-    - core/jquery.ui
     - core/drupal
     - core/drupalSettings
+    - neibers_smart/base
+
+base:
+  version: VERSION
+  js:
+    assets/js/jarvismenu.js: {}
+    assets/js/smartwidgets/jarvis.widget.js: {}
+  dependencies:
+    - core/jquery.ui
+    - core/jquery.ui.effects.highlight
+    - neibers_smart/jquery.resizer
+
+jquery.resizer:
+  version: VERSION
+  js:
+    assets/js/plugin/jquery-resizer/jquery-resizer.js: {}
+  dependencies:
+    - core/jquery

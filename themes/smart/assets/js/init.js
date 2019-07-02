@@ -314,453 +314,352 @@
       /*
        * END APP.CONFIG
        */
-
       /*
-       * GLOBAL: interval array (to be used with jarviswidget in ajax and
-       * angular mode) to clear auto fetch interval
+       * Top menu on/off
        */
-      $.intervalArr = [];
-
+      var topmenu = false;
       /*
-       * Calculate nav height
+       * App Initialize
+       * Description: Initializes the app with intApp();
        */
-      var calc_navbar_height = function() {
-          var height = null;
-
-          if ($('#header').length)
-            height = $('#header').height();
-
-          if (height === null)
-            height = $('<div id="header"></div>').height();
-
-          if (height === null)
-            return 49;
-          // default
-          return height;
-        },
-
-        navbar_height = calc_navbar_height,
+      initApp = (function(app) {
         /*
-         * APP DOM REFERENCES
-         * Description: Obj DOM reference, please try to avoid changing these
+         * SMART ACTIONS
          */
-        shortcut_dropdown = $('#shortcut'),
+        app.SmartActions = function(){
 
-        bread_crumb = $('#ribbon ol.breadcrumb'),
-        /*
-         * Top menu on/off
-         */
-        topmenu = false,
-        /*
-         * desktop or mobile
-         */
-        thisDevice = null,
-        /*
-         * DETECT MOBILE DEVICES
-         * Description: Detects mobile device - if any of the listed device is
-         * detected a class is inserted to $.root_ and the variable thisDevice
-         * is decleard. (so far this is covering most hand held devices)
-         */
-        ismobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase())),
-        /*
-         * JS ARRAY SCRIPT STORAGE
-         * Description: used with loadScript to store script path and file name
-         * so it will not load twice
-         */
-        jsArray = {},
-        /*
-         * App Initialize
-         * Description: Initializes the app with intApp();
-         */
-        initApp = (function(app) {
+          var smartActions = {
 
-          /*
-           * ADD DEVICE TYPE
-           * Detect if mobile or desktop
-           */
-          app.addDeviceType = function() {
+            // LOGOUT MSG
+            userLogout: function($this){
 
-            if (!ismobile) {
-              // Desktop
-              $.root_.addClass("desktop-detected");
-              thisDevice = "desktop";
-              return false;
-            } else {
-              // Mobile
-              $.root_.addClass("mobile-detected");
-              thisDevice = "mobile";
+              // ask verification
+              $.SmartMessageBox({
+                title : "<i class='fa fa-sign-out txt-color-orangeDark'></i> Logout <span class='txt-color-orangeDark'><strong>" + $('#show-shortcut').text() + "</strong></span> ?",
+                content : $this.data('logout-msg') || "You can improve your security further after logging out by closing this opened browser",
+                buttons : '[No][Yes]'
 
-              if (fastClick) {
-                // Removes the tap delay in idevices
-                // dependency: js/plugin/fastclick/fastclick.js
-                $.root_.addClass("needsclick");
-                FastClick.attach(document.body);
-                return false;
+              }, function(ButtonPressed) {
+                if (ButtonPressed == "Yes") {
+                  $.root_.addClass('animated fadeOutUp');
+                  setTimeout(logout, 1000);
+                }
+              });
+              function logout() {
+                window.location = $this.attr('href');
               }
 
-            }
+            },
 
-          };
-          /* ~ END: ADD DEVICE TYPE */
+            // RESET WIDGETS
+            resetWidgets: function($this){
 
-          /*
-           * CHECK FOR MENU POSITION
-           * Scans localstroage for menu position (vertical or horizontal)
-           */
-          app.menuPos = function() {
-
-            if ($.root_.hasClass("menu-on-top") || localStorage.getItem('sm-setmenu')=='top' ) {
-              topmenu = true;
-              $.root_.addClass("menu-on-top");
-            }
-          };
-          /* ~ END: CHECK MOBILE DEVICE */
-
-          /*
-           * SMART ACTIONS
-           */
-          app.SmartActions = function(){
-
-            var smartActions = {
-
-              // LOGOUT MSG
-              userLogout: function($this){
-
-                // ask verification
-                $.SmartMessageBox({
-                  title : "<i class='fa fa-sign-out txt-color-orangeDark'></i> Logout <span class='txt-color-orangeDark'><strong>" + $('#show-shortcut').text() + "</strong></span> ?",
-                  content : $this.data('logout-msg') || "You can improve your security further after logging out by closing this opened browser",
-                  buttons : '[No][Yes]'
-
-                }, function(ButtonPressed) {
-                  if (ButtonPressed == "Yes") {
-                    $.root_.addClass('animated fadeOutUp');
-                    setTimeout(logout, 1000);
-                  }
-                });
-                function logout() {
-                  window.location = $this.attr('href');
+              $.SmartMessageBox({
+                title : "<i class='fa fa-refresh' style='color:green'></i> Clear Local Storage",
+                content : $this.data('reset-msg') || "Would you like to RESET all your saved widgets and clear LocalStorage?1",
+                buttons : '[No][Yes]'
+              }, function(ButtonPressed) {
+                if (ButtonPressed == "Yes" && localStorage) {
+                  localStorage.clear();
+                  location.reload();
                 }
 
-              },
+              });
+            },
 
-              // RESET WIDGETS
-              resetWidgets: function($this){
+            // LAUNCH FULLSCREEN
+            launchFullscreen: function(element){
 
-                $.SmartMessageBox({
-                  title : "<i class='fa fa-refresh' style='color:green'></i> Clear Local Storage",
-                  content : $this.data('reset-msg') || "Would you like to RESET all your saved widgets and clear LocalStorage?1",
-                  buttons : '[No][Yes]'
-                }, function(ButtonPressed) {
-                  if (ButtonPressed == "Yes" && localStorage) {
-                    localStorage.clear();
-                    location.reload();
-                  }
+              if (!$.root_.hasClass("full-screen")) {
 
-                });
-              },
+                $.root_.addClass("full-screen");
 
-              // LAUNCH FULLSCREEN
-              launchFullscreen: function(element){
-
-                if (!$.root_.hasClass("full-screen")) {
-
-                  $.root_.addClass("full-screen");
-
-                  if (element.requestFullscreen) {
-                    element.requestFullscreen();
-                  } else if (element.mozRequestFullScreen) {
-                    element.mozRequestFullScreen();
-                  } else if (element.webkitRequestFullscreen) {
-                    element.webkitRequestFullscreen();
-                  } else if (element.msRequestFullscreen) {
-                    element.msRequestFullscreen();
-                  }
-
-                } else {
-
-                  $.root_.removeClass("full-screen");
-
-                  if (document.exitFullscreen) {
-                    document.exitFullscreen();
-                  } else if (document.mozCancelFullScreen) {
-                    document.mozCancelFullScreen();
-                  } else if (document.webkitExitFullscreen) {
-                    document.webkitExitFullscreen();
-                  }
-
+                if (element.requestFullscreen) {
+                  element.requestFullscreen();
+                } else if (element.mozRequestFullScreen) {
+                  element.mozRequestFullScreen();
+                } else if (element.webkitRequestFullscreen) {
+                  element.webkitRequestFullscreen();
+                } else if (element.msRequestFullscreen) {
+                  element.msRequestFullscreen();
                 }
 
-              },
+              } else {
 
-              // MINIFY MENU
-              minifyMenu: function($this){
-                if (!$.root_.hasClass("menu-on-top")){
-                  $.root_.toggleClass("minified");
-                  $.root_.removeClass("hidden-menu");
-                  $('html').removeClass("hidden-menu-mobile-lock");
-                  $this.effect("highlight", {}, 500);
+                $.root_.removeClass("full-screen");
+
+                if (document.exitFullscreen) {
+                  document.exitFullscreen();
+                } else if (document.mozCancelFullScreen) {
+                  document.mozCancelFullScreen();
+                } else if (document.webkitExitFullscreen) {
+                  document.webkitExitFullscreen();
                 }
-              },
 
-              // TOGGLE MENU
-              toggleMenu: function(){
-                if (!$.root_.hasClass("menu-on-top")){
-                  $('html').toggleClass("hidden-menu-mobile-lock");
-                  $.root_.toggleClass("hidden-menu");
-                  $.root_.removeClass("minified");
-                  //} else if ( $.root_.hasClass("menu-on-top") && $.root_.hasClass("mobile-view-activated") ) {
-                  // suggested fix from Christian Jäger
-                } else if ( $.root_.hasClass("menu-on-top") && $(window).width() < 979 ) {
-                  $('html').toggleClass("hidden-menu-mobile-lock");
-                  $.root_.toggleClass("hidden-menu");
-                  $.root_.removeClass("minified");
-                }
-              },
+              }
 
-              // TOGGLE SHORTCUT
-              toggleShortcut: function(){
+            },
 
-                if (shortcut_dropdown.is(":visible")) {
+            // MINIFY MENU
+            minifyMenu: function($this){
+              if (!$.root_.hasClass("menu-on-top")){
+                $.root_.toggleClass("minified");
+                $.root_.removeClass("hidden-menu");
+                $('html').removeClass("hidden-menu-mobile-lock");
+                $this.effect("highlight", {}, 500);
+              }
+            },
+
+            // TOGGLE MENU
+            toggleMenu: function(){
+              if (!$.root_.hasClass("menu-on-top")){
+                $('html').toggleClass("hidden-menu-mobile-lock");
+                $.root_.toggleClass("hidden-menu");
+                $.root_.removeClass("minified");
+                //} else if ( $.root_.hasClass("menu-on-top") && $.root_.hasClass("mobile-view-activated") ) {
+                // suggested fix from Christian Jäger
+              } else if ( $.root_.hasClass("menu-on-top") && $(window).width() < 979 ) {
+                $('html').toggleClass("hidden-menu-mobile-lock");
+                $.root_.toggleClass("hidden-menu");
+                $.root_.removeClass("minified");
+              }
+            },
+
+            // TOGGLE SHORTCUT
+            toggleShortcut: function(){
+
+              if (shortcut_dropdown.is(":visible")) {
+                shortcut_buttons_hide();
+              } else {
+                shortcut_buttons_show();
+              }
+
+              // SHORT CUT (buttons that appear when clicked on user name)
+              shortcut_dropdown.find('a').click(function(e) {
+                e.preventDefault();
+                window.location = $(this).attr('href');
+                setTimeout(shortcut_buttons_hide, 300);
+
+              });
+
+              // SHORTCUT buttons goes away if mouse is clicked outside of the area
+              $(document).mouseup(function(e) {
+                if (!shortcut_dropdown.is(e.target) && shortcut_dropdown.has(e.target).length === 0) {
                   shortcut_buttons_hide();
-                } else {
-                  shortcut_buttons_show();
                 }
+              });
 
-                // SHORT CUT (buttons that appear when clicked on user name)
-                shortcut_dropdown.find('a').click(function(e) {
-                  e.preventDefault();
-                  window.location = $(this).attr('href');
-                  setTimeout(shortcut_buttons_hide, 300);
-
-                });
-
-                // SHORTCUT buttons goes away if mouse is clicked outside of the area
-                $(document).mouseup(function(e) {
-                  if (!shortcut_dropdown.is(e.target) && shortcut_dropdown.has(e.target).length === 0) {
-                    shortcut_buttons_hide();
-                  }
-                });
-
-                // SHORTCUT ANIMATE HIDE
-                function shortcut_buttons_hide() {
-                  shortcut_dropdown.animate({
-                    height : "hide"
-                  }, 300, "easeOutCirc");
-                  $.root_.removeClass('shortcut-on');
-
-                }
-
-                // SHORTCUT ANIMATE SHOW
-                function shortcut_buttons_show() {
-                  shortcut_dropdown.animate({
-                    height : "show"
-                  }, 200, "easeOutCirc");
-                  $.root_.addClass('shortcut-on');
-                }
+              // SHORTCUT ANIMATE HIDE
+              function shortcut_buttons_hide() {
+                shortcut_dropdown.animate({
+                  height : "hide"
+                }, 300, "easeOutCirc");
+                $.root_.removeClass('shortcut-on');
 
               }
 
-            };
-
-            $.root_.on('click', '[data-action="userLogout"]', function(e) {
-              var $this = $(this);
-              smartActions.userLogout($this);
-              e.preventDefault();
-
-              //clear memory reference
-              $this = null;
-
-            });
-
-            /*
-             * BUTTON ACTIONS
-             */
-            $.root_.on('click', '[data-action="resetWidgets"]', function(e) {
-              var $this = $(this);
-              smartActions.resetWidgets($this);
-              e.preventDefault();
-
-              //clear memory reference
-              $this = null;
-            });
-
-            $.root_.on('click', '[data-action="launchFullscreen"]', function(e) {
-              smartActions.launchFullscreen(document.documentElement);
-              e.preventDefault();
-            });
-
-            $.root_.on('click', '[data-action="minifyMenu"]', function(e) {
-              var $this = $(this);
-              smartActions.minifyMenu($this);
-              e.preventDefault();
-
-              //clear memory reference
-              $this = null;
-            });
-
-            $.root_.on('click', '[data-action="toggleMenu"]', function(e) {
-              smartActions.toggleMenu();
-              e.preventDefault();
-            });
-
-            $.root_.on('click', '[data-action="toggleShortcut"]', function(e) {
-              smartActions.toggleShortcut();
-              e.preventDefault();
-            });
-
-          };
-          /* ~ END: SMART ACTIONS */
-
-          /*
-           * ACTIVATE NAVIGATION
-           * Description: Activation will fail if top navigation is on
-           */
-          app.leftNav = function(){
-
-            // INITIALIZE LEFT NAV
-            if (!topmenu) {
-              if (!null) {
-                $('nav ul').jarvismenu({
-                  accordion : menu_accordion || true,
-                  speed : menu_speed || true,
-                  closedSign : '<em class="fa fa-plus-square-o"></em>',
-                  openedSign : '<em class="fa fa-minus-square-o"></em>'
-                });
-              } else {
-                alert("Error - menu anchor does not exist");
+              // SHORTCUT ANIMATE SHOW
+              function shortcut_buttons_show() {
+                shortcut_dropdown.animate({
+                  height : "show"
+                }, 200, "easeOutCirc");
+                $.root_.addClass('shortcut-on');
               }
+
             }
 
           };
-          /* ~ END: ACTIVATE NAVIGATION */
+
+          $.root_.on('click', '[data-action="userLogout"]', function(e) {
+            var $this = $(this);
+            smartActions.userLogout($this);
+            e.preventDefault();
+
+            //clear memory reference
+            $this = null;
+
+          });
 
           /*
-           * MISCELANEOUS DOM READY FUNCTIONS
-           * Description: fire with jQuery(document).ready...
+           * BUTTON ACTIONS
            */
-          app.domReadyMisc = function() {
+          $.root_.on('click', '[data-action="resetWidgets"]', function(e) {
+            var $this = $(this);
+            smartActions.resetWidgets($this);
+            e.preventDefault();
 
-            /*
-             * FIRE TOOLTIPS
+            //clear memory reference
+            $this = null;
+          });
 
-            if ($("[rel=tooltip]").length) {
-              $("[rel=tooltip]").tooltip();
-            }*/
+          $.root_.on('click', '[data-action="launchFullscreen"]', function(e) {
+            smartActions.launchFullscreen(document.documentElement);
+            e.preventDefault();
+          });
 
-            // SHOW & HIDE MOBILE SEARCH FIELD
-            $('#search-mobile').click(function() {
-              $.root_.addClass('search-mobile');
-            });
+          $.root_.on('click', '[data-action="minifyMenu"]', function(e) {
+            var $this = $(this);
+            smartActions.minifyMenu($this);
+            e.preventDefault();
 
-            $('#cancel-search-js').click(function() {
-              $.root_.removeClass('search-mobile');
-            });
+            //clear memory reference
+            $this = null;
+          });
 
-            // ACTIVITY
-            // ajax drop
-            $('#activity').click(function(e) {
-              var $this = $(this);
+          $.root_.on('click', '[data-action="toggleMenu"]', function(e) {
+            smartActions.toggleMenu();
+            e.preventDefault();
+          });
 
-              if ($this.find('.badge').hasClass('bg-color-red')) {
-                $this.find('.badge').removeClassPrefix('bg-color-');
-                $this.find('.badge').text("0");
-              }
+          $.root_.on('click', '[data-action="toggleShortcut"]', function(e) {
+            smartActions.toggleShortcut();
+            e.preventDefault();
+          });
 
-              if (!$this.next('.ajax-dropdown').is(':visible')) {
-                $this.next('.ajax-dropdown').fadeIn(150);
-                $this.addClass('active');
-              } else {
-                $this.next('.ajax-dropdown').fadeOut(150);
-                $this.removeClass('active');
-              }
+        };
 
-              var theUrlVal = $this.next('.ajax-dropdown').find('.btn-group > .active > input').attr('id');
-
-              //clear memory reference
-              $this = null;
-              theUrlVal = null;
-
-              e.preventDefault();
-            });
-
-            $('input[name="activity"]').change(function() {
-              var $this = $(this);
-
-              url = $this.attr('id');
-              container = $('.ajax-notifications');
-
-              loadURL(url, container);
-
-              //clear memory reference
-              $this = null;
-            });
-
-            // close dropdown if mouse is not inside the area of .ajax-dropdown
-            $(document).mouseup(function(e) {
-              if (!$('.ajax-dropdown').is(e.target) && $('.ajax-dropdown').has(e.target).length === 0) {
-                $('.ajax-dropdown').fadeOut(150);
-                $('.ajax-dropdown').prev().removeClass("active");
-              }
-            });
-
-            // loading animation (demo purpose only)
-            $('button[data-btn-loading]').on('click', function() {
-              var btn = $(this);
-              btn.button('loading');
-              setTimeout(function() {
-                btn.button('reset');
-              }, 3000);
-            });
-
-            // NOTIFICATION IS PRESENT
-            // Change color of lable once notification button is clicked
-
-            $this = $('#activity > .badge');
-
-            if (parseInt($this.text()) > 0) {
-              $this.addClass("bg-color-red bounceIn animated");
-
-              //clear memory reference
-              $this = null;
-            }
-
-
-          };
-          /* ~ END: MISCELANEOUS DOM */
+        /*
+         * MISCELANEOUS DOM READY FUNCTIONS
+         * Description: fire with jQuery(document).ready...
+         */
+        app.domReadyMisc = function() {
 
           /*
-           * MISCELANEOUS DOM READY FUNCTIONS
-           * Description: fire with jQuery(document).ready...
-           */
-          app.mobileCheckActivation = function(){
+           * FIRE TOOLTIPS
 
-            if ($(window).width() < 979) {
-              $.root_.addClass('mobile-view-activated');
-              $.root_.removeClass('minified');
-            } else if ($.root_.hasClass('mobile-view-activated')) {
-              $.root_.removeClass('mobile-view-activated');
+          if ($("[rel=tooltip]").length) {
+            $("[rel=tooltip]").tooltip();
+          }*/
+
+          // SHOW & HIDE MOBILE SEARCH FIELD
+          $('#search-mobile').click(function() {
+            $.root_.addClass('search-mobile');
+          });
+
+          $('#cancel-search-js').click(function() {
+            $.root_.removeClass('search-mobile');
+          });
+
+          // ACTIVITY
+          // ajax drop
+          $('#activity').click(function(e) {
+            var $this = $(this);
+
+            if ($this.find('.badge').hasClass('bg-color-red')) {
+              $this.find('.badge').removeClassPrefix('bg-color-');
+              $this.find('.badge').text("0");
             }
 
-            if (debugState){
-              console.log("mobileCheckActivation");
+            if (!$this.next('.ajax-dropdown').is(':visible')) {
+              $this.next('.ajax-dropdown').fadeIn(150);
+              $this.addClass('active');
+            } else {
+              $this.next('.ajax-dropdown').fadeOut(150);
+              $this.removeClass('active');
             }
 
+            var theUrlVal = $this.next('.ajax-dropdown').find('.btn-group > .active > input').attr('id');
+
+            //clear memory reference
+            $this = null;
+            theUrlVal = null;
+
+            e.preventDefault();
+          });
+
+          $('input[name="activity"]').change(function() {
+            var $this = $(this);
+
+            url = $this.attr('id');
+            container = $('.ajax-notifications');
+
+            loadURL(url, container);
+
+            //clear memory reference
+            $this = null;
+          });
+
+          // close dropdown if mouse is not inside the area of .ajax-dropdown
+          $(document).mouseup(function(e) {
+            if (!$('.ajax-dropdown').is(e.target) && $('.ajax-dropdown').has(e.target).length === 0) {
+              $('.ajax-dropdown').fadeOut(150);
+              $('.ajax-dropdown').prev().removeClass("active");
+            }
+          });
+
+          // loading animation (demo purpose only)
+          $('button[data-btn-loading]').on('click', function() {
+            var btn = $(this);
+            btn.button('loading');
+            setTimeout(function() {
+              btn.button('reset');
+            }, 3000);
+          });
+
+          // NOTIFICATION IS PRESENT
+          // Change color of lable once notification button is clicked
+
+          $this = $('#activity > .badge');
+
+          if (parseInt($this.text()) > 0) {
+            $this.addClass("bg-color-red bounceIn animated");
+
+            //clear memory reference
+            $this = null;
           }
-          /* ~ END: MISCELANEOUS DOM */
 
-          return app;
 
-        })({});
+        };
+        /* ~ END: MISCELANEOUS DOM */
+        /*
+         * ACTIVATE NAVIGATION
+         * Description: Activation will fail if top navigation is on
+         */
+        app.leftNav = function(){
 
-      initApp.addDeviceType();
-      initApp.menuPos();
+          // INITIALIZE LEFT NAV
+          if (!topmenu) {
+            if (!null) {
+              $('nav ul').jarvismenu({
+                accordion : menu_accordion || true,
+                speed : menu_speed || true,
+                closedSign : '<em class="fa fa-plus-square-o"></em>',
+                openedSign : '<em class="fa fa-minus-square-o"></em>'
+              });
+            } else {
+              alert("Error - menu anchor does not exist");
+            }
+          }
 
-      $(context).once('context').on('load', function () {
-        initApp.SmartActions();
-        initApp.leftNav();
-        initApp.domReadyMisc();
-      });
+        };
+        /* ~ END: ACTIVATE NAVIGATION */
+        /*
+         * CHECK FOR MENU POSITION
+         * Scans localstroage for menu position (vertical or horizontal)
+         */
+        app.menuPos = function() {
+
+          if ($.root_.hasClass("menu-on-top") || localStorage.getItem('sm-setmenu')=='top' ) {
+            topmenu = true;
+            $.root_.addClass("menu-on-top");
+          }
+        };
+        /* ~ END: CHECK MOBILE DEVICE */
+
+        return app;
+        /* ~ END: SMART ACTIONS */
+      })({});
+
+      /* Bundle start */
+      initApp.SmartActions();
+      initApp.domReadyMisc();
+      initApp.leftNav();
+      /* Bundle end */
+
+
+
+
+
     }
   };
 })(jQuery, Drupal, drupalSettings);
