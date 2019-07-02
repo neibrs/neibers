@@ -89,9 +89,9 @@ input[type="color"]:focus,
 .input-lg,
 .input-xs,
 .form-control {
-		  border-radius: 0px !important;
-  -webkit-border-radius: 0px !important;
-  -moz-border-radius: 0px !important;
+	border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
 }
 
 .input-xs {
@@ -124,7 +124,7 @@ input[type="color"]:focus,
 }
 
 #content {
-	padding:10px 14px;
+	padding:10 14px;
 	position:relative;
 	/*position:relative;
 	left:0px;*/
@@ -145,7 +145,7 @@ body.container.hidden-menu:not(.mobile-view-activated) {
 }
 
 body.container.modal-open {
-	padding:0px !important;
+	padding:0 !important;
 }
 
 /*
@@ -288,7 +288,7 @@ aside {
 	position:fixed;
 	width:100%;
 	z-index: $left-panel-zindex+1;
-	top:0px;
+	top:0;
 	border-bottom:2px solid $gray-light;
 	border-bottom: 1px solid rgba(0,0,0,.3);
 	box-shadow: -11px 12px 23px rgba(0, 0, 0, 0.1);
@@ -356,8 +356,8 @@ aside {
 	border: 1px solid $gray-mid-light;
 	transition: all 0.0s;
 	cursor: pointer !important;
-	-webkit-box-shadow: inset 0px 0px 4px 1px rgba(red($black), green($black), blue($black), 0.08);
-	box-shadow: inset 0px 0px 4px 1px rgba(red($black), green($black), blue($black), 0.08);
+	-webkit-box-shadow: inset 0 0 4px 1px rgba(red($black), green($black), blue($black), 0.08);
+	box-shadow: inset 0 0 4px 1px rgba(red($black), green($black), blue($black), 0.08);
 }
 
 #logo {
@@ -415,7 +415,7 @@ aside {
 		font-weight: bold;
 		text-transform: uppercase;
 		text-shadow: 0 0 1px white;
-		padding-left:0px;
+		padding-left:0;
 		text-align:left;
 	}
 	
@@ -475,7 +475,7 @@ aside {
 	margin: 0;
 	padding: 0;
 	position: absolute;
-	right: 0px;
+	right: 0;
 	top: 10px;
 	width: 30px;
 	z-index: 2;
@@ -513,8 +513,8 @@ aside {
 
 #left-panel {
 	position: absolute;
-	top: 0px;
-	left: 0px;
+	top: 0;
+	left: 0;
 	z-index: $left-panel-zindex;
 	padding-top:$smart-navbar-height;
 }
@@ -649,12 +649,12 @@ aside {
 	-webkit-overflow-scrolling: none;
 	overflow:visible;
 	height: auto;
-	padding-bottom: 0px;	
+	padding-bottom: 0;
 }
 
 .minified.fixed-navigation nav > ul {
 	overflow:visible;
-	padding-right:0px;
+	padding-right:0;
 	width:100%;
 }
 
@@ -851,7 +851,7 @@ nav > ul ul ul li::before {
 }
 
 /* Second level and onwards > */
-nav > ul ul li a i, {
+nav > ul ul li a i {
 	font-size: $asideNavFontSize !important;
 	width: 18px !important;
 	text-align: center !important;
@@ -948,9 +948,9 @@ nav ul ul > li:hover b {
     list-style:none;
     float:right;
     position:relative;
-    margin:0px;
-    padding-left:0px;
-    padding-right:0px;
+    margin:0;
+    padding-left:0;
+    padding-right:0;
     & > li {
         display: inline-block;
         padding-right: 5px;
@@ -976,7 +976,7 @@ nav ul ul > li:hover b {
  */
 
 .smart-accordion-default.panel-group {
-	margin-bottom:0px;
+	margin-bottom:0;
 }
 
 .smart-accordion-default.panel-group .panel+.panel {
@@ -984,7 +984,7 @@ nav ul ul > li:hover b {
 }
 
 .smart-accordion-default.panel-group .panel-heading {
-	padding:0px;
+	padding:0;
 }
 
 .smart-accordion-default.panel-group .panel-title a {
@@ -994,9 +994,9 @@ nav ul ul > li:hover b {
 }
 
 .smart-accordion-default .panel-heading, .panel-group .panel {
-	border-radius: 0px;
-	-webkit-border-radius: 0px;
-	-moz-border-radius: 0px;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
 }
 
 .smart-accordion-default .panel-default>.panel-heading {
@@ -1132,8 +1132,8 @@ nav ul ul > li:hover b {
 	background-image: -o-linear-gradient(top, white, $gray-lighter);
 	background-image: linear-gradient(to bottom, white, $gray-lighter);
 	background-repeat: repeat-x;
-	-webkit-box-shadow: 1px 1px 4px 0px rgba(red($black), green($black), blue($black), .3);
-	box-shadow: 1px 1px 4px 0px rgba(red($black), green($black), blue($black), .3);
+	-webkit-box-shadow: 1px 1px 4px 0 rgba(red($black), green($black), blue($black), .3);
+	box-shadow: 1px 1px 4px 0 rgba(red($black), green($black), blue($black), .3);
 }
 
 .onoffswitch-checkbox + .onoffswitch-label .onoffswitch-switch:before, .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch:before {
@@ -1160,7 +1160,7 @@ nav ul ul > li:hover b {
     display:block;
 }
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
-    right: 0px; 
+    right: 0;
 }
 
 .onoffswitch-switch:hover {
@@ -1285,14 +1285,14 @@ nav ul ul > li:hover b {
 	font-size: 16px;
 	font-weight: 300;
 	color:  $gray-darker;
-	margin: 25px 0px 20px;
+	margin: 25px 0 20px;
 } .no-padding .form header {
 	margin: 25px 14px 0;
 }.form header:first-child {
 	margin-top:10px;
 } legend {
 	font-weight:400;
-	margin-top:0px;
+	margin-top:0;
 	background:none;
 }
 
@@ -1435,8 +1435,8 @@ input[type="text"]:focus + .input-group-addon {
 	}
 	
 	.input-group-addon .checkbox, .input-group-addon .radio {
-		min-height: 0px;
-		margin-right:0px !important;
+		min-height: 0;
+		margin-right:0 !important;
 		padding-top:0;
 	}
 	
@@ -1444,7 +1444,7 @@ input[type="text"]:focus + .input-group-addon {
 	.input-group-addon label input[type="radio"].radiobox + span, 
 	.input-group-addon label input[type="radio"].radiobox + span:before, 
 	.input-group-addon label input[type="checkbox"].checkbox + span:before {
-		margin-right:0px;
+		margin-right:0;
 	}
 	
 	.input-group-addon .onoffswitch , .input-group-addon .onoffswitch-label{
@@ -1485,17 +1485,17 @@ input[type="text"]:focus + .input-group-addon {
  */	
 .alert {
     margin-bottom: 20px;
-    margin-top: 0px;
+    margin-top: 0;
     padding: 5px 15px 5px 34px;
     color:#675100;
-    border-width:0px;
+    border-width:0;
     border-left-width:5px;
     padding:10px;
-    border-radius:0px;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
+    border-radius:0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
     .close {
-        top: 0px;
+        top: 0;
         right: -5px;
         line-height: 20px;
     }
@@ -1567,7 +1567,7 @@ input[type="text"]:focus + .input-group-addon {
 
 .widget-body {
     .well {
-        margin-bottom:0px;
+        margin-bottom:0;
     }
 }
 
@@ -1577,7 +1577,7 @@ input[type="text"]:focus + .input-group-addon {
 }
 
 .jarviswidget.well.transparent > div, .jarviswidget.well.transparent > div .widget-body {
-	padding:0px !important;
+	padding:0 !important;
 }
 
 /* any wells with custom bg the border will be darkened */
@@ -1601,7 +1601,7 @@ input[type="text"]:focus + .input-group-addon {
 }
 .tabs-left .nav-tabs>li > a .badge {
 	margin-right:5px;
-	margin-left:0px;
+	margin-left:0;
 }
 .nav-tabs>li > a .label {
 	display:inline-block;
@@ -1613,14 +1613,14 @@ input[type="text"]:focus + .input-group-addon {
 	opacity: 1;
 }
 .nav-tabs>li>a {
-	border-radius:0px;
+	border-radius:0;
 	color:$gray-dark;
 }
 .nav-tabs > li.active > a {
 	-webkit-box-shadow: 0 -2px 0 $blue;
 	-moz-box-shadow: 0 -2px 0 $blue;
 	box-shadow: 0 -2px 0 $blue;
-	border-top-width: 0px !important;
+	border-top-width: 0 !important;
 	margin-top: 1px !important;
 	font-weight:bold;
 }
@@ -1650,9 +1650,9 @@ input[type="text"]:focus + .input-group-addon {
 	-webkit-box-shadow: 0 2px 0 $blue;
 	-moz-box-shadow: 0 2px 0 $blue;
 	box-shadow: 0 2px 0 $blue;
-	border-bottom-width: 0px !important;
+	border-bottom-width: 0 !important;
 	border-top: none !important;
-	margin-top: 0px !important;
+	margin-top: 0 !important;
 }
 
 .tabs-below > .nav-tabs, .tabs-right > .nav-tabs, .tabs-left > .nav-tabs {
@@ -1769,7 +1769,7 @@ input[type="text"]:focus + .input-group-addon {
 }
 
 .nav-tabs.bordered >:first-child a{
-	border-left-width:0px !important;
+	border-left-width:0 !important;
 }
 
 .nav-tabs.bordered + .tab-content {
@@ -1789,14 +1789,14 @@ input[type="text"]:focus + .input-group-addon {
 
 .tabs-pull-right.bordered.nav-tabs>li:first-child > a, .tabs-pull-right.bordered.nav-pills>li:first-child > a {
 	border-left-width:1px !important;
-	margin-right:0px;
-	border-right-width:0px;
+	margin-right:0;
+	border-right-width:0;
 }
 
 /* jarviswidget header first child is tab */
 
 .jarviswidget > header > .nav-tabs.pull-left > li:first-child a{
-	border-left-width:0px !important;
+	border-left-width:0 !important;
 }
 
 
@@ -1892,7 +1892,7 @@ a:link, .btn, button {
 .table.has-tickbox.smart-form thead tr th:first-child .checkbox,
 .table.has-tickbox.smart-form tbody tr td:first-child .radio, 
 .table.has-tickbox.smart-form tbody tr td:first-child .checkbox {
-	padding:0px !important;
+	padding:0 !important;
 }
 
 .table thead tr, 
@@ -1903,7 +1903,7 @@ a:link, .btn, button {
 	background-image: -moz-linear-gradient(top,$table-header-color-start 0,$table-header-color-end 100%);
 	background-image: -ms-linear-gradient(top,$table-header-color-start 0,$table-header-color-end 100%);
 	background-image: -o-linear-gradient(top,$table-header-color-start 0,$table-header-color-end 100%);
-	background-image: -linear-gradient(top,$table-header-color-start 0,$table-header-color-end 100%);
+	background-image: linear-gradient(top,$table-header-color-start 0,$table-header-color-end 100%);
 	font-size: 12px;
 }
 .fc-border-separate thead tr th {
@@ -1926,18 +1926,18 @@ a:link, .btn, button {
 .no-padding > .table-responsive > .table-bordered thead tr th:first-child,
 .no-padding > .table-responsive > .table-bordered thead tr td:first-child,
 .no-padding > .table-responsive > .table-bordered tbody tr td:first-child  {
-	border-left-width:0px !important;
+	border-left-width:0 !important;
 }
 .no-padding > .table-bordered thead tr th:last-child,
 .no-padding > .table-bordered tbody tr td:last-child,
 .no-padding > .table-responsive > .table-bordered thead tr th:last-child,
 .no-padding > .table-responsive > .table-bordered tbody tr td:last-child {
-	border-right-width:0px !important;
+	border-right-width:0 !important;
 }
 
 .no-padding > .table-bordered tbody tr:last-child td,
 .no-padding > .table-responsive > .table-bordered tbody tr:last-child td {
-	border-bottom-width:0px !important;
+	border-bottom-width:0 !important;
 }
 
 .no-padding .table-responsive .table{
@@ -1952,7 +1952,7 @@ a:link, .btn, button {
 .smart-form.table td .checkbox i,
 .smart-form.table th .radio i, 
 .smart-form.table th .checkbox i {
-	top: 0px !important;
+	top: 0 !important;
 }
 
 /* condenced table */
@@ -2028,7 +2028,7 @@ a:link, .btn, button {
 
 .smaller-stat li {
 	margin-top:3px;
-	margin-right:0px;
+	margin-right:0;
 }.smaller-stat li:first-child {
 	margin-top:8px;
 }
@@ -2054,10 +2054,10 @@ a:link, .btn, button {
 	height: 39px;
 	color: $white;
 	border: solid transparent;
-	border-width: 1px 0px 1px 0px;
+	border-width: 1px 0 1px 0;
 	box-shadow: inset 1px 1px 0 rgba(red($black), green($black), blue($black), 0.1), inset 0 -1px 0 rgba(red($black), green($black), blue($black), 0.07);
 	width: 100%;
-	margin: 0px !important;
+	margin: 0 !important;
 	border-bottom: 1px solid #525151;
 }
 
@@ -2101,7 +2101,7 @@ a:link, .btn, button {
 	vertical-align: middle;
 	margin-top: 1px;
 	margin-right: 5px;
-	margin-left: 0px;
+	margin-left: 0;
 	border-left: 3px solid $white;
 }
 
@@ -2159,8 +2159,8 @@ img.away {
   height: 28px;
   display: block;
   position: absolute;
-  right: 0px;
-  border-radius: 5px 0px 0px 5px;
+  right: 0;
+  border-radius: 5px 0 0 5px;
   cursor: pointer;
   margin-top: 7px;
   font-size: 19px;
@@ -2169,17 +2169,17 @@ img.away {
 .minifyme:hover {
   background: #646464;
   color: #E4E4E4;
-  right: 0px;
+  right: 0;
   width: 40px;
   padding-right: 5px;
 }
 
 .minified .minifyme {
-	right: 0px;
+	right: 0;
 	color: #A8A8A8;
 	position: relative;
 	width: 100%;
-	border-radius: 0px;
+	border-radius: 0;
 	margin: 0;
 	height: 34px;
 	font-size: 23px;
@@ -2194,7 +2194,7 @@ img.away {
 }
 
 .minified .login-info span {
-	padding: 0px 5px;
+	padding: 0 5px;
 	text-align:center;
 }
 .minified .login-info img {
@@ -2400,7 +2400,7 @@ img.away {
 	margin-left: -1px;
 }
 .pagination.pagination-alt > li:first-child>a {
-	padding-left:0px;
+	padding-left:0;
 }
 
 /*
@@ -2595,9 +2595,9 @@ img.away {
 	
 
 .panel-footer > .btn-block {
-	border-radius:0px;
-	-moz-border-radius:0px;
-	-webkit-border-radius: 0px;
+	border-radius:0;
+	-moz-border-radius:0;
+	-webkit-border-radius: 0;
 	border-bottom:none;
 	border-left:none;
 	border-right:none;
@@ -2659,8 +2659,8 @@ img.away {
 
 .btn-metro > span.label {
 	position: absolute;
-	top:0px;
-	right:0px;
+	top:0;
+	right:0;
 } 
 
 /*
@@ -2683,7 +2683,7 @@ img.away {
 #left-panel {
 	-webkit-transition: 250ms cubic-bezier(0.1, 0.57, 0.1, 1);
 	transition: 250ms cubic-bezier(0.1, 0.57, 0.1, 1);
-	-webkit-transform: translate(0px, 0px) translateZ(0px);
+	-webkit-transform: translate(0, 0) translateZ(0);
 }
 
 /* removed as it was too jerky */
@@ -2849,7 +2849,7 @@ img.away {
 }
 
 .hidden-menu #left-panel:hover {
-	left: 0px;
+	left: 0;
 }
 
 .hidden-menu .minifyme {
@@ -2905,8 +2905,8 @@ img.away {
 	color: #222;
 	transition: all 0.0s;
 	cursor: pointer;
-	-webkit-box-shadow: inset 0px 0px 4px 1px rgba(red($black), green($black), blue($black), .08);
-	box-shadow: inset 0px 0px 4px 1px rgba(red($black), green($black), blue($black), .08);
+	-webkit-box-shadow: inset 0 0 4px 1px rgba(red($black), green($black), blue($black), .08);
+	box-shadow: inset 0 0 4px 1px rgba(red($black), green($black), blue($black), .08);
 }
 
 .btn-header > :first-child > a:active {
@@ -2918,8 +2918,8 @@ img.away {
 	background-image: -ms-linear-gradient(top,  #e8e8e8 0%,#ededed 100%);
 	background-image: linear-gradient(to bottom,  #e8e8e8 0%,#ededed 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e8e8', endColorstr='#ededed',GradientType=0 );
-	-webkit-box-shadow: inset 0px 0px 3px 1px rgba(red($black), green($black), blue($black), .15);
-	box-shadow: inset 0px 0px 3px 1px rgba(red($black), green($black), blue($black), .15);
+	-webkit-box-shadow: inset 0 0 3px 1px rgba(red($black), green($black), blue($black), .15);
+	box-shadow: inset 0 0 3px 1px rgba(red($black), green($black), blue($black), .15);
 }
 
 .hidden-menu #hide-menu > :first-child > a {
@@ -2931,15 +2931,15 @@ img.away {
 	background-image: -ms-linear-gradient(to bottom, #5A5A5A 0%,#686868 100%);
 	background-image: linear-gradient(to bottom, #5A5A5A 0%,#686868 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5A5A5A', endColorstr='#686868',GradientType=0 );
-	-webkit-box-shadow: inset 0px 0px 3px 1px rgba(red($black), green($black), blue($black), .15);
-	box-shadow: inset 0px 0px 3px 1px rgba(red($black), green($black), blue($black), .15);
+	-webkit-box-shadow: inset 0 0 3px 1px rgba(red($black), green($black), blue($black), .15);
+	box-shadow: inset 0 0 3px 1px rgba(red($black), green($black), blue($black), .15);
 	color: $white;
 	border-color:#494949;
 }
 
 .hidden-menu #hide-menu > :first-child > a:active, .full-screen #fullscreen > :first-child > a:active {
-	-webkit-box-shadow: inset 0px 0px 6px 1px rgba(red($black), green($black), blue($black), .2);
-	box-shadow: inset 0px 0px 6px 1px rgba(red($black), green($black), blue($black), .2);
+	-webkit-box-shadow: inset 0 0 6px 1px rgba(red($black), green($black), blue($black), .2);
+	box-shadow: inset 0 0 6px 1px rgba(red($black), green($black), blue($black), .2);
 }
 
 /*
@@ -2960,9 +2960,9 @@ img.away {
 	left: 16px;
 	width: 344px;
 	height: 435px;
-	border-radius:0px;
-	-webkit-border-radius: 0px;
-	-moz-border-radius: 0px;
+	border-radius:0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
 	-webkit-box-shadow: 0 2px 4px rgba(30, 30, 100, 0.25);
 	-moz-box-shadow: 0 2px 4px rgba(30,30,100,0.25);
 	box-shadow: 0 2px 4px rgba(30, 30, 100, 0.25);
@@ -3005,8 +3005,8 @@ img.away {
 /* better for 3 childs*/
 
 .ajax-dropdown .btn-group >:nth-child(2) {
-	border-right-width:0px;
-	border-left-width:0px;
+	border-right-width:0;
+	border-left-width:0;
 }	
 
 .ajax-dropdown .btn-group >:last-child {
@@ -3019,7 +3019,7 @@ img.away {
 }
 
 .ajax-dropdown .btn-group >:nth-child(n+2) {
-	border-left-width:0px;
+	border-left-width:0;
 }
 
 .ajax-dropdown .btn-group >:last-child {
@@ -3027,8 +3027,8 @@ img.away {
 }	*/
 
 .ajax-dropdown .btn-group .btn:active {
-	top:0px;
-	left:0px;
+	top:0;
+	left:0;
 }
 
 .ajax-notifications {
@@ -3085,7 +3085,7 @@ img.away {
 .dropdown-menu-large {
   margin-left: 16px;
   margin-right: 16px;
-  padding: 20px 0px;
+  padding: 20px 0;
 }
 .dropdown-menu-large > li > ul {
   padding: 0;
@@ -3546,7 +3546,7 @@ text-decoration: none;
 	width: 100px;
 	height: 70px;
 	cursor: pointer;
-	box-shadow: inset 0px 0px 1px #FFFFCC;
+	box-shadow: inset 0 0 1px #FFFFCC;
 	border:1px dotted #C5C5C5;
 	text-decoration: none;
 	color: $white;
@@ -3641,7 +3641,7 @@ text-decoration: none;
 #shortcut {
 	display:block;
 	position:absolute;
-	top:0px;
+	top:0;
 	left:0;
 	height:auto;
 	width:100%;
@@ -3659,8 +3659,8 @@ text-decoration: none;
 	padding: 15px 20px 10px;
 	list-style:none;
 	margin:0;
-	box-shadow: 0px 4px 10px rgba(red($black), green($black), blue($black), 0.3);
-	-moz-box-shadow: 0px 4px 10px rgba(red($black), green($black), blue($black), 0.3);
+	box-shadow: 0 4px 10px rgba(red($black), green($black), blue($black), 0.3);
+	-moz-box-shadow: 0 4px 10px rgba(red($black), green($black), blue($black), 0.3);
 	border-bottom: 1px solid #423F3F;
 }
 
@@ -3670,11 +3670,11 @@ text-decoration: none;
 }
 
 #shortcut ul li .jarvismetro-tile  {
-	margin:0px 3px 3px;
+	margin:0 3px 3px;
 	border:none;
-	border-radius: 0px;
-	-moz-border-radius:0px;
-	-webkit-border-radius:0px;
+	border-radius: 0;
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
 }
 
 #shortcut ul li .jarvismetro-tile:hover {
@@ -3765,7 +3765,7 @@ text-decoration: none;
 		font-size:$tooltip-font-size;
 		font-family:Arial, Helvetica, sans-serif;
 		font-weight:bold;
-		border-radius: 0px;
+		border-radius: 0;
 	}
 
 

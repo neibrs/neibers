@@ -173,7 +173,7 @@ $input-bg-disabled:              $gray-lighter;
 
 $input-color:                    $gray;
 $input-border:                   #ccc;
-$input-border-radius:            0px;
+$input-border-radius:            0;
 $input-border-focus:             #66afe9;
 
 $input-border-radius-large:      $border-radius-large;
@@ -915,7 +915,7 @@ $onOffSwitchBG:					  $blueStandard;
 //
 //##
 
-$progressbar-radius:			  0px;
+$progressbar-radius:			  0;
 $progressbar-micro:				  3px;
 $progressbar-xs:				  7px;
 $progressbar-sm:				  14px;
