@@ -323,7 +323,7 @@ Color brightness is determined by the following formula:
 
     .#{$make} {
       background-color: $paint;
-      @include text-contrast($paint)
+      @include text-contrast($paint);
       &:hover {
         @include text-contrast($paint)
       }

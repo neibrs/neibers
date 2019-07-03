@@ -9,7 +9,7 @@ $color-fusion:						darken(desaturate(adjust-hue($color-primary, 5), 80%), 25%);
 
 /* #GLOBAL IMPORTS
 ========================================================================== */
-@import './src/scss/_imports/_theme-modules-import';
+@import '../_imports/_theme-modules-import';
 
 /* #Reset userselect
 ========================================================================== */
