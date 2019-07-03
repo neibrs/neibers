@@ -1,0 +1,9 @@
+name: Codex
+type: theme
+package: Neibers
+core: 8.x
+libraries:
+  - neibers_codex/global
+base theme: seven
+regions:
+  content: Content
