@@ -1,0 +1,27 @@
+global:
+  version: VERSION
+  css:
+    theme:
+      https://use.fontawesome.com/releases/v5.8.2/css/all.css: { type: external }
+      https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.css: { type: external }
+      https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700: { type: external }
+      node_modules/admin-lte/dist/css/adminlte.css: {}
+  js:
+    node_modules/admin-lte/plugins/bootstrap/js/bootstrap.bundle.js: {}
+    node_modules/admin-lte/plugins/fastclick/fastclick.js: {}
+    node_modules/admin-lte/dist/js/adminlte.js: {}
+    node_modules/admin-lte/dist/js/demo.js: {}
+  dependencies:
+    - core/jquery
+    - neibers_codex/overlay
+
+overlay:
+  version: VERSION
+  css:
+    theme:
+      node_modules/overlayscrollbars/css/OverlayScrollbars.css: {}
+  js:
+    node_modules/admin-lte/plugins/bootstrap/js/bootstrap.bundle.js: {}
+    node_modules/overlayscrollbars/js/jquery.overlayScrollbars.js: {}
+  dependencies:
+    - core/jquery

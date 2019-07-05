@@ -1,13 +1,27 @@
 name: Codex
 type: theme
-description: 'My Awesome theme'
 package: Neibers
 core: 8.x
 libraries:
   - neibers_codex/global
- 
+libraries-override:
+  seven/global-styling:
+    css:
+      base:
+        css/base/elements.css: css/base/elements.css
+      component:
+        css/components/content-header.css: css/components/content-header.css
 base theme: seven
-
 regions:
+  logo: 'Logo'
+#  navbar: 'Navbar'
+  sidebar: 'Sidebar'
+  header: 'Header'
+#  pre_content: 'Pre-content'
+  breadcrumb: Breadcrumb
+  highlighted: Highlighted
+  help: Help
   content: Content
-  content: Content
+  footer: Footer
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
