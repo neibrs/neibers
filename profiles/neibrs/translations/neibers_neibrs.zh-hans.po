@@ -25,4 +25,16 @@ msgstr ""
 msgid "Manage for IDC service."
 msgstr "管理IDC服务."
 
+#manual
+msgid "Business"
+msgstr "业务"
+
+msgid "Authenticated user"
+msgstr "验证用户"
+
+msgid "System administrator"
+msgstr "系统管理员"
+
+msgid "Implementor"
+msgstr "实施人员"
 

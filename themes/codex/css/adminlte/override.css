@@ -38,3 +38,6 @@ a.nav-link i.far {
 .nav-sidebar .nav-item > .nav-link {
   margin-bottom: 0;
 }
+.admin-list li a .label {
+  font-size: .9rem;
+}
