@@ -1,0 +1,9 @@
+.brand-image {
+  float: left;
+  line-height: .8;
+  max-height: 50px;
+  width: auto;
+  margin-left: .8rem;
+  margin-right: .5rem;
+  margin-top: -10px;
+}

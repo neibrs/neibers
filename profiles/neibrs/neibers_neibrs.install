@@ -27,6 +27,10 @@ function neibers_neibrs_install() {
   // menu links are valid.
   \Drupal::service('router.builder')->rebuildIfNeeded();
 
+  // Setting Site name.
+  $config = \Drupal::configFactory()->getEditable('system.site');
+  $config->set('name', 'Neibers')
+    ->save();
   //   1. Init currency
   //  /** @var \Drupal\commerce_price\CurrencyImporterInterface $importer */
   //  $importer = \Drupal::getContainer()->get('commerce_price.currency_import');

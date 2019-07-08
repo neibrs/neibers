@@ -6,6 +6,7 @@ global:
       https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.css: { type: external }
       https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700: { type: external }
       node_modules/admin-lte/dist/css/adminlte.css: {}
+      css/adminlte/override.css: {}
   js:
     node_modules/admin-lte/plugins/bootstrap/js/bootstrap.bundle.js: {}
     node_modules/admin-lte/plugins/fastclick/fastclick.js: {}

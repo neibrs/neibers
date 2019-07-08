@@ -29,6 +29,6 @@ vendor/bin/drush cset -y language.types negotiation.language_interface.enabled.l
 #vendor/bin/drush cset -y system.site default_langcode "zh-hans"
 vendor/bin/drush locale:update
 
-vendor/bin/drupal thi -y neibers_smart
-vendor/bin/drush cset -y system.theme admin neibers_smart
-vendor/bin/drush cset -y system.theme default neibers_smart
+vendor/bin/drupal thi -y neibers_codex
+vendor/bin/drush cset -y system.theme admin neibers_codex
+vendor/bin/drush cset -y system.theme default neibers_codex

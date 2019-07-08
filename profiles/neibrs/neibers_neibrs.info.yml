@@ -8,7 +8,7 @@ distribution:
   name: 'Neibers IDC'
   langcode: en
   install:
-    theme: neibers_smart
+    theme: neibers_codex
 install:
   - drupal:node
   - drupal:history
@@ -46,4 +46,4 @@ install:
   - drupal:tour
   - drupal:automated_cron
 themes:
-  - neibers_smart
+  - neibers_codex
