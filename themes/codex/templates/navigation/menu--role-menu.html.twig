@@ -1,0 +1,78 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a menu.
+ *
+ * Available variables:
+ * - menu_name: The machine name of the menu.
+ * - items: A nested list of menu items. Each menu item contains:
+ *   - attributes: HTML attributes for the menu item.
+ *   - below: The menu item child items.
+ *   - title: The menu link title.
+ *   - url: The menu link url, instance of \Drupal\Core\Url
+ *   - localized_options: Menu link localized options.
+ *
+ * @ingroup themeable
+ */
+#}
+{% import _self as menus %}
+
+{%
+set nav_classes = [
+  'nav',
+]
+%}
+
+{#
+  We call a macro which calls itself to render the full tree.
+  @see http://twig.sensiolabs.org/doc/tags/macro.html
+#}
+{{ menus.menu_links(items, attributes.addClass(nav_classes), 0) }}
+
+{% macro menu_links(items, attributes, menu_level) %}
+  {% import _self as menus %}
+  {% if items %}
+    {% set menu_level_class = [
+       menu_level ? 'menu-level-' ~ menu_level
+    ] %}
+    {% if menu_level == 0 %}
+      <ul{{ attributes.addClass(['nav-pills', 'nav-sidebar', 'flex-column']) }} data-widget="treeview" data-accordion="false">
+    {% else %}
+      <ul{{ attributes }}>
+    {% endif %}
+    {% for item in items %}
+      {%
+        set item_classes = [
+          'nav-item',
+          item.below ? 'has-treeview',
+          item.in_active_trail ? 'menu-open',
+        ]
+      %}
+      <li{{ item.attributes.addClass(item_classes).addClass(menu_level_class) }}>
+        {% if item.below %}
+          <a href="#" {% if item.in_active_trail %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
+        {% else %}
+          <a href="{{ item.url }}" {% if item.in_active_trail %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
+        {% endif %}
+          {% if item.icon %}
+            <i class="{{ item.icon }}"></i>
+          {% else %}
+            <i class="far fa-circle nav-icon"></i>
+          {% endif %}
+          <p>
+            {{ item.title }}
+            {% if item.below %}
+              <i class="fas fa-angle-left right"></i>
+            {% endif %}
+          </p>
+        </a>
+
+
+        {% if item.below %}
+          {{ menus.menu_links(item.below, attributes.removeClass('nav-pills', 'nav-sidebar', 'flex-column').addClass('nav-treeview'), menu_level + 1) }}
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  {% endmacro %}

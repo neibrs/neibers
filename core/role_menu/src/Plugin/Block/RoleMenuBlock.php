@@ -74,7 +74,7 @@ class RoleMenuBlock extends BlockBase implements ContainerFactoryPluginInterface
         if (!empty($menu_id)) {
           $build[$menu_id]['#weight'] = $entity->getWeight();
           $build[$menu_id][] = [
-            '#markup' => '<ul class="sidebar-menu tree"><li class="header">' . $this->t('@role navigation', ['@role' => $entity->label()]) . '</li></ul>',
+            '#markup' => '<div class="vsm-header">' . $this->t('@role navigation', ['@role' => $entity->label()]) . '</div>',
           ];
           $build[$menu_id][] = $this->buildMenu($menu_id);
         }
