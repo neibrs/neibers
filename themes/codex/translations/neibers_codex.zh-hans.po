@@ -1,0 +1,75 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  modules/neibers/themes/codex/neibers_codex.info.yml: n/a
+#  modules/neibers/themes/codex/templates/admin/admin-block-content--implementation.html.twig: n/a
+#  modules/neibers/themes/codex/templates/block/block--system-branding-block.html.twig: n/a
+#  modules/neibers/themes/codex/templates/field/field--comment.html.twig: n/a
+#  modules/neibers/themes/codex/templates/layout/dropdown-toggle.html.twig: n/a
+#  modules/neibers/themes/codex/config/optional/block.block.alerticonblock.yml: n/a
+#  modules/neibers/themes/codex/config/optional/block.block.es_solution_category_dropdown.yml: n/a
+#  modules/neibers/themes/codex/config/optional/block.block.neibers_codex_avatarblock.yml: n/a
+#  modules/neibers/themes/codex/config/optional/block.block.neibers_codex_user_menu.yml: n/a
+#  modules/neibers/themes/codex/config/optional/block.block.neibers_codex_layout_template.yml: n/a
+#  modules/neibers/themes/codex/config/optional/block.block.neibers_codex_role_menu.yml: n/a
+#  modules/neibers/themes/codex/config/optional/block.block.taskiconblock.yml: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2019-07-10 14:39+0800\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: modules/neibers/themes/codex/neibers_codex.info.yml:0
+msgid "Codex"
+msgstr ""
+
+#: modules/neibers/themes/codex/templates/admin/admin-block-content--implementation.html.twig:31
+msgid "Step @step:"
+msgstr "第@step步:"
+
+#: modules/neibers/themes/codex/templates/block/block--system-branding-block.html.twig:15
+msgid "Home"
+msgstr "主页"
+
+#: modules/neibers/themes/codex/templates/field/field--comment.html.twig:59
+msgid "Add new comment"
+msgstr "添加评论"
+
+#: modules/neibers/themes/codex/templates/layout/dropdown-toggle.html.twig:20
+msgid "View all"
+msgstr "查看全部"
+
+#: modules/neibers/themes/codex/config/optional/block.block.alerticonblock.yml:0
+msgid "Alert icon block"
+msgstr "提醒图标"
+
+#: modules/neibers/themes/codex/config/optional/block.block.es_solution_category_dropdown.yml:0
+msgid "Solution category dropdown block"
+msgstr ""
+
+#: modules/neibers/themes/codex/config/optional/block.block.neibers_codex_avatarblock.yml:0 modules/neibers/themes/codex/config/optional/block.block.neibers_codex_user_menu.yml:0
+msgid "Avatar block"
+msgstr "头像区块"
+
+#: modules/neibers/themes/codex/config/optional/block.block.neibers_codex_layout_template.yml:0
+msgid "Layout template"
+msgstr "布局模板"
+
+#: modules/neibers/themes/codex/config/optional/block.block.neibers_codex_role_menu.yml:0
+msgid "Role menu block"
+msgstr "角色菜单区块"
+
+#: modules/neibers/themes/codex/config/optional/block.block.taskiconblock.yml:0
+msgid "Task icon"
+msgstr "任务图标"
+

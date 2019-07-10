@@ -1,0 +1,41 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  modules/neibers/core/recurring/neibers_recurring.module: n/a
+#  modules/neibers/core/recurring/neibers_recurring.info.yml: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2019-07-10 14:39+0800\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: modules/neibers/core/recurring/neibers_recurring.module:14
+msgid "Initial order"
+msgstr ""
+
+#: modules/neibers/core/recurring/neibers_recurring.module:15
+msgid "The non-recurring order which started the subscription."
+msgstr ""
+
+#: modules/neibers/core/recurring/neibers_recurring.info.yml:0
+msgid "Recurring"
+msgstr ""
+
+#: modules/neibers/core/recurring/neibers_recurring.info.yml:0
+msgid "The override of commerce recurring."
+msgstr ""
+
+#: modules/neibers/core/recurring/neibers_recurring.info.yml:0
+msgid "Neibers"
+msgstr ""
+
