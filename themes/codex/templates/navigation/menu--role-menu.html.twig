@@ -48,6 +48,8 @@ set nav_classes = [
         <a href="{{ item.url }}">
         {% if item.icon %}
           <i class="{{ item.icon }}"></i>
+          {% else %}
+          <i class="fa fa-circle-o"></i>
         {% endif %}
         <span>{{ item.title }}</span>
         {% if item.below %}

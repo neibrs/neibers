@@ -57,3 +57,17 @@ function neibers_idc_block_access(Block $block, $operation, AccountInterface $ac
 
   return AccessResult::neutral();
 }
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function neibers_idc_preprocess_menu__role_menu(&$variables) {
+  $icons = [
+    'neibers_idc.hardware' => 'fa fa-gears',
+    'neibers_idc.ip' => 'fa fa-gittip',
+    'neibers_idc.fitting' => 'fa fa-cogs',
+    'neibers_idc.room' => 'fa fa-building',
+  ];
+
+  _eabax_core_set_menu_items_icon($variables['items'], $icons);
+}
