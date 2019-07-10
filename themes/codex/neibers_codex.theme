@@ -46,7 +46,7 @@ function neibers_codex_preprocess_html(&$variables) {
   }
   else {
     $skin = theme_get_setting('skin');
-    $variables['attributes']['class'][] = empty($skin) ? 'skin-blue' : $skin;
+    $variables['attributes']['class'][] = empty($skin) ? 'skin-purple-light' : $skin;
     $variables['attributes']['class'][] = 'sidebar-mini';
     if ($sidebar_collapse = \Drupal::request()->cookies->get('Drupal_collapsed_pushMenu', 1)) {
       $variables['attributes']['class'][] = 'sidebar-collapse';
@@ -57,7 +57,7 @@ function neibers_codex_preprocess_html(&$variables) {
 
 function neibers_codex_preprocess_input__submit(&$variables) {
   $variables['attributes']['class'][] = 'btn';
-  $variables['attributes']['class'][] = 'btn-primary';
+  $variables['attributes']['class'][] = 'bg-orange';
   $variables['attributes']['class'][] = 'btn-sm';
 }
 
@@ -74,7 +74,7 @@ function neibers_codex_preprocess_menu_local_action(array &$variables) {
     'button--small',
   ]);
   $classes[] = 'btn';
-  $classes[] = 'btn-primary';
+  $classes[] = 'bg-orange';
   $classes[] = 'btn-sm';
   $variables['link']['#options']['attributes']['class'] = $classes;
 }
