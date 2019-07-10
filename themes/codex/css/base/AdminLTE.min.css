@@ -25,3 +25,7 @@ ol,ul {
 .sidebar-collapse .vsm-header {
   display: none;
 }
+
+a {
+  color: #605ca8;
+}

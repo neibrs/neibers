@@ -17,6 +17,7 @@ body.sidebar-mini > .block-avartar-block > .form-no-label {
 div.navbar-custom-menu ul.navbar-nav li.user-menu {
   padding-left: 10px;
   height: 50px;
+  right: 10px;
 }
 div.navbar-custom-menu ul.navbar-nav li.user-menu:hover, ul.navbar-nav li.user-menu.open:hover {
   background: rgba(0,0,0,0.1);
