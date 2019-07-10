@@ -1,0 +1,41 @@
+{#
+/**
+ * @file employee_assignment.html.twig
+ * Default theme implementation to present Employee assignment data.
+ *
+ * This template is used when viewing Employee assignment pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_employee_assignment()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes.addClass('employee_assignment', 'row') }}>
+  <div class="col-md-9">
+    {{ content|without('grade_salary_limits', 'salary_basis') }}
+  </div>
+  <div class="col-md-3">
+    <div class="box">
+      <div class="box-header">
+        薪金等级限制
+      </div>
+      <div class="box-body">
+        {{ content.grade_salary_limits }}
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="box-header">
+        薪金信息
+      </div>
+      <div class="box-body">
+        {{ content.salary_basis }}
+      </div>
+    </div>
+  </div>
+</div>

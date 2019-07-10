@@ -1,27 +1,39 @@
 name: Codex
 type: theme
+base theme: seven
 package: Neibers
 core: 8.x
 libraries:
-  - neibers_codex/global
+  - neibers_codex/global-styling
 libraries-override:
+  classy/base:
+    css:
+      component:
+        css/components/inline-form.css: false
+  system/base:
+    css:
+      component:
+        /core/themes/stable/css/system/components/tabledrag.module.css: css/components/tabledrag.module.css
   seven/global-styling:
     css:
-      base:
-        css/base/elements.css: css/base/elements.css
       component:
-        css/components/content-header.css: css/components/content-header.css
-base theme: seven
+        css/components/container-inline.module.css: css/components/container-inline.module.css
+
+libraries-extend:
+  core/drupal.batch:
+    - neibers_codex/batch
+  comment/drupal.comment-by-viewer:
+    - neibers_codex/comment-by-viewer
+
 regions:
   logo: 'Logo'
-#  navbar: 'Navbar'
+  navbar: 'Navbar'
   sidebar: 'Sidebar'
   header: 'Header'
-#  pre_content: 'Pre-content'
+  pre_content: 'Pre-content'
   breadcrumb: Breadcrumb
   highlighted: Highlighted
   help: Help
   content: Content
-  footer: Footer
   page_top: 'Page top'
   page_bottom: 'Page bottom'

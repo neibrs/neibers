@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - user_plus
+  theme:
+    - neibers_codex
+id: avatarblock_2
+theme: neibers_codex
+region: sidebar
+weight: 0
+provider: null
+plugin: avatar_block
+settings:
+  id: avatar_block
+  label: 'Avatar block'
+  provider: user_plus
+  label_display: '0'
+  view_mode: sidebar
+visibility: {  }

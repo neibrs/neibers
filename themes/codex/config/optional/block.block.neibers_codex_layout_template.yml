@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - layout_template
+  theme:
+    - neibers_codex
+third_party_settings:
+  block_class:
+    classes: pull-right
+id: neibers_codex_layout_template
+theme: neibers_codex
+region: header
+weight: -40
+provider: null
+plugin: layout_template_block
+settings:
+  id: layout_template_block
+  label: 'Layout template'
+  provider: layout_template
+  label_display: '0'
+visibility: {  }

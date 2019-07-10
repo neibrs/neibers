@@ -1,0 +1,25 @@
+.form-item,
+.form-actions {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+.form-horizontal .form-type-entity-autocomplete label,
+.form-horizontal .form-type-file label,
+.form-horizontal .form-type-item label,
+.form-horizontal .form-type-number label,
+.form-horizontal .form-type-select label,
+.form-horizontal .form-type-textfield label {
+  min-width: 8em;
+  text-align: right;
+}
+.form-horizontal .form-wrapper > .form-type-checkbox,
+.form-horizontal .form-actions {
+  padding-left: 8em;
+}
+.form-horizontal input[type=file] {
+  display: inline-block;
+}
+.form-horizontal .description {
+  margin-left: 8em;
+}

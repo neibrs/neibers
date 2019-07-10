@@ -1,0 +1,10 @@
+@media screen and (min-width: 40em) {
+  .block-region-first-above,
+  .block-region-first-below {
+    margin-right: 5px;
+  }
+  .block-region-second-above,
+  .block-region-second-below {
+    margin-left: 5px;
+  }
+}

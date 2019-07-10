@@ -1,28 +1,46 @@
-global:
-  version: VERSION
+global-styling:
   css:
+    base:
+      css/base/elements.css: {}
+    component:
+      css/components/action-links.css: {}
+      css/components/actions.css: {}
+      css/components/field.css: { weight: -10 }
+      css/components/form.css: {}
+      css/components/inline-form.css: { weight: -10 }
+      css/components/admin-list.css: {}
+      css/components/content-header.css: {}
+      css/components/breadcrumb.css: {}
+      css/components/buttons.css: {}
+      css/components/tabs.css: {}
+      css/components/dialog.css: {}
+      css/components/wizard.css: {}
+      css/components/views.css: {}
+      css/region/navbar-nav.css: {}
+    layout:
+      css/layout/twocol_bricks.css: {}
     theme:
-      https://use.fontawesome.com/releases/v5.8.2/css/all.css: { type: external }
-      https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.css: { type: external }
-      https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700: { type: external }
-      node_modules/admin-lte/dist/css/adminlte.css: {}
-      css/adminlte/override.css: {}
+      node_modules/bootstrap/dist/css/bootstrap.min.css: {}
+      node_modules/font-awesome/css/font-awesome.min.css: {}
+      node_modules/admin-lte/dist/css/AdminLTE.min.css: {}
+      node_modules/admin-lte/dist/css/skins/_all-skins.min.css: {}
+      optimize/optimize.css: {}
+      css/base/AdminLTE.min.css: {}
+      css/style.css: {}
   js:
-    node_modules/admin-lte/plugins/bootstrap/js/bootstrap.bundle.js: {}
-    node_modules/admin-lte/plugins/fastclick/fastclick.js: {}
+    node_modules/bootstrap/dist/js/bootstrap.min.js: {}
     node_modules/admin-lte/dist/js/adminlte.js: {}
-    node_modules/admin-lte/dist/js/demo.js: {}
+    js/sidebar.js: {}
+    js/local_actions.js: {}
   dependencies:
-    - core/jquery
-    - neibers_codex/overlay
+    - core/jquery.cookie # sidebar.js needs jquery.cookie
 
-overlay:
-  version: VERSION
+batch:
   css:
-    theme:
-      node_modules/overlayscrollbars/css/OverlayScrollbars.css: {}
-  js:
-    node_modules/admin-lte/plugins/bootstrap/js/bootstrap.bundle.js: {}
-    node_modules/overlayscrollbars/js/jquery.overlayScrollbars.js: {}
-  dependencies:
-    - core/jquery
+    component:
+      css/components/batch.css: {}
+
+comment-by-viewer:
+  css:
+    component:
+      css/components/comment-by-viewer.css: {}

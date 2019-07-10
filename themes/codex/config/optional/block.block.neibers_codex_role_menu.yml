@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - role_menu
+  theme:
+    - neibers_codex
+id: neibers_codex_role_menu
+theme: neibers_codex
+region: sidebar
+weight: 0
+provider: null
+plugin: 'role_menu_block'
+settings:
+  id: 'role_menu_block'
+  label: 'Role menu block'
+  provider: role_menu
+  label_display: false
+visibility: {  }

@@ -1,0 +1,13 @@
+input[type=submit]:hover {
+  background-color: #286090;
+  color: #1a1a1a;
+}
+a.tabledrag-handle .handle {
+  width: 25px;
+  height: 25px;
+}
+@media screen and (max-width: 1250px) {
+  ul.wizard {
+    display: none;
+  }
+}

@@ -1,0 +1,30 @@
+{#
+/**
+ * @file salary-proposal.html.twig
+ * Default theme implementation to present Salary proposal data.
+ *
+ * This template is used when viewing Salary proposal pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_salary_proposal()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes.addClass('salary_proposal', 'row') }}>
+  <div class="col-md-9">
+    <div class="box">
+      <div class="box-body">
+        {{ content.employee_assignment }}
+      </div>
+    </div>
+    {{ content|without('employee_assignment') }}
+  </div>
+  <div class="col-md-3">
+  </div>
+</div>
+

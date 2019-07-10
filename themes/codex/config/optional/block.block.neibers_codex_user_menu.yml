@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_style_plugins
+    - user_plus
+  theme:
+    - neibers_codex
+third_party_settings:
+  block_style_plugins:
+    simple_class:
+      simple_class: 'dropdown user-menu'
+id: neibers_codex_user_menu
+theme: neibers_codex
+region: navbar
+weight: 10
+provider: null
+plugin: avatar_block
+settings:
+  id: avatar_block
+  label: 'Avatar block'
+  provider: user_plus
+  label_display: '0'
+  view_mode: navbar
+visibility: {  }

@@ -1,0 +1,12 @@
+<div class="box box-primary">
+  <form{{ attributes }}>
+    <div class="box-body">
+      {{ element|without('actions') }}
+    </div>
+    {#
+    <div class="box-footer">
+      {{ element.actions }}
+    </div>
+    #}
+  </form>
+</div>

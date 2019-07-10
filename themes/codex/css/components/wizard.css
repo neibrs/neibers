@@ -1,0 +1,30 @@
+.navbar ul.wizard {
+  margin-top: 13px;
+}
+.navbar ul.wizard li {
+  padding: 4px 17px 3px 30px;
+  background: #fff;
+}
+.navbar ul.wizard li:before {
+  border-bottom: 12.5px inset transparent;
+  border-left: 12.5px solid #3c8dbc;
+  border-top: 12.5px inset transparent;
+}
+.navbar ul.wizard li:after {
+  right: -11.5px;
+  border-bottom: 12.5px inset transparent;
+  border-left: 12.5px solid #fff;
+  border-top: 12.5px inset transparent;
+}
+.navbar ul.wizard .active {
+  background: #f39c12;
+}
+.navbar ul.wizard .active:after {
+  border-left-color: #f39c12;
+}
+.navbar ul.wizard li:first-child:before {
+  border: 0;
+}
+.navbar ul.wizard li:last-child:after {
+  border: 0;
+}

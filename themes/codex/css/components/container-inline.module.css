@@ -1,0 +1,10 @@
+/**
+ * @file
+ * Inline items.
+ */
+
+.container-inline div,
+.container-inline div.dropbutton-wrapper,
+.container-inline label {
+  display: inline-block;
+}

@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - alert
+  theme:
+    - neibers_codex
+id: alerticonblock
+theme: neibers_codex
+region: navbar
+weight: 0
+provider: null
+plugin: alert_icon_block
+settings:
+  id: alert_icon_block
+  label: 'Alert icon block'
+  provider: alert
+  label_display: '0'
+visibility: {  }

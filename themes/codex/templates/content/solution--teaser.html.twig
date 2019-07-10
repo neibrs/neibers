@@ -1,0 +1,32 @@
+{#
+/**
+ * @file solution.html.twig
+ * Default theme implementation to present Solution data.
+ *
+ * This template is used when viewing Solution pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_solution()
+ *
+ * @ingroup themeable
+ */
+#}
+{%
+  set classes = [
+    'solution',
+    'box box-solid',
+  ]
+%}
+<div class="col-sm-12 col-md-4">
+  <div{{ attributes.addClass(classes) }}>
+    <div class="box-body">
+      {% if content %}
+        {{- content -}}
+      {% endif %}
+    </div>
+  </div>
+</div>

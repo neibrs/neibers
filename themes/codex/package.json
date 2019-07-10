@@ -1,7 +1,7 @@
 {
-  "name": "Codex",
+  "name": "neibers_codex",
   "dependencies": {
-    "admin-lte": "^3.0.0-beta.1",
-    "font-awesome": "^4.7.0"
+    "admin-lte": "^2.4.2",
+    "basicprimitives": "^5.2.4"
   }
 }

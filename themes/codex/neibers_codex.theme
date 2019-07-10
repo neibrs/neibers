@@ -2,144 +2,175 @@
 
 /**
  * @file
+ * Contains neibers_codex.theme.
+ */
+
+use Drupal\block\Entity\Block;
+use Drupal\Core\Access\AccessResult;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Session\AccountInterface;
+use Drupal\Core\Template\Attribute;
+use Drupal\views\Form\ViewsForm;
+
+/**
+ * @file
  * Functions to support theming in the neibers_codex theme.
  */
 
 /**
- * Implements hook_preprocess_HOOK() for html.html.twig.
+ * Implements hook_preprocess_HOOK() for comment.
  */
-function neibers_codex_preprocess_html(array &$variables) {
-  /* Add class to html tag */
-  //$variables['html_attributes']->addClass('no-js');
+function neibers_codex_preprocess_comment(&$variables) {
+  /** @var \Drupal\comment\CommentInterface $comment */
+  $comment = $variables['elements']['#comment'];
 
-  // Don't display the site name twice on the front page (and potentially others)
-  /*if (isset($variables['head_title_array']['title']) && isset($variables['head_title_array']['name']) && ($variables['head_title_array']['title'] == $variables['head_title_array']['name'])) {
-    $variables['head_title'] = $variables['head_title_array']['name'];
-  }*/
+  $variables['title'] = $comment->getSubject();
 }
 
 /**
- * Implements hook_page_attachments_alter().
+ * Implements hook_preprocess_HOOK() for field_multiple_value_form.
  */
-function neibers_codex_page_attachments_alter(array &$page) {
-  // Tell IE to use latest rendering engine (not to use compatibility mode).
-  /*$ie_edge = [
-    '#type' => 'html_tag',
-    '#tag' => 'meta',
-    '#attributes' => [
-    'http-equiv' => 'X-UA-Compatible',
-    'content' => 'IE=edge',
-    ],
-  ];
-  $page['#attached']['html_head'][] = [$ie_edge, 'ie_edge'];*/
+function neibers_codex_preprocess_field_multiple_value_form(&$variables) {
+  if ($variables['multiple']) {
+    unset($variables['table']['#header'][0]['data']['#prefix']);
+    unset($variables['table']['#header'][0]['data']['#sufix']);
+  }
 }
 
 /**
- * Implements hook_preprocess_page() for page.html.twig.
+ * Implements hook_preprocess_HOOK() for html.
  */
-function neibers_codex_preprocess_page(array &$variables) {
+function neibers_codex_preprocess_html(&$variables) {
+  if (\Drupal::service('path.current')->getPath() == '/user/login') {
+    $variables['attributes']['class'][] = 'login-page';
+  }
+  else {
+    $skin = theme_get_setting('skin');
+    $variables['attributes']['class'][] = empty($skin) ? 'skin-blue' : $skin;
+    $variables['attributes']['class'][] = 'sidebar-mini';
+    if ($sidebar_collapse = \Drupal::request()->cookies->get('Drupal_collapsed_pushMenu', 1)) {
+      $variables['attributes']['class'][] = 'sidebar-collapse';
+    }
+    $variables['#cache']['contexts'][] = 'cookies:Drupal.collapsed.pushMenu';
+  }
+}
 
+function neibers_codex_preprocess_input__submit(&$variables) {
+  $variables['attributes']['class'][] = 'btn';
+  $variables['attributes']['class'][] = 'btn-primary';
+  $variables['attributes']['class'][] = 'btn-sm';
+}
+
+function neibers_codex_preprocess_menu__role_menu(&$variables) {
+  $variables['attributes']['data-widget'] = 'tree';
+}
+
+function neibers_codex_preprocess_menu_local_action(array &$variables) {
+  $classes = $variables['link']['#options']['attributes']['class'];
+  $classes = array_diff($classes, [
+    'button',
+    'button-action',
+    'button--primary',
+    'button--small',
+  ]);
+  $classes[] = 'btn';
+  $classes[] = 'btn-primary';
+  $classes[] = 'btn-sm';
+  $variables['link']['#options']['attributes']['class'] = $classes;
 }
 
 /**
- * Implements hook_theme_suggestions_page_alter().
+ * Implements hook_form_alter().
  */
-function neibers_codex_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+function neibers_codex_form_alter(&$form, FormStateInterface $form_state, $form_id) {
 
+  if (isset($form['actions']['delete'])) {
+    $form['actions']['delete']['#attributes']['class'] = [
+      'btn',
+      'btn-danger',
+      'btn-sm',
+    ];
+  }
+  if (isset($form['actions']['cancel'])) {
+    $form['actions']['cancel']['#attributes']['class'] = [
+      'btn',
+      'btn-warning',
+      'btn-sm',
+    ];
+  }
+  if (isset($form['actions']['edit-add-block'])) {
+    $form['actions']['edit-add-block']['#attributes']['class'] = [
+      'btn',
+      'btn-warning',
+      'btn-sm',
+    ];
+  }
+
+  // Make bulk_form inline.
+  $form_object = $form_state->getFormObject();
+  if ($form_object instanceof ViewsForm) {
+    if (isset($form['header']['bulk_form'])) {
+      $form['header']['bulk_form']['#attributes']['class'] = 'form--inline clearfix';
+    }
+    else {
+      $build_info = $form_state->getBuildInfo();
+      /** @var \Drupal\views\ViewExecutable $view_executable */
+      $view_executable = $build_info['args'][0];
+      $base_table = $view_executable->storage->get('base_table');
+      $base_table = str_replace('_field_data', '', $base_table);
+      if (isset($form['header'][$base_table . '_bulk_form'])) {
+        $form['header'][$base_table . '_bulk_form']['#attributes']['class'] = 'form--inline clearfix';
+      }
+    }
+  }
 }
 
 /**
- * Implements hook_theme_suggestions_node_alter().
+ * Implements hook_theme_suggestions_HOOK_alter() for block.
  */
-function neibers_codex_theme_suggestions_node_alter(array &$suggestions, array $variables) {
-  /*$node = $variables['elements']['#node'];
-
-  if ($variables['elements']['#view_mode'] == "full") {
-
-  }*/
+function neibers_codex_theme_suggestions_block_alter(array &$suggestions, array $variables) {
+  if (!empty($variables['elements']['#id'])) {
+    $block = Block::load($variables['elements']['#id']);
+    $suggestions = ['block__' . $block->getRegion()] + $suggestions;
+  }
+  return $suggestions;
 }
 
-/**
- * Implements hook_preprocess_HOOK() for Block document templates.
- */
-function neibers_codex_preprocess_block(array &$variables) {
-
+function neibers_codex_preprocess_dropdown_toggle(&$variables) {
+  if (!empty($variables['wrapper_attributes'])) {
+    $variables['wrapper_attributes'] = new Attribute($variables['wrapper_attributes']);
+  }
 }
 
-/**
- * Implements hook_theme_suggestions_field_alter().
- */
-function neibers_codex_theme_suggestions_field_alter(array &$suggestions, array $variables) {
-  /*$element = $variables['element'];
-  $suggestions[] = 'field__' . $element['#view_mode'];
-  $suggestions[] = 'field__' . $element['#view_mode'] . '__' . $element['#field_name'];*/
+function neibers_codex_preprocess_block(&$variables) {
+  if (isset($variables['content']['links'])) {
+    $variables['content']['links']['#attributes']['class'][] = 'pull-right';
+  }
 }
 
-/**
- * Implements hook_theme_suggestions_field_alter().
- */
-function neibers_codex_theme_suggestions_fieldset_alter(array &$suggestions, array $variables) {
-  /*$element = $variables['element'];
-  if (isset($element['#attributes']['class']) && in_array('form-composite', $element['#attributes']['class'])) {
-    $suggestions[] = 'fieldset__form_composite';
-  }*/
-}
+function neibers_codex_preprocess_links(&$variables) {
+  if (!empty($variables['links'])) {
+    $route_match = \Drupal::routeMatch();
 
-/**
- * Implements hook_preprocess_node().
- */
-function neibers_codex_preprocess_node(array &$variables) {
-  // Default to turning off byline/submitted.
-  //$variables['display_submitted'] = FALSE;
-}
+    $route_name = $route_match->getRouteName();
+    // The request is injected, so we need to verify that we have the expected
+    // _raw_variables attribute.
+    $row_variables_bag = $route_match->getRawParameters();
+    // If we don't have _raw_variables, we assume the attributes are still the
+    // original values.
+    $raw_variables = $row_variables_bag ? $row_variables_bag->all() : $route_match->getParameters()->all();
 
-/**
- * Implements hook_theme_suggestions_views_view_alter().
- */
-function neibers_codex_theme_suggestions_views_view_alter(array &$suggestions, array $variables) {
-
-}
-
-/**
- * Implements hook_preprocess_form().
- */
-function neibers_codex_preprocess_form(array &$variables) {
-  //$variables['attributes']['novalidate'] = 'novalidate';
-}
-
-/**
- * Implements hook_preprocess_select().
- */
-function neibers_codex_preprocess_select(array &$variables) {
-  //$variables['attributes']['class'][] = 'select-chosen';
-}
-
-/**
- * Implements hook_preprocess_field().
- */
-function neibers_codex_preprocess_field(array &$variables, $hook) {
-  /*switch ($variables['element']['#field_name']) {
-  }*/
-}
-
-/**
- * Implements hook_preprocess_details().
- */
-function neibers_codex_preprocess_details(array &$variables) {
-  /*$variables['attributes']['class'][] = 'details';
-  $variables['summary_attributes']['class'] = 'summary';*/
-}
-
-/**
- * Implements hook_theme_suggestions_details_alter().
- */
-function neibers_codex_theme_suggestions_details_alter(array &$suggestions, array $variables) {
-
-}
-
-/**
- * Implements hook_preprocess_menu_local_task().
- */
-function neibers_codex_preprocess_menu_local_task(array &$variables) {
-  //$variables['element']['#link']['url']->setOption('attributes', ['class'=>'rounded']);
+    foreach ($variables['links'] as $key => $value) {
+      if (isset($value['link']) && $url = $value['link']['#url']) {
+        $active = $url->getRouteName() == $route_name;
+        if ($active) {
+          $route_parameters = $url->getRouteParameters();
+          $active = array_intersect_assoc($route_parameters, $raw_variables) == $route_parameters;
+        }
+        if ($active) {
+          $variables['links'][$key]['attributes']->addClass('active');
+        }
+      }
+    }
+  }
 }

@@ -1,0 +1,25 @@
+{#
+/**
+ * @file quote_data.html.twig
+ * Default theme implementation to present Quote data data.
+ *
+ * This template is used when viewing Quote data pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_quote_data()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes.addClass('quote_data row') }}>
+  <div class="col-md-3">
+    {{ content.nav }}
+  </div>
+  <div class="col-md-9">
+    {{ content|without('nav') }}
+  </div>
+</div>

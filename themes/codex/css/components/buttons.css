@@ -1,0 +1,4 @@
+.button {
+  /** override bootstrap setting */
+  padding: 4px 1.5em !important;
+}

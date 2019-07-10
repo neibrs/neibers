@@ -1,4 +1,3 @@
-{% extends "block.html.twig" %}
 {#
 /**
  * @file
@@ -13,9 +12,7 @@
  * - site_slogan: Slogan for site as defined in Site information settings.
  */
 #}
-{% block content %}
-  <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home" class="brand-link">
-    <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" class="brand-image img-circle" />
-    <span class="brand-text font-weight-light">{{ site_name }}</span>
-  </a>
-{% endblock %}
+<a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" class="logo">
+  <span class="logo-mini"><b>Neibers</b></span>
+  <span class="logo-lg">{{ site_name }}</span>
+</a>

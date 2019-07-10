@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  theme:
+    - neibers_codex
+id: neibers_codex_primary_local_tasks
+theme: neibers_codex
+region: header
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: false
+visibility:
+  request_path:
+    id: request_path
+    pages: /user/login
+    negate: true
+    context_mapping: {  }

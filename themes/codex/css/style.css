@@ -1,0 +1,64 @@
+.views-row:after {
+  clear: both;
+}
+
+.block-product-select-block {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+body.sidebar-mini > .block-avartar-block > .form-no-label {
+  display: none;
+}
+/** Set sidebar mini avatar block title to display none; **/
+.sidebar-collapse .js-form-item.form-item.js-form-type-item.form-type-item.js-form-item-.form-item-.form-no-label {
+  display: none;
+}
+div.navbar-custom-menu ul.navbar-nav li.user-menu {
+  padding-left: 10px;
+  height: 50px;
+}
+div.navbar-custom-menu ul.navbar-nav li.user-menu:hover, ul.navbar-nav li.user-menu.open:hover {
+  background: rgba(0,0,0,0.1);
+  color: #f6f6f6;
+  height: 50px;
+}
+div.navbar-custom-menu ul.navbar-nav li.user-menu div.dropdown-menu {
+  top: 50px;
+}
+
+.btn-group { padding-left: 0 }
+.box-header { padding-bottom: 0 }
+.box-header .btn-group { margin: 0 }
+
+/* extend bootstrap styles */
+.d-inline-block {
+  display: inline-block !important;
+}
+
+/* forms */
+input[type=checkbox] { margin: 0; }
+.form-item label.option { margin: 0 0 0 2px; }
+
+/* Utilities */
+.absolute-right {
+  position: absolute;
+  right: 15px;
+  z-index: 10;
+}
+
+/* Person detail page*/
+.layout__region--top form.organization-person-switch {
+  float: left;
+  margin-right: 10px;
+}
+
+/* Fix container-inline label for checkbox */
+.container-inline .form-type-checkbox label:after {
+  content: '';
+}
+/* fix views_ui.admin.css */
+.views-display-setting .label,
+.views-display-setting .views-ajax-link {
+  float: none;
+}

@@ -1,0 +1,8 @@
+.breadcrumb {
+  margin-left: 0;
+}
+.breadcrumb li:first-child a:before {
+  content: "\f015";
+  font-family: "FontAwesome";
+  margin-right: 5px;
+}

@@ -25,4 +25,41 @@
  * @see template_preprocess_block()
  */
 #}
-{{ content }}
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+  ]
+%}
+<div{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {% if label %}
+
+  {% if attributes.hasClass('box') %}
+    <div class='box-header'>
+      {% if content.links %}
+        {{ content.links }}
+      {% endif %}
+      <h3{{ title_attributes.addClass('box-title') }}>{{ label }}</h3>
+    </div>
+  {% else %}
+    {% if content.links %}
+      {{ content.links }}
+    {% endif %}
+    <h3{{ title_attributes }}>{{ label }}</h3>
+  {% endif %}
+
+  {% endif %}
+  {{ title_suffix }}
+
+  {% if attributes.hasClass('box') %}
+    <div class='box-body'>
+  {% endif %}
+  {% block content %}
+    {{ content|without('links') }}
+  {% endblock %}
+  {% if attributes.hasClass('box') %}
+    </div>
+  {% endif %}
+</div>
