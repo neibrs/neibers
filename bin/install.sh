@@ -13,7 +13,8 @@ vendor/bin/drush en -y coffee \
   memcache_admin \
   neibers_idc \
   neibers_mall \
-  neibers_translation
+  neibers_translation \
+  user_plus
 
 echo "include $app_root . '/' . $site_path . '/settings.local.php';" > sites/default/settings.php
 
