@@ -26,10 +26,6 @@ msgid "The industry of neibers_idc."
 msgstr "IDC 行业."
 
 #: modules/neibers/product/idc/neibers_idc.info.yml:0
-msgid "IDC"
-msgstr ""
-
-#: modules/neibers/product/idc/neibers_idc.info.yml:0
 msgid "The industry of neibers idc."
 msgstr "IDC 行业."
 
