@@ -15,7 +15,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  *
  * @Block(
  *  id = "avatar_block",
- *  admin_label = @Translation("Avatar block"),
+ *  admin_label = @Translation("Avatar"),
  * )
  */
 class AvatarBlock extends BlockBase implements ContainerFactoryPluginInterface {

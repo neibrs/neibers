@@ -5,7 +5,7 @@ dependencies:
     - user_plus
   theme:
     - neibers_codex
-id: avatarblock_2
+id: neibers_codex_avatarblock
 theme: neibers_codex
 region: sidebar
 weight: 0
