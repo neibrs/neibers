@@ -18,6 +18,10 @@ libraries-override:
     css:
       component:
         css/components/container-inline.module.css: css/components/container-inline.module.css
+  views_ui/admin.styling:
+    css:
+      theme:
+        /core/themes/stable/css/views_ui/views_ui.admin.theme.css: css/modules/views_ui/views_ui.admin.theme.css
 
 libraries-extend:
   core/drupal.batch:
