@@ -24,7 +24,7 @@
 }
 .views-admin .icon,
 .views-admin .icon-text {
-  background-image: url(../../images/views_ui/sprites.png);
+  background-image: url(../../../images/views_ui/sprites.png);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: left top; /* LTR */
