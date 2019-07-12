@@ -1,0 +1,5 @@
+name: 'Category'
+type: module
+description: 'The category for product.'
+core: 8.x
+package: 'Neibers'

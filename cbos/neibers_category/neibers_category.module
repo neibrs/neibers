@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains neibers_category.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function neibers_category_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the neibers_category module.
+    case 'help.page.neibers_category':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('The category for product.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

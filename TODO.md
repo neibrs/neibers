@@ -46,6 +46,7 @@
 
 * 客户下单后提醒业务人员
 
+* 商品分类（neibers_category)
 难点:
 * /ipIP管理页面添加表单选择器table select.
 * ips_order_form视图优化
