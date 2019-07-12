@@ -1,0 +1,70 @@
+{#
+/**
+ * @file
+ * Theme override for the search form block.
+ *
+ * Available variables:
+ * - plugin_id: The ID of the block implementation.
+ * - label: The configured label of the block if visible.
+ * - configuration: A list of the block's configuration values, including:
+ *   - label: The configured label for the block.
+ *   - label_display: The display settings for the label.
+ *   - provider: The module or other provider that provided this block plugin.
+ *   - Block plugin specific settings will also be stored here.
+ * - content: The content of this block.
+ * - attributes: A list HTML attributes populated by modules, intended to
+ *   be added to the main container tag of this template. Includes:
+ *   - id: A valid HTML ID and guaranteed unique.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @see template_preprocess_block()
+ * @see search_preprocess_block()
+ */
+#}
+{%
+  set classes = [
+    'block',
+    'block-search',
+    'container-inline',
+  ]
+%}
+{#<div{{ attributes.addClass(classes) }}>#}
+  {#{{ title_prefix }}#}
+  {#{% if label %}#}
+    {#<h2{{ title_attributes }}>{{ label }}</h2>#}
+  {#{% endif %}#}
+  {#{{ title_suffix }}#}
+  {#{% block content %}#}
+    {#{{ content }}#}
+  {#{% endblock %}#}
+{#</div>#}
+  {% block content %}
+<div class="dsc-search">
+  <div class="form">
+    <form id="searchForm" name="searchForm" method="get" action="search.php" onsubmit="return checkSearchForm(this)" class="search-form">
+      <input autocomplete="off" onkeyup="lookup(this.value);" name="keywords" type="text" id="keyword" value="内衣" class="search-text" style="color: rgb(102, 102, 102);">
+      <input type="hidden" name="store_search_cmt" value="0">
+      <button type="submit" class="button button-goods" onclick="checkstore_search_cmt(0)">搜商品</button>
+      <button type="submit" class="button button-store" onclick="checkstore_search_cmt(1)">搜店铺</button>
+    </form>
+    <ul class="keyword">
+      <li><a href="search.php?keywords=%E5%91%A8%E5%A4%A7%E7%A6%8F" target="_blank">周大福</a></li>
+      <li><a href="search.php?keywords=%E5%86%85%E8%A1%A3" target="_blank">内衣</a></li>
+      <li><a href="search.php?keywords=Five+Plus" target="_blank">Five Plus</a></li>
+      <li><a href="search.php?keywords=%E6%89%8B%E6%9C%BA" target="_blank">手机</a></li>
+    </ul>
+    
+    <div class="suggestions_box" id="suggestions" style="display:none;">
+      <div class="suggestions_list" id="auto_suggestions_list">
+        &nbsp;
+      </div>
+    </div>
+  
+  </div>
+</div>
+{% endblock %}

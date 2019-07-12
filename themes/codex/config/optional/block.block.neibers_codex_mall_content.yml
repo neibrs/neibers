@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - neibers_codex
+id: neibers_codex_mall_content
+theme: neibers_codex
+region: mall_content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Mall main content'
+  provider: system
+  label_display: '0'
+visibility: {  }

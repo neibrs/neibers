@@ -41,3 +41,10 @@ regions:
   content: Content
   page_top: 'Page top'
   page_bottom: 'Page bottom'
+  mall_site_nav: 'Mall site nav'
+  mall_header: 'Mall header'
+  mall_nav: 'Mall nav'
+  mall_full_main_nav: 'Mall full main nav'
+  mall_content: 'Mall content'
+  mall_mui_bars: 'Mall mui bar tabs'
+  mall_footer: 'Mall footer'

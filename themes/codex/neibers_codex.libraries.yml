@@ -44,3 +44,16 @@ comment-by-viewer:
   css:
     component:
       css/components/comment-by-viewer.css: {}
+
+mall:
+  css:
+    theme:
+      css/mall/iconfont.css: {}
+      css/mall/layout.css: {}
+      css/mall/header.css: {}
+  js:
+    js/mall.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings

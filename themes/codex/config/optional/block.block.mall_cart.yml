@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_cart
+  theme:
+    - neibers_codex
+id: mall_cart
+theme: neibers_codex
+region: mall_header
+weight: 0
+provider: null
+plugin: commerce_cart
+settings:
+  id: commerce_cart
+  label: 'Mall cart'
+  provider: commerce_cart
+  label_display: '0'
+  dropdown: true
+visibility: {  }

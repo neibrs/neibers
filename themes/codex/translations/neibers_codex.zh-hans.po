@@ -6,13 +6,20 @@
 #  modules/neibers/themes/codex/neibers_codex.info.yml: n/a
 #  modules/neibers/themes/codex/templates/admin/admin-block-content--implementation.html.twig: n/a
 #  modules/neibers/themes/codex/templates/block/block--system-branding-block.html.twig: n/a
+#  modules/neibers/themes/codex/templates/cart/commerce-cart-block.html.twig: n/a
+#  modules/neibers/themes/codex/templates/cart/commerce-cart-empty-page.html.twig: n/a
 #  modules/neibers/themes/codex/templates/field/field--comment.html.twig: n/a
 #  modules/neibers/themes/codex/templates/layout/dropdown-toggle.html.twig: n/a
 #  modules/neibers/themes/codex/config/optional/block.block.alerticonblock.yml: n/a
 #  modules/neibers/themes/codex/config/optional/block.block.es_solution_category_dropdown.yml: n/a
+#  modules/neibers/themes/codex/config/optional/block.block.mall_cart.yml: n/a
+#  modules/neibers/themes/codex/config/optional/block.block.mall_search_form.yml: n/a
+#  modules/neibers/themes/codex/config/optional/block.block.mall_site_branding.yml: n/a
 #  modules/neibers/themes/codex/config/optional/block.block.neibers_codex_avatarblock.yml: n/a
 #  modules/neibers/themes/codex/config/optional/block.block.neibers_codex_user_menu.yml: n/a
+#  modules/neibers/themes/codex/config/optional/block.block.neibers_codex_content.yml: n/a
 #  modules/neibers/themes/codex/config/optional/block.block.neibers_codex_layout_template.yml: n/a
+#  modules/neibers/themes/codex/config/optional/block.block.neibers_codex_mall_content.yml: n/a
 #  modules/neibers/themes/codex/config/optional/block.block.neibers_codex_role_menu.yml: n/a
 #  modules/neibers/themes/codex/config/optional/block.block.taskiconblock.yml: n/a
 #
@@ -20,7 +27,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-07-10 14:39+0800\n"
+"POT-Creation-Date: 2019-07-12 21:10+0800\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -41,6 +48,14 @@ msgstr "第@step步:"
 msgid "Home"
 msgstr "主页"
 
+#: modules/neibers/themes/codex/templates/cart/commerce-cart-block.html.twig:25
+msgid "My cart"
+msgstr "我的购物车"
+
+#: modules/neibers/themes/codex/templates/cart/commerce-cart-empty-page.html.twig:11
+msgid "Your shopping cart is empty."
+msgstr "购物车为空."
+
 #: modules/neibers/themes/codex/templates/field/field--comment.html.twig:59
 msgid "Add new comment"
 msgstr "添加评论"
@@ -52,10 +67,6 @@ msgstr "查看全部"
 #: modules/neibers/themes/codex/config/optional/block.block.alerticonblock.yml:0
 msgid "Alert icon block"
 msgstr "提醒图标"
-
-#: modules/neibers/themes/codex/config/optional/block.block.es_solution_category_dropdown.yml:0
-msgid "Solution category dropdown block"
-msgstr ""
 
 #: modules/neibers/themes/codex/config/optional/block.block.neibers_codex_avatarblock.yml:0 modules/neibers/themes/codex/config/optional/block.block.neibers_codex_user_menu.yml:0
 msgid "Avatar block"

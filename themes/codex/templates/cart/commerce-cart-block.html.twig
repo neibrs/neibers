@@ -1,0 +1,60 @@
+{#<div{{ attributes}}>#}
+  {#<div class="cart-block--summary">#}
+    {#<a class="cart-block--link__expand" href="{{ url }}">#}
+      {#<span class="cart-block--summary__icon">{{ icon }}</span>#}
+      {#<span class="cart-block--summary__count">{{ count_text }}</span>#}
+    {#</a>#}
+  {#</div>#}
+  {#{% if content %}#}
+  {#<div class="cart-block--contents">#}
+    {#<div class="cart-block--contents__inner">#}
+      {#<div class="cart-block--contents__items">#}
+        {#{{ content }}#}
+      {#</div>#}
+      {#<div class="cart-block--contents__links">#}
+        {#{{ links }}#}
+      {#</div>#}
+    {#</div>#}
+  {#</div>#}
+  {#{% endif %}#}
+{#</div>#}
+<div class="shopCart" data-ectype="dorpdown" id="ECS_CARTINFO" data-carteveval="0">
+  <div class="shopCart-con dsc-cm">
+    <a href="{{ url }}">
+      <i class="iconfont icon-carts"></i>
+      <span>{{ 'My cart'|t }}</span>
+      <em class="count cart_num">{{ count }}</em>
+    </a>
+  </div>
+  <div class="dorpdown-layer" ectype="dorpdownLayer">
+    <div class="settleup-content">
+      <div class="mc">
+        <ul>
+          <li>
+            <div class="p-img"><a href="goods.php?id=627" target="_blank"><img src="images/201703/thumb_img/0_thumb_G_1489099773629.jpg" width="50" height="50"></a></div>
+            <div class="p-name"><a href="goods.php?id=627" target="_blank" title="2017春装新款男士卫衣套头圆领韩版潮流时尚男生休闲外套">2017春装新款男士卫衣套头圆领韩版潮流时尚男生休闲外套</a></div>
+            <div class="p-number">
+              <span class="num" id="goods_number_46">3</span>
+              <div class="count">
+                <a href="javascript:void(0);" id="min_number" onclick="changenum(46,1, 2, 23)" class="count-add"><i class="iconfont icon-up"></i></a>
+                <a href="javascript:void(0);" onclick="changenum(46, -1, 2, 23)" class="count-remove"><i class="iconfont icon-down"></i></a>
+              </div>
+            </div>
+            <div class="p-oper">
+              <div class="price"><em>¥</em>200.00</div>
+              <a href="javascript:void(0);" onclick="deleteCartGoods(46,0)" class="remove">删除</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="mb">
+        <input name="cart_value" id="cart_value" value="46" type="hidden">
+        <div class="p-total">共{{ count }}件商品&nbsp;&nbsp;共计：600.00</div>
+        <a href="flow.php" class="btn-cart">去购物车</a>
+      </div>
+    </div>
+  </div>
+  
+  {#{{ content }}#}
+  {#{{ links }}#}
+</div>
