@@ -1,0 +1,12 @@
+neibers_category.neibers_category.*:
+  type: config_entity
+  label: 'Category config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string
