@@ -2,6 +2,8 @@ name: Codex
 type: theme
 base theme: seven
 package: Neibers
+interface translation project: neibers_codex
+interface translation server pattern: modules/neibers/themes/codex/translations/%project.%language.po
 core: 8.x
 libraries:
   - neibers_codex/global-styling
