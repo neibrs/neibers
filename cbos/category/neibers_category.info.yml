@@ -1,6 +1,6 @@
 name: 'Category'
 type: module
-description: 'The category for product alter for commerce product.'
+description: 'The category for product.'
 core: 8.x
 interface translation project: neibers_category
 interface translation server pattern: modules/neibers/cbos/category/translations/%project.%language.po
