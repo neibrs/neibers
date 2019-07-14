@@ -5,7 +5,7 @@ namespace Drupal\neibers_category\Entity;
 use Drupal\views\EntityViewsData;
 
 /**
- * Provides Views data for Category entities.
+ * Provides Views data for Category.
  */
 class CategoryViewsData extends EntityViewsData {
 

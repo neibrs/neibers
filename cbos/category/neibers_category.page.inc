@@ -4,7 +4,7 @@
  * @file
  * Contains neibers_category.page.inc.
  *
- * Page callback for Category entities.
+ * Page callback for Category.
  */
 
 use Drupal\Core\Render\Element;

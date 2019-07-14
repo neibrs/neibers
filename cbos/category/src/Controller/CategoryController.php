@@ -111,8 +111,8 @@ class CategoryController extends ControllerBase implements ContainerInjectionInt
     $build['#title'] = $has_translations ? $this->t('@langname revisions for %title', ['@langname' => $langname, '%title' => $neibers_category->label()]) : $this->t('Revisions for %title', ['%title' => $neibers_category->label()]);
 
     $header = [$this->t('Revision'), $this->t('Operations')];
-    $revert_permission = (($account->hasPermission("revert all category revisions") || $account->hasPermission('administer category entities')));
-    $delete_permission = (($account->hasPermission("delete all category revisions") || $account->hasPermission('administer category entities')));
+    $revert_permission = (($account->hasPermission("revert all category revisions") || $account->hasPermission('administer category')));
+    $delete_permission = (($account->hasPermission("delete all category revisions") || $account->hasPermission('administer category')));
 
     $rows = [];
 

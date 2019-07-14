@@ -22,15 +22,15 @@ class CategoryAccessControlHandler extends EntityAccessControlHandler {
     switch ($operation) {
       case 'view':
         if (!$entity->isPublished()) {
-          return AccessResult::allowedIfHasPermission($account, 'view unpublished category entities');
+          return AccessResult::allowedIfHasPermission($account, 'view unpublished category');
         }
-        return AccessResult::allowedIfHasPermission($account, 'view published category entities');
+        return AccessResult::allowedIfHasPermission($account, 'view published category');
 
       case 'update':
-        return AccessResult::allowedIfHasPermission($account, 'edit category entities');
+        return AccessResult::allowedIfHasPermission($account, 'edit category');
 
       case 'delete':
-        return AccessResult::allowedIfHasPermission($account, 'delete category entities');
+        return AccessResult::allowedIfHasPermission($account, 'delete category');
     }
 
     // Unknown operation, no opinion.
@@ -41,7 +41,7 @@ class CategoryAccessControlHandler extends EntityAccessControlHandler {
    * {@inheritdoc}
    */
   protected function checkCreateAccess(AccountInterface $account, array $context, $entity_bundle = NULL) {
-    return AccessResult::allowedIfHasPermission($account, 'add category entities');
+    return AccessResult::allowedIfHasPermission($account, 'add category');
   }
 
 }

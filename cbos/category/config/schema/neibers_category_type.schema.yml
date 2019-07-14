@@ -1,4 +1,4 @@
-neibers_category.neibers_category_type.*:
+neibers_category.type.*:
   type: config_entity
   label: 'Category type config'
   mapping:

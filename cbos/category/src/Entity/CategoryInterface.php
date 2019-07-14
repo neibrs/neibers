@@ -9,7 +9,7 @@ use Drupal\Core\Entity\EntityPublishedInterface;
 use Drupal\user\EntityOwnerInterface;
 
 /**
- * Provides an interface for defining Category entities.
+ * Provides an interface for defining Category.
  *
  * @ingroup neibers_category
  */

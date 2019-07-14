@@ -3,7 +3,7 @@
 entity.neibers_category.collection:
   title: 'Category list'
   route_name: entity.neibers_category.collection
-  description: 'List Category entities'
+  description: 'List Category'
   parent: system.admin_structure
   weight: 100
 

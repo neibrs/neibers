@@ -8,10 +8,10 @@ use Drupal\Core\Language\LanguageInterface;
 use Drupal\neibers_category\Entity\CategoryInterface;
 
 /**
- * Defines the storage handler class for Category entities.
+ * Defines the storage handler class for Category.
  *
  * This extends the base storage class, adding required special handling for
- * Category entities.
+ * Category.
  *
  * @ingroup neibers_category
  */

@@ -22,8 +22,8 @@ use Drupal\Core\Config\Entity\ConfigEntityBundleBase;
  *       "html" = "Drupal\neibers_category\CategoryTypeHtmlRouteProvider",
  *     },
  *   },
- *   config_prefix = "neibers_category_type",
- *   admin_permission = "administer site configuration",
+ *   config_prefix = "type",
+ *   admin_permission = "administer category",
  *   bundle_of = "neibers_category",
  *   entity_keys = {
  *     "id" = "id",
@@ -31,11 +31,11 @@ use Drupal\Core\Config\Entity\ConfigEntityBundleBase;
  *     "uuid" = "uuid"
  *   },
  *   links = {
- *     "canonical" = "//neibers_category_type/{neibers_category_type}",
- *     "add-form" = "//neibers_category_type/add",
- *     "edit-form" = "//neibers_category_type/{neibers_category_type}/edit",
- *     "delete-form" = "//neibers_category_type/{neibers_category_type}/delete",
- *     "collection" = "//neibers_category_type"
+ *     "canonical" = "/category/type/{neibers_category_type}",
+ *     "add-form" = "/category/type/add",
+ *     "edit-form" = "/category/type/{neibers_category_type}/edit",
+ *     "delete-form" = "/category/type/{neibers_category_type}/delete",
+ *     "collection" = "/category/type"
  *   }
  * )
  */

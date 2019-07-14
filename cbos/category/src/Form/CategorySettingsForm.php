@@ -35,7 +35,7 @@ class CategorySettingsForm extends FormBase {
   }
 
   /**
-   * Defines the settings form for Category entities.
+   * Defines the settings form for Category.
    *
    * @param array $form
    *   An associative array containing the structure of the form.
@@ -46,7 +46,7 @@ class CategorySettingsForm extends FormBase {
    *   Form definition array.
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
-    $form['category_settings']['#markup'] = 'Settings form for Category entities. Manage field settings here.';
+    $form['category_settings']['#markup'] = 'Settings form for Category. Manage field settings here.';
     return $form;
   }
 

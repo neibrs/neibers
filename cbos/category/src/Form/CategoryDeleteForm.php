@@ -5,7 +5,7 @@ namespace Drupal\neibers_category\Form;
 use Drupal\Core\Entity\ContentEntityDeleteForm;
 
 /**
- * Provides a form for deleting Category entities.
+ * Provides a form for deleting Category.
  *
  * @ingroup neibers_category
  */
