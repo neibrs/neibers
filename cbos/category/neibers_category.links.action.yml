@@ -1,0 +1,10 @@
+entity.neibers_category.add_form:
+  route_name: entity.neibers_category.add_page
+  title: 'Add Category'
+  appears_on:
+    - entity.neibers_category.collection
+entity.neibers_category_type.add_form:
+  route_name: entity.neibers_category_type.add_form
+  title: 'Add Category type'
+  appears_on:
+    - entity.neibers_category_type.collection

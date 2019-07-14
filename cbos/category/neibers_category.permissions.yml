@@ -1,0 +1,30 @@
+add category entities:
+  title: 'Create new Category entities'
+
+administer category entities:
+  title: 'Administer Category entities'
+  description: 'Allow to access the administration form to configure Category entities.'
+  restrict access: true
+
+delete category entities:
+  title: 'Delete Category entities'
+
+edit category entities:
+  title: 'Edit Category entities'
+
+view published category entities:
+  title: 'View published Category entities'
+
+view unpublished category entities:
+  title: 'View unpublished Category entities'
+
+view all category revisions:
+  title: 'View all Category revisions'
+
+revert all category revisions:
+  title: 'Revert all Category revisions'
+  description: 'Role requires permission <em>view Category revisions</em> and <em>edit rights</em> for category entities in question or <em>administer category entities</em>.'
+
+delete all category revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Category revisions</em> and <em>delete rights</em> for category entities in question or <em>administer category entities</em>.'

@@ -1,0 +1,17 @@
+
+# Category menu items definition
+entity.neibers_category.collection:
+  title: 'Category list'
+  route_name: entity.neibers_category.collection
+  description: 'List Category entities'
+  parent: system.admin_structure
+  weight: 100
+
+
+# Category type menu items definition
+entity.neibers_category_type.collection:
+  title: 'Category type'
+  route_name: entity.neibers_category_type.collection
+  description: 'List Category type (bundles)'
+  parent: system.admin_structure
+  weight: 99

@@ -1,0 +1,22 @@
+# Category routing definition
+
+entity.neibers_category.canonical:
+  route_name: entity.neibers_category.canonical
+  base_route: entity.neibers_category.canonical
+  title: 'View'
+
+entity.neibers_category.edit_form:
+  route_name: entity.neibers_category.edit_form
+  base_route: entity.neibers_category.canonical
+  title: 'Edit'
+
+entity.neibers_category.version_history:
+  route_name: entity.neibers_category.version_history
+  base_route: entity.neibers_category.canonical
+  title: 'Revisions'
+
+entity.neibers_category.delete_form:
+  route_name:  entity.neibers_category.delete_form
+  base_route:  entity.neibers_category.canonical
+  title: Delete
+  weight: 10
