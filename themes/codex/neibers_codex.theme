@@ -55,6 +55,15 @@ function neibers_codex_preprocess_html(&$variables) {
   }
 }
 
+function neibers_codex_preprocess_page(&$variables) {
+  global $base_url;
+  $theme = \Drupal::theme()->getActiveTheme();
+  $variables['#attached']['drupalSettings']['theme'] = [
+    'path' => $base_url . '/' . $theme->getPath(),
+  ];
+  $variables['themePath'] = $base_url . '/' . $theme->getPath();
+}
+
 function neibers_codex_preprocess_input__submit(&$variables) {
   $variables['attributes']['class'][] = 'btn';
   $variables['attributes']['class'][] = 'bg-purple';
