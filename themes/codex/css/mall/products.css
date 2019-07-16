@@ -1,4 +1,6 @@
-
+.p-num em {
+  font-weight: bold;
+}
 /* goods-list start*/
 .hot-sales {
   width: 100%;
@@ -14,7 +16,7 @@
 .hotsale .hatsale-mt{ font-size:16px; color:#fff; background:#f42424; float:left; padding:27px 12px; width:40px;font-family: "microsoft yahei";}
 .hotsale .bd{ float:left; position:relative;height:110px; overflow:hidden;
   margin:20px;}
-.hotsale li{ width:310px; height:105px; border:1px solid #fff; float:left; background:#fff; margin-right:20px;}
+.hotsale li{ width:310px; height:108px; border:1px solid #fff; float:left; background:#fff; margin-right:20px;}
 .hotsale li:hover{ border-color:#ec5051;}
 .hotsale li:last-child{ margin-right:0;}
 .hotsale li.last{ margin-right:0;}
@@ -56,3 +58,18 @@
   .w1390 .gl-h-item .gl-i-wrap .col-1{ width:38%;}
   .w1390 .gl-h-item .gl-i-wrap .col-4{ margin-right:0; width:24%;}
 }
+
+.ftit{ overflow: hidden;padding: 0 0 20px;height: 35px;background: url(../../images/mall/dian-ico.png) repeat-x 0 18px;text-align: center;font-size: 21px;line-height: 33px;}
+.ftit h3{ display: inline;padding: 0 50px;background-color: #fff;font-weight: 400;font-size: 21px;color: #555;}
+.ftit-delr{ background:url(../../images/mall/dian-ico2.png) repeat-x 0 18px;}
+
+.p-panel-main{ overflow:hidden; position:relative; z-index:3; margin-top:15px;/* padding-bottom:80px;*/}
+.p-panel-main .gl-list ul{ width:1400px;}
+.p-panel-main .gl-list li{ float:left; width:190px; height:auto; position:relative; z-index:2; margin-right:10px;}
+.p-panel-main .gl-list li .p-img{ width:190px; height:190px;}
+.p-panel-main .gl-list li .p-price{ font-size:20px; margin-top:6px;}
+.p-panel-main .gl-list li .p-name{ width:100%; height:20px; line-height:20px; overflow:hidden; margin-top:5px;}
+.p-panel-main .gl-list li .p-name a{ display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; color:#333;}
+.p-panel-main .gl-list li .p-name a:hover{ color:#f42424;}
+.p-panel-main .gl-list li .p-num{ margin-top:7px;}
+.p-panel-main .gl-list li:last-child{ margin-right:0;}

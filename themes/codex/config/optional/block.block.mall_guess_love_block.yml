@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - neibers_mall
+  theme:
+    - neibers_codex
+id: mall_guess_love_block
+theme: neibers_codex
+region: mall_content_bot
+weight: -14
+provider: null
+plugin: guess_love_block
+settings:
+  id: guess_love_block
+  label: 'Guess love block'
+  provider: neibers_mall
+  label_display: '0'
+visibility: {  }

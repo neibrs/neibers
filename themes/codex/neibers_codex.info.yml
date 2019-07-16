@@ -48,6 +48,7 @@ regions:
   mall_nav: 'Mall nav'
   mall_pre_content: 'Mall pre content '
   mall_content: 'Mall content'
+  mall_content_bot: 'Mall content bottom'
   mall_mui_bars: 'Mall mui bar tabs'
   mall_footer_top: 'Mall footer top'
   mall_footer_con: 'Mall footer con'
