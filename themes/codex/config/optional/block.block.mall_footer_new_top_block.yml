@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - neibers_mall
+  theme:
+    - neibers_codex
+id: mall_footer_new_top_block
+theme: neibers_codex
+region: mall_footer_top
+weight: -11
+provider: null
+plugin: mall_footer_new_top_block
+settings:
+  id: mall_footer_new_top_block
+  label: 'Mall footer new top block'
+  provider: neibers_mall
+  label_display: '0'
+  service_telephone: 400-123-231
+visibility: {  }

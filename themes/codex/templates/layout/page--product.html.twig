@@ -75,8 +75,25 @@
 </div>
 {% endif %}
 
-{% if page.mall_footer %}
 <div class="footer-new">
-  {{ page.mall_footer }}
+  {% if page.mall_footer_top %}
+    {{ page.mall_footer_top }}
+  {% endif %}
+  {% if page.mall_footer_con %}
+  <div class="footer-new-con">
+    <div class="fnc-warp">
+      {{ page.mall_footer_con }}
+    </div>
+  </div>
+  {% endif %}
+  {% if page.mall_footer_pre_bot %}
+  <div class="footer-new-bot">
+    <div class="w w1200">
+      {{ page.mall_footer_pre_bot }}
+    </div>
+  </div>
+  {% endif %}
+  {% if page.mall_footer_bottom %}
+    {{ page.mall_footer_bottom }}
+  {% endif %}
 </div>
-{% endif %}

@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - neibers_mall
+  theme:
+    - neibers_codex
+id: mall_qrcode_block
+theme: neibers_codex
+region: mall_footer_con
+weight: 0
+provider: null
+plugin: qrcode_block
+settings:
+  id: qrcode_block
+  label: 'Qrcode block'
+  provider: neibers_mall
+  label_display: visible
+visibility: {  }

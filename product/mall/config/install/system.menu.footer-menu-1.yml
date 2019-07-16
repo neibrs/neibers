@@ -1,0 +1,5 @@
+langcode: en
+status: true
+id: footer-menu-1
+label: 'Footer menu 1'
+locked: true
