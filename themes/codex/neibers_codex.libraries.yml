@@ -51,6 +51,7 @@ mall:
       css/mall/iconfont.css: {}
       css/mall/layout.css: {}
       css/mall/header.css: {}
+      css/mall/products.css: {}
   js:
     js/mall.js: {}
   dependencies:

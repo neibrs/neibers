@@ -46,7 +46,7 @@ regions:
   mall_site_nav: 'Mall site nav'
   mall_header: 'Mall header'
   mall_nav: 'Mall nav'
-  mall_full_main_nav: 'Mall full main nav'
+  mall_pre_content: 'Mall pre content '
   mall_content: 'Mall content'
   mall_mui_bars: 'Mall mui bar tabs'
   mall_footer: 'Mall footer'

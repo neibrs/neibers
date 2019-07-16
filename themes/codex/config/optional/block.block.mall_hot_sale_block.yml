@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - neibers_mall
+  theme:
+    - neibers_codex
+id: mall_hot_sale_block
+theme: neibers_codex
+region: mall_pre_content
+weight: 0
+provider: null
+plugin: hot_sale_block
+settings:
+  id: hot_sale_block
+  label: 'Hot sale block'
+  provider: neibers_mall
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - neibers_category
+  theme:
+    - neibers_codex
+id: mall_category_block
+theme: neibers_codex
+region: mall_nav
+weight: -8
+provider: null
+plugin: category_block
+settings:
+  id: category_block
+  label: 'Category block'
+  provider: neibers_category
+  label_display: '0'
+visibility: {  }

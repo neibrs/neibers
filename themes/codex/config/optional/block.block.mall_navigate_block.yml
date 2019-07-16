@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - neibers_mall
+  theme:
+    - neibers_codex
+id: mall_navigate_block
+theme: neibers_codex
+region: mall_nav
+weight: 0
+provider: null
+plugin: navigate_block
+settings:
+  id: navigate_block
+  label: 'Navigate block'
+  provider: neibers_mall
+  label_display: '0'
+visibility: {  }
