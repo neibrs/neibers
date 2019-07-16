@@ -196,6 +196,9 @@ ul, ol {
 .shopCart .prompt b{ background:url(../../images/mall/cart-nogoods.png) no-repeat; display:block; width:110px; height:68px; float:left;}
 .shopCart .prompt span{ float:left; display:block; font-size:12px; color:#8c8c8c; margin:6px 0 0 14px; line-height:25px; width:132px;}
 .shopCart .dorpdown-layer .load{ width:108px; height:108px; margin-left:100px;}
+.shopCart.hover .shopCart-con {
+  border-bottom-color: white;
+}
 
 
 .settleup-content{ position:relative; width:100%; z-index:2; background:#fff;}
@@ -261,7 +264,7 @@ ul, ol {
 .cate-layer-left{ float:left; width:704px;}
 .cate-layer-rihgt{ float:right; width:200px;}
 .cateLayer_items_all{ width:276px; }
-.cateLayer_items_all .cate-layer-con{ padding:25px 35px; }
+.cateLayer_items_all .cate-layer-con{ padding:25px 32px; }
 
 .cate_channel{ overflow:hidden; height:24px; width:100%;}
 .cate_channel a,
