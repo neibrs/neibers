@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - neibers_category
+  theme:
+    - neibers_codex
+id: mall_category_breadcrumb_block
+theme: neibers_codex
+region: mall_pre_content
+weight: 5
+provider: null
+plugin: category_breadcrumb_block
+settings:
+  id: category_breadcrumb_block
+  label: 'Category breadcrumb block'
+  provider: neibers_category
+  label_display: '0'
+visibility: {  }
