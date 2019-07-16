@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - neibers_mall
+  theme:
+    - neibers_codex
+id: mall_muibar_block
+theme: neibers_codex
+region: mall_mui_bars
+weight: 0
+provider: null
+plugin: mui_bar_block
+settings:
+  id: mui_bar_block
+  label: 'Mui bar block'
+  provider: neibers_mall
+  label_display: '0'
+visibility: {  }

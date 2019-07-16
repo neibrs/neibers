@@ -52,6 +52,7 @@ mall:
       css/mall/layout.css: {}
       css/mall/header.css: {}
       css/mall/products.css: {}
+      css/mall/quickLinks.css: {}
   js:
     js/mall.js: {}
   dependencies:
