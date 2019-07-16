@@ -8,9 +8,11 @@ vendor/bin/drupal site:mode dev
 
 vendor/bin/drush pmu -y toolbar
 vendor/bin/drush en -y coffee \
+  config_update_ui \
   entity_plus \
   webprofiler \
   memcache_admin \
+  neibers_category \
   neibers_idc \
   neibers_mall \
   neibers_translation \

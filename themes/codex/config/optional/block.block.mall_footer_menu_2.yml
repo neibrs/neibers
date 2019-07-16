@@ -2,8 +2,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.footer-menu-1
+    - system.menu.footer-menu-2
   module:
+    - neibers_mall
     - system
   theme:
     - neibers_codex
@@ -12,9 +13,9 @@ theme: neibers_codex
 region: mall_footer_pre_bot
 weight: 0
 provider: null
-plugin: 'system_menu_block:footer-menu-1'
+plugin: 'system_menu_block:footer-menu-2'
 settings:
-  id: 'system_menu_block:footer-menu-1'
+  id: 'system_menu_block:footer-menu-2'
   label: 'Footer menu 2'
   provider: system
   label_display: '0'

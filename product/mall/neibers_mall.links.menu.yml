@@ -39,3 +39,43 @@ neibers_mall.orders.subscriber:
   route_name: entity.commerce_subscription.collection
   parent: neibers_mall.orders
   weight: 20
+
+## for footer menu 1
+#  首页  隐私保护  联系我们  免责条款  公司简介  商家入驻  意见反馈
+neibers_mall.footer_menu_1.front:
+  title: 'Front'
+  route_name: '<front>'
+  menu_name: footer-menu-1
+  weight: 1
+
+neibers_mall.footer_menu_1.private:
+  title: 'Private protect'
+  route_name: '<front>'
+  menu_name: footer-menu-1
+  weight: 5
+
+neibers_mall.footer_menu_1.contact:
+  title: 'Contact'
+  route_name: '<front>'
+  menu_name: footer-menu-1
+  weight: 10
+
+#  For footer menu 2
+neibers_mall.footer_menu_2.neiber:
+  title: 'Neibers'
+  route_name: '<front>'
+  menu_name: footer-menu-2
+  weight: 1
+
+neibers_mall.footer_menu_2.colleage:
+  title: 'Colleage'
+  route_name: '<front>'
+  menu_name: footer-menu-2
+  weight: 5
+
+# For help list
+neibers_mall.help_list.payment:
+  title: '配送与支付'
+  route_name: '<front>'
+  menu_name: help-list
+  weight: 5

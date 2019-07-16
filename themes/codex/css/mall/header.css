@@ -190,7 +190,7 @@ ul, ol {
   font-size:12px;
 }
 .attached-search-container .shopCart-con .count{left:40px;top:0px}
-.shopCart .dorpdown-layer{ top:35px; width:312px;}
+.shopCart .dorpdown-layer{ top:32px; width:312px;}
 .shopCart .prompt{ padding:20px 20px 20px 36px;}
 .shopCart .prompt .nogoods{ overflow:hidden;}
 .shopCart .prompt b{ background:url(../../images/mall/cart-nogoods.png) no-repeat; display:block; width:110px; height:68px; float:left;}
