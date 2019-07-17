@@ -29,4 +29,6 @@ ol,ul {
 a {
   color: #605ca8;
 }
-
+.toolbar-oriented .toolbar-bar {
+  z-index: 1200;
+}
