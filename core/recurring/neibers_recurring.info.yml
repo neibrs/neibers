@@ -3,7 +3,7 @@ type: module
 description: 'The override of commerce recurring.'
 core: 8.x
 interface translation project: neibers_recurring
-interface translation server pattern: modules/neibers/core/%project/translations/%project.%language.po
+interface translation server pattern: modules/neibers/core/recurring/translations/%project.%language.po
 package: 'Neibers'
 dependencies:
   - commerce_recurring
