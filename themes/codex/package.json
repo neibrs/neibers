@@ -1,7 +1,6 @@
 {
   "name": "neibers_codex",
   "dependencies": {
-    "admin-lte": "^2.4.2",
-    "basicprimitives": "^5.2.4"
+    "admin-lte": "^2.4.2"
   }
 }
