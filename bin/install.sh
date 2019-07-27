@@ -33,6 +33,6 @@ bin/drush cset -y language.types negotiation.language_interface.enabled.language
 #bin/drush cset -y system.site default_langcode "zh-hans"
 bin/drush locale:update
 
-bin/drupal thi -y neibers_codex
-bin/drush cset -y system.theme admin neibers_codex
-bin/drush cset -y system.theme default neibers_codex
+#bin/drupal thi -y neibers_codex
+#bin/drush cset -y system.theme admin neibers_codex
+#bin/drush cset -y system.theme default neibers_codex
