@@ -2,7 +2,7 @@
 #rm sites/default/settings.php
 
 #vendor/bin/drush site:install -y --account-pass=admin --db-url=mysql://root:root@mariadb/neibrs
-vendor/bin/drush site:install -y --account-pass=admin --db-url=mysql://root:root@127.0.0.1/neibrs
+vendor/bin/drush site:install -y --account-pass=admin --db-url=mysql://root:root@127.0.0.1/neibers
 
 vendor/bin/drupal site:mode dev
 

@@ -1,0 +1,120 @@
+{#
+/**
+ * @file
+ * Template file for field_slideshow
+ */#}
+
+{% set classes = [
+  'preview',
+  'field-slideshow',
+  'field-slideshow-' ~ id,
+] %}
+
+{#<div{{ attributes.addClass(classes) }}>#}
+  {#<div class="field-slideshow-wrapper">#}
+    {##}
+    {#{% if pager.pager.before %}#}
+      {#<div class="cycle-pager-before cycle-pager-{{ id }}">{{ pager.pager_type }}</div>#}
+    {#{% endif %}#}
+    {##}
+    {#<div id="{{ id }}" class="field-slideshow-items">#}
+      {#{% for item in items %}#}
+        {#<div class="field-slideshow-item">#}
+          {#{{ item }}#}
+        {#</div>#}
+      {#{% endfor %}#}
+    {#</div>#}
+    {##}
+    {#{% if pager.pager.after %}#}
+      {#<div class="cycle-pager-after cycle-pager-{{ id }}">{{ pager.pager_type }}</div>#}
+    {#{% endif %}#}
+    {##}
+    {#{% if pager.controls %}#}
+      {#<a class="cycle-controls cycle-controls-prev cycle-controls-prev-{{ id }}" href="#">{% trans %}Prev{% endtrans %}</a>#}
+      {#<a class="cycle-controls cycle-controls-next cycle-controls-next-{{ id }}" href="#">{% trans %}Next{% endtrans %}</a>#}
+    {#{% endif %}#}
+  {##}
+  {#</div>#}
+{#</div>#}
+
+
+<div{{ attributes.addClass(classes) }} if="preview">
+  <div class="field-slideshow-wrapper">
+    
+    <div id="{{ id }}" class="gallery_wrap field-slideshow-items">
+      <ul>
+      {% for item in items %}
+        <li ectype="img" class="field-slideshow-item">
+          {{ item }}
+        </li>
+      {% endfor %}
+      </ul>
+    </div>
+    
+    {#<div class="gallery_wrap">#}
+      {#<ul>#}
+        {#<li ectype="img">#}
+          {#<a href="http://ds.server.host/images/201703/goods_img/_P_1489102960963.jpg" class="MagicZoomPlus" id="Zoomer" rel="hint-text: ; selectors-effect: false; selectors-class: img-hover; selectors-change: mouseover; zoom-distance: 10;zoom-width: 400; zoom-height: 474;" title="" style="position: relative; display: inline-block; text-decoration: none; outline: 0px; overflow: hidden; margin: auto; width: auto; height: auto;"><img src="images/201703/goods_img/_P_1489102960963.jpg" id="J_prodImg" alt="韩都衣舍2017韩版女装新款黑白拼接插肩棒球服春季短外套HH5597妠 朴信惠同款 黑白拼接 插肩袖 棒球服" style="opacity: 1;"><div class="MagicZoomPup" style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 197px; height: 234px; opacity: 0.5; left: 199px; top: 162px;"></div><div class="MagicZoomPlusHint" style="display: block; overflow: hidden; position: absolute; visibility: visible; z-index: 1; left: 2px; right: auto; top: 2px; bottom: auto; opacity: 0.75; max-width: 394px;"></div></a>#}
+        {#</li>#}
+      {#</ul>#}
+    {#</div>#}
+    
+  
+    
+    <div class="spec-list">
+      {% if pager.controls %}
+      <a href="javascript:void(0);" class="spec-prev prevStop cycle-controls cycle-controls-prev cycle-controls-prev-{{ id }}"><i class="iconfont icon-left"></i></a>
+      {% endif %}
+      {% if pager.pager.after %}
+        <div class="spec-items cycle-pager-after cycle-pager-{{ id }}">{{ pager.pager_type }}</div>
+      {% endif %}
+      {#<div class="spec-items">#}
+        {#<div class="tempWrap" style="overflow:hidden; position:relative; width:325px"><ul style="width: 325px; left: 0px; position: relative; overflow: hidden; padding: 0px; margin: 0px;">#}
+            {##}
+            {#<li data-type="img" style="float: left; width: 60px;">#}
+              {#<a href="images/201703/goods_img/0_P_1489102950059.jpg" rel="zoom-id: Zoomer" rev="images/201703/goods_img/0_P_1489102950059.jpg" class="MagicThumb-swap" style="outline: 0px; display: inline-block;">#}
+                {#<img src="images/201703/thumb_img/0_thumb_P_1489102950134.jpg" alt="韩都衣舍2017韩版女装新款黑白拼接插肩棒球服春季短外套HH5597妠 朴信惠同款 黑白拼接 插肩袖 棒球服" width="58" height="58">#}
+              {#</a>#}
+            {#</li>#}
+            {#<li data-type="img" style="float: left; width: 60px;">#}
+              {#<a href="images/201703/goods_img/_P_1489102960963.jpg" rel="zoom-id: Zoomer" rev="images/201703/goods_img/_P_1489102960963.jpg" class="MagicThumb-swap img-hover" id="mt-694361929111" style="outline: 0px; display: inline-block;">#}
+                {#<img src="images/201703/thumb_img/_thumb_P_1489102960258.jpg" alt="韩都衣舍2017韩版女装新款黑白拼接插肩棒球服春季短外套HH5597妠 朴信惠同款 黑白拼接 插肩袖 棒球服" width="58" height="58">#}
+              {#</a>#}
+            {#</li>#}
+            {#<li data-type="img" style="float: left; width: 60px;">#}
+              {#<a href="images/201703/goods_img/_P_1489102960156.jpg" rel="zoom-id: Zoomer" rev="images/201703/goods_img/_P_1489102960156.jpg" class="MagicThumb-swap" id="mt-812634406873" style="outline: 0px; display: inline-block;">#}
+                {#<img src="images/201703/thumb_img/_thumb_P_1489102960697.jpg" alt="韩都衣舍2017韩版女装新款黑白拼接插肩棒球服春季短外套HH5597妠 朴信惠同款 黑白拼接 插肩袖 棒球服" width="58" height="58">#}
+              {#</a>#}
+            {#</li>#}
+            {#<li data-type="img" style="float: left; width: 60px;">#}
+              {#<a href="images/201703/goods_img/_P_1489102960231.jpg" rel="zoom-id: Zoomer" rev="images/201703/goods_img/_P_1489102960231.jpg" class="MagicThumb-swap" id="mt-621324944809" style="outline: 0px; display: inline-block;">#}
+                {#<img src="images/201703/thumb_img/_thumb_P_1489102960787.jpg" alt="韩都衣舍2017韩版女装新款黑白拼接插肩棒球服春季短外套HH5597妠 朴信惠同款 黑白拼接 插肩袖 棒球服" width="58" height="58">#}
+              {#</a>#}
+            {#</li>#}
+            {#<li data-type="img" style="float: left; width: 60px;">#}
+              {#<a href="images/201703/goods_img/_P_1489102960956.jpg" rel="zoom-id: Zoomer" rev="images/201703/goods_img/_P_1489102960956.jpg" class="MagicThumb-swap" id="mt-1311556645342" style="outline: 0px; display: inline-block;">#}
+                {#<img src="images/201703/thumb_img/_thumb_P_1489102960964.jpg" alt="韩都衣舍2017韩版女装新款黑白拼接插肩棒球服春季短外套HH5597妠 朴信惠同款 黑白拼接 插肩袖 棒球服" width="58" height="58">#}
+              {#</a>#}
+            {#</li>#}
+          {##}
+          {#</ul></div>#}
+      {#</div>#}
+      {% if pager.controls %}
+      <a href="javascript:void(0);" class="spec-next nextStop cycle-controls cycle-controls-next cycle-controls-next-{{ id }}"><i class="iconfont icon-right"></i></a>
+      {% endif %}
+    </div>
+    <div class="short-share">
+      <div class="short-share-r bar_code hide">条形条码：<em id="bar_code"></em></div>        <div class="left-btn">
+        <div class="duibi">
+          <a href="javascript:void(0);" id="compareLink">
+            <input type="checkbox" name="" class="ui-checkbox" id="635" onclick="Compare.add(this, 635,'韩都衣舍2017韩版女装新款黑白拼接插肩棒球服春季短外套HH5597妠 朴信惠同款 黑白拼接 插肩袖 棒球服','0', 'images/201703/thumb_img/0_thumb_G_1489102950633.jpg', '450', '<em>¥</em>540.00')">
+            <label for="635" class="ui-label">对比</label>
+          </a>
+        </div>
+        <a href="javascript:void(0);" class="collection choose-btn-coll" data-dialog="goods_collect_dialog" data-divid="goods_collect" data-url="user.php?act=collect" data-goodsid="635" data-type="goods"><i class="iconfont choose-btn-icon icon-collection" id="collection_iconfont"></i><em>收藏 (<span id="collect_count">0</span>)</em></a>
+        <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare"><a class="share bds_more" href="#none"><i class="iconfont icon-share"></i><em>分享</em></a></div>
+        <a class="report fr" href="#none" ectype="report"><em>举报</em></a>
+      </div>
+    </div>
+  </div>
+</div>

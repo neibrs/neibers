@@ -73,3 +73,29 @@
 .p-panel-main .gl-list li .p-name a:hover{ color:#f42424;}
 .p-panel-main .gl-list li .p-num{ margin-top:7px;}
 .p-panel-main .gl-list li:last-child{ margin-right:0;}
+
+
+.product-info{}
+.preview{ float:left; width:400px; height:auto;}
+.gallery_wrap{ width:398px; height:398px; border:1px solid #d2d2d2; text-align:center;}
+.gallery_wrap a{ width:398px; height:398px; display:table-cell; vertical-align:middle;}
+.gallery_wrap img{ max-width:398px; max-height:398px;}
+.gallery_wrap a img{ max-width:398px; max-height:398px;}
+.gallery_wrap ul{}
+.gallery_wrap li{ float: left; width:398px; height:398px; position: relative;}
+.gallery_wrap li .video_default{ background:url(../../images/mall/video_default.png); width: 400px; height: 400px; display: block; position: absolute; top: 0; left: 0; cursor:pointer;}
+.spec-list{ width:398px; height:60px; border:1px solid #d2d2d2; border-top:0; padding:14px 0;}
+.spec-list .spec-prev,.spec-list .spec-next{ float:left; width:39px; margin:18px 0 0 0; text-align:center;}
+.spec-list .spec-items{ float:left; width:320px; height:60px; overflow:hidden;}
+.spec-list .spec-items ul{ width:325px;}
+.spec-list .spec-items li{ float:left; width:60px; height:60px; margin-right:5px;}
+.spec-list .spec-items li a{ display:block; border:1px solid #fff;}
+.spec-list .spec-items li:hover a,.spec-list .spec-items li a.img-hover{ border-color:#f42424;}
+.short-share{ height:20px; margin-top:20px;}
+.short-share .bar_code{ float:right;}
+.short-share .left-btn{ margin-left:5px;}
+.short-share .left-btn .duibi,.short-share .left-btn .collection,.short-share .left-btn .share{ float:left; line-height:20px; margin-left:15px;}
+.short-share .left-btn .duibi .ui-label,.short-share .left-btn .collection em{ padding-right:15px; border-right:1px solid #d2d2d2;}
+.short-share .left-btn .iconfont{ vertical-align:middle; margin-top:-1px; display:inline-block;}
+.short-share .left-btn .icon-share{ font-size:12px; color:#8c8c8c; margin-right:5px;}
+.short-share .left-btn .selected{ color:#f42424;}
