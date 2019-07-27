@@ -2,7 +2,7 @@
 #rm sites/default/settings.php
 
 #bin/drush site:install -y --account-pass=admin --db-url=mysql://root:root@mariadb/neibrs
-bin/drush site:install -y --account-pass=admin --db-url=mysql://root:root@127.0.0.1/neibers
+bin/drush site:install -y --account-pass=admin --db-url=mysql://root:root@127.0.0.1/neibers --site-name="NIDC"
 
 bin/drupal site:mode dev
 
@@ -16,7 +16,8 @@ bin/drush en -y coffee \
   neibers_idc \
   neibers_mall \
   neibers_translation \
-  user_plus
+  user_plus \
+  vmi
 
 echo "include $app_root . '/' . $site_path . '/settings.local.php';" > sites/default/settings.php
 
