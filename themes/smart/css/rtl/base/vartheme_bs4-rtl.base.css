@@ -1,6 +1,12 @@
 @import url(//fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+/* line 13, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/rtl/base/vartheme_bs4-rtl.base.scss */
 [dir="rtl"] .justify-content-center.nav-pills > li + li {
-  margin-left: inherit; }
+  margin-left: inherit;
+}
 
+/* line 20, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/rtl/base/vartheme_bs4-rtl.base.scss */
 body {
-  font-family: 'Droid Arabic Kufi', sans-serif; }
+  font-family: 'Droid Arabic Kufi', sans-serif;
+}
+
+/*# sourceMappingURL=vartheme_bs4-rtl.base.css.map */

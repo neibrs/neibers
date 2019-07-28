@@ -1,128 +1,128 @@
+/* line 10, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/layout/equal-height.layout.scss */
 .equal-height .row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
-  .equal-height .row > div[class*='col-'] {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-    .equal-height .row > div[class*='col-'] article.node {
-      height: 100%; }
-      .equal-height .row > div[class*='col-'] article.node div.main-content {
-        height: 100%; }
-        .equal-height .row > div[class*='col-'] article.node div.main-content div.card {
-          height: 100%; }
+  flex-wrap: wrap;
+}
+
+/* line 14, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/layout/equal-height.layout.scss */
+.equal-height .row > div[class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 18, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/layout/equal-height.layout.scss */
+.equal-height .row > div[class*='col-'] article.node {
+  height: 100%;
+}
+
+/* line 20, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/layout/equal-height.layout.scss */
+.equal-height .row > div[class*='col-'] article.node div.main-content {
+  height: 100%;
+}
+
+/* line 22, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/layout/equal-height.layout.scss */
+.equal-height .row > div[class*='col-'] article.node div.main-content div.card {
+  height: 100%;
+}
 
 @media (min-width: 576px) {
+  /* line 33, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/layout/equal-height.layout.scss */
   .equal-height-sm .row {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
-    .equal-height-sm .row > div[class*='col-'] {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .equal-height-sm .row > div[class*='col-'] article.node {
-        height: 100%; }
-        .equal-height-sm .row > div[class*='col-'] article.node div.main-content {
-          height: 100%; }
-          .equal-height-sm .row > div[class*='col-'] article.node div.main-content div.card {
-            height: 100%; } }
+    flex-wrap: wrap;
+  }
+  /* line 37, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/layout/equal-height.layout.scss */
+  .equal-height-sm .row > div[class*='col-'] {
+    display: flex;
+    flex-direction: column;
+  }
+  /* line 41, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/layout/equal-height.layout.scss */
+  .equal-height-sm .row > div[class*='col-'] article.node {
+    height: 100%;
+  }
+  /* line 43, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/layout/equal-height.layout.scss */
+  .equal-height-sm .row > div[class*='col-'] article.node div.main-content {
+    height: 100%;
+  }
+  /* line 45, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/layout/equal-height.layout.scss */
+  .equal-height-sm .row > div[class*='col-'] article.node div.main-content div.card {
+    height: 100%;
+  }
+}
 
 @media (min-width: 768px) {
+  /* line 57, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/layout/equal-height.layout.scss */
   .equal-height-md .row {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
-    .equal-height-md .row > div[class*='col-'] {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .equal-height-md .row > div[class*='col-'] article.node {
-        height: 100%; }
-        .equal-height-md .row > div[class*='col-'] article.node div.main-content {
-          height: 100%; }
-          .equal-height-md .row > div[class*='col-'] article.node div.main-content div.card {
-            height: 100%; } }
+    flex-wrap: wrap;
+  }
+  /* line 61, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/layout/equal-height.layout.scss */
+  .equal-height-md .row > div[class*='col-'] {
+    display: flex;
+    flex-direction: column;
+  }
+  /* line 65, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/layout/equal-height.layout.scss */
+  .equal-height-md .row > div[class*='col-'] article.node {
+    height: 100%;
+  }
+  /* line 67, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/layout/equal-height.layout.scss */
+  .equal-height-md .row > div[class*='col-'] article.node div.main-content {
+    height: 100%;
+  }
+  /* line 69, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/layout/equal-height.layout.scss */
+  .equal-height-md .row > div[class*='col-'] article.node div.main-content div.card {
+    height: 100%;
+  }
+}
 
 @media (min-width: 992px) {
+  /* line 81, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/layout/equal-height.layout.scss */
   .equal-height-lg .row {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
-    .equal-height-lg .row > div[class*='col-'] {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .equal-height-lg .row > div[class*='col-'] article.node {
-        height: 100%; }
-        .equal-height-lg .row > div[class*='col-'] article.node div.main-content {
-          height: 100%; }
-          .equal-height-lg .row > div[class*='col-'] article.node div.main-content div.card {
-            height: 100%; } }
+    flex-wrap: wrap;
+  }
+  /* line 85, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/layout/equal-height.layout.scss */
+  .equal-height-lg .row > div[class*='col-'] {
+    display: flex;
+    flex-direction: column;
+  }
+  /* line 89, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/layout/equal-height.layout.scss */
+  .equal-height-lg .row > div[class*='col-'] article.node {
+    height: 100%;
+  }
+  /* line 91, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/layout/equal-height.layout.scss */
+  .equal-height-lg .row > div[class*='col-'] article.node div.main-content {
+    height: 100%;
+  }
+  /* line 93, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/layout/equal-height.layout.scss */
+  .equal-height-lg .row > div[class*='col-'] article.node div.main-content div.card {
+    height: 100%;
+  }
+}
 
 @media (min-width: 1200px) {
+  /* line 105, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/layout/equal-height.layout.scss */
   .equal-height-xl .row {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
-    .equal-height-xl .row > div[class*='col-'] {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .equal-height-xl .row > div[class*='col-'] article.node {
-        height: 100%; }
-        .equal-height-xl .row > div[class*='col-'] article.node div.main-content {
-          height: 100%; }
-          .equal-height-xl .row > div[class*='col-'] article.node div.main-content div.card {
-            height: 100%; } }
+    flex-wrap: wrap;
+  }
+  /* line 109, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/layout/equal-height.layout.scss */
+  .equal-height-xl .row > div[class*='col-'] {
+    display: flex;
+    flex-direction: column;
+  }
+  /* line 113, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/layout/equal-height.layout.scss */
+  .equal-height-xl .row > div[class*='col-'] article.node {
+    height: 100%;
+  }
+  /* line 115, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/layout/equal-height.layout.scss */
+  .equal-height-xl .row > div[class*='col-'] article.node div.main-content {
+    height: 100%;
+  }
+  /* line 117, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/layout/equal-height.layout.scss */
+  .equal-height-xl .row > div[class*='col-'] article.node div.main-content div.card {
+    height: 100%;
+  }
+}
+
+/*# sourceMappingURL=equal-height.layout.css.map */

@@ -1,213 +1,352 @@
+/* line 10, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 html.overlay-open .navbar-fixed-top {
-  z-index: 400; }
+  z-index: 400;
+}
 
+/* line 15, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 html.js fieldset.collapsed {
   border-left-width: 1px;
   border-right-width: 1px;
-  height: auto; }
+  height: auto;
+}
 
+/* line 21, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 html.js input.form-autocomplete {
-  background-image: none; }
+  background-image: none;
+}
 
+/* line 25, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 html.js input.form-autocomplete {
-  background-image: none; }
+  background-image: none;
+}
 
+/* line 29, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 html.js .autocomplete-throbber {
   background-position: 100% 2px;
   background-repeat: no-repeat;
   display: inline-block;
   height: 15px;
   margin: 2px 0 0 2px;
-  width: 15px; }
+  width: 15px;
+}
 
+/* line 37, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 html.js .autocomplete-throbber.throbbing {
-  background-position: 100% -18px; }
+  background-position: 100% -18px;
+}
 
+/* line 44, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 #overlay-container,
 .overlay-modal-background,
 .overlay-element {
-  z-index: 1500; }
+  z-index: 1500;
+}
 
+/* line 50, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 #toolbar {
-  z-index: 1600; }
+  z-index: 1600;
+}
 
+/* line 55, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .modal {
-  z-index: 1620; }
+  z-index: 1620;
+}
 
+/* line 59, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .modal-dialog {
-  z-index: 1630; }
+  z-index: 1630;
+}
 
+/* line 63, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .ctools-modal-dialog .modal-body {
   width: 100% !important;
-  overflow: auto; }
+  overflow: auto;
+}
 
+/* line 68, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .modal-backdrop {
-  z-index: 1610; }
+  z-index: 1610;
+}
 
+/* line 73, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .element-invisible {
   margin: 0;
   padding: 0;
-  width: 1px; }
+  width: 1px;
+}
 
+/* line 80, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 ul.secondary {
-  float: left; }
+  float: left;
+}
 
+/* line 85, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .page-header {
-  margin-top: 0; }
+  margin-top: 0;
+}
 
+/* line 91, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .block:first-child h2.block-title {
-  margin-top: 0; }
+  margin-top: 0;
+}
 
+/* line 97, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 p:last-child,
 .form-group:last-child,
 .panel:last-child {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
+/* line 104, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 input,
 textarea,
 select,
 .uneditable-input {
   max-width: 100%;
-  width: auto; }
+  width: auto;
+}
 
+/* line 112, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 fieldset legend.panel-heading {
   float: left;
   line-height: 1em;
-  margin: 0; }
+  margin: 0;
+}
 
+/* line 118, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 fieldset .panel-body {
   clear: both;
-  display: inherit; }
+  display: inherit;
+}
 
+/* line 123, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 fieldset .panel-heading a.panel-title {
   color: inherit;
   display: block;
   margin: -10px -15px;
-  padding: 10px 15px; }
-  fieldset .panel-heading a.panel-title:hover {
-    text-decoration: none; }
+  padding: 10px 15px;
+}
 
+/* line 128, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
+fieldset .panel-heading a.panel-title:hover {
+  text-decoration: none;
+}
+
+/* line 133, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .form-group:last-child,
 .panel:last-child {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
+/* line 138, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .form-horizontal .form-group {
   margin-left: 0;
-  margin-right: 0; }
+  margin-right: 0;
+}
 
+/* line 143, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .form-actions {
-  clear: both; }
+  clear: both;
+}
 
+/* line 148, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .managed-files.table td:first-child {
-  width: 100%; }
+  width: 100%;
+}
 
+/* line 153, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 div.image-widget-data {
   float: none;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
+/* line 158, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .text-format-wrapper {
-  margin-bottom: 15px; }
-  .text-format-wrapper > .form-type-textarea,
-  .text-format-wrapper .filter-wrapper {
-    margin-bottom: 0; }
+  margin-bottom: 15px;
+}
 
+/* line 161, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
+.text-format-wrapper > .form-type-textarea,
+.text-format-wrapper .filter-wrapper {
+  margin-bottom: 0;
+}
+
+/* line 168, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .radio:first-child, .checkbox:first-child {
-  margin-top: 0; }
+  margin-top: 0;
+}
 
+/* line 172, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .radio:last-child, .checkbox:last-child {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
+/* line 177, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .panel-heading {
-  display: block; }
+  display: block;
+}
 
+/* line 181, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 a.tabledrag-handle .handle {
   height: auto;
-  width: auto; }
+  width: auto;
+}
 
+/* line 187, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .nav-tabs {
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+}
 
+/* line 191, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 ul li.collapsed,
 ul li.expanded,
 ul li.leaf {
   list-style: none;
-  list-style-image: none; }
+  list-style-image: none;
+}
 
+/* line 198, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .tabs--secondary {
-  margin: 0 0 10px; }
+  margin: 0 0 10px;
+}
 
+/* line 203, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .submitted {
   margin-bottom: 1em;
   font-style: italic;
   font-weight: normal;
-  color: #777; }
+  color: #777;
+}
 
+/* line 211, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .form-type-password-confirm {
-  position: relative; }
-  .form-type-password-confirm label {
-    display: block; }
-    .form-type-password-confirm label .label {
-      float: right; }
-  .form-type-password-confirm .password-help {
-    padding-left: 2em; }
-  .form-type-password-confirm .progress {
-    background: transparent;
-    border-radius: 0 0 5px 5px;
-    height: 4px;
-    margin: -5px 0px 0; }
-  .form-type-password-confirm .form-type-password {
-    clear: left; }
-  .form-type-password-confirm .form-control-feedback {
-    right: 15px; }
-  .form-type-password-confirm .help-block {
-    clear: both; }
+  position: relative;
+}
 
+/* line 214, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
+.form-type-password-confirm label {
+  display: block;
+}
+
+/* line 217, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
+.form-type-password-confirm label .label {
+  float: right;
+}
+
+/* line 221, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
+.form-type-password-confirm .password-help {
+  padding-left: 2em;
+}
+
+/* line 225, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
+.form-type-password-confirm .progress {
+  background: transparent;
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
+  height: 4px;
+  margin: -5px 0px 0;
+}
+
+/* line 235, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
+.form-type-password-confirm .form-type-password {
+  clear: left;
+}
+
+/* line 239, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
+.form-type-password-confirm .form-control-feedback {
+  right: 15px;
+}
+
+/* line 243, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
+.form-type-password-confirm .help-block {
+  clear: both;
+}
+
+/* line 250, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 ul.pagination li > a.progress-disabled {
-  float: left; }
+  float: left;
+}
+
+@-moz-keyframes adjust-hue {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(359deg);
+  }
+}
 
 @-webkit-keyframes adjust-hue {
   0% {
-    -webkit-transform: rotate(0deg); }
+    -webkit-transform: rotate(0deg);
+  }
   100% {
-    -webkit-transform: rotate(359deg); } }
+    -webkit-transform: rotate(359deg);
+  }
+}
 
 @-o-keyframes adjust-hue {
   0% {
-    -o-transform: rotate(0deg); }
+    -o-transform: rotate(0deg);
+  }
   100% {
-    -o-transform: rotate(359deg); } }
+    -o-transform: rotate(359deg);
+  }
+}
+
+@-ms-keyframes adjust-hue {
+  /* line 283, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
+  0% {
+    -ms-transform: rotate(0deg);
+  }
+  /* line 286, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
+  100% {
+    -ms-transform: rotate(359deg);
+  }
+}
 
 @keyframes adjust-hue {
   0% {
-    -webkit-transform: rotate(0deg);
-         -o-transform: rotate(0deg);
-            transform: rotate(0deg); }
+    transform: rotate(0deg);
+  }
   100% {
-    -webkit-transform: rotate(359deg);
-         -o-transform: rotate(359deg);
-            transform: rotate(359deg); } }
+    transform: rotate(359deg);
+  }
+}
 
+/* line 301, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 th.checkbox,
 td.checkbox,
 th.radio,
 td.radio {
-  display: table-cell; }
+  display: table-cell;
+}
 
+/* line 310, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .views-display-settings .label {
   font-size: 100%;
-  color: #666666; }
+  color: #666666;
+}
 
+/* line 315, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .views-display-settings .footer {
   padding: 0;
-  margin: 4px 0 0 0; }
+  margin: 4px 0 0 0;
+}
 
+/* line 323, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .views-exposed-form .views-exposed-widget .btn {
-  margin-top: 1.8em; }
+  margin-top: 1.8em;
+}
 
+/* line 331, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 table .radio input[type="radio"],
 table .checkbox input[type="checkbox"] {
-  max-width: inherit; }
+  max-width: inherit;
+}
 
+/* line 338, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .form-horizontal .form-group label {
   position: relative;
   min-height: 1px;
@@ -216,159 +355,260 @@ table .checkbox input[type="checkbox"] {
   padding-top: 7px;
   padding-left: 15px;
   padding-right: 15px;
-  text-align: right; }
+  text-align: right;
+}
 
+/* line 350, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 div.image-style-new {
-  display: block; }
-  div.image-style-new div {
-    display: block; }
-  div.image-style-new div.input-group {
-    display: table; }
+  display: block;
+}
 
+/* line 353, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
+div.image-style-new div {
+  display: block;
+}
+
+/* line 357, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
+div.image-style-new div.input-group {
+  display: table;
+}
+
+/* line 362, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 td.module,
 .table-striped > tbody > tr:nth-child(odd) > td.module,
 .table > tbody > tr > td.module {
   background: #dee2e6;
-  font-weight: 700; }
+  font-weight: 700;
+}
 
+/* line 370, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .book-toc > .dropdown-menu {
-  overflow: hidden; }
-  .book-toc > .dropdown-menu > .dropdown-header {
-    white-space: nowrap; }
-  .book-toc > .dropdown-menu > li:nth-child(1) > a {
-    font-weight: bold; }
-  .book-toc > .dropdown-menu .dropdown-menu {
-    border: 0;
-    display: block;
-    margin: 0;
-    padding: 0;
-    position: static;
-    width: 100%; }
-    .book-toc > .dropdown-menu .dropdown-menu > li {
-      padding-left: 20px; }
-      .book-toc > .dropdown-menu .dropdown-menu > li > a {
-        margin-left: -40px;
-        padding-left: 60px; }
+  overflow: hidden;
+}
 
+/* line 373, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
+.book-toc > .dropdown-menu > .dropdown-header {
+  white-space: nowrap;
+}
+
+/* line 377, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
+.book-toc > .dropdown-menu > li:nth-child(1) > a {
+  font-weight: bold;
+}
+
+/* line 381, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
+.book-toc > .dropdown-menu .dropdown-menu {
+  border: 0;
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: static;
+  width: 100%;
+}
+
+/* line 390, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
+.book-toc > .dropdown-menu .dropdown-menu > li {
+  padding-left: 20px;
+}
+
+/* line 393, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
+.book-toc > .dropdown-menu .dropdown-menu > li > a {
+  margin-left: -40px;
+  padding-left: 60px;
+}
+
+/* line 403, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 #features-filter .form-item.form-type-checkbox {
-  padding-left: 20px; }
+  padding-left: 20px;
+}
 
+/* line 410, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 fieldset.features-export-component .panel-heading {
-  padding: 5px 10px; }
-  fieldset.features-export-component .panel-heading a.panel-title {
-    font-weight: 500;
-    margin: -5px -10px;
-    padding: 5px 10px; }
+  padding: 5px 10px;
+}
 
+/* line 412, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
+fieldset.features-export-component .panel-heading a.panel-title {
+  font-weight: 500;
+  margin: -5px -10px;
+  padding: 5px 10px;
+}
+
+/* line 419, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 fieldset.features-export-component .panel-body {
-  padding: 0 10px; }
+  padding: 0 10px;
+}
 
+/* line 424, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 div.features-export-list {
   margin: -11px 0 10px;
-  padding: 0 10px; }
+  padding: 0 10px;
+}
 
+/* line 432, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 fieldset.features-export-component .component-select .form-type-checkbox {
   line-height: 1em;
   margin: 5px 5px 5px 0 !important;
   min-height: 0;
-  padding: 3px 3px 3px 25px !important; }
-  fieldset.features-export-component .component-select .form-type-checkbox input[type=checkbox] {
-    margin-top: 0; }
+  padding: 3px 3px 3px 25px !important;
+}
 
+/* line 438, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
+fieldset.features-export-component .component-select .form-type-checkbox input[type=checkbox] {
+  margin-top: 0;
+}
+
+/* line 447, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 div.features-export-list .form-type-checkbox {
   line-height: 1em;
   margin: 5px 5px 5px 0 !important;
   min-height: 0;
-  padding: 3px 3px 3px 25px !important; }
-  div.features-export-list .form-type-checkbox input[type=checkbox] {
-    margin-top: 0; }
+  padding: 3px 3px 3px 25px !important;
+}
 
+/* line 453, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
+div.features-export-list .form-type-checkbox input[type=checkbox] {
+  margin-top: 0;
+}
+
+/* line 459, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .region-navigation {
-  clear: both; }
+  clear: both;
+}
 
+/* line 467, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .main-container .region.region-header h1,
 .main-container .region.region-header .h1 {
-  margin-top: 0; }
+  margin-top: 0;
+}
 
+/* line 472, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .main-container .region.region-header .tabs {
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+}
 
+/* line 480, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .form-type-password-confirm > * {
-  float: none; }
+  float: none;
+}
 
+/* line 485, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .form-control.form-wrapper.form-group {
-  height: auto; }
+  height: auto;
+}
 
+/* line 489, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .navigation-top-wrapper {
-  padding-top: 15px; }
+  padding-top: 15px;
+}
 
+/* line 494, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .cke_editable body {
-  background: white; }
+  background: white;
+}
 
+/* line 498, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .cke_editable {
-  padding: 10px; }
+  padding: 10px;
+}
 
+/* line 502, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .field-collection-view {
   padding: 0;
   margin: 0;
-  border-bottom: 0 none; }
+  border-bottom: 0 none;
+}
 
+/* line 507, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .field-collection-container {
-  border-bottom: 0 none; }
+  border-bottom: 0 none;
+}
 
+/* line 512, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 #admin-menu-search {
-  float: right; }
-  #admin-menu-search .form-control {
-    float: auto; }
+  float: right;
+}
 
+/* line 514, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
+#admin-menu-search .form-control {
+  float: auto;
+}
+
+/* line 519, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .form-textarea-wrapper textarea {
-  max-width: 100%; }
+  max-width: 100%;
+}
 
+/* line 524, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 dt {
-  font-size: 120%; }
+  font-size: 120%;
+}
 
+/* line 528, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 dd {
   margin-left: 10px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+}
 
+/* line 533, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 img {
-  max-width: 100%; }
+  max-width: 100%;
+}
 
+/* line 538, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .ajax-progress-throbber {
   background: transparent;
   min-height: 0;
   opacity: 1;
   padding: 0;
   width: auto;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
+/* line 547, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .modal-content .panels-add-content-modal {
   background: white;
   margin-left: 175px;
-  padding-left: 0; }
-  .modal-content .panels-add-content-modal .panels-modal-add-category {
-    margin-right: 5px; }
-  .modal-content .panels-add-content-modal .panels-section-column-body {
-    padding: 0 10px; }
+  padding-left: 0;
+}
 
+/* line 552, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
+.modal-content .panels-add-content-modal .panels-modal-add-category {
+  margin-right: 5px;
+}
+
+/* line 556, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
+.modal-content .panels-add-content-modal .panels-section-column-body {
+  padding: 0 10px;
+}
+
+/* line 562, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .maintenance-page #page {
-  text-align: center; }
+  text-align: center;
+}
 
+/* line 568, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .hidden-anonymous,
 .visible-admin,
 .visible-logged-in {
-  display: none !important; }
+  display: none !important;
+}
 
+/* line 576, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 body.user-logged-in .visible-admin,
 body.user-logged-in .visible-logged-in,
 body.user-logged-in .hidden-anonymous {
-  display: inline-block !important; }
+  display: inline-block !important;
+}
 
+/* line 583, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 body.user-logged-in .btn .visible-admin,
 body.user-logged-in .btn .visible-logged-in,
 body.user-logged-in .btn .hidden-anonymous {
-  display: inline-block !important; }
+  display: inline-block !important;
+}
 
+/* line 592, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 body.path-frontpage h1.page-header {
   position: absolute;
   width: 1px;
@@ -377,8 +617,10 @@ body.path-frontpage h1.page-header {
   padding: 0;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
-  border: 0; }
+  border: 0;
+}
 
+/* line 604, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 pre {
   display: block;
   padding: 9.5px;
@@ -390,16 +632,23 @@ pre {
   color: #333333;
   background-color: #f5f5f5;
   border: 1px solid #ccc;
-  border-radius: 4px; }
+  border-radius: 4px;
+}
 
+/* line 620, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 #tour.hidden.list-group {
-  display: none; }
+  display: none;
+}
 
+/* line 626, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .card-deck {
-  display: block; }
+  display: block;
+}
 
+/* line 631, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/base/vartheme_bs4.base.scss */
 .card .card-top-image {
   max-width: 100%;
-  -webkit-flex-shrink: 0;
-      -ms-flex-negative: 0;
-          flex-shrink: 0; }
+  flex-shrink: 0;
+}
+
+/*# sourceMappingURL=vartheme_bs4.base.css.map */

@@ -1,3 +1,4 @@
+/* line 9, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/layout/edge2edge.layout.scss */
 .bg-edge2edge {
   width: 100vw;
   position: relative;
@@ -5,16 +6,24 @@
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 100vw;
-      -ms-flex: 0 0 100vw;
-          flex: 0 0 100vw;
-  max-width: none; }
-  .bg-edge2edge:before {
-    content: " ";
-    display: table; }
-  .bg-edge2edge:after {
-    clear: both; }
+  flex: 0 0 100vw;
+  max-width: none;
+}
 
+/* line 19, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/layout/edge2edge.layout.scss */
+.bg-edge2edge:before {
+  content: " ";
+  display: table;
+}
+
+/* line 24, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/layout/edge2edge.layout.scss */
+.bg-edge2edge:after {
+  clear: both;
+}
+
+/* line 29, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/layout/edge2edge.layout.scss */
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+}
+
+/*# sourceMappingURL=edge2edge.layout.css.map */

@@ -1,23 +1,43 @@
+/* line 10, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/layout/vbp_text_and_image_default.layout.scss */
 .paragraph--type--text-and-image .row {
-  margin-bottom: 0px !important; }
+  margin-bottom: 0px !important;
+}
 
+/* line 14, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/layout/vbp_text_and_image_default.layout.scss */
 .paragraph--type--text-and-image .wrapper {
-  padding: 1rem; }
+  padding: 1rem;
+}
 
 @media screen and (min-width: 992px) {
+  /* line 19, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/layout/vbp_text_and_image_default.layout.scss */
   .paragraph--type--text-and-image .wrapper {
-    text-align: left; }
+    text-align: left;
+  }
+  /* line 25, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/layout/vbp_text_and_image_default.layout.scss */
   .paragraph--type--text-and-image .bg-edge2edge .align2left.wrapper {
-    padding-left: 5rem; }
+    padding-left: 5rem;
+  }
+  /* line 31, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/layout/vbp_text_and_image_default.layout.scss */
   .paragraph--type--text-and-image .bg-edge2edge .align2right.wrapper {
-    padding-right: 5rem; } }
+    padding-right: 5rem;
+  }
+}
 
 @media screen and (min-width: 992px) {
+  /* line 41, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/layout/vbp_text_and_image_default.layout.scss */
   [dir="rtl"] .paragraph--type--text-and-image .wrapper {
-    text-align: right; }
+    text-align: right;
+  }
+  /* line 46, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/layout/vbp_text_and_image_default.layout.scss */
   [dir="rtl"] .paragraph--type--text-and-image .bg-edge2edge .align2left.wrapper {
     padding-left: 1rem;
-    padding-right: 5rem; }
+    padding-right: 5rem;
+  }
+  /* line 53, Users/nie/projects/varbase/docroot/modules/neibers/themes/smart/scss/layout/vbp_text_and_image_default.layout.scss */
   [dir="rtl"] .paragraph--type--text-and-image .bg-edge2edge .align2right.wrapper {
     padding-right: 1rem;
-    padding-left: 5rem; } }
+    padding-left: 5rem;
+  }
+}
+
+/*# sourceMappingURL=vbp_text_and_image_default.layout.css.map */
