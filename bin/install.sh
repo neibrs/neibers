@@ -7,7 +7,8 @@ bin/drush site:install -y --account-pass=admin --db-url=mysql://root:root@127.0.
 bin/drupal site:mode dev
 
 bin/drush pmu -y toolbar
-bin/drush en -y coffee \
+bin/drush en -y adminimal_admin_toolbar \
+  coffee \
   config_update_ui \
   entity_plus \
   webprofiler \
