@@ -32,11 +32,11 @@ use Drupal\Core\Config\Entity\ConfigEntityBundleBase;
  *     "uuid" = "uuid"
  *   },
  *   links = {
- *     "canonical" = "/ip/type/{neibers_ip_type}",
- *     "add-form" = "/ip/type/add",
- *     "edit-form" = "/ip/type/{neibers_ip_type}/edit",
- *     "delete-form" = "/ip/type/{neibers_ip_type}/delete",
- *     "collection" = "/ip/type"
+ *     "canonical" = "/admin/config/nidc/ip/type/{neibers_ip_type}",
+ *     "add-form" = "/admin/config/nidc/ip/type/add",
+ *     "edit-form" = "/admin/config/nidc/ip/type/{neibers_ip_type}/edit",
+ *     "delete-form" = "/admin/config/nidc/ip/type/{neibers_ip_type}/delete",
+ *     "collection" = "/admin/config/nidc/ip/type"
  *   }
  * )
  */

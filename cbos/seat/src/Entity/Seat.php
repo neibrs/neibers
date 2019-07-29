@@ -50,12 +50,12 @@ use Drupal\user\UserInterface;
  *     "status" = "status",
  *   },
  *   links = {
- *     "canonical" = "/seat/{neibers_seat}",
- *     "add-page" = "/seat/add",
- *     "add-form" = "/seat/add/{neibers_seat_type}",
- *     "edit-form" = "/seat/{neibers_seat}/edit",
- *     "delete-form" = "/seat/{neibers_seat}/delete",
- *     "collection" = "/seat",
+ *     "canonical" = "/admin/nidc/seat/{neibers_seat}",
+ *     "add-page" = "/admin/nidc/seat/add",
+ *     "add-form" = "/admin/nidc/seat/add/{neibers_seat_type}",
+ *     "edit-form" = "/admin/nidc/seat/{neibers_seat}/edit",
+ *     "delete-form" = "/admin/nidc/seat/{neibers_seat}/delete",
+ *     "collection" = "/admin/nidc/seat",
  *   },
  *   bundle_entity_type = "neibers_seat_type",
  *   field_ui_base_route = "entity.neibers_seat_type.edit_form"

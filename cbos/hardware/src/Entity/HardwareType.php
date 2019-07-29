@@ -33,11 +33,11 @@ use Drupal\Core\Config\Entity\ConfigEntityBundleBase;
  *     "uuid" = "uuid"
  *   },
  *   links = {
- *     "canonical" = "/hardware/type/{neibers_hardware_type}",
- *     "add-form" = "/hardware/type/add",
- *     "edit-form" = "/hardware/type/{neibers_hardware_type}/edit",
- *     "delete-form" = "/hardware/type/{neibers_hardware_type}/delete",
- *     "collection" = "/hardware/type"
+ *     "canonical" = "/admin/config/nidc/hardware/type/{neibers_hardware_type}",
+ *     "add-form" = "/admin/config/nidc/hardware/type/add",
+ *     "edit-form" = "/admin/config/nidc/hardware/type/{neibers_hardware_type}/edit",
+ *     "delete-form" = "/admin/config/nidc/hardware/type/{neibers_hardware_type}/delete",
+ *     "collection" = "/admin/config/nidc/hardware/type"
  *   }
  * )
  */

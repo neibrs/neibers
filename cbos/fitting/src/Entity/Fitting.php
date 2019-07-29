@@ -50,12 +50,12 @@ use Drupal\user\UserInterface;
  *     "status" = "status",
  *   },
  *   links = {
- *     "canonical" = "/fitting/{neibers_fitting}",
- *     "add-page" = "/fitting/add",
- *     "add-form" = "/fitting/add/{neibers_fitting_type}",
- *     "edit-form" = "/fitting/{neibers_fitting}/edit",
- *     "delete-form" = "/fitting/{neibers_fitting}/delete",
- *     "collection" = "/fitting",
+ *     "canonical" = "/admin/nidc/fitting/{neibers_fitting}",
+ *     "add-page" = "/admin/nidc/fitting/add",
+ *     "add-form" = "/admin/nidc/fitting/add/{neibers_fitting_type}",
+ *     "edit-form" = "/admin/nidc/fitting/{neibers_fitting}/edit",
+ *     "delete-form" = "/admin/nidc/fitting/{neibers_fitting}/delete",
+ *     "collection" = "/admin/nidc/fitting",
  *   },
  *   bundle_entity_type = "neibers_fitting_type",
  *   field_ui_base_route = "entity.neibers_fitting_type.edit_form"

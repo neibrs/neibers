@@ -33,11 +33,11 @@ use Drupal\Core\Config\Entity\ConfigEntityBundleBase;
  *     "uuid" = "uuid"
  *   },
  *   links = {
- *     "canonical" = "/room/type/{neibers_room_type}",
- *     "add-form" = "/room/type/add",
- *     "edit-form" = "/room/type/{neibers_room_type}/edit",
- *     "delete-form" = "/room/type/{neibers_room_type}/delete",
- *     "collection" = "/room/type"
+ *     "canonical" = "/admin/config/nidc/room/type/{neibers_room_type}",
+ *     "add-form" = "/admin/config/nidc/room/type/add",
+ *     "edit-form" = "/admin/config/nidc/room/type/{neibers_room_type}/edit",
+ *     "delete-form" = "/admin/config/nidc/room/type/{neibers_room_type}/delete",
+ *     "collection" = "/admin/config/nidc/room/type"
  *   }
  * )
  */

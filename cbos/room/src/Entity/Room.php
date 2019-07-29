@@ -51,12 +51,12 @@ use Drupal\user\UserInterface;
  *     "published" = "status",
  *   },
  *   links = {
- *     "canonical" = "/room/{neibers_room}",
- *     "add-page" = "/room/add",
- *     "add-form" = "/room/add/{neibers_room_type}",
- *     "edit-form" = "/room/{neibers_room}/edit",
- *     "delete-form" = "/room/{neibers_room}/delete",
- *     "collection" = "/room",
+ *     "canonical" = "/admin/nidc/room/{neibers_room}",
+ *     "add-page" = "/admin/nidc/room/add",
+ *     "add-form" = "/admin/nidc/room/add/{neibers_room_type}",
+ *     "edit-form" = "/admin/nidc/room/{neibers_room}/edit",
+ *     "delete-form" = "/admin/nidc/room/{neibers_room}/delete",
+ *     "collection" = "/admin/nidc/room",
  *   },
  *   bundle_entity_type = "neibers_room_type",
  *   field_ui_base_route = "entity.neibers_room_type.edit_form"

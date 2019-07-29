@@ -48,11 +48,11 @@ use Drupal\user\UserInterface;
  *     "status" = "status",
  *   },
  *   links = {
- *     "canonical" = "/cabinet/{neibers_cabinet}",
- *     "add-form" = "/cabinet/add",
- *     "edit-form" = "/cabinet/{neibers_cabinet}/edit",
- *     "delete-form" = "/cabinet/{neibers_cabinet}/delete",
- *     "collection" = "/cabinet",
+ *     "canonical" = "/admin/nidc/cabinet/{neibers_cabinet}",
+ *     "add-form" = "/admin/nidc/cabinet/add",
+ *     "edit-form" = "/admin/nidc/cabinet/{neibers_cabinet}/edit",
+ *     "delete-form" = "/admin/nidc/cabinet/{neibers_cabinet}/delete",
+ *     "collection" = "/admin/nidc/cabinet",
  *   },
  *   field_ui_base_route = "neibers_cabinet.settings"
  * )

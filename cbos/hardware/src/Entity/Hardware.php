@@ -51,12 +51,12 @@ use Drupal\user\UserInterface;
  *     "status" = "status",
  *   },
  *   links = {
- *     "canonical" = "/hardware/{neibers_hardware}",
- *     "add-page" = "/hardware/add",
- *     "add-form" = "/hardware/add/{neibers_hardware_type}",
- *     "edit-form" = "/hardware/{neibers_hardware}/edit",
- *     "delete-form" = "/hardware/{neibers_hardware}/delete",
- *     "collection" = "/hardware",
+ *     "canonical" = "/admin/nidc/hardware/{neibers_hardware}",
+ *     "add-page" = "/admin/nidc/hardware/add",
+ *     "add-form" = "/admin/nidc/hardware/add/{neibers_hardware_type}",
+ *     "edit-form" = "/admin/nidc/hardware/{neibers_hardware}/edit",
+ *     "delete-form" = "/admin/nidc/hardware/{neibers_hardware}/delete",
+ *     "collection" = "/admin/nidc/hardware",
  *   },
  *   bundle_entity_type = "neibers_hardware_type",
  *   field_ui_base_route = "entity.neibers_hardware_type.edit_form"
