@@ -12,6 +12,7 @@ bin/drush en -y adminimal_admin_toolbar \
   config_update_ui \
   entity_plus \
   neibers_translation \
+  memcache \
   memcache_admin \
   user_plus \
   vmi

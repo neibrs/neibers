@@ -1,0 +1,5 @@
+name: 'Idc core'
+type: module
+description: 'The base core module for idc.'
+core: 8.x
+package: 'Neibers'

@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains idc_core.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function idc_core_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the idc_core module.
+    case 'help.page.idc_core':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('The base core module for idc.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
