@@ -1,0 +1,5 @@
+drupal.idc_core:
+  version: VERSION
+  css:
+    theme:
+      css/idc_core.css: {}

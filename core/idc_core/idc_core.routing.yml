@@ -1,0 +1,7 @@
+idc_core.admin:
+  path: '/admin/nidc'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'NIDC'
+  requirements:
+    _permission: 'access administration nidc pages'

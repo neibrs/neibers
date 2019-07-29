@@ -6,6 +6,7 @@
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Url;
 
 /**
  * Implements hook_help().
@@ -21,4 +22,34 @@ function idc_core_help($route_name, RouteMatchInterface $route_match) {
 
     default:
   }
+}
+
+/**
+ * Implements hook_toolbar().
+ */
+function idc_core_toolbar() {
+  $items['idc_core'] = [
+    '#type' => 'toolbar_item',
+    'tab' => [
+      '#type' => 'link',
+      '#title' => t('NIDC'),
+      '#url' => Url::fromRoute("idc_core.admin"),
+      '#attributes' => [
+        'title' => t('Nidc menu'),
+        'class' => ['toolbar-icon', 'toolbar-icon-idc'],
+        'data-drupal-subtree' => '',
+      ],
+    ],
+    'tray' => [
+      '#heading' => t('Administer Nidc'),
+    ],
+    '#weight' => 100,
+    '#attached' => [
+      'library' => [
+        'idc_core/drupal.idc_core',
+      ],
+    ],
+  ];
+
+  return $items;
 }

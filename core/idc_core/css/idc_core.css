@@ -1,0 +1,10 @@
+/**
+ * Top level icons.
+ */
+.toolbar-bar .toolbar-icon-idc:before {
+  background-image: url(../images/core/icons/bebebe/hamburger.svg);
+}
+.toolbar-bar .toolbar-icon-idc:active:before,
+.toolbar-bar .toolbar-icon-idc.is-active:before {
+  background-image: url(../images/core/icons/ffffff/hamburger.svg);
+}
