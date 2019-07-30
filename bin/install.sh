@@ -1,27 +1,33 @@
 #!/bin/bash
-#rm sites/default/settings.php
+#chmod -R a+rw docroot/sites/default
 
-#bin/drush site:install -y --account-pass=admin --db-url=mysql://root:root@mariadb/varbase --site-name="NIDC"
+#rm docroot/sites/default/settings.php
+
+#bin/drush site:install -y --account-pass=admin --db-url=mysql://root:root@mariadb/laradrupal --site-name="NIDC"
 bin/drush site:install -y --account-pass=admin --db-url=mysql://root:root@127.0.0.1:8889/varbase --site-name="NIDC"
+
+#echo "ini_set('memory_limit', -1);" > docroot/sites/default/settings.php
 
 bin/drupal site:mode dev
 
-bin/drush pmu -y toolbar
+#bin/drush pmu -y toolbar
 bin/drush en -y adminimal_admin_toolbar \
   coffee \
+  config_translation \
   config_update_ui \
   entity_plus \
+  neibers_idc \
+  neibers_mall \
   neibers_translation \
   memcache \
   memcache_admin \
   user_plus \
   vmi
-#  webprofiler \
-#  neibers_idc \
-#  neibers_mall \
-#  neibers_translation \
 
-echo "include $app_root . '/' . $site_path . '/settings.local.php';" > docroot/sites/default/settings.php
+chmod -R a+rw docroot/sites/default/settings.php
+
+#echo "\$settings['file_private_path'] = '/tmp';" >> docroot/sites/default/settings.php
+#echo 'include $app_root . "/" . $site_path . "/settings.local.php";' >> docroot/sites/default/settings.php
 
 # Initial demo data.
 #bin/drush mim ip_xls
